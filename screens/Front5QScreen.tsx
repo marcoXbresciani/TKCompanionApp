@@ -1,5 +1,11 @@
 import styled from 'styled-components';
-import {SafeAreaView, StatusBar, Text, View} from 'react-native';
+import {
+        Pressable,
+        SafeAreaView,
+        StatusBar,
+        Text,
+        View,
+} from 'react-native';
 import {BoldText} from '../components/BoldText';
 import {Separator} from '../components/Separator';
 import * as React from 'react';
@@ -45,7 +51,7 @@ const TitleText = styled(Text)`
         text-align: center;
 `;
 
-export const Front5QScreen = () => (
+export const Front5QScreen = ({navigation}) => (
         <SafeAreaView>
                 <StatusBar />
                 <View>
@@ -71,9 +77,17 @@ export const Front5QScreen = () => (
                                                 </BoldText>{' '}
                                                 now?
                                         </Text>
-                                        <Separator>
-                                                (Turn Card Over)
-                                        </Separator>
+                                        <Pressable
+                                                onPress={() =>
+                                                        navigation.navigate(
+                                                                'Back',
+                                                        )
+                                                }>
+                                                <Separator>
+                                                        (Click here to
+                                                        Turn Card Over)
+                                                </Separator>
+                                        </Pressable>
                                         <Text>
                                                 ③ What{' '}
                                                 <BoldText>

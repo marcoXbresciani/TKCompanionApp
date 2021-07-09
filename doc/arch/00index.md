@@ -11,7 +11,7 @@ SPDX-FileCopyrightText: 2021 Marco Bresciani
 SPDX-License-Identifier: FSFAP
 -->
 # Architectural Decisions Log
-This lists the architectural decisions for SpyderMover.
+This lists the architectural decisions for TKCompanionApp.
 
 ## Accepted
 * [ADR 000](adr-000.md) - Documenting Architecture Decisions

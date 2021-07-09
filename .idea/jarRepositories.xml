@@ -12,9 +12,9 @@
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="maven2" />
-      <option name="name" value="maven2" />
-      <option name="url" value="file:/$PROJECT_DIR$/node_modules/jsc-android/dist/" />
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="file:/$USER_HOME$/OneDrive%20-%20KERING%20SA/Bureau/Chiavetta/Programmi/TKCompanionApp/node_modules/react-native/android/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="maven3" />
@@ -22,14 +22,14 @@
       <option name="url" value="https://www.jitpack.io" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="file:/$USER_HOME$/OneDrive%20-%20KERING%20SA/Bureau/Chiavetta/Programmi/TKCompanionApp/node_modules/jsc-android/dist/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="BintrayJCenter" />
       <option name="name" value="BintrayJCenter" />
       <option name="url" value="https://jcenter.bintray.com/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven" />
-      <option name="name" value="maven" />
-      <option name="url" value="file:/$PROJECT_DIR$/node_modules/react-native/android/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="MavenLocal" />
@@ -54,7 +54,12 @@
     <remote-repository>
       <option name="id" value="maven4" />
       <option name="name" value="maven4" />
-      <option name="url" value="file:/$PROJECT_DIR$/node_modules/react-native-screens/node_modules/react-native/android" />
+      <option name="url" value="file:/$USER_HOME$/OneDrive%20-%20KERING%20SA/Bureau/Chiavetta/Programmi/TKCompanionApp/node_modules/react-native-screens/node_modules/react-native/android" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="file:/$USER_HOME$/OneDrive%20-%20KERING%20SA/Bureau/Chiavetta/Programmi/TKCompanionApp/node_modules/react-native-safe-area-context/node_modules/react-native/android" />
     </remote-repository>
   </component>
 </project>

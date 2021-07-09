@@ -29,6 +29,7 @@ This app wants to be a short and small helper for Toyota Kata
 practitioners.
 It will contain the Coaching Kata 5Q card, plus (possibly) more things
 and information.
+If it'll ever work.
 
 ## Table of Contents
 1. [Background](#background)

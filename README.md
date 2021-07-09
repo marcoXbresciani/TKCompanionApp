@@ -60,6 +60,13 @@ If it'll ever work.
 
 ## Usage
 
+## How to start
+From command line launch `npx react-native start` that will run Metro
+tool (don't know what it actually is, but seems something needed).
+
+From (another) command line launch `npx react-native run-android` that
+will prepare and launch your app, connecting to the Metro thing above.
+
 ## Maintainers
 This document has been started by Marco Bresciani and is currently
 maintained by Marco Bresciani.

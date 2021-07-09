@@ -1,115 +1,133 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
+import * as React from 'react';
+import {
+        Button,
+        SafeAreaView,
+        StatusBar,
+        Text,
+        View,
+} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import styled from 'styled-components';
+import {createStackNavigator} from '@react-navigation/stack';
 
- import React from 'react';
- import {
-   SafeAreaView,
-   ScrollView,
-   StatusBar,
-   StyleSheet,
-   Text,
-   useColorScheme,
-   View,
- } from 'react-native';
+function Home({navigation}) {
+        const Title = styled(Text)`
+                font-size: 25px;
+                text-align: center;
+                font-family: serif;
+        `;
 
- import {
-   Colors,
-   DebugInstructions,
-   Header,
-   LearnMoreLinks,
-   ReloadInstructions,
- } from 'react-native/Libraries/NewAppScreen';
+        return (
+                <SafeAreaView>
+                        <StatusBar />
+                        <View>
+                                <Title>Toyota Kata Companion App</Title>
+                        </View>
+                </SafeAreaView>
+        );
+}
 
- const Section: React.FC<{
-   title: string;
- }> = ({children, title}) => {
-   const isDarkMode = useColorScheme() === 'dark';
-   return (
-     <View style={styles.sectionContainer}>
-       <Text
-         style={[
-           styles.sectionTitle,
-           {
-             color: isDarkMode ? Colors.white : Colors.black,
-           },
-         ]}>
-         {title}
-       </Text>
-       <Text
-         style={[
-           styles.sectionDescription,
-           {
-             color: isDarkMode ? Colors.light : Colors.dark,
-           },
-         ]}>
-         {children}
-       </Text>
-     </View>
-   );
- };
+function Card5QFront({navigation}) {
+        return (
+                <SafeAreaView>
+                        <StatusBar />
+                        <View>
+                                <Text>The Five Questions</Text>
 
- const App = () => {
-   const isDarkMode = useColorScheme() === 'dark';
+                                <Button
+                                        title="Turn Card Over"
+                                        onPress={() =>
+                                                navigation.navigate(
+                                                        'Reflect on the Last Step Taken',
+                                                )
+                                        }
+                                />
+                        </View>
+                </SafeAreaView>
+        );
+}
 
-   const backgroundStyle = {
-     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-   };
+function Card5QBack({navigation}) {
+        return (
+                <SafeAreaView>
+                        <StatusBar />
+                        <View>
+                                <Text>
+                                        Reflect on the Last Step Taken
+                                </Text>
+                        </View>
+                </SafeAreaView>
+        );
+}
 
-   return (
-     <SafeAreaView style={backgroundStyle}>
-       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-       <ScrollView
-         contentInsetAdjustmentBehavior="automatic"
-         style={backgroundStyle}>
-         <Header />
-         <View
-           style={{
-             backgroundColor: isDarkMode ? Colors.black : Colors.white,
-           }}>
-           <Section title="Step One">
-             Edit <Text style={styles.highlight}>App.js</Text> to change this
-             screen and then come back to see your edits.
-           </Section>
-           <Section title="See Your Changes">
-             <ReloadInstructions />
-           </Section>
-           <Section title="Debug">
-             <DebugInstructions />
-           </Section>
-           <Section title="Learn More">
-             Read the docs to discover what to do next:
-           </Section>
-           <LearnMoreLinks />
-         </View>
-       </ScrollView>
-     </SafeAreaView>
-   );
- };
+const Card5QStack = createStackNavigator();
 
- const styles = StyleSheet.create({
-   sectionContainer: {
-     marginTop: 32,
-     paddingHorizontal: 24,
-   },
-   sectionTitle: {
-     fontSize: 24,
-     fontWeight: '600',
-   },
-   sectionDescription: {
-     marginTop: 8,
-     fontSize: 18,
-     fontWeight: '400',
-   },
-   highlight: {
-     fontWeight: '700',
-   },
- });
+function Card5QStackScreen() {
+        return (
+                <Card5QStack.Navigator>
+                        <Card5QStack.Screen
+                                name="The Five Questions"
+                                component={Card5QFront}
+                        />
+                        <Card5QStack.Screen
+                                name="Reflect on the Last Step Taken"
+                                component={Card5QBack}
+                        />
+                </Card5QStack.Navigator>
+        );
+}
 
- export default App;
+const Tab = createMaterialBottomTabNavigator();
+
+function App() {
+        return (
+                <NavigationContainer>
+                        <Tab.Navigator initialRouteName={'Home'}>
+                                <Tab.Screen
+                                        name="Home"
+                                        component={Home}
+                                        options={{
+                                                tabBarLabel: 'Home',
+                                                tabBarIcon: ({
+                                                        color,
+                                                }) => (
+                                                        <MaterialCommunityIcons
+                                                                name="home"
+                                                                color={
+                                                                        color
+                                                                }
+                                                                size={
+                                                                        26
+                                                                }
+                                                        />
+                                                ),
+                                        }}
+                                />
+                                <Tab.Screen
+                                        name="5Q Card"
+                                        component={Card5QStackScreen}
+                                        options={{
+                                                tabBarLabel: '5Q Card',
+                                                tabBarIcon: ({
+                                                        color,
+                                                }) => (
+                                                        <MaterialCommunityIcons
+                                                                name="forum"
+                                                                color={
+                                                                        color
+                                                                }
+                                                                size={
+                                                                        26
+                                                                }
+                                                        />
+                                                ),
+                                        }}
+                                />
+                        </Tab.Navigator>
+                </NavigationContainer>
+        );
+}
+
+export default App;

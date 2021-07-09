@@ -23,6 +23,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Front5QScreen} from './screens/Front5QScreen';
 import {AboutScreen} from './screens/AboutScreen';
 import {Back5QScreen} from './screens/Back5QScreen';
+import {BiggerText} from './components/BiggerText';
 
 function HomeScreen() {
         return (
@@ -32,7 +33,11 @@ function HomeScreen() {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                         }}>
-                        <Text>Toyota Kata Companion App</Text>
+                        <Text>
+                                <BiggerText>
+                                        Toyota Kata Companion App
+                                </BiggerText>
+                        </Text>
                 </View>
         );
 }

@@ -1,7 +1,14 @@
 import styled from 'styled-components';
-import {SafeAreaView, StatusBar, Text, View} from 'react-native';
+import {
+        Pressable,
+        SafeAreaView,
+        StatusBar,
+        Text,
+        View,
+} from 'react-native';
 import {BoldText} from '../components/BoldText';
 import * as React from 'react';
+import {BiggerText} from '../components/BiggerText';
 
 const BackView = styled(View)`
         background-color: white;
@@ -15,7 +22,6 @@ const BackView = styled(View)`
 const TitleText = styled(Text)`
         color: black;
         font-family: sans-serif;
-        font-size: 20px;
         font-weight: bold;
         text-align: center;
 `;
@@ -33,8 +39,17 @@ const QuestionsText = styled(Text)`
         padding: 2% 0;
 `;
 
+const Line = styled(View)`
+        align-self: center;
+        background-color: black;
+        height: 1px;
+        margin-bottom: 0;
+        margin-left: 50%;
+        margin-top: 15px;
+        width: 50%;
+`;
+
 const Returner = styled(Text)`
-        border: 1px solid black;
         padding: 0 5px;
         margin-top: 15px;
         text-align: right;
@@ -45,7 +60,9 @@ export const Back5QScreen = ({navigation}) => (
                 <StatusBar />
                 <BackView>
                         <TitleText>
-                                Reflect on the Last Step Taken
+                                <BiggerText>
+                                        Reflect on the Last Step
+                                </BiggerText>
                         </TitleText>
                         <QuoteText>
                                 Because you don't actually know what the
@@ -72,7 +89,12 @@ export const Back5QScreen = ({navigation}) => (
                                         <BoldText>Learn</BoldText>?
                                 </QuestionsText>
                         </QuestionsView>
-                        <Returner>Return to question 3</Returner>
+                        <Pressable onPress={() => navigation.goBack()}>
+                                <Line />
+                                <Returner>
+                                        Return to question 3
+                                </Returner>
+                        </Pressable>
                 </BackView>
         </SafeAreaView>
 );

@@ -22,6 +22,7 @@ import {createMaterialBottomTabNavigator} from '@react-navigation/material-botto
 import {createStackNavigator} from '@react-navigation/stack';
 import {Front5QScreen} from './screens/Front5QScreen';
 import {AboutScreen} from './screens/AboutScreen';
+import {Back5QScreen} from './screens/Back5QScreen';
 
 function HomeScreen() {
         return (
@@ -37,22 +38,6 @@ function HomeScreen() {
 }
 
 const Stack = createStackNavigator();
-
-function Back5QScreen() {
-        return (
-                <SafeAreaView>
-                        <StatusBar />
-                        <View
-                                style={{
-                                        flex: 1,
-                                        justifyContent: 'center',
-                                        alignItems: 'center',
-                                }}>
-                                <Text>Back</Text>
-                        </View>
-                </SafeAreaView>
-        );
-}
 
 function FiveQCard() {
         return (

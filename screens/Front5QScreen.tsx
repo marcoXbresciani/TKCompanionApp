@@ -51,6 +51,10 @@ const TitleText = styled(Text)`
         text-align: center;
 `;
 
+const QuestionsText = styled(Text)`
+        padding: 1% 0;
+`;
+
 export const Front5QScreen = ({navigation}) => (
         <SafeAreaView>
                 <StatusBar />
@@ -63,20 +67,20 @@ export const Front5QScreen = ({navigation}) => (
                                         <TitleText>
                                                 The Five Questions
                                         </TitleText>
-                                        <Text>
+                                        <QuestionsText>
                                                 ① What is the{' '}
                                                 <BoldText>
                                                         Target Condition
                                                 </BoldText>
                                                 ?
-                                        </Text>
-                                        <Text>
+                                        </QuestionsText>
+                                        <QuestionsText>
                                                 ② What is the{' '}
                                                 <BoldText>
                                                         Actual Condition
                                                 </BoldText>{' '}
                                                 now?
-                                        </Text>
+                                        </QuestionsText>
                                         <Pressable
                                                 onPress={() =>
                                                         navigation.navigate(
@@ -88,7 +92,7 @@ export const Front5QScreen = ({navigation}) => (
                                                         Turn Card Over)
                                                 </Separator>
                                         </Pressable>
-                                        <Text>
+                                        <QuestionsText>
                                                 ③ What{' '}
                                                 <BoldText>
                                                         Obstacles
@@ -99,8 +103,8 @@ export const Front5QScreen = ({navigation}) => (
                                                 condition?{'\n'}
                                                 Which *one* are you
                                                 addressing now?
-                                        </Text>
-                                        <Text>
+                                        </QuestionsText>
+                                        <QuestionsText>
                                                 ④ What is your{' '}
                                                 <BoldText>
                                                         Next Step
@@ -108,15 +112,15 @@ export const Front5QScreen = ({navigation}) => (
                                                 ? (Next experiment)
                                                 {'\n'}
                                                 What do you expect?
-                                        </Text>
-                                        <Text>
+                                        </QuestionsText>
+                                        <QuestionsText>
                                                 ⑤ How quickly can we go
                                                 and see what we{' '}
                                                 <BoldText>
                                                         Have Learned
                                                 </BoldText>{' '}
                                                 from taking that step?
-                                        </Text>
+                                        </QuestionsText>
                                 </QuestionsView>
                         </FrontView>
                 </View>

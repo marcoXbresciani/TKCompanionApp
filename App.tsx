@@ -16,7 +16,7 @@
  * along with Foobar. If not, see <https://www.gnu.org/licenses/>.
  */
 import * as React from 'react';
-import {SafeAreaView, StatusBar, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -45,10 +45,16 @@ function FiveQCard() {
                         <Stack.Screen
                                 name="Front"
                                 component={Front5QScreen}
+                                options={{
+                                        headerShown: false,
+                                }}
                         />
                         <Stack.Screen
                                 name="Back"
                                 component={Back5QScreen}
+                                options={{
+                                        headerShown: false,
+                                }}
                         />
                 </Stack.Navigator>
         );

@@ -6,4 +6,5 @@
     <file type="web" url="file://$PROJECT_DIR$/node_modules/@react-native-community/cli-platform-android" />
     <file type="web" url="file://$PROJECT_DIR$/node_modules/react-native" />
   </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="Android API 26 Platform" project-jdk-type="Android SDK" />
 </project>

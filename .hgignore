@@ -1,3 +1,4 @@
 syntax: glob
 android/app/build/
 node_modules/
+.idea/workspace.xml

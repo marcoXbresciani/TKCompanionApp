@@ -1,0 +1,128 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: TKCompanionApp
+Upstream-Contact: Marco Bresciani <marcobresciani_1974@libero.it>
+Source:
+
+Files: .idea/*
+Copyright: 2021 Marco Bresciani
+License: CC0-1.0
+
+Files: __tests__/*
+Copyright: 2021 Marco Bresciani
+License: GPL-3.0-or-later
+
+Files: android/app/src/*
+Copyright: 2021 Marco Bresciani
+License: GPL-3.0-or-later
+
+Files: android/app/_BUCK
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: android/app/build.gradle
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: android/app/build_defs.bzl
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: android/app/debug.keystore
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: android/app/proguard-rules.pro
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: android/gradle/*
+Copyright: 2015 the original author or authors.
+License: Apache-2.0
+
+Files: android/build.gradle
+Copyright: 2015 the original author or authors.
+License: Apache-2.0
+
+Files: android/gradle.properties
+Copyright: 2015 the original author or authors.
+License: Apache-2.0
+
+Files: android/gradlew
+Copyright: 2015 the original author or authors.
+License: Apache-2.0
+
+Files: android/gradlew.bat
+Copyright: 2015 the original author or authors.
+License: Apache-2.0
+
+Files: android/settings.gradle
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: ios/*
+Copyright: 2021 Marco Bresciani
+License: GPL-3.0-or-later
+
+Files: .buckconfig
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: .editorconfig
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: .eslintrc.js
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: .flowconfig
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: .gitignore
+Copyright: 2021 Marco Bresciani
+License: CC0-1.0
+
+Files: .hgignore
+Copyright: 2021 Marco Bresciani
+License: CC0-1.0
+
+Files: .prettierrc.js
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: .watchmanconfig
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: App.tsx
+Copyright: 2021 Marco Bresciani
+License: GPL-3.0-or-later
+
+Files: app.json
+Copyright: 2021 Marco Bresciani
+License: GPL-3.0-or-later
+
+Files: babel.config.js
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: index.js
+Copyright: 2021 Marco Bresciani
+License: GPL-3.0-or-later
+
+Files: metro.config.js
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: package.json
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: tsconfig.json
+Copyright: 2021 Marco Bresciani
+License: FSFAP
+
+Files: yarn.lock
+Copyright: 2021 Marco Bresciani
+License: CC0-1.0

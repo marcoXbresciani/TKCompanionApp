@@ -80,11 +80,13 @@ Permission is given to copy or distribute (or both) the above ASCII
 image, with or without modifications.
 
 ### How to start
-From command line launch `npx react-native start` that will run Metro
-tool (don't know what it actually is, but seems something needed).
+From command line launch `yarn start` (or `npx react-native start`, but
+why making your life worse?) that will run Metro tool (don't know what
+it actually is, but seems something needed).
 
-From (another) command line launch `npx react-native run-android` that
-will prepare and launch your app, connecting to the Metro thing above.
+From (another) command line launch `yarn android` (or, again, make your
+life pitier and use `npx react-native run-android`) that will prepare
+and launch your app, connecting to the Metro thing above.
 
 ## License
 ```text

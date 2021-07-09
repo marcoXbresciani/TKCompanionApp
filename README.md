@@ -17,6 +17,7 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 -->
 # TKCompanionApp
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![GPL logo](https://www.gnu.org/graphics/gplv3-or-later.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 [![GFDL logo](https://www.gnu.org/graphics/gfdl-logo.svg)](https://www.gnu.org/licenses/fdl.html)
 [![Markdown](https://img.shields.io/badge/made%20with-markdown-black?logo=markdown)](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
 [![REUSE compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)

@@ -1,4 +1,5 @@
 syntax: glob
-android/app/build/
+android/app/build/*
 node_modules/
 .idea/workspace.xml
+android/.gradle/*

@@ -38,6 +38,7 @@ If it'll ever work.
 1. [Usage](#usage)
 1. [Maintainers](#maintainers)
 1. [Contributing](#contributing)
+    1. [How to Start](#how-to-start)
 1. [License](#license)
     1. [GNU Free Documentation License](#gnu-free-documentation-license)
         1. [0. PREAMBLE](#0-preamble)
@@ -60,13 +61,6 @@ If it'll ever work.
 
 ## Usage
 
-## How to start
-From command line launch `npx react-native start` that will run Metro
-tool (don't know what it actually is, but seems something needed).
-
-From (another) command line launch `npx react-native run-android` that
-will prepare and launch your app, connecting to the Metro thing above.
-
 ## Maintainers
 This document has been started by Marco Bresciani and is currently
 maintained by Marco Bresciani.
@@ -85,12 +79,12 @@ Copyright © 2004 Martin Dickopp
 Permission is given to copy or distribute (or both) the above ASCII
 image, with or without modifications.
 
-### Coding
+### How to start
+From command line launch `npx react-native start` that will run Metro
+tool (don't know what it actually is, but seems something needed).
 
-```shell
-npx react-native start
-npx react-native run-android
-```
+From (another) command line launch `npx react-native run-android` that
+will prepare and launch your app, connecting to the Metro thing above.
 
 ## License
 ```text

@@ -23,7 +23,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Front5QScreen} from './screens/Front5QScreen';
 import {AboutScreen} from './screens/AboutScreen';
 import {Back5QScreen} from './screens/Back5QScreen';
-import {BiggerText} from './components/BiggerText';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import {TitleText} from './components/Texts';
 
 function HomeScreen() {
         return (
@@ -70,15 +71,60 @@ function App() {
                         <Tab.Navigator initialRouteName="Home">
                                 <Tab.Screen
                                         name="Home"
+                                        options={{
+                                                tabBarIcon: ({
+                                                        color,
+                                                }) => (
+                                                        <Ionicons
+                                                                name="home"
+                                                                color={
+                                                                        color
+                                                                }
+                                                                size={
+                                                                        25
+                                                                }
+                                                        />
+                                                ),
+                                        }}
                                         component={HomeScreen}
                                 />
                                 <Tab.Screen
                                         name="5Q"
+                                        options={{
+                                                tabBarIcon: ({
+                                                        color,
+                                                }) => (
+                                                        <Ionicons
+                                                                name="people-circle-outline"
+                                                                color={
+                                                                        color
+                                                                }
+                                                                size={
+                                                                        25
+                                                                }
+                                                        />
+                                                ),
+                                        }}
                                         component={FiveQCard}
                                 />
                                 <Tab.Screen
                                         name="About"
                                         component={AboutScreen}
+                                        options={{
+                                                tabBarIcon: ({
+                                                        color,
+                                                }) => (
+                                                        <Ionicons
+                                                                name="information-circle-outline"
+                                                                color={
+                                                                        color
+                                                                }
+                                                                size={
+                                                                        25
+                                                                }
+                                                        />
+                                                ),
+                                        }}
                                 />
                         </Tab.Navigator>
                 </NavigationContainer>

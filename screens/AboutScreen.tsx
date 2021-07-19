@@ -30,7 +30,7 @@ export const AboutScreen = ({navigation}) => (
                 <BoldText>
                         <BiggerText>TKCompanionApp</BiggerText>
                 </BoldText>
-                <Text>version 0.1.0</Text>
+                <Text>0.1.0</Text>
                 <Text>
                         <SmallerText> </SmallerText>
                 </Text>

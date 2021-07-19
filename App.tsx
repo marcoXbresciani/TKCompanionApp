@@ -33,11 +33,8 @@ function HomeScreen() {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                         }}>
-                        <Text>
-                                <BiggerText>
-                                        Toyota Kata Companion App
-                                </BiggerText>
-                        </Text>
+                        <TitleText>Toyota Kata Companion App</TitleText>
+                        <Text>0.1.0</Text>
                 </View>
         );
 }

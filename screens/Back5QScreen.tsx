@@ -6,9 +6,8 @@ import {
         Text,
         View,
 } from 'react-native';
-import {BoldText} from '../components/BoldText';
 import * as React from 'react';
-import {BiggerText} from '../components/BiggerText';
+import {BiggerText, BoldText} from '../components/Texts';
 
 const BackView = styled(View)`
         background-color: white;

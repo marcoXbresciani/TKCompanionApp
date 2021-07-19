@@ -1,16 +1,7 @@
-import {
-        Button,
-        FlatList,
-        Linking,
-        SectionList,
-        Text,
-        View,
-} from 'react-native';
+import {Button, Linking, SectionList, Text, View} from 'react-native';
 import * as React from 'react';
-import {BoldText} from '../components/BoldText';
 import styled from 'styled-components';
-import {BiggerText} from '../components/BiggerText';
-import {SmallerText} from '../components/SmallerText';
+import {BiggerText, BoldText, SmallerText} from '../components/Texts';
 
 const Notice = styled(View)`
         padding: 20px;
@@ -27,19 +18,7 @@ const NotButton = styled(Button)`
         margin: 10px;
 `;
 
-const Donts = () => (
-        <BoldText style={{textAlign: 'center'}}>
-                This application does NOT
-        </BoldText>
-);
-
 const Sep = () => <View style={{margin: 2}} />;
-
-// const Dos = () => (
-//         <BoldText style={{textAlign: 'center'}}>
-//                 This application MIGHT
-//         </BoldText>
-// );
 
 export const AboutScreen = ({navigation}) => (
         <View

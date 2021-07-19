@@ -6,9 +6,9 @@ import {
         Text,
         View,
 } from 'react-native';
-import {BoldText} from '../components/BoldText';
 import {Separator} from '../components/Separator';
 import * as React from 'react';
+import {BoldText} from '../components/Texts';
 
 const FrontView = styled(View)`
         background-color: royalblue;

@@ -39,6 +39,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   See https://reuse.software.
 * Added React Styled Components.
   See https://styled-components.com/.
+* Added main menu with Home, 5Q and About pages/screens.
+* Home page
+* 5Q card with front and back.
+* About page should be improved.
 ### Changed
 ### Removed
 ### Fixed

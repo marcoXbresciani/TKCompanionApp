@@ -1,4 +1,15 @@
 node_modules/
-yarn-error.log
-android/app/build/*
-android/.gradle/*
+.expo/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# macOS
+.DS_Store
+/.idea/consolestorage/solr_region.json
+/.idea/consolestorage/flexible_search_region.json

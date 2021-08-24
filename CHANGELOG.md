@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   See http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions
 * Introduced [ADR-001](doc/arch/adr-001.md) for using proper commit
   message rules.
-  See https://chris.beams.io/posts/git-commit/#seven-rules .
+  See https://chris.beams.io/posts/git-commit/#seven-rules.
 * Introduced [ADR-002](doc/arch/adr-002.md) for using EditorConfig
   configuration.
   See https://editorconfig.org.

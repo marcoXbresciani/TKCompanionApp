@@ -19,40 +19,25 @@
  *
  * SPDX-License-Identifier: GFDL-1.3-or-later
  */
-import { Text, View } from "react-native";
+import { SafeAreaView, StatusBar, View } from "react-native";
 import * as React from "react";
-import styled from "styled-components";
+import Constants from "expo-constants";
 import PropTypes from "prop-types";
 
-const Container = styled(View)`
-        flex-direction: row;
-        margin: 10px 0;
-`;
-
-const Line = styled(View)`
-        background-color: black;
-        height: 1px;
-        flex: 1;
-        margin: 3px 0 0 0;
-        align-self: center;
-`;
-
-const Content = styled(Text)`
-        align-self: center;
-        font-style: italic;
-        padding-left: 5px;
-        padding-right: 5px;
-        color: #de602b;
-`;
-
-export const Separator: React.FC = ({ children }) => (
-        <Container>
-                <Line />
-                <Content>{children}</Content>
-                <Line />
-        </Container>
+const DefaultScreen: React.FunctionComponent = ({ children }) => (
+        <SafeAreaView
+                style={{
+                        alignItems: "center",
+                        flex: 1,
+                        justifyContent: "center",
+                        marginTop: Constants.statusBarHeight,
+                }}
+        >
+                <StatusBar />
+                <View>{children}</View>
+        </SafeAreaView>
 );
 
-export default Separator;
+export default DefaultScreen;
 
-Separator.propTypes = { children: PropTypes.node.isRequired };
+DefaultScreen.propTypes = { children: PropTypes.node.isRequired };

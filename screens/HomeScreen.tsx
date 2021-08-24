@@ -19,40 +19,24 @@
  *
  * SPDX-License-Identifier: GFDL-1.3-or-later
  */
-import { Text, View } from "react-native";
+import { SafeAreaView, StatusBar, View } from "react-native";
 import * as React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
+import { CenteredText, TitleText } from "../components/Texts";
 
-const Container = styled(View)`
-        flex-direction: row;
-        margin: 10px 0;
-`;
-
-const Line = styled(View)`
-        background-color: black;
-        height: 1px;
-        flex: 1;
-        margin: 3px 0 0 0;
-        align-self: center;
-`;
-
-const Content = styled(Text)`
-        align-self: center;
-        font-style: italic;
-        padding-left: 5px;
-        padding-right: 5px;
-        color: #de602b;
-`;
-
-export const Separator: React.FC = ({ children }) => (
-        <Container>
-                <Line />
-                <Content>{children}</Content>
-                <Line />
-        </Container>
+const HomeScreen: React.FunctionComponent = () => (
+        <SafeAreaView
+                style={{
+                        flex: 1,
+                        alignItems: "center",
+                        justifyContent: "center",
+                }}
+        >
+                <StatusBar />
+                <View>
+                        <TitleText>Toyota Kata Companion App</TitleText>
+                        <CenteredText>0.1.0</CenteredText>
+                </View>
+        </SafeAreaView>
 );
 
-export default Separator;
-
-Separator.propTypes = { children: PropTypes.node.isRequired };
+export default HomeScreen;

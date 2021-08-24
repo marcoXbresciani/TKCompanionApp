@@ -14,120 +14,101 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with Foobar. If not, see <https://www.gnu.org/licenses/>.
+ *
+ * SPDX-FileCopyrightText: 2021 Marco Bresciani
+ *
+ * SPDX-License-Identifier: GFDL-1.3-or-later
  */
-import * as React from 'react';
-import {Text, View} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
-import {createStackNavigator} from '@react-navigation/stack';
-import {Front5QScreen} from './screens/Front5QScreen';
-import {AboutScreen} from './screens/AboutScreen';
-import {Back5QScreen} from './screens/Back5QScreen';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import {TitleText} from './components/Texts';
-
-function HomeScreen() {
-        return (
-                <View
-                        style={{
-                                flex: 1,
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                        }}>
-                        <TitleText>Toyota Kata Companion App</TitleText>
-                        <Text>0.1.0</Text>
-                </View>
-        );
-}
-
-const Stack = createStackNavigator();
-
-function FiveQCard() {
-        return (
-                <Stack.Navigator>
-                        <Stack.Screen
-                                name="Front"
-                                component={Front5QScreen}
-                                options={{
-                                        headerShown: false,
-                                }}
-                        />
-                        <Stack.Screen
-                                name="Back"
-                                component={Back5QScreen}
-                                options={{
-                                        headerShown: false,
-                                }}
-                        />
-                </Stack.Navigator>
-        );
-}
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+import AboutScreen from "./screens/AboutScreen";
+import Ionicons from "react-native-vector-icons/Ionicons";
+import KTSScreen from "./screens/KTSScreen";
+import FrontTKCScreen from "./screens/tkc/FrontTKCScreen";
+import HomeScreen from "./screens/HomeScreen";
+import FiveQCard from "./screens/5qcard/FiveQCard";
+import CTTPScreen from "./screens/tkc/BackTKCScreen";
+import TKC from "./screens/tkc/TKC";
 
 const Tab = createMaterialBottomTabNavigator();
 
-function App() {
+const TabIcon5Q = ({ color }: { color: string }) => (
+        <Ionicons
+                name="people-circle-outline"
+                color={color}
+                size={25}
+        />
+);
+
+const TabIconAbout = ({ color }: { color: string }) => (
+        <Ionicons
+                name="information-circle-outline"
+                color={color}
+                size={25}
+        />
+);
+
+const TabIconHome = ({ color }: { color: string }) => (
+        <Ionicons name="home" color={color} size={25} />
+);
+
+const TabIconKTS = ({ color }: { color: string }) => (
+        <Ionicons name="warning-outline" color={color} size={25} />
+);
+
+const TabIconTKC = ({ color }: { color: string }) => (
+        <Ionicons name="book-outline" color={color} size={25} />
+);
+
+const App: React.FunctionComponent = () => {
         return (
                 <NavigationContainer>
-                        <Tab.Navigator initialRouteName="Home">
+                        <Tab.Navigator
+                                backBehavior="history"
+                                barStyle={{
+                                        backgroundColor: "royalblue",
+                                }}
+                                initialRouteName="Home"
+                        >
                                 <Tab.Screen
                                         name="Home"
                                         options={{
-                                                tabBarIcon: ({
-                                                        color,
-                                                }) => (
-                                                        <Ionicons
-                                                                name="home"
-                                                                color={
-                                                                        color
-                                                                }
-                                                                size={
-                                                                        25
-                                                                }
-                                                        />
-                                                ),
+                                                tabBarIcon: TabIconHome,
                                         }}
                                         component={HomeScreen}
                                 />
                                 <Tab.Screen
-                                        name="5Q"
+                                        name="5Q Card"
                                         options={{
-                                                tabBarIcon: ({
-                                                        color,
-                                                }) => (
-                                                        <Ionicons
-                                                                name="people-circle-outline"
-                                                                color={
-                                                                        color
-                                                                }
-                                                                size={
-                                                                        25
-                                                                }
-                                                        />
-                                                ),
+                                                tabBarIcon: TabIcon5Q,
                                         }}
                                         component={FiveQCard}
+                                />
+                                <Tab.Screen
+                                        name="KTS"
+                                        options={{
+                                                tabBarIcon: TabIconKTS,
+                                        }}
+                                        component={KTSScreen}
+                                />
+                                <Tab.Screen
+                                        name="TKC"
+                                        options={{
+                                                tabBarIcon: TabIconTKC,
+                                        }}
+                                        component={TKC}
                                 />
                                 <Tab.Screen
                                         name="About"
                                         component={AboutScreen}
                                         options={{
-                                                tabBarIcon: ({
-                                                        color,
-                                                }) => (
-                                                        <Ionicons
-                                                                name="information-circle-outline"
-                                                                color={
-                                                                        color
-                                                                }
-                                                                size={
-                                                                        25
-                                                                }
-                                                        />
-                                                ),
+                                                tabBarIcon: TabIconAbout,
                                         }}
                                 />
                         </Tab.Navigator>
                 </NavigationContainer>
         );
-}
+};
+
 export default App;

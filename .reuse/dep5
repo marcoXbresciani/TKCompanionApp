@@ -7,95 +7,27 @@ Files: .idea/*
 Copyright: 2021 Marco Bresciani
 License: CC0-1.0
 
-Files: __tests__/*
+Files: .expo-shared/*
 Copyright: 2021 Marco Bresciani
-License: GPL-3.0-or-later
-
-Files: android/app/src/*
-Copyright: 2021 Marco Bresciani
-License: GPL-3.0-or-later
-
-Files: android/app/_BUCK
-Copyright: 2021 Marco Bresciani
-License: FSFAP
-
-Files: android/app/build.gradle
-Copyright: 2021 Marco Bresciani
-License: FSFAP
-
-Files: android/app/build_defs.bzl
-Copyright: 2021 Marco Bresciani
-License: FSFAP
-
-Files: android/app/debug.keystore
-Copyright: 2021 Marco Bresciani
-License: FSFAP
-
-Files: android/app/proguard-rules.pro
-Copyright: 2021 Marco Bresciani
-License: FSFAP
-
-Files: android/gradle/*
-Copyright: 2015 the original author or authors.
-License: Apache-2.0
-
-Files: android/build.gradle
-Copyright: 2015 the original author or authors.
-License: Apache-2.0
-
-Files: android/gradle.properties
-Copyright: 2015 the original author or authors.
-License: Apache-2.0
-
-Files: android/gradlew
-Copyright: 2015 the original author or authors.
-License: Apache-2.0
-
-Files: android/gradlew.bat
-Copyright: 2015 the original author or authors.
-License: Apache-2.0
-
-Files: android/settings.gradle
-Copyright: 2021 Marco Bresciani
-License: FSFAP
-
-Files: ios/*
-Copyright: 2021 Marco Bresciani
-License: GPL-3.0-or-later
-
-Files: .buckconfig
-Copyright: 2021 Marco Bresciani
-License: FSFAP
+License: CC0-1.0
 
 Files: .editorconfig
 Copyright: 2021 Marco Bresciani
 License: FSFAP
 
-Files: .eslintrc.js
+Files: .eslint*
 Copyright: 2021 Marco Bresciani
-License: FSFAP
+License: CC0-1.0
 
-Files: .flowconfig
+Files: .prettierrc
 Copyright: 2021 Marco Bresciani
-License: FSFAP
+License: CC0-1.0
 
 Files: .gitignore
 Copyright: 2021 Marco Bresciani
 License: CC0-1.0
 
-Files: .hgignore
-Copyright: 2021 Marco Bresciani
-License: CC0-1.0
-
-Files: .prettierrc.js
-Copyright: 2021 Marco Bresciani
-License: FSFAP
-
-Files: .watchmanconfig
-Copyright: 2021 Marco Bresciani
-License: FSFAP
-
-Files: App.tsx
+Files: assets/*
 Copyright: 2021 Marco Bresciani
 License: GPL-3.0-or-later
 
@@ -107,17 +39,13 @@ Files: babel.config.js
 Copyright: 2021 Marco Bresciani
 License: FSFAP
 
-Files: index.js
-Copyright: 2021 Marco Bresciani
-License: GPL-3.0-or-later
-
-Files: metro.config.js
-Copyright: 2021 Marco Bresciani
-License: FSFAP
-
 Files: package.json
 Copyright: 2021 Marco Bresciani
 License: FSFAP
+
+Files: package-lock.json
+Copyright: 2021 Marco Bresciani
+License: CC0-1.0
 
 Files: tsconfig.json
 Copyright: 2021 Marco Bresciani

@@ -25,10 +25,8 @@ import { createMaterialBottomTabNavigator } from "@react-navigation/material-bot
 import AboutScreen from "./screens/AboutScreen";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import KTSScreen from "./screens/KTSScreen";
-import FrontTKCScreen from "./screens/tkc/FrontTKCScreen";
 import HomeScreen from "./screens/HomeScreen";
 import FiveQCard from "./screens/5qcard/FiveQCard";
-import CTTPScreen from "./screens/tkc/BackTKCScreen";
 import TKC from "./screens/tkc/TKC";
 
 const Tab = createMaterialBottomTabNavigator();

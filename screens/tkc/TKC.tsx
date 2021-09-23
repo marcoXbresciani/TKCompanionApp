@@ -20,8 +20,6 @@
  * SPDX-License-Identifier: GFDL-1.3-or-later
  */
 import { createStackNavigator } from "@react-navigation/stack";
-import Front5QScreen from "../5qcard/Front5QScreen";
-import Back5QScreen from "../5qcard/Back5QScreen";
 import * as React from "react";
 import FrontTKCScreen from "./FrontTKCScreen";
 import BackTKCScreen from "./BackTKCScreen";

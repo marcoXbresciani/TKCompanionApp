@@ -72,71 +72,78 @@ const QuestionsText = styled(Text)`
         padding: 1% 0;
 `;
 
-const navigation = useNavigation();
+const Front5QScreen: React.FunctionComponent = () => {
+        const navigation = useNavigation();
 
-const Front5QScreen: React.FunctionComponent = () => (
-        <DefaultScreen>
-                <FrontView>
-                        <View>
-                                <CKText>Coaching Kata</CKText>
-                        </View>
-                        <QuestionsView>
-                                <TitleText>
-                                        The Five Questions
-                                </TitleText>
-                                <QuestionsText>
-                                        ① What is the{" "}
-                                        <BoldText>
-                                                Target Condition
-                                        </BoldText>
-                                        ?
-                                </QuestionsText>
-                                <QuestionsText>
-                                        ② What is the{" "}
-                                        <BoldText>
-                                                Actual Condition
-                                        </BoldText>{" "}
-                                        now?
-                                </QuestionsText>
-                                <Pressable
-                                        onPress={() =>
-                                                navigation.navigate(
-                                                        "Back5Q",
-                                                )
-                                        }
-                                >
-                                        <Separator>
-                                                (Click here to Turn Card
-                                                Over)
-                                        </Separator>
-                                </Pressable>
-                                <QuestionsText>
-                                        ③ What{" "}
-                                        <BoldText>Obstacles</BoldText>{" "}
-                                        do you think are preventing you
-                                        from reaching the target
-                                        condition?{"\n"}
-                                        Which *one* are you addressing
-                                        now?
-                                </QuestionsText>
-                                <QuestionsText>
-                                        ④ What is your{" "}
-                                        <BoldText>Next Step</BoldText>?
-                                        (Next experiment)
-                                        {"\n"}
-                                        What do you expect?
-                                </QuestionsText>
-                                <QuestionsText>
-                                        ⑤ How quickly can we go and see
-                                        what we{" "}
-                                        <BoldText>
-                                                Have Learned
-                                        </BoldText>{" "}
-                                        from taking that step?
-                                </QuestionsText>
-                        </QuestionsView>
-                </FrontView>
-        </DefaultScreen>
-);
+        return (
+                <DefaultScreen>
+                        <FrontView>
+                                <View>
+                                        <CKText>Coaching Kata</CKText>
+                                </View>
+                                <QuestionsView>
+                                        <TitleText>
+                                                The Five Questions
+                                        </TitleText>
+                                        <QuestionsText>
+                                                ① What is the{" "}
+                                                <BoldText>
+                                                        Target Condition
+                                                </BoldText>
+                                                ?
+                                        </QuestionsText>
+                                        <QuestionsText>
+                                                ② What is the{" "}
+                                                <BoldText>
+                                                        Actual Condition
+                                                </BoldText>{" "}
+                                                now?
+                                        </QuestionsText>
+                                        <Pressable
+                                                onPress={() =>
+                                                        navigation.navigate(
+                                                                "Back5Q",
+                                                        )
+                                                }
+                                        >
+                                                <Separator>
+                                                        (Click here to
+                                                        Turn Card Over)
+                                                </Separator>
+                                        </Pressable>
+                                        <QuestionsText>
+                                                ③ What{" "}
+                                                <BoldText>
+                                                        Obstacles
+                                                </BoldText>{" "}
+                                                do you think are
+                                                preventing you from
+                                                reaching the target
+                                                condition?{"\n"}
+                                                Which *one* are you
+                                                addressing now?
+                                        </QuestionsText>
+                                        <QuestionsText>
+                                                ④ What is your{" "}
+                                                <BoldText>
+                                                        Next Step
+                                                </BoldText>
+                                                ? (Next experiment)
+                                                {"\n"}
+                                                What do you expect?
+                                        </QuestionsText>
+                                        <QuestionsText>
+                                                ⑤ How quickly can we go
+                                                and see what we{" "}
+                                                <BoldText>
+                                                        Have Learned
+                                                </BoldText>{" "}
+                                                from taking that step?
+                                        </QuestionsText>
+                                </QuestionsView>
+                        </FrontView>
+                </DefaultScreen>
+        );
+};
 
 export default Front5QScreen;

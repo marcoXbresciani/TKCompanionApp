@@ -36,57 +36,62 @@ const Code = styled(Text)`
         padding: 5px;
 `;
 
-const navigation = useNavigation();
+const FrontTKCScreen: React.FunctionComponent = () => {
+        const navigation = useNavigation();
 
-const FrontTKCScreen: React.FunctionComponent = () => (
-        <DefaultScreen>
-                <View>
-                        <BoldCentered>The Kata Code</BoldCentered>
-                        <Text>
-                                <SmallerText> </SmallerText>
-                        </Text>
-
-                        <SectionList
-                                // style={{ height: "fitContent" }}
-                                ItemSeparatorComponent={Sep}
-                                renderItem={({ item }) => (
-                                        <Code>{item.key}</Code>
-                                )}
-                                sections={[
-                                        {
-                                                data: [
-                                                        {
-                                                                key: "Conditions are unpredictable.",
-                                                        },
-                                                        {
-                                                                key: "Enjoy the learning zone.",
-                                                        },
-                                                        {
-                                                                key: "Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
-                                                        },
-                                                        {
-                                                                key: "Beginners practice Starter Kata exactly.",
-                                                        },
-                                                        {
-                                                                key: "Have a coach, be a coach.",
-                                                        },
-                                                ],
-                                        },
-                                ]}
-                        />
-
-                        <Pressable
-                                onPress={() =>
-                                        navigation.navigate("BackTKC")
-                                }
-                        >
-                                <Separator>
-                                        (See Changing thinking through
-                                        practice)
-                                </Separator>
-                        </Pressable>
-                </View>
-        </DefaultScreen>
-);
+        return (
+                <DefaultScreen>
+                        <View>
+                                <BoldCentered>
+                                        The Kata Code
+                                </BoldCentered>
+                                <Text>
+                                        <SmallerText> </SmallerText>
+                                </Text>
+                                <SectionList // style={{ height: "fitContent" }}
+                                        ItemSeparatorComponent={Sep}
+                                        renderItem={({ item }) => (
+                                                <Code>{item.key}</Code>
+                                        )}
+                                        sections={[
+                                                {
+                                                        data: [
+                                                                {
+                                                                        key: "Conditions are unpredictable.",
+                                                                },
+                                                                {
+                                                                        key: "Enjoy the learning zone.",
+                                                                },
+                                                                {
+                                                                        key: "Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
+                                                                },
+                                                                {
+                                                                        key: "Beginners practice Starter Kata exactly.",
+                                                                },
+                                                                {
+                                                                        key: "Have a coach, be a coach.",
+                                                                },
+                                                        ],
+                                                },
+                                        ]}
+                                />
+                                <Pressable
+                                        onPress={() =>
+                                                navigation.navigate(
+                                                        "BackTKC",
+                                                )
+                                        }
+                                >
+                                        {" "}
+                                        <Separator>
+                                                {" "}
+                                                (See Changing thinking
+                                                through practice){" "}
+                                        </Separator>{" "}
+                                </Pressable>{" "}
+                        </View>{" "}
+                </DefaultScreen>
+        );
+};
 
 export default FrontTKCScreen;

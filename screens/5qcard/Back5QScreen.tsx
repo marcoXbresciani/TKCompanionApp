@@ -71,49 +71,67 @@ const Returner = styled(Text)`
         text-align: right;
 `;
 
-const navigation = useNavigation();
+const Back5QScreen: React.FunctionComponent = () => {
+        const navigation = useNavigation();
 
-const Back5QScreen: React.FunctionComponent = () => (
-        <DefaultScreen>
-                <BackView>
-                        <TitleText>
-                                <BiggerText>
-                                        Reflect on the Last Step
-                                </BiggerText>
-                        </TitleText>
-                        <QuoteText>
-                                Because you don&apos;t actually know
-                                what the result of a step will be!
-                        </QuoteText>
-                        <QuestionsView>
-                                <QuestionsText>
-                                        1) What did you plan as your{" "}
-                                        <BoldText>Last Step</BoldText>?
-                                </QuestionsText>
-                                <QuestionsText>
-                                        2) What did you{" "}
-                                        <BoldText>Expect</BoldText>?
-                                </QuestionsText>
-                                <QuestionsText>
-                                        3) What{" "}
-                                        <BoldText>
-                                                Actually Happened
-                                        </BoldText>
-                                        ?
-                                </QuestionsText>
-                                <QuestionsText>
-                                        4) What did you{" "}
-                                        <BoldText>Learn</BoldText>?
-                                </QuestionsText>
-                        </QuestionsView>
-                        <Pressable onPress={() => navigation.goBack()}>
-                                <Line />
-                                <Returner>
-                                        Return to question 3
-                                </Returner>
-                        </Pressable>
-                </BackView>
-        </DefaultScreen>
-);
+        return (
+                <DefaultScreen>
+                        <BackView>
+                                <TitleText>
+                                        <BiggerText>
+                                                Reflect on the Last Step
+                                        </BiggerText>
+                                </TitleText>
+                                <QuoteText>
+                                        Because you don&apos;t actually
+                                        know what the result of a step
+                                        will be!
+                                </QuoteText>
+                                <QuestionsView>
+                                        <QuestionsText>
+                                                1) What did you plan as
+                                                your{" "}
+                                                <BoldText>
+                                                        Last Step
+                                                </BoldText>
+                                                ?
+                                        </QuestionsText>
+                                        <QuestionsText>
+                                                2) What did you{" "}
+                                                <BoldText>
+                                                        Expect
+                                                </BoldText>
+                                                ?
+                                        </QuestionsText>
+                                        <QuestionsText>
+                                                3) What{" "}
+                                                <BoldText>
+                                                        Actually
+                                                        Happened
+                                                </BoldText>
+                                                ?
+                                        </QuestionsText>
+                                        <QuestionsText>
+                                                4) What did you{" "}
+                                                <BoldText>
+                                                        Learn
+                                                </BoldText>
+                                                ?
+                                        </QuestionsText>
+                                </QuestionsView>
+                                <Pressable
+                                        onPress={() =>
+                                                navigation.goBack()
+                                        }
+                                >
+                                        <Line />
+                                        <Returner>
+                                                Return to question 3
+                                        </Returner>
+                                </Pressable>
+                        </BackView>
+                </DefaultScreen>
+        );
+};
 
 export default Back5QScreen;

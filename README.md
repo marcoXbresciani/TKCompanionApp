@@ -11,7 +11,7 @@ Documentation License".
 This is a freely licensed work, as explained in the Definition of Free
 Cultural Works.
 
-SPDX-FileCopyrightText: 2020 Marco Bresciani
+SPDX-FileCopyrightText: 2021 Marco Bresciani
 
 SPDX-License-Identifier: GFDL-1.3-or-later
 -->
@@ -53,7 +53,7 @@ If it'll ever work.
         1. [9. TERMINATION](#9-termination)
         1. [10. FUTURE REVISIONS OF THIS LICENSE](#10-future-revisions-of-this-license)
         1. [11. RELICENSING](#11-relicensing)
-    1. [ADDENDUM: How to use this License for your documents](#addendum;-how-to-use-this-license-for-your-documents)
+    1. [ADDENDUM: How to use this License for your documents](#addendum-how-to-use-this-license-for-your-documents)
 
 ## Background
 

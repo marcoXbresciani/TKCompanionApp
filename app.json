@@ -1,31 +1,27 @@
 {
     "expo": {
-        "name": "TKCompanionApp",
-        "slug": "TKCompanionApp",
-        "version": "0.1.0",
-        "orientation": "portrait",
-        "icon": "./assets/icon.png",
-        "splash": {
-            "image": "./assets/splash.png",
-            "resizeMode": "contain",
-            "backgroundColor": "#ffffff"
-        },
-        "updates": {
-            "fallbackToCacheTimeout": 0
+        "android": {
+            "adaptiveIcon": {
+                "backgroundColor": "#FFFFFF",
+                "foregroundImage": "./assets/adaptive-icon.png"
+            }
         },
         "assetBundlePatterns": ["**/*"],
+        "description": "This app wants to be a short and small helper for Toyota Kata practitioners.",
+        "githubUrl": "https://github.com/marcoXbresciani/TKCompanionApp",
+        "icon": "./assets/icon.png",
         "ios": {
             "supportsTablet": true
         },
-        "android": {
-            "adaptiveIcon": {
-                "foregroundImage": "./assets/adaptive-icon.png",
-                "backgroundColor": "#FFFFFF"
-            }
+        "name": "TKCompanionApp",
+        "orientation": "portrait",
+        "slug": "TKCompanionApp",
+        "updates": {
+            "fallbackToCacheTimeout": 0
         },
+        "version": "0.1.0",
         "web": {
             "favicon": "./assets/favicon.png"
-        },
-        "description": "This app wants to be a short and small helper for Toyota Kata practitioners."
+        }
     }
 }

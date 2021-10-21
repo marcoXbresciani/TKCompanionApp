@@ -92,11 +92,9 @@ const BackTKCScreen: React.FunctionComponent = () => {
                                                 )
                                         }
                                 >
-                                        {" "}
                                         <Separator>
-                                                {" "}
                                                 (Back to Toyota Kata
-                                                Code){" "}
+                                                Code)
                                         </Separator>
                                 </Pressable>
                                 <TKButton
@@ -105,8 +103,8 @@ const BackTKCScreen: React.FunctionComponent = () => {
                                                         "http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf",
                                                 );
                                         }}
-                                />{" "}
-                        </View>{" "}
+                                />
+                        </View>
                 </DefaultScreen>
         );
 };

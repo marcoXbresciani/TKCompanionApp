@@ -82,14 +82,12 @@ const FrontTKCScreen: React.FunctionComponent = () => {
                                                 )
                                         }
                                 >
-                                        {" "}
                                         <Separator>
-                                                {" "}
                                                 (See Changing thinking
-                                                through practice){" "}
-                                        </Separator>{" "}
-                                </Pressable>{" "}
-                        </View>{" "}
+                                                through practice)
+                                        </Separator>
+                                </Pressable>
+                        </View>
                 </DefaultScreen>
         );
 };

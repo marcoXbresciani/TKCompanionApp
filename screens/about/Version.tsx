@@ -19,23 +19,20 @@
  *
  * SPDX-License-Identifier: GFDL-1.3-or-later
  */
-import { SafeAreaView, StatusBar, View } from "react-native";
 import * as React from "react";
-import Version from "./about/Version";
+import { CenteredText, TitleText } from "../../components/Texts";
+import Constants from "expo-constants";
 
-const HomeScreen: React.FunctionComponent = () => (
-        <SafeAreaView
-                style={{
-                        flex: 1,
-                        alignItems: "center",
-                        justifyContent: "center",
-                }}
-        >
-                <StatusBar />
-                <View>
-                        <Version />
-                </View>
-        </SafeAreaView>
-);
-
-export default HomeScreen;
+const Version: React.FunctionComponent = () => {
+        const version = Constants.manifest?.version || "";
+        const name = Constants.manifest?.name || "TKCompanionApp";
+        const description = Constants.manifest?.description || "";
+        return (
+                <>
+                        <TitleText>{name}</TitleText>
+                        <CenteredText>{version}</CenteredText>
+                        <CenteredText>{description}</CenteredText>
+                </>
+        );
+};
+export default Version;

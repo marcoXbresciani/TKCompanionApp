@@ -39,6 +39,14 @@ Files: babel.config.js
 Copyright: 2021 Marco Bresciani
 License: FSFAP
 
+Files: img/*
+Copyright: 2021 Marco Bresciani
+License: GPL-3.0-or-later
+
+Files: marcoXbresciani.tkcompanionapp.yml
+Copyright: 2021 Marco Bresciani
+License: GPL-3.0-or-later
+
 Files: package.json
 Copyright: 2021 Marco Bresciani
 License: FSFAP

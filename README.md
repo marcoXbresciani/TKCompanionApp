@@ -85,8 +85,9 @@ From the Toyota Kata website:
 ![About](img/about.png)
 
 ## Maintainers
-This document has been started by Marco Bresciani and is currently
-maintained by Marco Bresciani.
+The app has been started by Marco Bresciani and is currently maintained
+by Marco Bresciani.
+Same for this document.
 
 ## Contributing
 ```text

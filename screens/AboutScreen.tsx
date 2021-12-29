@@ -82,6 +82,28 @@ const AboutScreen: React.FunctionComponent = () => (
                         )}
                         sections={[
                                 {
+                                        title: "This application MIGHT",
+                                        color: "yellowgreen",
+                                        data: [
+                                                {
+                                                        key: "be fun",
+                                                        uri: "http://www-personal.umich.edu/~mrother/Extras.html",
+                                                },
+                                                {
+                                                        key: "help you coaching Kata",
+                                                        uri: "http://www-personal.umich.edu/~mrother/The_Coaching_Kata.html",
+                                                },
+                                                {
+                                                        key: "help you improving",
+                                                        uri: "http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html",
+                                                },
+                                                {
+                                                        key: "teach you scientific thinking",
+                                                        uri: "http://www-personal.umich.edu/~mrother/Challenge.html",
+                                                },
+                                        ],
+                                },
+                                {
                                         title: "This application does NOT",
                                         color: "crimson",
                                         data: [
@@ -108,28 +130,6 @@ const AboutScreen: React.FunctionComponent = () => (
                                                 {
                                                         key: "spy on you",
                                                         uri: "https://www.eff.org/issues/privacy",
-                                                },
-                                        ],
-                                },
-                                {
-                                        title: "This application MIGHT",
-                                        color: "yellowgreen",
-                                        data: [
-                                                {
-                                                        key: "be fun",
-                                                        uri: "http://www-personal.umich.edu/~mrother/Extras.html",
-                                                },
-                                                {
-                                                        key: "help you coaching Kata",
-                                                        uri: "http://www-personal.umich.edu/~mrother/The_Coaching_Kata.html",
-                                                },
-                                                {
-                                                        key: "help you improving",
-                                                        uri: "http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html",
-                                                },
-                                                {
-                                                        key: "teach you scientific thinking",
-                                                        uri: "http://www-personal.umich.edu/~mrother/Challenge.html",
                                                 },
                                         ],
                                 },

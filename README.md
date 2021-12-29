@@ -130,8 +130,8 @@ by Marco Bresciani.
 Same for this document.
 
 ## Contributing
-Find latest NodeJS version ([17.3.0](https://nodejs.org/dist/latest/),
-as of 2021-12-29) for your system.
+Find latest LTS NodeJS ([16.13.1](https://nodejs.org/dist/latest/), as
+of 2021-12-29) for your system.
 Then go to this project main folder (also containing this same file
 you're reading) and run `npm -g install yarn`.
 This done, run `yarn install` and you should see all the needed

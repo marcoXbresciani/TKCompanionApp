@@ -21,7 +21,7 @@
         "updates": {
             "fallbackToCacheTimeout": 0
         },
-        "version": "0.1.0",
+        "version": "0.1.2",
         "web": {
             "favicon": "./assets/favicon.png"
         }

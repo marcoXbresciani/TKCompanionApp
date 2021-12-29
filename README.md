@@ -16,20 +16,19 @@ SPDX-FileCopyrightText: 2021 Marco Bresciani
 SPDX-License-Identifier: GFDL-1.3-or-later
 -->
 # TKCompanionApp
+
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-[![GPL logo](https://www.gnu.org/graphics/gplv3-or-later.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
-[![GFDL logo](https://www.gnu.org/graphics/gfdl-logo.svg)](https://www.gnu.org/licenses/fdl.html)
 [![Markdown](https://img.shields.io/badge/made%20with-markdown-black?logo=markdown)](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
+[![It works](https://img.shields.io/badge/works%20on-my%20machine-informational)](https://blog.codinghorror.com/the-works-on-my-machine-certification-program/)
 [![REUSE compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)
 [![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational)](https://semver.org/)
-[![It works](https://img.shields.io/badge/works%20on-my%20machine-informational)](https://blog.codinghorror.com/the-works-on-my-machine-certification-program/)
-
-This is my very first experiment with React Native.
 
 This app wants to be a short and small helper for Toyota Kata
 practitioners.
+
 It will contain the Coaching Kata 5Q card, plus (possibly) more things
 and information.
+This is my very first experiment with React Native.
 If it'll ever work.
 
 ## Table of Contents
@@ -97,6 +96,26 @@ From the Toyota Kata website:
 > guidance of your coach.
 
 ## Install
+This app is currently built using React Native, through Expo framework,
+to make easier building the app for both Android and iOS from the same
+source code.
+
+Unfortunately, publishing the app on Google Play Store or on Apple App
+Store, requires money I don't have and don't want to spend: it's
+[one-time $25](https://support.google.com/googleplay/android-developer/answer/6112435?hl=en&ref_topic=3450769#zippy=%2Cstep-pay-registration-fee)
+for a Google Developer Account, and it's even
+[$99/year](https://developer.apple.com/support/enrollment/) for the
+Apple Developer Program.
+
+So, for now, you'll find this app only through the _F-Droid_ Free and
+Open Source Android App Repository.
+
+To install the app, you then need the F-Droid store app from the main
+site https://www.f-droid.org/ (you can find an easy QR Code to download
+it).
+Or you can download it from the Google Play Store (but why you should?).
+Then, open the F-Droid repository app and search for _TKCompanionApp_.
+Install it, and open it.
 
 ## Usage
 
@@ -111,18 +130,12 @@ by Marco Bresciani.
 Same for this document.
 
 ## Contributing
-```text
-  ,= ,-_-. =.
- ((_/)o o(\_))
-  `-'(. .)`-'
-      \_/
-```
-https://www.gnu.org/graphics/gnu-ascii2.html
-
-Copyright © 2004 Martin Dickopp
-
-Permission is given to copy or distribute (or both) the above ASCII
-image, with or without modifications.
+Find latest NodeJS version ([17.3.0](https://nodejs.org/dist/latest/),
+as of 2021-12-29) for your system.
+Then go to this project main folder (also containing this same file
+you're reading) and run `npm -g install yarn`.
+This done, run `yarn install` and you should see all the needed
+dependencies downloaded and installed through Yarn package manager.
 
 ### How to start
 From command line launch `yarn start` (or `npx react-native start`, but
@@ -134,8 +147,6 @@ life pitier and use `npx react-native run-android`) that will prepare
 and launch your app, connecting to the Metro thing above.
 
 ## License
-[![REUSE compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)
-
 Overall project license, in brief:
 [![GPL logo](https://www.gnu.org/graphics/gplv3-or-later.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 ```text

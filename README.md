@@ -18,6 +18,8 @@ SPDX-License-Identifier: FSFAP
 [![REUSE compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)
 [![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational)](https://semver.org/)
 
+![REUSE status](https://api.reuse.software/badge/github.com/marcoXbresciani/TKCompanionApp)](https://api.reuse.software/info/github.com/marcoXbresciani/TKCompanionApp)
+
 This app wants to be a short and small helper for Toyota Kata
 practitioners.
 

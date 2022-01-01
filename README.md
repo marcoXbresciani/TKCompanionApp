@@ -111,6 +111,7 @@ and launch your app, connecting to the Metro thing above.
 
 ## License
 [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
+This is a freely licensed work, as explained in the Definition of Free Cultural Works.
 
 Overall project license, in brief:
 [![GPL logo](https://www.gnu.org/graphics/gplv3-or-later.svg)](https://www.gnu.org/licenses/gpl-3.0.html)

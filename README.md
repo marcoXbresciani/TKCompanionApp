@@ -23,9 +23,6 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 [![REUSE compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)
 [![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational)](https://semver.org/)
 
-[![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
-[![GFDL](https://freedomdefined.org/upload/2/20/GFDL_black.png)]()
-
 This app wants to be a short and small helper for Toyota Kata
 practitioners.
 
@@ -151,6 +148,12 @@ life pitier and use `npx react-native run-android`) that will prepare
 and launch your app, connecting to the Metro thing above.
 
 ## License
+[![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
+[![GFDL](https://freedomdefined.org/upload/2/20/GFDL_black.png)]()
+
+This is a freely licensed work, as explained in the Definition of Free
+Cultural Works.
+
 Overall project license, in brief:
 [![GPL logo](https://www.gnu.org/graphics/gplv3-or-later.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 ```text
@@ -182,10 +185,8 @@ any later version published by the Free Software Foundation; with no
 Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
 A copy of the license is included in the section entitled "GNU Free
 Documentation License".
-
-This is a freely licensed work, as explained in the Definition of Free
-Cultural Works.
 ```
+
 ### GNU GENERAL PUBLIC LICENSE
 
 Version 3, 29 June 2007

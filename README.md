@@ -114,6 +114,7 @@ To install the app, you then need the F-Droid store app from the main
 site https://www.f-droid.org/ (you can find an easy QR Code to download
 it).
 Or you can download it from the Google Play Store (but why you should?).
+
 Then, open the F-Droid repository app and search for _TKCompanionApp_.
 Install it, and open it.
 

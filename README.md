@@ -23,6 +23,9 @@ SPDX-License-Identifier: GFDL-1.3-or-later
 [![REUSE compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)
 [![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational)](https://semver.org/)
 
+[![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
+[![GFDL](https://freedomdefined.org/upload/2/20/GFDL_black.png)]()
+
 This app wants to be a short and small helper for Toyota Kata
 practitioners.
 

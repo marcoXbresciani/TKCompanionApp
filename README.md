@@ -131,7 +131,7 @@ with TKCompanionApp. If not, see <https://www.gnu.org/licenses/>.
 ```
 
 This document-specific license, in brief:
-[![FSFAP](https://www.gnu.org/graphics/gfdl-logo.svg)](https://www.gnu.org/licenses/fdl.html)
+[![FSFAP](https://img.shields.io/badge/license-FSFAP-lightgrey)](https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html)
 ```text
 © 2021-2022 Marco Bresciani
 

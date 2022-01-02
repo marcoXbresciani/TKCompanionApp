@@ -4,61 +4,61 @@ Upstream-Contact: Marco Bresciani <marcobresciani_1974@libero.it>
 Source:
 
 Files: .idea/*
-Copyright: 2021 Marco Bresciani
-License: CC0-1.0
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
 
 Files: .expo-shared/*
-Copyright: 2021 Marco Bresciani
-License: CC0-1.0
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
 
 Files: .editorconfig
-Copyright: 2021 Marco Bresciani
+Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
 Files: .eslint*
-Copyright: 2021 Marco Bresciani
-License: CC0-1.0
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
 
 Files: .prettierrc
-Copyright: 2021 Marco Bresciani
-License: CC0-1.0
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
 
 Files: .gitignore
-Copyright: 2021 Marco Bresciani
-License: CC0-1.0
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
 
 Files: assets/*
-Copyright: 2021 Marco Bresciani
+Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: app.json
-Copyright: 2021 Marco Bresciani
+Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: babel.config.js
-Copyright: 2021 Marco Bresciani
+Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
 Files: img/*
-Copyright: 2021 Marco Bresciani
+Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: marcoXbresciani.tkcompanionapp.yml
-Copyright: 2021 Marco Bresciani
+Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: package.json
-Copyright: 2021 Marco Bresciani
+Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
 Files: package-lock.json
-Copyright: 2021 Marco Bresciani
-License: CC0-1.0
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
 
 Files: tsconfig.json
-Copyright: 2021 Marco Bresciani
+Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
 Files: yarn.lock
-Copyright: 2021 Marco Bresciani
-License: CC0-1.0
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP

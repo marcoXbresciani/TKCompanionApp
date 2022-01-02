@@ -15,10 +15,8 @@ SPDX-License-Identifier: FSFAP
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![Markdown](https://img.shields.io/badge/made%20with-markdown-black?logo=markdown)](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
 [![It works](https://img.shields.io/badge/works%20on-my%20machine-informational)](https://blog.codinghorror.com/the-works-on-my-machine-certification-program/)
-[![REUSE compliant](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)
-[![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational)](https://semver.org/)
-
 [![REUSE status](https://api.reuse.software/badge/github.com/marcoXbresciani/TKCompanionApp)](https://api.reuse.software/info/github.com/marcoXbresciani/TKCompanionApp)
+[![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational)](https://semver.org/)
 
 This app wants to be a short and small helper for Toyota Kata
 practitioners.
@@ -111,7 +109,7 @@ and launch your app, connecting to the Metro thing above.
 
 ## License
 [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
-This is a freely licensed work, as explained in the Definition of Free Cultural Works.
+This is a freely licensed work, as explained in the [Definition of Free Cultural Works](https://freedomdefined.org/Definition).
 
 Overall project license, in brief:
 [![GPL logo](https://www.gnu.org/graphics/gplv3-or-later.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
@@ -132,6 +130,7 @@ Public License for more details.
 You should have received a copy of the GNU General Public License along
 with TKCompanionApp. If not, see <https://www.gnu.org/licenses/>.
 ```
+See `LICENSES` folder or `COPYING` file, for the whole license text.
 
 This document-specific license, in brief:
 [![FSFAP](https://img.shields.io/badge/license-FSFAP-lightgrey)](https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html)

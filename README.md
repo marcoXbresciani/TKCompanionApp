@@ -134,7 +134,7 @@ with TKCompanionApp. If not, see <https://www.gnu.org/licenses/>.
 See `LICENSES` folder or `COPYING` file, for the whole license text.
 
 This document-specific license, in brief:
-[![FSFAP](https://img.shields.io/badge/license-FSFAP?logo=gnu&style=plastic)](https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html)
+[![FSFAP](https://img.shields.io/badge/license-FSFAP-orange?logo=gnu&style=plastic)](https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html)
 ```text
 © 2021-2022 Marco Bresciani
 

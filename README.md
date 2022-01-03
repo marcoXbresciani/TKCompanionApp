@@ -14,8 +14,8 @@ SPDX-License-Identifier: FSFAP
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![Markdown](https://img.shields.io/badge/made%20with-markdown-black?logo=markdown&style=plastic)](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
-[![REUSE status](https://api.reuse.software/badge/github.com/marcoXbresciani/TKCompanionApp)](https://api.reuse.software/info/github.com/marcoXbresciani/TKCompanionApp)
 ![GitHub](https://img.shields.io/github/license/marcoxbresciani/tkcompanionapp?logo=gnu&style=plastic)
+[![REUSE status](https://api.reuse.software/badge/github.com/marcoXbresciani/TKCompanionApp)](https://api.reuse.software/info/github.com/marcoXbresciani/TKCompanionApp)
 [![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational?style=plastic)](https://semver.org/)
 [![It works](https://img.shields.io/badge/works%20on-my%20machine-informational?style=plastic)](https://blog.codinghorror.com/the-works-on-my-machine-certification-program/)
 
@@ -110,12 +110,23 @@ and launch your app, connecting to the Metro thing above.
 
 ### How to build
 Once you should have used `expo build:android`, but it has been now
-superseded by `eas build`. So, install `eas-cli` with the command
-`npm install -g eas-cli` and run the following
-`eas build -p android`
+superseded by `eas build`.
+So, install `eas-cli` with the command `npm install -g eas-cli` and run
+the following `eas build -p android`
 
 ## License
-[![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
+This document license, in brief:
+[![FSFAP](https://img.shields.io/badge/license-FSFAP-orange?logo=gnu&style=plastic)](https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html)
+```text
+© 2021-2022 Marco Bresciani
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+This file is offered as-is, without any warranty.
+```
+
+> [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
 This is a freely licensed work, as explained in the [Definition of Free Cultural Works](https://freedomdefined.org/Definition).
 
 Overall project license, in brief:
@@ -138,14 +149,3 @@ You should have received a copy of the GNU General Public License along
 with TKCompanionApp. If not, see <https://www.gnu.org/licenses/>.
 ```
 See `LICENSES` folder or `COPYING` file, for the whole license text.
-
-This document-specific license, in brief:
-[![FSFAP](https://img.shields.io/badge/license-FSFAP-orange?logo=gnu&style=plastic)](https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html)
-```text
-© 2021-2022 Marco Bresciani
-
-Copying and distribution of this file, with or without modification,
-are permitted in any medium without royalty provided the copyright
-notice and this notice are preserved.
-This file is offered as-is, without any warranty.
-```

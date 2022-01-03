@@ -31,6 +31,22 @@ Files: .gitignore
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
+Files: android/*
+Copyright: 2021-2022 Marco Bresciani
+License: GPL-3.0-or-later
+
+Files: android/app/src/debug/java/name/bresciani/marco/tkcompanionapp/ReactNativeFlipper.java
+Copyright: Facebook, Inc. and its affiliates.
+License: MIT
+
+Files: android/gradlew
+Copyright: 2015 the original author or authors.
+License: Apache-2.0
+
+Files: android/gradlew.bat
+Copyright: 2015 the original author or authors.
+License: Apache-2.0
+
 Files: assets/*
 Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
@@ -51,9 +67,17 @@ Files: img/*
 Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
+Files: index.js
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
 Files: marcoXbresciani.tkcompanionapp.yml
 Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
+
+Files: metro.config.js
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
 
 Files: package.json
 Copyright: 2021-2022 Marco Bresciani

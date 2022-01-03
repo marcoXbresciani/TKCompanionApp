@@ -34,7 +34,7 @@ import Version from "./about/Version";
 import Copyright from "./about/Copyright";
 import Separator from "../components/Separator";
 
-const NotButton = styled(Button)`
+const InfoButton = styled(Button)`
         margin: 10px;
 `;
 
@@ -67,7 +67,7 @@ const AboutScreen: React.FunctionComponent = () => (
                                 </BoldText>
                         )}
                         renderItem={({ section, item }) => (
-                                <NotButton
+                                <InfoButton
                                         title={item.key}
                                         color={section.color}
                                         onPress={() => {
@@ -78,7 +78,7 @@ const AboutScreen: React.FunctionComponent = () => (
                                         accessibilityLabel={item.key}
                                 >
                                         {item.key}
-                                </NotButton>
+                                </InfoButton>
                         )}
                         sections={[
                                 {

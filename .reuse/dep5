@@ -23,6 +23,10 @@ Files: .prettierrc
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
+Files: .github/workflows/*
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
 Files: .gitignore
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
@@ -36,6 +40,10 @@ Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: babel.config.js
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
+Files: eas.json
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 

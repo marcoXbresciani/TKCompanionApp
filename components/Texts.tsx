@@ -1,5 +1,5 @@
 /*
- * Copyright © 2021 Marco Bresciani
+ * Copyright © 2021-2022 Marco Bresciani
  * This file is part of TKCompanionApp.
  *
  * TKCompanionApp is free software: you can redistribute it and/or
@@ -15,9 +15,9 @@
  * You should have received a copy of the GNU General Public License
  * along with Foobar. If not, see <https://www.gnu.org/licenses/>.
  *
- * SPDX-FileCopyrightText: 2021 Marco Bresciani
+ * SPDX-FileCopyrightText: 2021-2022 Marco Bresciani
  *
- * SPDX-License-Identifier: GFDL-1.3-or-later
+ * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from "styled-components";
 import { Text } from "react-native";

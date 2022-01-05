@@ -135,8 +135,8 @@ android {
         applicationId 'name.bresciani.marco.tkcompanionapp'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "0.1.2"
+        versionCode 4
+        versionName "0.1.3"
     }
     splits {
         abi {

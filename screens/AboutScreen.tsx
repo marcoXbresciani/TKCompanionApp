@@ -1,5 +1,5 @@
 /*
- * Copyright © 2021-2022 Marco Bresciani
+ * © 2021-2022 Marco Bresciani
  * This file is part of TKCompanionApp.
  *
  * TKCompanionApp is free software: you can redistribute it and/or
@@ -9,22 +9,23 @@
  *
  * TKCompanionApp is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- * General Public License for more details.
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with Foobar. If not, see <https://www.gnu.org/licenses/>.
+ * along with TKCompanionApp.
+ * If not, see <https://www.gnu.org/licenses/>.
  *
  * SPDX-FileCopyrightText: 2021-2022 Marco Bresciani
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {
-        Button,
         Linking,
         SafeAreaView,
         SectionList,
         StatusBar,
+        Text,
         View,
 } from "react-native";
 import * as React from "react";
@@ -33,12 +34,18 @@ import { BoldText } from "../components/Texts";
 import Version from "./about/Version";
 import Copyright from "./about/Copyright";
 import Separator from "../components/Separator";
+import { ThemedPressable } from "../components/Buttons";
 
-const InfoButton = styled(Button)`
-        margin: 10px;
+const HeaderRenderer = styled(BoldText)`
+        margin: 20px auto auto auto;
+        text-align: center;
 `;
 
-const Sep = () => <View style={{ margin: 2 }} />;
+const ItemRenderer = styled(Text)`
+        margin: auto;
+`;
+
+const ItemSeparator = () => <View style={{ margin: 2 }} />;
 
 const AboutScreen: React.FunctionComponent = () => (
         <SafeAreaView>
@@ -54,22 +61,15 @@ const AboutScreen: React.FunctionComponent = () => (
                                         <Copyright />
                                 </>
                         }
-                        ItemSeparatorComponent={Sep}
+                        ItemSeparatorComponent={ItemSeparator}
                         renderSectionHeader={({
                                 section: { title },
-                        }) => (
-                                <BoldText
-                                        style={{
-                                                textAlign: "center",
-                                        }}
-                                >
-                                        {title}
-                                </BoldText>
-                        )}
+                        }) => <HeaderRenderer>{title}</HeaderRenderer>}
                         renderItem={({ section, item }) => (
-                                <InfoButton
-                                        title={item.key}
-                                        color={section.color}
+                                <ThemedPressable
+                                        theme={{
+                                                bg: section.color,
+                                        }}
                                         onPress={() => {
                                                 Linking.openURL(
                                                         item.uri,
@@ -77,25 +77,27 @@ const AboutScreen: React.FunctionComponent = () => (
                                         }}
                                         accessibilityLabel={item.key}
                                 >
-                                        {item.key}
-                                </InfoButton>
+                                        <ItemRenderer>
+                                                {item.key}
+                                        </ItemRenderer>
+                                </ThemedPressable>
                         )}
                         sections={[
                                 {
                                         title: "This application MIGHT",
-                                        color: "yellowgreen",
+                                        color: "limegreen",
                                         data: [
-                                                {
-                                                        key: "be fun",
-                                                        uri: "http://www-personal.umich.edu/~mrother/Extras.html",
-                                                },
-                                                {
-                                                        key: "help you coaching Kata",
-                                                        uri: "http://www-personal.umich.edu/~mrother/The_Coaching_Kata.html",
-                                                },
                                                 {
                                                         key: "help you improving",
                                                         uri: "http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html",
+                                                },
+                                                {
+                                                        key: "help you learning Kata",
+                                                        uri: "http://www-personal.umich.edu/~mrother/The_Coaching_Kata.html",
+                                                },
+                                                {
+                                                        key: "be fun",
+                                                        uri: "http://www-personal.umich.edu/~mrother/Extras.html",
                                                 },
                                                 {
                                                         key: "teach you scientific thinking",

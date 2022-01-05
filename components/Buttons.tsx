@@ -20,26 +20,21 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { GestureResponderEvent } from "react-native";
-import React from "react";
-import Ionicons from "react-native-vector-icons/Ionicons";
-import { ThemedPressable } from "./Buttons";
+import styled from "styled-components";
+import { Pressable } from "react-native";
 
-function TKButton(props: {
-        onPress: null | ((event: GestureResponderEvent) => void);
-        title?: "See it on TK site" | undefined;
-}): JSX.Element {
-        const { onPress, title = "See it on TK site" } = props;
-        return (
-                <ThemedPressable onPress={onPress}>
-                        <Ionicons
-                                name="navigate-circle-outline"
-                                color="white"
-                        >
-                                {title}
-                        </Ionicons>
-                </ThemedPressable>
-        );
-}
+export const ThemedPressable = styled(Pressable)`
+        background-color: ${(props) => props.theme.bg};
+        border-radius: 15px;
+        justify-content: center;
+        margin: 10px auto;
+        min-width: 140px;
+        padding: 10px 15px;
+        text-align: center;
+`;
 
-export default TKButton;
+ThemedPressable.defaultProps = {
+        theme: {
+                bg: "royalblue",
+        },
+};

@@ -34,11 +34,12 @@ import DefaultScreen from "../DefaultScreen";
 import styled from "styled-components";
 import { Separator } from "../../components/Separator";
 import { useNavigation } from "@react-navigation/native";
+import { SectionItemSeparator } from "../../components/Pieces";
 
-const Sep = () => <View style={{ margin: 2 }} />;
-
-const SideMargin = styled(Text)`
+const BackRenderer = styled(Text)`
         margin: 0 10px 0 10px;
+        max-width: 85%;
+        padding: 5px;
 `;
 
 const BackTKCScreen: React.FunctionComponent = () => {
@@ -52,11 +53,13 @@ const BackTKCScreen: React.FunctionComponent = () => {
                                         practice
                                 </BoldCentered>
                                 <SectionList
-                                        ItemSeparatorComponent={Sep}
+                                        ItemSeparatorComponent={
+                                                SectionItemSeparator
+                                        }
                                         renderItem={({ item }) => (
-                                                <SideMargin>
+                                                <BackRenderer>
                                                         {item.key}
-                                                </SideMargin>
+                                                </BackRenderer>
                                         )}
                                         sections={[
                                                 {

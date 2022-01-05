@@ -26,7 +26,6 @@ import {
         SectionList,
         StatusBar,
         Text,
-        View,
 } from "react-native";
 import * as React from "react";
 import styled from "styled-components";
@@ -35,6 +34,7 @@ import Version from "./about/Version";
 import Copyright from "./about/Copyright";
 import Separator from "../components/Separator";
 import { ThemedPressable } from "../components/Buttons";
+import { SectionItemSeparator } from "../components/Pieces";
 
 const HeaderRenderer = styled(BoldText)`
         margin: 20px auto auto auto;
@@ -44,8 +44,6 @@ const HeaderRenderer = styled(BoldText)`
 const ItemRenderer = styled(Text)`
         margin: auto;
 `;
-
-const ItemSeparator = () => <View style={{ margin: 2 }} />;
 
 const AboutScreen: React.FunctionComponent = () => (
         <SafeAreaView>
@@ -61,7 +59,7 @@ const AboutScreen: React.FunctionComponent = () => (
                                         <Copyright />
                                 </>
                         }
-                        ItemSeparatorComponent={ItemSeparator}
+                        ItemSeparatorComponent={SectionItemSeparator}
                         renderSectionHeader={({
                                 section: { title },
                         }) => <HeaderRenderer>{title}</HeaderRenderer>}

@@ -22,19 +22,20 @@
  */
 import { Pressable, SectionList, Text, View } from "react-native";
 import * as React from "react";
-import { BoldCentered, SmallerText } from "../../components/Texts";
+import { BoldCentered } from "../../components/Texts";
 import DefaultScreen from "../DefaultScreen";
 import styled from "styled-components";
 import { Separator } from "../../components/Separator";
 import { useNavigation } from "@react-navigation/native";
+import { SectionItemSeparator } from "../../components/Pieces";
 
-const Sep = () => <View style={{ margin: 2 }} />;
-
-const Code = styled(Text)`
+const FrontRenderer = styled(Text)`
         border: 1px solid black;
-        border-radius: 5px;
+        border-radius: 15px;
+        justify-content: center;
         margin: 5px 20px 5px 20px;
-        padding: 5px;
+        max-width: 85%;
+        padding: 10px 15px;
 `;
 
 const FrontTKCScreen: React.FunctionComponent = () => {
@@ -46,13 +47,14 @@ const FrontTKCScreen: React.FunctionComponent = () => {
                                 <BoldCentered>
                                         The Kata Code
                                 </BoldCentered>
-                                <Text>
-                                        <SmallerText> </SmallerText>
-                                </Text>
                                 <SectionList // style={{ height: "fitContent" }}
-                                        ItemSeparatorComponent={Sep}
+                                        ItemSeparatorComponent={
+                                                SectionItemSeparator
+                                        }
                                         renderItem={({ item }) => (
-                                                <Code>{item.key}</Code>
+                                                <FrontRenderer>
+                                                        {item.key}
+                                                </FrontRenderer>
                                         )}
                                         sections={[
                                                 {

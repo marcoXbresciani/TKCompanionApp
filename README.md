@@ -101,6 +101,9 @@ you're reading) and run `npm -g install yarn`.
 This done, run `yarn install` and you should see all the needed
 dependencies downloaded and installed through Yarn package manager.
 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
+
 ### How to start
 From command line launch `yarn start` (or `expo start --dev-client`, but
 why making your life worse?) that will run Metro tool (don't know what

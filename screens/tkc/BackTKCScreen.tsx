@@ -27,7 +27,7 @@ import {
         View,
 } from "react-native";
 import * as React from "react";
-import { BoldCentered, SmallerText } from "../../components/Texts";
+import { BoldCentered } from "../../components/Texts";
 import TKButton from "../../components/TKButton";
 import DefaultScreen from "../DefaultScreen";
 import styled from "styled-components";
@@ -50,9 +50,6 @@ const BackTKCScreen: React.FunctionComponent = () => {
                                         Changing thinking through
                                         practice
                                 </BoldCentered>
-                                <Text>
-                                        <SmallerText> </SmallerText>
-                                </Text>
                                 <SectionList
                                         ItemSeparatorComponent={Sep}
                                         renderItem={({ item }) => (

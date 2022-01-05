@@ -19,46 +19,35 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {
-        GestureResponderEvent,
-        Pressable,
-        Text,
-        View,
-} from "react-native";
+import { GestureResponderEvent, Pressable } from "react-native";
 import React from "react";
 import styled from "styled-components";
-
-const ButtonView = styled(View)`
-        margin: auto;
-`;
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 const StyledTO = styled(Pressable)`
         background-color: royalblue;
-        border-radius: 5px;
-        elevation: 3;
-        font-style: italic;
+        border-radius: 15px;
         justify-content: center;
-        margin: 10px;
-        padding: 10px 30px 10px 30px;
-        text-align: center;
-`;
-
-const ButtonText = styled(Text)`
-        color: white;
+        margin: 10px auto;
+        min-width: 140px;
+        padding: 10px 15px;
         text-align: center;
 `;
 
 function TKButton(props: {
         onPress: null | ((event: GestureResponderEvent) => void);
-        title?: "See it on TK's site" | undefined;
+        title?: "See it on TK site" | undefined;
 }): JSX.Element {
-        const { onPress, title = "See it on TK's site" } = props;
+        const { onPress, title = "See it on TK site" } = props;
         return (
-                <ButtonView>
-                        <StyledTO onPress={onPress}>
-                                <ButtonText>{title}</ButtonText>
-                        </StyledTO>
-                </ButtonView>
+                <StyledTO onPress={onPress}>
+                        <Ionicons
+                                name="navigate-circle-outline"
+                                color="white"
+                        >
+                                {title}
+                        </Ionicons>
+                </StyledTO>
         );
 }
 

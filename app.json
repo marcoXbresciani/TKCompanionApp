@@ -6,7 +6,7 @@
                 "foregroundImage": "./assets/adaptive-icon.png"
             },
             "package": "name.bresciani.marco.tkcompanionapp",
-            "versionCode": 5
+            "versionCode": 6
         },
         "assetBundlePatterns": ["**/*"],
         "description": "This app wants to be a short and small helper for Toyota Kata practitioners.",
@@ -22,7 +22,7 @@
         "updates": {
             "fallbackToCacheTimeout": 0
         },
-        "version": "0.1.4",
+        "version": "0.1.5",
         "web": {
             "favicon": "./assets/favicon.png"
         }

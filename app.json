@@ -6,6 +6,7 @@
                 "foregroundImage": "./assets/adaptive-icon.png"
             },
             "package": "name.bresciani.marco.tkcompanionapp",
+            "permissions": [],
             "versionCode": 10
         },
         "assetBundlePatterns": ["**/*"],
@@ -18,7 +19,6 @@
         },
         "name": "TKCompanionApp",
         "orientation": "portrait",
-        "permissions": [],
         "slug": "TKCompanionApp",
         "updates": {
             "fallbackToCacheTimeout": 0

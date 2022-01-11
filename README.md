@@ -20,13 +20,11 @@ SPDX-License-Identifier: FSFAP
 [![Markdown](https://img.shields.io/badge/made%20with-markdown-black?logo=markdown&style=plastic)](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
 [![It works](https://img.shields.io/badge/works%20on-my%20machine-informational?style=plastic)](https://blog.codinghorror.com/the-works-on-my-machine-certification-program/)
 
-This app wants to be a short and small helper for Toyota Kata
-practitioners.
+A short and small helper for Toyota Kata practitioners
 
-It will contain the Coaching Kata 5Q card, plus (possibly) more things
+It contains the Coaching Kata 5Q card, plus (possibly) more things
 and information.
-This is my very first experiment with React Native.
-If it'll ever work.
+Content to be improved and updated from time to time.
 
 ## Table of Contents
 1. [Background](#background)
@@ -83,9 +81,9 @@ Install it, and open it.
 ## Usage
 
 ### Screenshots
-![Home](img/home.png)
-![The Kata Code](img/tkc.png)
-![About](img/about.png)
+![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/1.png)
+![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/2.png)
+![About](fastlane/metadata/android/en-US/images/phoneScreenshots/3.png)
 
 ## Maintainers
 The app has been started by Marco Bresciani and is currently maintained
@@ -119,6 +117,14 @@ superseded by `eas build`.
 So, install `eas-cli` with the command `npm install -g eas-cli` and run
 the following `eas build -p android` to (possibly) have fun.
 Maybe.
+
+### How to release
+
+#### F-Droid
+I had some troubles building for F-Droid, due to some unclear (for me)
+versioning issues.
+Basically, these are the steps:
+1. remo
 
 ## License
 This document license, in brief:

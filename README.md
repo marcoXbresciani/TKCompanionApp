@@ -81,9 +81,9 @@ Install it, and open it.
 ## Usage
 
 ### Screenshots
-![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/1.png)
-![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/2.png)
-![About](fastlane/metadata/android/en-US/images/phoneScreenshots/3.png)
+![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
+![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png)
+![About](fastlane/metadata/android/en-US/images/phoneScreenshots/about.png)
 
 ## Maintainers
 The app has been started by Marco Bresciani and is currently maintained
@@ -92,8 +92,8 @@ Same for this document.
 
 ## Contributing
 Find latest current LTS NodeJS
-([16.13.1](https://nodejs.org/download/release/latest-gallium/), as of
-2022-01-05) for your system.
+([16.13.2](https://nodejs.org/download/release/latest-gallium/), as of
+2022-01-115) for your system.
 Then go to this project main folder (also containing this same file
 you're reading) and run `npm -g install yarn`.
 This done, run `yarn install` and you should see all the needed

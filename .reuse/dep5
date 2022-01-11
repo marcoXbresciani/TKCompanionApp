@@ -59,6 +59,10 @@ Files: babel.config.js
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
+Files: fastlane/*
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
 Files: eas.json
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP

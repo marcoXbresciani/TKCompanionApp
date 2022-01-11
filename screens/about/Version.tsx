@@ -23,10 +23,11 @@
 import * as React from "react";
 import { CenteredText, TitleText } from "../../components/Texts";
 import Constants from "expo-constants";
+import * as Application from "expo-application";
 
 const Version: React.FunctionComponent = () => {
-        const version = Constants.manifest?.version || "";
-        const name = Constants.manifest?.name || "TKCompanionApp";
+        const version = Application.nativeApplicationVersion || "";
+        const name = Application.applicationName || "TKCompanionApp";
         const description = Constants.manifest?.description || "";
         return (
                 <>

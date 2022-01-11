@@ -18,6 +18,7 @@
         },
         "name": "TKCompanionApp",
         "orientation": "portrait",
+        "permissions": [],
         "slug": "TKCompanionApp",
         "updates": {
             "fallbackToCacheTimeout": 0

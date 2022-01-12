@@ -120,12 +120,6 @@ Maybe.
 
 ### How to release
 
-#### F-Droid
-I had some troubles building for F-Droid, due to some unclear (for me)
-versioning issues.
-Basically, these are the steps:
-1. remo
-
 ## License
 This document license, in brief:
 [![FSFAP](https://img.shields.io/badge/license-FSFAP-orange?logo=gnu&style=plastic)](https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html)

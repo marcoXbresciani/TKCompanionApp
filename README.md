@@ -93,7 +93,7 @@ Same for this document.
 ## Contributing
 Find latest current LTS NodeJS
 ([16.13.2](https://nodejs.org/download/release/latest-gallium/), as of
-2022-01-115) for your system.
+2022-01-11) for your system.
 Then go to this project main folder (also containing this same file
 you're reading) and run `npm -g install yarn`.
 This done, run `yarn install` and you should see all the needed

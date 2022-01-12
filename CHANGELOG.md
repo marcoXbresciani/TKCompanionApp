@@ -50,6 +50,7 @@ This file is offered as-is, without any warranty.
 * Home page
 * 5Q card with front and back.
 * About page should be improved.
+* Compiles for F-Droid.
 ### Changed
 ### Removed
 ### Fixed

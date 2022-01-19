@@ -10,7 +10,6 @@
             "permissions": [],
             "versionCode": 11
         },
-        "assetBundlePatterns": ["assets/*", "doc/*", "LICENSES/*"],
         "description": "A short and small helper for Toyota Kata practitioners",
         "githubUrl": "https://github.com/marcoXbresciani/TKCompanionApp",
         "icon": "./assets/icon.png",

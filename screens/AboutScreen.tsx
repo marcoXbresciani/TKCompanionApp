@@ -35,6 +35,7 @@ import Copyright from "./about/Copyright";
 import Separator from "../components/Separator";
 import { ThemedPressable } from "../components/Buttons";
 import { SectionItemSeparator } from "../components/Pieces";
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 const HeaderRenderer = styled(BoldText)`
         margin: 20px auto auto auto;
@@ -76,7 +77,12 @@ const AboutScreen: React.FunctionComponent = () => (
                                         accessibilityLabel={item.key}
                                 >
                                         <ItemRenderer>
-                                                {item.key}
+                                                <Ionicons
+                                                        name="navigate-circle-outline"
+                                                        color="white"
+                                                >
+                                                        {item.key}
+                                                </Ionicons>
                                         </ItemRenderer>
                                 </ThemedPressable>
                         )}

@@ -57,28 +57,42 @@ From the Toyota Kata website:
 
 ## Install
 This app is currently built using React Native, through Expo framework,
-to make easier building the app for both Android and iOS from the same
-source code.
+to make building the app for both Android and iOS from the same source
+code easier.
 
 Unfortunately, publishing the app on Google Play Store or on Apple App
-Store, requires money I don't have and don't want to spend: it's
+Store, requires money I don't want to spend: it's
 [one-time $25](https://support.google.com/googleplay/android-developer/answer/6112435?hl=en&ref_topic=3450769#zippy=%2Cstep-pay-registration-fee)
 for a Google Developer Account, and it's even
-[$99/year](https://developer.apple.com/support/enrollment/) for the
+[$99/year](https://developer.apple.com/support/enrollment/) (!) for the
 Apple Developer Program.
 
-So, for now, you'll find this app only through the _F-Droid_ Free and
-Open Source Android App Repository.
+So, for now, you'll find this app only through the
+[F-Droid](https://f-droid.org/) _installable catalogue of FOSS (Free and
+Open Source Software) applications for the Android platform_.
 
-To install the app, you then need the F-Droid store app from the main
-site https://www.f-droid.org/ (you can find an easy QR Code to download
-it).
-Or you can download it from the Google Play Store (but why you should?).
+To install this app, you then need the F-Droid client app (pretty
+similar to Google Play Store or Apple App Store) from the
+[main site](https://www.f-droid.org/): there's an easy QR Code to
+download and
+[install it](https://en.wikipedia.org/wiki/F-Droid#Client_application).
 
 Then, open the F-Droid repository app and search for _TKCompanionApp_.
 Install it, and open it.
 
+Welcome to the world of FOSS.
+Please also take a look at all other wonderful FOSS apps you can find in
+F-Droid.
+
 ## Usage
+Well, it's easy: install the app, open the app, click some buttons.
+There are no games, no quizzes, no actions to take.
+Just sit, follow the menu, learn, practice and improve.
+
+> **Note**: <img src="doc/navigate-circle-outline.svg" height="12px" />
+> icon on buttons, means that the app will open a web page outside the
+> app itself, using whatever browser or app you have configured on your
+> phone to browse the Internet.
 
 ### Screenshots
 ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
@@ -91,9 +105,13 @@ by Marco Bresciani.
 Same for this document.
 
 ## Contributing
+If you are a software developer and want to contribute improving this
+app, you're more than very welcome!
 Find latest current LTS NodeJS
 ([16.13.2](https://nodejs.org/download/release/latest-gallium/), as of
-2022-01-11) for your system.
+2022-01-19) for your system.
+Grab the source code by cloning
+[the repository](https://github.com/marcoXbresciani/TKCompanionApp).
 Then go to this project main folder (also containing this same file
 you're reading) and run `npm -g install yarn`.
 This done, run `yarn install` and you should see all the needed
@@ -101,6 +119,17 @@ dependencies downloaded and installed through Yarn package manager.
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
+
+If you're not a software developer, and want to contribute improving
+this app, you're also more than very welcome!
+You don't need the code, but if you want help translating in your
+language (or fix my English, since I'm not a native speaker), add more
+content, suggest graphical or layout improvement or whatever
+contribution you can give, please
+[open a new issue](https://github.com/marcoXbresciani/TKCompanionApp/issues)
+explaining the problem you've noticed and your proposed solution.
+
+We're here to improve!
 
 ### How to start
 From command line launch `yarn start` (or `expo start --dev-client`, but
@@ -110,6 +139,10 @@ it actually is, but seems something needed).
 From (another) command line launch `yarn android` (or, again, make your
 life pitier and use `expo run:android`) that will prepare and launch
 your app, connecting to the Metro thing above.
+
+It's also possible to simply run `yarn start` and then open an Android
+(or iOS, for what it worths) emulator from the Metro developer tools
+that should've been opened in your browser.
 
 ### How to build
 Once you should have used `expo build:android`, but it has been now
@@ -121,20 +154,6 @@ Maybe.
 ### How to release
 
 ## License
-This document license, in brief:
-[![FSFAP](https://img.shields.io/badge/license-FSFAP-orange?logo=gnu&style=plastic)](https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html)
-```text
-© 2021-2022 Marco Bresciani
-
-Copying and distribution of this file, with or without modification,
-are permitted in any medium without royalty provided the copyright
-notice and this notice are preserved.
-This file is offered as-is, without any warranty.
-```
-
-> [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
-This is a freely licensed work, as explained in the [Definition of Free Cultural Works](https://freedomdefined.org/Definition).
-
 Overall project license, in brief:
 [![GPL logo](https://www.gnu.org/graphics/gplv3-or-later.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 ```text
@@ -154,4 +173,19 @@ Public License for more details.
 You should have received a copy of the GNU General Public License along
 with TKCompanionApp. If not, see <https://www.gnu.org/licenses/>.
 ```
+
+This document license, in brief:
+[![FSFAP](https://img.shields.io/badge/license-FSFAP-orange?logo=gnu&style=plastic)](https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html)
+```text
+© 2021-2022 Marco Bresciani
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+This file is offered as-is, without any warranty.
+```
+
+> [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
+This is a freely licensed work, as explained in the [Definition of Free Cultural Works](https://freedomdefined.org/Definition).
+
 See `LICENSES` folder or `COPYING` file, for the whole license text.

@@ -59,6 +59,10 @@ Files: babel.config.js
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
+Files: doc/navigate-circle-outline.svg
+Copyright: 2021-2022 Marco Bresciani
+License: MIT
+
 Files: fastlane/*
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP

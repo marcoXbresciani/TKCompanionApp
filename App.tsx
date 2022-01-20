@@ -23,7 +23,7 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
-import AboutScreen from "./screens/AboutScreen";
+import AboutScreen from "./screens/about/AboutScreen";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import KTSScreen from "./screens/KTSScreen";
 import HomeScreen from "./screens/HomeScreen";

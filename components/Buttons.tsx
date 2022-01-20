@@ -27,7 +27,7 @@ export const ThemedPressable = styled(Pressable)`
         background-color: ${(props) => props.theme.bg};
         border-radius: 15px;
         justify-content: center;
-        margin: 10px auto;
+        margin: 5px auto;
         min-width: 140px;
         padding: 10px 15px;
         text-align: center;

@@ -22,24 +22,24 @@
  */
 import { createStackNavigator } from "@react-navigation/stack";
 import * as React from "react";
-import FrontTKCScreen from "./FrontTKCScreen";
-import BackTKCScreen from "./BackTKCScreen";
+import TkcFront from "./TkcFront";
+import TkcBack from "./TkcBack";
 
 const Stack = createStackNavigator();
 
-const FiveQCard: React.FunctionComponent = () => {
+const TckScreen: React.FunctionComponent = () => {
         return (
-                <Stack.Navigator>
+                <Stack.Navigator initialRouteName="TkcFront">
                         <Stack.Screen
-                                name="FrontTKC"
-                                component={FrontTKCScreen}
+                                name="TkcFront"
+                                component={TkcFront}
                                 options={{
                                         headerShown: false,
                                 }}
                         />
                         <Stack.Screen
-                                name="BackTKC"
-                                component={BackTKCScreen}
+                                name="TkcBack"
+                                component={TkcBack}
                                 options={{
                                         headerShown: false,
                                 }}
@@ -48,4 +48,4 @@ const FiveQCard: React.FunctionComponent = () => {
         );
 };
 
-export default FiveQCard;
+export default TckScreen;

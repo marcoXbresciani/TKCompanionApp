@@ -20,59 +20,67 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { Pressable, SectionList, Text, View } from "react-native";
+import {
+        Linking,
+        Pressable,
+        SectionList,
+        Text,
+        View,
+} from "react-native";
 import * as React from "react";
 import { BoldCentered } from "../../components/Texts";
+import TKButton from "../../components/TKButton";
 import DefaultScreen from "../DefaultScreen";
 import styled from "styled-components";
 import { Separator } from "../../components/Separator";
 import { useNavigation } from "@react-navigation/native";
 import { SectionItemSeparator } from "../../components/Pieces";
 
-const FrontRenderer = styled(Text)`
-        border: 1px solid black;
-        border-radius: 15px;
-        justify-content: center;
-        margin: 5px 20px 5px 20px;
+const BackRenderer = styled(Text)`
+        margin: 0 10px 0 10px;
         max-width: 85%;
-        padding: 10px 15px;
+        padding: 5px;
 `;
 
-const FrontTKCScreen: React.FunctionComponent = () => {
+const TkcBack: React.FunctionComponent = () => {
         const navigation = useNavigation();
 
         return (
                 <DefaultScreen>
                         <View>
                                 <BoldCentered>
-                                        The Kata Code
+                                        Changing thinking through
+                                        practice
                                 </BoldCentered>
-                                <SectionList // style={{ height: "fitContent" }}
+                                <SectionList
                                         ItemSeparatorComponent={
                                                 SectionItemSeparator
                                         }
                                         renderItem={({ item }) => (
-                                                <FrontRenderer>
+                                                <BackRenderer>
                                                         {item.key}
-                                                </FrontRenderer>
+                                                </BackRenderer>
                                         )}
                                         sections={[
                                                 {
                                                         data: [
                                                                 {
-                                                                        key: "Conditions are unpredictable.",
+                                                                        key: "Improvement Kata / Coaching Kata practitioners are creating a dynamic that helps humans everywhere practice more scientific ways of thinking and acting, toward the best we can imagine, and beyond.",
                                                                 },
                                                                 {
-                                                                        key: "Enjoy the learning zone.",
+                                                                        key: "The 21st Century is demanding a way of working that is cognitively complex, interpersonal, iterative, and even entrepreneurial. Practicing the Improvement Kata and Coaching Kata is a way to obtain those skills and mindset, helping us adapt to the world around us. It doesn't give you solutions, but a thought process for how to approach your goals and obstacles.",
                                                                 },
                                                                 {
-                                                                        key: "Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
+                                                                        key: 'The Kata community has structured practice routines, called "Starter Kata", for learning fundamentals for both the learner and the coach—like playing musical scales when learning a new instrument. Practicing Starter Kata is a foundation upon which any learner\'s creativity and initiative can grow.',
                                                                 },
                                                                 {
-                                                                        key: "Beginners practice Starter Kata exactly.",
+                                                                        key: "The practice routines of the Improvement Kata and Coaching Kata are a useful starting point for any team or organization that wants to develop and utilize a more scientific approach. Beginners start by trying to follow the pattern of the Starter Kata exactly. As their proficiency increases and they understand the purpose behind the routines, they can start to develop their own style, as long as it continues to incorporate the underlying scientific pattern and purpose.",
                                                                 },
                                                                 {
-                                                                        key: "Have a coach, be a coach.",
+                                                                        key: 'The "Kata Code" defines what we think should probably not change as you advance and evolve your own style.',
+                                                                },
+                                                                {
+                                                                        key: "Best wishes!",
                                                                 },
                                                         ],
                                                 },
@@ -81,18 +89,25 @@ const FrontTKCScreen: React.FunctionComponent = () => {
                                 <Pressable
                                         onPress={() =>
                                                 navigation.navigate(
-                                                        "BackTKC",
+                                                        "TkcFront",
                                                 )
                                         }
                                 >
                                         <Separator>
-                                                (See Changing thinking
-                                                through practice)
+                                                (Back to Toyota Kata
+                                                Code)
                                         </Separator>
                                 </Pressable>
+                                <TKButton
+                                        onPress={() => {
+                                                Linking.openURL(
+                                                        "http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf",
+                                                );
+                                        }}
+                                />
                         </View>
                 </DefaultScreen>
         );
 };
 
-export default FrontTKCScreen;
+export default TkcBack;

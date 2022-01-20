@@ -28,7 +28,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import KTSScreen from "./screens/KTSScreen";
 import HomeScreen from "./screens/HomeScreen";
 import FiveQCard from "./screens/5qcard/FiveQCard";
-import TKC from "./screens/tkc/TKC";
+import TkcScreen from "./screens/tkc/TkcScreen";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -96,7 +96,7 @@ const App: React.FunctionComponent = () => {
                                         options={{
                                                 tabBarIcon: TabIconTKC,
                                         }}
-                                        component={TKC}
+                                        component={TkcScreen}
                                 />
                                 <Tab.Screen
                                         name="About"

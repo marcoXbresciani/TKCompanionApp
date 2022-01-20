@@ -21,21 +21,22 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from "react";
-import { CenteredText, JustifiedText } from "../../components/Texts";
+import { JustifiedText } from "../../components/Texts";
 import styled from "styled-components";
+import { View } from "react-native";
 
 const Notice = styled(JustifiedText)`
-        padding: 10px;
-        margin: 5px;
+        align-content: center;
         border: 1px solid black;
         border-radius: 10px;
+        margin: 10% auto auto auto;
+        padding: 10px;
+        width: 85%;
 `;
 const Copyright: React.FunctionComponent = () => {
         return (
-                <>
-                        <CenteredText>
-                                © 2021-2022 Marco Bresciani
-                        </CenteredText>
+                <View>
+                        <Notice>© 2021-2022 Marco Bresciani</Notice>
                         <Notice>
                                 TKCompanionApp is free software: you can
                                 redistribute it and/or modify it under
@@ -54,10 +55,10 @@ const Copyright: React.FunctionComponent = () => {
                                 {"\n"}
                                 You should have received a copy of the
                                 GNU General Public License along with
-                                TKCompanionApp. If not,
-                                see&lt;https://www.gnu.org/licenses/&gt;.
+                                TKCompanionApp. If not, see
+                                &lt;https://www.gnu.org/licenses/&gt;.
                         </Notice>
-                </>
+                </View>
         );
 };
 export default Copyright;

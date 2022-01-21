@@ -20,14 +20,14 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { Pressable, SectionList, Text, View } from "react-native";
+import { SectionList, Text, View } from "react-native";
 import * as React from "react";
 import { BoldCentered } from "../../components/Texts";
 import DefaultScreen from "../DefaultScreen";
 import styled from "styled-components";
-import { Separator } from "../../components/Separator";
 import { useNavigation } from "@react-navigation/native";
 import { SectionItemSeparator } from "../../components/Pieces";
+import { NavButton } from "../../components/Buttons";
 
 const FrontRenderer = styled(Text)`
         border: 1px solid black;
@@ -78,18 +78,15 @@ const TkcFront: React.FunctionComponent = () => {
                                                 },
                                         ]}
                                 />
-                                <Pressable
+                                <NavButton
                                         onPress={() =>
                                                 navigation.navigate(
                                                         "TkcBack",
                                                 )
                                         }
-                                >
-                                        <Separator>
-                                                (See Changing thinking
-                                                through practice)
-                                        </Separator>
-                                </Pressable>
+                                        title="Changing thinking
+                                                through practice"
+                                />
                         </View>
                 </DefaultScreen>
         );

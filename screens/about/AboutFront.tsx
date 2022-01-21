@@ -22,7 +22,6 @@
  */
 import {
         Linking,
-        Pressable,
         SafeAreaView,
         SectionList,
         StatusBar,
@@ -32,9 +31,16 @@ import * as React from "react";
 import styled from "styled-components";
 import { BoldText } from "../../components/Texts";
 import Version from "./Version";
-import Separator from "../../components/Separator";
-import { ThemedPressable } from "../../components/Buttons";
-import { SectionItemSeparator } from "../../components/Pieces";
+import {
+  AboutButton,
+  LegendButton,
+  NavButton,
+  ThemedPressable
+} from "../../components/Buttons";
+import {
+        ButtonStripe,
+        SectionItemSeparator,
+} from "../../components/Pieces";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { useNavigation } from "@react-navigation/native";
 
@@ -60,17 +66,22 @@ const AboutFront: React.FunctionComponent = () => {
                                 ListHeaderComponent={
                                         <>
                                                 <Version />
-                                                <Pressable
-                                                        onPress={() =>
-                                                                navigation.navigate(
-                                                                        "AboutBack",
-                                                                )
-                                                        }
-                                                >
-                                                        <Separator>
-                                                                (About)
-                                                        </Separator>
-                                                </Pressable>
+                                                <ButtonStripe>
+                                                        <LegendButton
+                                                                onPress={() =>
+                                                                        navigation.navigate(
+                                                                                "AboutLegend",
+                                                                        )
+                                                                }
+                                                        />
+                                                        <AboutButton
+                                                                onPress={() =>
+                                                                        navigation.navigate(
+                                                                                "AboutBack",
+                                                                        )
+                                                                }
+                                                        />
+                                                </ButtonStripe>
                                         </>
                                 }
                                 ItemSeparatorComponent={

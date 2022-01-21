@@ -21,16 +21,22 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from "styled-components";
-import { Pressable } from "react-native";
+import { GestureResponderEvent, Pressable, Text } from "react-native";
+import Ionicons from "react-native-vector-icons/Ionicons";
+import React from "react";
+
+export const WhiteText = styled(Text)`
+        color: white;
+`;
 
 export const ThemedPressable = styled(Pressable)`
         background-color: ${(props) => props.theme.bg};
         border-radius: 15px;
         justify-content: center;
         margin: 5px auto;
-        min-width: 140px;
-        padding: 10px 15px;
+        padding: 5px 10px;
         text-align: center;
+        width: auto;
 `;
 
 ThemedPressable.defaultProps = {
@@ -38,3 +44,95 @@ ThemedPressable.defaultProps = {
                 bg: "royalblue",
         },
 };
+
+export function NavButton(props: {
+        onPress: null | ((event: GestureResponderEvent) => void);
+        title: string;
+}): JSX.Element {
+        const { onPress, title } = props;
+        return (
+                <ThemedPressable onPress={onPress}>
+                        <WhiteText>{title}</WhiteText>
+                </ThemedPressable>
+        );
+}
+
+export function BackButton(props: {
+        onPress: null | ((event: GestureResponderEvent) => void);
+}): JSX.Element {
+        const { onPress } = props;
+        return (
+                <ThemedPressable onPress={onPress}>
+                        <Ionicons
+                                name="arrow-back-outline"
+                                color="white"
+                        />
+                </ThemedPressable>
+        );
+}
+
+export function AboutButton(props: {
+        onPress: null | ((event: GestureResponderEvent) => void);
+}): JSX.Element {
+        const { onPress } = props;
+        return (
+                <ThemedPressable onPress={onPress}>
+                        <Ionicons
+                                style={{ fontSize: 18 }}
+                                name="document-text-outline"
+                                color="white"
+                        />
+                </ThemedPressable>
+        );
+}
+
+export function LegendButton(props: {
+        onPress: null | ((event: GestureResponderEvent) => void);
+}): JSX.Element {
+        const { onPress } = props;
+        return (
+                <ThemedPressable onPress={onPress}>
+                        <Ionicons
+                                style={{ fontSize: 18 }}
+                                name="map-outline"
+                                color="white"
+                        />
+                </ThemedPressable>
+        );
+}
+
+export function TKWButton(props: {
+        onPress: null | ((event: GestureResponderEvent) => void);
+}): JSX.Element {
+        const { onPress } = props;
+        return (
+                <ThemedPressable
+                        onPress={onPress}
+                        theme={{ bg: "#004479" }}
+                >
+                        <Ionicons
+                                style={{ fontSize: 18 }}
+                                name="navigate-circle-outline"
+                                color="white"
+                        />
+                </ThemedPressable>
+        );
+}
+
+export function TKWDownloadButton(props: {
+        onPress: null | ((event: GestureResponderEvent) => void);
+}): JSX.Element {
+        const { onPress } = props;
+        return (
+                <ThemedPressable
+                        onPress={onPress}
+                        theme={{ bg: "#004479" }}
+                >
+                        <Ionicons
+                                style={{ fontSize: 18 }}
+                                name="download-outline"
+                                color="white"
+                        />
+                </ThemedPressable>
+        );
+}

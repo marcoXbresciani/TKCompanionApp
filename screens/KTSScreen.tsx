@@ -28,8 +28,8 @@ import {
         JustifiedMargin,
         SmallerText,
 } from "../components/Texts";
-import TKButton from "../components/TKButton";
 import DefaultScreen from "./DefaultScreen";
+import { TKWButton } from "../components/Buttons";
 
 const KTSScreen: React.FunctionComponent = () => (
         <DefaultScreen>
@@ -47,7 +47,7 @@ const KTSScreen: React.FunctionComponent = () => (
                         frustrated, wants black-and-white answers or
                         expects someone else to solve the problem.
                 </JustifiedMargin>
-                <TKButton
+                <TKWButton
                         onPress={() => {
                                 Linking.openURL(
                                         "http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg",

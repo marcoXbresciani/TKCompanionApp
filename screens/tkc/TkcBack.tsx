@@ -20,21 +20,20 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {
-        Linking,
-        Pressable,
-        SectionList,
-        Text,
-        View,
-} from "react-native";
+import { Linking, SectionList, Text, View } from "react-native";
 import * as React from "react";
 import { BoldCentered } from "../../components/Texts";
-import TKButton from "../../components/TKButton";
 import DefaultScreen from "../DefaultScreen";
 import styled from "styled-components";
-import { Separator } from "../../components/Separator";
 import { useNavigation } from "@react-navigation/native";
-import { SectionItemSeparator } from "../../components/Pieces";
+import {
+  ButtonStripe,
+  SectionItemSeparator
+} from "../../components/Pieces";
+import {
+        BackButton,
+        TKWDownloadButton,
+} from "../../components/Buttons";
 
 const BackRenderer = styled(Text)`
         margin: 0 10px 0 10px;
@@ -86,25 +85,22 @@ const TkcBack: React.FunctionComponent = () => {
                                                 },
                                         ]}
                                 />
-                                <Pressable
-                                        onPress={() =>
-                                                navigation.navigate(
-                                                        "TkcFront",
-                                                )
-                                        }
-                                >
-                                        <Separator>
-                                                (Back to Toyota Kata
-                                                Code)
-                                        </Separator>
-                                </Pressable>
-                                <TKButton
-                                        onPress={() => {
-                                                Linking.openURL(
-                                                        "http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf",
-                                                );
-                                        }}
-                                />
+                                <ButtonStripe>
+                                        <BackButton
+                                                onPress={() =>
+                                                        navigation.navigate(
+                                                                "TkcFront",
+                                                        )
+                                                }
+                                        />
+                                        <TKWDownloadButton
+                                                onPress={() => {
+                                                        Linking.openURL(
+                                                                "http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf",
+                                                        );
+                                                }}
+                                        />
+                                </ButtonStripe>
                         </View>
                 </DefaultScreen>
         );

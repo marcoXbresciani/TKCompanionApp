@@ -26,3 +26,7 @@ import { View } from "react-native";
 export const SectionItemSeparator = styled(View)`
         margin: 2px;
 `;
+
+export const ButtonStripe = styled(View)`
+        flex-direction: row;
+`;

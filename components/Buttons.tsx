@@ -21,11 +21,12 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from "styled-components";
-import { GestureResponderEvent, Pressable, Text } from "react-native";
+import { GestureResponderEvent, Pressable } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import React from "react";
+import { ButtonText } from "./Texts";
 
-export const WhiteText = styled(Text)`
+export const WhiteText = styled(ButtonText)`
         color: white;
 `;
 
@@ -43,6 +44,16 @@ ThemedPressable.defaultProps = {
         theme: {
                 bg: "royalblue",
         },
+};
+
+export const CustomIonicons = styled(Ionicons)`
+        font-family: OpenSans;
+        font-size: 16px;
+`;
+
+CustomIonicons.defaultProps = {
+        size: 16,
+        color: "white",
 };
 
 export function NavButton(props: {
@@ -63,10 +74,7 @@ export function BackButton(props: {
         const { onPress } = props;
         return (
                 <ThemedPressable onPress={onPress}>
-                        <Ionicons
-                                name="arrow-back-outline"
-                                color="white"
-                        />
+                        <CustomIonicons name="arrow-back-outline" />
                 </ThemedPressable>
         );
 }
@@ -77,11 +85,7 @@ export function AboutButton(props: {
         const { onPress } = props;
         return (
                 <ThemedPressable onPress={onPress}>
-                        <Ionicons
-                                style={{ fontSize: 18 }}
-                                name="document-text-outline"
-                                color="white"
-                        />
+                        <CustomIonicons name="document-text-outline" />
                 </ThemedPressable>
         );
 }
@@ -92,11 +96,7 @@ export function LegendButton(props: {
         const { onPress } = props;
         return (
                 <ThemedPressable onPress={onPress}>
-                        <Ionicons
-                                style={{ fontSize: 18 }}
-                                name="map-outline"
-                                color="white"
-                        />
+                        <CustomIonicons name="map-outline" />
                 </ThemedPressable>
         );
 }
@@ -125,11 +125,7 @@ export function TKWButton(props: {
                         onPress={onPress}
                         theme={{ bg: "#004479" }}
                 >
-                        <Ionicons
-                                style={{ fontSize: 18 }}
-                                name="navigate-circle-outline"
-                                color="white"
-                        />
+                        <CustomIonicons name="navigate-circle-outline" />
                 </ThemedPressable>
         );
 }
@@ -143,11 +139,7 @@ export function TKWDownloadButton(props: {
                         onPress={onPress}
                         theme={{ bg: "#004479" }}
                 >
-                        <Ionicons
-                                style={{ fontSize: 18 }}
-                                name="download-outline"
-                                color="white"
-                        />
+                        <CustomIonicons name="download-outline" />
                 </ThemedPressable>
         );
 }

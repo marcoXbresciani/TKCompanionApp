@@ -20,18 +20,17 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { SafeAreaView, StatusBar } from "react-native";
 import * as React from "react";
+import DefaultScreen from "../DefaultScreen";
 import Version from "./Version";
 import Copyright from "./Copyright";
 
 const AboutBack: React.FunctionComponent = () => {
         return (
-                <SafeAreaView>
-                        <StatusBar />
+                <DefaultScreen>
                         <Version />
                         <Copyright />
-                </SafeAreaView>
+                </DefaultScreen>
         );
 };
 

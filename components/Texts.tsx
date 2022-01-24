@@ -23,29 +23,42 @@
 import styled from "styled-components";
 import { Text } from "react-native";
 
-export const BiggerText = styled(Text)`
+export const DefaultText = styled(Text)`
+        font-family: OpenSans;
         font-size: 18px;
+        line-height: 31px;
 `;
-export const BoldText = styled(Text)`
-        font-weight: bold;
+
+export const BiggerText = styled(DefaultText)`
+        font-size: 20px;
+        line-height: 34px;
 `;
-export const CenteredText = styled(Text)`
+export const SmallerText = styled(DefaultText)`
+        font-size: 16px;
+        line-height: 27px;
+`;
+
+export const BoldText = styled(DefaultText)`
+        font-family: OpenSansBold;
+`;
+
+export const JustifiedText = styled(DefaultText)`
+        text-align: justify;
+`;
+export const CenteredText = styled(DefaultText)`
         text-align: center;
 `;
+
 export const BoldCentered = styled(CenteredText)`
-        font-weight: bold;
-`;
-export const JustifiedText = styled(Text)`
-        text-align: justify;
+        font-family: OpenSansBold;
 `;
 
 export const JustifiedMargin = styled(JustifiedText)`
         margin: 25px;
 `;
-export const SmallerText = styled(Text)`
-        font-size: 10px;
-`;
+
 export const TitleText = styled(CenteredText)`
+        font-family: OpenSansBold;
         font-size: 20px;
-        font-weight: bold;
+        line-height: 34px;
 `;

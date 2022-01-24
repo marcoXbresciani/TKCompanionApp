@@ -20,16 +20,16 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { SectionList, Text, View } from "react-native";
+import { SectionList } from "react-native";
 import * as React from "react";
-import { BoldCentered } from "../../components/Texts";
+import { BoldCentered, DefaultText } from "../../components/Texts";
 import DefaultScreen from "../DefaultScreen";
 import styled from "styled-components";
 import { useNavigation } from "@react-navigation/native";
 import { SectionItemSeparator } from "../../components/Pieces";
 import { NavButton } from "../../components/Buttons";
 
-const FrontRenderer = styled(Text)`
+const FrontRenderer = styled(DefaultText)`
         border: 1px solid black;
         border-radius: 15px;
         justify-content: center;
@@ -43,51 +43,45 @@ const TkcFront: React.FunctionComponent = () => {
 
         return (
                 <DefaultScreen>
-                        <View>
-                                <BoldCentered>
-                                        The Kata Code
-                                </BoldCentered>
-                                <SectionList // style={{ height: "fitContent" }}
-                                        ItemSeparatorComponent={
-                                                SectionItemSeparator
-                                        }
-                                        renderItem={({ item }) => (
-                                                <FrontRenderer>
-                                                        {item.key}
-                                                </FrontRenderer>
-                                        )}
-                                        sections={[
-                                                {
-                                                        data: [
-                                                                {
-                                                                        key: "Conditions are unpredictable.",
-                                                                },
-                                                                {
-                                                                        key: "Enjoy the learning zone.",
-                                                                },
-                                                                {
-                                                                        key: "Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
-                                                                },
-                                                                {
-                                                                        key: "Beginners practice Starter Kata exactly.",
-                                                                },
-                                                                {
-                                                                        key: "Have a coach, be a coach.",
-                                                                },
-                                                        ],
-                                                },
-                                        ]}
-                                />
-                                <NavButton
-                                        onPress={() =>
-                                                navigation.navigate(
-                                                        "TkcBack",
-                                                )
-                                        }
-                                        title="Changing thinking
+                        <BoldCentered>The Kata Code</BoldCentered>
+                        <SectionList
+                                ItemSeparatorComponent={
+                                        SectionItemSeparator
+                                }
+                                renderItem={({ item }) => (
+                                        <FrontRenderer>
+                                                {item.key}
+                                        </FrontRenderer>
+                                )}
+                                sections={[
+                                        {
+                                                data: [
+                                                        {
+                                                                key: "Conditions are unpredictable.",
+                                                        },
+                                                        {
+                                                                key: "Enjoy the learning zone.",
+                                                        },
+                                                        {
+                                                                key: "Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
+                                                        },
+                                                        {
+                                                                key: "Beginners practice Starter Kata exactly.",
+                                                        },
+                                                        {
+                                                                key: "Have a coach, be a coach.",
+                                                        },
+                                                ],
+                                        },
+                                ]}
+                        />
+                        <NavButton
+                                onPress={() =>
+                                        navigation.navigate("TkcBack")
+                                }
+                                title="Changing thinking
                                                 through practice"
-                                />
-                        </View>
+                        />
                 </DefaultScreen>
         );
 };

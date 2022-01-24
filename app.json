@@ -8,13 +8,13 @@
             "allowBackup": false,
             "package": "name.bresciani.marco.tkcompanionapp",
             "permissions": [],
-            "versionCode": 12
+            "versionCode": 13
         },
         "description": "A short and small helper for Toyota Kata practitioners",
         "githubUrl": "https://github.com/marcoXbresciani/TKCompanionApp",
         "icon": "./assets/icon.png",
         "ios": {
-            "buildNumber": "12",
+            "buildNumber": "13",
             "bundleIdentifier": "name.bresciani.marco.tkcompanionapp",
             "supportsTablet": true
         },
@@ -24,7 +24,7 @@
         "updates": {
             "fallbackToCacheTimeout": 0
         },
-        "version": "0.1.11",
+        "version": "0.1.12",
         "web": {
             "favicon": "./assets/favicon.png"
         }

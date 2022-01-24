@@ -101,6 +101,21 @@ export function LegendButton(props: {
         );
 }
 
+export function BrowseButton(props: {
+        onPress: null | ((event: GestureResponderEvent) => void);
+        theme: any;
+        text: string;
+}): JSX.Element {
+        const { onPress, text, theme } = props;
+        return (
+                <ThemedPressable onPress={onPress} theme={theme}>
+                        <CustomIonicons name="navigate-circle-outline">
+                                <ButtonText>{text}</ButtonText>
+                        </CustomIonicons>
+                </ThemedPressable>
+        );
+}
+
 export function TKWButton(props: {
         onPress: null | ((event: GestureResponderEvent) => void);
 }): JSX.Element {

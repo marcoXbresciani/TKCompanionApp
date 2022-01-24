@@ -118,14 +118,17 @@ export function BrowseButton(props: {
 
 export function TKWButton(props: {
         onPress: null | ((event: GestureResponderEvent) => void);
+        text: null | string;
 }): JSX.Element {
-        const { onPress } = props;
+        const { onPress, text } = props;
         return (
                 <ThemedPressable
                         onPress={onPress}
                         theme={{ bg: "#004479" }}
                 >
-                        <CustomIonicons name="navigate-circle-outline" />
+                        <CustomIonicons name="navigate-circle-outline">
+                                <ButtonText>{text}</ButtonText>
+                        </CustomIonicons>
                 </ThemedPressable>
         );
 }

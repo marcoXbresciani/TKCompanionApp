@@ -27,7 +27,7 @@ import AboutScreen from "./screens/about/AboutScreen";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import KTSScreen from "./screens/KTSScreen";
 import HomeScreen from "./screens/HomeScreen";
-import FiveQCard from "./screens/5qcard/FiveQCard";
+import FiveQCard from "./screens/5qcard/5QScreen";
 import TkcScreen from "./screens/tkc/TkcScreen";
 import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";

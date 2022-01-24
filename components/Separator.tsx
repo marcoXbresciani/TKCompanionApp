@@ -20,10 +20,11 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import * as React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { SmallerText } from "./Texts";
 
 const Container = styled(View)`
         flex-direction: row;
@@ -38,7 +39,7 @@ const Line = styled(View)`
         align-self: center;
 `;
 
-const Content = styled(Text)`
+const Content = styled(SmallerText)`
         align-self: center;
         font-style: italic;
         padding-left: 5px;

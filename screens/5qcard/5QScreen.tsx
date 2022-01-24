@@ -21,8 +21,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import { createStackNavigator } from "@react-navigation/stack";
-import Front5QScreen from "./Front5QScreen";
-import Back5QScreen from "./Back5QScreen";
+import Front5Q from "./5QFront";
+import Back5Q from "./5QBack";
 import * as React from "react";
 
 const Stack = createStackNavigator();
@@ -31,15 +31,15 @@ const FiveQCard: React.FunctionComponent = () => {
         return (
                 <Stack.Navigator>
                         <Stack.Screen
-                                name="Front5Q"
-                                component={Front5QScreen}
+                                name="5QFront"
+                                component={Front5Q}
                                 options={{
                                         headerShown: false,
                                 }}
                         />
                         <Stack.Screen
-                                name="Back5Q"
-                                component={Back5QScreen}
+                                name="5QBack"
+                                component={Back5Q}
                                 options={{
                                         headerShown: false,
                                 }}

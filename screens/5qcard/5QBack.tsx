@@ -21,9 +21,14 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from "styled-components";
-import { Pressable, Text, View } from "react-native";
+import { Pressable, View } from "react-native";
 import * as React from "react";
-import { BiggerText, BoldText } from "../../components/Texts";
+import {
+        BoldText,
+        DefaultText,
+        SmallerText,
+        TitleText,
+} from "../../components/Texts";
 import DefaultScreen from "../DefaultScreen";
 import { useNavigation } from "@react-navigation/native";
 
@@ -36,23 +41,16 @@ const BackView = styled(View)`
         padding: 10px 10px 10px 10px;
 `;
 
-const TitleText = styled(Text)`
-        color: black;
-        font-family: sans-serif;
-        font-weight: bold;
-        text-align: center;
-`;
-
-const QuoteText = styled(Text)`
-        margin: 0 20% 5% 20%;
+const QuoteText = styled(DefaultText)`
+        margin: 0 5% 5% 5%;
         text-align: center;
 `;
 
 const QuestionsView = styled(View)`
-        margin: 0 25%;
+        margin: 0 5%;
 `;
 
-const QuestionsText = styled(Text)`
+const QuestionsText = styled(DefaultText)`
         padding: 2% 0;
 `;
 
@@ -66,7 +64,7 @@ const Line = styled(View)`
         width: 50%;
 `;
 
-const Returner = styled(Text)`
+const Returner = styled(SmallerText)`
         padding: 0 5px;
         margin-top: 15px;
         text-align: right;
@@ -79,9 +77,7 @@ const Back5QScreen: React.FunctionComponent = () => {
                 <DefaultScreen>
                         <BackView>
                                 <TitleText>
-                                        <BiggerText>
-                                                Reflect on the Last Step
-                                        </BiggerText>
+                                        Reflect on the Last Step
                                 </TitleText>
                                 <QuoteText>
                                         Because you don&apos;t actually
@@ -122,7 +118,9 @@ const Back5QScreen: React.FunctionComponent = () => {
                                 </QuestionsView>
                                 <Pressable
                                         onPress={() =>
-                                                navigation.goBack()
+                                                navigation.navigate(
+                                                        "5QFront",
+                                                )
                                         }
                                 >
                                         <Line />

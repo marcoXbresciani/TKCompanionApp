@@ -21,10 +21,14 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from "styled-components";
-import { Pressable, Text, View } from "react-native";
+import { Pressable, View } from "react-native";
 import { Separator } from "../../components/Separator";
 import * as React from "react";
-import { BoldText } from "../../components/Texts";
+import {
+        BoldText,
+        DefaultText,
+        TitleText,
+} from "../../components/Texts";
 import DefaultScreen from "../DefaultScreen";
 import { useNavigation } from "@react-navigation/native";
 
@@ -36,11 +40,8 @@ const FrontView = styled(View)`
         padding: 10px 10px 10px 10px;
 `;
 
-const CKText = styled(Text)`
+const CKText = styled(BoldText)`
         color: white;
-        font-family: serif;
-        font-size: 20px;
-        font-weight: bold;
         margin: auto;
         padding: 5px;
         text-align: center;
@@ -61,19 +62,11 @@ const QuestionsView = styled(View)`
         padding: 10px;
 `;
 
-const TitleText = styled(Text)`
-        color: royalblue;
-        font-family: serif;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-`;
-
-const QuestionsText = styled(Text)`
+const QuestionsText = styled(DefaultText)`
         padding: 1% 0;
 `;
 
-const Front5QScreen: React.FunctionComponent = () => {
+const Front5Q: React.FunctionComponent = () => {
         const navigation = useNavigation();
 
         return (
@@ -103,7 +96,7 @@ const Front5QScreen: React.FunctionComponent = () => {
                                         <Pressable
                                                 onPress={() =>
                                                         navigation.navigate(
-                                                                "Back5Q",
+                                                                "5QBack",
                                                         )
                                                 }
                                         >
@@ -147,4 +140,4 @@ const Front5QScreen: React.FunctionComponent = () => {
         );
 };
 
-export default Front5QScreen;
+export default Front5Q;

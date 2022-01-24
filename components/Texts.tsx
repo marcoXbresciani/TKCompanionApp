@@ -35,6 +35,8 @@ export const BiggerText = styled(DefaultText)`
 `;
 export const ButtonText = styled(DefaultText)`
         font-size: 16px;
+`;
+export const SmallerText = styled(ButtonText)`
         line-height: 27px;
 `;
 

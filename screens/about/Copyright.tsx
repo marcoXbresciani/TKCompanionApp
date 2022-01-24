@@ -21,21 +21,19 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from "react";
-import { JustifiedText } from "../../components/Texts";
+import { DefaultText } from "../../components/Texts";
 import styled from "styled-components";
-import { View } from "react-native";
 
-const Notice = styled(JustifiedText)`
+const Notice = styled(DefaultText)`
         align-content: center;
         border: 1px solid black;
         border-radius: 10px;
-        margin: 10% auto auto auto;
+        margin: 10% 5%;
         padding: 10px;
-        width: 85%;
 `;
 const Copyright: React.FunctionComponent = () => {
         return (
-                <View>
+                <>
                         <Notice>© 2021-2022 Marco Bresciani</Notice>
                         <Notice>
                                 TKCompanionApp is free software: you can
@@ -58,7 +56,8 @@ const Copyright: React.FunctionComponent = () => {
                                 TKCompanionApp. If not, see
                                 &lt;https://www.gnu.org/licenses/&gt;.
                         </Notice>
-                </View>
+                        <Notice>Open Sans © 2021 Steve Matteson</Notice>
+                </>
         );
 };
 export default Copyright;

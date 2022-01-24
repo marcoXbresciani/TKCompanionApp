@@ -29,6 +29,8 @@ import KTSScreen from "./screens/KTSScreen";
 import HomeScreen from "./screens/HomeScreen";
 import FiveQCard from "./screens/5qcard/FiveQCard";
 import TkcScreen from "./screens/tkc/TkcScreen";
+import { useFonts } from "expo-font";
+import AppLoading from "expo-app-loading";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -60,7 +62,7 @@ const TabIconTKC = ({ color }: { color: string }) => (
         <Ionicons name="book-outline" color={color} size={25} />
 );
 
-const App: React.FunctionComponent = () => {
+const AppNavigator: React.FunctionComponent = () => {
         return (
                 <NavigationContainer>
                         <Tab.Navigator
@@ -108,6 +110,22 @@ const App: React.FunctionComponent = () => {
                         </Tab.Navigator>
                 </NavigationContainer>
         );
+};
+
+const customFonts = {
+        OpenSans: require("./assets/fonts/OpenSans-Regular.ttf"),
+        OpenSansBold: require("./assets/fonts/OpenSans-Bold.ttf"),
+        OpenSansItalic: require("./assets/fonts/OpenSans-Italic.ttf"),
+};
+
+const App: React.FunctionComponent = () => {
+        const [isLoaded] = useFonts(customFonts);
+
+        if (!isLoaded) {
+                return <AppLoading />;
+        }
+
+        return <AppNavigator />;
 };
 
 export default App;

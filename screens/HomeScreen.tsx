@@ -20,23 +20,14 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { SafeAreaView, StatusBar, View } from "react-native";
 import * as React from "react";
 import Version from "./about/Version";
+import DefaultScreen from "./DefaultScreen";
 
 const HomeScreen: React.FunctionComponent = () => (
-        <SafeAreaView
-                style={{
-                        flex: 1,
-                        alignItems: "center",
-                        justifyContent: "center",
-                }}
-        >
-                <StatusBar />
-                <View>
-                        <Version />
-                </View>
-        </SafeAreaView>
+        <DefaultScreen>
+                <Version />
+        </DefaultScreen>
 );
 
 export default HomeScreen;

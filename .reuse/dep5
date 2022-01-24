@@ -63,6 +63,10 @@ Files: doc/navigate-circle-outline.svg
 Copyright: 2021-2022 Marco Bresciani
 License: MIT
 
+Files: assets/fonts/OpenSans-*.ttf
+Copyright: Steve Matteson
+License: Apache-2.0
+
 Files: fastlane/*
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP

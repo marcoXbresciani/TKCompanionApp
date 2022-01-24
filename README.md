@@ -188,4 +188,10 @@ This file is offered as-is, without any warranty.
 > [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
 This is a freely licensed work, as explained in the [Definition of Free Cultural Works](https://freedomdefined.org/Definition).
 
+Font used is **Open Sans**: © 2021
+[Steve Matteson](https://mattesontypographics.com/).
+
+[These fonts are licensed under the Apache License, Version
+2.0](https://fonts.google.com/specimen/Open+Sans#license).
+
 See `LICENSES` folder or `COPYING` file, for the whole license text.

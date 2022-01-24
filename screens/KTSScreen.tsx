@@ -26,7 +26,6 @@ import {
         BoldCentered,
         CenteredText,
         JustifiedMargin,
-        SmallerText,
 } from "../components/Texts";
 import DefaultScreen from "./DefaultScreen";
 import { TKWButton } from "../components/Buttons";
@@ -35,9 +34,6 @@ const KTSScreen: React.FunctionComponent = () => (
         <DefaultScreen>
                 <BoldCentered>Kata that Shit</BoldCentered>
                 <CenteredText>[κατα]</CenteredText>
-                <CenteredText>
-                        <SmallerText> </SmallerText>
-                </CenteredText>
                 <JustifiedMargin>
                         Applying the pattern of the Improvement Kata
                         (from the book &apos;Toyota Kata&apos;) to a

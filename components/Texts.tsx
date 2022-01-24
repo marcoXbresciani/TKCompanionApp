@@ -33,7 +33,7 @@ export const BiggerText = styled(DefaultText)`
         font-size: 20px;
         line-height: 34px;
 `;
-export const SmallerText = styled(DefaultText)`
+export const ButtonText = styled(DefaultText)`
         font-size: 16px;
         line-height: 27px;
 `;

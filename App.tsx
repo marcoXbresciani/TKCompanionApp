@@ -36,30 +36,47 @@ const Tab = createMaterialBottomTabNavigator();
 
 const TabIcon5Q = ({ color }: { color: string }) => (
         <Ionicons
+                style={{ fontFamily: "OpenSans", fontSize: 16 }}
                 name="people-circle-outline"
                 color={color}
-                size={25}
+                size={16}
         />
 );
 
 const TabIconAbout = ({ color }: { color: string }) => (
         <Ionicons
+                style={{ fontFamily: "OpenSans", fontSize: 16 }}
                 name="information-circle-outline"
                 color={color}
-                size={25}
+                size={16}
         />
 );
 
 const TabIconHome = ({ color }: { color: string }) => (
-        <Ionicons name="home" color={color} size={25} />
+        <Ionicons
+                style={{ fontFamily: "OpenSans", fontSize: 16 }}
+                name="home"
+                color={color}
+                size={16}
+        />
 );
 
 const TabIconKTS = ({ color }: { color: string }) => (
-        <Ionicons name="warning-outline" color={color} size={25} />
+        <Ionicons
+                style={{ fontFamily: "OpenSans", fontSize: 16 }}
+                name="warning-outline"
+                color={color}
+                size={16}
+        />
 );
 
 const TabIconTKC = ({ color }: { color: string }) => (
-        <Ionicons name="book-outline" color={color} size={25} />
+        <Ionicons
+                style={{ fontFamily: "OpenSans", fontSize: 16 }}
+                name="book-outline"
+                color={color}
+                size={16}
+        />
 );
 
 const AppNavigator: React.FunctionComponent = () => {

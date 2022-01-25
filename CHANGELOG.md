@@ -25,6 +25,66 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased]
 ### Added
+* Full CHANGELOG.md, for historical purposes.
+* Fastlane 13.txt for latest changelog/version.
+### Changed
+### Removed
+### Fixed
+### Security
+
+## [0.1.12] - 2022-01-25
+### Added
+* New Open Sans font.
+### Changed
+* Refactor pages and buttons.
+### Fixed
+* Remove Improper Expo permissions from AndroidManifest.xml
+
+## [0.1.11] - 2022-01-19
+### Added
+* Add icons to navigation buttons.
+
+## [0.1.10] - 2022-01-12
+### Added
+* Fastlane structure
+
+## [0.1.9] - 2022-01-11
+### Changed
+* Update pics, version management
+### Fixed
+* Compiles for F-Droid.
+
+## [0.1.7] - 2022-01-11
+### Changed
+* Update build.
+
+## [0.1.8] - 2022-01-10
+### Added
+* Missing version code.
+
+## [0.1.5] - 2022-01-10
+### Added
+* Missing version code.
+
+## [0.1.4] - 2022-01-10
+### Added
+* Missing version code.
+
+## [0.1.3] - 2022-01-05
+### Changed
+* Updated README.md.
+* Do some refactoring.
+
+## [0.1.2] - 2021-12-29
+### Changed
+* Swap bad and good abouts
+
+## [0.1.1] - 2021-12-29
+### Changed
+* Update README and "infrastructure".
+
+## [0.1.0] - 2021-10-21
+### Added
 * Introduced [ADR-000](doc/arch/adr-000.md) for using ADR format for ADRs...
   See http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions
 * Introduced [ADR-001](doc/arch/adr-001.md) for using proper commit
@@ -49,9 +109,17 @@ This file is offered as-is, without any warranty.
 * Added main menu with Home, 5Q and About pages/screens.
 * Home page
 * 5Q card with front and back.
-* About page should be improved.
-* Compiles for F-Droid.
-### Changed
-### Removed
-### Fixed
-### Security
+
+[Unreleased]: https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD
+[0.1.12]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.12
+[0.1.11]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.11
+[0.1.10]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.10
+[0.1.9]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.9
+[0.1.7]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.7
+[0.1.8]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.8
+[0.1.5]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.5
+[0.1.4]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.4
+[0.1.3]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.3
+[0.1.2]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.0
+[0.1.1]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.1
+[0.1.0]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.0

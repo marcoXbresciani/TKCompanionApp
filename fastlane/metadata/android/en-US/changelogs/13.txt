@@ -1,0 +1,2 @@
+First proper version also fully-functional with F-Droid requirements.
+That's quite an achievement!

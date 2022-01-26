@@ -30,9 +30,12 @@ Content to be improved and updated from time to time.
 1. [Background](#background)
 1. [Install](#install)
 1. [Usage](#usage)
+   1. [Screenshots](#screenshots)
 1. [Maintainers](#maintainers)
 1. [Contributing](#contributing)
     1. [How to Start](#how-to-start)
+    1. [How to Build](#how-to-build)
+    1. [How to Release](#how-to-release)
 1. [License](#license)
 
 ## Background

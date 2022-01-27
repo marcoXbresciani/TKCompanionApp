@@ -35,6 +35,7 @@ This file is offered as-is, without any warranty.
 ## [0.1.12] - 2022-01-25
 ### Added
 * New Open Sans font.
+* Font sizes as per https://grtcalculator.com/.
 ### Changed
 * Refactor pages and buttons.
 ### Fixed

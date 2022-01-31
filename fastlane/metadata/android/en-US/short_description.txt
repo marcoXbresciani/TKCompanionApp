@@ -1,1 +1,0 @@
-A short and small helper for Toyota Kata practitioners

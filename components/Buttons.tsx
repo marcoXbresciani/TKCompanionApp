@@ -118,7 +118,7 @@ export function BrowseButton(props: {
 
 export function TKWButton(props: {
         onPress: null | ((event: GestureResponderEvent) => void);
-        text: null | string;
+        text?: null | string;
 }): JSX.Element {
         const { onPress, text } = props;
         return (

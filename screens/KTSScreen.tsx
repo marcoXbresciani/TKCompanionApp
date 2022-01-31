@@ -29,19 +29,14 @@ import {
 } from "../components/Texts";
 import DefaultScreen from "./DefaultScreen";
 import { TKWButton } from "../components/Buttons";
+import i18next from "i18next";
 
 const KTSScreen: React.FunctionComponent = () => (
         <DefaultScreen>
                 <BoldCentered>Kata that Shit</BoldCentered>
                 <CenteredText>[κατα]</CenteredText>
                 <JustifiedMargin>
-                        Applying the pattern of the Improvement Kata
-                        (from the book &apos;Toyota Kata&apos;) to a
-                        persistently aggravating problem that involves
-                        obstacles and has no obvious solution. Statement
-                        used when someone has been repeatedly
-                        frustrated, wants black-and-white answers or
-                        expects someone else to solve the problem.
+                        {i18next.t("kts.text")}
                 </JustifiedMargin>
                 <TKWButton
                         onPress={() => {

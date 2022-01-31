@@ -1,2 +1,2 @@
-export { default as en } from "./en.json";
-export { default as it } from "./it.json";
+export { default as tEn } from "./en.json";
+export { default as tItIT } from "./it-IT.json";

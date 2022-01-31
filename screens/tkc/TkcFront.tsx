@@ -22,21 +22,15 @@
  */
 import { SectionList } from "react-native";
 import * as React from "react";
-import { BoldCentered, DefaultText } from "../../components/Texts";
+import { BoldCentered } from "../../components/Texts";
 import DefaultScreen from "../DefaultScreen";
-import styled from "styled-components";
 import { useNavigation } from "@react-navigation/native";
-import { SectionItemSeparator } from "../../components/Pieces";
+import {
+        FrontRenderer,
+        SectionItemSeparator,
+} from "../../components/Pieces";
 import { NavButton } from "../../components/Buttons";
-
-const FrontRenderer = styled(DefaultText)`
-        border: 1px solid black;
-        border-radius: 15px;
-        justify-content: center;
-        margin: 5px 20px 5px 20px;
-        max-width: 85%;
-        padding: 10px 15px;
-`;
+import i18next from "i18next";
 
 const TkcFront: React.FunctionComponent = () => {
         const navigation = useNavigation();
@@ -57,19 +51,29 @@ const TkcFront: React.FunctionComponent = () => {
                                         {
                                                 data: [
                                                         {
-                                                                key: "Conditions are unpredictable.",
+                                                                key: i18next.t(
+                                                                        "tkc.front.1",
+                                                                ),
                                                         },
                                                         {
-                                                                key: "Enjoy the learning zone.",
+                                                                key: i18next.t(
+                                                                        "tkc.front.2",
+                                                                ),
                                                         },
                                                         {
-                                                                key: "Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
+                                                                key: i18next.t(
+                                                                        "tkc.front.3",
+                                                                ),
                                                         },
                                                         {
-                                                                key: "Beginners practice Starter Kata exactly.",
+                                                                key: i18next.t(
+                                                                        "tkc.front.4",
+                                                                ),
                                                         },
                                                         {
-                                                                key: "Have a coach, be a coach.",
+                                                                key: i18next.t(
+                                                                        "tkc.front.5",
+                                                                ),
                                                         },
                                                 ],
                                         },

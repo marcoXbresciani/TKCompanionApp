@@ -92,10 +92,22 @@ Well, it's easy: install the app, open the app, click some buttons.
 There are no games, no quizzes, no actions to take.
 Just sit, follow the menu, learn, practice and improve.
 
-> **Note**: <img src="doc/navigate-circle-outline.svg" height="12px" />
-> icon on buttons, means that the app will open a web page outside the
-> app itself, using whatever browser or app you have configured on your
-> phone to browse the Internet.
+### Legend
+
+#### Colours
+* <span style="background-color:royalblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  this "royalblue" is the main colour "theme" of the app, used for
+  its buttons, menu and the like.
+* <span style="background-color:#004479">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  this #004479 is the main colour representing links and items available
+  through
+  [The Toyota Kata Website](http://www-personal.umich.edu/~mrother/Homepage.html).
+
+#### Icons
+* <img src="doc/navigate-circle-outline.svg" height="12px"  alt="navigate-circle-outline"/>
+  this icon means that the app will open a web page outside the app
+  itself, using whatever browser or app you have configured on your
+  phone to browse the Internet and show you an external web page.
 
 ### Screenshots
 ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)

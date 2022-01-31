@@ -24,13 +24,38 @@ import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import AboutScreen from "./screens/about/AboutScreen";
-import Ionicons from "react-native-vector-icons/Ionicons";
+import { Ionicons } from "@expo/vector-icons";
 import KTSScreen from "./screens/KTSScreen";
 import HomeScreen from "./screens/HomeScreen";
 import FiveQCard from "./screens/5qcard/5QScreen";
 import TkcScreen from "./screens/tkc/TkcScreen";
 import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";
+import i18next from "i18next";
+import { tEn, tItIT } from "./i18n";
+import { locale } from "expo-localization";
+
+const resources = {
+        en: {
+                translation: tEn,
+        },
+        "it-IT": {
+                translation: tItIT,
+        },
+};
+
+i18next.init({
+        cleanCode: true,
+        compatibilityJSON: "v3",
+        debug: false,
+        interpolation: {
+                escapeValue: false,
+        },
+        fallbackLng: "en",
+        lng: locale,
+        nonExplicitSupportedLngs: true,
+        resources: resources,
+});
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -90,35 +115,35 @@ const AppNavigator: React.FunctionComponent = () => {
                                 initialRouteName="Home"
                         >
                                 <Tab.Screen
-                                        name="Home"
+                                        name={i18next.t("nav.home")}
                                         options={{
                                                 tabBarIcon: TabIconHome,
                                         }}
                                         component={HomeScreen}
                                 />
                                 <Tab.Screen
-                                        name="5Q Card"
+                                        name={i18next.t("nav.5qcard")}
                                         options={{
                                                 tabBarIcon: TabIcon5Q,
                                         }}
                                         component={FiveQCard}
                                 />
                                 <Tab.Screen
-                                        name="KTS"
+                                        name={i18next.t("nav.kts")}
                                         options={{
                                                 tabBarIcon: TabIconKTS,
                                         }}
                                         component={KTSScreen}
                                 />
                                 <Tab.Screen
-                                        name="TKC"
+                                        name={i18next.t("nav.tkc")}
                                         options={{
                                                 tabBarIcon: TabIconTKC,
                                         }}
                                         component={TkcScreen}
                                 />
                                 <Tab.Screen
-                                        name="About"
+                                        name={i18next.t("nav.about")}
                                         component={AboutScreen}
                                         options={{
                                                 tabBarIcon: TabIconAbout,
@@ -141,7 +166,6 @@ const App: React.FunctionComponent = () => {
         if (!isLoaded) {
                 return <AppLoading />;
         }
-
         return <AppNavigator />;
 };
 

@@ -1,0 +1,6 @@
+TKCompanionApp
+
+Un piccolo e semplice aiuto per i praticanti di Toyota Kata
+
+Contiene la carta Coaching Kata 5Q, e (forse) altre cose e informazioni.
+Contenuti da migliorare e aggiornare di volta in volta.

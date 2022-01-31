@@ -31,6 +31,7 @@ import {
 } from "../../components/Texts";
 import DefaultScreen from "../DefaultScreen";
 import { useNavigation } from "@react-navigation/native";
+import i18next from "i18next";
 
 const FrontView = styled(View)`
         background-color: royalblue;
@@ -73,12 +74,10 @@ const Front5Q: React.FunctionComponent = () => {
                 <DefaultScreen>
                         <FrontView>
                                 <View>
-                                        <CKText>Coaching Kata</CKText>
+                                        <CKText>{i18next.t("5q.front.header")}</CKText>
                                 </View>
                                 <QuestionsView>
-                                        <TitleText>
-                                                The Five Questions
-                                        </TitleText>
+                                        <TitleText>{i18next.t("5q.front.title")}</TitleText>
                                         <QuestionsText>
                                                 ① What is the{" "}
                                                 <BoldText>

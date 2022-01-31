@@ -23,16 +23,20 @@
 import * as React from "react";
 import { CenteredText, TitleText } from "../../components/Texts";
 import Constants from "expo-constants";
+import i18next from "i18next";
+import { SmallerView } from "../../components/Pieces";
 
 const Version: React.FunctionComponent = () => {
-        const version = Constants.manifest?.version || "";
         const name = Constants.manifest?.name || "TKCompanionApp";
-        const description = Constants.manifest?.description || "";
+        const version = Constants.manifest?.version || "";
+        const short = i18next.t("app.short");
         return (
                 <>
                         <TitleText>{name}</TitleText>
                         <CenteredText>{version}</CenteredText>
-                        <CenteredText>{description}</CenteredText>
+                        <SmallerView>
+                                <CenteredText>{short}</CenteredText>
+                        </SmallerView>
                 </>
         );
 };

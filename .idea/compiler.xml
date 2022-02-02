@@ -2,7 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="TKCompanionApp.app" target="1.8" />
+      <module name="TKCompanionApp.react-native-safe-area-context" target="1.8" />
+      <module name="TKCompanionApp.react-native-screens" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

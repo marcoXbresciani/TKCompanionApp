@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/TKCompanionApp.iml" filepath="$PROJECT_DIR$/.idea/TKCompanionApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/template.iml" filepath="$PROJECT_DIR$/.idea/modules/template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/template1.iml" filepath="$PROJECT_DIR$/.idea/modules/template1.iml" />
     </modules>
   </component>
 </project>

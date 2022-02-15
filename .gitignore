@@ -27,6 +27,7 @@ build/
 .gradle
 local.properties
 *.hprof
+.idea/workspace.xml
 
 # node.js
 #

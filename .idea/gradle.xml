@@ -11,28 +11,8 @@
           <set>
             <option value="$PROJECT_DIR$/android" />
             <option value="$PROJECT_DIR$/android/app" />
-            <option value="$PROJECT_DIR$/node_modules/react-native-locale-detector/android" />
+            <option value="$PROJECT_DIR$/node_modules/react-native-safe-area-context/android" />
             <option value="$PROJECT_DIR$/node_modules/react-native-vector-icons/android" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/node_modules/@react-native-community/cli-platform-android" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/node_modules/@react-native-community/cli-platform-android" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/node_modules/react-native" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/node_modules/react-native" />
           </set>
         </option>
       </GradleProjectSettings>

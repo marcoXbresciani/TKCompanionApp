@@ -29,14 +29,14 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import Ionicons from 'react-native-vector-icons/dist/glyphmaps/Ionicons.json';
 
 // import KTSScreen from "./screens/KTSScreen";
-// import HomeScreen from "./screens/HomeScreen";
 // import FiveQCard from "./screens/5qcard/5QScreen";
 // import TkcScreen from "./screens/tkc/TkcScreen";
 import i18next from 'i18next';
 import {tEn, tItIT} from './i18n';
-import {Text, View} from 'react-native';
+// import {Text, View} from 'react-native';
 
-import {Platform, NativeModules} from 'react-native';
+// import {Platform, NativeModules} from 'react-native';
+import HomeScreen from './app/screens/HomeScreen';
 
 // const locale =
 //         Platform.OS === 'ios'
@@ -116,23 +116,6 @@ const TabIconTKC = ({color}: {color: string}) => (
         />
 );
 
-function HomeScreen() {
-        return (
-                <View
-                        style={{
-                                flex: 1,
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                        }}>
-                        <Text>Home!</Text>
-                        <Icon name="barbell" />
-                        <Icon.Button name="barbell">
-                                Cipolla
-                        </Icon.Button>
-                </View>
-        );
-}
-
 const AppNavigator: React.FunctionComponent = () => {
         return (
                 <NavigationContainer>
@@ -180,12 +163,6 @@ const AppNavigator: React.FunctionComponent = () => {
                         </Tab.Navigator>
                 </NavigationContainer>
         );
-};
-
-const customFonts = {
-        OpenSans: require('./assets/fonts/OpenSans-Regular.ttf'),
-        OpenSansBold: require('./assets/fonts/OpenSans-Bold.ttf'),
-        OpenSansItalic: require('./assets/fonts/OpenSans-Italic.ttf'),
 };
 
 const App: React.FunctionComponent = () => {

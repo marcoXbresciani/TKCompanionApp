@@ -35,15 +35,16 @@ import i18next from 'i18next';
 import {tEn, tItIT} from './i18n';
 // import {Text, View} from 'react-native';
 
-// import {Platform, NativeModules} from 'react-native';
+import {Platform, NativeModules} from 'react-native';
 import HomeScreen from './app/screens/HomeScreen';
+import AboutScreen from "./app/screens/about/AboutScreen";
 
-// const locale =
-//         Platform.OS === 'ios'
-//                 ? NativeModules.SettingsManager.settings
-//                           .AppleLanguages[0] ||
-//                   NativeModules.SettingsManager.settings.AppleLocale
-//                 : NativeModules.I18nManager.localeIdentifier;
+const locale =
+        Platform.OS === 'ios'
+                ? NativeModules.SettingsManager.settings
+                          .AppleLanguages[0] ||
+                  NativeModules.SettingsManager.settings.AppleLocale
+                : NativeModules.I18nManager.localeIdentifier;
 
 type IoniconsIconNames = keyof typeof Ionicons;
 
@@ -64,7 +65,7 @@ i18next.init({
                 escapeValue: false,
         },
         fallbackLng: 'en',
-        lng: 'it-IT',
+        lng: locale,
         nonExplicitSupportedLngs: true,
         resources: resources,
 });
@@ -155,7 +156,7 @@ const AppNavigator: React.FunctionComponent = () => {
                                 />
                                 <Tab.Screen
                                         name={i18next.t('nav.about')}
-                                        component={HomeScreen}
+                                        component={AboutScreen}
                                         options={{
                                                 tabBarIcon: TabIconAbout,
                                         }}

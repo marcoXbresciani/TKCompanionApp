@@ -11,12 +11,17 @@
     },
     "dependencies": {
         "@react-navigation/material-bottom-tabs": "^6.1.1",
+        "@react-navigation/native": "^6.0.8",
+        "@react-navigation/native-stack": "^6.5.0",
+        "@types/styled-components": "^5.1.22",
         "i18next": "^21.6.10",
         "react": "17.0.2",
         "react-native": "0.67.1",
         "react-native-device-info": "^8.4.9",
+        "react-native-gesture-handler": "^2.2.0",
         "react-native-paper": "^4.11.2",
         "react-native-safe-area-context": "^3.3.2",
+        "react-native-screens": "^3.11.1",
         "react-native-vector-icons": "^9.0.0",
         "styled-components": "^5.3.3"
     },

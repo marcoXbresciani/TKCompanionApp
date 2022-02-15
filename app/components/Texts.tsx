@@ -30,7 +30,7 @@ const customFonts = {
 };
 
 export const DefaultText = styled(Text)`
-        font-family: OpenSans;
+        font-family: OpenSans-Regular;
         font-size: 18px;
         line-height: 31px;
 `;
@@ -39,17 +39,16 @@ export const DefaultText = styled(Text)`
 //         font-size: 20px;
 //         line-height: 34px;
 // `;
-// export const ButtonText = styled(DefaultText)`
-//         font-size: 16px;
-// `;
+export const ButtonText = styled(DefaultText)`
+`;
 // export const SmallerText = styled(ButtonText)`
 //         line-height: 27px;
 // `;
 //
-// export const BoldText = styled(DefaultText)`
-//         font-family: OpenSansBold;
-// `;
-//
+export const BoldText = styled(DefaultText)`
+        font-family: OpenSans-Bold;
+`;
+
 // export const JustifiedText = styled(DefaultText)`
 //         text-align: justify;
 // `;
@@ -57,16 +56,16 @@ export const CenteredText = styled(DefaultText)`
         text-align: center;
 `;
 
-// export const BoldCentered = styled(CenteredText)`
-//         font-family: OpenSansBold;
-// `;
-//
+export const BoldCentered = styled(CenteredText)`
+        font-family: OpenSans-Bold;
+  font-weight: bold;
+`;
+
 // export const JustifiedMargin = styled(JustifiedText)`
 //         margin: 25px;
 // `;
 
-export const TitleText = styled(CenteredText)`
-        font-family: OpenSansBold;
+export const TitleText = styled(BoldCentered)`
         font-size: 20px;
         line-height: 34px;
 `;

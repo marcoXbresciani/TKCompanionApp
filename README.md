@@ -70,17 +70,18 @@ for a Google Developer Account, and it's even
 [$99/year](https://developer.apple.com/support/enrollment/) (!) for the
 Apple Developer Program.
 
-So, for now, you'll find this app only through the
+I'm still working on this:
+> So, for now, I hope you'll find this app only through the
 [F-Droid](https://f-droid.org/) _installable catalogue of FOSS (Free and
 Open Source Software) applications for the Android platform_.
-
-To install this app, you then need the F-Droid client app (pretty
+>
+> To install this app, you then need the F-Droid client app (pretty
 similar to Google Play Store or Apple App Store) from the
 [main site](https://www.f-droid.org/): there's an easy QR Code to
 download and
 [install it](https://en.wikipedia.org/wiki/F-Droid#Client_application).
-
-Then, open the F-Droid repository app and search for _TKCompanionApp_.
+>
+> Then, open the F-Droid repository app and search for _TKCompanionApp_.
 Install it, and open it.
 
 Welcome to the world of FOSS.
@@ -95,16 +96,16 @@ Just sit, follow the menu, learn, practice and improve.
 ### Legend
 
 #### Colours
-* <span style="background-color:royalblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* <span style="background-color:royalblue">&nbsp;&nbsp;&nbsp;&nbsp;</span>
   this "royalblue" is the main colour "theme" of the app, used for
   its buttons, menu and the like.
-* <span style="background-color:#004479">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+* <span style="background-color:#004479">&nbsp;&nbsp;&nbsp;&nbsp;</span>
   this #004479 is the main colour representing links and items available
   through
   [The Toyota Kata Website](http://www-personal.umich.edu/~mrother/Homepage.html).
 
 #### Icons
-* <img src="doc/navigate-circle-outline.svg" height="12px"  alt="navigate-circle-outline"/>
+* <img src="doc/navigate-circle-outline.svg" height="12px" alt="navigate-circle-outline"/>
   this icon means that the app will open a web page outside the app
   itself, using whatever browser or app you have configured on your
   phone to browse the Internet and show you an external web page.

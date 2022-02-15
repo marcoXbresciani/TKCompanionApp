@@ -37,7 +37,9 @@ import {tEn, tItIT} from './i18n';
 
 import {Platform, NativeModules} from 'react-native';
 import HomeScreen from './app/screens/HomeScreen';
-import AboutScreen from "./app/screens/about/AboutScreen";
+import AboutScreen from './app/screens/about/AboutScreen';
+import KTSScreen from './app/screens/KTSScreen';
+import TkcScreen from './app/screens/tkc/TkcScreen';
 
 const locale =
         Platform.OS === 'ios'
@@ -145,14 +147,14 @@ const AppNavigator: React.FunctionComponent = () => {
                                         options={{
                                                 tabBarIcon: TabIconKTS,
                                         }}
-                                        component={HomeScreen}
+                                        component={KTSScreen}
                                 />
                                 <Tab.Screen
                                         name={i18next.t('nav.tkc')}
                                         options={{
                                                 tabBarIcon: TabIconTKC,
                                         }}
-                                        component={HomeScreen}
+                                        component={TkcScreen}
                                 />
                                 <Tab.Screen
                                         name={i18next.t('nav.about')}

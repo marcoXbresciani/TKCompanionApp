@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2c0aec8-5163-42b7-8710-c5264a0dfba8" name="Changes" comment="Comb the README.md&#10;&#10;Might need more combing.">
+    <list default="true" id="a2c0aec8-5163-42b7-8710-c5264a0dfba8" name="Changes" comment="Update IntelliJ IDEA project configuration">
       <change afterPath="$PROJECT_DIR$/app/components/Pieces.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/components/Texts.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/screens/DefaultScreen.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/screens/HomeScreen.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/screens/about/Version.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/react-native.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/TKCompanionApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/TKCompanionApp.xcodeproj/project.pbxproj" afterDir="false" />
@@ -78,6 +75,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TF_FMT": "false",
     "last_opened_file_path": "C:/Users/marco.bresciani/Chiavetta/Programmi/TKCompanionApp/app/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -162,5 +160,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update IntelliJ IDEA project configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update IntelliJ IDEA project configuration" />
   </component>
 </project>

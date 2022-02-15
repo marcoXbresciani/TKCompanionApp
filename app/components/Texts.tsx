@@ -23,12 +23,6 @@
 import styled from 'styled-components';
 import {Text} from 'react-native';
 
-const customFonts = {
-        OpenSans: require('../../assets/fonts/OpenSans-Regular.ttf'),
-        OpenSansBold: require('../../assets/fonts/OpenSans-Bold.ttf'),
-        OpenSansItalic: require('../../assets/fonts/OpenSans-Italic.ttf'),
-};
-
 export const DefaultText = styled(Text)`
         font-family: OpenSans-Regular;
         font-size: 18px;
@@ -49,23 +43,21 @@ export const BoldText = styled(DefaultText)`
         font-family: OpenSans-Bold;
 `;
 
-// export const JustifiedText = styled(DefaultText)`
-//         text-align: justify;
-// `;
+export const JustifiedText = styled(DefaultText)`
+        text-align: justify;
+`;
 export const CenteredText = styled(DefaultText)`
         text-align: center;
 `;
 
 export const BoldCentered = styled(CenteredText)`
         font-family: OpenSans-Bold;
-  font-weight: bold;
 `;
 
-// export const JustifiedMargin = styled(JustifiedText)`
-//         margin: 25px;
-// `;
+export const JustifiedMargin = styled(JustifiedText)`
+        margin: 25px;
+`;
 
 export const TitleText = styled(BoldCentered)`
-        font-size: 20px;
         line-height: 34px;
 `;

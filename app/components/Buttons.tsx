@@ -32,10 +32,10 @@ export const WhiteText = styled(ButtonText)`
 
 export const ThemedPressable = styled(Pressable)`
         background-color: ${props => props.theme.bg};
-        border-radius: 15px;
+        border-radius: 18px;
         justify-content: center;
-        margin: 5px auto;
-        padding: 5px 10px;
+        margin: 4.5px auto;
+        padding: 4.5px 9px;
         text-align: center;
         width: auto;
 `;
@@ -47,12 +47,12 @@ ThemedPressable.defaultProps = {
 };
 
 export const CustomIonicons = styled(Ionicons)`
-        font-family: OpenSans;
-        font-size: 16px;
+        font-family: OpenSans-Regular;
+        font-size: 18px;
 `;
 
 CustomIonicons.defaultProps = {
-        size: 16,
+        size: 18,
         color: 'white',
 };
 

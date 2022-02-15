@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2c0aec8-5163-42b7-8710-c5264a0dfba8" name="Changes" comment="Update IntelliJ IDEA project configuration">
-      <change afterPath="$PROJECT_DIR$/app/components/Pieces.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Texts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/screens/DefaultScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/screens/HomeScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/screens/about/Version.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-native.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/TKCompanionApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/TKCompanionApp.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/TKCompanionApp/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/TKCompanionApp/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="a2c0aec8-5163-42b7-8710-c5264a0dfba8" name="Changes" comment="Add home screen">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +152,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update IntelliJ IDEA project configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update IntelliJ IDEA project configuration" />
+    <MESSAGE value="Add fonts and device info" />
+    <MESSAGE value="Add home screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add home screen" />
   </component>
 </project>

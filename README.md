@@ -111,6 +111,8 @@ Just sit, follow the menu, learn, practice and improve.
   phone to browse the Internet and show you an external web page.
 
 ### Screenshots
+Screenshots from version 0.1.12, based on Expo Framework.
+Anyway quite similar to current 0.2.0, with no Expo involved.
 ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
 ![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png)
 ![About](fastlane/metadata/android/en-US/images/phoneScreenshots/about.png)
@@ -124,8 +126,8 @@ Same for this document.
 If you are a software developer and want to contribute improving this
 app, you're more than very welcome!
 Find latest current LTS NodeJS
-([16.13.2](https://nodejs.org/download/release/latest-gallium/), as of
-2022-01-19) for your system.
+([16.14.0](https://nodejs.org/download/release/latest-gallium/), as of
+2022-02-18) for your system.
 Grab the source code by cloning
 [the repository](https://github.com/marcoXbresciani/TKCompanionApp).
 Then go to this project main folder (also containing this same file

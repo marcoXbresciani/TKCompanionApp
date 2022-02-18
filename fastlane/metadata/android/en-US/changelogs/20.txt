@@ -1,0 +1,2 @@
+Get rid of Expo framework since not compatible with F-Droid.
+No money for "developer programs" of Google or Apple.

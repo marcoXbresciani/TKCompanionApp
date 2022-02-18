@@ -25,12 +25,18 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased]
 ### Added
-* Full CHANGELOG.md, for historical purposes.
-* Fastlane 13.txt for latest changelog/version.
 ### Changed
 ### Removed
 ### Fixed
 ### Security
+
+## [0.2.0] - 2022-02-18
+### Added
+* Full CHANGELOG.md, for historical purposes.
+* Fastlane 20.txt for latest changelog/version.
+### Changed
+* Get rid of Expo framework since not compatible with F-Droid.
+  No money for "developer programs" of Google or Apple.
 
 ## [0.1.12] - 2022-01-25
 ### Added
@@ -112,6 +118,7 @@ This file is offered as-is, without any warranty.
 * 5Q card with front and back.
 
 [Unreleased]: https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD
+[0.2.0]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.0
 [0.1.12]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.12
 [0.1.11]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.11
 [0.1.10]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.10

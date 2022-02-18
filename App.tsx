@@ -22,24 +22,16 @@
  */
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
-// import AboutScreen from "./screens/about/AboutScreen";
 import Icon from 'react-native-vector-icons/Ionicons';
-import Ionicons from 'react-native-vector-icons/dist/glyphmaps/Ionicons.json';
-
-// import KTSScreen from "./screens/KTSScreen";
-// import FiveQCard from "./screens/5qcard/5QScreen";
-// import TkcScreen from "./screens/tkc/TkcScreen";
 import i18next from 'i18next';
 import {tEn, tItIT} from './i18n';
-// import {Text, View} from 'react-native';
-
-import {Platform, NativeModules} from 'react-native';
+import {NativeModules, Platform} from 'react-native';
 import HomeScreen from './app/screens/HomeScreen';
 import AboutScreen from './app/screens/about/AboutScreen';
 import KTSScreen from './app/screens/KTSScreen';
 import TkcScreen from './app/screens/tkc/TkcScreen';
+import FiveQCard from './app/screens/5qcard/5QScreen';
 
 const locale =
         Platform.OS === 'ios'
@@ -47,8 +39,6 @@ const locale =
                           .AppleLanguages[0] ||
                   NativeModules.SettingsManager.settings.AppleLocale
                 : NativeModules.I18nManager.localeIdentifier;
-
-type IoniconsIconNames = keyof typeof Ionicons;
 
 const resources = {
         en: {
@@ -76,7 +66,7 @@ const Tab = createMaterialBottomTabNavigator();
 
 const TabIcon5Q = ({color}: {color: string}) => (
         <Icon
-                style={{fontFamily: 'OpenSans', fontSize: 16}}
+                style={{fontFamily: 'OpenSans-Regular', fontSize: 16}}
                 name="people-circle-outline"
                 color={color}
                 size={16}
@@ -85,7 +75,7 @@ const TabIcon5Q = ({color}: {color: string}) => (
 
 const TabIconAbout = ({color}: {color: string}) => (
         <Icon
-                style={{fontFamily: 'OpenSans', fontSize: 16}}
+                style={{fontFamily: 'OpenSans-Regular', fontSize: 16}}
                 name="information-circle-outline"
                 color={color}
                 size={16}
@@ -94,7 +84,7 @@ const TabIconAbout = ({color}: {color: string}) => (
 
 const TabIconHome = ({color}: {color: string}) => (
         <Icon
-                style={{fontFamily: 'OpenSans', fontSize: 16}}
+                style={{fontFamily: 'OpenSans-Regular', fontSize: 16}}
                 name="home"
                 color={color}
                 size={16}
@@ -103,7 +93,7 @@ const TabIconHome = ({color}: {color: string}) => (
 
 const TabIconKTS = ({color}: {color: string}) => (
         <Icon
-                style={{fontFamily: 'OpenSans', fontSize: 16}}
+                style={{fontFamily: 'OpenSans-Regular', fontSize: 16}}
                 name="warning-outline"
                 color={color}
                 size={16}
@@ -112,7 +102,7 @@ const TabIconKTS = ({color}: {color: string}) => (
 
 const TabIconTKC = ({color}: {color: string}) => (
         <Icon
-                style={{fontFamily: 'OpenSans', fontSize: 16}}
+                style={{fontFamily: 'OpenSans-Regular', fontSize: 16}}
                 name="book-outline"
                 color={color}
                 size={16}
@@ -140,7 +130,7 @@ const AppNavigator: React.FunctionComponent = () => {
                                         options={{
                                                 tabBarIcon: TabIcon5Q,
                                         }}
-                                        component={HomeScreen}
+                                        component={FiveQCard}
                                 />
                                 <Tab.Screen
                                         name={i18next.t('nav.kts')}

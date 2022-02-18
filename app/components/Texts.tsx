@@ -33,12 +33,12 @@ export const DefaultText = styled(Text)`
 //         font-size: 20px;
 //         line-height: 34px;
 // `;
-export const ButtonText = styled(DefaultText)`
+export const ButtonText = styled(DefaultText)``;
+export const SmallerText = styled(ButtonText)`
+        font-size: 16px;
+        line-height: 27px;
 `;
-// export const SmallerText = styled(ButtonText)`
-//         line-height: 27px;
-// `;
-//
+
 export const BoldText = styled(DefaultText)`
         font-family: OpenSans-Bold;
 `;

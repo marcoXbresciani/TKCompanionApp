@@ -140,8 +140,8 @@ android {
         applicationId "com.tkcompanionapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode 20
+        versionName "0.2.0"
     }
     splits {
         abi {

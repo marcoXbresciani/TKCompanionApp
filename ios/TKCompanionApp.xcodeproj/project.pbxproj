@@ -33,6 +33,15 @@
 		ABB5643D1FF74F579FB5A1BD /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1B888FA680D460BBFECF34F /* Octicons.ttf */; };
 		94CCED3CE4B146788BA5053A /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 298ADCBCA576489096DBA153 /* SimpleLineIcons.ttf */; };
 		CB2D61008AD144EEB098566C /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 713727A0E2234D1F9BA8BF0B /* Zocial.ttf */; };
+		FBF5FD039F0A4CE7922FC27F /* FreeSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 672B51224CF946DE87F24176 /* FreeSans.ttf */; };
+		C331ACD8509A436093E58C33 /* FreeSansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3C209C4D3CD44C9AFF7DD78 /* FreeSansBold.ttf */; };
+		95E35D049C4843C4BCC61F00 /* Sarpanch-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E16AF8AC54BE28B99C221 /* Sarpanch-Black.ttf */; };
+		13889472B43B42F297B06D80 /* Sarpanch-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88FA6FB96FFC4A54A5A4593E /* Sarpanch-Bold.ttf */; };
+		450B9660775745FC81D9FD54 /* Sarpanch-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D41DF8A44F0A4010B7755F27 /* Sarpanch-ExtraBold.ttf */; };
+		87FE6E909B2D49ED8F029E2F /* Sarpanch-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CBF6F42846402AB334D568 /* Sarpanch-Medium.ttf */; };
+		C1FB541AD0B345DA866A93E2 /* Sarpanch-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C59E478E16842F68DA6A67E /* Sarpanch-Regular.ttf */; };
+		EDC4006847CD478480A429A3 /* Sarpanch-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B0FFD1355FA408281BAFA79 /* Sarpanch-SemiBold.ttf */; };
+		1EA567C8060542BA9DCC7D13 /* Unifont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFD4F6DC7B0F4653BC5251C9 /* Unifont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +91,15 @@
 		B1B888FA680D460BBFECF34F /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		298ADCBCA576489096DBA153 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		713727A0E2234D1F9BA8BF0B /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		672B51224CF946DE87F24176 /* FreeSans.ttf */ = {isa = PBXFileReference; name = "FreeSans.ttf"; path = "../assets/fonts/FreeSans.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F3C209C4D3CD44C9AFF7DD78 /* FreeSansBold.ttf */ = {isa = PBXFileReference; name = "FreeSansBold.ttf"; path = "../assets/fonts/FreeSansBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3C6E16AF8AC54BE28B99C221 /* Sarpanch-Black.ttf */ = {isa = PBXFileReference; name = "Sarpanch-Black.ttf"; path = "../assets/fonts/Sarpanch-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		88FA6FB96FFC4A54A5A4593E /* Sarpanch-Bold.ttf */ = {isa = PBXFileReference; name = "Sarpanch-Bold.ttf"; path = "../assets/fonts/Sarpanch-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D41DF8A44F0A4010B7755F27 /* Sarpanch-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Sarpanch-ExtraBold.ttf"; path = "../assets/fonts/Sarpanch-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		11CBF6F42846402AB334D568 /* Sarpanch-Medium.ttf */ = {isa = PBXFileReference; name = "Sarpanch-Medium.ttf"; path = "../assets/fonts/Sarpanch-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8C59E478E16842F68DA6A67E /* Sarpanch-Regular.ttf */ = {isa = PBXFileReference; name = "Sarpanch-Regular.ttf"; path = "../assets/fonts/Sarpanch-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2B0FFD1355FA408281BAFA79 /* Sarpanch-SemiBold.ttf */ = {isa = PBXFileReference; name = "Sarpanch-SemiBold.ttf"; path = "../assets/fonts/Sarpanch-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CFD4F6DC7B0F4653BC5251C9 /* Unifont.ttf */ = {isa = PBXFileReference; name = "Unifont.ttf"; path = "../assets/fonts/Unifont.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +228,15 @@
 				B1B888FA680D460BBFECF34F /* Octicons.ttf */,
 				298ADCBCA576489096DBA153 /* SimpleLineIcons.ttf */,
 				713727A0E2234D1F9BA8BF0B /* Zocial.ttf */,
+				672B51224CF946DE87F24176 /* FreeSans.ttf */,
+				F3C209C4D3CD44C9AFF7DD78 /* FreeSansBold.ttf */,
+				3C6E16AF8AC54BE28B99C221 /* Sarpanch-Black.ttf */,
+				88FA6FB96FFC4A54A5A4593E /* Sarpanch-Bold.ttf */,
+				D41DF8A44F0A4010B7755F27 /* Sarpanch-ExtraBold.ttf */,
+				11CBF6F42846402AB334D568 /* Sarpanch-Medium.ttf */,
+				8C59E478E16842F68DA6A67E /* Sarpanch-Regular.ttf */,
+				2B0FFD1355FA408281BAFA79 /* Sarpanch-SemiBold.ttf */,
+				CFD4F6DC7B0F4653BC5251C9 /* Unifont.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -330,6 +357,15 @@
 				ABB5643D1FF74F579FB5A1BD /* Octicons.ttf in Resources */,
 				94CCED3CE4B146788BA5053A /* SimpleLineIcons.ttf in Resources */,
 				CB2D61008AD144EEB098566C /* Zocial.ttf in Resources */,
+				FBF5FD039F0A4CE7922FC27F /* FreeSans.ttf in Resources */,
+				C331ACD8509A436093E58C33 /* FreeSansBold.ttf in Resources */,
+				95E35D049C4843C4BCC61F00 /* Sarpanch-Black.ttf in Resources */,
+				13889472B43B42F297B06D80 /* Sarpanch-Bold.ttf in Resources */,
+				450B9660775745FC81D9FD54 /* Sarpanch-ExtraBold.ttf in Resources */,
+				87FE6E909B2D49ED8F029E2F /* Sarpanch-Medium.ttf in Resources */,
+				C1FB541AD0B345DA866A93E2 /* Sarpanch-Regular.ttf in Resources */,
+				EDC4006847CD478480A429A3 /* Sarpanch-SemiBold.ttf in Resources */,
+				1EA567C8060542BA9DCC7D13 /* Unifont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

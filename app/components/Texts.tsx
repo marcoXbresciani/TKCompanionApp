@@ -24,23 +24,24 @@ import styled from 'styled-components';
 import {Text} from 'react-native';
 
 export const DefaultText = styled(Text)`
-        font-family: OpenSans-Regular;
-        font-size: 18px;
-        line-height: 31px;
-`;
-
-// export const BiggerText = styled(DefaultText)`
-//         font-size: 20px;
-//         line-height: 34px;
-// `;
-export const ButtonText = styled(DefaultText)``;
-export const SmallerText = styled(ButtonText)`
+        font-family: FreeSans;
         font-size: 16px;
         line-height: 27px;
 `;
 
+// export const BiggerText = styled(DefaultText)`
+//         font-size: 20px;
+//         line-height: 33px;
+// `;
+export const SmallerText = styled(DefaultText)`
+        font-size: 13px;
+        line-height: 23px;
+`;
+export const ButtonText = styled(SmallerText)``;
+
 export const BoldText = styled(DefaultText)`
-        font-family: OpenSans-Bold;
+        font-family: FreeSansBold;
+        //font-weight: bold;
 `;
 
 export const JustifiedText = styled(DefaultText)`
@@ -51,7 +52,8 @@ export const CenteredText = styled(DefaultText)`
 `;
 
 export const BoldCentered = styled(CenteredText)`
-        font-family: OpenSans-Bold;
+        font-family: FreeSansBold;
+        //font-weight: bold;
 `;
 
 export const JustifiedMargin = styled(JustifiedText)`
@@ -59,5 +61,6 @@ export const JustifiedMargin = styled(JustifiedText)`
 `;
 
 export const TitleText = styled(BoldCentered)`
-        line-height: 34px;
+        font-size: 20px;
+        line-height: 33px;
 `;

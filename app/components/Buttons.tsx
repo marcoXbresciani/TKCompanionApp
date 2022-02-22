@@ -47,12 +47,13 @@ ThemedPressable.defaultProps = {
 };
 
 export const CustomIonicons = styled(Ionicons)`
-        font-family: OpenSans-Regular;
-        font-size: 18px;
+        font-family: FreeSans;
+        font-size: 16px;
+        line-height: 27px;
 `;
 
 CustomIonicons.defaultProps = {
-        size: 18,
+        size: 16,
         color: 'white',
 };
 

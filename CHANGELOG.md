@@ -25,6 +25,8 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased]
 ### Added
+* Introduced [ADR-006](doc/architecture/decisions/006-remove-expo-framework.md)
+  for the removal of Expo Framework to allow F-Droid publishing.
 ### Changed
 ### Removed
 ### Fixed
@@ -92,21 +94,21 @@ This file is offered as-is, without any warranty.
 
 ## [0.1.0] - 2021-10-21
 ### Added
-* Introduced [ADR-000](doc/arch/adr-000.md) for using ADR format for ADRs...
+* Introduced [ADR-000](doc/architecture/decisions/000-use-adr-conventions.md) for using ADR format for ADRs...
   See http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions
-* Introduced [ADR-001](doc/arch/adr-001.md) for using proper commit
+* Introduced [ADR-001](doc/architecture/decisions/001-commit-message-rules.md) for using proper commit
   message rules.
   See https://chris.beams.io/posts/git-commit/#seven-rules.
-* Introduced [ADR-002](doc/arch/adr-002.md) for using EditorConfig
+* Introduced [ADR-002](doc/architecture/decisions/002-use-editorconfig.md) for using EditorConfig
   configuration.
   See https://editorconfig.org.
-* Introduced [ADR-003](doc/arch/adr-003.md) for using a defined README
+* Introduced [ADR-003](doc/architecture/decisions/003-use-standard-readme.md) for using a defined README
   format.
   See https://github.com/RichardLitt/standard-readme.
-* Introduced [ADR-004](doc/arch/adr-004.md) for using a defined
+* Introduced [ADR-004](doc/architecture/decisions/004-keep-a-changelog.md) for using a defined
   CHANGELOG format.
   See https://keepachangelog.com.
-* Introduced [ADR-005](doc/arch/adr-005.md) for using Semantic
+* Introduced [ADR-005](doc/architecture/decisions/005-apply-semantic-versioning.md) for using Semantic
   Versioning.
   See https://semver.org.
 * Introducing REUSE compliance.

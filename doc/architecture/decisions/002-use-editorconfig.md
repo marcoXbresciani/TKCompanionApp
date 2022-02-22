@@ -1,0 +1,87 @@
+<!--
+© 2019-2022 Marco Bresciani
+
+Copying and distribution of this file, with or without modification, are
+permitted in any medium without royalty provided the copyright notice
+and this notice are preserved.
+This file is offered as-is, without any warranty.
+
+SPDX-FileCopyrightText: 2019-2022 Marco Bresciani
+
+SPDX-License-Identifier: FSFAP
+-->
+# 2 Use EditorConfig
+
+## Context
+We all know that conventions when writing code are important.
+
+But we also know that every developer has his ego and his preferences:
+just look for a minute on the Internet to find the so-called flame wars
+between Emacs supporters against those of Vi or those against tabs of
+the spaces to induce the code, challenges between IntelliJ IDEA and
+Eclipse or Windows against (GNU/)Linux.
+
+At least in the context of the main choices in writing the code,
+however, there is the possibility of choosing and standardizing these
+choices with a transversal solution compared to all many editors and
+modern development environments.
+This solution is called [EditorConfig](https://editorconfig.org/).
+
+Why should you use an EditorConfig file in your project?
+Let's face it.
+It's 2022 and many of us are still fighting between tabs and spaces
+instead of thinking about the quality of the code and its features!
+
+Nobody really cares (much...) about the style of code used, the main
+concern is to choose one for the project that should be used
+consistently throughout the project code.
+It's your project, you can define your own rules.
+And anyone who contributes will adhere to these rules.
+Spaces tabs must be managed by the editor, not by people and this is
+where EditorConfig files come into play.
+All you need to do is insert a `.editorconfig` file into the project.
+In this file, you insert some (few) lines that define the configuration
+for the current project and the editor only applies these settings for
+this project.
+
+This is a very useful technique for people working in large groups with
+different favorite editors.
+This allows everyone to have consistent coding styles across all
+editors.
+
+You can choose the style of indentation (tab or spaces), you can choose
+the size of the indentation, the type of end of line, the set of
+characters to use, ... here is the main page of the EditorConfig
+project: https://editorconfig.org/
+
+These might seem trivial when writing code for a large-scale
+application.
+But having an `.editorconfig` file ensures that these settings accompany
+the project in every place where the code is written.
+Which in turn ensures that the editor settings do not need to be
+optimized to have consistent coding styles.
+Some editors support EditorConfig natively.
+For most others, there is a plugin that enables EditorConfig support
+(see https://editorconfig.org/#download).
+Also, you can specify different types of configurations for different
+file types and even override the settings for a folder by creating
+another `.editorconfig` in that specific folder.
+And for the other options to configure, there is a wiki with details on
+those possible:
+https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+
+## Decision
+[EditorConfig](https://editorconfig.org/) helps developers define and
+maintain consistent coding styles between different editors and IDEs.
+The EditorConfig project consists of a file format for defining coding
+styles and a collection of text editor plugins that enable editors to
+read the file format and adhere to defined styles.
+EditorConfig files are easily readable and they work nicely with version
+control systems.
+
+## Status
+Accepted.
+
+## Consequences
+The `.editorconfig` file shall be used by all developers of the project
+and its checks must be activated in the IDE used by each developer.

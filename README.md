@@ -150,26 +150,28 @@ explaining the problem you've noticed and your proposed solution.
 We're here to improve!
 
 ### How to start
-From command line launch `yarn start` (or `expo start --dev-client`, but
-why making your life worse?) that will run Metro tool (don't know what
-it actually is, but seems something needed).
+From command line launch `npm start` that will run Metro tool (don't
+know what it actually is, but seems something needed).
 
-From (another) command line launch `yarn android` (or, again, make your
-life pitier and use `expo run:android`) that will prepare and launch
-your app, connecting to the Metro thing above.
+From (another) command line launch `npm run android` that will prepare
+and launch your app, connecting to the Metro thing above.
 
-It's also possible to simply run `yarn start` and then open an Android
+It's also possible to simply run `npm start` and then open an Android
 (or iOS, for what it worths) emulator from the Metro developer tools
 that should've been opened in your browser.
 
 ### How to build
-Once you should have used `expo build:android`, but it has been now
-superseded by `eas build`.
-So, install `eas-cli` with the command `npm install -g eas-cli` and run
-the following `eas build -p android` to (possibly) have fun.
-Maybe.
 
 ### How to release
+
+### Random Notes
+* Font sizes derived from [GRT Calculator](https://grtcalculator.com)
+  and using 20px as base/default font size for
+  [Open Sans](https://mattesontypographics.com/) font.
+  Sizes are:
+  * smaller: 16px, 28px line height
+  * default: 20px, 34px line height
+  * bigger: 25px, 41px line height
 
 ## License
 Overall project license, in brief:
@@ -206,10 +208,9 @@ This file is offered as-is, without any warranty.
 > [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
 This is a freely licensed work, as explained in the [Definition of Free Cultural Works](https://freedomdefined.org/Definition).
 
-Font used is **Open Sans**: © 2021
-[Steve Matteson](https://mattesontypographics.com/).
+Font used is [Free
+Sans](https://www.gnu.org/software/freefont/index.html), and it's
+licensed [under the terms of the GNU General Public
+License](https://www.gnu.org/software/freefont/license.html).
 
-[These fonts are licensed under the Apache License, Version
-2.0](https://fonts.google.com/specimen/Open+Sans#license).
-
-See `LICENSES` folder or `COPYING` file, for the whole license text.
+See `LICENSES` folder or `COPYING` file, for the whole licences text.

@@ -69,17 +69,18 @@ per un account sviluppatore Google, ed è pari a
 [$99/anno](https://developer.apple.com/support/enrollment/) (!) per il
 Programma per Sviluppatori Apple.
 
-Quindi, per ora, questa app si troverà solo tramite su
+Ci sto ancora lavorando:
+> Quindi, per ora, questa app si troverà solo tramite su
 [F-Droid](https://f-droid.org/), il _catalogo installabile di FOSS
 (Software open source gratuito) per la piattaforma Android_.
-
-Per installare questa app, è necessaria l'app client F-Droid (molto
+>
+> Per installare questa app, è necessaria l'app client F-Droid (molto
 simile a Google Play Store o Apple App Store) dal
 [sito principale](https://www.f-droid.org/): c'è un QR Code facile da
 usare per scaricarla e
 [installarla](https://en.wikipedia.org/wiki/F-Droid#Client_application).
-
-Quindi, aprendo l'app F-Droid si può cercare _TKCompanionApp_.
+>
+> Quindi, aprendo l'app F-Droid si può cercare _TKCompanionApp_.
 Installarla e aprirla.
 
 Benvenuti nel mondo FOSS.
@@ -91,13 +92,28 @@ Beh, è facile: installa l'app, apri l'app, fai clic su alcuni pulsanti.
 Non ci sono giochi, nessun quiz, nessuna azione da intraprendere.
 Siediti, segui il menu, impara, esercitati e migliora.
 
-> **Nota**: l'icona
-> <img src="doc/navigate-circle-outline.svg" height="12px" /> sui
-> pulsanti, significa che l'app aprirà una pagina web al di fuori
-> dell'app stessa, usando qualsiasi browser o app configurata sul
-> telefono per navigare in Internet.
+### Legenda
+
+#### Colori
+* <span style="background-color:royalblue">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  questo "royalblue" è il colore/tema principale dell'app, usato per i
+  bottoni, menu, ecc.
+* <span style="background-color:#004479">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  questo #004479 è il colore principale che rappresente i link e gli
+  elementi disponibili tramite
+  [The Toyota Kata Website](http://www-personal.umich.edu/~mrother/Homepage.html).
+
+#### Icone
+* <img src="doc/navigate-circle-outline.svg" height="12px" alt="navigate-circle-outline"/>
+  questa icona indica che l'app aprirà una pagina web all'esterno
+  dell'app stessa, usando qualsivoglia browser o app che hai configurato
+  sul telefono per navigare in Internet, e mostrerà una pagina web
+  esterna.
 
 ### Schermate
+Schermate dalla versione 0.1.12, basata sul framework Expo.
+In ogni caso, sono molto simili alla versione 0.2.0 corrente, senza
+Expo.
 ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
 ![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png)
 ![About](fastlane/metadata/android/en-US/images/phoneScreenshots/about.png)
@@ -111,8 +127,8 @@ Lo stesso per questo documento.
 Se sei uno sviluppatore software e vuoi contribuire a migliorare l'app,
 sei più che benvenuto!
 Trova l'ultimo NodeJS LTS corrente
-([16.13.2](https://nodejs.org/download/release/latest-gallium/), al
-2022-01-19) per il tuo sistema.
+([16.14.0](https://nodejs.org/download/release/latest-gallium/), al
+2022-02-18) per il tuo sistema.
 Prendi il codice sorgente clonando
 [il repository](https://github.com/marcoXbresciani/TKCompanionApp).
 Quindi vai nella cartella principale del progetto (contenente anche
@@ -136,25 +152,17 @@ spiegando il problema che hai notato e la soluzione proposta.
 Siamo qui per migliorare!
 
 ### Come iniziare
-Dalla riga di comando avvia `yarn start` (o `expo start --dev-client`,
-ma perché peggiorare la tua vita?) che eseguirà lo strumento Metro (non
-so cosa sia, in realtà, ma sembra necessario).
+Dalla riga di comando avvia `npm start` che eseguirà lo strumento Metro
+(non so cosa sia, in realtà, ma sembra necessario).
 
-Da (un'altra) riga di comando avvia `yarn android` (o, ancora, rendi
-peggiore la tua vita e usa `expo run:android`) che preparerà e avvierà
-la tua app, connettendoti al Metro-coso di cui sopra.
+Da (un'altra) riga di comando avvia `npm run android` che preparerà e
+avvierà la tua app, connettendoti al Metro-coso di cui sopra.
 
-È anche possibile eseguire semplicemente `yarn start` e quindi aprire un
+È anche possibile eseguire semplicemente `npm start` e quindi aprire un
 emulatore Android (o iOS, per quello che vale) dagli strumenti di
 sviluppo Metro che dovrebbe essere stato aperto nel tuo browser.
 
 ### Come compilare
-Una volta avresti dovuto usare `expo build:android`, ma ora è stato
-sostituito da `eas build`.
-Quindi, installa `eas-cli` con il comando `npm install -g eas-cli` ed
-esegui il seguente `eas build -p android` per (possibilmente) un po' di
-divertimento.
-Forse.
 
 ### Come rilasciare
 

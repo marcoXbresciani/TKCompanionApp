@@ -57,3 +57,5 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+/AppIcons.zip
+/name.bresciani.marco.tkcompanionapp.yml

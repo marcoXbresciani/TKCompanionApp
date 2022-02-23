@@ -30,8 +30,13 @@ Content to be improved and updated from time to time.
 1. [Background](#background)
 1. [Install](#install)
 1. [Usage](#usage)
+   1. [Legend](#legend)
+      1. [Colours](#colours)
+      1. [Icons](#icons)
    1. [Screenshots](#screenshots)
+1. [Font Notes](#font-notes)
 1. [Maintainers](#maintainers)
+1. [Thanks](#thanks)
 1. [Contributing](#contributing)
     1. [How to Start](#how-to-start)
     1. [How to Build](#how-to-build)
@@ -96,44 +101,59 @@ Just sit, follow the menu, learn, practice and improve.
 ### Legend
 
 #### Colours
-* <span style="background-color:royalblue">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-  this "royalblue" is the main colour "theme" of the app, used for
-  its buttons, menu and the like.
-* <span style="background-color:#004479">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-  this #004479 is the main colour representing links and items available
+* <span style="color:royalblue">&block;&block;</span> this "royalblue"
+  is the main colour theme of the app, used for its buttons, menud and
+  the like.
+* <span style="background-color:#004479">&block;&block;</span> this
+  `#004479` is the main colour representing links and items available
   through
   [The Toyota Kata Website](http://www-personal.umich.edu/~mrother/Homepage.html).
+  Color picked from the website itself, being the color of the title.
 
 #### Icons
-* <img src="doc/navigate-circle-outline.svg" height="12px" alt="navigate-circle-outline"/>
+* <img src="doc/navigate-circle-outline.svg" height="16px" alt="navigate-circle-outline"/>
   this icon means that the app will open a web page outside the app
   itself, using whatever browser or app you have configured on your
   phone to browse the Internet and show you an external web page.
 
 ### Screenshots
 Screenshots from version 0.1.12, based on Expo Framework.
-Anyway quite similar to current 0.2.0, with no Expo involved.
+Anyway quite similar to current 0.2.x, with no Expo involved.
 ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
 ![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png)
 ![About](fastlane/metadata/android/en-US/images/phoneScreenshots/about.png)
+
+## Font Notes
+* Font used is [Free
+  Sans](https://www.gnu.org/software/freefont/index.html) and font sizes
+  are derived from [GRT Calculator](https://grtcalculator.com) using
+  20px as base/default font size for [Open
+  Sans](https://mattesontypographics.com/) font.
+  Sizes are:
+  * smaller: 16px, 28px line height
+  * default: 20px, 34px line height
+  * bigger: 25px, 41px line height
 
 ## Maintainers
 The app has been started by Marco Bresciani and is currently maintained
 by Marco Bresciani.
 Same for this document.
 
+## Thanks
+Thanks to [@licaon-kter](https://github.com/licaon-kter) for the support
+on publishing the app to F-Droid.
+
 ## Contributing
 If you are a software developer and want to contribute improving this
 app, you're more than very welcome!
-Find latest current LTS NodeJS
+Find the latest current LTS NodeJS
 ([16.14.0](https://nodejs.org/download/release/latest-gallium/), as of
 2022-02-18) for your system.
 Grab the source code by cloning
 [the repository](https://github.com/marcoXbresciani/TKCompanionApp).
 Then go to this project main folder (also containing this same file
-you're reading) and run `npm -g install yarn`.
-This done, run `yarn install` and you should see all the needed
-dependencies downloaded and installed through Yarn package manager.
+you're reading) and run `npm install` and you should see all the needed
+dependencies downloaded and installed through NPM package manager.
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
@@ -143,8 +163,8 @@ this app, you're also more than very welcome!
 You don't need the code, but if you want help translating in your
 language (or fix my English, since I'm not a native speaker), add more
 content, suggest graphical or layout improvement or whatever
-contribution you can give, please
-[open a new issue](https://github.com/marcoXbresciani/TKCompanionApp/issues)
+contribution you can give, please [open a new
+issue](https://github.com/marcoXbresciani/TKCompanionApp/issues)
 explaining the problem you've noticed and your proposed solution.
 
 We're here to improve!
@@ -163,15 +183,6 @@ that should've been opened in your browser.
 ### How to build
 
 ### How to release
-
-### Random Notes
-* Font sizes derived from [GRT Calculator](https://grtcalculator.com)
-  and using 20px as base/default font size for
-  [Open Sans](https://mattesontypographics.com/) font.
-  Sizes are:
-  * smaller: 16px, 28px line height
-  * default: 20px, 34px line height
-  * bigger: 25px, 41px line height
 
 ## License
 Overall project license, in brief:
@@ -208,9 +219,8 @@ This file is offered as-is, without any warranty.
 > [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
 This is a freely licensed work, as explained in the [Definition of Free Cultural Works](https://freedomdefined.org/Definition).
 
-Font used is [Free
-Sans](https://www.gnu.org/software/freefont/index.html), and it's
-licensed [under the terms of the GNU General Public
+[Free Sans](https://www.gnu.org/software/freefont/index.html) is the
+used font, and it's licensed [under the terms of the GNU General Public
 License](https://www.gnu.org/software/freefont/license.html).
 
 See `LICENSES` folder or `COPYING` file, for the whole licences text.

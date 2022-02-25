@@ -30,7 +30,7 @@ This file is offered as-is, without any warranty.
 ### Fixed
 ### Security
 
-## [0.2.7] - 2022-02-28
+## [0.2.7] - 2022-02-25
 ### Changed
 * App Icon
 * Better copyright screen

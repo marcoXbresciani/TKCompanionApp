@@ -29,8 +29,13 @@ Contenuti da migliorare e aggiornare di volta in volta.
 1. [Contesto](#contesto)
 1. [Installazione](#installazione)
 1. [Uso](#uso)
+   1. [Legenda](#legenda)
+      1. [Colori](#colori)
+      1. [Icone](#icone)
    1. [Schermate](#schermate)
+1. [Note sui font](#note-sui-font)
 1. [Manutentori](#manutentori)
+1. [Ringraziamenti](#ringraziamenti)
 1. [Contribuire](#contribuire)
     1. [Come iniziare](#come-iniziare)
     1. [Come compilare](#come-compilare)
@@ -95,16 +100,16 @@ Siediti, segui il menu, impara, esercitati e migliora.
 ### Legenda
 
 #### Colori
-* <span style="background-color:royalblue">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-  questo "royalblue" è il colore/tema principale dell'app, usato per i
-  bottoni, menu, ecc.
-* <span style="background-color:#004479">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-  questo #004479 è il colore principale che rappresente i link e gli
-  elementi disponibili tramite
-  [The Toyota Kata Website](http://www-personal.umich.edu/~mrother/Homepage.html).
+* <span style="color:royalblue">&nbsp;&nbsp;</span> questo "royalblue" è
+  il colore/tema principale dell'app, usato per i bottoni, menu, ecc.
+* <span style="color:#004479">&nbsp;&nbsp;</span> questo #004479 è il
+  colore principale che rappresente i link e gli elementi disponibili
+  tramite [The Toyota Kata
+  Website](http://www-personal.umich.edu/~mrother/Homepage.html).
+  Colore scelto dal sito stesso, essendo il colore del titolo.
 
 #### Icone
-* <img src="doc/navigate-circle-outline.svg" height="12px" alt="navigate-circle-outline"/>
+* <img src="doc/navigate-circle-outline.svg" height="16px" alt="navigate-circle-outline"/>
   questa icona indica che l'app aprirà una pagina web all'esterno
   dell'app stessa, usando qualsivoglia browser o app che hai configurato
   sul telefono per navigare in Internet, e mostrerà una pagina web
@@ -112,16 +117,34 @@ Siediti, segui il menu, impara, esercitati e migliora.
 
 ### Schermate
 Schermate dalla versione 0.1.12, basata sul framework Expo.
-In ogni caso, sono molto simili alla versione 0.2.0 corrente, senza
+In ogni caso, sono molto simili alla versione 0.2.x corrente, senza
 Expo.
 ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
 ![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png)
 ![About](fastlane/metadata/android/en-US/images/phoneScreenshots/about.png)
 
+## Note sui font
+* Il font usato è [Free
+  Sans](https://www.gnu.org/software/freefont/index.html)
+* Le dimensioni dei caratteri sono derivate da [GRT
+  Calculator](https://grtcalculator.com) usando 20px come dimensione di
+  riferimento per font [Open Sans](https://mattesontypographics.com/).
+  Le misure sono:
+    * piccolo: 16px, 28px altezza della linea
+    * normale: 20px, 34px altezza della linea
+    * grande: 25px, 41px altezza della linea
+
 ## Manutentori
 L'app è stata iniziata da Marco Bresciani ed è attualmente mantenuta da
 Marco Bresciani.
 Lo stesso per questo documento.
+
+## Ringraziamenti
+Grazie a:
+* [@licaon-kter](https://github.com/licaon-kter) per il supporto nella
+  pubblicazione dell'app su F-Droid.
+* [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
+  per l'icona dell'app.
 
 ## Contribuire
 Se sei uno sviluppatore software e vuoi contribuire a migliorare l'app,

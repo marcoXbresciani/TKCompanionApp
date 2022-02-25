@@ -125,10 +125,10 @@ Anyway quite similar to current 0.2.x, with no Expo involved.
 
 ## Font Notes
 * Font used is [Free
-  Sans](https://www.gnu.org/software/freefont/index.html) and font sizes
-  are derived from [GRT Calculator](https://grtcalculator.com) using
-  20px as base/default font size for [Open
-  Sans](https://mattesontypographics.com/) font.
+  Sans](https://www.gnu.org/software/freefont/index.html)
+* Font sizes are derived from [GRT
+  Calculator](https://grtcalculator.com) using 20px as base/default font
+  size for [Open Sans](https://mattesontypographics.com/) font.
   Sizes are:
   * smaller: 16px, 28px line height
   * default: 20px, 34px line height
@@ -140,8 +140,11 @@ by Marco Bresciani.
 Same for this document.
 
 ## Thanks
-Thanks to [@licaon-kter](https://github.com/licaon-kter) for the support
-on publishing the app to F-Droid.
+Thanks to:
+* [@licaon-kter](https://github.com/licaon-kter) for the support on
+  publishing the app to F-Droid.
+* [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
+  for the app icon.
 
 ## Contributing
 If you are a software developer and want to contribute improving this

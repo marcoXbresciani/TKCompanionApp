@@ -44,7 +44,7 @@ const Content = styled(SmallerText)`
         font-style: italic;
         padding-left: 5px;
         padding-right: 5px;
-        color: #de602b;
+        color: crimson;
 `;
 
 export const Separator: React.FC = ({children}) => (

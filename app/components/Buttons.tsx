@@ -26,13 +26,9 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import React from 'react';
 import {ButtonText} from './Texts';
 
-export const WhiteText = styled(ButtonText)`
-        color: white;
-`;
-
 export const ThemedPressable = styled(Pressable)`
         background-color: ${props => props.theme.bg};
-        border-radius: 18px;
+        border-radius: 23px;
         justify-content: center;
         margin: 4.5px auto;
         padding: 4.5px 9px;
@@ -59,12 +55,11 @@ CustomIonicons.defaultProps = {
 
 export function NavButton(props: {
         onPress: null | ((event: GestureResponderEvent) => void);
-        title: string;
 }): JSX.Element {
-        const {onPress, title} = props;
+        const {onPress} = props;
         return (
                 <ThemedPressable onPress={onPress}>
-                        <WhiteText>{title}</WhiteText>
+                        <CustomIonicons name="arrow-forward-outline" />
                 </ThemedPressable>
         );
 }

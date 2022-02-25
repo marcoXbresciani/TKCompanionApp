@@ -83,8 +83,6 @@ const TkcFront: React.FunctionComponent = () => {
                                 onPress={() =>
                                         navigation.navigate('TkcBack')
                                 }
-                                title="Changing thinking
-                                                through practice"
                         />
                 </DefaultScreen>
         );

@@ -25,12 +25,46 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased]
 ### Added
-* Introduced [ADR-006](doc/architecture/decisions/006-remove-expo-framework.md)
-  for the removal of Expo Framework to allow F-Droid publishing.
 ### Changed
 ### Removed
 ### Fixed
 ### Security
+
+## [0.2.7] - 2022-02-28
+### Changed
+* App Icon
+* Better copyright screen
+* README content properly updated
+### Fixed
+* Missing default text colour
+* REUSE compliance
+
+## [0.2.6] - 2022-02-23
+### Changed
+* .gitignore
+* README content properly updated
+### Fixed
+* REUSE compliance
+
+## [0.2.5] - 2022-02-23
+### Added
+* App Icon
+
+## [0.2.4] - 2022-02-22
+
+## [0.2.3] - 2022-02-22
+### Removed
+* Duplicated Ionicons.tts
+
+## [0.2.2] - 2022-02-22
+
+## [0.2.1] - 2022-02-22
+### Added
+* FreeSans as default font.
+* [ADR-006](doc/architecture/decisions/006-remove-expo-framework.md) for
+  the removal of Expo Framework to allow F-Droid publishing.
+### Removed
+* OpenSans font.
 
 ## [0.2.0] - 2022-02-18
 ### Added
@@ -120,6 +154,13 @@ This file is offered as-is, without any warranty.
 * 5Q card with front and back.
 
 [Unreleased]: https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD
+[0.2.7]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.7
+[0.2.6]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.6
+[0.2.5]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.5
+[0.2.4]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.4
+[0.2.3]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.3
+[0.2.2]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.2
+[0.2.1]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.1
 [0.2.0]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.0
 [0.1.12]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.12
 [0.1.11]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.11

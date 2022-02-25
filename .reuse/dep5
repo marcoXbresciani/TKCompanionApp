@@ -68,7 +68,7 @@ Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: assets/fonts/FreeSans-*.ttf
-Copyright: Steve Matteson
+Copyright: Primož Peterlin, Steve White
 License: GPL-3.0-or-later
 
 Files: babel.config.js

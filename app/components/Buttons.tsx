@@ -24,7 +24,6 @@ import styled from 'styled-components';
 import {GestureResponderEvent, Pressable} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import React from 'react';
-import {ButtonText} from './Texts';
 
 export const ThemedPressable = styled(Pressable)`
         background-color: ${props => props.theme.bg};
@@ -106,7 +105,7 @@ export function BrowseButton(props: {
         return (
                 <ThemedPressable onPress={onPress} theme={theme}>
                         <CustomIonicons name="navigate-circle-outline">
-                                <ButtonText>{text}</ButtonText>
+                                {text}
                         </CustomIonicons>
                 </ThemedPressable>
         );
@@ -114,16 +113,13 @@ export function BrowseButton(props: {
 
 export function TKWButton(props: {
         onPress: null | ((event: GestureResponderEvent) => void);
-        text?: null | string;
 }): JSX.Element {
-        const {onPress, text} = props;
+        const {onPress} = props;
         return (
                 <ThemedPressable
                         onPress={onPress}
                         theme={{bg: '#004479'}}>
-                        <CustomIonicons name="navigate-circle-outline">
-                                <ButtonText>{text}</ButtonText>
-                        </CustomIonicons>
+                        <CustomIonicons name="navigate-circle-outline" />
                 </ThemedPressable>
         );
 }

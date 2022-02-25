@@ -24,20 +24,25 @@ import styled from 'styled-components';
 import {Text} from 'react-native';
 
 export const DefaultText = styled(Text)`
+        color: black;
         font-family: FreeSans;
         font-size: 16px;
         line-height: 27px;
 `;
 
 // export const BiggerText = styled(DefaultText)`
+//         font-color: back;
 //         font-size: 20px;
 //         line-height: 33px;
 // `;
 export const SmallerText = styled(DefaultText)`
+        color: black;
         font-size: 13px;
         line-height: 23px;
 `;
-export const ButtonText = styled(SmallerText)``;
+export const ButtonText = styled(SmallerText)`
+        color: white;
+`;
 
 export const BoldText = styled(DefaultText)`
         font-family: FreeSansBold;
@@ -45,9 +50,11 @@ export const BoldText = styled(DefaultText)`
 `;
 
 export const JustifiedText = styled(DefaultText)`
+        color: black;
         text-align: justify;
 `;
 export const CenteredText = styled(DefaultText)`
+        color: black;
         text-align: center;
 `;
 

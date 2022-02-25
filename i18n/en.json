@@ -11,7 +11,9 @@
         "long": "It contains the Coaching Kata 5Q card, plus (possibly) more things and information. Content to be improved and updated from time to time."
     },
     "kts": {
-        "text": "Applying the pattern of the Improvement Kata (from the book 'Toyota Kata') to a persistently aggravating problem that involves obstacles and has no obvious solution. Statement used when someone has been repeatedly frustrated, wants black-and-white answers or expects someone else to solve the problem."
+        "text": "Applying the pattern of the Improvement Kata (from the book 'Toyota Kata') to a persistently aggravating problem that involves obstacles and has no obvious solution. Statement used when someone has been repeatedly frustrated, wants black-and-white answers or expects someone else to solve the problem.",
+        "tip": "[κατα]",
+        "title": "Kata that Shit"
     },
     "nav": {
         "5qcard": "5Q Card",

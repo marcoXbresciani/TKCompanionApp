@@ -33,12 +33,13 @@ import i18next from 'i18next';
 
 const KTSScreen: React.FunctionComponent = () => (
         <DefaultScreen>
-                <BoldCentered>Kata that Shit</BoldCentered>
-                <CenteredText>[κατα]</CenteredText>
+                <BoldCentered>{i18next.t('kts.title')}</BoldCentered>
+                <CenteredText>{i18next.t('kts.tip')}</CenteredText>
                 <JustifiedMargin>
                         {i18next.t('kts.text')}
                 </JustifiedMargin>
                 <TKWButton
+                        text={i18next.t('kts.title')}
                         onPress={() => {
                                 Linking.openURL(
                                         'http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',

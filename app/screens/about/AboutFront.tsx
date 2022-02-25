@@ -93,7 +93,7 @@ const AboutFront: React.FunctionComponent = () => {
                                 sections={[
                                         {
                                                 title: 'This application MIGHT',
-                                                color: '#004479',
+                                                color: 'forestgreen',
                                                 data: [
                                                         {
                                                                 key: 'help you improving',

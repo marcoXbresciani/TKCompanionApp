@@ -63,10 +63,6 @@ Files: app.json
 Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
-Files: AppIcons.zip
-Copyright: 2022 Marco Bresciani
-License: FSFAP
-
 Files: assets/*
 Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later

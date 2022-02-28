@@ -27,6 +27,8 @@ This file is offered as-is, without any warranty.
 ### Added
 * Colour codes.
 * Local tests' subsection.
+* Proper "rounded" icons for Android.
+* Introducing older versions management in metadata.
 ### Changed
 ### Removed
 ### Fixed

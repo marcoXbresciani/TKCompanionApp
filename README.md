@@ -41,6 +41,7 @@ Content to be improved and updated from time to time.
     1. [How to Start](#how-to-start)
     1. [How to Build](#how-to-build)
     1. [How to Release](#how-to-release)
+    1. [How to Test Locally](#how-to-test-locally)
 1. [License](#license)
 
 ## Background
@@ -101,11 +102,9 @@ Just sit, follow the menu, learn, practice and improve.
 ### Legend
 
 #### Colours
-* <span style="color:royalblue">&block;&block;</span> this "royalblue"
-  is the main colour theme of the app, used for its buttons, menud and
-  the like.
-* <span style="background-color:#004479">&block;&block;</span> this
-  `#004479` is the main colour representing links and items available
+* ![royalblue](/doc/svg/royalblue.svg) this "royalblue" is the main
+  colour theme of the app, used for its buttons, menu and the like.
+* ![#004479](/doc/svg/004479.svg) this `#004479` is the main colour representing links and items available
   through
   [The Toyota Kata Website](http://www-personal.umich.edu/~mrother/Homepage.html).
   Color picked from the website itself, being the color of the title.
@@ -125,14 +124,14 @@ Anyway quite similar to current 0.2.x, with no Expo involved.
 
 ## Font Notes
 * Font used is [Free
-  Sans](https://www.gnu.org/software/freefont/index.html)
+  Sans](https://www.gnu.org/software/freefont/index.html).
 * Font sizes are derived from [GRT
   Calculator](https://grtcalculator.com) using 20px as base/default font
   size for [Open Sans](https://mattesontypographics.com/) font.
   Sizes are:
-  * smaller: 16px, 28px line height
-  * default: 20px, 34px line height
-  * bigger: 25px, 41px line height
+  * smaller: 16px, 28px line height,
+  * default: 20px, 34px line height,
+  * bigger: 25px, 41px line height.
 
 ## Maintainers
 The app has been started by Marco Bresciani and is currently maintained
@@ -172,7 +171,7 @@ explaining the problem you've noticed and your proposed solution.
 
 We're here to improve!
 
-### How to start
+### How to Start
 From command line launch `npm start` that will run Metro tool (don't
 know what it actually is, but seems something needed).
 
@@ -183,9 +182,15 @@ It's also possible to simply run `npm start` and then open an Android
 (or iOS, for what it worths) emulator from the Metro developer tools
 that should've been opened in your browser.
 
-### How to build
+### How to Build
 
-### How to release
+### How to Release
+
+### How to Test Locally
+The generated APK shall be (self) signed to be able to install it on a
+real device.
+The [uber-apk-signer](https://github.com/patrickfav/uber-apk-signer)
+tool can be used to quickly and easily sign any APK.
 
 ## License
 Overall project license, in brief:
@@ -222,8 +227,8 @@ This file is offered as-is, without any warranty.
 > [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
 This is a freely licensed work, as explained in the [Definition of Free Cultural Works](https://freedomdefined.org/Definition).
 
+See `LICENSES` folder or `COPYING` file, for the whole licences text.
+
 [Free Sans](https://www.gnu.org/software/freefont/index.html) is the
 used font, and it's licensed [under the terms of the GNU General Public
 License](https://www.gnu.org/software/freefont/license.html).
-
-See `LICENSES` folder or `COPYING` file, for the whole licences text.

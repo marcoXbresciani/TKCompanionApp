@@ -25,6 +25,8 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased]
 ### Added
+* Colour codes.
+* Local tests' subsection.
 ### Changed
 ### Removed
 ### Fixed

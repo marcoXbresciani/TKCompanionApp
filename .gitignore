@@ -57,5 +57,6 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 /AppIcons.zip
-/AppIcons.zip.license
+/pumping-iron brain.license
 /name.bresciani.marco.tkcompanionapp.yml
+/pumpin-iron brain/*

@@ -30,6 +30,10 @@ This file is offered as-is, without any warranty.
 ### Fixed
 ### Security
 
+## [0.2.8] - 2022-02-28
+### Fixed
+Error in PNG file.
+
 ## [0.2.7] - 2022-02-25
 ### Changed
 * App Icon
@@ -154,6 +158,7 @@ This file is offered as-is, without any warranty.
 * 5Q card with front and back.
 
 [Unreleased]: https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD
+[0.2.8]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.8
 [0.2.7]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.7
 [0.2.6]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.6
 [0.2.5]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.5

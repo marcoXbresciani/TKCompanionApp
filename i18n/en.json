@@ -3,7 +3,15 @@
         "back": {},
         "front": {
             "header": "Coaching Kata",
-            "title": "The Five Questions"
+            "separator": "(Click here to Turn Card Over)",
+            "title": "The Five Questions",
+            "q1": "What is the Target Condition?",
+            "q2": "What is the Actual Condition now?",
+            "q3.1": "What Obstacles do you think are preventing you from reaching the target condition?",
+            "q3.2": "Which *one* are you addressing now?",
+            "q4.1": "What is your Next Step? (Next experiment)",
+            "q4.2": "What do you expect?",
+            "q5": "How quickly can we go and see what we  Have Learned from taking that step?"
         }
     },
     "app": {

@@ -83,18 +83,14 @@ const Front5Q: React.FunctionComponent = () => {
                                                 )}
                                         </TitleText>
                                         <QuestionsText>
-                                                ① What is the{' '}
-                                                <BoldText>
-                                                        Target Condition
-                                                </BoldText>
-                                                ?
+                                                {i18next.t(
+                                                        '5q.front.q1',
+                                                )}
                                         </QuestionsText>
                                         <QuestionsText>
-                                                ② What is the{' '}
-                                                <BoldText>
-                                                        Actual Condition
-                                                </BoldText>{' '}
-                                                now?
+                                                {i18next.t(
+                                                        '5q.front.q2',
+                                                )}
                                         </QuestionsText>
                                         <Pressable
                                                 onPress={() =>
@@ -103,38 +99,33 @@ const Front5Q: React.FunctionComponent = () => {
                                                         )
                                                 }>
                                                 <Separator>
-                                                        (Click here to
-                                                        Turn Card Over)
+                                                        {i18next.t(
+                                                                '5q.front.separator',
+                                                        )}
                                                 </Separator>
                                         </Pressable>
                                         <QuestionsText>
-                                                ③ What{' '}
-                                                <BoldText>
-                                                        Obstacles
-                                                </BoldText>{' '}
-                                                do you think are
-                                                preventing you from
-                                                reaching the target
-                                                condition?{'\n'}
-                                                Which *one* are you
-                                                addressing now?
-                                        </QuestionsText>
-                                        <QuestionsText>
-                                                ④ What is your{' '}
-                                                <BoldText>
-                                                        Next Step
-                                                </BoldText>
-                                                ? (Next experiment)
+                                                {i18next.t(
+                                                        '5q.front.q3.1',
+                                                )}
                                                 {'\n'}
-                                                What do you expect?
+                                                {i18next.t(
+                                                        '5q.front.q3.2',
+                                                )}
                                         </QuestionsText>
                                         <QuestionsText>
-                                                ⑤ How quickly can we go
-                                                and see what we{' '}
-                                                <BoldText>
-                                                        Have Learned
-                                                </BoldText>{' '}
-                                                from taking that step?
+                                                {i18next.t(
+                                                        '5q.front.q4.1',
+                                                )}
+                                                {'\n'}
+                                                {i18next.t(
+                                                        '5q.front.q4.2',
+                                                )}
+                                        </QuestionsText>
+                                        <QuestionsText>
+                                                {i18next.t(
+                                                        '5q.front.q5',
+                                                )}
                                         </QuestionsText>
                                 </QuestionsView>
                         </FrontView>

@@ -3,6 +3,7 @@
         "back": {},
         "front": {
             "header": "Kata del coaching",
+            "separator": "(clicca per girare la carta)",
             "title": "Le cinque domande",
             "q1": "Qual è la condizione obiettivo?",
             "q2": "Qual è la condizione attuale ora?",

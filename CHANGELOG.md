@@ -32,6 +32,8 @@ This file is offered as-is, without any warranty.
 ### Changed
 ### Removed
 ### Fixed
+* [#5](https://github.com/marcoXbresciani/TKCompanionApp/issues/5)
+  Complete I18N introduction with English and Italian translations.
 ### Security
 
 ## [0.2.9] - 2022-02-28

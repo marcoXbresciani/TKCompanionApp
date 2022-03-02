@@ -118,7 +118,7 @@ const AboutFront: React.FunctionComponent = () => {
                                                         },
                                                         {
                                                                 key: i18next.t(
-                                                                        'about.front.might.key3',
+                                                                        'about.front.might.key4',
                                                                 ),
                                                                 uri: 'http://www-personal.umich.edu/~mrother/Challenge.html',
                                                         },

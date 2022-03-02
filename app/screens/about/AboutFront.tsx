@@ -35,6 +35,7 @@ import {
         SectionItemSeparator,
 } from '../../components/Pieces';
 import {useNavigation} from '@react-navigation/native';
+import i18next from 'i18next';
 
 const HeaderRenderer = styled(BoldText)`
         margin: 20px auto auto auto;
@@ -92,53 +93,77 @@ const AboutFront: React.FunctionComponent = () => {
                                 )}
                                 sections={[
                                         {
-                                                title: 'This application MIGHT',
+                                                title: i18next.t(
+                                                        'about.front.might.title',
+                                                ),
                                                 color: 'forestgreen',
                                                 data: [
                                                         {
-                                                                key: 'help you improving',
+                                                                key: i18next.t(
+                                                                        'about.front.might.key1',
+                                                                ),
                                                                 uri: 'http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html',
                                                         },
                                                         {
-                                                                key: 'help you learning Kata',
+                                                                key: i18next.t(
+                                                                        'about.front.might.key2',
+                                                                ),
                                                                 uri: 'http://www-personal.umich.edu/~mrother/The_Coaching_Kata.html',
                                                         },
                                                         {
-                                                                key: 'be fun',
+                                                                key: i18next.t(
+                                                                        'about.front.might.key3',
+                                                                ),
                                                                 uri: 'http://www-personal.umich.edu/~mrother/Extras.html',
                                                         },
                                                         {
-                                                                key: 'teach you scientific thinking',
+                                                                key: i18next.t(
+                                                                        'about.front.might.key3',
+                                                                ),
                                                                 uri: 'http://www-personal.umich.edu/~mrother/Challenge.html',
                                                         },
                                                 ],
                                         },
                                         {
-                                                title: 'This application does NOT',
+                                                title: i18next.t(
+                                                        'about.front.not.title',
+                                                ),
                                                 color: 'crimson',
                                                 data: [
                                                         {
-                                                                key: 'collect your data',
+                                                                key: i18next.t(
+                                                                        'about.front.not.key1',
+                                                                ),
                                                                 uri: 'https://www.eff.org/issues/privacy',
                                                         },
                                                         {
-                                                                key: 'contain tracking libraries',
+                                                                key: i18next.t(
+                                                                        'about.front.not.key2',
+                                                                ),
                                                                 uri: 'https://www.eff.org/issues/privacy',
                                                         },
                                                         {
-                                                                key: 'phone home',
+                                                                key: i18next.t(
+                                                                        'about.front.not.key3',
+                                                                ),
                                                                 uri: 'https://en.wikipedia.org/wiki/Phoning_home',
                                                         },
                                                         {
-                                                                key: 'use Google Play Store APIs',
+                                                                key: i18next.t(
+                                                                        'about.front.not.key4',
+                                                                ),
                                                                 uri: 'https://en.wikipedia.org/wiki/Google_Play_Services#Concerns',
                                                         },
                                                         {
-                                                                key: 'save things on your device',
+                                                                key: i18next.t(
+                                                                        'about.front.not.key5',
+                                                                ),
                                                                 uri: 'https://www.eff.org/issues/privacy',
                                                         },
                                                         {
-                                                                key: 'spy on you',
+                                                                key: i18next.t(
+                                                                        'about.front.not.key6',
+                                                                ),
                                                                 uri: 'https://www.eff.org/issues/privacy',
                                                         },
                                                 ],

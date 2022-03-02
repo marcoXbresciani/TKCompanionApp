@@ -1,17 +1,45 @@
 {
     "5q": {
-        "back": {},
+        "back": {
+            "quote": "Perché non sai, in realtà, quale sarà il risultato di uno step!",
+            "q1": "1) Che cosa avevi pianificato come ultimo step?",
+            "q2": "2) Che cosa ti aspettavi?",
+            "q3": "3) Che cosa è successo nei fatti?",
+            "q4": "4) Che cosa hai appreso?",
+            "return": "Return to question 3",
+            "title": "Reflect on the Last Step"
+        },
         "front": {
             "header": "Kata del coaching",
             "separator": "(clicca per girare la carta)",
-            "title": "Le cinque domande",
-            "q1": "Qual è la condizione obiettivo?",
-            "q2": "Qual è la condizione attuale ora?",
-            "q3.1": "Quali ostacoli credi ora ti impediscano di raggiungere la condizione obiettivo?",
+            "q1": "① Qual è la condizione obiettivo?",
+            "q2": "② Qual è la condizione attuale ora?",
+            "q3.1": "③ Quali ostacoli credi ora ti impediscano di raggiungere la condizione obiettivo?",
             "q3.2": "Quale (uno solo!) vuoi affrontare adesso?",
-            "q4.1": "Qual è il to prossimo passo (esperimento)?",
+            "q4.1": "④ Qual è il to prossimo step (esperimento)?",
             "q4.2": "Che cosa ti aspetti di ottenere?",
-            "q5": "Quanto velocemente possiamo andare a vedere che cosa hai appreso da questo passo?"
+            "q5": "⑤ Quanto velocemente possiamo andare a vedere che cosa hai appreso da questo passo?",
+            "title": "Le cinque domande"
+        }
+    },
+    "about": {
+        "front": {
+            "might": {
+                "key1": "aiutarti a migliorare",
+                "key2": "aiutarti a imparare il Kata",
+                "key3": "essere divertente",
+                "key4": "insegnarti il pensiero scientifico",
+                "title": "Questa applicazione POTREBBE"
+            },
+            "not": {
+                "key1": "raccoglie i tuoi dati",
+                "key2": "contiene librerie traccianti",
+                "key3": "contatta nessuno",
+                "key4": "usa le API del Google Play Store",
+                "key5": "salva informazioni sul tuo dispositivo",
+                "key6": "spia",
+                "title": "Questa applicatione NON"
+            }
         }
     },
     "app": {

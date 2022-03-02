@@ -1,17 +1,45 @@
 {
     "5q": {
-        "back": {},
+        "back": {
+            "quote": "Because you don't actually know what the result of a step will be!",
+            "q1": "1) What did you plan as your Last Step?",
+            "q2": "2) What did you Expect?",
+            "q3": "3) What Actually Happened?",
+            "q4": "4) What did you Learn?",
+            "return": "Return to question 3",
+            "title": "Reflect on the Last Step"
+        },
         "front": {
             "header": "Coaching Kata",
             "separator": "(Click here to Turn Card Over)",
-            "title": "The Five Questions",
-            "q1": "What is the Target Condition?",
-            "q2": "What is the Actual Condition now?",
-            "q3.1": "What Obstacles do you think are preventing you from reaching the target condition?",
+            "q1": "① What is the Target Condition?",
+            "q2": "② What is the Actual Condition now?",
+            "q3.1": "③ What Obstacles do you think are preventing you from reaching the target condition?",
             "q3.2": "Which *one* are you addressing now?",
-            "q4.1": "What is your Next Step? (Next experiment)",
+            "q4.1": "④ What is your Next Step? (Next experiment)",
             "q4.2": "What do you expect?",
-            "q5": "How quickly can we go and see what we  Have Learned from taking that step?"
+            "q5": "⑤ How quickly can we go and see what we  Have Learned from taking that step?",
+            "title": "The Five Questions"
+        }
+    },
+    "about": {
+        "front": {
+            "might": {
+                "key1": "help you improving",
+                "key2": "help you learning Kata",
+                "key3": "be fun",
+                "key4": "teach you scientific thinking",
+                "title": "This application MIGHT"
+            },
+            "not": {
+                "key1": "collect your data",
+                "key2": "contain tracking libraries",
+                "key3": "phone home",
+                "key4": "use Google Play Store APIs",
+                "key5": "save things on your device",
+                "key6": "spy on you",
+                "title": "This application does NOT"
+            }
         }
     },
     "app": {

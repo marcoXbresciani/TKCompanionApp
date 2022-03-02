@@ -24,13 +24,13 @@ import styled from 'styled-components';
 import {Pressable, View} from 'react-native';
 import * as React from 'react';
 import {
-        BoldText,
         DefaultText,
         SmallerText,
         TitleText,
 } from '../../components/Texts';
 import DefaultScreen from '../DefaultScreen';
 import {useNavigation} from '@react-navigation/native';
+import i18next from 'i18next';
 
 const BackView = styled(View)`
         background-color: white;
@@ -77,43 +77,31 @@ const Back5QScreen: React.FunctionComponent = () => {
                 <DefaultScreen>
                         <BackView>
                                 <TitleText>
-                                        Reflect on the Last Step
+                                        {i18next.t('5q.back.title')}
                                 </TitleText>
                                 <QuoteText>
-                                        Because you don&apos;t actually
-                                        know what the result of a step
-                                        will be!
+                                        {i18next.t('5q.back.quote')}
                                 </QuoteText>
                                 <QuestionsView>
                                         <QuestionsText>
-                                                1) What did you plan as
-                                                your{' '}
-                                                <BoldText>
-                                                        Last Step
-                                                </BoldText>
-                                                ?
+                                                {i18next.t(
+                                                        '5q.back.q1',
+                                                )}
                                         </QuestionsText>
                                         <QuestionsText>
-                                                2) What did you{' '}
-                                                <BoldText>
-                                                        Expect
-                                                </BoldText>
-                                                ?
+                                                {i18next.t(
+                                                        '5q.back.q2',
+                                                )}
                                         </QuestionsText>
                                         <QuestionsText>
-                                                3) What{' '}
-                                                <BoldText>
-                                                        Actually
-                                                        Happened
-                                                </BoldText>
-                                                ?
+                                                {i18next.t(
+                                                        '5q.back.q3',
+                                                )}
                                         </QuestionsText>
                                         <QuestionsText>
-                                                4) What did you{' '}
-                                                <BoldText>
-                                                        Learn
-                                                </BoldText>
-                                                ?
+                                                {i18next.t(
+                                                        '5q.back.q4',
+                                                )}
                                         </QuestionsText>
                                 </QuestionsView>
                                 <Pressable
@@ -124,7 +112,9 @@ const Back5QScreen: React.FunctionComponent = () => {
                                         }>
                                         <Line />
                                         <Returner>
-                                                Return to question 3
+                                                {i18next.t(
+                                                        '5q.back.return',
+                                                )}
                                         </Returner>
                                 </Pressable>
                         </BackView>

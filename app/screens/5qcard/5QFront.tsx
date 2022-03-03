@@ -28,6 +28,7 @@ import {BoldText, DefaultText, TitleText} from '../../components/Texts';
 import DefaultScreen from '../DefaultScreen';
 import {useNavigation} from '@react-navigation/native';
 import i18next from 'i18next';
+import {Nav} from '../../components/Pieces';
 
 const FrontView = styled(View)`
         background-color: royalblue;
@@ -64,7 +65,7 @@ const QuestionsText = styled(DefaultText)`
 `;
 
 const Front5Q: React.FunctionComponent = () => {
-        const navigation = useNavigation();
+        const navigation = useNavigation<Nav>();
 
         return (
                 <DefaultScreen>

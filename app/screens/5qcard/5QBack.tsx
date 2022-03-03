@@ -31,6 +31,7 @@ import {
 import DefaultScreen from '../DefaultScreen';
 import {useNavigation} from '@react-navigation/native';
 import i18next from 'i18next';
+import {Nav} from '../../components/Pieces';
 
 const BackView = styled(View)`
         background-color: white;
@@ -71,7 +72,7 @@ const Returner = styled(SmallerText)`
 `;
 
 const Back5QScreen: React.FunctionComponent = () => {
-        const navigation = useNavigation();
+        const navigation = useNavigation<Nav>();
 
         return (
                 <DefaultScreen>

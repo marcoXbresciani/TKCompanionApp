@@ -24,7 +24,7 @@ import * as React from 'react';
 import DefaultScreen from '../DefaultScreen';
 
 const AboutLegend: React.FunctionComponent = () => {
-        return <DefaultScreen></DefaultScreen>;
+        return <DefaultScreen />;
 };
 
 export default AboutLegend;

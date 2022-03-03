@@ -24,6 +24,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import * as React from 'react';
 import AboutFront from './AboutFront';
 import AboutBack from './AboutBack';
+import AboutLegend from './AboutLegend';
 
 const Stack = createNativeStackNavigator();
 
@@ -40,6 +41,13 @@ const AboutScreen: React.FunctionComponent = () => {
                         <Stack.Screen
                                 name="AboutBack"
                                 component={AboutBack}
+                                options={{
+                                        headerShown: false,
+                                }}
+                        />
+                        <Stack.Screen
+                                name="AboutLegend"
+                                component={AboutLegend}
                                 options={{
                                         headerShown: false,
                                 }}

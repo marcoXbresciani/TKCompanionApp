@@ -2,10 +2,10 @@
     "5q": {
         "back": {
             "quote": "Because you don't actually know what the result of a step will be!",
-            "q1": "1) What did you plan as your Last Step?",
-            "q2": "2) What did you Expect?",
-            "q3": "3) What Actually Happened?",
-            "q4": "4) What did you Learn?",
+            "q1": "1) What did you plan as your <bold>Last Step</bold>?",
+            "q2": "2) What did you <bold>Expect</bold>?",
+            "q3": "3) What <bold>Actually Happened</bold>?",
+            "q4": "4) What did you <bold>Learn</bold>?",
             "return": "Return to question 3",
             "title": "Reflect on the Last Step"
         },
@@ -13,12 +13,12 @@
             "header": "Coaching Kata",
             "separator": "(Click here to Turn Card Over)",
             "q1": "① What is the <bold>Target Condition</bold>?",
-            "q2": "② What is the Actual Condition now?",
-            "q3.1": "③ What Obstacles do you think are preventing you from reaching the target condition?",
+            "q2": "② What is the <bold>Actual Condition</bold> now?",
+            "q3.1": "③ What <bold>Obstacles</bold> do you think are preventing you from reaching the target condition?",
             "q3.2": "Which *one* are you addressing now?",
-            "q4.1": "④ What is your Next Step? (Next experiment)",
+            "q4.1": "④ What is your <bold>Next Step</bold>? (Next experiment)",
             "q4.2": "What do you expect?",
-            "q5": "⑤ How quickly can we go and see what we  Have Learned from taking that step?",
+            "q5": "⑤ How quickly can we go and see what we <bold>Have Learned</bold> from taking that step?",
             "title": "The Five Questions"
         }
     },

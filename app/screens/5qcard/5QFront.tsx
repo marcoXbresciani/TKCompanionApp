@@ -99,9 +99,17 @@ const Front5Q: React.FunctionComponent = () => {
                                                 />
                                         </QuestionsText>
                                         <QuestionsText>
-                                                {i18next.t(
-                                                        '5q.front.q2',
-                                                )}
+                                                <Trans
+                                                        t={t}
+                                                        i18nKey={
+                                                                '5q.front.q2'
+                                                        }
+                                                        components={{
+                                                                bold: (
+                                                                        <BoldText />
+                                                                ),
+                                                        }}
+                                                />
                                         </QuestionsText>
                                         <Pressable
                                                 onPress={() =>
@@ -116,27 +124,51 @@ const Front5Q: React.FunctionComponent = () => {
                                                 </Separator>
                                         </Pressable>
                                         <QuestionsText>
-                                                {i18next.t(
-                                                        '5q.front.q3.1',
-                                                )}
+                                                <Trans
+                                                        t={t}
+                                                        i18nKey={
+                                                                '5q.front.q3.1'
+                                                        }
+                                                        components={{
+                                                                bold: (
+                                                                        <BoldText />
+                                                                ),
+                                                        }}
+                                                />
                                                 {'\n'}
                                                 {i18next.t(
                                                         '5q.front.q3.2',
                                                 )}
                                         </QuestionsText>
                                         <QuestionsText>
-                                                {i18next.t(
-                                                        '5q.front.q4.1',
-                                                )}
+                                                <Trans
+                                                        t={t}
+                                                        i18nKey={
+                                                                '5q.front.q4.1'
+                                                        }
+                                                        components={{
+                                                                bold: (
+                                                                        <BoldText />
+                                                                ),
+                                                        }}
+                                                />
                                                 {'\n'}
                                                 {i18next.t(
                                                         '5q.front.q4.2',
                                                 )}
                                         </QuestionsText>
                                         <QuestionsText>
-                                                {i18next.t(
-                                                        '5q.front.q5',
-                                                )}
+                                                <Trans
+                                                        t={t}
+                                                        i18nKey={
+                                                                '5q.front.q5'
+                                                        }
+                                                        components={{
+                                                                bold: (
+                                                                        <BoldText />
+                                                                ),
+                                                        }}
+                                                />
                                         </QuestionsText>
                                 </QuestionsView>
                         </FrontView>

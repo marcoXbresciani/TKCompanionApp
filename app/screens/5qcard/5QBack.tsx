@@ -24,6 +24,7 @@ import styled from 'styled-components';
 import {Pressable, View} from 'react-native';
 import * as React from 'react';
 import {
+        BoldText,
         DefaultText,
         SmallerText,
         TitleText,
@@ -32,6 +33,7 @@ import DefaultScreen from '../DefaultScreen';
 import {useNavigation} from '@react-navigation/native';
 import i18next from 'i18next';
 import {Nav} from '../../components/Pieces';
+import {Trans, useTranslation} from 'react-i18next';
 
 const BackView = styled(View)`
         background-color: white;
@@ -73,6 +75,7 @@ const Returner = styled(SmallerText)`
 
 const Back5QScreen: React.FunctionComponent = () => {
         const navigation = useNavigation<Nav>();
+        const {t} = useTranslation('');
 
         return (
                 <DefaultScreen>
@@ -85,24 +88,56 @@ const Back5QScreen: React.FunctionComponent = () => {
                                 </QuoteText>
                                 <QuestionsView>
                                         <QuestionsText>
-                                                {i18next.t(
-                                                        '5q.back.q1',
-                                                )}
+                                                <Trans
+                                                        t={t}
+                                                        i18nKey={
+                                                                '5q.back.q1'
+                                                        }
+                                                        components={{
+                                                                bold: (
+                                                                        <BoldText />
+                                                                ),
+                                                        }}
+                                                />
                                         </QuestionsText>
                                         <QuestionsText>
-                                                {i18next.t(
-                                                        '5q.back.q2',
-                                                )}
+                                                <Trans
+                                                        t={t}
+                                                        i18nKey={
+                                                                '5q.back.q2'
+                                                        }
+                                                        components={{
+                                                                bold: (
+                                                                        <BoldText />
+                                                                ),
+                                                        }}
+                                                />
                                         </QuestionsText>
                                         <QuestionsText>
-                                                {i18next.t(
-                                                        '5q.back.q3',
-                                                )}
+                                                <Trans
+                                                        t={t}
+                                                        i18nKey={
+                                                                '5q.back.q3'
+                                                        }
+                                                        components={{
+                                                                bold: (
+                                                                        <BoldText />
+                                                                ),
+                                                        }}
+                                                />
                                         </QuestionsText>
                                         <QuestionsText>
-                                                {i18next.t(
-                                                        '5q.back.q4',
-                                                )}
+                                                <Trans
+                                                        t={t}
+                                                        i18nKey={
+                                                                '5q.back.q4'
+                                                        }
+                                                        components={{
+                                                                bold: (
+                                                                        <BoldText />
+                                                                ),
+                                                        }}
+                                                />
                                         </QuestionsText>
                                 </QuestionsView>
                                 <Pressable

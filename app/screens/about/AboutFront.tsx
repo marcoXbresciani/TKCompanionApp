@@ -32,6 +32,7 @@ import {
 } from '../../components/Buttons';
 import {
         ButtonStripe,
+        Nav,
         SectionItemSeparator,
 } from '../../components/Pieces';
 import {useNavigation} from '@react-navigation/native';
@@ -43,7 +44,7 @@ const HeaderRenderer = styled(BoldText)`
 `;
 
 const AboutFront: React.FunctionComponent = () => {
-        const navigation = useNavigation();
+        const navigation = useNavigation<Nav>();
 
         return (
                 <>

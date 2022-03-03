@@ -28,6 +28,7 @@ import styled from 'styled-components';
 import {useNavigation} from '@react-navigation/native';
 import {
         ButtonStripe,
+        Nav,
         SectionItemSeparator,
 } from '../../components/Pieces';
 import {BackButton, TKWDownloadButton} from '../../components/Buttons';
@@ -39,7 +40,7 @@ const BackRenderer = styled(DefaultText)`
 `;
 
 const TkcBack: React.FunctionComponent = () => {
-        const navigation = useNavigation();
+        const navigation = useNavigation<Nav>();
 
         return (
                 <DefaultScreen>

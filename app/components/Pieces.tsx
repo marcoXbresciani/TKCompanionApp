@@ -45,3 +45,7 @@ export const SmallerView = styled(View)`
         width: 85%;
         margin: auto;
 `;
+
+export type Nav = {
+        navigate: (value: string) => void;
+};

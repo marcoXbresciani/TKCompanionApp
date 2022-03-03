@@ -27,13 +27,14 @@ import DefaultScreen from '../DefaultScreen';
 import {useNavigation} from '@react-navigation/native';
 import {
         FrontRenderer,
+        Nav,
         SectionItemSeparator,
 } from '../../components/Pieces';
 import {NavButton} from '../../components/Buttons';
 import i18next from 'i18next';
 
 const TkcFront: React.FunctionComponent = () => {
-        const navigation = useNavigation();
+        const navigation = useNavigation<Nav>();
 
         return (
                 <DefaultScreen>

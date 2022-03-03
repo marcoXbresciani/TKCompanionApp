@@ -14,7 +14,8 @@ SPDX-License-Identifier: FSFAP
 
 ![GitHub](https://img.shields.io/github/license/marcoxbresciani/tkcompanionapp?logo=gnu&style=plastic)
 [![REUSE status](https://api.reuse.software/badge/github.com/marcoXbresciani/TKCompanionApp)](https://api.reuse.software/info/github.com/marcoXbresciani/TKCompanionApp)
-![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/marcoXbresciani/TKCompanionApp?logo=github&sort=semver&style=plastic)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/marcoXbresciani/TKCompanionApp?logo=github&sort=semver&style=plastic&color=black)
+![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp?logo=fdroid&color=green)
 [![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational?logo=semver&style=plastic)](https://semver.org/)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![Markdown](https://img.shields.io/badge/made%20with-markdown-black?logo=markdown&style=plastic)](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
@@ -74,18 +75,20 @@ per un account sviluppatore Google, ed è pari a
 [$99/anno](https://developer.apple.com/support/enrollment/) (!) per il
 Programma per Sviluppatori Apple.
 
-Ci sto ancora lavorando:
-> Quindi, per ora, questa app si troverà solo tramite su
+Quindi, per ora, questa app si troverà solo tramite su
 [F-Droid](https://f-droid.org/), il _catalogo installabile di FOSS
-(Software open source gratuito) per la piattaforma Android_.
->
-> Per installare questa app, è necessaria l'app client F-Droid (molto
+(Software libero e open source) per la piattaforma Android_.
+
+![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp)
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
+
+Per installare questa app, è necessaria l'app client F-Droid (molto
 simile a Google Play Store o Apple App Store) dal
 [sito principale](https://www.f-droid.org/): c'è un QR Code facile da
 usare per scaricarla e
 [installarla](https://en.wikipedia.org/wiki/F-Droid#Client_application).
->
-> Quindi, aprendo l'app F-Droid si può cercare _TKCompanionApp_.
+
+Quindi, aprendo l'app F-Droid si può cercare _TKCompanionApp_.
 Installarla e aprirla.
 
 Benvenuti nel mondo FOSS.
@@ -100,12 +103,11 @@ Siediti, segui il menu, impara, esercitati e migliora.
 ### Legenda
 
 #### Colori
-* <span style="color:royalblue">&nbsp;&nbsp;</span> questo "royalblue" è
-  il colore/tema principale dell'app, usato per i bottoni, menu, ecc.
-* <span style="color:#004479">&nbsp;&nbsp;</span> questo #004479 è il
-  colore principale che rappresente i link e gli elementi disponibili
-  tramite [The Toyota Kata
-  Website](http://www-personal.umich.edu/~mrother/Homepage.html).
+* ![royalblue](/doc/svg/royalblue.svg)  questo "royalblue" è il
+  colore/tema principale dell'app, usato per i bottoni, menu, ecc.
+* ![#004479](/doc/svg/004479.svg)  questo `#004479` è il colore
+  principale che rappresente i link e gli elementi disponibili tramite
+  [The Toyota Kata Website](http://www-personal.umich.edu/~mrother/Homepage.html).
   Colore scelto dal sito stesso, essendo il colore del titolo.
 
 #### Icone
@@ -116,9 +118,6 @@ Siediti, segui il menu, impara, esercitati e migliora.
   esterna.
 
 ### Schermate
-Schermate dalla versione 0.1.12, basata sul framework Expo.
-In ogni caso, sono molto simili alla versione 0.2.x corrente, senza
-Expo.
 ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
 ![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png)
 ![About](fastlane/metadata/android/en-US/images/phoneScreenshots/about.png)
@@ -151,7 +150,7 @@ Se sei uno sviluppatore software e vuoi contribuire a migliorare l'app,
 sei più che benvenuto!
 Trova l'ultimo NodeJS LTS corrente
 ([16.14.0](https://nodejs.org/download/release/latest-gallium/), al
-2022-02-18) per il tuo sistema.
+2022-03-03) per il tuo sistema.
 Prendi il codice sorgente clonando
 [il repository](https://github.com/marcoXbresciani/TKCompanionApp).
 Quindi vai nella cartella principale del progetto (contenente anche
@@ -181,13 +180,16 @@ Dalla riga di comando avvia `npm start` che eseguirà lo strumento Metro
 Da (un'altra) riga di comando avvia `npm run android` che preparerà e
 avvierà la tua app, connettendoti al Metro-coso di cui sopra.
 
-È anche possibile eseguire semplicemente `npm start` e quindi aprire un
-emulatore Android (o iOS, per quello che vale) dagli strumenti di
-sviluppo Metro che dovrebbe essere stato aperto nel tuo browser.
-
 ### Come compilare
 
 ### Come rilasciare
+
+### Come testare localmente
+Il file APK generato può essere (auto) firmato per consentirne
+l'installazione su un dispositivo reale.
+Lo strumento
+[uber-apk-signer](https://github.com/patrickfav/uber-apk-signer) può
+essere usato per firmare qualsiasi APK facilmente e velocemente.
 
 ## Licenza
 Licenza generale del progetto, in breve:
@@ -225,11 +227,9 @@ This file is offered as-is, without any warranty.
 > Questa è una opera liberamente licenziata, come spiegato nella
 > [Definizione di Opere Culturali Libere](https://freedomdefined.org/Definition).
 
-Il carattere usato è **Open Sans**: © 2021
-[Steve Matteson](https://mattesontypographics.com/).
-
-[These fonts are licensed under the Apache License, Version
-2.0](https://fonts.google.com/specimen/Open+Sans#license).
-
 Vedere la cartella `LICENSES` o il file `COPYING` per i testi integrali
 delle licenze.
+
+[Free Sans](https://www.gnu.org/software/freefont/index.html) è il font
+usato, licenziato [under the terms of the GNU General Public
+License](https://www.gnu.org/software/freefont/license.html).

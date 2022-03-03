@@ -119,8 +119,6 @@ Just sit, follow the menu, learn, practice and improve.
   phone to browse the Internet and show you an external web page.
 
 ### Screenshots
-Screenshots from version 0.1.12, based on Expo Framework.
-Anyway quite similar to current 0.2.x, with no Expo involved.
 ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
 ![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png)
 ![About](fastlane/metadata/android/en-US/images/phoneScreenshots/about.png)
@@ -153,7 +151,7 @@ If you are a software developer and want to contribute improving this
 app, you're more than very welcome!
 Find the latest current LTS NodeJS
 ([16.14.0](https://nodejs.org/download/release/latest-gallium/), as of
-2022-02-18) for your system.
+2022-03-03) for your system.
 Grab the source code by cloning
 [the repository](https://github.com/marcoXbresciani/TKCompanionApp).
 Then go to this project main folder (also containing this same file
@@ -180,10 +178,6 @@ know what it actually is, but seems something needed).
 
 From (another) command line launch `npm run android` that will prepare
 and launch your app, connecting to the Metro thing above.
-
-It's also possible to simply run `npm start` and then open an Android
-(or iOS, for what it worths) emulator from the Metro developer tools
-that should've been opened in your browser.
 
 ### How to Build
 

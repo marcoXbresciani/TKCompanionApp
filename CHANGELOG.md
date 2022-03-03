@@ -25,11 +25,14 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased]
 ### Added
+* screenshots in Italian
 ### Changed
+* updated screenshots
 ### Removed
 ### Fixed
 * [#5](https://github.com/marcoXbresciani/TKCompanionApp/issues/5)
   Complete I18N introduction with English and Italian translations.
+* REUSE compliance
 ### Security
 
 ## [0.2.10] - 2022-03-03

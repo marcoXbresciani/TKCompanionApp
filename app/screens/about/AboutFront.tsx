@@ -37,6 +37,7 @@ import {
 } from '../../components/Pieces';
 import {useNavigation} from '@react-navigation/native';
 import i18next from 'i18next';
+import DefaultScreen from '../DefaultScreen';
 
 const HeaderRenderer = styled(BoldText)`
         margin: 20px auto auto auto;
@@ -47,7 +48,7 @@ const AboutFront: React.FunctionComponent = () => {
         const navigation = useNavigation<Nav>();
 
         return (
-                <>
+                <DefaultScreen>
                         <Version />
                         <ButtonStripe>
                                 <LegendButton
@@ -66,9 +67,6 @@ const AboutFront: React.FunctionComponent = () => {
                                 />
                         </ButtonStripe>
                         <SectionList
-                                style={{
-                                        margin: 5,
-                                }}
                                 ItemSeparatorComponent={
                                         SectionItemSeparator
                                 }
@@ -171,7 +169,7 @@ const AboutFront: React.FunctionComponent = () => {
                                         },
                                 ]}
                         />
-                </>
+                </DefaultScreen>
         );
 };
 

@@ -25,6 +25,7 @@ import {DefaultText, SmallerText} from '../../components/Texts';
 import styled from 'styled-components';
 import {Linking, ScrollView, View} from 'react-native';
 import {BrowseButton} from '../../components/Buttons';
+import i18next from 'i18next';
 
 const Notice = styled(View)`
         align-content: center;
@@ -82,7 +83,9 @@ const Copyright: React.FunctionComponent = () => {
                                                         'https://www.gnu.org/software/freefont/license.html',
                                                 );
                                         }}
-                                        text="See license page"
+                                        text={i18next.t(
+                                                'copyright.license',
+                                        )}
                                         theme={{bg: '#880088'}}
                                 />
                         </Notice>

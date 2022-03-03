@@ -22,9 +22,17 @@
  */
 import * as React from 'react';
 import DefaultScreen from '../DefaultScreen';
+import {CenteredText} from '../../components/Texts';
+import i18next from 'i18next';
 
 const AboutLegend: React.FunctionComponent = () => {
-        return <DefaultScreen />;
+        return (
+                <DefaultScreen>
+                        <CenteredText>
+                                {i18next.t('app.wip')}
+                        </CenteredText>
+                </DefaultScreen>
+        );
 };
 
 export default AboutLegend;

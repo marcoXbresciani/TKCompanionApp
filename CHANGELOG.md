@@ -25,6 +25,15 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased]
 ### Added
+### Changed
+### Removed
+### Fixed
+* [#5](https://github.com/marcoXbresciani/TKCompanionApp/issues/5)
+  Complete I18N introduction with English and Italian translations.
+### Security
+
+## [0.2.10] - 2022-03-03
+### Added
 * Colour codes to readme.
 * Local tests' subsection.
 * Proper "rounded" icons for Android.
@@ -35,10 +44,6 @@ This file is offered as-is, without any warranty.
 ### Removed
 * Non-important inner style.
 * Pending type check for TypeScript in Navigation element.
-### Fixed
-* [#5](https://github.com/marcoXbresciani/TKCompanionApp/issues/5)
-  Complete I18N introduction with English and Italian translations.
-### Security
 
 ## [0.2.9] - 2022-02-28
 ### Fixed

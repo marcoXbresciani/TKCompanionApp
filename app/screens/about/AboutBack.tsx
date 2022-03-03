@@ -23,13 +23,14 @@
 import * as React from 'react';
 import Version from './Version';
 import Copyright from './Copyright';
+import DefaultScreen from '../DefaultScreen';
 
 const AboutBack: React.FunctionComponent = () => {
         return (
-                <>
+                <DefaultScreen>
                         <Version />
                         <Copyright />
-                </>
+                </DefaultScreen>
         );
 };
 

@@ -1,17 +1,16 @@
 {
     "5q": {
         "back": {
-            "quote": "Because you don't actually know what the result of a step will be!",
             "q1": "1) What did you plan as your <bold>Last Step</bold>?",
             "q2": "2) What did you <bold>Expect</bold>?",
             "q3": "3) What <bold>Actually Happened</bold>?",
             "q4": "4) What did you <bold>Learn</bold>?",
+            "quote": "Because you don't actually know what the result of a step will be!",
             "return": "Return to question 3",
             "title": "Reflect on the Last Step"
         },
         "front": {
             "header": "Coaching Kata",
-            "separator": "(Click here to Turn Card Over)",
             "q1": "① What is the <bold>Target Condition</bold>?",
             "q2": "② What is the <bold>Actual Condition</bold> now?",
             "q3.1": "③ What <bold>Obstacles</bold> do you think are preventing you from reaching the target condition?",
@@ -19,6 +18,7 @@
             "q4.1": "④ What is your <bold>Next Step</bold>? (Next experiment)",
             "q4.2": "What do you expect?",
             "q5": "⑤ How quickly can we go and see what we <bold>Have Learned</bold> from taking that step?",
+            "separator": "(Click here to Turn Card Over)",
             "title": "The Five Questions"
         }
     },
@@ -43,8 +43,12 @@
         }
     },
     "app": {
+        "long": "It contains the Coaching Kata 5Q card, plus (possibly) more things and information. Content to be improved and updated from time to time.",
         "short": "A short and small helper for Toyota Kata practitioners",
-        "long": "It contains the Coaching Kata 5Q card, plus (possibly) more things and information. Content to be improved and updated from time to time."
+        "wip": "Work in progress..."
+    },
+    "copyright": {
+        "license": "See license page"
     },
     "kts": {
         "text": "Applying the pattern of the Improvement Kata (from the book 'Toyota Kata') to a persistently aggravating problem that involves obstacles and has no obvious solution. Statement used when someone has been repeatedly frustrated, wants black-and-white answers or expects someone else to solve the problem.",

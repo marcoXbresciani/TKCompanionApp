@@ -1,17 +1,16 @@
 {
     "5q": {
         "back": {
-            "quote": "Perché non sai, in realtà, quale sarà il risultato di uno step!",
             "q1": "1) Che cosa avevi pianificato come ultimo step?",
             "q2": "2) Che cosa ti aspettavi?",
             "q3": "3) Che cosa è successo nei fatti?",
             "q4": "4) Che cosa hai appreso?",
+            "quote": "Perché non sai, in realtà, quale sarà il risultato di uno step!",
             "return": "Return to question 3",
             "title": "Reflect on the Last Step"
         },
         "front": {
             "header": "Kata del coaching",
-            "separator": "(clicca per girare la carta)",
             "q1": "① Qual è la condizione obiettivo?",
             "q2": "② Qual è la condizione attuale ora?",
             "q3.1": "③ Quali ostacoli credi ora ti impediscano di raggiungere la condizione obiettivo?",
@@ -19,6 +18,7 @@
             "q4.1": "④ Qual è il to prossimo step (esperimento)?",
             "q4.2": "Che cosa ti aspetti di ottenere?",
             "q5": "⑤ Quanto velocemente possiamo andare a vedere che cosa hai appreso da questo passo?",
+            "separator": "(clicca per girare la carta)",
             "title": "Le cinque domande"
         }
     },
@@ -43,8 +43,12 @@
         }
     },
     "app": {
+        "long": "Contiene le 5 domande del Kata del coaching, e (forse) altre cose e informazioni. Contenuti da migliorare e aggiornare di volta in volta.",
         "short": "Un piccolo e semplice aiuto per i praticanti di Toyota Kata",
-        "long": "Contiene le 5 domande del Kata del coaching, e (forse) altre cose e informazioni. Contenuti da migliorare e aggiornare di volta in volta."
+        "wip": "Lavori in corso..."
+    },
+    "copyright": {
+        "license": "Pagina della licenza"
     },
     "kts": {
         "text": "Applicare lo schema del Kata di miglioramento (dal libro \"Toyota Kata\") a un problema persistentemente in peggioramento, che comporta ostacoli e non ha una soluzione ovvia. Dichiarazione usata quando qualcuno è stato ripetutamente frustrato, vuole risposte in bianco e nero o si aspetta che qualcun altro risolva il problema."

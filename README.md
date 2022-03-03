@@ -14,7 +14,8 @@ SPDX-License-Identifier: FSFAP
 
 ![GitHub](https://img.shields.io/github/license/marcoxbresciani/tkcompanionapp?logo=gnu&style=plastic)
 [![REUSE status](https://api.reuse.software/badge/github.com/marcoXbresciani/TKCompanionApp)](https://api.reuse.software/info/github.com/marcoXbresciani/TKCompanionApp)
-![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/marcoXbresciani/TKCompanionApp?logo=github&sort=semver&style=plastic)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/marcoXbresciani/TKCompanionApp?logo=github&sort=semver&style=plastic&color=black)
+![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp?logo=fdroid&color=green)
 [![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational?logo=semver&style=plastic)](https://semver.org/)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![Markdown](https://img.shields.io/badge/made%20with-markdown-black?logo=markdown&style=plastic)](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
@@ -76,18 +77,20 @@ for a Google Developer Account, and it's even
 [$99/year](https://developer.apple.com/support/enrollment/) (!) for the
 Apple Developer Program.
 
-I'm still working on this:
-> So, for now, I hope you'll find this app only through the
+So, for now, I hope you'll find this app only through the
 [F-Droid](https://f-droid.org/) _installable catalogue of FOSS (Free and
 Open Source Software) applications for the Android platform_.
->
-> To install this app, you then need the F-Droid client app (pretty
+
+![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp)
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
+
+To install this app, you then need the F-Droid client app (pretty
 similar to Google Play Store or Apple App Store) from the
 [main site](https://www.f-droid.org/): there's an easy QR Code to
 download and
 [install it](https://en.wikipedia.org/wiki/F-Droid#Client_application).
->
-> Then, open the F-Droid repository app and search for _TKCompanionApp_.
+
+Then, open the F-Droid repository app and search for _TKCompanionApp_.
 Install it, and open it.
 
 Welcome to the world of FOSS.

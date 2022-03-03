@@ -25,12 +25,16 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased]
 ### Added
-* Colour codes.
+* Colour codes to readme.
 * Local tests' subsection.
 * Proper "rounded" icons for Android.
 * Introducing older versions management in metadata.
+* More I18N management.
 ### Changed
+* Wrong package name
 ### Removed
+* Non-important inner style.
+* Pending type check for TypeScript in Navigation element.
 ### Fixed
 * [#5](https://github.com/marcoXbresciani/TKCompanionApp/issues/5)
   Complete I18N introduction with English and Italian translations.

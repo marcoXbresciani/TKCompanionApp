@@ -28,6 +28,7 @@ import {BoldText, DefaultText, TitleText} from '../../components/Texts';
 import DefaultScreen from '../DefaultScreen';
 import {useNavigation} from '@react-navigation/native';
 import i18next from 'i18next';
+import {Trans, useTranslation} from 'react-i18next';
 import {Nav} from '../../components/Pieces';
 
 const FrontView = styled(View)`
@@ -66,6 +67,7 @@ const QuestionsText = styled(DefaultText)`
 
 const Front5Q: React.FunctionComponent = () => {
         const navigation = useNavigation<Nav>();
+        const {t} = useTranslation('');
 
         return (
                 <DefaultScreen>
@@ -84,9 +86,17 @@ const Front5Q: React.FunctionComponent = () => {
                                                 )}
                                         </TitleText>
                                         <QuestionsText>
-                                                {i18next.t(
-                                                        '5q.front.q1',
-                                                )}
+                                                <Trans
+                                                        t={t}
+                                                        i18nKey={
+                                                                '5q.front.q1'
+                                                        }
+                                                        components={{
+                                                                bold: (
+                                                                        <BoldText />
+                                                                ),
+                                                        }}
+                                                />
                                         </QuestionsText>
                                         <QuestionsText>
                                                 {i18next.t(

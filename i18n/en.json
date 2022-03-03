@@ -12,7 +12,7 @@
         "front": {
             "header": "Coaching Kata",
             "separator": "(Click here to Turn Card Over)",
-            "q1": "① What is the Target Condition?",
+            "q1": "① What is the <bold>Target Condition</bold>?",
             "q2": "② What is the Actual Condition now?",
             "q3.1": "③ What Obstacles do you think are preventing you from reaching the target condition?",
             "q3.2": "Which *one* are you addressing now?",

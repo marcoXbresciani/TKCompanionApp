@@ -25,6 +25,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
 import i18next from 'i18next';
+import {initReactI18next} from 'react-i18next';
 import {tEn, tItIT} from './i18n';
 import {NativeModules, Platform} from 'react-native';
 import HomeScreen from './app/screens/HomeScreen';
@@ -49,7 +50,7 @@ const resources = {
         },
 };
 
-i18next.init({
+i18next.use(initReactI18next).init({
         cleanCode: true,
         compatibilityJSON: 'v3',
         debug: false,

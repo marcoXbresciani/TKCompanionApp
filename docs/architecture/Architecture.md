@@ -11,3 +11,12 @@ SPDX-FileCopyrightText: 2021-2022 Marco Bresciani
 SPDX-License-Identifier: FSFAP
 -->
 # Architecture
+The app is using [React Native](https://reactnative.dev/) framework to
+possibly be portable on more platforms.
+Specifically, Android and iOS.
+
+The actual code is written in
+[TypeScript](https://www.typescriptlang.org/) and its fully available in
+the `app` folder.
+The `assets` and `i18n` folders have additional resources needed for the
+project.

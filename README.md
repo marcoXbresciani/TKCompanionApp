@@ -39,10 +39,6 @@ Content to be improved and updated from time to time.
 1. [Maintainers](#maintainers)
 1. [Thanks](#thanks)
 1. [Contributing](#contributing)
-    1. [How to Start](#how-to-start)
-    1. [How to Build](#how-to-build)
-    1. [How to Release](#how-to-release)
-    1. [How to Test Locally](#how-to-test-locally)
 1. [License](#license)
 
 ## Background
@@ -105,15 +101,15 @@ Just sit, follow the menu, learn, practice and improve.
 ### Legend
 
 #### Colours
-* ![royalblue](/doc/svg/royalblue.svg) this "royalblue" is the main
+* ![royalblue](/docs/svg/royalblue.svg) this "royalblue" is the main
   colour theme of the app, used for its buttons, menu and the like.
-* ![#004479](/doc/svg/004479.svg) this `#004479` is the main colour representing links and items available
+* ![#004479](/docs/svg/004479.svg) this `#004479` is the main colour representing links and items available
   through
   [The Toyota Kata Website](http://www-personal.umich.edu/~mrother/Homepage.html).
   Color picked from the website itself, being the color of the title.
 
 #### Icons
-* <img src="doc/navigate-circle-outline.svg" height="16px" alt="navigate-circle-outline"/>
+* <img src="docs/svg/navigate-circle-outline.svg" height="16px" alt="navigate-circle-outline"/>
   this icon means that the app will open a web page outside the app
   itself, using whatever browser or app you have configured on your
   phone to browse the Internet and show you an external web page.
@@ -147,47 +143,7 @@ Thanks to:
   for the app icon.
 
 ## Contributing
-If you are a software developer and want to contribute improving this
-app, you're more than very welcome!
-Find the latest current LTS NodeJS
-([16.14.0](https://nodejs.org/download/release/latest-gallium/), as of
-2022-03-03) for your system.
-Grab the source code by cloning
-[the repository](https://github.com/marcoXbresciani/TKCompanionApp).
-Then go to this project main folder (also containing this same file
-you're reading) and run `npm install` and you should see all the needed
-dependencies downloaded and installed through NPM package manager.
-
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
-
-If you're not a software developer, and want to contribute improving
-this app, you're also more than very welcome!
-You don't need the code, but if you want help translating in your
-language (or fix my English, since I'm not a native speaker), add more
-content, suggest graphical or layout improvement or whatever
-contribution you can give, please [open a new
-issue](https://github.com/marcoXbresciani/TKCompanionApp/issues)
-explaining the problem you've noticed and your proposed solution.
-
-We're here to improve!
-
-### How to Start
-From command line launch `npm start` that will run Metro tool (don't
-know what it actually is, but seems something needed).
-
-From (another) command line launch `npm run android` that will prepare
-and launch your app, connecting to the Metro thing above.
-
-### How to Build
-
-### How to Release
-
-### How to Test Locally
-The generated APK shall be (self) signed to be able to install it on a
-real device.
-The [uber-apk-signer](https://github.com/patrickfav/uber-apk-signer)
-tool can be used to quickly and easily sign any APK.
+See [CONTRIBUTING.md](/docs/CONTRIBUTING.md).
 
 ## License
 Overall project license, in brief:

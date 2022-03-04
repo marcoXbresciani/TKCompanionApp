@@ -38,9 +38,6 @@ Contenuti da migliorare e aggiornare di volta in volta.
 1. [Manutentori](#manutentori)
 1. [Ringraziamenti](#ringraziamenti)
 1. [Contribuire](#contribuire)
-    1. [Come iniziare](#come-iniziare)
-    1. [Come compilare](#come-compilare)
-    1. [Come rilasciare](#come-rilasciare)
 1. [Licenza](#licenza)
 
 ## Contesto
@@ -103,15 +100,15 @@ Siediti, segui il menu, impara, esercitati e migliora.
 ### Legenda
 
 #### Colori
-* ![royalblue](/doc/svg/royalblue.svg)  questo "royalblue" è il
+* ![royalblue](/docs/svg/royalblue.svg)  questo "royalblue" è il
   colore/tema principale dell'app, usato per i bottoni, menu, ecc.
-* ![#004479](/doc/svg/004479.svg)  questo `#004479` è il colore
+* ![#004479](/docs/svg/004479.svg)  questo `#004479` è il colore
   principale che rappresente i link e gli elementi disponibili tramite
   [The Toyota Kata Website](http://www-personal.umich.edu/~mrother/Homepage.html).
   Colore scelto dal sito stesso, essendo il colore del titolo.
 
 #### Icone
-* <img src="doc/navigate-circle-outline.svg" height="16px" alt="navigate-circle-outline"/>
+* <img src="docs/svg/navigate-circle-outline.svg" height="16px" alt="navigate-circle-outline"/>
   questa icona indica che l'app aprirà una pagina web all'esterno
   dell'app stessa, usando qualsivoglia browser o app che hai configurato
   sul telefono per navigare in Internet, e mostrerà una pagina web
@@ -146,50 +143,7 @@ Grazie a:
   per l'icona dell'app.
 
 ## Contribuire
-Se sei uno sviluppatore software e vuoi contribuire a migliorare l'app,
-sei più che benvenuto!
-Trova l'ultimo NodeJS LTS corrente
-([16.14.0](https://nodejs.org/download/release/latest-gallium/), al
-2022-03-03) per il tuo sistema.
-Prendi il codice sorgente clonando
-[il repository](https://github.com/marcoXbresciani/TKCompanionApp).
-Quindi vai nella cartella principale del progetto (contenente anche
-questo stesso file che stai leggendo) ed esegui `npm -g install yarn`.
-Fatto questo, esegui `yarn install` e dovresti vedere che tutte le
-dipendenze necessarie sono scaricate e installate tramite il gestore di
-pacchetti Yarn.
-
-![dimensione del codice GitHub in byte](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
-![Attività di commit GitHub](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
-
-Se non sei uno sviluppatore di software e vuoi contribuire a migliorare
-questa app, sei altrettanto più che benvenuto!
-Non ti serve il codice, ma se vuoi aiutare per tradurre nella tua lingua
-(o correggere il mio inglese, dato che non sono madrelingua), aggiungere
-altro contenuto, suggerire miglioramenti grafici o di layout o altro
-contributo che puoi dare, per favore
-[crea una nuova attività](https://github.com/marcoXbresciani/TKCompanionApp/issues)
-spiegando il problema che hai notato e la soluzione proposta.
-
-Siamo qui per migliorare!
-
-### Come iniziare
-Dalla riga di comando avvia `npm start` che eseguirà lo strumento Metro
-(non so cosa sia, in realtà, ma sembra necessario).
-
-Da (un'altra) riga di comando avvia `npm run android` che preparerà e
-avvierà la tua app, connettendoti al Metro-coso di cui sopra.
-
-### Come compilare
-
-### Come rilasciare
-
-### Come testare localmente
-Il file APK generato può essere (auto) firmato per consentirne
-l'installazione su un dispositivo reale.
-Lo strumento
-[uber-apk-signer](https://github.com/patrickfav/uber-apk-signer) può
-essere usato per firmare qualsiasi APK facilmente e velocemente.
+Cfr. [CONTRIBUTING.it-IT.md](/docs/CONTRIBUTING-it.IT.md).
 
 ## Licenza
 Licenza generale del progetto, in breve:

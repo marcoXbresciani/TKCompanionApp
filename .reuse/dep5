@@ -75,11 +75,11 @@ Files: babel.config.js
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
-Files: doc/*.svg
+Files: docs/svg/*.svg
 Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
-Files: doc/navigate-circle-outline.svg
+Files: docs/svg/navigate-circle-outline.svg
 Copyright: 2022 Ionic
 License: MIT
 

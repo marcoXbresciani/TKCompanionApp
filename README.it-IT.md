@@ -115,9 +115,8 @@ Siediti, segui il menu, impara, esercitati e migliora.
   esterna.
 
 ### Schermate
-![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
-![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png)
-![About](fastlane/metadata/android/en-US/images/phoneScreenshots/about.png)
+![Home](fastlane/metadata/android/it-IT/images/phoneScreenshots/home.pmg)
+![About](fastlane/metadata/android/it-IT/images/phoneScreenshots/about.png)
 
 ## Note sui font
 * Il font usato è [Free

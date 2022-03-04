@@ -10,7 +10,7 @@ SPDX-FileCopyrightText: 2021-2022 Marco Bresciani
 
 SPDX-License-Identifier: FSFAP
 -->
-# 7 User FreeFont
+# 7 Use FreeFont
 
 ## Context
 The font used in the app is an important presentation aspect of the app

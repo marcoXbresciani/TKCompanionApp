@@ -18,6 +18,9 @@ Per qualsiasi domanda... chiedi pure!
 ## Sommario
 1. [Per tutti i contributi](#per-tutti-i-contributi)
 1. [Per gli sviluppatori](#per-gli-sviluppatori)
+   1. [Come iniziare](#come-iniziare)
+   1. [Come compilare](#come-compilare)
+   1. [Come rilasciare](#come-rilasciare)
 
 ## Per tutti i contributi
 Se non sei uno sviluppatore di software e vuoi contribuire a migliorare
@@ -58,6 +61,44 @@ avvierà la tua app, connettendoti al Metro-coso di cui sopra.
 ### Come compilare
 
 ### Come rilasciare
+Una volta che il codice è completo e testato, per rilasciare ci sono una
+serie di passi da seguire.
+
+**Lista di controllo pre-volo**: queste sono le attivitò da fare prima
+di creare un nuovo rilascio:
+1. Aggiornare [package.json](package.json) col nuovo numero di versione
+   ed eseguire `npm install`.
+1. Verificare che [CHANGELOG.md](CHANGELOG.md) contenga la relativa
+   sezione numerata per il rilascio, spostando il contenuto relativo e
+   rilevante da [Unreleased](CHANGELOG.md) alla suddetta sezione.
+   E verificahe che il relativo link al tag sia disponibile alla fine
+   del file, insiele agli altri link ai tag già esistenti.
+1. Verificare che la cartella `fastlane` contenga i relativi file
+   `changelogs` per lo specifico *codice* di versione, in tutte le
+   lingue disponibili.
+   Se necessario, aggiornare o aggiungere le relative schermate, in
+   tutte le lingue disponibili.
+1. Verificare che [Errors.md](/docs/Errors.md) contenga i problemi noti
+   al momento, aggiungendo quelli rilevanti e rimuovendo quelli risolti.
+   Se necessario, aprire dei problemi specifici sulla
+   [GitHub Issues page](https://github.com/marcoXbresciani/TKCompanionApp/issues).
+1. Aggiornare i valori di `versionCode` e `versionName` all'interno del
+   campo `android.defaultConfig` del file
+   [build.gradle](/android/app/build.gradle).
+1. Aggiornare i valori di `CFBundleVersion` e
+   `CFBundleShortVersionString` all'interno del campo `<dict>` del file
+   [Info.plist](/ios/TKCompanionApp/Info.plist).
+1. Verificare che [Architecture.md](/docs/architecture/Architecture.md)
+   abbia le informazioni architetturali correttamente aggiornate, se
+   necessario.
+   Aggiungere i relativi documenti ADR nella cartella
+   `docs/architecture/decisions`, se necessario, tracciandoli nel file
+   [CHANGELOG.md](CHANGELOG.md).
+1. Verificare il soddisfacimento dei criteri
+   [REUSE](https://reuse.software/) tramite il comando `reuse lint`.
+1. Committare e etichettare il codice col numero di
+   [versionamento (semantico)](https://semver.org/) relativo.
+1. Aggiornare il codice.
 
 ### Come testare localmente
 Il file APK generato può essere (auto) firmato per consentirne

@@ -35,7 +35,7 @@ const NicerAreaView = styled(SafeAreaView)`
 
 NicerAreaView.defaultProps = {
     theme: {
-        marginTop: StatusBar.currentHeight,
+        marginTop: StatusBar.currentHeight + 'px',
     },
 };
 

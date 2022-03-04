@@ -38,7 +38,7 @@ This file is offered as-is, without any warranty.
 * [ADR-007](/docs/architecture/decisions/007-use-freefont.md)
   for [GNU FreeFont](https://www.gnu.org/software/freefont/index.html)
   Free Sans in the app.
-* First [CONTRIBUTING](/docs/CONTRIBUTING.md) draft file (extracted from
+* First [CONTRIBUTING](/docs/CONTRIBUTING.md) draft file, extracted from
   [README](/README.md), in both English and Italian.
 ### Changed
 * updated screenshots

@@ -63,12 +63,12 @@ Files: app.json
 Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
-Files: assets/*
-Copyright: 2021-2022 Marco Bresciani
+Files: app/assets/fonts/FreeSans*.ttf
+Copyright: Primož Peterlin, Steve White
 License: GPL-3.0-or-later
 
-Files: assets/fonts/FreeSans-*.ttf
-Copyright: Primož Peterlin, Steve White
+Files: app/i18n/*.json
+Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: babel.config.js
@@ -88,10 +88,6 @@ Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
 Files: fastlane/*
-Copyright: 2021-2022 Marco Bresciani
-License: FSFAP
-
-Files: i18n/*
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 

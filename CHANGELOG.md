@@ -25,9 +25,15 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased]
 ### Added
-* screenshots in Italian
+* screenshots in Italian.
+* [ADR-007](/docs/architecture/decisions/007-use-freefont.md)
+  for [GNU FreeFont](https://www.gnu.org/software/freefont/index.html)
+  Free Sans in the app.
+* First [CONTRIBUTING](/docs/CONTRIBUTING.md) draft file (extracted from
+  [README](/README.md), in both English and Italian.
 ### Changed
 * updated screenshots
+* Former `doc` folder renamed to `docs`.
 ### Removed
 ### Fixed
 * [#5](https://github.com/marcoXbresciani/TKCompanionApp/issues/5)
@@ -87,8 +93,8 @@ Error in PNG file.
 ## [0.2.1] - 2022-02-22
 ### Added
 * FreeSans as default font.
-* [ADR-006](doc/architecture/decisions/006-remove-expo-framework.md) for
-  the removal of Expo Framework to allow F-Droid publishing.
+* [ADR-006](docs/architecture/decisions/006-remove-expo-framework.md)
+  for the removal of Expo Framework to allow F-Droid publishing.
 ### Removed
 * OpenSans font.
 
@@ -154,21 +160,21 @@ Error in PNG file.
 
 ## [0.1.0] - 2021-10-21
 ### Added
-* Introduced [ADR-000](doc/architecture/decisions/000-use-adr-conventions.md) for using ADR format for ADRs...
+* Introduced [ADR-000](docs/architecture/decisions/000-use-adr-conventions.md) for using ADR format for ADRs...
   See http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions
-* Introduced [ADR-001](doc/architecture/decisions/001-commit-message-rules.md) for using proper commit
+* Introduced [ADR-001](docs/architecture/decisions/001-commit-message-rules.md) for using proper commit
   message rules.
   See https://chris.beams.io/posts/git-commit/#seven-rules.
-* Introduced [ADR-002](doc/architecture/decisions/002-use-editorconfig.md) for using EditorConfig
+* Introduced [ADR-002](docs/architecture/decisions/002-use-editorconfig.md) for using EditorConfig
   configuration.
   See https://editorconfig.org.
-* Introduced [ADR-003](doc/architecture/decisions/003-use-standard-readme.md) for using a defined README
+* Introduced [ADR-003](docs/architecture/decisions/003-use-standard-readme.md) for using a defined README
   format.
   See https://github.com/RichardLitt/standard-readme.
-* Introduced [ADR-004](doc/architecture/decisions/004-keep-a-changelog.md) for using a defined
+* Introduced [ADR-004](docs/architecture/decisions/004-keep-a-changelog.md) for using a defined
   CHANGELOG format.
   See https://keepachangelog.com.
-* Introduced [ADR-005](doc/architecture/decisions/005-apply-semantic-versioning.md) for using Semantic
+* Introduced [ADR-005](docs/architecture/decisions/005-apply-semantic-versioning.md) for using Semantic
   Versioning.
   See https://semver.org.
 * Introducing REUSE compliance.
@@ -180,6 +186,7 @@ Error in PNG file.
 * 5Q card with front and back.
 
 [Unreleased]: https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD
+[0.2.10]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.10
 [0.2.9]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.9
 [0.2.8]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.8
 [0.2.7]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.7

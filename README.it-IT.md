@@ -115,7 +115,7 @@ Siediti, segui il menu, impara, esercitati e migliora.
   esterna.
 
 ### Schermate
-![Home](fastlane/metadata/android/it-IT/images/phoneScreenshots/home.pmg)
+![Home](fastlane/metadata/android/it-IT/images/phoneScreenshots/home.png)
 ![About](fastlane/metadata/android/it-IT/images/phoneScreenshots/about.png)
 
 ## Note sui font

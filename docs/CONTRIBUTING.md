@@ -25,7 +25,7 @@ Any question, feel free to ask!
 
 ## For All Contributions
 If you're not a software developer, and want to contribute improving
-this app, you're also more than very welcome!
+this app, you're welcome!
 You don't need the code, but if you want help translating in your
 language (or fix my English, since I'm not a native speaker), add more
 content, suggest graphical or layout improvement or whatever
@@ -37,7 +37,7 @@ We're here to improve!
 
 ## For Software Developers
 If you are a software developer and want to contribute improving this
-app, you're more than very welcome!
+app, you're welcome!
 Find the latest current LTS NodeJS
 ([16.14.0](https://nodejs.org/download/release/latest-gallium/), as of
 2022-03-03) for your system.
@@ -67,26 +67,26 @@ bit of steps to follow.
 release:
 1. Update [package.json](package.json) with the new version number and
    run `npm install`.
-1. Verify that [CHANGELOG.md](CHANGELOG.md) contains the properly
+1. Verify that [CHANGELOG.md](../CHANGELOG.md) contains the properly
    numbered section for the upcoming release, moving the related and
-   relevant [Unreleased](CHANGELOG.md) content to such section.
+   relevant [Unreleased](../CHANGELOG.md) content to such section.
    And verify that the related tag link is available at the end of the
    file, together with all other already existing tag links.
 1. Verify that `fastlane` folder contain the proper `changelogs` files
    for the upcoming version *code* in all available languages.
    If needed, also updates or add relevant screenshots in all available
    languages.
-1. Verify that [Errors.md](/docs/Errors.md) contains the currently known
+1. Verify that [Errors.md](Errors.md) contains the currently known
    issues by adding those relevant and removing those solved.
    If needed, also open specific issues on the project
    [GitHub Issues page](https://github.com/marcoXbresciani/TKCompanionApp/issues).
 1. Update the `versionCode` and `versionName` values inside the
    `android.defaultConfig` field of file
-   [build.gradle](/android/app/build.gradle).
+   [build.gradle](../android/app/build.gradle).
 1. Update the `CFBundleVersion` and `CFBundleShortVersionString` values
    inside the `<dict>` field of file
    [Info.plist](/ios/TKCompanionApp/Info.plist).
-1. Verify that [Architecture.md](/docs/architecture/Architecture.md)
+1. Verify that [Architecture.md](architecture/Architecture.md)
    has the latest architectural information properly updated, if needed.
    Add relevant ADR documents in the `docs/architecture/decisions`
    folder if needed, tracking them in the [CHANGELOG.md](CHANGELOG.md)

@@ -82,14 +82,6 @@ indent_size = 4
 ij_continuation_indent_size = 8
 
 ########################################################################
-[mvnw]
-# Unix-style newlines (see RFC 678, RFC 2046, RFC 2646, ...)
-end_of_line = lf
-
-# Property (apparently/possibly) supported by IntelliJ IDEA
-ij_continuation_indent_size = 4
-
-########################################################################
 [*.{sh, spec}]
 indent_size = 2
 
@@ -98,10 +90,6 @@ end_of_line = lf
 
 # Property (apparently/possibly) supported by IntelliJ IDEA
 ij_continuation_indent_size = 4
-
-########################################################################
-[*.{tex, sty}]
-indent_size = 2
 
 ########################################################################
 [*.rb]

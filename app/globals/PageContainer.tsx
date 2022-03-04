@@ -20,19 +20,32 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
+import {StatusBar, View} from 'react-native';
 import * as React from 'react';
-import DefaultScreen from '../DefaultScreen';
-import {CenteredText} from '../../components/Texts';
-import i18next from 'i18next';
+import PropTypes from 'prop-types';
+import {SafeAreaView} from 'react-native-safe-area-context';
+import styled from 'styled-components';
 
-const AboutLegend: React.FunctionComponent = () => {
-        return (
-                <DefaultScreen>
-                        <CenteredText>
-                                {i18next.t('app.wip')}
-                        </CenteredText>
-                </DefaultScreen>
-        );
+const NicerAreaView = styled(SafeAreaView)`
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    margin-top: ${(props) => props.theme.marginTop};
+`;
+
+NicerAreaView.defaultProps = {
+    theme: {
+        marginTop: StatusBar.currentHeight,
+    },
 };
 
-export default AboutLegend;
+const PageContainer: React.FunctionComponent = ({children}) => (
+    <NicerAreaView>
+        <StatusBar />
+        <View>{children}</View>
+    </NicerAreaView>
+);
+
+export default PageContainer;
+
+PageContainer.propTypes = {children: PropTypes.node.isRequired};

@@ -21,13 +21,16 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import Version from './about/Version';
-import DefaultScreen from './DefaultScreen';
+import PageContainer from '../../globals/PageContainer';
+import {CenteredText} from '../../globals/Texts';
+import i18next from 'i18next';
 
-const HomeScreen: React.FunctionComponent = () => (
-        <DefaultScreen>
-                <Version />
-        </DefaultScreen>
-);
+const AboutLegend: React.FunctionComponent = () => {
+    return (
+        <PageContainer>
+            <CenteredText>{i18next.t('app.wip')}</CenteredText>
+        </PageContainer>
+    );
+};
 
-export default HomeScreen;
+export default AboutLegend;

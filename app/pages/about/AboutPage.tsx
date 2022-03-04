@@ -21,31 +21,39 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Front5Q from './5QFront';
-import Back5Q from './5QBack';
 import * as React from 'react';
+import AboutFront from './AboutFront';
+import AboutBack from './AboutBack';
+import AboutLegend from './AboutLegend';
 
 const Stack = createNativeStackNavigator();
 
-const FiveQCard: React.FunctionComponent = () => {
-        return (
-                <Stack.Navigator>
-                        <Stack.Screen
-                                name="5QFront"
-                                component={Front5Q}
-                                options={{
-                                        headerShown: false,
-                                }}
-                        />
-                        <Stack.Screen
-                                name="5QBack"
-                                component={Back5Q}
-                                options={{
-                                        headerShown: false,
-                                }}
-                        />
-                </Stack.Navigator>
-        );
+const AboutPage: React.FunctionComponent = () => {
+    return (
+        <Stack.Navigator initialRouteName="AboutFront">
+            <Stack.Screen
+                name="AboutFront"
+                component={AboutFront}
+                options={{
+                    headerShown: false,
+                }}
+            />
+            <Stack.Screen
+                name="AboutBack"
+                component={AboutBack}
+                options={{
+                    headerShown: false,
+                }}
+            />
+            <Stack.Screen
+                name="AboutLegend"
+                component={AboutLegend}
+                options={{
+                    headerShown: false,
+                }}
+            />
+        </Stack.Navigator>
+    );
 };
 
-export default FiveQCard;
+export default AboutPage;

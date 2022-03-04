@@ -20,41 +20,30 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {View} from 'react-native';
+import {Linking} from 'react-native';
 import * as React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import {SmallerText} from './Texts';
+import {
+    BoldCentered,
+    CenteredText,
+    JustifiedMargin,
+} from '../globals/Texts';
+import PageContainer from '../globals/PageContainer';
+import {TKWDownloadButton} from '../globals/Buttons';
+import i18next from 'i18next';
 
-const Container = styled(View)`
-        flex-direction: row;
-        margin: 10px 0;
-`;
-
-const Line = styled(View)`
-        background-color: black;
-        height: 1px;
-        flex: 1;
-        margin: 3px 0 0 0;
-        align-self: center;
-`;
-
-const Content = styled(SmallerText)`
-        align-self: center;
-        font-style: italic;
-        padding-left: 5px;
-        padding-right: 5px;
-        color: crimson;
-`;
-
-export const Separator: React.FC = ({children}) => (
-        <Container>
-                <Line />
-                <Content>{children}</Content>
-                <Line />
-        </Container>
+const KTSPage: React.FunctionComponent = () => (
+    <PageContainer>
+        <BoldCentered>{i18next.t('kts.title')}</BoldCentered>
+        <CenteredText>{i18next.t('kts.tip')}</CenteredText>
+        <JustifiedMargin>{i18next.t('kts.text')}</JustifiedMargin>
+        <TKWDownloadButton
+            onPress={() => {
+                Linking.openURL(
+                    'http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
+                );
+            }}
+        />
+    </PageContainer>
 );
 
-export default Separator;
-
-Separator.propTypes = {children: PropTypes.node.isRequired};
+export default KTSPage;

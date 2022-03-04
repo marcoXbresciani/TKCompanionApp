@@ -23,15 +23,15 @@
 import * as React from 'react';
 import Version from './Version';
 import Copyright from './Copyright';
-import DefaultScreen from '../DefaultScreen';
+import PageContainer from '../../globals/PageContainer';
 
 const AboutBack: React.FunctionComponent = () => {
-        return (
-                <DefaultScreen>
-                        <Version />
-                        <Copyright />
-                </DefaultScreen>
-        );
+    return (
+        <PageContainer>
+            <Version />
+            <Copyright />
+        </PageContainer>
+    );
 };
 
 export default AboutBack;

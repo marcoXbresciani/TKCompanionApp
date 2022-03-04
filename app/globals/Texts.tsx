@@ -24,10 +24,10 @@ import styled from 'styled-components';
 import {Text} from 'react-native';
 
 export const DefaultText = styled(Text)`
-        color: black;
-        font-family: FreeSans;
-        font-size: 16px;
-        line-height: 27px;
+    color: black;
+    font-family: FreeSans;
+    font-size: 16px;
+    line-height: 27px;
 `;
 
 // export const BiggerText = styled(DefaultText)`
@@ -36,38 +36,38 @@ export const DefaultText = styled(Text)`
 //         line-height: 33px;
 // `;
 export const SmallerText = styled(DefaultText)`
-        color: black;
-        font-size: 13px;
-        line-height: 23px;
+    color: black;
+    font-size: 13px;
+    line-height: 23px;
 `;
 export const ButtonText = styled(SmallerText)`
-        color: white;
+    color: white;
 `;
 
 export const BoldText = styled(DefaultText)`
-        font-family: FreeSansBold;
-        //font-weight: bold;
+    font-family: FreeSansBold;
+    //font-weight: bold;
 `;
 
 export const JustifiedText = styled(DefaultText)`
-        color: black;
-        text-align: justify;
+    color: black;
+    text-align: justify;
 `;
 export const CenteredText = styled(DefaultText)`
-        color: black;
-        text-align: center;
+    color: black;
+    text-align: center;
 `;
 
 export const BoldCentered = styled(CenteredText)`
-        font-family: FreeSansBold;
-        //font-weight: bold;
+    font-family: FreeSansBold;
+    //font-weight: bold;
 `;
 
 export const JustifiedMargin = styled(JustifiedText)`
-        margin: 25px;
+    margin: 25px;
 `;
 
 export const TitleText = styled(BoldCentered)`
-        font-size: 20px;
-        line-height: 33px;
+    font-size: 20px;
+    line-height: 33px;
 `;

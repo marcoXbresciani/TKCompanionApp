@@ -21,24 +21,23 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {CenteredText, TitleText} from '../../components/Texts';
+import {CenteredText, TitleText} from '../../globals/Texts';
 import i18next from 'i18next';
-import {SmallerView} from '../../components/Pieces';
+import {SmallerView} from '../../globals/Pieces';
 import DeviceInfo from 'react-native-device-info';
 
 const Version: React.FunctionComponent = () => {
-        const name =
-                DeviceInfo.getApplicationName() || 'TKCompanionApp';
-        const version = DeviceInfo.getVersion() || '';
-        const short = i18next.t('app.short');
-        return (
-                <>
-                        <TitleText>{name}</TitleText>
-                        <CenteredText>{version}</CenteredText>
-                        <SmallerView>
-                                <CenteredText>{short}</CenteredText>
-                        </SmallerView>
-                </>
-        );
+    const name = DeviceInfo.getApplicationName() || 'TKCompanionApp';
+    const version = DeviceInfo.getVersion() || '';
+    const short = i18next.t('app.short');
+    return (
+        <>
+            <TitleText>{name}</TitleText>
+            <CenteredText>{version}</CenteredText>
+            <SmallerView>
+                <CenteredText>{short}</CenteredText>
+            </SmallerView>
+        </>
+    );
 };
 export default Version;

@@ -20,23 +20,32 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {SafeAreaView, StatusBar, View} from 'react-native';
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import {View} from 'react-native';
+import {DefaultText} from './Texts';
 
-const DefaultScreen: React.FunctionComponent = ({children}) => (
-        <SafeAreaView
-                style={{
-                        alignItems: 'center',
-                        flex: 1,
-                        justifyContent: 'center',
-                        marginTop: StatusBar.currentHeight,
-                }}>
-                <StatusBar />
-                <View>{children}</View>
-        </SafeAreaView>
-);
+export const SectionItemSeparator = styled(View)`
+    margin: 2px;
+`;
 
-export default DefaultScreen;
+export const ButtonStripe = styled(View)`
+    flex-direction: row;
+`;
 
-DefaultScreen.propTypes = {children: PropTypes.node.isRequired};
+export const FrontRenderer = styled(DefaultText)`
+    border: 1px solid black;
+    border-radius: 15px;
+    justify-content: center;
+    margin: 5px 20px 5px 20px;
+    max-width: 85%;
+    padding: 10px 15px;
+`;
+
+export const SmallerView = styled(View)`
+    width: 85%;
+    margin: auto;
+`;
+
+export type Nav = {
+    navigate: (value: string) => void;
+};

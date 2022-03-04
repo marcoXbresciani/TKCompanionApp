@@ -21,31 +21,31 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Front5Q from './5QFront';
+import Back5Q from './5QBack';
 import * as React from 'react';
-import TkcFront from './TkcFront';
-import TkcBack from './TkcBack';
 
 const Stack = createNativeStackNavigator();
 
-const TckScreen: React.FunctionComponent = () => {
-        return (
-                <Stack.Navigator initialRouteName="TkcFront">
-                        <Stack.Screen
-                                name="TkcFront"
-                                component={TkcFront}
-                                options={{
-                                        headerShown: false,
-                                }}
-                        />
-                        <Stack.Screen
-                                name="TkcBack"
-                                component={TkcBack}
-                                options={{
-                                        headerShown: false,
-                                }}
-                        />
-                </Stack.Navigator>
-        );
+const FiveQCard: React.FunctionComponent = () => {
+    return (
+        <Stack.Navigator>
+            <Stack.Screen
+                name="5QFront"
+                component={Front5Q}
+                options={{
+                    headerShown: false,
+                }}
+            />
+            <Stack.Screen
+                name="5QBack"
+                component={Back5Q}
+                options={{
+                    headerShown: false,
+                }}
+            />
+        </Stack.Navigator>
+    );
 };
 
-export default TckScreen;
+export default FiveQCard;

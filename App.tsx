@@ -23,144 +23,102 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
-import Icon from 'react-native-vector-icons/Ionicons';
 import i18next from 'i18next';
 import {initReactI18next} from 'react-i18next';
-import {tEn, tItIT} from './i18n';
+import {tEn, tItIT} from './app/i18n';
 import {NativeModules, Platform} from 'react-native';
-import HomeScreen from './app/screens/HomeScreen';
-import AboutScreen from './app/screens/about/AboutScreen';
-import KTSScreen from './app/screens/KTSScreen';
-import TkcScreen from './app/screens/tkc/TkcScreen';
-import FiveQCard from './app/screens/5qcard/5QScreen';
+import HomePage from './app/pages/HomePage';
+import AboutPage from './app/pages/about/AboutPage';
+import KTSPage from './app/pages/KTSPage';
+import TkcScreen from './app/pages/tkc/TkcPage';
+import FiveQCard from './app/pages/5qcard/5QPage';
+import {
+    TabIcon5Q,
+    TabIconAbout,
+    TabIconHome,
+    TabIconKTS,
+    TabIconTKC,
+} from './app/components/Tabs';
 
 const locale =
-        Platform.OS === 'ios'
-                ? NativeModules.SettingsManager.settings
-                          .AppleLanguages[0] ||
-                  NativeModules.SettingsManager.settings.AppleLocale
-                : NativeModules.I18nManager.localeIdentifier;
+    Platform.OS === 'ios'
+        ? NativeModules.SettingsManager.settings.AppleLanguages[0] ||
+          NativeModules.SettingsManager.settings.AppleLocale
+        : NativeModules.I18nManager.localeIdentifier;
 
 const resources = {
-        en: {
-                translation: tEn,
-        },
-        'it-IT': {
-                translation: tItIT,
-        },
+    en: {translation: tEn},
+    'it-IT': {translation: tItIT},
 };
 
 i18next.use(initReactI18next).init({
-        cleanCode: true,
-        compatibilityJSON: 'v3',
-        debug: false,
-        interpolation: {
-                escapeValue: false,
-        },
-        fallbackLng: 'en',
-        lng: locale,
-        nonExplicitSupportedLngs: true,
-        resources: resources,
+    cleanCode: true,
+    compatibilityJSON: 'v3',
+    debug: false,
+    interpolation: {
+        escapeValue: false,
+    },
+    fallbackLng: 'en',
+    lng: locale,
+    nonExplicitSupportedLngs: true,
+    resources: resources,
 });
 
 const Tab = createMaterialBottomTabNavigator();
 
-const TabIcon5Q = ({color}: {color: string}) => (
-        <Icon
-                style={{fontFamily: 'OpenSans-Regular', fontSize: 16}}
-                name="people-circle-outline"
-                color={color}
-                size={16}
-        />
-);
-
-const TabIconAbout = ({color}: {color: string}) => (
-        <Icon
-                style={{fontFamily: 'OpenSans-Regular', fontSize: 16}}
-                name="information-circle-outline"
-                color={color}
-                size={16}
-        />
-);
-
-const TabIconHome = ({color}: {color: string}) => (
-        <Icon
-                style={{fontFamily: 'OpenSans-Regular', fontSize: 16}}
-                name="home"
-                color={color}
-                size={16}
-        />
-);
-
-const TabIconKTS = ({color}: {color: string}) => (
-        <Icon
-                style={{fontFamily: 'OpenSans-Regular', fontSize: 16}}
-                name="warning-outline"
-                color={color}
-                size={16}
-        />
-);
-
-const TabIconTKC = ({color}: {color: string}) => (
-        <Icon
-                style={{fontFamily: 'OpenSans-Regular', fontSize: 16}}
-                name="book-outline"
-                color={color}
-                size={16}
-        />
-);
-
 const AppNavigator: React.FunctionComponent = () => {
-        return (
-                <NavigationContainer>
-                        <Tab.Navigator
-                                backBehavior="history"
-                                barStyle={{
-                                        backgroundColor: 'royalblue',
-                                }}
-                                initialRouteName="Home">
-                                <Tab.Screen
-                                        name={i18next.t('nav.home')}
-                                        options={{
-                                                tabBarIcon: TabIconHome,
-                                        }}
-                                        component={HomeScreen}
-                                />
-                                <Tab.Screen
-                                        name={i18next.t('nav.5qcard')}
-                                        options={{
-                                                tabBarIcon: TabIcon5Q,
-                                        }}
-                                        component={FiveQCard}
-                                />
-                                <Tab.Screen
-                                        name={i18next.t('nav.kts')}
-                                        options={{
-                                                tabBarIcon: TabIconKTS,
-                                        }}
-                                        component={KTSScreen}
-                                />
-                                <Tab.Screen
-                                        name={i18next.t('nav.tkc')}
-                                        options={{
-                                                tabBarIcon: TabIconTKC,
-                                        }}
-                                        component={TkcScreen}
-                                />
-                                <Tab.Screen
-                                        name={i18next.t('nav.about')}
-                                        component={AboutScreen}
-                                        options={{
-                                                tabBarIcon: TabIconAbout,
-                                        }}
-                                />
-                        </Tab.Navigator>
-                </NavigationContainer>
-        );
+    return (
+        <NavigationContainer>
+            <Tab.Navigator
+                backBehavior="history"
+                /* eslint-disable-next-line react-native/no-inline-styles */
+                barStyle={{
+                    backgroundColor: 'royalblue',
+                }}
+                initialRouteName="Home"
+            >
+                <Tab.Screen
+                    name={i18next.t('nav.home')}
+                    options={{
+                        tabBarIcon: TabIconHome,
+                    }}
+                    component={HomePage}
+                />
+                <Tab.Screen
+                    name={i18next.t('nav.5qcard')}
+                    options={{
+                        tabBarIcon: TabIcon5Q,
+                    }}
+                    component={FiveQCard}
+                />
+                <Tab.Screen
+                    name={i18next.t('nav.kts')}
+                    options={{
+                        tabBarIcon: TabIconKTS,
+                    }}
+                    component={KTSPage}
+                />
+                <Tab.Screen
+                    name={i18next.t('nav.tkc')}
+                    options={{
+                        tabBarIcon: TabIconTKC,
+                    }}
+                    component={TkcScreen}
+                />
+                <Tab.Screen
+                    name={i18next.t('nav.about')}
+                    component={AboutPage}
+                    options={{
+                        tabBarIcon: TabIconAbout,
+                    }}
+                />
+            </Tab.Navigator>
+        </NavigationContainer>
+    );
 };
 
 const App: React.FunctionComponent = () => {
-        return <AppNavigator />;
+    return <AppNavigator />;
 };
 
 export default App;

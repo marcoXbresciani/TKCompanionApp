@@ -20,32 +20,41 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import styled from 'styled-components';
 import {View} from 'react-native';
-import {DefaultText} from './Texts';
+import * as React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import {SmallerText} from './Texts';
 
-export const SectionItemSeparator = styled(View)`
-        margin: 2px;
+const Container = styled(View)`
+    flex-direction: row;
+    margin: 10px 0;
 `;
 
-export const ButtonStripe = styled(View)`
-        flex-direction: row;
+const Line = styled(View)`
+    background-color: black;
+    height: 1px;
+    flex: 1;
+    margin: 3px 0 0 0;
+    align-self: center;
 `;
 
-export const FrontRenderer = styled(DefaultText)`
-        border: 1px solid black;
-        border-radius: 15px;
-        justify-content: center;
-        margin: 5px 20px 5px 20px;
-        max-width: 85%;
-        padding: 10px 15px;
+const Content = styled(SmallerText)`
+    align-self: center;
+    font-style: italic;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: crimson;
 `;
 
-export const SmallerView = styled(View)`
-        width: 85%;
-        margin: auto;
-`;
+export const Separator: React.FC = ({children}) => (
+    <Container>
+        <Line />
+        <Content>{children}</Content>
+        <Line />
+    </Container>
+);
 
-export type Nav = {
-        navigate: (value: string) => void;
-};
+export default Separator;
+
+Separator.propTypes = {children: PropTypes.node.isRequired};

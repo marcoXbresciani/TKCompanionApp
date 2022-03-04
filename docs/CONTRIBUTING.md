@@ -65,11 +65,11 @@ bit of steps to follow.
 
 **Preflight checklist**: these are the tasks to do before creating a new
 release:
-1. Update [package.json](package.json) with the new version number and
+1. Update [package.json](/package.json) with the new version number and
    run `npm install`.
-1. Verify that [CHANGELOG.md](../CHANGELOG.md) contains the properly
+1. Verify that [CHANGELOG.md](/CHANGELOG.md) contains the properly
    numbered section for the upcoming release, moving the related and
-   relevant [Unreleased](../CHANGELOG.md) content to such section.
+   relevant [Unreleased](/CHANGELOG.md) content to such section.
    And verify that the related tag link is available at the end of the
    file, together with all other already existing tag links.
 1. Verify that `fastlane` folder contain the proper `changelogs` files
@@ -82,14 +82,14 @@ release:
    [GitHub Issues page](https://github.com/marcoXbresciani/TKCompanionApp/issues).
 1. Update the `versionCode` and `versionName` values inside the
    `android.defaultConfig` field of file
-   [build.gradle](../android/app/build.gradle).
+   [build.gradle](/android/app/build.gradle).
 1. Update the `CFBundleVersion` and `CFBundleShortVersionString` values
    inside the `<dict>` field of file
    [Info.plist](/ios/TKCompanionApp/Info.plist).
 1. Verify that [Architecture.md](architecture/Architecture.md)
    has the latest architectural information properly updated, if needed.
    Add relevant ADR documents in the `docs/architecture/decisions`
-   folder if needed, tracking them in the [CHANGELOG.md](CHANGELOG.md)
+   folder if needed, tracking them in the [CHANGELOG.md](/CHANGELOG.md)
    file.
 1. Verify [REUSE](https://reuse.software/) compliance through
    `reuse lint` command.

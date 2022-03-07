@@ -27,12 +27,14 @@ This file is offered as-is, without any warranty.
 ### Added
 ### Changed
 ### Removed
+### Security
+
+## [0.2.12] - 2022-03-07
 ### Fixed
 * [#5](https://github.com/marcoXbresciani/TKCompanionApp/issues/5)
   Complete I18N introduction with English and Italian translations.
-### Security
 
-## [0.2.11] - 220-03-04
+## [0.2.11] - 2022-03-04
 ### Added
 * screenshots in Italian.
 * [ADR-007](/docs/architecture/decisions/007-use-freefont.md)
@@ -191,6 +193,7 @@ Error in PNG file.
 * 5Q card with front and back.
 
 [Unreleased]: https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD
+[0.2.12]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.12
 [0.2.11]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.11
 [0.2.10]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.10
 [0.2.9]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.9

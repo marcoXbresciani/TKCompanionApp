@@ -1,0 +1,1 @@
+Closes issue #5 completing translations.

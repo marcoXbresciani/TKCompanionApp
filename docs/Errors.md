@@ -15,5 +15,3 @@ This is the list of known errors or issues.
 They might be in the
 [GitHub Issues page](https://github.com/marcoXbresciani/TKCompanionApp/issues)
 or not.
-* I18N not completed.
-  Not all pages/sections/areas of the app have been properly translated.

@@ -30,7 +30,8 @@ const NicerAreaView = styled(SafeAreaView)`
     align-items: center;
     flex: 1;
     justify-content: center;
-    margin-top: ${(props) => props.theme.marginTop};
+    max-width: 85%;
+    margin: ${(props) => props.theme.marginTop} 5% 0;
 `;
 
 NicerAreaView.defaultProps = {

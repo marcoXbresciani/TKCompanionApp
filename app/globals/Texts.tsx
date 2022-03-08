@@ -22,6 +22,15 @@
  */
 import styled from 'styled-components';
 import {Text} from 'react-native';
+import {Subheading, Title} from 'react-native-paper';
+
+export const CenteredTitle = styled(Title)`
+    text-align: center;
+`;
+
+export const CenteredSubheading = styled(Subheading)`
+    text-align: center;
+`;
 
 export const DefaultText = styled(Text)`
     color: black;

@@ -38,6 +38,7 @@ import {
     TabIconKTS,
     TabIconTKC,
 } from './app/components/Tabs';
+import {initReactI18next} from 'react-i18next';
 
 const locale = (
     Platform.OS === 'ios'
@@ -51,7 +52,7 @@ const resources = {
     'it-IT': {translation: tItIT},
 };
 
-i18next.init({
+i18next.use(initReactI18next).init({
     cleanCode: true,
     compatibilityJSON: 'v3',
     debug: false,

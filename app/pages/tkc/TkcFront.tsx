@@ -22,16 +22,21 @@
  */
 import {SectionList} from 'react-native';
 import * as React from 'react';
-import {CenteredTitle} from '../../globals/Texts';
+import {CenteredTitle, DefaultText} from '../../globals/Texts';
 import PageContainer from '../../globals/PageContainer';
 import {useNavigation} from '@react-navigation/native';
-import {
-    FrontRenderer,
-    Nav,
-    SectionItemSeparator,
-} from '../../globals/Pieces';
+import {Nav, SectionItemSeparator} from '../../globals/Pieces';
 import {NavButton} from '../../globals/Buttons';
 import i18next from 'i18next';
+import styled from 'styled-components';
+
+export const FrontRenderer = styled(DefaultText)`
+    border: 1px solid black;
+    border-radius: 27px;
+    justify-content: center;
+    margin: 2.5% 0;
+    padding: 2.5% 5%;
+`;
 
 const TkcFront: React.FunctionComponent = () => {
     const navigation = useNavigation<Nav>();

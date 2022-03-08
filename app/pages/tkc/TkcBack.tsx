@@ -22,9 +22,8 @@
  */
 import {Linking, SectionList} from 'react-native';
 import * as React from 'react';
-import {CenteredTitle} from '../../globals/Texts';
+import {CenteredTitle, DefaultText} from '../../globals/Texts';
 import PageContainer from '../../globals/PageContainer';
-import styled from 'styled-components';
 import {useNavigation} from '@react-navigation/native';
 import {
     ButtonStripe,
@@ -32,14 +31,7 @@ import {
     SectionItemSeparator,
 } from '../../globals/Pieces';
 import {BackButton, TKWDownloadButton} from '../../globals/Buttons';
-import {Text} from 'react-native-paper';
 import i18next from 'i18next';
-
-const BackRenderer = styled(Text)`
-    margin: 0 10px 0 10px;
-    max-width: 85%;
-    padding: 5px;
-`;
 
 const TkcBack: React.FunctionComponent = () => {
     const navigation = useNavigation<Nav>();
@@ -50,7 +42,7 @@ const TkcBack: React.FunctionComponent = () => {
             <SectionList
                 ItemSeparatorComponent={SectionItemSeparator}
                 renderItem={({item}) => (
-                    <BackRenderer>{item.key}</BackRenderer>
+                    <DefaultText>{item.key}</DefaultText>
                 )}
                 sections={[
                     {

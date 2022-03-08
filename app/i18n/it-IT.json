@@ -1,23 +1,23 @@
 {
     "5q": {
         "back": {
-            "q1": "1) Che cosa avevi pianificato come ultimo step?",
-            "q2": "2) Che cosa ti aspettavi?",
-            "q3": "3) Che cosa è successo nei fatti?",
-            "q4": "4) Che cosa hai appreso?",
+            "q1": "1) Che cosa avevi pianificato come <bold>ultimo step</bold>?",
+            "q2": "2) Che cosa ti <bold>aspettavi</bold>?",
+            "q3": "3) Che cosa è <bold>successo nei fatti</bold>?",
+            "q4": "4) Che cosa hai <bold>appreso</bold>?",
             "quote": "Perché non sai, in realtà, quale sarà il risultato di uno step!",
-            "return": "Return to question 3",
-            "title": "Reflect on the Last Step"
+            "return": "Ritorna alla domanda 3",
+            "title": "Rifletti sull'ultimo step"
         },
         "front": {
             "header": "Kata del coaching",
-            "q1": "① Qual è la condizione obiettivo?",
-            "q2": "② Qual è la condizione attuale ora?",
-            "q3.1": "③ Quali ostacoli credi ora ti impediscano di raggiungere la condizione obiettivo?",
+            "q1": "① Qual è la <bold>condizione obiettivo</bold>?",
+            "q2": "② Qual è la <bold>condizione attuale</bold> ora?",
+            "q3.1": "③ Quali <bold>ostacoli</bold> credi ora ti impediscano di raggiungere la condizione obiettivo?",
             "q3.2": "Quale (uno solo!) vuoi affrontare adesso?",
-            "q4.1": "④ Qual è il to prossimo step (esperimento)?",
+            "q4.1": "④ Qual è il tuo <bold>prossimo step</bold> (esperimento)?",
             "q4.2": "Che cosa ti aspetti di ottenere?",
-            "q5": "⑤ Quanto velocemente possiamo andare a vedere che cosa hai appreso da questo passo?",
+            "q5": "⑤ Quanto velocemente possiamo andare a vedere che cosa <bold>abbiamo appreso</bold> da questo passo?",
             "separator": "(clicca per girare la carta)",
             "title": "Le cinque domande"
         }

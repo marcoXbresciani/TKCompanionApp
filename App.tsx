@@ -40,6 +40,8 @@ import {
     TabIconTKC,
 } from './app/components/Tabs';
 import {initReactI18next} from 'react-i18next';
+import {tkThemeConfig} from './app/globals/Config';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const locale = (
     Platform.OS === 'ios'
@@ -125,7 +127,7 @@ const App: React.FunctionComponent = () => {
             // settings={{
             //     icon: (props) => <Ionicons {...props} />,
             // }}
-            // theme={tkThemeConfig}
+            theme={tkThemeConfig}
         >
             <AppNavigator />
         </PaperProvider>

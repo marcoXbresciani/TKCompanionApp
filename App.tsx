@@ -26,6 +26,7 @@ import {createMaterialBottomTabNavigator} from '@react-navigation/material-botto
 import i18next from 'i18next';
 import {tEn, tItIT} from './app/i18n';
 import {NativeModules, Platform} from 'react-native';
+import {Provider as PaperProvider} from 'react-native-paper';
 import HomePage from './app/pages/HomePage';
 import AboutPage from './app/pages/about/AboutPage';
 import KTSPage from './app/pages/KTSPage';
@@ -119,7 +120,16 @@ const AppNavigator: React.FunctionComponent = () => {
 };
 
 const App: React.FunctionComponent = () => {
-    return <AppNavigator />;
+    return (
+        <PaperProvider
+            // settings={{
+            //     icon: (props) => <Ionicons {...props} />,
+            // }}
+            // theme={tkThemeConfig}
+        >
+            <AppNavigator />
+        </PaperProvider>
+    );
 };
 
 export default App;

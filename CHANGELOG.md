@@ -27,6 +27,8 @@ This file is offered as-is, without any warranty.
 ### Added
 ### Changed
 ### Removed
+### Fixed
+* Proper I18N management with correct language identification.
 ### Security
 
 ## [0.2.12] - 2022-03-07

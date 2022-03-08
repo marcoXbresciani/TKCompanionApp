@@ -24,7 +24,6 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import i18next from 'i18next';
-import {initReactI18next} from 'react-i18next';
 import {tEn, tItIT} from './app/i18n';
 import {NativeModules, Platform} from 'react-native';
 import HomePage from './app/pages/HomePage';
@@ -40,18 +39,19 @@ import {
     TabIconTKC,
 } from './app/components/Tabs';
 
-const locale =
+const locale = (
     Platform.OS === 'ios'
         ? NativeModules.SettingsManager.settings.AppleLanguages[0] ||
           NativeModules.SettingsManager.settings.AppleLocale
-        : NativeModules.I18nManager.localeIdentifier;
+        : NativeModules.I18nManager.localeIdentifier
+).replace('_', '-');
 
 const resources = {
     en: {translation: tEn},
     'it-IT': {translation: tItIT},
 };
 
-i18next.use(initReactI18next).init({
+i18next.init({
     cleanCode: true,
     compatibilityJSON: 'v3',
     debug: false,
@@ -61,7 +61,7 @@ i18next.use(initReactI18next).init({
     fallbackLng: 'en',
     lng: locale,
     nonExplicitSupportedLngs: true,
-    resources: resources,
+    resources,
 });
 
 const Tab = createMaterialBottomTabNavigator();

@@ -26,6 +26,8 @@ This file is offered as-is, without any warranty.
 ## [Unreleased]
 ### Added
 ### Changed
+* Introduce React Native Paper components for (possibly) better theming
+  management.
 ### Removed
 ### Fixed
 * Proper I18N management with correct language identification.

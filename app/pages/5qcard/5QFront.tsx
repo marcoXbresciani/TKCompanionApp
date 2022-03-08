@@ -24,7 +24,11 @@ import styled from 'styled-components';
 import {Pressable, View} from 'react-native';
 import {Separator} from '../../globals/Separator';
 import * as React from 'react';
-import {BoldText, DefaultText, TitleText} from '../../globals/Texts';
+import {
+    BoldText,
+    CenteredTitle,
+    DefaultText,
+} from '../../globals/Texts';
 import PageContainer from '../../globals/PageContainer';
 import {useNavigation} from '@react-navigation/native';
 import i18next from 'i18next';
@@ -76,7 +80,9 @@ const Front5Q: React.FunctionComponent = () => {
                     <CKText>{i18next.t('5q.front.header')}</CKText>
                 </View>
                 <QuestionsView>
-                    <TitleText>{i18next.t('5q.front.title')}</TitleText>
+                    <CenteredTitle>
+                        {i18next.t('5q.front.title')}
+                    </CenteredTitle>
                     <QuestionsText>
                         <Trans
                             t={t}

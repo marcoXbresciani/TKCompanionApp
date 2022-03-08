@@ -21,8 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components';
-import {Text} from 'react-native';
-import {Subheading, Title} from 'react-native-paper';
+import {Subheading, Text, Title} from 'react-native-paper';
 
 export const CenteredTitle = styled(Title)`
     text-align: center;
@@ -33,8 +32,6 @@ export const CenteredSubheading = styled(Subheading)`
 `;
 
 export const DefaultText = styled(Text)`
-    color: black;
-    font-family: FreeSans;
     font-size: 16px;
     line-height: 27px;
 `;
@@ -45,7 +42,6 @@ export const DefaultText = styled(Text)`
 //         line-height: 33px;
 // `;
 export const SmallerText = styled(DefaultText)`
-    color: black;
     font-size: 13px;
     line-height: 23px;
 `;
@@ -54,29 +50,12 @@ export const ButtonText = styled(SmallerText)`
 `;
 
 export const BoldText = styled(DefaultText)`
-    font-family: FreeSansBold;
-    //font-weight: bold;
+    font-weight: bold;
 `;
 
 export const JustifiedText = styled(DefaultText)`
-    color: black;
     text-align: justify;
 `;
 export const CenteredText = styled(DefaultText)`
-    color: black;
     text-align: center;
-`;
-
-export const BoldCentered = styled(CenteredText)`
-    font-family: FreeSansBold;
-    //font-weight: bold;
-`;
-
-export const JustifiedMargin = styled(JustifiedText)`
-    margin: 25px;
-`;
-
-export const TitleText = styled(BoldCentered)`
-    font-size: 20px;
-    line-height: 33px;
 `;

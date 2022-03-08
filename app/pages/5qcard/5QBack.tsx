@@ -25,9 +25,10 @@ import {Pressable, View} from 'react-native';
 import * as React from 'react';
 import {
     BoldText,
+    CenteredSubheading,
+    CenteredTitle,
     DefaultText,
     SmallerText,
-    TitleText,
 } from '../../globals/Texts';
 import PageContainer from '../../globals/PageContainer';
 import {useNavigation} from '@react-navigation/native';
@@ -42,11 +43,6 @@ const BackView = styled(View)`
     flex-direction: column;
     margin: 0;
     padding: 10px 10px 10px 10px;
-`;
-
-const QuoteText = styled(DefaultText)`
-    margin: 0 5% 5% 5%;
-    text-align: center;
 `;
 
 const QuestionsView = styled(View)`
@@ -80,8 +76,12 @@ const Back5QScreen: React.FunctionComponent = () => {
     return (
         <PageContainer>
             <BackView>
-                <TitleText>{i18next.t('5q.back.title')}</TitleText>
-                <QuoteText>{i18next.t('5q.back.quote')}</QuoteText>
+                <CenteredTitle>
+                    {i18next.t('5q.back.title')}
+                </CenteredTitle>
+                <CenteredSubheading>
+                    {i18next.t('5q.back.quote')}
+                </CenteredSubheading>
                 <QuestionsView>
                     <QuestionsText>
                         <Trans

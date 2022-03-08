@@ -4,55 +4,55 @@ const fontConfig = {
     web: {
         regular: {
             fontFamily: 'FreeSans',
-            fontWeight: 'normal',
+            fontWeight: '400' as '400',
         },
         medium: {
             fontFamily: 'FreeSansBold',
-            fontWeight: 'bold',
+            fontWeight: '700' as '700',
         },
         light: {
             fontFamily: 'FreeSans',
-            fontWeight: 'normal',
+            fontWeight: '300' as '300',
         },
         thin: {
             fontFamily: 'FreeSans',
-            fontWeight: 'normal',
+            fontWeight: '100' as '100',
         },
     },
     ios: {
         regular: {
             fontFamily: 'FreeSans',
-            fontWeight: 'normal',
+            fontWeight: '400' as '400',
         },
         medium: {
             fontFamily: 'FreeSansBold',
-            fontWeight: 'bold',
+            fontWeight: '700' as '700',
         },
         light: {
             fontFamily: 'FreeSans',
-            fontWeight: 'normal',
+            fontWeight: '300' as '300',
         },
         thin: {
             fontFamily: 'FreeSans',
-            fontWeight: 'normal',
+            fontWeight: '100' as '100',
         },
     },
     default: {
         regular: {
             fontFamily: 'FreeSans',
-            fontWeight: 'normal',
+            fontWeight: 'normal' as 'normal',
         },
         medium: {
             fontFamily: 'FreeSansBold',
-            fontWeight: 'bold',
+            fontWeight: 'bold' as 'bold',
         },
         light: {
             fontFamily: 'FreeSans',
-            fontWeight: 'normal',
+            fontWeight: 'normal' as 'normal',
         },
         thin: {
             fontFamily: 'FreeSans',
-            fontWeight: 'normal',
+            fontWeight: 'normal' as 'normal',
         },
     },
 };

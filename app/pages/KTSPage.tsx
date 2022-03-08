@@ -22,20 +22,17 @@
  */
 import {Linking} from 'react-native';
 import * as React from 'react';
-import {
-    BoldCentered,
-    CenteredText,
-    JustifiedMargin,
-} from '../globals/Texts';
 import PageContainer from '../globals/PageContainer';
 import {TKWDownloadButton} from '../globals/Buttons';
 import i18next from 'i18next';
+import {Text} from 'react-native-paper';
+import {CenteredSubheading, CenteredTitle} from '../globals/Texts';
 
 const KTSPage: React.FunctionComponent = () => (
     <PageContainer>
-        <BoldCentered>{i18next.t('kts.title')}</BoldCentered>
-        <CenteredText>{i18next.t('kts.tip')}</CenteredText>
-        <JustifiedMargin>{i18next.t('kts.text')}</JustifiedMargin>
+        <CenteredTitle>{i18next.t('kts.title')}</CenteredTitle>
+        <CenteredSubheading>{i18next.t('kts.tip')}</CenteredSubheading>
+        <Text>{i18next.t('kts.text')}</Text>
         <TKWDownloadButton
             onPress={() => {
                 Linking.openURL(

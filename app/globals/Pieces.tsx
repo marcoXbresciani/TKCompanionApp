@@ -22,7 +22,7 @@
  */
 import styled from 'styled-components';
 import {View} from 'react-native';
-import {DefaultText} from './Texts';
+import {Text} from 'react-native-paper';
 
 export const SectionItemSeparator = styled(View)`
     margin: 2px;
@@ -32,18 +32,13 @@ export const ButtonStripe = styled(View)`
     flex-direction: row;
 `;
 
-export const FrontRenderer = styled(DefaultText)`
+export const FrontRenderer = styled(Text)`
     border: 1px solid black;
     border-radius: 15px;
     justify-content: center;
     margin: 5px 20px 5px 20px;
     max-width: 85%;
     padding: 10px 15px;
-`;
-
-export const SmallerView = styled(View)`
-    width: 85%;
-    margin: auto;
 `;
 
 export type Nav = {

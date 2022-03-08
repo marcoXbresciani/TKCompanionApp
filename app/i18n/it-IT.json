@@ -69,14 +69,16 @@
             "3": "La comunità di Kata ha strutturato routine di pratica, chiamate 'Starter Kata', per l'apprendimento dei fondamenti sia per lo studente che per il coach, come suonare scale musicali quando si impara un nuovo strumento. La pratica del Kata iniziale è una base su cui la creatività e l'iniziativa di ogni studente può crescere.",
             "4": "Le routine di pratica del Kata di miglioramento e del Kata di coaching sono un utile punto di partenza per qualsiasi team o organizzazione che desideri sviluppare e utilizzare un approccio più scientifico. I principianti iniziano cercando di seguire esattamente lo schema dello Starter Kata. Man mano che la loro competenza aumenta e capiscono lo scopo dietro le routine, possono iniziare a sviluppare il proprio stile, purché continui a incorporare il modello e lo scopo scientifico sottostanti.",
             "5": "Il 'Codice Kata' definisce ciò che pensiamo non dovrebbe probabilmente cambiare man mano che avanzi ed evolvi il tuo stile.",
-            "6": "Auguri!"
+            "6": "Auguri!",
+            "title": "Cambiare il modo di pensare attraverso la pratica"
         },
         "front": {
-            "one": "Le condizioni non sono predicibili.",
-            "two": "Goditi la zona di apprendimento.",
-            "three": "Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
-            "four": "Beginners practice Starter Kata exactly.",
-            "five": "Abbi un coach, sii a coach."
+            "1": "Le condizioni non sono predicibili.",
+            "2": "Goditi la zona di apprendimento.",
+            "3": "Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
+            "4": "Beginners practice Starter Kata exactly.",
+            "5": "Abbi un coach, sii a coach.",
+            "title": "Il codice Kata"
         }
     }
 }

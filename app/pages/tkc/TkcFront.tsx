@@ -22,7 +22,7 @@
  */
 import {SectionList} from 'react-native';
 import * as React from 'react';
-import {BoldCentered} from '../../globals/Texts';
+import {CenteredTitle} from '../../globals/Texts';
 import PageContainer from '../../globals/PageContainer';
 import {useNavigation} from '@react-navigation/native';
 import {
@@ -38,7 +38,9 @@ const TkcFront: React.FunctionComponent = () => {
 
     return (
         <PageContainer>
-            <BoldCentered>The Kata Code</BoldCentered>
+            <CenteredTitle>
+                {i18next.t('tkc.front.title')}
+            </CenteredTitle>
             <SectionList
                 ItemSeparatorComponent={SectionItemSeparator}
                 renderItem={({item}) => (

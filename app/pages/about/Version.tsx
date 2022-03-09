@@ -26,14 +26,16 @@ import DeviceInfo from 'react-native-device-info';
 import {Caption} from 'react-native-paper';
 import {CenteredSubheading, CenteredTitle} from '../../globals/Texts';
 
+export const APP_NAME =
+    DeviceInfo.getApplicationName() || 'TKCompanionApp';
+export const APP_VERSION = DeviceInfo.getVersion() || '';
+
 const Version: React.FunctionComponent = () => {
-    const name = DeviceInfo.getApplicationName() || 'TKCompanionApp';
-    const version = DeviceInfo.getVersion() || '';
     const short = i18next.t('app.short');
     return (
         <>
-            <CenteredTitle>{name}</CenteredTitle>
-            <CenteredSubheading>{version}</CenteredSubheading>
+            <CenteredTitle>{APP_NAME}</CenteredTitle>
+            <CenteredSubheading>{APP_VERSION}</CenteredSubheading>
             <Caption>{short}</Caption>
         </>
     );

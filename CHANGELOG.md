@@ -30,8 +30,11 @@ This file is offered as-is, without any warranty.
   management.
 ### Removed
 ### Fixed
-* Proper I18N management with correct language identification.
 ### Security
+
+## [0.2.13] - 2022-03-10
+### Fixed
+* Proper I18N management with correct language identification.
 
 ## [0.2.12] - 2022-03-07
 ### Fixed
@@ -197,6 +200,7 @@ Error in PNG file.
 * 5Q card with front and back.
 
 [Unreleased]: https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD
+[0.2.13]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.13
 [0.2.12]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.12
 [0.2.11]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.11
 [0.2.10]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.10

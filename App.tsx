@@ -22,7 +22,7 @@
  */
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import i18next from 'i18next';
 import {tEn, tItIT} from './app/i18n';
 import {NativeModules, Platform} from 'react-native';
@@ -68,17 +68,13 @@ i18next.use(initReactI18next).init({
     resources,
 });
 
-const Tab = createMaterialBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 
 const AppNavigator: React.FunctionComponent = () => {
     return (
-        <NavigationContainer>
+        <NavigationContainer theme={tkThemeConfig}>
             <Tab.Navigator
                 backBehavior="history"
-                /* eslint-disable-next-line react-native/no-inline-styles */
-                barStyle={{
-                    backgroundColor: 'royalblue',
-                }}
                 initialRouteName="Home"
             >
                 <Tab.Screen
@@ -124,9 +120,9 @@ const AppNavigator: React.FunctionComponent = () => {
 const App: React.FunctionComponent = () => {
     return (
         <PaperProvider
-            // settings={{
-            //     icon: (props) => <Ionicons {...props} />,
-            // }}
+            settings={{
+                icon: (props) => <Ionicons {...props} />,
+            }}
             theme={tkThemeConfig}
         >
             <AppNavigator />

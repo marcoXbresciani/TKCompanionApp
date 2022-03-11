@@ -29,7 +29,8 @@ This file is offered as-is, without any warranty.
 ### Changed
 * Introduce React Native Paper components for (possibly) better theming
   management.
-* New icon for 5Q card menu item
+* New icon for 5Q card menu item.
+* Replace Material Bottom Tabs with default Bottom Tabs.
 ### Removed
 ### Fixed
 ### Security

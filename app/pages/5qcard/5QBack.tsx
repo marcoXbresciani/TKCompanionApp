@@ -20,115 +20,78 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import styled from 'styled-components';
-import {Pressable, View} from 'react-native';
 import * as React from 'react';
-import {
-    BoldText,
-    CenteredSubheading,
-    CenteredTitle,
-    DefaultText,
-    SmallerText,
-} from '../../globals/Texts';
-import PageContainer from '../../globals/PageContainer';
-import {useNavigation} from '@react-navigation/native';
+import {BoldText} from '../../globals/Texts';
 import i18next from 'i18next';
-import {Nav} from '../../globals/Pieces';
 import {Trans, useTranslation} from 'react-i18next';
+import {Button, Card, Paragraph} from 'react-native-paper';
+import {Card5Q, Card5QContent, Card5QTitle} from './5QPage';
+import {DefaultTheme} from '@react-navigation/native';
 
-const BackView = styled(View)`
-    background-color: white;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 10px 10px 10px 10px;
-`;
+type Props = {
+    onPress: () => void;
+};
 
-const QuestionsView = styled(View)`
-    margin: 0 5%;
-`;
-
-const QuestionsText = styled(DefaultText)`
-    padding: 2% 0;
-`;
-
-const Line = styled(View)`
-    align-self: center;
-    background-color: black;
-    height: 1px;
-    margin-bottom: 0;
-    margin-left: 50%;
-    margin-top: 15px;
-    width: 50%;
-`;
-
-const Returner = styled(SmallerText)`
-    padding: 0 5px;
-    margin-top: 15px;
-    text-align: right;
-`;
-
-const Back5QScreen: React.FunctionComponent = () => {
-    const navigation = useNavigation<Nav>();
+const Back5Q: React.FC<Props> = ({onPress}: Props) => {
     const {t} = useTranslation('');
 
     return (
-        <PageContainer>
-            <BackView>
-                <CenteredTitle>
-                    {i18next.t('5q.back.title')}
-                </CenteredTitle>
-                <CenteredSubheading>
-                    {i18next.t('5q.back.quote')}
-                </CenteredSubheading>
-                <QuestionsView>
-                    <QuestionsText>
-                        <Trans
-                            t={t}
-                            i18nKey={'5q.back.q1'}
-                            components={{
-                                bold: <BoldText />,
-                            }}
-                        />
-                    </QuestionsText>
-                    <QuestionsText>
-                        <Trans
-                            t={t}
-                            i18nKey={'5q.back.q2'}
-                            components={{
-                                bold: <BoldText />,
-                            }}
-                        />
-                    </QuestionsText>
-                    <QuestionsText>
-                        <Trans
-                            t={t}
-                            i18nKey={'5q.back.q3'}
-                            components={{
-                                bold: <BoldText />,
-                            }}
-                        />
-                    </QuestionsText>
-                    <QuestionsText>
-                        <Trans
-                            t={t}
-                            i18nKey={'5q.back.q4'}
-                            components={{
-                                bold: <BoldText />,
-                            }}
-                        />
-                    </QuestionsText>
-                </QuestionsView>
-                <Pressable
-                    onPress={() => navigation.navigate('5QFront')}
+        <Card5Q>
+            <Card5QTitle
+                theme={{color: DefaultTheme.colors.primary}}
+                title={i18next.t('5q.back.title')}
+                subtitle={i18next.t('5q.back.quote')}
+                subtitleNumberOfLines={2}
+            />
+            <Card5QContent>
+                <Paragraph>
+                    <Trans
+                        t={t}
+                        i18nKey={'5q.back.q1'}
+                        components={{
+                            bold: <BoldText />,
+                        }}
+                    />
+                </Paragraph>
+                <Paragraph>
+                    <Trans
+                        t={t}
+                        i18nKey={'5q.back.q2'}
+                        components={{
+                            bold: <BoldText />,
+                        }}
+                    />
+                </Paragraph>
+                <Paragraph>
+                    <Trans
+                        t={t}
+                        i18nKey={'5q.back.q3'}
+                        components={{
+                            bold: <BoldText />,
+                        }}
+                    />
+                </Paragraph>
+                <Paragraph>
+                    <Trans
+                        t={t}
+                        i18nKey={'5q.back.q4'}
+                        components={{
+                            bold: <BoldText />,
+                        }}
+                    />
+                </Paragraph>
+            </Card5QContent>
+            <Card.Actions>
+                <Button
+                    color={DefaultTheme.colors.primary}
+                    icon="return-up-back-outline"
+                    onPress={() => onPress()}
                 >
-                    <Line />
-                    <Returner>{i18next.t('5q.back.return')}</Returner>
-                </Pressable>
-            </BackView>
-        </PageContainer>
+                    {i18next.t('5q.back.return')}
+                </Button>
+            </Card.Actions>
+        </Card5Q>
     );
 };
 
-export default Back5QScreen;
+export default Back5Q;

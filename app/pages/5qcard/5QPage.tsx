@@ -20,31 +20,54 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import * as React from 'react';
+import {useState} from 'react';
 import Front5Q from './5QFront';
 import Back5Q from './5QBack';
-import * as React from 'react';
+import styled from 'styled-components';
+import {Card} from 'react-native-paper';
 
-const Stack = createNativeStackNavigator();
+export const Card5Q = styled(Card)`
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+`;
+
+export const Card5QTitle = styled(Card.Title)`
+    border-bottom-color: ${(props) => props.theme.color};
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+`;
+
+Card5QTitle.defaultProps = {
+    theme: {
+        color: undefined,
+    },
+};
+
+export const Card5QContent = styled(Card.Content)`
+    padding: 5%;
+`;
 
 const FiveQCard: React.FunctionComponent = () => {
+    const [front, setFront] = useState<boolean>(true);
+
     return (
-        <Stack.Navigator>
-            <Stack.Screen
-                name="5QFront"
-                component={Front5Q}
-                options={{
-                    headerShown: false,
-                }}
-            />
-            <Stack.Screen
-                name="5QBack"
-                component={Back5Q}
-                options={{
-                    headerShown: false,
-                }}
-            />
-        </Stack.Navigator>
+        <>
+            {front ? (
+                <Front5Q
+                    onPress={() => {
+                        setFront(false);
+                    }}
+                />
+            ) : (
+                <Back5Q
+                    onPress={() => {
+                        setFront(true);
+                    }}
+                />
+            )}
+        </>
     );
 };
 

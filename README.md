@@ -75,7 +75,7 @@ for a Google Developer Account, and it's even
 [$99/year](https://developer.apple.com/support/enrollment/) (!) for the
 Apple Developer Program.
 
-So, for now, I hope you'll find this app only through the
+So, for now, I you can find this app only through the
 [F-Droid](https://f-droid.org/) _installable catalogue of FOSS (Free and
 Open Source Software) applications for the Android platform_.
 

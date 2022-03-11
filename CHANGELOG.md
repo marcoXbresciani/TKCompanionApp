@@ -25,12 +25,16 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased]
 ### Added
+* Introduce themed colours management.
 ### Changed
 * Introduce React Native Paper components for (possibly) better theming
   management.
+* New icon for 5Q card menu item
 ### Removed
 ### Fixed
 ### Security
+
+## [0.2.14]
 
 ## [0.2.13] - 2022-03-10
 ### Fixed

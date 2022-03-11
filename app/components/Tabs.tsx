@@ -35,7 +35,7 @@ export const TabIconHome = ({color}: {color: string}) => (
 );
 
 export const TabIcon5Q = ({color}: {color: string}) => (
-    <FontedIcon name="people-circle-outline" color={color} size={16} />
+    <FontedIcon name="chatbubbles-outline" color={color} size={16} />
 );
 
 export const TabIconKTS = ({color}: {color: string}) => (

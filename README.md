@@ -62,6 +62,8 @@ From the Toyota Kata website:
 > guidance of your coach.
 
 ## Install
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
+
 This app is currently built using React Native, through Expo framework,
 to make building the app for both Android and iOS from the same source
 code easier.
@@ -76,9 +78,6 @@ Apple Developer Program.
 So, for now, I hope you'll find this app only through the
 [F-Droid](https://f-droid.org/) _installable catalogue of FOSS (Free and
 Open Source Software) applications for the Android platform_.
-
-![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp)
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
 
 To install this app, you then need the F-Droid client app (pretty
 similar to Google Play Store or Apple App Store) from the

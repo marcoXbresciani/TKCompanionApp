@@ -21,25 +21,9 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import styled from 'styled-components';
-import Icon from 'react-native-vector-icons/Ionicons';
 import {Divider, IconButton, Menu} from 'react-native-paper';
 
-const FontedIcon = styled(Icon)`
-    font-family: FreeSans;
-    font-size: 16px;
-    line-height: 27px;
-`;
-
-export const TabIconHome = ({color}: {color: string}) => (
-    <FontedIcon name="home" color={color} size={16} />
-);
-
-export const TabIcon5Q = ({color}: {color: string}) => (
-    <FontedIcon name="chatbubbles-outline" color={color} size={16} />
-);
-
-export const TabIconMenu = () => {
+export const AboutMenu = () => {
     const [visible, setVisible] = React.useState(false);
     const openMenu = () => setVisible(true);
     const closeMenu = () => setVisible(false);
@@ -64,19 +48,3 @@ export const TabIconMenu = () => {
         </>
     );
 };
-
-export const TabIconKTS = ({color}: {color: string}) => (
-    <FontedIcon name="warning-outline" color={color} size={16} />
-);
-
-export const TabIconTKC = ({color}: {color: string}) => (
-    <FontedIcon name="book-outline" color={color} size={16} />
-);
-
-export const TabIconAbout = ({color}: {color: string}) => (
-    <FontedIcon
-        name="information-circle-outline"
-        color={color}
-        size={16}
-    />
-);

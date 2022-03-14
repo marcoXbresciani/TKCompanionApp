@@ -39,9 +39,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
         <Card5Q>
             <Card5QTitle
                 theme={{color: DefaultTheme.colors.primary}}
-                title={i18next.t('5q.front.header')}
-                subtitle={i18next.t('5q.front.title')}
-                subtitleNumberOfLines={2}
+                title={i18next.t('5q.front.title')}
             />
             <Card5QContent>
                 <DefaultParagraph>

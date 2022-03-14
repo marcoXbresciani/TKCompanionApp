@@ -56,10 +56,23 @@
         "title": "Kata that Shit"
     },
     "nav": {
-        "5qcard": "5Q Card",
-        "about": "About",
-        "home": "Home",
+        "5qcard": {
+            "icon": "5Q Card",
+            "title": "Coaching Kata"
+        },
+        "about": {
+            "icon": "About",
+            "title": "About"
+        },
+        "home": {
+            "icon": "Home",
+            "title": "Welcome!"
+        },
         "kts": "KTS",
+        "menu": {
+            "icon": "menu",
+            "title": " "
+        },
         "tkc": "TKC"
     },
     "tkc": {

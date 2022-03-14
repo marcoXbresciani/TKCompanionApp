@@ -26,14 +26,9 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import i18next from 'i18next';
 import {tEn, tItIT} from './app/i18n';
 import {NativeModules, Platform} from 'react-native';
-import {
-    IconButton,
-    Provider as PaperProvider,
-} from 'react-native-paper';
+import {Provider as PaperProvider} from 'react-native-paper';
 import HomePage from './app/pages/HomePage';
 import AboutPage from './app/pages/about/AboutPage';
-import KTSPage from './app/pages/KTSPage';
-import TkcPage from './app/pages/tkc/TkcPage';
 import FiveQCard from './app/pages/5qcard/5QPage';
 import {
     TabIcon5Q,
@@ -45,6 +40,9 @@ import {
 import {initReactI18next} from 'react-i18next';
 import {tkThemeConfig} from './app/globals/Config';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {AboutMenu} from './app/pages/about/AboutMenu';
+import KTSPage from './app/pages/KTSPage';
+import TkcPage from './app/pages/tkc/TkcPage';
 
 const locale = (
     Platform.OS === 'ios'
@@ -81,23 +79,34 @@ const AppNavigator: React.FunctionComponent = () => {
                 initialRouteName="Home"
             >
                 <Tab.Screen
-                    name={i18next.t('nav.home')}
+                    name={i18next.t('nav.home.icon')}
                     options={{
                         tabBarIcon: TabIconHome,
+                        headerTitle: i18next.t('nav.home.title'),
                     }}
                     component={HomePage}
                 />
                 <Tab.Screen
-                    name={i18next.t('nav.5qcard')}
+                    name={i18next.t('nav.5qcard.icon')}
                     options={{
                         tabBarIcon: TabIcon5Q,
+                        headerTitle: i18next.t('nav.5qcard.title'),
                     }}
                     component={FiveQCard}
                 />
+                {/*<Tab.Screen*/}
+                {/*    name={i18next.t('nav.menu.icon')}*/}
+                {/*    options={{*/}
+                {/*        tabBarIcon: TabIconMenu,*/}
+                {/*        headerTitle: i18next.t('nav.menu.title'),*/}
+                {/*    }}*/}
+                {/*    component={FiveQCard}*/}
+                {/*/>*/}
                 <Tab.Screen
                     name={i18next.t('nav.kts')}
                     options={{
                         tabBarIcon: TabIconKTS,
+                        headerTitle: i18next.t('nav.kts.title'),
                     }}
                     component={KTSPage}
                 />
@@ -105,23 +114,17 @@ const AppNavigator: React.FunctionComponent = () => {
                     name={i18next.t('nav.tkc')}
                     options={{
                         tabBarIcon: TabIconTKC,
+                        headerTitle: i18next.t('nav.tkc.title'),
                     }}
                     component={TkcPage}
                 />
                 <Tab.Screen
-                    name={i18next.t('nav.about')}
+                    name={i18next.t('nav.about.icon')}
                     component={AboutPage}
                     options={{
-                        headerLeft: () => (
-                            <IconButton icon="map-outline" />
-                        ),
-                        headerRight: () => (
-                            <>
-                                <IconButton icon="document-text-outline" />
-                            </>
-                            // <TabIconMenu color={tkThemeConfig.colors.primary} />
-                        ),
+                        headerRight: AboutMenu,
                         tabBarIcon: TabIconAbout,
+                        headerTitle: i18next.t('nav.about.title'),
                     }}
                 />
             </Tab.Navigator>

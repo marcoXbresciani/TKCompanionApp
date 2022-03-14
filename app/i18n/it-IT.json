@@ -56,10 +56,23 @@
         "title": "Kàta 'sta roba"
     },
     "nav": {
-        "5qcard": "5 Domande",
-        "about": "Info",
-        "home": "Inizio",
+        "5qcard": {
+            "icon": "5 Domande",
+            "title": "Kata del coaching"
+        },
+        "about": {
+            "icon": "Info",
+            "title": "Informazioni"
+        },
+        "home": {
+            "icon": "Inizio",
+            "title": "Benvenuti!"
+        },
         "kts": "KTS",
+        "menu": {
+            "icon": "menu",
+            "title": " "
+        },
         "tkc": "TKC"
     },
     "tkc": {

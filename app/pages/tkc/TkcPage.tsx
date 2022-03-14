@@ -27,7 +27,7 @@ import TkcBack from './TkcBack';
 
 const Stack = createNativeStackNavigator();
 
-const TckScreen: React.FunctionComponent = () => {
+const TckPage: React.FunctionComponent = () => {
     return (
         <Stack.Navigator initialRouteName="TkcFront">
             <Stack.Screen
@@ -48,4 +48,4 @@ const TckScreen: React.FunctionComponent = () => {
     );
 };
 
-export default TckScreen;
+export default TckPage;

@@ -26,11 +26,14 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import i18next from 'i18next';
 import {tEn, tItIT} from './app/i18n';
 import {NativeModules, Platform} from 'react-native';
-import {Provider as PaperProvider} from 'react-native-paper';
+import {
+    IconButton,
+    Provider as PaperProvider,
+} from 'react-native-paper';
 import HomePage from './app/pages/HomePage';
 import AboutPage from './app/pages/about/AboutPage';
 import KTSPage from './app/pages/KTSPage';
-import TkcScreen from './app/pages/tkc/TkcPage';
+import TkcPage from './app/pages/tkc/TkcPage';
 import FiveQCard from './app/pages/5qcard/5QPage';
 import {
     TabIcon5Q,
@@ -103,12 +106,21 @@ const AppNavigator: React.FunctionComponent = () => {
                     options={{
                         tabBarIcon: TabIconTKC,
                     }}
-                    component={TkcScreen}
+                    component={TkcPage}
                 />
                 <Tab.Screen
                     name={i18next.t('nav.about')}
                     component={AboutPage}
                     options={{
+                        headerLeft: () => (
+                            <IconButton icon="map-outline" />
+                        ),
+                        headerRight: () => (
+                            <>
+                                <IconButton icon="document-text-outline" />
+                            </>
+                            // <TabIconMenu color={tkThemeConfig.colors.primary} />
+                        ),
                         tabBarIcon: TabIconAbout,
                     }}
                 />

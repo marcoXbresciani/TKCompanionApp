@@ -27,10 +27,8 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import styled from 'styled-components';
 
 const NicerAreaView = styled(SafeAreaView)`
-    align-items: center;
-    flex: 1;
-    justify-content: center;
     margin: ${(props) => props.theme.marginTop} 2.5% 0;
+    flex: 1;
 `;
 
 NicerAreaView.defaultProps = {

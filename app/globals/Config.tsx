@@ -21,7 +21,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import {DefaultTheme as NavigationDefaultTheme} from '@react-navigation/native';
-import {DefaultTheme as PaperDefaultTheme} from 'react-native-paper';
+import {
+    configureFonts,
+    DefaultTheme as PaperDefaultTheme,
+} from 'react-native-paper';
 import merge from 'deepmerge';
 
 const CombinedDefaultTheme = merge(
@@ -29,6 +32,67 @@ const CombinedDefaultTheme = merge(
     NavigationDefaultTheme,
 );
 
+const fontConfig = {
+    web: {
+        regular: {
+            fontFamily: 'FreeSans',
+            fontWeight: '400' as '400',
+        },
+        medium: {
+            fontFamily: 'FreeSansBold',
+            fontWeight: '700' as '700',
+        },
+        light: {
+            fontFamily: 'FreeSans',
+            fontWeight: '300' as '300',
+        },
+        thin: {
+            fontFamily: 'FreeSans',
+            fontWeight: '100' as '100',
+        },
+    },
+    ios: {
+        regular: {
+            fontFamily: 'FreeSans',
+            fontWeight: '400' as '400',
+        },
+        medium: {
+            fontFamily: 'FreeSansBold',
+            fontWeight: '700' as '700',
+        },
+        light: {
+            fontFamily: 'FreeSans',
+            fontWeight: '300' as '300',
+        },
+        thin: {
+            fontFamily: 'FreeSans',
+            fontWeight: '100' as '100',
+        },
+    },
+    default: {
+        regular: {
+            fontFamily: 'FreeSans',
+            fontWeight: 'normal' as 'normal',
+        },
+        medium: {
+            fontFamily: 'FreeSansBold',
+            fontWeight: 'bold' as 'bold',
+        },
+        light: {
+            fontFamily: 'FreeSans',
+            fontWeight: 'normal' as 'normal',
+        },
+        thin: {
+            fontFamily: 'FreeSans',
+            fontWeight: 'normal' as 'normal',
+        },
+    },
+};
+
 export const tkThemeConfig = {
     ...CombinedDefaultTheme,
+    fonts: configureFonts(fontConfig),
+    animation: {
+        scale: 1.0,
+    },
 };

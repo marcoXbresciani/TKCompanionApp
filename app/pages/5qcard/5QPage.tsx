@@ -26,6 +26,7 @@ import Front5Q from './5QFront';
 import Back5Q from './5QBack';
 import styled from 'styled-components';
 import {Card} from 'react-native-paper';
+import PageContainer from '../../globals/PageContainer';
 
 export const Card5Q = styled(Card)`
     border: 1px solid black;
@@ -53,7 +54,7 @@ const FiveQCard: React.FunctionComponent = () => {
     const [front, setFront] = useState<boolean>(true);
 
     return (
-        <>
+        <PageContainer>
             {front ? (
                 <Front5Q
                     onPress={() => {
@@ -67,7 +68,7 @@ const FiveQCard: React.FunctionComponent = () => {
                     }}
                 />
             )}
-        </>
+        </PageContainer>
     );
 };
 

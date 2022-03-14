@@ -21,10 +21,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {BoldText} from '../../globals/Texts';
+import {BoldText, DefaultParagraph} from '../../globals/Texts';
 import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
-import {Button, Card, Paragraph} from 'react-native-paper';
+import {Button, Card} from 'react-native-paper';
 import {Card5Q, Card5QContent, Card5QTitle} from './5QPage';
 import {DefaultTheme} from '@react-navigation/native';
 
@@ -44,7 +44,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                 subtitleNumberOfLines={2}
             />
             <Card5QContent>
-                <Paragraph>
+                <DefaultParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.front.q1'}
@@ -52,8 +52,8 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                </Paragraph>
-                <Paragraph>
+                </DefaultParagraph>
+                <DefaultParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.front.q2'}
@@ -61,7 +61,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                </Paragraph>
+                </DefaultParagraph>
                 <Card.Actions>
                     <Button
                         color={DefaultTheme.colors.primary}
@@ -71,7 +71,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                         {i18next.t('5q.front.separator')}
                     </Button>
                 </Card.Actions>
-                <Paragraph>
+                <DefaultParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.front.q3.1'}
@@ -79,10 +79,9 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                    {'\n'}
                     {i18next.t('5q.front.q3.2')}
-                </Paragraph>
-                <Paragraph>
+                </DefaultParagraph>
+                <DefaultParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.front.q4.1'}
@@ -90,10 +89,9 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                    {'\n'}
                     {i18next.t('5q.front.q4.2')}
-                </Paragraph>
-                <Paragraph>
+                </DefaultParagraph>
+                <DefaultParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.front.q5'}
@@ -101,7 +99,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                </Paragraph>
+                </DefaultParagraph>
             </Card5QContent>
         </Card5Q>
     );

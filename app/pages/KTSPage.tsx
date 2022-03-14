@@ -23,26 +23,35 @@
 import {Linking} from 'react-native';
 import * as React from 'react';
 import PageContainer from '../globals/PageContainer';
-import {TKWDownloadButton} from '../globals/Buttons';
 import i18next from 'i18next';
-import {
-    CenteredSubheading,
-    CenteredTitle,
-    DefaultText,
-} from '../globals/Texts';
+import {DefaultParagraph} from '../globals/Texts';
+import {Card, IconButton} from 'react-native-paper';
+import {DefaultTheme} from '@react-navigation/native';
 
 const KTSPage: React.FunctionComponent = () => (
     <PageContainer>
-        <CenteredTitle>{i18next.t('kts.title')}</CenteredTitle>
-        <CenteredSubheading>{i18next.t('kts.tip')}</CenteredSubheading>
-        <DefaultText>{i18next.t('kts.text')}</DefaultText>
-        <TKWDownloadButton
-            onPress={() => {
-                Linking.openURL(
-                    'http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
-                );
-            }}
-        />
+        <Card>
+            <Card.Title
+                title={i18next.t('kts.title')}
+                subtitle={i18next.t('kts.tip')}
+            />
+            <Card.Content>
+                <DefaultParagraph>
+                    {i18next.t('kts.text')}
+                </DefaultParagraph>
+            </Card.Content>
+            <Card.Actions>
+                <IconButton
+                    color={DefaultTheme.colors.primary}
+                    icon="download-outline"
+                    onPress={() => {
+                        Linking.openURL(
+                            'http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
+                        );
+                    }}
+                />
+            </Card.Actions>
+        </Card>
     </PageContainer>
 );
 

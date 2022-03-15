@@ -1,0 +1,2 @@
+Introduce React Native Paper e i colori a tema.
+Nuove pagine in corso.

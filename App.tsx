@@ -122,7 +122,7 @@ const AppNavigator: React.FunctionComponent = () => {
                     name={i18next.t('nav.about.icon')}
                     component={AboutPage}
                     options={{
-                        headerRight: AboutMenu,
+                        // headerRight: AboutMenu,
                         tabBarIcon: TabIconAbout,
                         headerTitle: i18next.t('nav.about.title'),
                     }}

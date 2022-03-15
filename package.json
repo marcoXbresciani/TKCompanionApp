@@ -1,6 +1,6 @@
 {
     "name": "tkcompanionapp",
-    "version": "0.2.13",
+    "version": "0.2.14",
     "private": true,
     "scripts": {
         "android": "react-native run-android",

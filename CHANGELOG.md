@@ -36,6 +36,13 @@ This file is offered as-is, without any warranty.
 ### Security
 
 ## [0.2.14]
+### Added
+* Introduce themed colours management.
+### Changed
+* Introduce React Native Paper components for (possibly) better theming
+  management.
+* New icon for 5Q card menu item.
+* Replace Material Bottom Tabs with default Bottom Tabs.
 
 ## [0.2.13] - 2022-03-10
 ### Fixed

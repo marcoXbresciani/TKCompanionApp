@@ -21,14 +21,13 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components';
-import {View} from 'react-native';
+import {Pressable, View} from 'react-native';
 import * as React from 'react';
 import {BoldText, DefaultText} from '../../globals/Texts';
 import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
-import {Button} from 'react-native-paper';
-import {tkTheme} from '../../globals/Config';
 import {TitleText} from './5QPage';
+import Separator from './Separator';
 
 const FrontView = styled(View)`
     background-color: royalblue;
@@ -97,20 +96,11 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             }}
                         />
                     </QuestionsText>
-                    {/*<Pressable*/}
-                    {/*    onPress={() => navigation.navigate('5QBack')}*/}
-                    {/*>*/}
-                    {/*    <Separator>*/}
-                    {/*        {i18next.t('5q.front.separator')}*/}
-                    {/*    </Separator>*/}
-                    {/*</Pressable>*/}
-                    <Button
-                        color={tkTheme.colors.primary}
-                        icon="return-down-forward-outline"
-                        onPress={() => onPress()}
-                    >
-                        {i18next.t('5q.front.separator')}
-                    </Button>
+                    <Pressable onPress={() => onPress()}>
+                        <Separator>
+                            {i18next.t('5q.front.separator')}
+                        </Separator>
+                    </Pressable>
 
                     <QuestionsText>
                         <Trans

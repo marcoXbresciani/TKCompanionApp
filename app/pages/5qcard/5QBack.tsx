@@ -21,14 +21,12 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components';
-import {View} from 'react-native';
+import {Pressable, View} from 'react-native';
 import * as React from 'react';
-import {BoldText, DefaultText} from '../../globals/Texts';
+import {BoldText, DefaultText, SmallerText} from '../../globals/Texts';
 import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
-import {tkTheme} from '../../globals/Config';
-import {Button} from 'react-native-paper';
-import {TitleText} from "./5QPage";
+import {TitleText} from './5QPage';
 
 const BackView = styled(View)`
     background-color: white;
@@ -50,6 +48,22 @@ const QuestionsView = styled(View)`
 
 const QuestionsText = styled(DefaultText)`
     padding: 2% 0;
+`;
+
+const Line = styled(View)`
+    align-self: center;
+    background-color: black;
+    height: 1px;
+    margin-bottom: 0;
+    margin-left: 50%;
+    margin-top: 15px;
+    width: 50%;
+`;
+
+const Returner = styled(SmallerText)`
+    padding: 0 5px;
+    margin-top: 15px;
+    text-align: right;
 `;
 
 type Props = {
@@ -102,13 +116,10 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                         />
                     </QuestionsText>
                 </QuestionsView>
-                <Button
-                    color={tkTheme.colors.primary}
-                    icon="return-up-back-outline"
-                    onPress={() => onPress()}
-                >
-                    {i18next.t('5q.back.return')}
-                </Button>
+                <Pressable onPress={() => onPress()}>
+                    <Line />
+                    <Returner>{i18next.t('5q.back.return')}</Returner>
+                </Pressable>
             </BackView>
         </>
     );

@@ -23,11 +23,11 @@
 import styled from 'styled-components';
 import {Pressable, View} from 'react-native';
 import * as React from 'react';
-import {BoldText, DefaultText} from '../../globals/Texts';
 import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
-import {TitleText} from './5QPage';
+
 import Separator from './Separator';
+import {Bold5Q, Text5Q, Title5Q} from './5QTexts';
 
 const FrontView = styled(View)`
     background-color: royalblue;
@@ -37,7 +37,7 @@ const FrontView = styled(View)`
     padding: 10px 10px 10px 10px;
 `;
 
-const CKText = styled(BoldText)`
+const CKText = styled(Bold5Q)`
     color: white;
     margin: auto;
     padding: 5px;
@@ -59,7 +59,7 @@ const QuestionsView = styled(View)`
     padding: 10px;
 `;
 
-const QuestionsText = styled(DefaultText)`
+const QuestionsText = styled(Text5Q)`
     padding: 1% 0;
 `;
 
@@ -77,13 +77,13 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                     <CKText>{i18next.t('5q.front.header')}</CKText>
                 </View>
                 <QuestionsView>
-                    <TitleText>{i18next.t('5q.front.title')}</TitleText>
+                    <Title5Q>{i18next.t('5q.front.title')}</Title5Q>
                     <QuestionsText>
                         <Trans
                             t={t}
                             i18nKey={'5q.front.q1'}
                             components={{
-                                bold: <BoldText />,
+                                bold: <Bold5Q />,
                             }}
                         />
                     </QuestionsText>
@@ -92,7 +92,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             t={t}
                             i18nKey={'5q.front.q2'}
                             components={{
-                                bold: <BoldText />,
+                                bold: <Bold5Q />,
                             }}
                         />
                     </QuestionsText>
@@ -107,7 +107,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             t={t}
                             i18nKey={'5q.front.q3.1'}
                             components={{
-                                bold: <BoldText />,
+                                bold: <Bold5Q />,
                             }}
                         />
                         {'\n'}
@@ -118,7 +118,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             t={t}
                             i18nKey={'5q.front.q4.1'}
                             components={{
-                                bold: <BoldText />,
+                                bold: <Bold5Q />,
                             }}
                         />
                         {'\n'}
@@ -129,7 +129,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             t={t}
                             i18nKey={'5q.front.q5'}
                             components={{
-                                bold: <BoldText />,
+                                bold: <Bold5Q />,
                             }}
                         />
                     </QuestionsText>

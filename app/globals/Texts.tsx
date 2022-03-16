@@ -23,14 +23,6 @@
 import styled from 'styled-components';
 import {Paragraph, Subheading, Text, Title} from 'react-native-paper';
 
-export const CenteredTitle = styled(Title)`
-    text-align: center;
-`;
-
-export const CenteredSubheading = styled(Subheading)`
-    text-align: center;
-`;
-
 export const DefaultText = styled(Text)`
     font-size: 16px;
     line-height: 27px;
@@ -41,26 +33,33 @@ export const DefaultParagraph = styled(Paragraph)`
     line-height: 27px;
 `;
 
+export const CenteredTitle = styled(Title)`
+    text-align: center;
+`;
+
+export const CenteredSubheading = styled(Subheading)`
+    text-align: center;
+`;
+
 // export const BiggerText = styled(DefaultText)`
 //         font-color: back;
 //         font-size: 20px;
 //         line-height: 33px;
 // `;
+
 export const SmallerText = styled(DefaultText)`
     font-size: 13px;
     line-height: 23px;
 `;
-export const ButtonText = styled(SmallerText)`
-    color: white;
-`;
+
+// export const ButtonText = styled(SmallerText)`
+//     color: white;
+// `;
 
 export const BoldText = styled(DefaultText)`
     font-weight: bold;
 `;
 
-export const JustifiedText = styled(DefaultText)`
-    text-align: justify;
-`;
 export const CenteredText = styled(DefaultText)`
     text-align: center;
 `;

@@ -20,32 +20,35 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import * as React from 'react';
-import {useState} from 'react';
-import Front5Q from './5QFront';
-import Back5Q from './5QBack';
-import PageContainer from '../../globals/PageContainer';
 
-const FiveQCard: React.FunctionComponent = () => {
-    const [front, setFront] = useState<boolean>(true);
+import styled from 'styled-components';
+import {Text} from 'react-native';
 
-    return (
-        <PageContainer>
-            {front ? (
-                <Front5Q
-                    onPress={() => {
-                        setFront(false);
-                    }}
-                />
-            ) : (
-                <Back5Q
-                    onPress={() => {
-                        setFront(true);
-                    }}
-                />
-            )}
-        </PageContainer>
-    );
-};
+export const Text5Q = styled(Text)`
+    color: black;
+    font-family: FreeSans;
+    font-size: 16px;
+    line-height: 27px;
+`;
 
-export default FiveQCard;
+export const Bold5Q = styled(Text5Q)`
+    font-family: FreeSansBold;
+`;
+
+export const Centered5Q = styled(Text5Q)`
+    text-align: center;
+`;
+
+export const BoldCentered5Q = styled(Centered5Q)`
+    font-family: FreeSansBold;
+`;
+
+export const Title5Q = styled(BoldCentered5Q)`
+    font-size: 20px;
+    line-height: 33px;
+`;
+
+export const Smaller5Q = styled(Text5Q)`
+    font-size: 13px;
+    line-height: 23px;
+`;

@@ -23,10 +23,9 @@
 import styled from 'styled-components';
 import {Pressable, View} from 'react-native';
 import * as React from 'react';
-import {BoldText, DefaultText, SmallerText} from '../../globals/Texts';
 import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
-import {TitleText} from './5QPage';
+import {Bold5Q, Smaller5Q, Text5Q, Title5Q} from './5QTexts';
 
 const BackView = styled(View)`
     background-color: white;
@@ -37,7 +36,7 @@ const BackView = styled(View)`
     padding: 10px 10px 10px 10px;
 `;
 
-const QuoteText = styled(DefaultText)`
+const QuoteText = styled(Text5Q)`
     margin: 0 5% 5% 5%;
     text-align: center;
 `;
@@ -46,7 +45,7 @@ const QuestionsView = styled(View)`
     margin: 0 5%;
 `;
 
-const QuestionsText = styled(DefaultText)`
+const QuestionsText = styled(Text5Q)`
     padding: 2% 0;
 `;
 
@@ -60,7 +59,7 @@ const Line = styled(View)`
     width: 50%;
 `;
 
-const Returner = styled(SmallerText)`
+const Returner = styled(Smaller5Q)`
     padding: 0 5px;
     margin-top: 15px;
     text-align: right;
@@ -76,7 +75,7 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
     return (
         <>
             <BackView>
-                <TitleText>{i18next.t('5q.back.title')}</TitleText>
+                <Title5Q>{i18next.t('5q.back.title')}</Title5Q>
                 <QuoteText>{i18next.t('5q.back.quote')}</QuoteText>
                 <QuestionsView>
                     <QuestionsText>
@@ -84,7 +83,7 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                             t={t}
                             i18nKey={'5q.back.q1'}
                             components={{
-                                bold: <BoldText />,
+                                bold: <Bold5Q />,
                             }}
                         />
                     </QuestionsText>
@@ -93,7 +92,7 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                             t={t}
                             i18nKey={'5q.back.q2'}
                             components={{
-                                bold: <BoldText />,
+                                bold: <Bold5Q />,
                             }}
                         />
                     </QuestionsText>
@@ -102,7 +101,7 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                             t={t}
                             i18nKey={'5q.back.q3'}
                             components={{
-                                bold: <BoldText />,
+                                bold: <Bold5Q />,
                             }}
                         />
                     </QuestionsText>
@@ -111,7 +110,7 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                             t={t}
                             i18nKey={'5q.back.q4'}
                             components={{
-                                bold: <BoldText />,
+                                bold: <Bold5Q />,
                             }}
                         />
                     </QuestionsText>

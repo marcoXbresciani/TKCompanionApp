@@ -89,7 +89,7 @@ const fontConfig = {
     },
 };
 
-export const tkThemeConfig = {
+export const tkTheme = {
     ...CombinedDefaultTheme,
     fonts: configureFonts(fontConfig),
     animation: {

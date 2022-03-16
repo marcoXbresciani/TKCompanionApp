@@ -25,29 +25,16 @@ import {useState} from 'react';
 import Front5Q from './5QFront';
 import Back5Q from './5QBack';
 import styled from 'styled-components';
-import {Card} from 'react-native-paper';
 import PageContainer from '../../globals/PageContainer';
+import {CenteredText} from '../../globals/Texts';
 
-export const Card5Q = styled(Card)`
-    border: 1px solid black;
-    border-radius: 15px;
-    background-color: white;
+export const BoldCentered = styled(CenteredText)`
+    font-family: FreeSansBold;
 `;
 
-export const Card5QTitle = styled(Card.Title)`
-    border-bottom-color: ${(props) => props.theme.color};
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-`;
-
-Card5QTitle.defaultProps = {
-    theme: {
-        color: undefined,
-    },
-};
-
-export const Card5QContent = styled(Card.Content)`
-    padding: 5%;
+export const TitleText = styled(BoldCentered)`
+    font-size: 20px;
+    line-height: 33px;
 `;
 
 const FiveQCard: React.FunctionComponent = () => {

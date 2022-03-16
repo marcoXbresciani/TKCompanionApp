@@ -38,7 +38,7 @@ import {
     TabIconTKC,
 } from './app/components/Tabs';
 import {initReactI18next} from 'react-i18next';
-import {tkThemeConfig} from './app/globals/Config';
+import {tkTheme} from './app/globals/Config';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {AboutMenu} from './app/pages/about/AboutMenu';
 import KTSPage from './app/pages/KTSPage';
@@ -73,7 +73,7 @@ const Tab = createBottomTabNavigator();
 
 const AppNavigator: React.FunctionComponent = () => {
     return (
-        <NavigationContainer theme={tkThemeConfig}>
+        <NavigationContainer theme={tkTheme}>
             <Tab.Navigator
                 backBehavior="history"
                 initialRouteName="Home"
@@ -138,7 +138,7 @@ const App: React.FunctionComponent = () => {
             settings={{
                 icon: (props) => <Ionicons {...props} />,
             }}
-            theme={tkThemeConfig}
+            theme={tkTheme}
         >
             <AppNavigator />
         </PaperProvider>

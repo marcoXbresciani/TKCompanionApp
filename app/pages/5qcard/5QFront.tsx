@@ -20,13 +20,49 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
+import styled from 'styled-components';
+import {View} from 'react-native';
 import * as React from 'react';
-import {BoldText, DefaultParagraph} from '../../globals/Texts';
+import {BoldText, DefaultText} from '../../globals/Texts';
 import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
-import {Button, Card} from 'react-native-paper';
-import {Card5Q, Card5QContent, Card5QTitle} from './5QPage';
-import {DefaultTheme} from '@react-navigation/native';
+import {Button} from 'react-native-paper';
+import {tkTheme} from '../../globals/Config';
+import {TitleText} from './5QPage';
+
+const FrontView = styled(View)`
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+`;
+
+const CKText = styled(BoldText)`
+    color: white;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    /*transform: rotate(-90deg);*/
+    /*white-space:nowrap;*/
+    /*transform-origin:0 50%;*/
+    /*transform:rotate(-90deg) translate(-50%, 50%);*/
+    /*position: absolute;*/
+    /*top:0;*/
+    /*bottom:0;*/
+    /*height:40px;*/
+`;
+
+const QuestionsView = styled(View)`
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+`;
+
+const QuestionsText = styled(DefaultText)`
+    padding: 1% 0;
+`;
 
 type Props = {
     onPress: () => void;
@@ -36,70 +72,80 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
     const {t} = useTranslation('');
 
     return (
-        <Card5Q>
-            <Card5QTitle
-                theme={{color: DefaultTheme.colors.primary}}
-                title={i18next.t('5q.front.title')}
-            />
-            <Card5QContent>
-                <DefaultParagraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.front.q1'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                </DefaultParagraph>
-                <DefaultParagraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.front.q2'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                </DefaultParagraph>
-                <Card.Actions>
+        <>
+            <FrontView>
+                <View>
+                    <CKText>{i18next.t('5q.front.header')}</CKText>
+                </View>
+                <QuestionsView>
+                    <TitleText>{i18next.t('5q.front.title')}</TitleText>
+                    <QuestionsText>
+                        <Trans
+                            t={t}
+                            i18nKey={'5q.front.q1'}
+                            components={{
+                                bold: <BoldText />,
+                            }}
+                        />
+                    </QuestionsText>
+                    <QuestionsText>
+                        <Trans
+                            t={t}
+                            i18nKey={'5q.front.q2'}
+                            components={{
+                                bold: <BoldText />,
+                            }}
+                        />
+                    </QuestionsText>
+                    {/*<Pressable*/}
+                    {/*    onPress={() => navigation.navigate('5QBack')}*/}
+                    {/*>*/}
+                    {/*    <Separator>*/}
+                    {/*        {i18next.t('5q.front.separator')}*/}
+                    {/*    </Separator>*/}
+                    {/*</Pressable>*/}
                     <Button
-                        color={DefaultTheme.colors.primary}
+                        color={tkTheme.colors.primary}
                         icon="return-down-forward-outline"
                         onPress={() => onPress()}
                     >
                         {i18next.t('5q.front.separator')}
                     </Button>
-                </Card.Actions>
-                <DefaultParagraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.front.q3.1'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                    {i18next.t('5q.front.q3.2')}
-                </DefaultParagraph>
-                <DefaultParagraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.front.q4.1'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                    {i18next.t('5q.front.q4.2')}
-                </DefaultParagraph>
-                <DefaultParagraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.front.q5'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                </DefaultParagraph>
-            </Card5QContent>
-        </Card5Q>
+
+                    <QuestionsText>
+                        <Trans
+                            t={t}
+                            i18nKey={'5q.front.q3.1'}
+                            components={{
+                                bold: <BoldText />,
+                            }}
+                        />
+                        {'\n'}
+                        {i18next.t('5q.front.q3.2')}
+                    </QuestionsText>
+                    <QuestionsText>
+                        <Trans
+                            t={t}
+                            i18nKey={'5q.front.q4.1'}
+                            components={{
+                                bold: <BoldText />,
+                            }}
+                        />
+                        {'\n'}
+                        {i18next.t('5q.front.q4.2')}
+                    </QuestionsText>
+                    <QuestionsText>
+                        <Trans
+                            t={t}
+                            i18nKey={'5q.front.q5'}
+                            components={{
+                                bold: <BoldText />,
+                            }}
+                        />
+                    </QuestionsText>
+                </QuestionsView>
+            </FrontView>
+        </>
     );
 };
 

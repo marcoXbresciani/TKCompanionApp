@@ -20,78 +20,98 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
+import styled from 'styled-components';
+import {View} from 'react-native';
 import * as React from 'react';
-import {BoldText} from '../../globals/Texts';
+import {BoldText, DefaultText} from '../../globals/Texts';
 import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
-import {Button, Card, Paragraph} from 'react-native-paper';
-import {Card5Q, Card5QContent, Card5QTitle} from './5QPage';
-import {DefaultTheme} from '@react-navigation/native';
+import {tkTheme} from '../../globals/Config';
+import {Button} from 'react-native-paper';
+import {TitleText} from "./5QPage";
+
+const BackView = styled(View)`
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+`;
+
+const QuoteText = styled(DefaultText)`
+    margin: 0 5% 5% 5%;
+    text-align: center;
+`;
+
+const QuestionsView = styled(View)`
+    margin: 0 5%;
+`;
+
+const QuestionsText = styled(DefaultText)`
+    padding: 2% 0;
+`;
 
 type Props = {
     onPress: () => void;
 };
 
-const Back5Q: React.FC<Props> = ({onPress}: Props) => {
+const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
     const {t} = useTranslation('');
 
     return (
-        <Card5Q>
-            <Card5QTitle
-                theme={{color: DefaultTheme.colors.primary}}
-                title={i18next.t('5q.back.title')}
-                subtitle={i18next.t('5q.back.quote')}
-                subtitleNumberOfLines={2}
-            />
-            <Card5QContent>
-                <Paragraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.back.q1'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                </Paragraph>
-                <Paragraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.back.q2'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                </Paragraph>
-                <Paragraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.back.q3'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                </Paragraph>
-                <Paragraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.back.q4'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                </Paragraph>
-            </Card5QContent>
-            <Card.Actions>
+        <>
+            <BackView>
+                <TitleText>{i18next.t('5q.back.title')}</TitleText>
+                <QuoteText>{i18next.t('5q.back.quote')}</QuoteText>
+                <QuestionsView>
+                    <QuestionsText>
+                        <Trans
+                            t={t}
+                            i18nKey={'5q.back.q1'}
+                            components={{
+                                bold: <BoldText />,
+                            }}
+                        />
+                    </QuestionsText>
+                    <QuestionsText>
+                        <Trans
+                            t={t}
+                            i18nKey={'5q.back.q2'}
+                            components={{
+                                bold: <BoldText />,
+                            }}
+                        />
+                    </QuestionsText>
+                    <QuestionsText>
+                        <Trans
+                            t={t}
+                            i18nKey={'5q.back.q3'}
+                            components={{
+                                bold: <BoldText />,
+                            }}
+                        />
+                    </QuestionsText>
+                    <QuestionsText>
+                        <Trans
+                            t={t}
+                            i18nKey={'5q.back.q4'}
+                            components={{
+                                bold: <BoldText />,
+                            }}
+                        />
+                    </QuestionsText>
+                </QuestionsView>
                 <Button
-                    color={DefaultTheme.colors.primary}
+                    color={tkTheme.colors.primary}
                     icon="return-up-back-outline"
                     onPress={() => onPress()}
                 >
                     {i18next.t('5q.back.return')}
                 </Button>
-            </Card.Actions>
-        </Card5Q>
+            </BackView>
+        </>
     );
 };
 
-export default Back5Q;
+export default Back5QScreen;

@@ -39,8 +39,8 @@ We're here to improve!
 If you are a software developer and want to contribute improving this
 app, you're welcome!
 Find the latest current LTS NodeJS
-([16.14.0](https://nodejs.org/download/release/latest-gallium/), as of
-2022-03-03) for your system.
+([16.14.1](https://nodejs.org/download/release/latest-gallium/), as of
+2022-03-17) for your system.
 Grab the source code by cloning
 [the repository](https://github.com/marcoXbresciani/TKCompanionApp).
 Then go to this project main folder (also containing this same file

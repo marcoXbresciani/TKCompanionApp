@@ -31,7 +31,6 @@ Contenuti da migliorare e aggiornare di volta in volta.
 1. [Installazione](#installazione)
 1. [Uso](#uso)
    1. [Legenda](#legenda)
-      1. [Colori](#colori)
       1. [Icone](#icone)
    1. [Schermate](#schermate)
 1. [Note sui font](#note-sui-font)
@@ -61,9 +60,10 @@ Dal sito web Toyota Kata:
 > guidance of your coach.
 
 ## Installazione
-Questa app è creata usando React Native, tramite il framework Expo, per
-fare in modo che l'app per Android e iOS sia generata più facilmente
-dallo stesso codice sorgente.
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-it.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
+
+Questa app è creata usando React Native per fare in modo che l'app per
+Android e iOS sia generata più facilmente dallo stesso codice sorgente.
 
 Purtroppo, pubblicare l'app su Google Play Store o su Apple App Store,
 richiede soldi che non voglio spendere: è
@@ -72,12 +72,9 @@ per un account sviluppatore Google, ed è pari a
 [$99/anno](https://developer.apple.com/support/enrollment/) (!) per il
 Programma per Sviluppatori Apple.
 
-Quindi, per ora, questa app si troverà solo tramite su
+Quindi, per ora, questa app si trova solo su
 [F-Droid](https://f-droid.org/), il _catalogo installabile di FOSS
 (Software libero e open source) per la piattaforma Android_.
-
-![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp)
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-it.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
 
 Per installare questa app, è necessaria l'app client F-Droid (molto
 simile a Google Play Store o Apple App Store) dal
@@ -98,14 +95,6 @@ Non ci sono giochi, nessun quiz, nessuna azione da intraprendere.
 Siediti, segui il menu, impara, esercitati e migliora.
 
 ### Legenda
-
-#### Colori
-* ![royalblue](/docs/svg/royalblue.svg)  questo "royalblue" è il
-  colore/tema principale dell'app, usato per i bottoni, menu, ecc.
-* ![#004479](/docs/svg/004479.svg)  questo `#004479` è il colore
-  principale che rappresente i link e gli elementi disponibili tramite
-  [The Toyota Kata Website](http://www-personal.umich.edu/~mrother/Homepage.html).
-  Colore scelto dal sito stesso, essendo il colore del titolo.
 
 #### Icone
 * <img src="docs/svg/navigate-circle-outline.svg" height="16px" alt="navigate-circle-outline"/>

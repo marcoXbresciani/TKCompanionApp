@@ -32,7 +32,6 @@ Content to be improved and updated from time to time.
 1. [Install](#install)
 1. [Usage](#usage)
    1. [Legend](#legend)
-      1. [Colours](#colours)
       1. [Icons](#icons)
    1. [Screenshots](#screenshots)
 1. [Font Notes](#font-notes)
@@ -64,9 +63,8 @@ From the Toyota Kata website:
 ## Install
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
 
-This app is currently built using React Native, through Expo framework,
-to make building the app for both Android and iOS from the same source
-code easier.
+This app is currently built using React Native to make building the app
+for both Android and iOS from the same source code easier.
 
 Unfortunately, publishing the app on Google Play Store or on Apple App
 Store, requires money I don't want to spend: it's
@@ -98,14 +96,6 @@ There are no games, no quizzes, no actions to take.
 Just sit, follow the menu, learn, practice and improve.
 
 ### Legend
-
-#### Colours
-* ![royalblue](/docs/svg/royalblue.svg) this "royalblue" is the main
-  colour theme of the app, used for its buttons, menu and the like.
-* ![#004479](/docs/svg/004479.svg) this `#004479` is the main colour representing links and items available
-  through
-  [The Toyota Kata Website](http://www-personal.umich.edu/~mrother/Homepage.html).
-  Color picked from the website itself, being the color of the title.
 
 #### Icons
 * <img src="docs/svg/navigate-circle-outline.svg" height="16px" alt="navigate-circle-outline"/>

@@ -20,32 +20,32 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import * as React from 'react';
+import {useState} from 'react';
 import TkcFront from './TkcFront';
 import TkcBack from './TkcBack';
+import PageContainer from '../../globals/PageContainer';
 
-const Stack = createNativeStackNavigator();
+const TkcPage: React.FunctionComponent = () => {
+    const [front, setFront] = useState<boolean>(true);
 
-const TckPage: React.FunctionComponent = () => {
     return (
-        <Stack.Navigator initialRouteName="TkcFront">
-            <Stack.Screen
-                name="TkcFront"
-                component={TkcFront}
-                options={{
-                    headerShown: false,
-                }}
-            />
-            <Stack.Screen
-                name="TkcBack"
-                component={TkcBack}
-                options={{
-                    headerShown: false,
-                }}
-            />
-        </Stack.Navigator>
+        <PageContainer>
+            {front ? (
+                <TkcFront
+                    onPress={() => {
+                        setFront(false);
+                    }}
+                />
+            ) : (
+                <TkcBack
+                    onPress={() => {
+                        setFront(true);
+                    }}
+                />
+            )}
+        </PageContainer>
     );
 };
 
-export default TckPage;
+export default TkcPage;

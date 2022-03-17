@@ -20,17 +20,13 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {SectionList} from 'react-native';
 import * as React from 'react';
-import {CenteredTitle, DefaultText} from '../../globals/Texts';
-import PageContainer from '../../globals/PageContainer';
-import {useNavigation} from '@react-navigation/native';
-import {Nav, SectionItemSeparator} from '../../globals/Pieces';
-import {NavButton} from '../../globals/Buttons';
 import i18next from 'i18next';
 import styled from 'styled-components';
+import {Card, IconButton, Paragraph} from 'react-native-paper';
+import {tkTheme} from '../../globals/Config';
 
-export const FrontRenderer = styled(DefaultText)`
+const ParagraphRenderer = styled(Paragraph)`
     border: 1px solid black;
     border-radius: 27px;
     justify-content: center;
@@ -38,43 +34,42 @@ export const FrontRenderer = styled(DefaultText)`
     padding: 2.5% 5%;
 `;
 
-const TkcFront: React.FunctionComponent = () => {
-    const navigation = useNavigation<Nav>();
+type Props = {
+    onPress: () => void;
+};
 
+const TkcFront: React.FC<Props> = ({onPress}: Props) => {
     return (
-        <PageContainer>
-            <CenteredTitle>
-                {i18next.t('tkc.front.title')}
-            </CenteredTitle>
-            <SectionList
-                ItemSeparatorComponent={SectionItemSeparator}
-                renderItem={({item}) => (
-                    <FrontRenderer>{item.key}</FrontRenderer>
-                )}
-                sections={[
-                    {
-                        data: [
-                            {
-                                key: i18next.t('tkc.front.1'),
-                            },
-                            {
-                                key: i18next.t('tkc.front.2'),
-                            },
-                            {
-                                key: i18next.t('tkc.front.3'),
-                            },
-                            {
-                                key: i18next.t('tkc.front.4'),
-                            },
-                            {
-                                key: i18next.t('tkc.front.5'),
-                            },
-                        ],
-                    },
-                ]}
-            />
-            <NavButton onPress={() => navigation.navigate('TkcBack')} />
-        </PageContainer>
+        <>
+            <Card>
+                <Card.Title title={i18next.t('tkc.front.title')} />
+                <Card.Content>
+                    <ParagraphRenderer>
+                        {i18next.t('tkc.front.1')}
+                    </ParagraphRenderer>
+                    <ParagraphRenderer>
+                        {i18next.t('tkc.front.2')}
+                    </ParagraphRenderer>
+                    <ParagraphRenderer>
+                        {i18next.t('tkc.front.3')}
+                    </ParagraphRenderer>
+                    <ParagraphRenderer>
+                        {i18next.t('tkc.front.4')}
+                    </ParagraphRenderer>
+                    <ParagraphRenderer>
+                        {i18next.t('tkc.front.5')}
+                    </ParagraphRenderer>
+                </Card.Content>
+                <Card.Actions>
+                    <IconButton
+                        color={tkTheme.colors.primary}
+                        rippleColor={tkTheme.colors.accent}
+                        onPress={() => onPress()}
+                        icon="arrow-forward-outline"
+                    />
+                </Card.Actions>
+            </Card>
+        </>
     );
 };
 

@@ -26,13 +26,16 @@ This file is offered as-is, without any warranty.
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
 ### Changed
+### Removed
+### Fixed
+### Security
+
+## [0.3.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.3.0) - 2022-03-18
+### Changed
 * Improved themed (React Native Paper) layout for TKC.
 * Updated NodeJS LTS.
 * Updated React Native.
 * Graphical revamping.
-### Removed
-### Fixed
-### Security
 
 ## [0.2.14](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.14) - 2022-03-15
 ### Added

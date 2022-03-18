@@ -23,17 +23,18 @@ permitted in any medium without royalty provided the copyright notice
 and this notice are preserved.
 This file is offered as-is, without any warranty.
 
-## [Unreleased]
+## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
 ### Changed
 * Improved themed (React Native Paper) layout for TKC.
 * Updated NodeJS LTS.
 * Updated React Native.
+* Graphical revamping.
 ### Removed
 ### Fixed
 ### Security
 
-## [0.2.14]
+## [0.2.14](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.14) - 2022-03-15
 ### Added
 * Introduce themed colours management.
 ### Changed
@@ -42,16 +43,16 @@ This file is offered as-is, without any warranty.
 * New icon for 5Q card menu item.
 * Replace Material Bottom Tabs with default Bottom Tabs.
 
-## [0.2.13] - 2022-03-10
+## [0.2.13](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.13) - 2022-03-10
 ### Fixed
 * Proper I18N management with correct language identification.
 
-## [0.2.12] - 2022-03-07
+## [0.2.12](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.12) - 2022-03-07
 ### Fixed
 * [#5](https://github.com/marcoXbresciani/TKCompanionApp/issues/5)
   Complete I18N introduction with English and Italian translations.
 
-## [0.2.11] - 2022-03-04
+## [0.2.11](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.11) - 2022-03-04
 ### Added
 * screenshots in Italian.
 * [ADR-007](/docs/architecture/decisions/007-use-freefont.md)
@@ -65,7 +66,7 @@ This file is offered as-is, without any warranty.
 ### Fixed
 * REUSE compliance
 
-## [0.2.10] - 2022-03-03
+## [0.2.10](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.10) - 2022-03-03
 ### Added
 * Colour codes to readme.
 * Local tests' subsection.
@@ -78,15 +79,15 @@ This file is offered as-is, without any warranty.
 * Non-important inner style.
 * Pending type check for TypeScript in Navigation element.
 
-## [0.2.9] - 2022-02-28
+## [0.2.9](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.9) - 2022-02-28
 ### Fixed
 Error in PNG file.
 
-## [0.2.8] - 2022-02-28
+## [0.2.8](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.8) - 2022-02-28
 ### Fixed
 Error in PNG file.
 
-## [0.2.7] - 2022-02-25
+## [0.2.7](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.7) - 2022-02-25
 ### Changed
 * App Icon
 * Better copyright screen
@@ -95,26 +96,26 @@ Error in PNG file.
 * Missing default text colour
 * REUSE compliance
 
-## [0.2.6] - 2022-02-23
+## [0.2.6](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.6) - 2022-02-23
 ### Changed
 * .gitignore
 * README content properly updated
 ### Fixed
 * REUSE compliance
 
-## [0.2.5] - 2022-02-23
+## [0.2.5](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.5) - 2022-02-23
 ### Added
 * App Icon
 
-## [0.2.4] - 2022-02-22
+## [0.2.4](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.4) - 2022-02-22
 
-## [0.2.3] - 2022-02-22
+## [0.2.3](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.3) - 2022-02-22
 ### Removed
 * Duplicated Ionicons.tts
 
-## [0.2.2] - 2022-02-22
+## [0.2.2](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.2) - 2022-02-22
 
-## [0.2.1] - 2022-02-22
+## [0.2.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.1) - 2022-02-22
 ### Added
 * FreeSans as default font.
 * [ADR-006](docs/architecture/decisions/006-remove-expo-framework.md)
@@ -122,7 +123,7 @@ Error in PNG file.
 ### Removed
 * OpenSans font.
 
-## [0.2.0] - 2022-02-18
+## [0.2.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.0) - 2022-02-18
 ### Added
 * Full CHANGELOG.md, for historical purposes.
 * Fastlane 20.txt for latest changelog/version.
@@ -130,7 +131,7 @@ Error in PNG file.
 * Get rid of Expo framework since not compatible with F-Droid.
   No money for "developer programs" of Google or Apple.
 
-## [0.1.12] - 2022-01-25
+## [0.1.12](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.12) - 2022-01-25
 ### Added
 * New Open Sans font.
 * Font sizes as per https://grtcalculator.com/.
@@ -139,50 +140,50 @@ Error in PNG file.
 ### Fixed
 * Remove Improper Expo permissions from AndroidManifest.xml
 
-## [0.1.11] - 2022-01-19
+## [0.1.11](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.11) - 2022-01-19
 ### Added
 * Add icons to navigation buttons.
 
-## [0.1.10] - 2022-01-12
+## [0.1.10](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.10) - 2022-01-12
 ### Added
 * Fastlane structure
 
-## [0.1.9] - 2022-01-11
+## [0.1.9](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.9) - 2022-01-11
 ### Changed
 * Update pics, version management
 ### Fixed
 * Compiles for F-Droid.
 
-## [0.1.7] - 2022-01-11
+## [0.1.7](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.7) - 2022-01-11
 ### Changed
 * Update build.
 
-## [0.1.8] - 2022-01-10
+## [0.1.8](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.8) - 2022-01-10
 ### Added
 * Missing version code.
 
-## [0.1.5] - 2022-01-10
+## [0.1.5](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.5) - 2022-01-10
 ### Added
 * Missing version code.
 
-## [0.1.4] - 2022-01-10
+## [0.1.4](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.4) - 2022-01-10
 ### Added
 * Missing version code.
 
-## [0.1.3] - 2022-01-05
+## [0.1.3](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.3) - 2022-01-05
 ### Changed
 * Updated README.md.
 * Do some refactoring.
 
-## [0.1.2] - 2021-12-29
+## [0.1.2](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.2) - 2021-12-29
 ### Changed
 * Swap bad and good abouts
 
-## [0.1.1] - 2021-12-29
+## [0.1.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.1) - 2021-12-29
 ### Changed
 * Update README and "infrastructure".
 
-## [0.1.0] - 2021-10-21
+## [0.1.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.0) - 2021-10-21
 ### Added
 * Introduced [ADR-000](docs/architecture/decisions/000-use-adr-conventions.md) for using ADR format for ADRs...
   See http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions
@@ -208,31 +209,3 @@ Error in PNG file.
 * Added main menu with Home, 5Q and About pages/screens.
 * Home page
 * 5Q card with front and back.
-
-[Unreleased]: https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD
-[0.2.13]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.13
-[0.2.12]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.12
-[0.2.11]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.11
-[0.2.10]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.10
-[0.2.9]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.9
-[0.2.8]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.8
-[0.2.7]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.7
-[0.2.6]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.6
-[0.2.5]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.5
-[0.2.4]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.4
-[0.2.3]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.3
-[0.2.2]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.2
-[0.2.1]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.1
-[0.2.0]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.2.0
-[0.1.12]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.12
-[0.1.11]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.11
-[0.1.10]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.10
-[0.1.9]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.9
-[0.1.7]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.7
-[0.1.8]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.8
-[0.1.5]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.5
-[0.1.4]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.4
-[0.1.3]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.3
-[0.1.2]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.0
-[0.1.1]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.1
-[0.1.0]: https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.1.0

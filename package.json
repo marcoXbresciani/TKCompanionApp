@@ -71,5 +71,5 @@
         "start": "react-native start",
         "test": "jest"
     },
-    "version": "0.2.15"
+    "version": "0.3.0"
 }

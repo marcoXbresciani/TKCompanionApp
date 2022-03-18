@@ -27,19 +27,24 @@ import i18next from 'i18next';
 import {DefaultParagraph} from '../globals/Texts';
 import {Card, IconButton} from 'react-native-paper';
 import {DefaultTheme} from '@react-navigation/native';
+import {
+    DefaultCard,
+    DefaultCardContent,
+    DefaultCardTitle,
+} from '../globals/Pieces';
 
 const KTSPage: React.FunctionComponent = () => (
     <PageContainer>
-        <Card>
-            <Card.Title
+        <DefaultCard>
+            <DefaultCardTitle
                 title={i18next.t('kts.title')}
                 subtitle={i18next.t('kts.tip')}
             />
-            <Card.Content>
+            <DefaultCardContent>
                 <DefaultParagraph>
                     {i18next.t('kts.text')}
                 </DefaultParagraph>
-            </Card.Content>
+            </DefaultCardContent>
             <Card.Actions>
                 <IconButton
                     color={DefaultTheme.colors.primary}
@@ -51,7 +56,7 @@ const KTSPage: React.FunctionComponent = () => (
                     }}
                 />
             </Card.Actions>
-        </Card>
+        </DefaultCard>
     </PageContainer>
 );
 

@@ -21,7 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {APP_NAME, APP_VERSION} from './about/Version';
+import {APP_NAME, APP_VERSION} from '../globals/Version';
 import PageContainer from '../globals/PageContainer';
 import {Card} from 'react-native-paper';
 import i18next from 'i18next';

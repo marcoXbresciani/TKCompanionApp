@@ -23,23 +23,23 @@
         }
     },
     "about": {
-        "front": {
-            "might": {
-                "key1": "help you improving",
-                "key2": "help you learning Kata",
-                "key3": "be fun",
-                "key4": "teach you scientific thinking",
-                "title": "This application MIGHT"
-            },
-            "not": {
-                "key1": "collect your data",
-                "key2": "contain tracking libraries",
-                "key3": "phone home",
-                "key4": "use Google Play Store APIs",
-                "key5": "save things on your device",
-                "key6": "spy on you",
-                "title": "This application does NOT"
-            }
+        "copyright": "copyright",
+        "legend": "legend",
+        "might": {
+            "key1": "help you improving",
+            "key2": "help you learning Kata",
+            "key3": "be fun",
+            "key4": "teach you scientific thinking",
+            "title": "This application MIGHT"
+        },
+        "not": {
+            "key1": "collect your data",
+            "key2": "contain tracking libraries",
+            "key3": "phone home",
+            "key4": "use Google Play Store APIs",
+            "key5": "save things on your device",
+            "key6": "spy on you",
+            "title": "This application <bold>does NOT</bold>"
         }
     },
     "app": {
@@ -48,7 +48,7 @@
         "wip": "Work in progress..."
     },
     "copyright": {
-        "license": "See license page"
+        "license": "License page"
     },
     "kts": {
         "text": "Applying the pattern of the Improvement Kata (from the book 'Toyota Kata') to a persistently aggravating problem that involves obstacles and has no obvious solution. Statement used when someone has been repeatedly frustrated, wants black-and-white answers or expects someone else to solve the problem.",
@@ -56,23 +56,12 @@
         "title": "Kata that Shit"
     },
     "nav": {
-        "5qcard": {
-            "icon": "5Q Card",
-            "title": "Coaching Kata"
-        },
-        "about": {
-            "icon": "About",
-            "title": "About"
-        },
-        "home": {
-            "icon": "Home",
-            "title": "Welcome!"
-        },
+        "5qcard": "5Q Card",
+        "about": "About",
+        "home": "Home",
         "kts": "KTS",
-        "menu": {
-            "icon": "menu",
-            "title": " "
-        },
+        "menu": "Menu",
+        "settings": "language",
         "tkc": "TKC"
     },
     "tkc": {

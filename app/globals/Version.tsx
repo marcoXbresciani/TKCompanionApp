@@ -21,17 +21,23 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import Version from './Version';
-import Copyright from './Copyright';
-import PageContainer from '../../globals/PageContainer';
+import i18next from 'i18next';
+import DeviceInfo from 'react-native-device-info';
+import {Caption} from 'react-native-paper';
+import {CenteredSubheading, CenteredTitle} from './Texts';
 
-const AboutBack: React.FunctionComponent = () => {
+export const APP_NAME =
+    DeviceInfo.getApplicationName() || 'TKCompanionApp';
+export const APP_VERSION = DeviceInfo.getVersion() || '';
+
+const Version: React.FunctionComponent = () => {
+    const short = i18next.t('app.short');
     return (
-        <PageContainer>
-            <Version />
-            <Copyright />
-        </PageContainer>
+        <>
+            <CenteredTitle>{APP_NAME}</CenteredTitle>
+            <CenteredSubheading>{APP_VERSION}</CenteredSubheading>
+            <Caption>{short}</Caption>
+        </>
     );
 };
-
-export default AboutBack;
+export default Version;

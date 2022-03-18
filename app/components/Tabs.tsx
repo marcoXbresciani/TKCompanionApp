@@ -70,13 +70,24 @@ export const TabIconKTS = ({color}: {color: string}) => (
 );
 
 export const TabIconTKC = ({color}: {color: string}) => (
-    <FontedIcon name="book-outline" color={color} size={16} />
+    // <FontedIcon name="book-outline" color={color} size={16} />
+    <IconButton icon="book-outline" />
 );
 
 export const TabIconAbout = ({color}: {color: string}) => (
-    <FontedIcon
-        name="information-circle-outline"
-        color={color}
-        size={16}
-    />
+    <IconButton icon="information-circle-outline" />
+    // <FontedIcon
+    //     name="information-circle-outline"
+    //     color={color}
+    //     size={16}
+    // />
+);
+
+export const TabIconSettings = ({color}: {color: string}) => (
+    <IconButton icon="language-outline" />
+    // <FontedIcon
+    //     name="information-circle-outline"
+    //     color={color}
+    //     size={16}
+    // />
 );

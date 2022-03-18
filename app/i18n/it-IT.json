@@ -23,23 +23,23 @@
         }
     },
     "about": {
-        "front": {
-            "might": {
-                "key1": "aiutarti a migliorare",
-                "key2": "aiutarti a imparare il Kata",
-                "key3": "essere divertente",
-                "key4": "insegnarti il pensiero scientifico",
-                "title": "Questa applicazione POTREBBE"
-            },
-            "not": {
-                "key1": "raccoglie i tuoi dati",
-                "key2": "contiene librerie traccianti",
-                "key3": "contatta nessuno",
-                "key4": "usa le API del Google Play Store",
-                "key5": "salva informazioni sul tuo dispositivo",
-                "key6": "spia",
-                "title": "Questa applicatione NON"
-            }
+        "copyright": "copyright",
+        "legend": "legenda",
+        "might": {
+            "key1": "aiutarti a migliorare",
+            "key2": "aiutarti a imparare il Kata",
+            "key3": "essere divertente",
+            "key4": "insegnarti il pensiero scientifico",
+            "title": "Quest'applicazione POTREBBE"
+        },
+        "not": {
+            "key1": "raccoglie i tuoi dati",
+            "key2": "contiene librerie traccianti",
+            "key3": "contatta nessuno",
+            "key4": "usa le API del Google Play Store",
+            "key5": "salva informazioni sul tuo dispositivo",
+            "key6": "ti spia",
+            "title": "Quest'applicazione <bold>NON</bold>"
         }
     },
     "app": {
@@ -56,24 +56,13 @@
         "title": "Kàta 'sta roba"
     },
     "nav": {
-        "5qcard": {
-            "icon": "5 Domande",
-            "title": "Kata del coaching"
-        },
-        "about": {
-            "icon": "Info",
-            "title": "Informazioni"
-        },
-        "home": {
-            "icon": "Inizio",
-            "title": "Benvenuti!"
-        },
-        "kts": "KTS",
-        "menu": {
-            "icon": "menu",
-            "title": " "
-        },
-        "tkc": "TKC"
+        "5qcard": "5 Domande",
+        "about": "Info",
+        "home": "Inizio",
+        "kts": "KSR",
+        "menu": "Menù",
+        "settings": "Lingua",
+        "tkc": "CK"
     },
     "tkc": {
         "back": {
@@ -88,7 +77,7 @@
         "front": {
             "1": "Le condizioni non sono predicibili.",
             "2": "Goditi la zona di apprendimento.",
-            "3": "Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
+            "3": "Capire la direzione, afferrare la condizione attuale, stabilire la prossima condizione obiettivo, sperimentare verso la prossima condizione obiettivo.",
             "4": "I principianti seguono lo Starter Kata alla lettera.",
             "5": "Abbi un coach, sii a coach.",
             "title": "Il codice Kata"

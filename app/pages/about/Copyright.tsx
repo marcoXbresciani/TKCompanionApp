@@ -24,7 +24,7 @@ import * as React from 'react';
 import {DefaultText, SmallerText} from '../../globals/Texts';
 import styled from 'styled-components';
 import {Linking, ScrollView, View} from 'react-native';
-import {BrowseButton} from '../../globals/Buttons';
+import {Button} from 'react-native-paper';
 import i18next from 'i18next';
 
 const Notice = styled(View)`
@@ -60,19 +60,40 @@ const Copyright: React.FunctionComponent = () => {
                 </SmallerText>
             </Notice>
             <Notice>
-                <DefaultText>FreeSans, GNU FreeFont</DefaultText>
+                <DefaultText>© 2007 Marco Bresciani</DefaultText>
+                <SmallerText>
+                    Tainai and Murakami areas with Arakawa river by
+                    Marco Bresciani is Licensed under a Creative Commons
+                    Attribution-ShareAlike 4.0 International License.
+                </SmallerText>
+                <Button
+                    icon="document-text-outline"
+                    mode="outlined"
+                    onPress={() => {
+                        Linking.openURL(
+                            'http://creativecommons.org/licenses/by-sa/4.0/',
+                        );
+                    }}
+                >
+                    {i18next.t('copyright.license')}
+                </Button>
+            </Notice>
+            <Notice>
+                <SmallerText>FreeSans, GNU FreeFont</SmallerText>
                 <DefaultText>
                     © 2012 Primož Peterlin, Steve White
                 </DefaultText>
-                <BrowseButton
+                <Button
+                    icon="document-text-outline"
+                    mode="outlined"
                     onPress={() => {
                         Linking.openURL(
                             'https://www.gnu.org/software/freefont/license.html',
                         );
                     }}
-                    text={i18next.t('copyright.license')}
-                    theme={{bg: '#880088'}}
-                />
+                >
+                    {i18next.t('copyright.license')}
+                </Button>
             </Notice>
         </ScrollView>
     );

@@ -23,30 +23,33 @@
 import {Linking, SectionList} from 'react-native';
 import * as React from 'react';
 import i18next from 'i18next';
-import {Card, IconButton, Paragraph} from 'react-native-paper';
+import {Card, IconButton} from 'react-native-paper';
 import {tkTheme} from '../../globals/Config';
-import styled from 'styled-components';
+import {
+    DefaultCard,
+    DefaultCardContent,
+    DefaultCardTitle,
+} from '../../globals/Pieces';
+import {DefaultParagraph} from '../../globals/Texts';
 
 type Props = {
     onPress: () => void;
 };
 
-const PaddedCard = styled(Card)`
-    padding: 2%;
-`;
-
 const TkcBack: React.FC<Props> = ({onPress}: Props) => {
     return (
-        <PaddedCard>
+        <DefaultCard>
             <SectionList
                 renderSectionHeader={() => (
-                    <Card.Title
+                    <DefaultCardTitle
                         title={i18next.t('tkc.back.title')}
                         titleNumberOfLines={2}
                     />
                 )}
                 renderItem={({item}) => (
-                    <Paragraph>{item.key}</Paragraph>
+                    <DefaultCardContent>
+                        <DefaultParagraph>{item.key}</DefaultParagraph>
+                    </DefaultCardContent>
                 )}
                 renderSectionFooter={() => (
                     <Card.Actions>
@@ -91,7 +94,7 @@ const TkcBack: React.FC<Props> = ({onPress}: Props) => {
                     },
                 ]}
             />
-        </PaddedCard>
+        </DefaultCard>
     );
 };
 

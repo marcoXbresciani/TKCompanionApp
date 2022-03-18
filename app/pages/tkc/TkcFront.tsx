@@ -23,10 +23,16 @@
 import * as React from 'react';
 import i18next from 'i18next';
 import styled from 'styled-components';
-import {Card, IconButton, Paragraph} from 'react-native-paper';
+import {IconButton} from 'react-native-paper';
 import {tkTheme} from '../../globals/Config';
+import {
+    DefaultCard,
+    DefaultCardContent,
+    DefaultCardTitle,
+} from '../../globals/Pieces';
+import {DefaultParagraph} from '../../globals/Texts';
 
-const ParagraphRenderer = styled(Paragraph)`
+const ParagraphRenderer = styled(DefaultParagraph)`
     border: 1px solid black;
     border-radius: 27px;
     justify-content: center;
@@ -41,9 +47,11 @@ type Props = {
 const TkcFront: React.FC<Props> = ({onPress}: Props) => {
     return (
         <>
-            <Card>
-                <Card.Title title={i18next.t('tkc.front.title')} />
-                <Card.Content>
+            <DefaultCard>
+                <DefaultCardTitle
+                    title={i18next.t('tkc.front.title')}
+                />
+                <DefaultCardContent>
                     <ParagraphRenderer>
                         {i18next.t('tkc.front.1')}
                     </ParagraphRenderer>
@@ -59,16 +67,16 @@ const TkcFront: React.FC<Props> = ({onPress}: Props) => {
                     <ParagraphRenderer>
                         {i18next.t('tkc.front.5')}
                     </ParagraphRenderer>
-                </Card.Content>
-                <Card.Actions>
+                </DefaultCardContent>
+                <DefaultCard.Actions>
                     <IconButton
                         color={tkTheme.colors.primary}
                         rippleColor={tkTheme.colors.accent}
                         onPress={() => onPress()}
                         icon="arrow-forward-outline"
                     />
-                </Card.Actions>
-            </Card>
+                </DefaultCard.Actions>
+            </DefaultCard>
         </>
     );
 };

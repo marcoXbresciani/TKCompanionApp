@@ -21,20 +21,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components';
-import {View} from 'react-native';
 import {Card} from 'react-native-paper';
-
-export const SectionItemSeparator = styled(View)`
-    margin: 2px;
-`;
-
-export const ButtonStripe = styled(View)`
-    flex-direction: row;
-`;
-
-export type Nav = {
-    navigate: (value: string) => void;
-};
+import {tkTheme} from './Config';
 
 export const DefaultCard = styled(Card)`
     border: 1px solid black;
@@ -50,7 +38,7 @@ export const DefaultCardTitle = styled(Card.Title)`
 
 DefaultCardTitle.defaultProps = {
     theme: {
-        color: undefined,
+        color: tkTheme.colors.primary,
     },
 };
 

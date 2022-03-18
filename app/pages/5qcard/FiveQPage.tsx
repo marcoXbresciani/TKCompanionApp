@@ -26,7 +26,7 @@ import Front5Q from './5QFront';
 import Back5Q from './5QBack';
 import PageContainer from '../../globals/PageContainer';
 
-const FiveQCard: React.FunctionComponent = () => {
+const FiveQpage: React.FunctionComponent = () => {
     const [front, setFront] = useState<boolean>(true);
 
     return (
@@ -48,4 +48,4 @@ const FiveQCard: React.FunctionComponent = () => {
     );
 };
 
-export default FiveQCard;
+export default FiveQpage;

@@ -28,9 +28,10 @@ import {Trans, useTranslation} from 'react-i18next';
 
 import Separator from './Separator';
 import {Bold5Q, Text5Q, Title5Q} from './5QTexts';
+import {tkTheme} from '../../globals/Config';
 
 const FrontView = styled(View)`
-    background-color: royalblue;
+    background-color: ${tkTheme.colors.primary};
     display: flex;
     flex-direction: column;
     margin: 0;

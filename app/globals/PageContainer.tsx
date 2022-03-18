@@ -27,15 +27,9 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import styled from 'styled-components';
 
 const NicerAreaView = styled(SafeAreaView)`
-    margin: ${(props) => props.theme.marginTop} 2.5% 0;
+    margin: ${StatusBar.currentHeight + 'px'} 2.5% 0;
     flex: 1;
 `;
-
-NicerAreaView.defaultProps = {
-    theme: {
-        marginTop: StatusBar.currentHeight + 'px',
-    },
-};
 
 const PageContainer: React.FunctionComponent = ({children}) => (
     <NicerAreaView>

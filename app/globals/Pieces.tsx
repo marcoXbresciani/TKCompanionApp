@@ -31,16 +31,10 @@ export const DefaultCard = styled(Card)`
 `;
 
 export const DefaultCardTitle = styled(Card.Title)`
-    border-bottom-color: ${(props) => props.theme.color};
+    border-bottom-color: ${tkTheme.colors.primary};
     border-bottom-style: solid;
     border-bottom-width: 3px;
 `;
-
-DefaultCardTitle.defaultProps = {
-    theme: {
-        color: tkTheme.colors.primary,
-    },
-};
 
 export const DefaultCardContent = styled(Card.Content)`
     padding: 5%;

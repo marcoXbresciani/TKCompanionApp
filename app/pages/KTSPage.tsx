@@ -26,12 +26,12 @@ import PageContainer from '../globals/PageContainer';
 import i18next from 'i18next';
 import {DefaultParagraph} from '../globals/Texts';
 import {Card, IconButton} from 'react-native-paper';
-import {DefaultTheme} from '@react-navigation/native';
 import {
     DefaultCard,
     DefaultCardContent,
     DefaultCardTitle,
 } from '../globals/Pieces';
+import {tkTheme} from '../globals/Config';
 
 const KTSPage: React.FunctionComponent = () => (
     <PageContainer>
@@ -47,7 +47,7 @@ const KTSPage: React.FunctionComponent = () => (
             </DefaultCardContent>
             <Card.Actions>
                 <IconButton
-                    color={DefaultTheme.colors.primary}
+                    color={tkTheme.colors.primary}
                     icon="download-outline"
                     onPress={() => {
                         Linking.openURL(

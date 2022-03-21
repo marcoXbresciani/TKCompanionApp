@@ -26,6 +26,7 @@ This file is offered as-is, without any warranty.
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
 ### Changed
+* Default card layout also for 5Q card.
 ### Removed
 ### Fixed
 ### Security

@@ -37,7 +37,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import KTSPage from './app/pages/KTSPage';
 import TkcPage from './app/pages/tkc/TkcPage';
 import FourStepsPage from './app/pages/FourStepsPage';
-import {Appearance} from 'react-native';
+import {isDark} from './app/utils/Functions';
 
 const locale = (
     Platform.OS === 'ios'
@@ -80,7 +80,7 @@ const AppNavigator: React.FunctionComponent = () => {
         {
             key: 'steps4',
             title: i18next.t('nav.4steps'),
-            icon: 'footsteps-outline',
+            icon: 'analytics-outline',
         },
         {
             key: 'kts',
@@ -114,10 +114,6 @@ const AppNavigator: React.FunctionComponent = () => {
         />
     );
 };
-
-function isDark(): boolean {
-    return Appearance.getColorScheme() === 'dark';
-}
 
 const App: React.FunctionComponent = () => {
     return (

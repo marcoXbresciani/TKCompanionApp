@@ -1,4 +1,11 @@
 {
+    "4s": {
+        "s1": "① Get the Direction or Challenge",
+        "s2": "② Grasp the Current Condition",
+        "s3": "③ Establish your Next Target Condition",
+        "s4": "④ Conduct Experiments to get there",
+        "title": "The Four Steps of the Improvement Kata"
+    },
     "5q": {
         "back": {
             "q1": "1) What did you plan as your <bold>Last Step</bold>?",
@@ -56,6 +63,7 @@
         "title": "Kata that Shit"
     },
     "nav": {
+        "4steps": "4 Steps",
         "5qcard": "5Q Card",
         "about": "About",
         "home": "Home",
@@ -75,11 +83,11 @@
             "title": "Changing thinking through practice"
         },
         "front": {
-            "1": "Conditions are unpredictable.",
-            "2": "Enjoy the learning zone.",
-            "3": "Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
-            "4": "Beginners practice Starter Kata exactly.",
-            "5": "Have a coach, be a coach.",
+            "1": "◉ Conditions are unpredictable.",
+            "2": "◉ Enjoy the learning zone.",
+            "3": "◉ Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
+            "4": "◉ Beginners practice Starter Kata exactly.",
+            "5": "◉ Have a coach, be a coach.",
             "title": "The Kata Code"
         }
     }

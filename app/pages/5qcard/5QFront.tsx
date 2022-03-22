@@ -24,7 +24,6 @@ import {Linking} from 'react-native';
 import * as React from 'react';
 import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
-import {tkTheme} from '../../globals/Config';
 import {BoldText, DefaultParagraph} from '../../globals/Texts';
 import {Button, Card, IconButton} from 'react-native-paper';
 import {
@@ -43,7 +42,6 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
     return (
         <DefaultCard>
             <DefaultCardTitle
-                theme={{color: tkTheme.colors.primary}}
                 title={i18next.t('5q.front.header')}
                 subtitle={i18next.t('5q.front.title')}
                 subtitleNumberOfLines={2}
@@ -69,7 +67,6 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                 </DefaultParagraph>
                 <Card.Actions>
                     <Button
-                        color={tkTheme.colors.primary}
                         mode="outlined"
                         icon="return-down-forward-outline"
                         onPress={() => onPress()}
@@ -109,7 +106,6 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
             </DefaultCardContent>
             <Card.Actions>
                 <IconButton
-                    color={tkTheme.colors.primary}
                     icon="download-outline"
                     onPress={() => {
                         Linking.openURL(

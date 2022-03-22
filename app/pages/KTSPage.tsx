@@ -31,7 +31,6 @@ import {
     DefaultCardContent,
     DefaultCardTitle,
 } from '../globals/Pieces';
-import {tkTheme} from '../globals/Config';
 
 const KTSPage: React.FunctionComponent = () => (
     <PageContainer>
@@ -47,7 +46,6 @@ const KTSPage: React.FunctionComponent = () => (
             </DefaultCardContent>
             <Card.Actions>
                 <IconButton
-                    color={tkTheme.colors.primary}
                     icon="download-outline"
                     onPress={() => {
                         Linking.openURL(

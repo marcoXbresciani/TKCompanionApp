@@ -22,23 +22,13 @@
  */
 import * as React from 'react';
 import i18next from 'i18next';
-import styled from 'styled-components';
 import {IconButton} from 'react-native-paper';
-import {tkTheme} from '../../globals/Config';
 import {
     DefaultCard,
     DefaultCardContent,
     DefaultCardTitle,
 } from '../../globals/Pieces';
 import {DefaultParagraph} from '../../globals/Texts';
-
-const ParagraphRenderer = styled(DefaultParagraph)`
-    border: 1px solid black;
-    border-radius: 27px;
-    justify-content: center;
-    margin: 2.5% 0;
-    padding: 2.5% 5%;
-`;
 
 type Props = {
     onPress: () => void;
@@ -52,26 +42,24 @@ const TkcFront: React.FC<Props> = ({onPress}: Props) => {
                     title={i18next.t('tkc.front.title')}
                 />
                 <DefaultCardContent>
-                    <ParagraphRenderer>
+                    <DefaultParagraph>
                         {i18next.t('tkc.front.1')}
-                    </ParagraphRenderer>
-                    <ParagraphRenderer>
+                    </DefaultParagraph>
+                    <DefaultParagraph>
                         {i18next.t('tkc.front.2')}
-                    </ParagraphRenderer>
-                    <ParagraphRenderer>
+                    </DefaultParagraph>
+                    <DefaultParagraph>
                         {i18next.t('tkc.front.3')}
-                    </ParagraphRenderer>
-                    <ParagraphRenderer>
+                    </DefaultParagraph>
+                    <DefaultParagraph>
                         {i18next.t('tkc.front.4')}
-                    </ParagraphRenderer>
-                    <ParagraphRenderer>
+                    </DefaultParagraph>
+                    <DefaultParagraph>
                         {i18next.t('tkc.front.5')}
-                    </ParagraphRenderer>
+                    </DefaultParagraph>
                 </DefaultCardContent>
                 <DefaultCard.Actions>
                     <IconButton
-                        color={tkTheme.colors.primary}
-                        rippleColor={tkTheme.colors.accent}
                         onPress={() => onPress()}
                         icon="arrow-forward-outline"
                     />

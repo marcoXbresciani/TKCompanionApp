@@ -24,7 +24,6 @@ import {Linking, SectionList} from 'react-native';
 import * as React from 'react';
 import i18next from 'i18next';
 import {Card, IconButton} from 'react-native-paper';
-import {tkTheme} from '../../globals/Config';
 import {
     DefaultCard,
     DefaultCardContent,
@@ -54,12 +53,10 @@ const TkcBack: React.FC<Props> = ({onPress}: Props) => {
                 renderSectionFooter={() => (
                     <Card.Actions>
                         <IconButton
-                            color={tkTheme.colors.primary}
                             icon="arrow-back-outline"
                             onPress={() => onPress()}
                         />
                         <IconButton
-                            color={tkTheme.colors.primary}
                             icon="download-outline"
                             onPress={() => {
                                 Linking.openURL(

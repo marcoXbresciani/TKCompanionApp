@@ -26,16 +26,18 @@ import {tEn, tItIT} from './app/i18n';
 import {NativeModules, Platform} from 'react-native';
 import {
     BottomNavigation,
-    Provider as PaperProvider
+    Provider as PaperProvider,
 } from 'react-native-paper';
 import HomePage from './app/pages/HomePage';
 import AboutPage from './app/pages/about/AboutPage';
-import FiveQpage from './app/pages/5qcard/FiveQPage';
+import FiveQPage from './app/pages/5qcard/FiveQPage';
 import {initReactI18next} from 'react-i18next';
-import {tkTheme} from './app/globals/Config';
+import {TkDarkTheme, TkLightTheme} from './app/globals/Config';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import KTSPage from './app/pages/KTSPage';
 import TkcPage from './app/pages/tkc/TkcPage';
+import FourStepsPage from './app/pages/FourStepsPage';
+import {Appearance} from 'react-native';
 
 const locale = (
     Platform.OS === 'ios'
@@ -89,74 +91,11 @@ const AppNavigator: React.FunctionComponent = () => {
             renderScene={renderScene}
         />
     );
-
-
-    // return (
-    //     <NavigationContainer theme={tkTheme}>
-    //         <Tab.Navigator
-    //             backBehavior="history"
-    //             initialRouteName="Home"
-    //         >
-    //             <Tab.Screen
-    //                 name={i18next.t('nav.home.icon')}
-    //                 options={{
-    //                     tabBarIcon: TabIconHome,
-    //                     headerTitle: i18next.t('nav.home.title'),
-    //                 }}
-    //                 component={HomePage}
-    //             />
-    //             <Tab.Screen
-    //                 name={i18next.t('nav.5qcard.icon')}
-    //                 options={{
-    //                     tabBarIcon: TabIcon5Q,
-    //                     headerTitle: i18next.t('nav.5qcard.title'),
-    //                 }}
-    //                 component={FiveQCard}
-    //             />
-    //             {/*<Tab.Screen*/}
-    //             {/*    name={i18next.t('nav.menu.icon')}*/}
-    //             {/*    options={{*/}
-    //             {/*        tabBarIcon: TabIconMenu,*/}
-    //             {/*        headerTitle: i18next.t('nav.menu.title'),*/}
-    //             {/*    }}*/}
-    //             {/*    component={FiveQCard}*/}
-    //             {/*/>*/}
-    //             <Tab.Screen
-    //                 name={i18next.t('nav.kts')}
-    //                 options={{
-    //                     tabBarIcon: TabIconKTS,
-    //                     headerTitle: i18next.t('nav.kts.title'),
-    //                 }}
-    //                 component={KTSPage}
-    //             />
-    //             <Tab.Screen
-    //                 name={i18next.t('nav.tkc')}
-    //                 options={{
-    //                     tabBarIcon: TabIconTKC,
-    //                     headerTitle: i18next.t('nav.tkc.title'),
-    //                 }}
-    //                 component={TkcPage}
-    //             />
-    //             <Tab.Screen
-    //                 name={i18next.t('nav.settings.icon')}
-    //                 component={AboutPage}
-    //                 options={{
-    //                     tabBarIcon: TabIconSettings,
-    //                     headerTitle: i18next.t('nav.settings.title'),
-    //                 }}
-    //             />
-    //             <Tab.Screen
-    //                 name={i18next.t('nav.about.icon')}
-    //                 component={AboutPage}
-    //                 options={{
-    //                     tabBarIcon: TabIconAbout,
-    //                     headerTitle: i18next.t('nav.about.title'),
-    //                 }}
-    //             />
-    //         </Tab.Navigator>
-    //     </NavigationContainer>
-    // );
 };
+
+function isDark(): boolean {
+    return Appearance.getColorScheme() === 'dark';
+}
 
 const App: React.FunctionComponent = () => {
     return (
@@ -164,7 +103,7 @@ const App: React.FunctionComponent = () => {
             settings={{
                 icon: (props) => <Ionicons {...props} />,
             }}
-            theme={tkTheme}
+            theme={isDark() ? TkDarkTheme : TkLightTheme}
         >
             <AppNavigator />
         </PaperProvider>

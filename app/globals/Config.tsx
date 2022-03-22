@@ -20,17 +20,20 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {DefaultTheme as NavigationDefaultTheme} from '@react-navigation/native';
+import {
+    DarkTheme as NavigationDarkTheme,
+    DefaultTheme as NavigationDefaultTheme,
+} from '@react-navigation/native';
 import {
     configureFonts,
+    DarkTheme as PaperDarkTheme,
     DefaultTheme as PaperDefaultTheme,
 } from 'react-native-paper';
 import merge from 'deepmerge';
 
-const CombinedDefaultTheme = merge(
-    PaperDefaultTheme,
-    NavigationDefaultTheme,
-);
+const CombinedLight = merge(PaperDefaultTheme, NavigationDefaultTheme);
+
+const CombinedDarkTheme = merge(PaperDarkTheme, NavigationDarkTheme);
 
 const fontConfig = {
     web: {
@@ -89,8 +92,16 @@ const fontConfig = {
     },
 };
 
-export const tkTheme = {
-    ...CombinedDefaultTheme,
+export const TkLightTheme = {
+    ...CombinedLight,
+    fonts: configureFonts(fontConfig),
+    animation: {
+        scale: 1.0,
+    },
+};
+
+export const TkDarkTheme = {
+    ...CombinedDarkTheme,
     fonts: configureFonts(fontConfig),
     animation: {
         scale: 1.0,

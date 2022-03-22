@@ -56,11 +56,12 @@
         "title": "Kàta 'sta roba"
     },
     "nav": {
+        "4steps": "4 Passi",
         "5qcard": "5 Domande",
         "about": "Info",
         "home": "Inizio",
         "kts": "KSR",
-        "menu": "Menù",
+        "menu": "Menu",
         "settings": "Lingua",
         "tkc": "CK"
     },
@@ -75,11 +76,11 @@
             "title": "Cambiare il modo di pensare attraverso la pratica"
         },
         "front": {
-            "1": "Le condizioni non sono predicibili.",
-            "2": "Goditi la zona di apprendimento.",
-            "3": "Capire la direzione, afferrare la condizione attuale, stabilire la prossima condizione obiettivo, sperimentare verso la prossima condizione obiettivo.",
-            "4": "I principianti seguono lo Starter Kata alla lettera.",
-            "5": "Abbi un coach, sii a coach.",
+            "1": "◉ Le condizioni non sono predicibili.",
+            "2": "◉ Goditi la zona di apprendimento.",
+            "3": "◉ Capire la direzione, afferrare la condizione attuale, stabilire la prossima condizione obiettivo, sperimentare verso la prossima condizione obiettivo.",
+            "4": "◉ I principianti seguono lo Starter Kata alla lettera.",
+            "5": "◉ Abbi un coach, sii a coach.",
             "title": "Il codice Kata"
         }
     }

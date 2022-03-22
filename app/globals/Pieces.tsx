@@ -22,16 +22,19 @@
  */
 import styled from 'styled-components';
 import {Card} from 'react-native-paper';
-import {tkTheme} from './Config';
+import {TkDarkTheme, TkLightTheme} from './Config';
+import {isDark} from '../utils/Functions';
 
 export const DefaultCard = styled(Card)`
-    border: 1px solid black;
+    border: 1px solid
+        ${isDark() ? TkDarkTheme.colors.text : TkLightTheme.colors.text};
     border-radius: 15px;
-    background-color: white;
 `;
 
 export const DefaultCardTitle = styled(Card.Title)`
-    border-bottom-color: ${tkTheme.colors.primary};
+    border-bottom-color: ${isDark()
+        ? TkDarkTheme.colors.primary
+        : TkLightTheme.colors.primary};
     border-bottom-style: solid;
     border-bottom-width: 3px;
 `;

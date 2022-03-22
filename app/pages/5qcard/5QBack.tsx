@@ -28,7 +28,6 @@ import {
     DefaultCardContent,
     DefaultCardTitle,
 } from '../../globals/Pieces';
-import {tkTheme} from '../../globals/Config';
 import {BoldText, DefaultParagraph} from '../../globals/Texts';
 import {Button, Card} from 'react-native-paper';
 
@@ -42,7 +41,6 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
     return (
         <DefaultCard>
             <DefaultCardTitle
-                theme={{color: tkTheme.colors.primary}}
                 title={i18next.t('5q.back.title')}
                 subtitle={i18next.t('5q.back.quote')}
                 subtitleNumberOfLines={2}
@@ -87,7 +85,6 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
             </DefaultCardContent>
             <Card.Actions>
                 <Button
-                    color={tkTheme.colors.primary}
                     icon="return-up-back-outline"
                     mode="outlined"
                     onPress={() => onPress()}

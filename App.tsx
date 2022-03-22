@@ -67,17 +67,39 @@ i18next.use(initReactI18next).init({
 const AppNavigator: React.FunctionComponent = () => {
     const [index, setIndex] = React.useState(0);
     const [routes] = React.useState([
-        { key: 'home', title: i18next.t('nav.home'), icon: 'home'},
-        { key: 'card5q', title: i18next.t('nav.5qcard'), icon: 'chatbubbles-outline' },
-        { key: 'kts', title: i18next.t('nav.kts'), icon: 'warning-outline' },
-        { key: 'tkc', title: i18next.t('nav.tkc'), icon: 'book-outline' },
+        {
+            key: 'home',
+            title: i18next.t('nav.home'),
+            icon: 'home-outline',
+        },
+        {
+            key: 'card5q',
+            title: i18next.t('nav.5qcard'),
+            icon: 'chatbubbles-outline',
+        },
+        {
+            key: 'steps4',
+            title: i18next.t('nav.4steps'),
+            icon: 'footsteps-outline',
+        },
+        {
+            key: 'kts',
+            title: i18next.t('nav.kts'),
+            icon: 'warning-outline',
+        },
+        {key: 'tkc', title: i18next.t('nav.tkc'), icon: 'book-outline'},
         // { key: 'language', title: i18next.t('nav.language'), icon: 'language-outline' },
-        { key: 'about', title: i18next.t('nav.about'), icon: 'information-circle-outline' },
+        {
+            key: 'about',
+            title: i18next.t('nav.about'),
+            icon: 'information-circle-outline',
+        },
     ]);
 
     const renderScene = BottomNavigation.SceneMap({
         home: HomePage,
-        card5q: FiveQpage,
+        card5q: FiveQPage,
+        steps4: FourStepsPage,
         kts: KTSPage,
         tkc: TkcPage,
         language: TkcPage,

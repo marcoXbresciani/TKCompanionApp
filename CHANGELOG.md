@@ -25,12 +25,18 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
-* Support for dark theme.
 ### Changed
-* Default card layout also for 5Q card.
 ### Removed
 ### Fixed
 ### Security
+
+## [0.4.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.4.0) - 2022-03-23
+### Added
+* Support for light/dark theme.
+* The Four Steps of Improvement Kata.
+### Changed
+* Improved icons and layouts.
+* Default card layout also for 5Q card.
 
 ## [0.3.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.3.0) - 2022-03-18
 ### Changed

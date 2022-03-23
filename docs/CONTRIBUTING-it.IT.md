@@ -71,8 +71,8 @@ di creare un nuovo rilascio:
 1. Verificare che [CHANGELOG.md](/CHANGELOG.md) contenga la relativa
    sezione numerata per il rilascio, spostando il contenuto relativo e
    rilevante da [Unreleased](CHANGELOG.md) alla suddetta sezione.
-   E verificahe che il relativo link al tag sia disponibile alla fine
-   del file, insiele agli altri link ai tag già esistenti.
+   E verificahe che il relativo link al tag sia aggiunto al titolo della
+   specifica sezione.
 1. Verificare che la cartella `fastlane` contenga i relativi file
    `changelogs` per lo specifico *codice* di versione, in tutte le
    lingue disponibili.

@@ -1,0 +1,2 @@
+Aggiungo il supporto per il tema chiaro/scuro e i quattro passi del Kata
+del miglioramento.

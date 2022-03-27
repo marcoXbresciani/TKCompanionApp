@@ -125,11 +125,11 @@ Lo stesso per questo documento.
 
 ## Ringraziamenti
 Grazie a:
+* [Marco Montalbano @marcomontalbano](https://github.com/marconontalbano) perché senza i suoi insegnamenti quest'app non sarebbe mai esistita.
 * [@licaon-kter](https://github.com/licaon-kter) per il supporto nella
   pubblicazione dell'app su F-Droid.
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   per l'icona dell'app.
-* @marcomontalbano perché senza i suoi insegnamenti quest'app non sarebbe mai esistita.
 
 ## Contribuire
 Cfr. [CONTRIBUTING.it-IT.md](/docs/CONTRIBUTING-it.IT.md).

@@ -130,6 +130,7 @@ Thanks to:
   publishing the app to F-Droid.
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   for the app icon.
+* [Marco Montalbano) (@marcomontalbano) because without his teachings, this app would never had happened.
 
 ## Contributing
 See [CONTRIBUTING.md](/docs/CONTRIBUTING.md).

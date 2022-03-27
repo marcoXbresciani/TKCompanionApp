@@ -129,6 +129,7 @@ Grazie a:
   pubblicazione dell'app su F-Droid.
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   per l'icona dell'app.
+* @marcomontalbano potrebbe senza i suoi insegnamenti quest'app non sarebbe mai esistita.
 
 ## Contribuire
 Cfr. [CONTRIBUTING.it-IT.md](/docs/CONTRIBUTING-it.IT.md).

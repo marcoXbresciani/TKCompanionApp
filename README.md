@@ -126,11 +126,11 @@ Same for this document.
 
 ## Thanks
 Thanks to:
+* [Marco Montalbano @marcomontalbano](https://github.com/marcomontalbano) because without his teachings, this app would never had happened.
 * [@licaon-kter](https://github.com/licaon-kter) for the support on
   publishing the app to F-Droid.
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   for the app icon.
-* @marcomontalbano because without his teachings, this app would never had happened.
 
 ## Contributing
 See [CONTRIBUTING.md](/docs/CONTRIBUTING.md).

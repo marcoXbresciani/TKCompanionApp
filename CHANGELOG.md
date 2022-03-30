@@ -25,14 +25,19 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
+### Changed
+### Removed
+### Fixed
+### Security
+
+## [0.5.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.5.0) - 2022-03-30
+### Added
 * Thanks to Marco Montalbano.
 * Settings page with basic language change.
 ### Changed
 * Home page layout.
 ### Removed
 * Unused @react-navigation/material-bottom-tabs.
-### Fixed
-### Security
 
 ## [0.4.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.4.0) - 2022-03-23
 ### Added

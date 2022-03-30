@@ -33,7 +33,7 @@ import merge from 'deepmerge';
 
 const CombinedLight = merge(PaperDefaultTheme, NavigationDefaultTheme);
 
-const CombinedDarkTheme = merge(PaperDarkTheme, NavigationDarkTheme);
+const CombinedDark = merge(PaperDarkTheme, NavigationDarkTheme);
 
 const fontConfig = {
     web: {
@@ -92,18 +92,26 @@ const fontConfig = {
     },
 };
 
-export const TkLightTheme = {
+export const tkLightTheme = {
     ...CombinedLight,
-    fonts: configureFonts(fontConfig),
     animation: {
         scale: 1.0,
     },
+    colors: {
+        ...CombinedLight.colors,
+        primary: 'royalblue',
+    },
+    fonts: configureFonts(fontConfig),
 };
 
-export const TkDarkTheme = {
-    ...CombinedDarkTheme,
-    fonts: configureFonts(fontConfig),
+export const tkDarkTheme = {
+    ...CombinedDark,
     animation: {
         scale: 1.0,
     },
+    colors: {
+        ...CombinedDark.colors,
+        primary: 'gold',
+    },
+    fonts: configureFonts(fontConfig),
 };

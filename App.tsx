@@ -32,7 +32,7 @@ import HomePage from './app/pages/HomePage';
 import AboutPage from './app/pages/about/AboutPage';
 import FiveQPage from './app/pages/5qcard/FiveQPage';
 import {initReactI18next} from 'react-i18next';
-import {TkDarkTheme, TkLightTheme} from './app/globals/Config';
+import {tkDarkTheme, tkLightTheme} from './app/globals/Config';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import KTSPage from './app/pages/KTSPage';
 import TkcPage from './app/pages/tkc/TkcPage';
@@ -121,7 +121,7 @@ const App: React.FunctionComponent = () => {
             settings={{
                 icon: (props) => <Ionicons {...props} />,
             }}
-            theme={isDark() ? TkDarkTheme : TkLightTheme}
+            theme={isDark() ? tkDarkTheme : tkLightTheme}
         >
             <AppNavigator />
         </PaperProvider>

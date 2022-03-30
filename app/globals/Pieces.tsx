@@ -22,19 +22,19 @@
  */
 import styled from 'styled-components';
 import {Card} from 'react-native-paper';
-import {TkDarkTheme, TkLightTheme} from './Config';
+import {tkDarkTheme, tkLightTheme} from './Config';
 import {isDark} from '../utils/Functions';
 
 export const DefaultCard = styled(Card)`
     border: 1px solid
-        ${isDark() ? TkDarkTheme.colors.text : TkLightTheme.colors.text};
+        ${isDark() ? tkDarkTheme.colors.text : tkLightTheme.colors.text};
     border-radius: 15px;
 `;
 
 export const DefaultCardTitle = styled(Card.Title)`
     border-bottom-color: ${isDark()
-        ? TkDarkTheme.colors.primary
-        : TkLightTheme.colors.primary};
+        ? tkDarkTheme.colors.primary
+        : tkLightTheme.colors.primary};
     border-bottom-style: solid;
     border-bottom-width: 3px;
 `;

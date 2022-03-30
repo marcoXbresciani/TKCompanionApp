@@ -1,4 +1,11 @@
 {
+    "4s": {
+        "s1": "① Capire la direzione",
+        "s2": "② Afferrare la condizione attuale",
+        "s3": "③ Stabilire la prossima condizione obiettivo",
+        "s4": "④ Iterare verso la condizione obiettivo",
+        "title": "I quattro passi del Kata del Miglioramento"
+    },
     "5q": {
         "back": {
             "q1": "1) Che cosa avevi pianificato come <bold>ultimo step</bold>?",
@@ -62,8 +69,10 @@
         "home": "Inizio",
         "kts": "KSR",
         "menu": "Menu",
-        "settings": "Lingua",
         "tkc": "CK"
+    },
+    "settings": {
+        "language": "Lingua"
     },
     "tkc": {
         "back": {

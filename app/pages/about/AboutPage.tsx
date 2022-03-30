@@ -26,6 +26,7 @@ import {
     Button,
     Card,
     Dialog,
+    IconButton,
     List,
     Modal,
     Portal,
@@ -37,6 +38,7 @@ import {BoldText} from '../../globals/Texts';
 import {Linking} from 'react-native';
 import i18next from 'i18next';
 import styled from 'styled-components';
+import Settings from './Settings';
 
 const MightItem = styled(List.Item)``;
 const NotItem = styled(List.Item)``;
@@ -54,11 +56,14 @@ const AboutPage: React.FunctionComponent = () => {
     const [visibleCopyright, setVisibleCopyright] =
         React.useState(false);
     const [visibleLegend, setVisibleLegend] = React.useState(false);
+    const [visibleSettings, setVisibleSettings] = React.useState(false);
 
     const showCopyright = () => setVisibleCopyright(true);
     const hideCopyright = () => setVisibleCopyright(false);
     const showLegend = () => setVisibleLegend(true);
     const hideLegend = () => setVisibleLegend(false);
+    const showSettings = () => setVisibleSettings(true);
+    const hideSettings = () => setVisibleSettings(false);
     const containerStyle = {backgroundColor: 'white', padding: 20};
 
     return (
@@ -76,6 +81,13 @@ const AboutPage: React.FunctionComponent = () => {
                     contentContainerStyle={containerStyle}
                 >
                     <Version />
+                </Modal>
+                <Modal
+                    visible={visibleSettings}
+                    onDismiss={hideSettings}
+                    contentContainerStyle={containerStyle}
+                >
+                    <Settings />
                 </Modal>
             </Portal>
             <Card>
@@ -276,6 +288,12 @@ const AboutPage: React.FunctionComponent = () => {
                     >
                         {i18next.t('about.copyright')}
                     </Button>
+                </Card.Actions>
+                <Card.Actions>
+                    <IconButton
+                        icon="settings-outline"
+                        onPress={showSettings}
+                    />
                 </Card.Actions>
             </Card>
         </PageContainer>

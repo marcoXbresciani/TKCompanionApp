@@ -69,8 +69,10 @@
         "home": "Home",
         "kts": "KTS",
         "menu": "Menu",
-        "settings": "language",
         "tkc": "TKC"
+    },
+    "settings": {
+        "language": "Language"
     },
     "tkc": {
         "back": {

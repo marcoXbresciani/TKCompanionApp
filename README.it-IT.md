@@ -82,7 +82,8 @@ simile a Google Play Store o Apple App Store) dal
 usare per scaricarla e
 [installarla](https://en.wikipedia.org/wiki/F-Droid#Client_application).
 
-Quindi, aprendo l'app F-Droid si può cercare _TKCompanionApp_.
+Quindi, aprendo l'app F-Droid si può cercare
+[TKCompanionApp](https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/).
 Installarla e aprirla.
 
 Benvenuti nel mondo FOSS.

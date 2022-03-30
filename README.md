@@ -83,7 +83,8 @@ similar to Google Play Store or Apple App Store) from the
 download and
 [install it](https://en.wikipedia.org/wiki/F-Droid#Client_application).
 
-Then, open the F-Droid repository app and search for _TKCompanionApp_.
+Then, open the F-Droid repository app and search for
+[TKCompanionApp](https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/).
 Install it, and open it.
 
 Welcome to the world of FOSS.

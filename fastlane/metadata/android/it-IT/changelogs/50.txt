@@ -1,0 +1,2 @@
+Introduce semplici impostazioni nella pagina delle informazioni, colla
+selezione della lingua.

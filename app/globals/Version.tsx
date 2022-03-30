@@ -23,12 +23,19 @@
 import * as React from 'react';
 import i18next from 'i18next';
 import DeviceInfo from 'react-native-device-info';
-import {Caption} from 'react-native-paper';
-import {CenteredSubheading, CenteredTitle} from './Texts';
+import {Caption, Subheading, Title} from 'react-native-paper';
+import styled from 'styled-components';
 
-export const APP_NAME =
-    DeviceInfo.getApplicationName() || 'TKCompanionApp';
-export const APP_VERSION = DeviceInfo.getVersion() || '';
+const APP_NAME = DeviceInfo.getApplicationName() || 'TKCompanionApp';
+const APP_VERSION = DeviceInfo.getVersion() || '';
+
+export const CenteredTitle = styled(Title)`
+    text-align: center;
+`;
+
+export const CenteredSubheading = styled(Subheading)`
+    text-align: center;
+`;
 
 const Version: React.FunctionComponent = () => {
     const short = i18next.t('app.short');

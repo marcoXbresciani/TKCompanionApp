@@ -21,11 +21,9 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {APP_NAME, APP_VERSION} from '../globals/Version';
+import Version from '../globals/Version';
 import PageContainer from '../globals/PageContainer';
 import {Card} from 'react-native-paper';
-import i18next from 'i18next';
-import {DefaultParagraph} from '../globals/Texts';
 
 const HomePage: React.FunctionComponent = () => (
     <PageContainer>
@@ -33,15 +31,8 @@ const HomePage: React.FunctionComponent = () => (
             <Card.Cover
                 source={require('../assets/images/dh000004.jpg')}
             />
-            <Card.Title
-                title={APP_NAME}
-                subtitle={APP_VERSION}
-                subtitleNumberOfLines={2}
-            />
             <Card.Content>
-                <DefaultParagraph>
-                    {i18next.t('app.short')}
-                </DefaultParagraph>
+                <Version />
             </Card.Content>
         </Card>
     </PageContainer>

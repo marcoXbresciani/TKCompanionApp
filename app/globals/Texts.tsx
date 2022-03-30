@@ -21,7 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components';
-import {Paragraph, Subheading, Text, Title} from 'react-native-paper';
+import {Paragraph, Text} from 'react-native-paper';
 
 export const DefaultText = styled(Text)`
     font-size: 16px;
@@ -31,14 +31,6 @@ export const DefaultText = styled(Text)`
 export const DefaultParagraph = styled(Paragraph)`
     font-size: 16px;
     line-height: 27px;
-`;
-
-export const CenteredTitle = styled(Title)`
-    text-align: center;
-`;
-
-export const CenteredSubheading = styled(Subheading)`
-    text-align: center;
 `;
 
 // export const BiggerText = styled(DefaultText)`

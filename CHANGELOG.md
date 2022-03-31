@@ -30,6 +30,11 @@ This file is offered as-is, without any warranty.
 ### Fixed
 ### Security
 
+## [0.6.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.6.0) - 2022-03-31
+### Added
+* Dark/Light theme switcher and automatic initial selection of theme
+  based on phone theme.
+
 ## [0.5.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.5.0) - 2022-03-30
 ### Added
 * Thanks to Marco Montalbano.

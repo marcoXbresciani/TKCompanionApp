@@ -76,8 +76,8 @@ Quindi:
   [file metadata dell'app](https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/name.bresciani.marco.tkcompanionapp.yml)
   su un fork del repository F-Droid/Data, aggiungendo una nuova
   versione, con l'aggiornamento della versione di NodeJS, il suo SHA,
-  ecc. guardando, per esempio, le differenze di NodeJS tra la versione
-  0.5.0 (50) e 0.6.0 (60) sul file metadata.
+  il numero di commit, ecc. guardando, per esempio, le differenze di
+  NodeJS tra la versione 0.5.0 (50) e 0.6.0 (60) sul file metadata.
 * Creare una MR sul repository F-Droid/Data originale con questa
   modifica dal fork.
 * Una volta che la MR è stata approvata e integrata sul repository

@@ -72,7 +72,8 @@
         "tkc": "CK"
     },
     "settings": {
-        "language": "Lingua"
+        "language": "Lingua",
+        "theme": "Scambia tema chiaro/scuro"
     },
     "tkc": {
         "back": {

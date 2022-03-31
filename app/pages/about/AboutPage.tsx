@@ -30,6 +30,7 @@ import {
     List,
     Modal,
     Portal,
+    useTheme,
 } from 'react-native-paper';
 import Copyright from './Copyright';
 import Version from '../../globals/Version';
@@ -64,7 +65,10 @@ const AboutPage: React.FunctionComponent = () => {
     const hideLegend = () => setVisibleLegend(false);
     const showSettings = () => setVisibleSettings(true);
     const hideSettings = () => setVisibleSettings(false);
-    const containerStyle = {backgroundColor: 'white', padding: 20};
+    const containerStyle = {
+        backgroundColor: useTheme().colors.background,
+        padding: 20,
+    };
 
     return (
         <PageContainer>

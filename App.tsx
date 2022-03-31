@@ -113,16 +113,38 @@ const AppNavigator: React.FunctionComponent = () => {
     );
 };
 
+export const PreferencesContext = React.createContext({
+    toggleTheme: () => {},
+    isThemeDark: isDark(),
+});
+
 const App: React.FunctionComponent = () => {
+    const [isThemeDark, setIsThemeDark] = React.useState(isDark());
+    let theme = isThemeDark ? tkDarkTheme : tkLightTheme;
+
+    const toggleTheme = React.useCallback(() => {
+        return setIsThemeDark(!isThemeDark);
+    }, [isThemeDark]);
+
+    const preferences = React.useMemo(
+        () => ({
+            toggleTheme,
+            isThemeDark,
+        }),
+        [toggleTheme, isThemeDark],
+    );
+
     return (
-        <PaperProvider
-            settings={{
-                icon: (props) => <Ionicons {...props} />,
-            }}
-            theme={isDark() ? tkDarkTheme : tkLightTheme}
-        >
-            <AppNavigator />
-        </PaperProvider>
+        <PreferencesContext.Provider value={preferences}>
+            <PaperProvider
+                settings={{
+                    icon: (props) => <Ionicons {...props} />,
+                }}
+                theme={theme}
+            >
+                <AppNavigator />
+            </PaperProvider>
+        </PreferencesContext.Provider>
     );
 };
 

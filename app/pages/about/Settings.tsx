@@ -21,13 +21,30 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {List} from 'react-native-paper';
+import {List, Switch} from 'react-native-paper';
 import i18next from 'i18next';
-import {ScrollView} from 'react-native';
+import {ScrollView, View} from 'react-native';
+import {PreferencesContext} from '../../../App';
+import {DefaultText} from '../../globals/Texts';
+import styled from 'styled-components';
+
+const RowView = styled(View)`
+    flex-direction: row;
+`;
 
 const Settings: React.FunctionComponent = () => {
+    const {toggleTheme, isThemeDark} =
+        React.useContext(PreferencesContext);
+
     return (
         <ScrollView>
+            <RowView>
+                <DefaultText>{i18next.t('settings.theme')}</DefaultText>
+                <Switch
+                    value={isThemeDark}
+                    onValueChange={toggleTheme}
+                />
+            </RowView>
             <List.AccordionGroup>
                 <List.Accordion
                     id={1}

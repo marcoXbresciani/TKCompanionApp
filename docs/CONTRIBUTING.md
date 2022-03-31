@@ -59,6 +59,30 @@ and launch your app, connecting to the Metro thing above.
 
 ### How to Build
 
+#### Updating NodeJS
+To update the version of NodeJS to the latest available LTS, it's better
+to prepare the version without the tag and create an MR (merge request)
+on a fork of the GitLab F-Droid/Data repository, with the update of the
+application metadata file and, only after the merge has been added, make
+the tag available on the code repository.
+This is because F-Droid independently manages releases as soon as one is
+available (labeled) on the repository.
+See https://gitlab.com/fdroid/fdroiddata/-/merge_requests/10826#note_895731121
+So:
+* Execute the procedure on [How to release](#how-to-release), without
+  the last step, so without sending the tag to the repository.
+* update the
+  [app metadata file](https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/name.bresciani.marco.tkcompanionapp.yml)
+  on a fork of the F-Droid/Data repository, adding a new version, with
+  the update of the version of NodeJS, its SHA, etc. looking, for
+  example, at the NodeJS differences between the version 0.5.0 (50) and
+  0.6.0 (60) on the metadata file.
+* Create an MR on the original F-Droid/Data repository with this
+  modification from the fork.
+* Once the MR has been approved and integrated into the main
+  F-Droid/Data repository, send the tag to the repository, so that
+  F-Droid build process can locate and use it.
+
 ### How to Release
 Once the code is completed and tested, in order to release there are a
 bit of steps to follow.

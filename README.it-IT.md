@@ -135,6 +135,8 @@ Grazie a:
   per l'icona dell'app.
 
 ## Contribuire
+<a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+
 Cfr. [CONTRIBUTING.it-IT.md](/docs/CONTRIBUTING-it.IT.md).
 
 ## Licenza

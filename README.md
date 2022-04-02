@@ -136,6 +136,9 @@ Thanks to:
   for the app icon.
 
 ## Contributing
+<script src="https://liberapay.com/marcoXbresciani/widgets/button.js"></script>
+<noscript><a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+
 See [CONTRIBUTING.md](/docs/CONTRIBUTING.md).
 
 ## License

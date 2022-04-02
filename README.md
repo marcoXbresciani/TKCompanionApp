@@ -135,9 +135,8 @@ Thanks to:
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   for the app icon.
 
-## Contributing
-<script src="https://liberapay.com/marcoXbresciani/widgets/button.js"></script>
-<noscript><a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+## Contribusing
+<a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
 See [CONTRIBUTING.md](/docs/CONTRIBUTING.md).
 

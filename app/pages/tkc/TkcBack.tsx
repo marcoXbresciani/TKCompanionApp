@@ -20,7 +20,7 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {Linking, SectionList} from 'react-native';
+import {SectionList} from 'react-native';
 import * as React from 'react';
 import i18next from 'i18next';
 import {Card, IconButton} from 'react-native-paper';
@@ -55,14 +55,6 @@ const TkcBack: React.FC<Props> = ({onPress}: Props) => {
                         <IconButton
                             icon="arrow-back-outline"
                             onPress={() => onPress()}
-                        />
-                        <IconButton
-                            icon="download-outline"
-                            onPress={() => {
-                                Linking.openURL(
-                                    'http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
-                                );
-                            }}
                         />
                     </Card.Actions>
                 )}

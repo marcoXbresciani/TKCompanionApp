@@ -32,7 +32,7 @@ import {
     DefaultCardTitle,
 } from '../globals/Pieces';
 
-const KTSPage: React.FunctionComponent = () => (
+const KtsPage: React.FunctionComponent = () => (
     <PageContainer>
         <DefaultCard>
             <DefaultCardTitle
@@ -58,4 +58,4 @@ const KTSPage: React.FunctionComponent = () => (
     </PageContainer>
 );
 
-export default KTSPage;
+export default KtsPage;

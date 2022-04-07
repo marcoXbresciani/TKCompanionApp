@@ -34,11 +34,10 @@ import FiveQPage from './app/pages/5qcard/FiveQPage';
 import {initReactI18next} from 'react-i18next';
 import {tkDarkTheme, tkLightTheme} from './app/globals/Config';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import KtsPage from './app/pages/KtsPage';
-import TkcPage from './app/pages/tkc/TkcPage';
 import FourStepsPage from './app/pages/FourStepsPage';
 import {isDark} from './app/utils/Functions';
 import DownloadPage from './app/pages/DownloadPage';
+import DocsPage from './app/pages/docs/DocsPage';
 
 const locale = (
     Platform.OS === 'ios'
@@ -84,11 +83,16 @@ const AppNavigator: React.FunctionComponent = () => {
             icon: 'analytics-outline',
         },
         {
-            key: 'kts',
-            title: i18next.t('nav.kts'),
-            icon: 'warning-outline',
+            key: 'docs',
+            title: i18next.t('nav.docs'),
+            icon: 'book-outline',
         },
-        {key: 'tkc', title: i18next.t('nav.tkc'), icon: 'book-outline'},
+        // {
+        //     key: 'kts',
+        //     title: i18next.t('nav.kts'),
+        //     icon: 'warning-outline',
+        // },
+        // {key: 'tkc', title: i18next.t('nav.tkc'), icon: 'book-outline'},
         {
             key: 'download',
             title: i18next.t('nav.download'),
@@ -105,8 +109,9 @@ const AppNavigator: React.FunctionComponent = () => {
         home: HomePage,
         card5q: FiveQPage,
         steps4: FourStepsPage,
-        kts: KtsPage,
-        tkc: TkcPage,
+        docs: DocsPage,
+        // kts: Kts,
+        // tkc: DocsPage,
         download: DownloadPage,
         about: AboutPage,
     });

@@ -57,6 +57,12 @@
     "copyright": {
         "license": "License page"
     },
+    "docs": {
+        "kts": "Read 'Kata That Shit'",
+        "practice": "Read 'Practice and Improve'",
+        "title": "Read The Docs",
+        "tkc": "Read 'The Kata Code"
+    },
     "download": {
         "4s": "Printable Improvement Kata Four Steps",
         "5q": "Printable Coaching Kata 5Q Card",
@@ -75,6 +81,7 @@
         "4steps": "4 Steps",
         "5qcard": "5Q Card",
         "about": "About",
+        "docs": "Documents",
         "download": "Downloads",
         "home": "Home",
         "kts": "KTS",

@@ -35,7 +35,7 @@ type Props = {
     onPress: () => void;
 };
 
-const TkcBack: React.FC<Props> = ({onPress}: Props) => {
+const Practice: React.FC<Props> = ({onPress}: Props) => {
     return (
         <DefaultCard>
             <SectionList
@@ -87,4 +87,4 @@ const TkcBack: React.FC<Props> = ({onPress}: Props) => {
     );
 };
 
-export default TkcBack;
+export default Practice;

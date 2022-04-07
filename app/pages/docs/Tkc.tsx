@@ -21,29 +21,48 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import PageContainer from '../globals/PageContainer';
 import i18next from 'i18next';
-import {DefaultParagraph} from '../globals/Texts';
+import {Card, IconButton} from 'react-native-paper';
 import {
     DefaultCard,
     DefaultCardContent,
     DefaultCardTitle,
-} from '../globals/Pieces';
+} from '../../globals/Pieces';
+import {DefaultParagraph} from '../../globals/Texts';
 
-const KtsPage: React.FunctionComponent = () => (
-    <PageContainer>
+type Props = {
+    onPress: () => void;
+};
+
+const Tkc: React.FC<Props> = ({onPress}: Props) => {
+    return (
         <DefaultCard>
-            <DefaultCardTitle
-                title={i18next.t('kts.title')}
-                subtitle={i18next.t('kts.tip')}
-            />
+            <DefaultCardTitle title={i18next.t('tkc.front.title')} />
             <DefaultCardContent>
                 <DefaultParagraph>
-                    {i18next.t('kts.text')}
+                    {i18next.t('tkc.front.1')}
+                </DefaultParagraph>
+                <DefaultParagraph>
+                    {i18next.t('tkc.front.2')}
+                </DefaultParagraph>
+                <DefaultParagraph>
+                    {i18next.t('tkc.front.3')}
+                </DefaultParagraph>
+                <DefaultParagraph>
+                    {i18next.t('tkc.front.4')}
+                </DefaultParagraph>
+                <DefaultParagraph>
+                    {i18next.t('tkc.front.5')}
                 </DefaultParagraph>
             </DefaultCardContent>
+            <Card.Actions>
+                <IconButton
+                    icon="return-down-back-outline"
+                    onPress={onPress}
+                />
+            </Card.Actions>
         </DefaultCard>
-    </PageContainer>
-);
+    );
+};
 
-export default KtsPage;
+export default Tkc;

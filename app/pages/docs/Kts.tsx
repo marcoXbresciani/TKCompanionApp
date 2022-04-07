@@ -21,31 +21,39 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {useState} from 'react';
-import TkcFront from './TkcFront';
-import TkcBack from './TkcBack';
-import PageContainer from '../../globals/PageContainer';
+import i18next from 'i18next';
+import {DefaultParagraph} from '../../globals/Texts';
+import {
+    DefaultCard,
+    DefaultCardContent,
+    DefaultCardTitle,
+} from '../../globals/Pieces';
+import {Card, IconButton} from 'react-native-paper';
 
-const TkcPage: React.FunctionComponent = () => {
-    const [front, setFront] = useState<boolean>(true);
+type Props = {
+    onPress: () => void;
+};
 
+const Kts: React.FC<Props> = ({onPress}: Props) => {
     return (
-        <PageContainer>
-            {front ? (
-                <TkcFront
-                    onPress={() => {
-                        setFront(false);
-                    }}
+        <DefaultCard>
+            <DefaultCardTitle
+                title={i18next.t('kts.title')}
+                subtitle={i18next.t('kts.tip')}
+            />
+            <DefaultCardContent>
+                <DefaultParagraph>
+                    {i18next.t('kts.text')}
+                </DefaultParagraph>
+            </DefaultCardContent>
+            <Card.Actions>
+                <IconButton
+                    icon="return-down-back-outline"
+                    onPress={onPress}
                 />
-            ) : (
-                <TkcBack
-                    onPress={() => {
-                        setFront(true);
-                    }}
-                />
-            )}
-        </PageContainer>
+            </Card.Actions>
+        </DefaultCard>
     );
 };
 
-export default TkcPage;
+export default Kts;

@@ -20,12 +20,10 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {Linking} from 'react-native';
 import * as React from 'react';
 import PageContainer from '../globals/PageContainer';
 import i18next from 'i18next';
 import {DefaultParagraph} from '../globals/Texts';
-import {Card, IconButton} from 'react-native-paper';
 import {
     DefaultCard,
     DefaultCardContent,
@@ -44,16 +42,6 @@ const KtsPage: React.FunctionComponent = () => (
                     {i18next.t('kts.text')}
                 </DefaultParagraph>
             </DefaultCardContent>
-            <Card.Actions>
-                <IconButton
-                    icon="download-outline"
-                    onPress={() => {
-                        Linking.openURL(
-                            'http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
-                        );
-                    }}
-                />
-            </Card.Actions>
         </DefaultCard>
     </PageContainer>
 );

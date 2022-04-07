@@ -57,6 +57,13 @@
     "copyright": {
         "license": "Pagina della licenza"
     },
+    "download": {
+        "4s": "I quattro passi del kata del miglioramento",
+        "5q": "Carta delle 5 domande del kata del coaching",
+        "jpg": "Download immagine JPG",
+        "pdf": "Download file PDF",
+        "title": "Download dal sito Toyota Kata"
+    },
     "kts": {
         "text": "Applicare lo schema del Kata di miglioramento (dal libro 'Toyota Kata') a un problema persistentemente in peggioramento, che comporta ostacoli e non ha una soluzione ovvia. Dichiarazione usata quando qualcuno è stato ripetutamente frustrato, vuole risposte in bianco e nero o si aspetta che qualcun altro risolva il problema.",
         "tip": "[κατα]",
@@ -66,6 +73,7 @@
         "4steps": "4 Passi",
         "5qcard": "5 Domande",
         "about": "Info",
+        "download": "Download",
         "home": "Inizio",
         "kts": "KSR",
         "menu": "Menu",

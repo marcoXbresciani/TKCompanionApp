@@ -61,8 +61,10 @@
         "4s": "Printable Improvement Kata Four Steps",
         "5q": "Printable Coaching Kata 5Q Card",
         "jpg": "JPG image download",
+        "kts": "Kata That Shit",
         "pdf": "PDF file download",
-        "title": "Downloads from The Toyota Kata Website"
+        "title": "Downloads from The Toyota Kata Website",
+        "tkc": "The Kata Code"
     },
     "kts": {
         "text": "Applying the pattern of the Improvement Kata (from the book 'Toyota Kata') to a persistently aggravating problem that involves obstacles and has no obvious solution. Statement used when someone has been repeatedly frustrated, wants black-and-white answers or expects someone else to solve the problem.",

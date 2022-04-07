@@ -55,6 +55,17 @@ const DownloadPage: React.FunctionComponent = () => (
                 titleNumberOfLines={2}
             />
             <List.Item
+                description={i18next.t('download.pdf')}
+                left={() => <List.Icon icon="download-outline" />}
+                onPress={() => {
+                    Linking.openURL(
+                        'http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
+                    );
+                }}
+                title={i18next.t('download.tkc')}
+                titleNumberOfLines={2}
+            />
+            <List.Item
                 description={i18next.t('download.jpg')}
                 left={() => <List.Icon icon="download-outline" />}
                 onPress={() => {
@@ -62,7 +73,7 @@ const DownloadPage: React.FunctionComponent = () => (
                         'http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
                     );
                 }}
-                title="Kata that Shit"
+                title={i18next.t('download.kts')}
                 titleNumberOfLines={2}
             />
         </List.Section>

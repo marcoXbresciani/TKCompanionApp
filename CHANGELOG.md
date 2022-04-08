@@ -25,13 +25,17 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
+### Changed
+### Removed
+### Fixed
+### Security
+
+## [1.0.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/1.0.0) - 2022-04-08
+### Added
 * "Downloads" page, to collect all downloadable items (from The Toyota
   Kata Website or, possibly, other sources)
 ### Changed
 * Collect docs and texts in "Docs" page.
-### Removed
-### Fixed
-### Security
 
 ## [0.6.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/0.6.0) - 2022-03-31
 ### Added

@@ -25,13 +25,13 @@ import {Card} from 'react-native-paper';
 import {tkDarkTheme, tkLightTheme} from './Config';
 import {isDark} from '../utils/Functions';
 
-export const DefaultCard = styled(Card)`
+export const TkCard = styled(Card)`
     border: 1px solid
         ${isDark() ? tkDarkTheme.colors.text : tkLightTheme.colors.text};
     border-radius: 15px;
 `;
 
-export const DefaultCardTitle = styled(Card.Title)`
+export const TkCardTitle = styled(Card.Title)`
     border-bottom-color: ${isDark()
         ? tkDarkTheme.colors.primary
         : tkLightTheme.colors.primary};
@@ -39,6 +39,6 @@ export const DefaultCardTitle = styled(Card.Title)`
     border-bottom-width: 3px;
 `;
 
-export const DefaultCardContent = styled(Card.Content)`
+export const TkCardContent = styled(Card.Content)`
     padding: 5%;
 `;

@@ -50,7 +50,6 @@
         }
     },
     "app": {
-        "long": "It contains the Coaching Kata 5Q card, plus (possibly) more things and information. Content to be improved and updated from time to time.",
         "short": "A short and small helper for Toyota Kata practitioners",
         "wip": "Work in progress..."
     },
@@ -58,19 +57,19 @@
         "license": "License page"
     },
     "docs": {
-        "kts": "Read 'Kata That Shit'",
-        "practice": "Read 'Practice and Improve'",
+        "kts": "$t(kts.title)",
+        "practice": "$t(practice.title)",
         "title": "Read The Docs",
-        "tkc": "Read 'The Kata Code"
+        "tkc": "$t(tkc.title)"
     },
     "download": {
-        "4s": "Printable Improvement Kata Four Steps",
-        "5q": "Printable Coaching Kata 5Q Card",
+        "4s": "$t(4s.title)",
+        "5q": "$t(5q.front.title)",
         "jpg": "JPG image download",
-        "kts": "Kata That Shit",
+        "kts": "$t(kts.title)",
         "pdf": "PDF file download",
         "title": "Downloads from The Toyota Kata Website",
-        "tkc": "The Kata Code"
+        "tkc": "$t(tkc.title)"
     },
     "kts": {
         "text": "Applying the pattern of the Improvement Kata (from the book 'Toyota Kata') to a persistently aggravating problem that involves obstacles and has no obvious solution. Statement used when someone has been repeatedly frustrated, wants black-and-white answers or expects someone else to solve the problem.",
@@ -83,32 +82,27 @@
         "about": "About",
         "docs": "Documents",
         "download": "Downloads",
-        "home": "Home",
-        "kts": "KTS",
-        "menu": "Menu",
-        "tkc": "TKC"
+        "home": "Home"
+    },
+    "practice": {
+        "1": "Improvement Kata / Coaching Kata practitioners are creating a dynamic that helps humans everywhere practice more scientific ways of thinking and acting, toward the best we can imagine, and beyond.",
+        "2": "The 21st Century is demanding a way of working that is cognitively complex, interpersonal, iterative, and even entrepreneurial. Practicing the Improvement Kata and Coaching Kata is a way to obtain those skills and mindset, helping us adapt to the world around us. It doesn't give you solutions, but a thought process for how to approach your goals and obstacles.",
+        "3": "The Kata community has structured practice routines, called 'Starter Kata', for learning fundamentals for both the learner and the coach—like playing musical scales when learning a new instrument. Practicing Starter Kata is a foundation upon which any learner's creativity and initiative can grow.",
+        "4": "The practice routines of the Improvement Kata and Coaching Kata are a useful starting point for any team or organization that wants to develop and utilize a more scientific approach. Beginners start by trying to follow the pattern of the Starter Kata exactly. As their proficiency increases and they understand the purpose behind the routines, they can start to develop their own style, as long as it continues to incorporate the underlying scientific pattern and purpose.",
+        "5": "The 'Kata Code' defines what we think should probably not change as you advance and evolve your own style.",
+        "6": "Best wishes!",
+        "title": "Changing thinking through practice"
     },
     "settings": {
         "language": "Language",
         "theme": "Switch light/dark theme"
     },
     "tkc": {
-        "back": {
-            "1": "Improvement Kata / Coaching Kata practitioners are creating a dynamic that helps humans everywhere practice more scientific ways of thinking and acting, toward the best we can imagine, and beyond.",
-            "2": "The 21st Century is demanding a way of working that is cognitively complex, interpersonal, iterative, and even entrepreneurial. Practicing the Improvement Kata and Coaching Kata is a way to obtain those skills and mindset, helping us adapt to the world around us. It doesn't give you solutions, but a thought process for how to approach your goals and obstacles.",
-            "3": "The Kata community has structured practice routines, called 'Starter Kata', for learning fundamentals for both the learner and the coach—like playing musical scales when learning a new instrument. Practicing Starter Kata is a foundation upon which any learner's creativity and initiative can grow.",
-            "4": "The practice routines of the Improvement Kata and Coaching Kata are a useful starting point for any team or organization that wants to develop and utilize a more scientific approach. Beginners start by trying to follow the pattern of the Starter Kata exactly. As their proficiency increases and they understand the purpose behind the routines, they can start to develop their own style, as long as it continues to incorporate the underlying scientific pattern and purpose.",
-            "5": "The 'Kata Code' defines what we think should probably not change as you advance and evolve your own style.",
-            "6": "Best wishes!",
-            "title": "Changing thinking through practice"
-        },
-        "front": {
-            "1": "◉ Conditions are unpredictable.",
-            "2": "◉ Enjoy the learning zone.",
-            "3": "◉ Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
-            "4": "◉ Beginners practice Starter Kata exactly.",
-            "5": "◉ Have a coach, be a coach.",
-            "title": "The Kata Code"
-        }
+        "1": "◉ Conditions are unpredictable.",
+        "2": "◉ Enjoy the learning zone.",
+        "3": "◉ Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
+        "4": "◉ Beginners practice Starter Kata exactly.",
+        "5": "◉ Have a coach, be a coach.",
+        "title": "The Kata Code"
     }
 }

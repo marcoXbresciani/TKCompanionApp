@@ -23,12 +23,8 @@
 import * as React from 'react';
 import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
-import {
-    DefaultCard,
-    DefaultCardContent,
-    DefaultCardTitle,
-} from '../../globals/Pieces';
-import {BoldText, DefaultParagraph} from '../../globals/Texts';
+import {TkCard, TkCardContent, TkCardTitle} from '../../globals/Pieces';
+import {BoldText, TkParagraph} from '../../globals/Texts';
 import {Button, Card} from 'react-native-paper';
 
 type Props = {
@@ -39,14 +35,14 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
     const {t} = useTranslation();
 
     return (
-        <DefaultCard>
-            <DefaultCardTitle
+        <TkCard>
+            <TkCardTitle
                 title={i18next.t('5q.back.title')}
                 subtitle={i18next.t('5q.back.quote')}
                 subtitleNumberOfLines={2}
             />
-            <DefaultCardContent>
-                <DefaultParagraph>
+            <TkCardContent>
+                <TkParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.back.q1'}
@@ -54,8 +50,8 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                </DefaultParagraph>
-                <DefaultParagraph>
+                </TkParagraph>
+                <TkParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.back.q2'}
@@ -63,8 +59,8 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                </DefaultParagraph>
-                <DefaultParagraph>
+                </TkParagraph>
+                <TkParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.back.q3'}
@@ -72,8 +68,8 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                </DefaultParagraph>
-                <DefaultParagraph>
+                </TkParagraph>
+                <TkParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.back.q4'}
@@ -81,18 +77,18 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                </DefaultParagraph>
-            </DefaultCardContent>
+                </TkParagraph>
+            </TkCardContent>
             <Card.Actions>
                 <Button
-                    icon="return-up-back-outline"
+                    icon="return-down-back-outline"
                     mode="outlined"
                     onPress={() => onPress()}
                 >
                     {i18next.t('5q.back.return')}
                 </Button>
             </Card.Actions>
-        </DefaultCard>
+        </TkCard>
     );
 };
 

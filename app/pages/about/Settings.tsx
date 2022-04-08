@@ -25,7 +25,7 @@ import {List, Switch} from 'react-native-paper';
 import i18next from 'i18next';
 import {ScrollView, View} from 'react-native';
 import {PreferencesContext} from '../../../App';
-import {DefaultText} from '../../globals/Texts';
+import {TkText} from '../../globals/Texts';
 import styled from 'styled-components';
 
 const RowView = styled(View)`
@@ -39,7 +39,7 @@ const Settings: React.FunctionComponent = () => {
     return (
         <ScrollView>
             <RowView>
-                <DefaultText>{i18next.t('settings.theme')}</DefaultText>
+                <TkText>{i18next.t('settings.theme')}</TkText>
                 <Switch
                     value={isThemeDark}
                     onValueChange={toggleTheme}

@@ -87,12 +87,6 @@ const AppNavigator: React.FunctionComponent = () => {
             title: i18next.t('nav.docs'),
             icon: 'book-outline',
         },
-        // {
-        //     key: 'kts',
-        //     title: i18next.t('nav.kts'),
-        //     icon: 'warning-outline',
-        // },
-        // {key: 'tkc', title: i18next.t('nav.tkc'), icon: 'book-outline'},
         {
             key: 'download',
             title: i18next.t('nav.download'),
@@ -110,8 +104,6 @@ const AppNavigator: React.FunctionComponent = () => {
         card5q: FiveQPage,
         steps4: FourStepsPage,
         docs: DocsPage,
-        // kts: Kts,
-        // tkc: DocsPage,
         download: DownloadPage,
         about: AboutPage,
     });

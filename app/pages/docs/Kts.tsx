@@ -22,12 +22,8 @@
  */
 import * as React from 'react';
 import i18next from 'i18next';
-import {DefaultParagraph} from '../../globals/Texts';
-import {
-    DefaultCard,
-    DefaultCardContent,
-    DefaultCardTitle,
-} from '../../globals/Pieces';
+import {TkParagraph} from '../../globals/Texts';
+import {TkCard, TkCardContent, TkCardTitle} from '../../globals/Pieces';
 import {Card, IconButton} from 'react-native-paper';
 
 type Props = {
@@ -36,23 +32,21 @@ type Props = {
 
 const Kts: React.FC<Props> = ({onPress}: Props) => {
     return (
-        <DefaultCard>
-            <DefaultCardTitle
+        <TkCard>
+            <TkCardTitle
                 title={i18next.t('kts.title')}
                 subtitle={i18next.t('kts.tip')}
             />
-            <DefaultCardContent>
-                <DefaultParagraph>
-                    {i18next.t('kts.text')}
-                </DefaultParagraph>
-            </DefaultCardContent>
+            <TkCardContent>
+                <TkParagraph>{i18next.t('kts.text')}</TkParagraph>
+            </TkCardContent>
             <Card.Actions>
                 <IconButton
                     icon="return-down-back-outline"
                     onPress={onPress}
                 />
             </Card.Actions>
-        </DefaultCard>
+        </TkCard>
     );
 };
 

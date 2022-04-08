@@ -23,35 +23,25 @@
 import styled from 'styled-components';
 import {Paragraph, Text} from 'react-native-paper';
 
-export const DefaultText = styled(Text)`
+export const TkText = styled(Text)`
     font-size: 16px;
     line-height: 27px;
 `;
 
-export const DefaultParagraph = styled(Paragraph)`
+export const TkParagraph = styled(Paragraph)`
     font-size: 16px;
     line-height: 27px;
 `;
 
-// export const BiggerText = styled(DefaultText)`
-//         font-color: back;
-//         font-size: 20px;
-//         line-height: 33px;
-// `;
-
-export const SmallerText = styled(DefaultText)`
+export const SmallerText = styled(TkText)`
     font-size: 13px;
     line-height: 23px;
 `;
 
-// export const ButtonText = styled(SmallerText)`
-//     color: white;
-// `;
-
-export const BoldText = styled(DefaultText)`
+export const BoldText = styled(TkText)`
     font-weight: bold;
 `;
 
-export const CenteredText = styled(DefaultText)`
+export const CenteredText = styled(TkText)`
     text-align: center;
 `;

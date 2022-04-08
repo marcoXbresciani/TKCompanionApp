@@ -24,12 +24,8 @@ import {SectionList} from 'react-native';
 import * as React from 'react';
 import i18next from 'i18next';
 import {Card, IconButton} from 'react-native-paper';
-import {
-    DefaultCard,
-    DefaultCardContent,
-    DefaultCardTitle,
-} from '../../globals/Pieces';
-import {DefaultParagraph} from '../../globals/Texts';
+import {TkCard, TkCardContent, TkCardTitle} from '../../globals/Pieces';
+import {TkParagraph} from '../../globals/Texts';
 
 type Props = {
     onPress: () => void;
@@ -37,23 +33,23 @@ type Props = {
 
 const Practice: React.FC<Props> = ({onPress}: Props) => {
     return (
-        <DefaultCard>
+        <TkCard>
             <SectionList
                 renderSectionHeader={() => (
-                    <DefaultCardTitle
-                        title={i18next.t('tkc.back.title')}
+                    <TkCardTitle
+                        title={i18next.t('practice.title')}
                         titleNumberOfLines={2}
                     />
                 )}
                 renderItem={({item}) => (
-                    <DefaultCardContent>
-                        <DefaultParagraph>{item.key}</DefaultParagraph>
-                    </DefaultCardContent>
+                    <TkCardContent>
+                        <TkParagraph>{item.key}</TkParagraph>
+                    </TkCardContent>
                 )}
                 renderSectionFooter={() => (
                     <Card.Actions>
                         <IconButton
-                            icon="arrow-back-outline"
+                            icon="return-down-back-outline"
                             onPress={() => onPress()}
                         />
                     </Card.Actions>
@@ -62,28 +58,28 @@ const Practice: React.FC<Props> = ({onPress}: Props) => {
                     {
                         data: [
                             {
-                                key: i18next.t('tkc.back.1'),
+                                key: i18next.t('practice.1'),
                             },
                             {
-                                key: i18next.t('tkc.back.2'),
+                                key: i18next.t('practice.2'),
                             },
                             {
-                                key: i18next.t('tkc.back.3'),
+                                key: i18next.t('practice.3'),
                             },
                             {
-                                key: i18next.t('tkc.back.4'),
+                                key: i18next.t('practice.4'),
                             },
                             {
-                                key: i18next.t('tkc.back.5'),
+                                key: i18next.t('practice.5'),
                             },
                             {
-                                key: i18next.t('tkc.back.6'),
+                                key: i18next.t('practice.6'),
                             },
                         ],
                     },
                 ]}
             />
-        </DefaultCard>
+        </TkCard>
     );
 };
 

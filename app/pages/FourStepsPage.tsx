@@ -23,35 +23,23 @@
 import * as React from 'react';
 import PageContainer from '../globals/PageContainer';
 import i18next from 'i18next';
-import {DefaultParagraph} from '../globals/Texts';
-import {
-    DefaultCard,
-    DefaultCardContent,
-    DefaultCardTitle,
-} from '../globals/Pieces';
+import {TkParagraph} from '../globals/Texts';
+import {TkCard, TkCardContent, TkCardTitle} from '../globals/Pieces';
 
 const FourStepsPage: React.FunctionComponent = () => (
     <PageContainer>
-        <DefaultCard>
-            <DefaultCardTitle
+        <TkCard>
+            <TkCardTitle
                 title={i18next.t('4s.title')}
                 titleNumberOfLines={2}
             />
-            <DefaultCardContent>
-                <DefaultParagraph>
-                    {i18next.t('4s.s1')}
-                </DefaultParagraph>
-                <DefaultParagraph>
-                    {i18next.t('4s.s2')}
-                </DefaultParagraph>
-                <DefaultParagraph>
-                    {i18next.t('4s.s3')}
-                </DefaultParagraph>
-                <DefaultParagraph>
-                    {i18next.t('4s.s4')}
-                </DefaultParagraph>
-            </DefaultCardContent>
-        </DefaultCard>
+            <TkCardContent>
+                <TkParagraph>{i18next.t('4s.s1')}</TkParagraph>
+                <TkParagraph>{i18next.t('4s.s2')}</TkParagraph>
+                <TkParagraph>{i18next.t('4s.s3')}</TkParagraph>
+                <TkParagraph>{i18next.t('4s.s4')}</TkParagraph>
+            </TkCardContent>
+        </TkCard>
     </PageContainer>
 );
 

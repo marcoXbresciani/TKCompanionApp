@@ -23,12 +23,8 @@
 import * as React from 'react';
 import i18next from 'i18next';
 import {Card, IconButton} from 'react-native-paper';
-import {
-    DefaultCard,
-    DefaultCardContent,
-    DefaultCardTitle,
-} from '../../globals/Pieces';
-import {DefaultParagraph} from '../../globals/Texts';
+import {TkCard, TkCardContent, TkCardTitle} from '../../globals/Pieces';
+import {TkParagraph} from '../../globals/Texts';
 
 type Props = {
     onPress: () => void;
@@ -36,32 +32,22 @@ type Props = {
 
 const Tkc: React.FC<Props> = ({onPress}: Props) => {
     return (
-        <DefaultCard>
-            <DefaultCardTitle title={i18next.t('tkc.front.title')} />
-            <DefaultCardContent>
-                <DefaultParagraph>
-                    {i18next.t('tkc.front.1')}
-                </DefaultParagraph>
-                <DefaultParagraph>
-                    {i18next.t('tkc.front.2')}
-                </DefaultParagraph>
-                <DefaultParagraph>
-                    {i18next.t('tkc.front.3')}
-                </DefaultParagraph>
-                <DefaultParagraph>
-                    {i18next.t('tkc.front.4')}
-                </DefaultParagraph>
-                <DefaultParagraph>
-                    {i18next.t('tkc.front.5')}
-                </DefaultParagraph>
-            </DefaultCardContent>
+        <TkCard>
+            <TkCardTitle title={i18next.t('tkc.title')} />
+            <TkCardContent>
+                <TkParagraph>{i18next.t('tkc.1')}</TkParagraph>
+                <TkParagraph>{i18next.t('tkc.2')}</TkParagraph>
+                <TkParagraph>{i18next.t('tkc.3')}</TkParagraph>
+                <TkParagraph>{i18next.t('tkc.4')}</TkParagraph>
+                <TkParagraph>{i18next.t('tkc.5')}</TkParagraph>
+            </TkCardContent>
             <Card.Actions>
                 <IconButton
                     icon="return-down-back-outline"
                     onPress={onPress}
                 />
             </Card.Actions>
-        </DefaultCard>
+        </TkCard>
     );
 };
 

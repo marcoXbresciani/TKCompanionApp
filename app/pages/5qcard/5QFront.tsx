@@ -23,13 +23,9 @@
 import * as React from 'react';
 import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
-import {BoldText, DefaultParagraph} from '../../globals/Texts';
+import {BoldText, TkParagraph} from '../../globals/Texts';
 import {Button, Card} from 'react-native-paper';
-import {
-    DefaultCard,
-    DefaultCardContent,
-    DefaultCardTitle,
-} from '../../globals/Pieces';
+import {TkCard, TkCardContent, TkCardTitle} from '../../globals/Pieces';
 
 type Props = {
     onPress: () => void;
@@ -39,14 +35,14 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
     const {t} = useTranslation();
 
     return (
-        <DefaultCard>
-            <DefaultCardTitle
+        <TkCard>
+            <TkCardTitle
                 title={i18next.t('5q.front.header')}
                 subtitle={i18next.t('5q.front.title')}
                 subtitleNumberOfLines={2}
             />
-            <DefaultCardContent>
-                <DefaultParagraph>
+            <TkCardContent>
+                <TkParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.front.q1'}
@@ -54,8 +50,8 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                </DefaultParagraph>
-                <DefaultParagraph>
+                </TkParagraph>
+                <TkParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.front.q2'}
@@ -63,7 +59,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                </DefaultParagraph>
+                </TkParagraph>
                 <Card.Actions>
                     <Button
                         mode="outlined"
@@ -73,7 +69,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                         {i18next.t('5q.front.separator')}
                     </Button>
                 </Card.Actions>
-                <DefaultParagraph>
+                <TkParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.front.q3.1'}
@@ -82,8 +78,8 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                         }}
                     />
                     {i18next.t('5q.front.q3.2')}
-                </DefaultParagraph>
-                <DefaultParagraph>
+                </TkParagraph>
+                <TkParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.front.q4.1'}
@@ -92,8 +88,8 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                         }}
                     />
                     {i18next.t('5q.front.q4.2')}
-                </DefaultParagraph>
-                <DefaultParagraph>
+                </TkParagraph>
+                <TkParagraph>
                     <Trans
                         t={t}
                         i18nKey={'5q.front.q5'}
@@ -101,9 +97,9 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                </DefaultParagraph>
-            </DefaultCardContent>
-        </DefaultCard>
+                </TkParagraph>
+            </TkCardContent>
+        </TkCard>
     );
 };
 

@@ -21,7 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {DefaultText, SmallerText} from '../../globals/Texts';
+import {TkText, SmallerText} from '../../globals/Texts';
 import styled from 'styled-components';
 import {Linking, ScrollView, View} from 'react-native';
 import {Button} from 'react-native-paper';
@@ -38,7 +38,7 @@ const Copyright: React.FunctionComponent = () => {
     return (
         <ScrollView>
             <Notice>
-                <DefaultText>© 2021-2022 Marco Bresciani</DefaultText>
+                <TkText>© 2021-2022 Marco Bresciani</TkText>
                 <SmallerText>
                     TKCompanionApp is free software: you can
                     redistribute it and/or modify it under the terms of
@@ -60,7 +60,7 @@ const Copyright: React.FunctionComponent = () => {
                 </SmallerText>
             </Notice>
             <Notice>
-                <DefaultText>© 2007 Marco Bresciani</DefaultText>
+                <TkText>© 2007 Marco Bresciani</TkText>
                 <SmallerText>
                     Tainai and Murakami areas with Arakawa river by
                     Marco Bresciani is Licensed under a Creative Commons
@@ -80,9 +80,7 @@ const Copyright: React.FunctionComponent = () => {
             </Notice>
             <Notice>
                 <SmallerText>FreeSans, GNU FreeFont</SmallerText>
-                <DefaultText>
-                    © 2012 Primož Peterlin, Steve White
-                </DefaultText>
+                <TkText>© 2012 Primož Peterlin, Steve White</TkText>
                 <Button
                     icon="document-text-outline"
                     mode="outlined"

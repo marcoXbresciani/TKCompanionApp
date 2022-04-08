@@ -24,17 +24,18 @@ import * as React from 'react';
 import Version from '../globals/Version';
 import PageContainer from '../globals/PageContainer';
 import {Card} from 'react-native-paper';
+import {TkCard, TkCardContent} from '../globals/Pieces';
 
 const HomePage: React.FunctionComponent = () => (
     <PageContainer>
-        <Card>
+        <TkCard>
             <Card.Cover
                 source={require('../assets/images/dh000004.jpg')}
             />
-            <Card.Content>
+            <TkCardContent>
                 <Version />
-            </Card.Content>
-        </Card>
+            </TkCardContent>
+        </TkCard>
     </PageContainer>
 );
 

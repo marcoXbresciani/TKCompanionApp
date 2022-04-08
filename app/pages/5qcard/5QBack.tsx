@@ -36,7 +36,7 @@ type Props = {
 };
 
 const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
-    const {t} = useTranslation('');
+    const {t} = useTranslation();
 
     return (
         <DefaultCard>

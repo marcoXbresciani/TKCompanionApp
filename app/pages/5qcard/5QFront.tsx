@@ -36,7 +36,7 @@ type Props = {
 };
 
 const Front5Q: React.FC<Props> = ({onPress}: Props) => {
-    const {t} = useTranslation('');
+    const {t} = useTranslation();
 
     return (
         <DefaultCard>

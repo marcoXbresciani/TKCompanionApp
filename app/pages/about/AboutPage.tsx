@@ -52,7 +52,7 @@ NotItem.defaultProps = {
 };
 
 const AboutPage: React.FunctionComponent = () => {
-    const {t} = useTranslation('');
+    const {t} = useTranslation();
 
     const [visibleCopyright, setVisibleCopyright] =
         React.useState(false);

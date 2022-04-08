@@ -107,8 +107,10 @@ Siediti, segui il menu, impara, esercitati e migliora.
   esterna.
 
 ### Schermate
-![Home](fastlane/metadata/android/it-IT/images/phoneScreenshots/home.png)
+![5Q Card](fastlane/metadata/android/it-IT/images/phoneScreenshots/5Q.png)
 ![About](fastlane/metadata/android/it-IT/images/phoneScreenshots/about.png)
+![Docs](fastlane/metadata/android/it-IT/images/phoneScreenshots/docs.png)
+![Home](fastlane/metadata/android/it-IT/images/phoneScreenshots/home.png)
 
 ## Note sui font
 * Il font usato è [Free

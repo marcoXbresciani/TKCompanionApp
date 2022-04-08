@@ -107,9 +107,10 @@ Just sit, follow the menu, learn, practice and improve.
   phone to browse the Internet and show you an external web page.
 
 ### Screenshots
-![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
-![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png)
+![5Q Card](fastlane/metadata/android/en-US/images/phoneScreenshots/5Q.png)
 ![About](fastlane/metadata/android/en-US/images/phoneScreenshots/about.png)
+![Docs](fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png)
+![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
 
 ## Font Notes
 * Font used is [Free
@@ -135,7 +136,7 @@ Thanks to:
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   for the app icon.
 
-## Contribusing
+## Contributing
 <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
 See [CONTRIBUTING.md](/docs/CONTRIBUTING.md).

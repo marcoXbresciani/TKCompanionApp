@@ -17,6 +17,7 @@
         "react-native-vector-icons": "^9.1.0",
         "styled-components": "^5.3.3"
     },
+    "description": "A short and small helper for Toyota Kata practitioners",
     "devDependencies": {
         "@babel/core": "^7.17.5",
         "@babel/runtime": "^7.17.2",

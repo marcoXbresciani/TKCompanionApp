@@ -1,4 +1,14 @@
 {
+    "author": {
+        "email": "marco.530@outlook.it",
+      "name": "Marco Bresciani",
+        "url": "https://github.com/marcoXbresciani"
+    },
+    "bugs": {
+        "email": "marco.530@outlook.it",
+        "url": "https://github.com/marcoXbresciani/TKCompanionApp/issues"
+    },
+    "homepage": "https://github.com/marcoXbresciani/TKCompanionApp",
     "dependencies": {
         "@react-navigation/bottom-tabs": "^6.2.0",
         "@react-navigation/native": "^6.0.8",
@@ -46,6 +56,10 @@
         "node": "16.14.2",
         "npm": "8.5.0"
     },
+    "funding": {
+        "type": "liberaPay",
+        "url": "https://liberapay.com/marcoXbresciani/donate"
+    },
     "jest": {
         "moduleFileExtensions": [
             "ts",
@@ -57,8 +71,13 @@
         ],
         "preset": "react-native"
     },
+    "license": "GPL-3.0-or-later",
     "name": "tkcompanionapp",
     "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/marcoXbresciani/TKCompanionApp"
+    },
     "resolutions": {
         "@types/react": "^17",
         "styled-components": "^5"

@@ -30,6 +30,10 @@ This file is offered as-is, without any warranty.
 ### Fixed
 ### Security
 
+## [1.0.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/1.0.1) - 2022-04-11
+### Changed
+* Improve `package.json` information.
+
 ## [1.0.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/1.0.0) - 2022-04-08
 ### Added
 * "Downloads" page, to collect all downloadable items (from The Toyota

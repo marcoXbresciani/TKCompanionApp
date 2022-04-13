@@ -105,7 +105,14 @@ Just sit, follow the menu, learn, practice and improve.
 * <img src="docs/svg/navigate-circle-outline.svg" height="16px" alt="navigate-circle-outline"/>
   this icon means that the app will open a web page outside the app
   itself, using whatever browser or app you have configured on your
-  phone to browse the Internet and show you an external web page.
+  device to browse the Internet and show you an external web page.
+* <img src="docs/svg/download-outline.svg" height="16px" alt="download-outline"/>
+  this icon means that the app will download a specific file (from The
+  Toyota Kata Website, if not otherwise specified).
+  The way your device will manage such file will depend on the device
+  configuration.
+  The text associated to the download icon will always specify the type
+  of file that will be downloaded.
 
 ### Screenshots
 ![5Q Card](fastlane/metadata/android/en-US/images/phoneScreenshots/5Q.png)

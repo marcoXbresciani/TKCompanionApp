@@ -104,8 +104,15 @@ Siediti, segui il menu, impara, esercitati e migliora.
 * <img src="docs/svg/navigate-circle-outline.svg" height="16px" alt="navigate-circle-outline"/>
   questa icona indica che l'app aprirà una pagina web all'esterno
   dell'app stessa, usando qualsivoglia browser o app che hai configurato
-  sul telefono per navigare in Internet, e mostrerà una pagina web
+  sul dispositivo per navigare in Internet, e mostrerà una pagina web
   esterna.
+* <img src="docs/svg/download-outline.svg" height="16px" alt="download-outline"/>
+  questa icona indica che l'app scaricherà un file specifico (dal sito
+  Toyota Kata, se non specificato altrimenti).
+  Il modo in cui il dispositivo gestirà il file dipenderà dalla
+  configurazione del dispositivo stesso.
+  Il testo associato all'icona di download indicherà sempre il tipo di
+  file che sarà scaricato.
 
 ### Schermate
 ![5Q Card](fastlane/metadata/android/it-IT/images/phoneScreenshots/5Q.png)

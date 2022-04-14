@@ -31,7 +31,6 @@
     },
     "about": {
         "copyright": "copyright",
-        "legend": "legenda",
         "might": {
             "key1": "aiutarti a migliorare",
             "key2": "aiutarti a imparare il Kata",
@@ -52,9 +51,6 @@
     "app": {
         "short": "Un piccolo e semplice aiuto per i praticanti di Toyota Kata",
         "wip": "Lavori in corso..."
-    },
-    "copyright": {
-        "license": "Pagina della licenza"
     },
     "docs": {
         "kts": "$t(kts.title)",

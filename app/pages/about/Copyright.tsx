@@ -24,8 +24,7 @@ import * as React from 'react';
 import {TkText, SmallerText} from '../../globals/Texts';
 import styled from 'styled-components';
 import {Linking, ScrollView, View} from 'react-native';
-import {Button} from 'react-native-paper';
-import i18next from 'i18next';
+import {IconButton} from 'react-native-paper';
 
 const Notice = styled(View)`
     align-content: center;
@@ -34,6 +33,11 @@ const Notice = styled(View)`
     margin: 5% 5%;
     padding: 10px;
 `;
+
+const ButtonsStrip = styled(View)`
+    flex-direction: row;
+`;
+
 const Copyright: React.FunctionComponent = () => {
     return (
         <ScrollView>
@@ -62,36 +66,65 @@ const Copyright: React.FunctionComponent = () => {
             <Notice>
                 <TkText>© 2007 Marco Bresciani</TkText>
                 <SmallerText>
-                    Tainai and Murakami areas with Arakawa river by
+                    "Tainai and Murakami areas with Arakawa river" by
                     Marco Bresciani is Licensed under a Creative Commons
                     Attribution-ShareAlike 4.0 International License.
                 </SmallerText>
-                <Button
+                <IconButton
                     icon="document-text-outline"
-                    mode="outlined"
                     onPress={() => {
                         Linking.openURL(
                             'http://creativecommons.org/licenses/by-sa/4.0/',
                         );
                     }}
-                >
-                    {i18next.t('copyright.license')}
-                </Button>
+                />
             </Notice>
             <Notice>
-                <SmallerText>FreeSans, GNU FreeFont</SmallerText>
                 <TkText>© 2012 Primož Peterlin, Steve White</TkText>
-                <Button
-                    icon="document-text-outline"
-                    mode="outlined"
-                    onPress={() => {
-                        Linking.openURL(
-                            'https://www.gnu.org/software/freefont/license.html',
-                        );
-                    }}
-                >
-                    {i18next.t('copyright.license')}
-                </Button>
+                <SmallerText>GNU FreeFont</SmallerText>
+                <ButtonsStrip>
+                    <IconButton
+                        icon="document-text-outline"
+                        onPress={() => {
+                            Linking.openURL(
+                                'https://www.gnu.org/software/freefont/license.html',
+                            );
+                        }}
+                    />
+                    <IconButton
+                        icon="home-outline"
+                        onPress={() => {
+                            Linking.openURL(
+                                'https://www.gnu.org/software/freefont/',
+                            );
+                        }}
+                    />
+                </ButtonsStrip>
+            </Notice>
+            <Notice>
+                <TkText>© 2009 rama_miguel</TkText>
+                <SmallerText>
+                    "Working Together Teamwork Puzzle Concept" by
+                    rama_miguel is marked with CC BY-SA 2.0.
+                </SmallerText>
+                <ButtonsStrip>
+                    <IconButton
+                        icon="document-text-outline"
+                        onPress={() => {
+                            Linking.openURL(
+                                'https://www.flickr.com/photos/33952855@N06/3485095631',
+                            );
+                        }}
+                    />
+                    <IconButton
+                        icon="home-outline"
+                        onPress={() => {
+                            Linking.openURL(
+                                'https://www.flickr.com/photos/33952855@N06/3485095631',
+                            );
+                        }}
+                    />
+                </ButtonsStrip>
             </Notice>
         </ScrollView>
     );

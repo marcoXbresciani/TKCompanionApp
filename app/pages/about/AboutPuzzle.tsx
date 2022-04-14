@@ -22,20 +22,26 @@
  */
 import * as React from 'react';
 import {PicturePuzzle, PuzzlePieces} from 'react-native-picture-puzzle';
-import {ActivityIndicator} from 'react-native-paper';
-import {Dimensions} from 'react-native';
+import {ActivityIndicator, Card, IconButton} from 'react-native-paper';
+import {Dimensions, Image} from 'react-native';
+import {TkText} from '../../globals/Texts';
+import i18next from 'i18next';
+import {TkCard, TkCardContent, TkCardTitle} from '../../globals/Pieces';
 
 const AboutPuzzle: React.FunctionComponent = () => {
-    const [hidden, setHidden] = React.useState<number | null>(0); // piece to obscure
+    const [hidden, setHidden] = React.useState<number | null>(0);
     const [pieces, setPieces] = React.useState<PuzzlePieces>([
         0, 1, 2, 3, 4, 5, 6, 7, 8,
     ]);
-
+    const [steps, setSteps] = React.useState<number>(0);
+    const puzzleUri = Image.resolveAssetSource(
+        require('../../assets/images/dh000004.jpg'),
+    ).uri;
     const source = React.useMemo(
         () => ({
-            uri: 'file://WTTPC.jpg',
+            uri: puzzleUri,
         }),
-        [],
+        [puzzleUri],
     );
     const renderLoading = React.useCallback(
         (): JSX.Element => <ActivityIndicator />,
@@ -45,18 +51,39 @@ const AboutPuzzle: React.FunctionComponent = () => {
         (nextPieces: PuzzlePieces, nextHidden: number | null): void => {
             setPieces(nextPieces);
             setHidden(nextHidden);
+            setSteps(steps + 1);
         },
-        [setPieces, setHidden],
+        [steps],
     );
+
     return (
-        <PicturePuzzle
-            size={Dimensions.get('window').width}
-            pieces={pieces}
-            hidden={hidden}
-            onChange={onChange}
-            source={source}
-            renderLoading={renderLoading}
-        />
+        <>
+            <TkCard>
+                <TkCardTitle
+                    title="Puoi migliorare?"
+                    subtitle={i18next.t('puzzle.button', {
+                        steps: steps,
+                    })}
+                />
+                <Card.Actions>
+                    <IconButton
+                        icon="refresh-outline"
+                        onPress={() => setSteps(0)}
+                    />
+                </Card.Actions>
+                <TkCardContent>
+                    <PicturePuzzle
+                        size={Dimensions.get('window').width}
+                        pieces={pieces}
+                        hidden={hidden}
+                        onChange={onChange}
+                        source={source}
+                        renderLoading={renderLoading}
+                    />
+                    <TkText>{i18next.t('puzzle.instructions')}</TkText>
+                </TkCardContent>
+            </TkCard>
+        </>
     );
 };
 

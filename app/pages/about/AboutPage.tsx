@@ -70,6 +70,9 @@ const AboutPage: React.FunctionComponent = () => {
         backgroundColor: useTheme().colors.background,
         padding: 20,
     };
+    const puzzleStyle = {
+        backgroundColor: useTheme().colors.background,
+    };
 
     return (
         <PageContainer>
@@ -83,7 +86,7 @@ const AboutPage: React.FunctionComponent = () => {
                 <Modal
                     visible={visiblePuzzle}
                     onDismiss={hidePuzzle}
-                    contentContainerStyle={containerStyle}
+                    contentContainerStyle={puzzleStyle}
                 >
                     <AboutPuzzle />
                 </Modal>

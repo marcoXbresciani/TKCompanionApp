@@ -25,12 +25,17 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
-* Introduce Download icon in READMEs legend.
-* introduce simplest puzzle game.
 ### Changed
 ### Removed
 ### Fixed
 ### Security
+
+## [1.1.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/1.1.0) - 2022-04-14
+### Added
+* Introduce Download icon in READMEs legend.
+* Introduce simplest puzzle game.
+### Changed
+* Copyright page links.
 
 ## [1.0.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/1.0.1) - 2022-04-11
 ### Changed

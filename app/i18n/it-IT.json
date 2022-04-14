@@ -46,7 +46,8 @@
             "key5": "salva informazioni sul tuo dispositivo",
             "key6": "ti spia",
             "title": "Quest'applicazione <bold>NON</bold>"
-        }
+        },
+        "puzzle": "Puzzle"
     },
     "app": {
         "short": "Un piccolo e semplice aiuto per i praticanti di Toyota Kata",

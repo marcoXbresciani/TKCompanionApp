@@ -46,7 +46,8 @@
             "key5": "save things on your device",
             "key6": "spy on you",
             "title": "This application <bold>does NOT</bold>"
-        }
+        },
+        "puzzle": "Puzzle"
     },
     "app": {
         "short": "A short and small helper for Toyota Kata practitioners",

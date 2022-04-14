@@ -40,6 +40,7 @@ import {Linking} from 'react-native';
 import i18next from 'i18next';
 import styled from 'styled-components';
 import Settings from './Settings';
+import AboutPuzzle from './AboutPuzzle';
 
 const MightItem = styled(List.Item)``;
 const NotItem = styled(List.Item)``;
@@ -56,13 +57,13 @@ const AboutPage: React.FunctionComponent = () => {
 
     const [visibleCopyright, setVisibleCopyright] =
         React.useState(false);
-    const [visibleLegend, setVisibleLegend] = React.useState(false);
+    const [visiblePuzzle, setVisiblePuzzle] = React.useState(false);
     const [visibleSettings, setVisibleSettings] = React.useState(false);
 
     const showCopyright = () => setVisibleCopyright(true);
     const hideCopyright = () => setVisibleCopyright(false);
-    const showLegend = () => setVisibleLegend(true);
-    const hideLegend = () => setVisibleLegend(false);
+    const showPuzzle = () => setVisiblePuzzle(true);
+    const hidePuzzle = () => setVisiblePuzzle(false);
     const showSettings = () => setVisibleSettings(true);
     const hideSettings = () => setVisibleSettings(false);
     const containerStyle = {
@@ -80,11 +81,11 @@ const AboutPage: React.FunctionComponent = () => {
                     <Copyright />
                 </Dialog>
                 <Modal
-                    visible={visibleLegend}
-                    onDismiss={hideLegend}
+                    visible={visiblePuzzle}
+                    onDismiss={hidePuzzle}
                     contentContainerStyle={containerStyle}
                 >
-                    <Version />
+                    <AboutPuzzle />
                 </Modal>
                 <Modal
                     visible={visibleSettings}
@@ -278,14 +279,6 @@ const AboutPage: React.FunctionComponent = () => {
                 </Card.Content>
                 <Card.Actions>
                     <Button
-                        disabled={true}
-                        icon="map-outline"
-                        mode="outlined"
-                        onPress={showLegend}
-                    >
-                        {i18next.t('about.legend')}
-                    </Button>
-                    <Button
                         icon="document-text-outline"
                         mode="outlined"
                         onPress={showCopyright}
@@ -297,6 +290,10 @@ const AboutPage: React.FunctionComponent = () => {
                     <IconButton
                         icon="settings-outline"
                         onPress={showSettings}
+                    />
+                    <IconButton
+                        icon="gift-outline"
+                        onPress={showPuzzle}
                     />
                 </Card.Actions>
             </Card>

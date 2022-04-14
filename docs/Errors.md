@@ -15,3 +15,12 @@ This is the list of known errors or issues.
 They might be in the
 [GitHub Issues page](https://github.com/marcoXbresciani/TKCompanionApp/issues)
 or not.
+
+6. [Switching language through settings does not switch bottom navigation bar](https://github.com/marcoXbresciani/TKCompanionApp/issues/6)
+
+   When switching languages through the Info -> Language area, the
+   bottom navigation bar remains in the original language.
+   See 5Q Card screenshot in README.md.
+
+   Found in v0.6.0.
+   Since v0.5.0.

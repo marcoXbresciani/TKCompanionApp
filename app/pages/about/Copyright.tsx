@@ -101,31 +101,6 @@ const Copyright: React.FunctionComponent = () => {
                     />
                 </ButtonsStrip>
             </Notice>
-            <Notice>
-                <TkText>© 2009 rama_miguel</TkText>
-                <SmallerText>
-                    "Working Together Teamwork Puzzle Concept" by
-                    rama_miguel is marked with CC BY-SA 2.0.
-                </SmallerText>
-                <ButtonsStrip>
-                    <IconButton
-                        icon="document-text-outline"
-                        onPress={() => {
-                            Linking.openURL(
-                                'https://www.flickr.com/photos/33952855@N06/3485095631',
-                            );
-                        }}
-                    />
-                    <IconButton
-                        icon="home-outline"
-                        onPress={() => {
-                            Linking.openURL(
-                                'https://www.flickr.com/photos/33952855@N06/3485095631',
-                            );
-                        }}
-                    />
-                </ButtonsStrip>
-            </Notice>
         </ScrollView>
     );
 };

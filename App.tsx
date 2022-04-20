@@ -29,7 +29,6 @@ import {
     Provider as PaperProvider,
 } from 'react-native-paper';
 import HomePage from './app/pages/home/HomePage';
-import AboutPage from './app/pages/about/AboutPage';
 import FiveQPage from './app/pages/5qcard/FiveQPage';
 import {initReactI18next} from 'react-i18next';
 import {tkDarkTheme, tkLightTheme} from './app/globals/Config';
@@ -92,11 +91,6 @@ const AppNavigator: React.FunctionComponent = () => {
             title: i18next.t('nav.download'),
             icon: 'download-outline',
         },
-        {
-            key: 'about',
-            title: i18next.t('nav.about'),
-            icon: 'information-circle-outline',
-        },
     ]);
     const renderScene = BottomNavigation.SceneMap({
         home: HomePage,
@@ -104,7 +98,6 @@ const AppNavigator: React.FunctionComponent = () => {
         steps4: FourStepsPage,
         docs: DocsPage,
         download: DownloadPage,
-        about: AboutPage,
     });
 
     return (

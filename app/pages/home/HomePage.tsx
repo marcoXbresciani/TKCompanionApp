@@ -23,46 +23,49 @@
 import * as React from 'react';
 import Version from '../../globals/Version';
 import PageContainer from '../../globals/PageContainer';
-import {
-    Appbar,
-    Card,
-    Dialog,
-    Modal,
-    Portal,
-    useTheme,
-} from 'react-native-paper';
+import {Appbar, Card, Dialog, Portal} from 'react-native-paper';
 import {TkCard, TkCardContent} from '../../globals/Pieces';
 import Settings from './Settings';
-import Copyright from '../about/Copyright';
+import Copyright from './Copyright';
+import About from './About';
 
 const HomePage: React.FunctionComponent = () => {
+    const [visibleAbout, setVisibleAbout] = React.useState(false);
+    const showAbout = () => setVisibleAbout(true);
+    const hideAbout = () => setVisibleAbout(false);
+
     const [visibleCopyright, setVisibleCopyright] =
         React.useState(false);
     const showCopyright = () => setVisibleCopyright(true);
     const hideCopyright = () => setVisibleCopyright(false);
+
     const [visibleSettings, setVisibleSettings] = React.useState(false);
     const showSettings = () => setVisibleSettings(true);
     const hideSettings = () => setVisibleSettings(false);
-    const containerStyle = {
-        backgroundColor: useTheme().colors.background,
-        padding: 20,
-    };
 
     return (
         <PageContainer>
             <Portal>
-                <Modal
-                    visible={visibleSettings}
-                    onDismiss={hideSettings}
-                    contentContainerStyle={containerStyle}
-                >
-                    <Settings />
-                </Modal>
+                <Dialog visible={visibleAbout} onDismiss={hideAbout}>
+                    <Dialog.Content>
+                        <About />
+                    </Dialog.Content>
+                </Dialog>
                 <Dialog
                     visible={visibleCopyright}
                     onDismiss={hideCopyright}
                 >
-                    <Copyright />
+                    <Dialog.ScrollArea>
+                        <Copyright />
+                    </Dialog.ScrollArea>
+                </Dialog>
+                <Dialog
+                    visible={visibleSettings}
+                    onDismiss={hideSettings}
+                >
+                    <Dialog.Content>
+                        <Settings />
+                    </Dialog.Content>
                 </Dialog>
             </Portal>
 
@@ -74,6 +77,10 @@ const HomePage: React.FunctionComponent = () => {
                 <Appbar.Action
                     icon="document-text-outline"
                     onPress={showCopyright}
+                />
+                <Appbar.Action
+                    icon="information-circle-outline"
+                    onPress={showAbout}
                 />
             </Appbar>
 

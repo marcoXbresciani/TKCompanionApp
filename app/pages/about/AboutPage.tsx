@@ -22,16 +22,7 @@
  */
 import * as React from 'react';
 import PageContainer from '../../globals/PageContainer';
-import {
-    Button,
-    Card,
-    Dialog,
-    IconButton,
-    List,
-    Modal,
-    Portal,
-    useTheme,
-} from 'react-native-paper';
+import {Button, Card, Dialog, List, Portal} from 'react-native-paper';
 import Copyright from './Copyright';
 import Version from '../../globals/Version';
 import {Trans, useTranslation} from 'react-i18next';
@@ -39,7 +30,6 @@ import {BoldText} from '../../globals/Texts';
 import {Linking} from 'react-native';
 import i18next from 'i18next';
 import styled from 'styled-components';
-import Settings from './Settings';
 
 const MightItem = styled(List.Item)``;
 const NotItem = styled(List.Item)``;
@@ -53,19 +43,10 @@ NotItem.defaultProps = {
 
 const AboutPage: React.FunctionComponent = () => {
     const {t} = useTranslation();
-
     const [visibleCopyright, setVisibleCopyright] =
         React.useState(false);
-    const [visibleSettings, setVisibleSettings] = React.useState(false);
-
     const showCopyright = () => setVisibleCopyright(true);
     const hideCopyright = () => setVisibleCopyright(false);
-    const showSettings = () => setVisibleSettings(true);
-    const hideSettings = () => setVisibleSettings(false);
-    const containerStyle = {
-        backgroundColor: useTheme().colors.background,
-        padding: 20,
-    };
 
     return (
         <PageContainer>
@@ -76,13 +57,6 @@ const AboutPage: React.FunctionComponent = () => {
                 >
                     <Copyright />
                 </Dialog>
-                <Modal
-                    visible={visibleSettings}
-                    onDismiss={hideSettings}
-                    contentContainerStyle={containerStyle}
-                >
-                    <Settings />
-                </Modal>
             </Portal>
             <Card>
                 <Card.Content>
@@ -274,12 +248,6 @@ const AboutPage: React.FunctionComponent = () => {
                     >
                         {i18next.t('about.copyright')}
                     </Button>
-                </Card.Actions>
-                <Card.Actions>
-                    <IconButton
-                        icon="settings-outline"
-                        onPress={showSettings}
-                    />
                 </Card.Actions>
             </Card>
         </PageContainer>

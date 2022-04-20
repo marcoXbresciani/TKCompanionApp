@@ -28,7 +28,7 @@ import {
     BottomNavigation,
     Provider as PaperProvider,
 } from 'react-native-paper';
-import HomePage from './app/pages/HomePage';
+import HomePage from './app/pages/home/HomePage';
 import AboutPage from './app/pages/about/AboutPage';
 import FiveQPage from './app/pages/5qcard/FiveQPage';
 import {initReactI18next} from 'react-i18next';

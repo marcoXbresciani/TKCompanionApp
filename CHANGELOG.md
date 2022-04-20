@@ -26,7 +26,9 @@ This file is offered as-is, without any warranty.
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
 ### Changed
+* Move settings to home page.
 ### Removed
+* Puzzle game.
 ### Fixed
 ### Security
 

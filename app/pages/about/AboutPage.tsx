@@ -22,8 +22,7 @@
  */
 import * as React from 'react';
 import PageContainer from '../../globals/PageContainer';
-import {Button, Card, Dialog, List, Portal} from 'react-native-paper';
-import Copyright from './Copyright';
+import {Card, List} from 'react-native-paper';
 import Version from '../../globals/Version';
 import {Trans, useTranslation} from 'react-i18next';
 import {BoldText} from '../../globals/Texts';
@@ -43,21 +42,9 @@ NotItem.defaultProps = {
 
 const AboutPage: React.FunctionComponent = () => {
     const {t} = useTranslation();
-    const [visibleCopyright, setVisibleCopyright] =
-        React.useState(false);
-    const showCopyright = () => setVisibleCopyright(true);
-    const hideCopyright = () => setVisibleCopyright(false);
 
     return (
         <PageContainer>
-            <Portal>
-                <Dialog
-                    visible={visibleCopyright}
-                    onDismiss={hideCopyright}
-                >
-                    <Copyright />
-                </Dialog>
-            </Portal>
             <Card>
                 <Card.Content>
                     <Version />
@@ -240,15 +227,6 @@ const AboutPage: React.FunctionComponent = () => {
                         </List.Accordion>
                     </List.AccordionGroup>
                 </Card.Content>
-                <Card.Actions>
-                    <Button
-                        icon="document-text-outline"
-                        mode="outlined"
-                        onPress={showCopyright}
-                    >
-                        {i18next.t('about.copyright')}
-                    </Button>
-                </Card.Actions>
             </Card>
         </PageContainer>
     );

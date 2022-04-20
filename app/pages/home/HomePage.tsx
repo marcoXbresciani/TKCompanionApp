@@ -26,14 +26,20 @@ import PageContainer from '../../globals/PageContainer';
 import {
     Appbar,
     Card,
+    Dialog,
     Modal,
     Portal,
     useTheme,
 } from 'react-native-paper';
 import {TkCard, TkCardContent} from '../../globals/Pieces';
 import Settings from './Settings';
+import Copyright from '../about/Copyright';
 
 const HomePage: React.FunctionComponent = () => {
+    const [visibleCopyright, setVisibleCopyright] =
+        React.useState(false);
+    const showCopyright = () => setVisibleCopyright(true);
+    const hideCopyright = () => setVisibleCopyright(false);
     const [visibleSettings, setVisibleSettings] = React.useState(false);
     const showSettings = () => setVisibleSettings(true);
     const hideSettings = () => setVisibleSettings(false);
@@ -52,12 +58,22 @@ const HomePage: React.FunctionComponent = () => {
                 >
                     <Settings />
                 </Modal>
+                <Dialog
+                    visible={visibleCopyright}
+                    onDismiss={hideCopyright}
+                >
+                    <Copyright />
+                </Dialog>
             </Portal>
 
             <Appbar>
                 <Appbar.Action
                     icon="settings-outline"
                     onPress={showSettings}
+                />
+                <Appbar.Action
+                    icon="document-text-outline"
+                    onPress={showCopyright}
                 />
             </Appbar>
 

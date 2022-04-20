@@ -98,7 +98,6 @@ const AppNavigator: React.FunctionComponent = () => {
             icon: 'information-circle-outline',
         },
     ]);
-
     const renderScene = BottomNavigation.SceneMap({
         home: HomePage,
         card5q: FiveQPage,

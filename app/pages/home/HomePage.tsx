@@ -24,8 +24,8 @@ import * as React from 'react';
 import Version from '../../globals/Version';
 import PageContainer from '../../globals/PageContainer';
 import {
+    Appbar,
     Card,
-    IconButton,
     Modal,
     Portal,
     useTheme,
@@ -54,6 +54,13 @@ const HomePage: React.FunctionComponent = () => {
                 </Modal>
             </Portal>
 
+            <Appbar>
+                <Appbar.Action
+                    icon="settings-outline"
+                    onPress={showSettings}
+                />
+            </Appbar>
+
             <TkCard>
                 <Card.Cover
                     source={require('../../assets/images/dh000004.jpg')}
@@ -62,10 +69,6 @@ const HomePage: React.FunctionComponent = () => {
                     <Version />
                 </TkCardContent>
             </TkCard>
-            <IconButton
-                icon="settings-outline"
-                onPress={showSettings}
-            />
         </PageContainer>
     );
 };

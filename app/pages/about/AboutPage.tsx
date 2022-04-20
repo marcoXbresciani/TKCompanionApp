@@ -40,7 +40,6 @@ import {Linking} from 'react-native';
 import i18next from 'i18next';
 import styled from 'styled-components';
 import Settings from './Settings';
-import AboutPuzzle from './AboutPuzzle';
 
 const MightItem = styled(List.Item)``;
 const NotItem = styled(List.Item)``;
@@ -57,21 +56,15 @@ const AboutPage: React.FunctionComponent = () => {
 
     const [visibleCopyright, setVisibleCopyright] =
         React.useState(false);
-    const [visiblePuzzle, setVisiblePuzzle] = React.useState(false);
     const [visibleSettings, setVisibleSettings] = React.useState(false);
 
     const showCopyright = () => setVisibleCopyright(true);
     const hideCopyright = () => setVisibleCopyright(false);
-    const showPuzzle = () => setVisiblePuzzle(true);
-    const hidePuzzle = () => setVisiblePuzzle(false);
     const showSettings = () => setVisibleSettings(true);
     const hideSettings = () => setVisibleSettings(false);
     const containerStyle = {
         backgroundColor: useTheme().colors.background,
         padding: 20,
-    };
-    const puzzleStyle = {
-        backgroundColor: useTheme().colors.background,
     };
 
     return (
@@ -83,13 +76,6 @@ const AboutPage: React.FunctionComponent = () => {
                 >
                     <Copyright />
                 </Dialog>
-                <Modal
-                    visible={visiblePuzzle}
-                    onDismiss={hidePuzzle}
-                    contentContainerStyle={puzzleStyle}
-                >
-                    <AboutPuzzle />
-                </Modal>
                 <Modal
                     visible={visibleSettings}
                     onDismiss={hideSettings}
@@ -293,10 +279,6 @@ const AboutPage: React.FunctionComponent = () => {
                     <IconButton
                         icon="settings-outline"
                         onPress={showSettings}
-                    />
-                    <IconButton
-                        icon="gift-outline"
-                        onPress={showPuzzle}
                     />
                 </Card.Actions>
             </Card>

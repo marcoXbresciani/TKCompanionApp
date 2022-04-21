@@ -25,7 +25,7 @@ import {List} from 'react-native-paper';
 import Version from '../../globals/Version';
 import {Trans, useTranslation} from 'react-i18next';
 import {BoldText} from '../../globals/Texts';
-import {Linking, ScrollView} from 'react-native';
+import {Linking} from 'react-native';
 import i18next from 'i18next';
 import styled from 'styled-components';
 
@@ -43,7 +43,7 @@ const About: React.FunctionComponent = () => {
     const {t} = useTranslation();
 
     return (
-        <ScrollView>
+        <>
             <Version />
             <List.AccordionGroup>
                 <List.Accordion
@@ -221,7 +221,7 @@ const About: React.FunctionComponent = () => {
                     />
                 </List.Accordion>
             </List.AccordionGroup>
-        </ScrollView>
+        </>
     );
 };
 

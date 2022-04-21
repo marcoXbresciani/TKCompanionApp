@@ -23,7 +23,7 @@
 import * as React from 'react';
 import {List, Switch} from 'react-native-paper';
 import i18next from 'i18next';
-import {ScrollView, View} from 'react-native';
+import {View} from 'react-native';
 import {PreferencesContext} from '../../../App';
 import {TkText} from '../../globals/Texts';
 import styled from 'styled-components';
@@ -37,7 +37,7 @@ const Settings: React.FunctionComponent = () => {
         React.useContext(PreferencesContext);
 
     return (
-        <ScrollView>
+        <>
             <RowView>
                 <TkText>{i18next.t('settings.theme')}</TkText>
                 <Switch
@@ -75,7 +75,7 @@ const Settings: React.FunctionComponent = () => {
                     <List.Item disabled={true} title="日本語" />
                 </List.Accordion>
             </List.AccordionGroup>
-        </ScrollView>
+        </>
     );
 };
 

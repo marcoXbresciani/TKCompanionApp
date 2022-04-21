@@ -76,10 +76,14 @@
     "nav": {
         "4steps": "4 Steps",
         "5qcard": "5Q Card",
-        "about": "About",
         "docs": "Documents",
         "download": "Downloads",
-        "home": "Home"
+        "home": "Home",
+        "menu": {
+            "about": "About",
+            "copyright": "Copyright",
+            "settings": "Settings"
+        }
     },
     "practice": {
         "1": "Improvement Kata / Coaching Kata practitioners are creating a dynamic that helps humans everywhere practice more scientific ways of thinking and acting, toward the best we can imagine, and beyond.",

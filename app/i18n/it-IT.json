@@ -76,10 +76,14 @@
     "nav": {
         "4steps": "4 Passi",
         "5qcard": "5 Domande",
-        "about": "Info",
         "docs": "Documenti",
         "download": "Download",
-        "home": "Inizio"
+        "home": "Inizio",
+        "menu": {
+            "about": "Informazioni",
+            "copyright": "Copyright",
+            "settings": "Impostazioni"
+        }
     },
     "practice": {
         "1": "I praticanti del Kata di Miglioramento e Coaching stanno creando una dinamica che aiuta gli esseri umani, ovunque, a praticare modi più scientifici di pensare e agire, verso il meglio che possiamo immaginare e oltre.",

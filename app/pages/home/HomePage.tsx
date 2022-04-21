@@ -22,25 +22,47 @@
  */
 import * as React from 'react';
 import Version from '../../globals/Version';
-import {Appbar, Card, Dialog, Portal} from 'react-native-paper';
+import {
+    Appbar,
+    Card,
+    Dialog,
+    Divider,
+    Menu,
+    Portal,
+    useTheme,
+} from 'react-native-paper';
 import {TkCard, TkCardContent} from '../../globals/Pieces';
 import Settings from './Settings';
 import Copyright from './Copyright';
 import About from './About';
+import i18next from 'i18next';
 
 const HomePage: React.FunctionComponent = () => {
     const [visibleAbout, setVisibleAbout] = React.useState(false);
-    const showAbout = () => setVisibleAbout(true);
+    const showAbout = () => {
+        closeMenu();
+        setVisibleAbout(true);
+    };
     const hideAbout = () => setVisibleAbout(false);
 
     const [visibleCopyright, setVisibleCopyright] =
         React.useState(false);
-    const showCopyright = () => setVisibleCopyright(true);
+    const showCopyright = () => {
+        closeMenu();
+        setVisibleCopyright(true);
+    };
     const hideCopyright = () => setVisibleCopyright(false);
 
     const [visibleSettings, setVisibleSettings] = React.useState(false);
-    const showSettings = () => setVisibleSettings(true);
+    const showSettings = () => {
+        closeMenu();
+        setVisibleSettings(true);
+    };
     const hideSettings = () => setVisibleSettings(false);
+
+    const [visible, setVisible] = React.useState(false);
+    const openMenu = () => setVisible(true);
+    const closeMenu = () => setVisible(false);
 
     return (
         <>
@@ -62,25 +84,41 @@ const HomePage: React.FunctionComponent = () => {
                     visible={visibleSettings}
                     onDismiss={hideSettings}
                 >
-                    <Dialog.Content>
+                    <Dialog.ScrollArea>
                         <Settings />
-                    </Dialog.Content>
+                    </Dialog.ScrollArea>
                 </Dialog>
             </Portal>
 
             <Appbar>
-                <Appbar.Action
-                    icon="settings-outline"
-                    onPress={showSettings}
-                />
-                <Appbar.Action
-                    icon="document-text-outline"
-                    onPress={showCopyright}
-                />
-                <Appbar.Action
-                    icon="information-circle-outline"
-                    onPress={showAbout}
-                />
+                <Menu
+                    visible={visible}
+                    onDismiss={closeMenu}
+                    anchor={
+                        <Appbar.Action
+                            icon="menu-outline"
+                            color={useTheme().colors.accent}
+                            onPress={openMenu}
+                        />
+                    }
+                >
+                    <Menu.Item
+                        onPress={showSettings}
+                        icon="settings-outline"
+                        title={i18next.t('nav.menu.settings')}
+                    />
+                    <Menu.Item
+                        onPress={showCopyright}
+                        icon="document-text-outline"
+                        title={i18next.t('nav.menu.copyright')}
+                    />
+                    <Divider />
+                    <Menu.Item
+                        onPress={showAbout}
+                        icon="information-circle-outline"
+                        title={i18next.t('nav.menu.about')}
+                    />
+                </Menu>
             </Appbar>
 
             <TkCard>

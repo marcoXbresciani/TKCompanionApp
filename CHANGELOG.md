@@ -25,6 +25,7 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
+* Introduce menu in "app bar" for about, copyright and settings.
 ### Changed
 * Move about, copyright and settings to home "app bar".
 ### Removed

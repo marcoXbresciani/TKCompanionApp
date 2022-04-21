@@ -97,7 +97,7 @@ const HomePage: React.FunctionComponent = () => {
                     anchor={
                         <Appbar.Action
                             icon="menu-outline"
-                            color={useTheme().colors.accent}
+                            color={useTheme().colors.background}
                             onPress={openMenu}
                         />
                     }

@@ -27,7 +27,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import styled from 'styled-components';
 
 const NicerAreaView = styled(SafeAreaView)`
-    //margin: ${StatusBar.currentHeight + 'px'} 0 0;
+    margin: ${StatusBar.currentHeight + 'px'} 2.5% 0;
     flex: 1;
 `;
 

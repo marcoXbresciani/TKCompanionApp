@@ -22,33 +22,20 @@
  */
 import * as React from 'react';
 import i18next from 'i18next';
-import {Card, IconButton} from 'react-native-paper';
-import {TkCard, TkCardContent, TkCardTitle} from '../../globals/Pieces';
+import {Card} from 'react-native-paper';
 import {TkParagraph} from '../../globals/Texts';
 
-type Props = {
-    onPress: () => void;
-};
-
-const Tkc: React.FC<Props> = ({onPress}: Props) => {
-    return (
-        <TkCard>
-            <TkCardTitle title={i18next.t('tkc.title')} />
-            <TkCardContent>
-                <TkParagraph>{i18next.t('tkc.1')}</TkParagraph>
-                <TkParagraph>{i18next.t('tkc.2')}</TkParagraph>
-                <TkParagraph>{i18next.t('tkc.3')}</TkParagraph>
-                <TkParagraph>{i18next.t('tkc.4')}</TkParagraph>
-                <TkParagraph>{i18next.t('tkc.5')}</TkParagraph>
-            </TkCardContent>
-            <Card.Actions>
-                <IconButton
-                    icon="return-down-back-outline"
-                    onPress={onPress}
-                />
-            </Card.Actions>
-        </TkCard>
-    );
-};
+const Tkc: React.FunctionComponent = () => (
+    <Card>
+        <Card.Title title={i18next.t('tkc.title')} />
+        <Card.Content>
+            <TkParagraph>{i18next.t('tkc.1')}</TkParagraph>
+            <TkParagraph>{i18next.t('tkc.2')}</TkParagraph>
+            <TkParagraph>{i18next.t('tkc.3')}</TkParagraph>
+            <TkParagraph>{i18next.t('tkc.4')}</TkParagraph>
+            <TkParagraph>{i18next.t('tkc.5')}</TkParagraph>
+        </Card.Content>
+    </Card>
+);
 
 export default Tkc;

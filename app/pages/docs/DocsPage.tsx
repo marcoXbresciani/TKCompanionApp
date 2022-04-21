@@ -40,34 +40,24 @@ const DocsPage: React.FunctionComponent = () => {
     const [status, setStatus] = useState<Pages>(Pages.DefaultPage);
 
     return (
-        <PageContainer>
+        <>
             {status === Pages.DefaultPage && (
                 <DocsSelector onPress={setStatus} />
             )}
-            {status === Pages.TkcPage && (
-                <Tkc
-                    onPress={() => {
-                        setStatus(Pages.DefaultPage);
-                    }}
-                />
+            {status !== Pages.DefaultPage && (
+                <PageContainer>
+                    <DocsContainer
+                        onPress={() => {
+                            setStatus(Pages.DefaultPage);
+                        }}
+                    >
+                        {status === Pages.TkcPage && <Tkc />}
+                        {status === Pages.PracticePage && <Practice />}
+                        {status === Pages.KtsPage && <Kts />}
+                    </DocsContainer>
+                </PageContainer>
             )}
-            {status === Pages.PracticePage && (
-                <Practice
-                    onPress={() => {
-                        setStatus(Pages.DefaultPage);
-                    }}
-                />
-            )}
-            {status === Pages.KtsPage && (
-                <DocsContainer
-                    onPress={() => {
-                        setStatus(Pages.DefaultPage);
-                    }}
-                >
-                    <Kts />
-                </DocsContainer>
-            )}
-        </PageContainer>
+        </>
     );
 };
 

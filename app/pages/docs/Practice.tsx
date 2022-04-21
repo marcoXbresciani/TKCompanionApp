@@ -20,67 +20,36 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {SectionList} from 'react-native';
 import * as React from 'react';
 import i18next from 'i18next';
-import {Card, IconButton} from 'react-native-paper';
-import {TkCard, TkCardContent, TkCardTitle} from '../../globals/Pieces';
 import {TkParagraph} from '../../globals/Texts';
+import {Card} from 'react-native-paper';
 
-type Props = {
-    onPress: () => void;
-};
-
-const Practice: React.FC<Props> = ({onPress}: Props) => {
-    return (
-        <TkCard>
-            <SectionList
-                renderSectionHeader={() => (
-                    <TkCardTitle
-                        title={i18next.t('practice.title')}
-                        titleNumberOfLines={2}
-                    />
-                )}
-                renderItem={({item}) => (
-                    <TkCardContent>
-                        <TkParagraph>{item.key}</TkParagraph>
-                    </TkCardContent>
-                )}
-                renderSectionFooter={() => (
-                    <Card.Actions>
-                        <IconButton
-                            icon="return-down-back-outline"
-                            onPress={() => onPress()}
-                        />
-                    </Card.Actions>
-                )}
-                sections={[
-                    {
-                        data: [
-                            {
-                                key: i18next.t('practice.1'),
-                            },
-                            {
-                                key: i18next.t('practice.2'),
-                            },
-                            {
-                                key: i18next.t('practice.3'),
-                            },
-                            {
-                                key: i18next.t('practice.4'),
-                            },
-                            {
-                                key: i18next.t('practice.5'),
-                            },
-                            {
-                                key: i18next.t('practice.6'),
-                            },
-                        ],
-                    },
-                ]}
-            />
-        </TkCard>
-    );
-};
+const Practice: React.FunctionComponent = () => (
+    <Card>
+        <Card.Title
+            title={i18next.t('practice.title')}
+            titleNumberOfLines={2}
+        />
+        <Card.Content>
+            <TkParagraph>{i18next.t('practice.1')}</TkParagraph>
+        </Card.Content>
+        <Card.Content>
+            <TkParagraph>{i18next.t('practice.2')}</TkParagraph>
+        </Card.Content>
+        <Card.Content>
+            <TkParagraph>{i18next.t('practice.3')}</TkParagraph>
+        </Card.Content>
+        <Card.Content>
+            <TkParagraph>{i18next.t('practice.4')}</TkParagraph>
+        </Card.Content>
+        <Card.Content>
+            <TkParagraph>{i18next.t('practice.5')}</TkParagraph>
+        </Card.Content>
+        <Card.Content>
+            <TkParagraph>{i18next.t('practice.6')}</TkParagraph>
+        </Card.Content>
+    </Card>
+);
 
 export default Practice;

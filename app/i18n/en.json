@@ -25,7 +25,7 @@
             "q4.1": "④ What is your <bold>Next Step</bold>? (Next experiment)",
             "q4.2": "What do you expect?",
             "q5": "⑤ How quickly can we go and see what we <bold>Have Learned</bold> from taking that step?",
-            "separator": "(Click here to Turn Card Over)",
+            "separator": "Turn Card Over",
             "title": "The Five Questions"
         }
     },

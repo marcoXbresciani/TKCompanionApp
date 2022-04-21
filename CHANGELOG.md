@@ -25,14 +25,19 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
+### Changed
+### Removed
+### Fixed
+### Security
+
+## [2.0.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.0.0) - 2022-04-21
+### Added
 * Introduce menu in "app bar" for about, copyright and settings.
 ### Changed
 * Move about, copyright and settings to home "app bar".
 * Move 5Q Card and Four Steps to Docs.
 ### Removed
 * Puzzle game.
-### Fixed
-### Security
 
 ## [1.1.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/1.1.0) - 2022-04-14
 ### Added

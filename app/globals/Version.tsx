@@ -24,7 +24,7 @@ import * as React from 'react';
 import i18next from 'i18next';
 import {Caption, Subheading, Title} from 'react-native-paper';
 import styled from 'styled-components';
-import {APP_NAME, APP_VERSION} from '../utils/Functions';
+import {APP_NAME, APP_VERSION} from '../utils/Constants';
 
 export const CenteredTitle = styled(Title)`
     text-align: center;

@@ -20,8 +20,8 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {Appearance} from 'react-native';
+import DeviceInfo from 'react-native-device-info';
 
-export function isDark(): boolean {
-    return Appearance.getColorScheme() === 'dark';
-}
+export const APP_NAME =
+    DeviceInfo.getApplicationName() || 'TKCompanionApp';
+export const APP_VERSION = DeviceInfo.getVersion() || '';

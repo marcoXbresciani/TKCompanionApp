@@ -23,9 +23,13 @@
 import * as React from 'react';
 import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
-import {BoldText, TkParagraph} from '../../globals/Texts';
+import {BoldText, TkParagraph} from '../../../globals/Texts';
 import {Button, Card} from 'react-native-paper';
-import {TkCard, TkCardContent, TkCardTitle} from '../../globals/Pieces';
+import {
+    TkCard,
+    TkCardContent,
+    TkCardTitle,
+} from '../../../globals/Pieces';
 
 type Props = {
     onPress: () => void;

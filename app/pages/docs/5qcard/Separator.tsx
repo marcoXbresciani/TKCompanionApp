@@ -20,32 +20,41 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
+import {View} from 'react-native';
 import * as React from 'react';
-import {useState} from 'react';
-import Front5Q from './5QFront';
-import Back5Q from './5QBack';
-import PageContainer from '../../globals/PageContainer';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import {SmallerText} from '../../../globals/Texts';
 
-const FiveQPage: React.FunctionComponent = () => {
-    const [front, setFront] = useState<boolean>(true);
+const Container = styled(View)`
+    flex-direction: row;
+    margin: 10px 0;
+`;
 
-    return (
-        <PageContainer>
-            {front ? (
-                <Front5Q
-                    onPress={() => {
-                        setFront(false);
-                    }}
-                />
-            ) : (
-                <Back5Q
-                    onPress={() => {
-                        setFront(true);
-                    }}
-                />
-            )}
-        </PageContainer>
-    );
-};
+const Line = styled(View)`
+    background-color: black;
+    height: 1px;
+    flex: 1;
+    margin: 3px 0 0 0;
+    align-self: center;
+`;
 
-export default FiveQPage;
+const Content = styled(SmallerText)`
+    align-self: center;
+    font-style: italic;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: crimson;
+`;
+
+export const Separator: React.FC = ({children}) => (
+    <Container>
+        <Line />
+        <Content>{children}</Content>
+        <Line />
+    </Container>
+);
+
+export default Separator;
+
+Separator.propTypes = {children: PropTypes.node.isRequired};

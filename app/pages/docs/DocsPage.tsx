@@ -28,12 +28,14 @@ import Kts from './Kts';
 import Tkc from './Tkc';
 import Practice from './Practice';
 import DocsContainer from './DocsContainer';
+import FiveQ from './5qcard/FiveQ';
 
 export enum Pages {
     DefaultPage,
+    FiveQCard,
+    KtsPage,
     PracticePage,
     TkcPage,
-    KtsPage,
 }
 
 const DocsPage: React.FunctionComponent = () => {
@@ -51,6 +53,7 @@ const DocsPage: React.FunctionComponent = () => {
                             setStatus(Pages.DefaultPage);
                         }}
                     >
+                        {status === Pages.FiveQCard && <FiveQ />}
                         {status === Pages.TkcPage && <Tkc />}
                         {status === Pages.PracticePage && <Practice />}
                         {status === Pages.KtsPage && <Kts />}

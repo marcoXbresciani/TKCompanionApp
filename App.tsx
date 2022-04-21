@@ -29,7 +29,6 @@ import {
     Provider as PaperProvider,
 } from 'react-native-paper';
 import HomePage from './app/pages/home/HomePage';
-import FiveQPage from './app/pages/5qcard/FiveQPage';
 import {initReactI18next} from 'react-i18next';
 import {tkDarkTheme, tkLightTheme} from './app/globals/Config';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -72,11 +71,6 @@ const AppNavigator: React.FunctionComponent = () => {
             icon: 'home-outline',
         },
         {
-            key: 'card5q',
-            title: i18next.t('nav.5qcard'),
-            icon: 'chatbubbles-outline',
-        },
-        {
             key: 'steps4',
             title: i18next.t('nav.4steps'),
             icon: 'analytics-outline',
@@ -94,7 +88,6 @@ const AppNavigator: React.FunctionComponent = () => {
     ]);
     const renderScene = BottomNavigation.SceneMap({
         home: HomePage,
-        card5q: FiveQPage,
         steps4: FourStepsPage,
         docs: DocsPage,
         download: DownloadPage,

@@ -54,6 +54,7 @@
         "wip": "Work in progress..."
     },
     "docs": {
+        "5qcard": "5Q Card",
         "kts": "$t(kts.title)",
         "practice": "$t(practice.title)",
         "title": "Read The Docs",
@@ -75,7 +76,6 @@
     },
     "nav": {
         "4steps": "4 Steps",
-        "5qcard": "5Q Card",
         "docs": "Documents",
         "download": "Downloads",
         "home": "Home",

@@ -37,6 +37,14 @@ const DocsSelector: React.FC<Props> = ({onPress}: Props) => {
                     {i18next.t('docs.title')}
                 </List.Subheader>
                 <List.Item
+                    left={() => (
+                        <List.Icon icon="chatbubbles-outline" />
+                    )}
+                    onPress={() => onPress(Pages.FiveQCard)}
+                    title={i18next.t('docs.5qcard')}
+                    titleNumberOfLines={2}
+                />
+                <List.Item
                     left={() => <List.Icon icon="code-outline" />}
                     onPress={() => onPress(Pages.TkcPage)}
                     title={i18next.t('docs.tkc')}

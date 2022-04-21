@@ -32,7 +32,6 @@ import HomePage from './app/pages/home/HomePage';
 import {initReactI18next} from 'react-i18next';
 import {tkDarkTheme, tkLightTheme} from './app/globals/Config';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import FourStepsPage from './app/pages/FourStepsPage';
 import {isDark} from './app/utils/Functions';
 import DownloadPage from './app/pages/DownloadPage';
 import DocsPage from './app/pages/docs/DocsPage';
@@ -71,11 +70,6 @@ const AppNavigator: React.FunctionComponent = () => {
             icon: 'home-outline',
         },
         {
-            key: 'steps4',
-            title: i18next.t('nav.4steps'),
-            icon: 'analytics-outline',
-        },
-        {
             key: 'docs',
             title: i18next.t('nav.docs'),
             icon: 'book-outline',
@@ -88,7 +82,6 @@ const AppNavigator: React.FunctionComponent = () => {
     ]);
     const renderScene = BottomNavigation.SceneMap({
         home: HomePage,
-        steps4: FourStepsPage,
         docs: DocsPage,
         download: DownloadPage,
     });

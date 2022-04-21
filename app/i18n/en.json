@@ -54,6 +54,7 @@
         "wip": "Work in progress..."
     },
     "docs": {
+        "4steps": "4 Steps",
         "5qcard": "5Q Card",
         "kts": "$t(kts.title)",
         "practice": "$t(practice.title)",
@@ -75,7 +76,6 @@
         "title": "Kata that Shit"
     },
     "nav": {
-        "4steps": "4 Steps",
         "docs": "Documents",
         "download": "Downloads",
         "home": "Home",

@@ -54,6 +54,7 @@
         "wip": "Lavori in corso..."
     },
     "docs": {
+        "4steps": "4 Passi",
         "5qcard": "5 Domande",
         "kts": "$t(kts.title)",
         "practice": "$t(practice.title)",
@@ -75,7 +76,6 @@
         "title": "Kàta 'sta roba"
     },
     "nav": {
-        "4steps": "4 Passi",
         "docs": "Documenti",
         "download": "Download",
         "home": "Inizio",

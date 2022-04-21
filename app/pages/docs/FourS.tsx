@@ -21,26 +21,25 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import PageContainer from '../globals/PageContainer';
 import i18next from 'i18next';
-import {TkParagraph} from '../globals/Texts';
-import {TkCard, TkCardContent, TkCardTitle} from '../globals/Pieces';
+import {TkParagraph} from '../../globals/Texts';
+import {Card} from 'react-native-paper';
 
-const FourStepsPage: React.FunctionComponent = () => (
-    <PageContainer>
-        <TkCard>
-            <TkCardTitle
+const FourS: React.FunctionComponent = () => (
+    <>
+        <Card>
+            <Card.Title
                 title={i18next.t('4s.title')}
                 titleNumberOfLines={2}
             />
-            <TkCardContent>
+            <Card.Content>
                 <TkParagraph>{i18next.t('4s.s1')}</TkParagraph>
                 <TkParagraph>{i18next.t('4s.s2')}</TkParagraph>
                 <TkParagraph>{i18next.t('4s.s3')}</TkParagraph>
                 <TkParagraph>{i18next.t('4s.s4')}</TkParagraph>
-            </TkCardContent>
-        </TkCard>
-    </PageContainer>
+            </Card.Content>
+        </Card>
+    </>
 );
 
-export default FourStepsPage;
+export default FourS;

@@ -28,6 +28,7 @@ This file is offered as-is, without any warranty.
 * Introduce menu in "app bar" for about, copyright and settings.
 ### Changed
 * Move about, copyright and settings to home "app bar".
+* Move 5Q Card and Four Steps to Docs.
 ### Removed
 * Puzzle game.
 ### Fixed

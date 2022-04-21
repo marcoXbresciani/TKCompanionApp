@@ -1,0 +1,3 @@
+New menu in "app bar" for about, copyright and settings.
+5Q Card and Four Steps moved to Docs.
+Removed puzzle game.

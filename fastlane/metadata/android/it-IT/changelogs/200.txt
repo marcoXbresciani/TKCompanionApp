@@ -1,0 +1,3 @@
+Nuovo menu nella "app bar" per informazioni, copyright e impostazioni.
+La carta delle 5 domande e i 4 passi spostati nei documenti.
+Tolto il gioco del 15.

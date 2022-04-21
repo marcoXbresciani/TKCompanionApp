@@ -22,12 +22,9 @@
  */
 import * as React from 'react';
 import i18next from 'i18next';
-import DeviceInfo from 'react-native-device-info';
 import {Caption, Subheading, Title} from 'react-native-paper';
 import styled from 'styled-components';
-
-const APP_NAME = DeviceInfo.getApplicationName() || 'TKCompanionApp';
-const APP_VERSION = DeviceInfo.getVersion() || '';
+import {APP_NAME, APP_VERSION} from '../utils/Functions';
 
 export const CenteredTitle = styled(Title)`
     text-align: center;
@@ -38,12 +35,11 @@ export const CenteredSubheading = styled(Subheading)`
 `;
 
 const Version: React.FunctionComponent = () => {
-    const short = i18next.t('app.short');
     return (
         <>
             <CenteredTitle>{APP_NAME}</CenteredTitle>
             <CenteredSubheading>{APP_VERSION}</CenteredSubheading>
-            <Caption>{short}</Caption>
+            <Caption>{i18next.t('app.short')}</Caption>
         </>
     );
 };

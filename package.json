@@ -56,6 +56,7 @@
         "node": "16.14.2",
         "npm": "8.5.0"
     },
+    "engineStrict": true,
     "funding": {
         "type": "liberaPay",
         "url": "https://liberapay.com/marcoXbresciani/donate"

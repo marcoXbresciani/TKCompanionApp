@@ -22,7 +22,6 @@
  */
 import * as React from 'react';
 import Version from '../../globals/Version';
-import PageContainer from '../../globals/PageContainer';
 import {Appbar, Card, Dialog, Portal} from 'react-native-paper';
 import {TkCard, TkCardContent} from '../../globals/Pieces';
 import Settings from './Settings';
@@ -44,7 +43,7 @@ const HomePage: React.FunctionComponent = () => {
     const hideSettings = () => setVisibleSettings(false);
 
     return (
-        <PageContainer>
+        <>
             <Portal>
                 <Dialog visible={visibleAbout} onDismiss={hideAbout}>
                     <Dialog.Content>
@@ -92,7 +91,7 @@ const HomePage: React.FunctionComponent = () => {
                     <Version />
                 </TkCardContent>
             </TkCard>
-        </PageContainer>
+        </>
     );
 };
 

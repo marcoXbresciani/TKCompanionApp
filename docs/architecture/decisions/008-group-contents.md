@@ -1,0 +1,29 @@
+<!--
+© 2021-2022 Marco Bresciani
+
+Copying and distribution of this file, with or without modification, are
+permitted in any medium without royalty provided the copyright notice
+and this notice are preserved.
+This file is offered as-is, without any warranty.
+
+SPDX-FileCopyrightText: 2021-2022 Marco Bresciani
+
+SPDX-License-Identifier: FSFAP
+-->
+# 7 Group Contents
+
+## Context
+The bottom navigation bar cannot contain all the possible icons and
+elements that might be needed for this app.
+
+## Decision
+The whole set of readable documents, including 5Q card and the four
+steps of improvement are all moved inside the Docs menu.
+
+## Status
+Accepted.
+
+## Consequences
+User might need to click twice to see the reference 5Q card, first on
+the "Docs" menu icon in the bottom navigation bar, and then on the 5Q
+card icon itself in the Documents page.

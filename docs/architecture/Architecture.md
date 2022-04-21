@@ -22,9 +22,11 @@ The `assets` and `i18n` folders have additional resources needed for the
 project.
 
 Not much of an "architecture":
+* `assets` folder contains static things like fonts and images.
 * `globals` folder contains components that
   are generally used in all pages, or in at least a couple of them.
+* `i18n` contains the translations.
+* in the `pages` folder there are the actual pages, using sub-folders if
+  a page contains more than one main component.
 * `utils` folder is the same as usual: those are not React components
   but functions and things that are generally used.
-* in the `pages` folder there are the actual pages, using subfolders if
-  a page contains more than one main component.

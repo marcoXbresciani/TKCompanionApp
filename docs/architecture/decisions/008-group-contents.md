@@ -10,7 +10,7 @@ SPDX-FileCopyrightText: 2021-2022 Marco Bresciani
 
 SPDX-License-Identifier: FSFAP
 -->
-# 7 Group Contents
+# 8 Group Contents
 
 ## Context
 The bottom navigation bar cannot contain all the possible icons and

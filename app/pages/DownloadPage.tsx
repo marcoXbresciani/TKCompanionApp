@@ -22,12 +22,11 @@
  */
 import {Linking} from 'react-native';
 import * as React from 'react';
-import PageContainer from '../globals/PageContainer';
 import {List} from 'react-native-paper';
 import i18next from 'i18next';
 
 const DownloadPage: React.FunctionComponent = () => (
-    <PageContainer>
+    <>
         <List.Section>
             <List.Subheader>
                 {i18next.t('download.title')}
@@ -77,7 +76,7 @@ const DownloadPage: React.FunctionComponent = () => (
                 titleNumberOfLines={2}
             />
         </List.Section>
-    </PageContainer>
+    </>
 );
 
 export default DownloadPage;

@@ -32,6 +32,9 @@ This file is offered as-is, without any warranty.
 
 ## [2.0.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.0.0) - 2022-04-21
 ### Added
+* [ADR-008](/docs/architecture/decisions/008-group-contents.md) for
+  grouping the whole set of readable documents, including the 5Q card,
+  in the "Documents" page.
 * Introduce menu in "app bar" for about, copyright and settings.
 ### Changed
 * Move about, copyright and settings to home "app bar".

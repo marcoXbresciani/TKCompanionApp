@@ -20,21 +20,26 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
+import {ScrollView} from 'react-native';
 import * as React from 'react';
-import i18next from 'i18next';
-import {TkParagraph} from '../../globals/Texts';
-import {TkCard, TkCardContent, TkCardTitle} from '../../globals/Pieces';
+import {PropsWithChildren} from 'react';
+import {IconButton} from 'react-native-paper';
 
-const Kts: React.FunctionComponent = () => (
-    <TkCard>
-        <TkCardTitle
-            title={i18next.t('kts.title')}
-            subtitle={i18next.t('kts.tip')}
-        />
-        <TkCardContent>
-            <TkParagraph>{i18next.t('kts.text')}</TkParagraph>
-        </TkCardContent>
-    </TkCard>
-);
+interface MyProps extends PropsWithChildren<any> {
+    onPress: () => void;
+}
 
-export default Kts;
+const PageContainer = ({children, onPress}: MyProps) => {
+    return (
+        <ScrollView>
+            {children}
+
+            <IconButton
+                icon="return-down-back-outline"
+                onPress={onPress}
+            />
+        </ScrollView>
+    );
+};
+
+export default PageContainer;

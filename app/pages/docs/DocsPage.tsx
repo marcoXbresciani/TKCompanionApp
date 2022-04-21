@@ -27,6 +27,7 @@ import PageContainer from '../../globals/PageContainer';
 import Kts from './Kts';
 import Tkc from './Tkc';
 import Practice from './Practice';
+import DocsContainer from './DocsContainer';
 
 export enum Pages {
     DefaultPage,
@@ -58,11 +59,13 @@ const DocsPage: React.FunctionComponent = () => {
                 />
             )}
             {status === Pages.KtsPage && (
-                <Kts
+                <DocsContainer
                     onPress={() => {
                         setStatus(Pages.DefaultPage);
                     }}
-                />
+                >
+                    <Kts />
+                </DocsContainer>
             )}
         </PageContainer>
     );

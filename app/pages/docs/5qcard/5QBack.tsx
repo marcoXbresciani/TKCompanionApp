@@ -23,11 +23,6 @@
 import * as React from 'react';
 import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
-import {
-    TkCard,
-    TkCardContent,
-    TkCardTitle,
-} from '../../../globals/Pieces';
 import {BoldText, TkParagraph} from '../../../globals/Texts';
 import {Button, Card} from 'react-native-paper';
 
@@ -39,13 +34,13 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
     const {t} = useTranslation();
 
     return (
-        <TkCard>
-            <TkCardTitle
+        <Card>
+            <Card.Title
                 title={i18next.t('5q.back.title')}
                 subtitle={i18next.t('5q.back.quote')}
                 subtitleNumberOfLines={2}
             />
-            <TkCardContent>
+            <Card.Content>
                 <TkParagraph>
                     <Trans
                         t={t}
@@ -82,7 +77,7 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                         }}
                     />
                 </TkParagraph>
-            </TkCardContent>
+            </Card.Content>
             <Card.Actions>
                 <Button
                     icon="return-down-back-outline"
@@ -92,7 +87,7 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                     {i18next.t('5q.back.return')}
                 </Button>
             </Card.Actions>
-        </TkCard>
+        </Card>
     );
 };
 

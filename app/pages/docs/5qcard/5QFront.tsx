@@ -25,11 +25,6 @@ import i18next from 'i18next';
 import {Trans, useTranslation} from 'react-i18next';
 import {BoldText, TkParagraph} from '../../../globals/Texts';
 import {Button, Card} from 'react-native-paper';
-import {
-    TkCard,
-    TkCardContent,
-    TkCardTitle,
-} from '../../../globals/Pieces';
 
 type Props = {
     onPress: () => void;
@@ -39,13 +34,13 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
     const {t} = useTranslation();
 
     return (
-        <TkCard>
-            <TkCardTitle
+        <Card>
+            <Card.Title
                 title={i18next.t('5q.front.header')}
                 subtitle={i18next.t('5q.front.title')}
                 subtitleNumberOfLines={2}
             />
-            <TkCardContent>
+            <Card.Content>
                 <TkParagraph>
                     <Trans
                         t={t}
@@ -102,8 +97,8 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                         }}
                     />
                 </TkParagraph>
-            </TkCardContent>
-        </TkCard>
+            </Card.Content>
+        </Card>
     );
 };
 

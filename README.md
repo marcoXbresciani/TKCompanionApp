@@ -116,7 +116,6 @@ Just sit, follow the menu, learn, practice and improve.
 
 ### Screenshots
 ![5Q Card](fastlane/metadata/android/en-US/images/phoneScreenshots/5Q.png)
-![About](fastlane/metadata/android/en-US/images/phoneScreenshots/about.png)
 ![Docs](fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png)
 ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
 

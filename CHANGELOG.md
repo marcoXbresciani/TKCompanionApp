@@ -25,10 +25,20 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
+* Settings saved for later usage: now if you change language and
+  application theme, these data as saved, in encrypted form, to be
+  reused when reopening the application.
+  If your phone is in light mode, but you choose dark/night mode for
+  this application, the dark/night mode will be restored on application
+  reuse.
 ### Changed
 ### Removed
 ### Fixed
 ### Security
+
+## [2.0.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.0.1) - 2022-04-27
+### Changed
+* Updated dependencies versions.
 
 ## [2.0.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.0.0) - 2022-04-21
 ### Added

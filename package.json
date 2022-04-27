@@ -25,8 +25,8 @@
     },
     "description": "A short and small helper for Toyota Kata practitioners",
     "devDependencies": {
-        "@babel/core": "^7.17.5",
-        "@babel/runtime": "^7.17.2",
+        "@babel/core": "^7.17.9",
+        "@babel/runtime": "^7.17.9",
         "@react-native-community/eslint-config": "^3.0.1",
         "@types/jest": "^27.4.1",
         "@types/react-native": "^0.67.1",

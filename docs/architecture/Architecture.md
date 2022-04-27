@@ -16,7 +16,7 @@ possibly be portable on more platforms.
 Specifically, Android and iOS.
 
 The actual code is written in
-[TypeScript](https://www.typescriptlang.org/) and it's fully available
+[TypeScript](https://www.typescriptlang.org/), and it's fully available
 in the `app` folder.
 The `assets` and `i18n` folders have additional resources needed for the
 project.

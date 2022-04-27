@@ -11,9 +11,9 @@
     "homepage": "https://github.com/marcoXbresciani/TKCompanionApp",
     "dependencies": {
         "@types/styled-components": "^5.1.25",
-        "i18next": "^21.6.13",
+        "i18next": "^21.6.16",
         "react": "17.0.2",
-        "react-i18next": "^11.15.5",
+        "react-i18next": "^11.16.7",
         "react-native": "0.67.4",
         "react-native-device-info": "^8.4.9",
         "react-native-gesture-handler": "^2.3.0",

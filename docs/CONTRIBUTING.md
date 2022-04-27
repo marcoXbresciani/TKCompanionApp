@@ -39,8 +39,8 @@ We're here to improve!
 If you are a software developer and want to contribute improving this
 app, you're welcome!
 Find the latest current LTS NodeJS
-([16.14.2](https://nodejs.org/download/release/latest-gallium/), as of
-2022-03-18) for your system.
+([16.15.0](https://nodejs.org/download/release/latest-gallium/), as of
+2022-04-27) for your system.
 Grab the source code by cloning
 [the repository](https://github.com/marcoXbresciani/TKCompanionApp).
 Then go to this project main folder (also containing this same file
@@ -49,6 +49,10 @@ dependencies downloaded and installed through NPM package manager.
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
+
+You might want to also run `npm install -g npm-check-updates` to make
+the `ncu` tool globally available, to check possible dependencies
+versions updates.
 
 ### How to Start
 From command line launch `npm start` that will run Metro tool (don't

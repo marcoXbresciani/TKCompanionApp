@@ -38,8 +38,8 @@ Siamo qui per migliorare!
 Se sei uno sviluppatore software e vuoi contribuire a migliorare l'app,
 sei benvenuto!
 Trova l'ultimo NodeJS LTS corrente
-([16.14.2](https://nodejs.org/download/release/latest-gallium/), al
-2022-03-18) per il tuo sistema.
+([16.15.0](https://nodejs.org/download/release/latest-gallium/), al
+2022-04-27) per il tuo sistema.
 Prendi il codice sorgente clonando
 [il repository](https://github.com/marcoXbresciani/TKCompanionApp).
 Quindi vai nella cartella principale del progetto (contenente anche
@@ -50,6 +50,10 @@ pacchetti Yarn.
 
 ![dimensione del codice GitHub in byte](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![Attività di commit GitHub](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
+
+Puoi anche eseguire `npm install -g npm-check-updates` per avere il tool
+`ncu` disponibile globalmente, per controllare possibili aggiornamenti
+di versioni delle dipendenze.
 
 ### Come iniziare
 Dalla riga di comando avvia `npm start` che eseguirà lo strumento Metro

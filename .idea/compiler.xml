@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="react-native-safe-area-context.android" target="1.8" />
+      <module name="TKCompanionApp.react-native-device-info" target="1.8" />
       <module name="TKCompanionApp.react-native-encrypted-storage" target="1.8" />
     </bytecodeTargetLevel>
   </component>

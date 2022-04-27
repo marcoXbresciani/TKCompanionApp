@@ -90,6 +90,7 @@ export const tkLightTheme = {
     },
     colors: {
         ...DefaultTheme.colors,
+        accent: 'gold',
         primary: 'royalblue',
     },
     fonts: configureFonts(fontConfig),
@@ -102,6 +103,7 @@ export const tkDarkTheme = {
     },
     colors: {
         ...DarkTheme.colors,
+        accent: 'royalblue',
         primary: 'gold',
     },
     fonts: configureFonts(fontConfig),

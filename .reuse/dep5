@@ -95,6 +95,10 @@ Files: fastlane/*
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
+Files: fastlane/metadata/android/*/images/featureGraphic.png
+Copyright: 2007 Marco Bresciani
+License: CC-BY-SA-4.0
+
 Files: ios/*.m
 Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later

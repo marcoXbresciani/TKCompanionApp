@@ -10,11 +10,7 @@
     },
     "homepage": "https://github.com/marcoXbresciani/TKCompanionApp",
     "dependencies": {
-        "@react-navigation/bottom-tabs": "^6.2.0",
-        "@react-navigation/native": "^6.0.8",
-        "@react-navigation/native-stack": "^6.5.0",
-        "@types/styled-components": "^5.1.24",
-        "deepmerge": "^4.2.2",
+        "@types/styled-components": "^5.1.25",
         "i18next": "^21.6.13",
         "react": "17.0.2",
         "react-i18next": "^11.15.5",

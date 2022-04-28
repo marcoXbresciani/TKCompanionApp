@@ -135,8 +135,8 @@ Siediti, segui il menu, impara, esercitati e migliora.
 L'app è stata iniziata da Marco Bresciani ed è attualmente mantenuta da
 Marco Bresciani.
 Lo stesso per questo documento.
-È possibile contattare l'autore tramite
-[Briar](briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm).
+È possibile contattare l'autore tramite Briar:
+briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
 
 ## Ringraziamenti
 Grazie a:

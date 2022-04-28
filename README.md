@@ -135,6 +135,8 @@ Just sit, follow the menu, learn, practice and improve.
 The app has been started by Marco Bresciani and is currently maintained
 by Marco Bresciani.
 Same for this document.
+You can keep in touch with the author through
+[Briar](briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm).
 
 ## Thanks
 Thanks to:

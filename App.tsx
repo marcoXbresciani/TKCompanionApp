@@ -72,7 +72,7 @@ const AppNavigator: React.FunctionComponent = () => {
         {
             key: 'docs',
             title: i18next.t('nav.docs'),
-            icon: 'book-outline',
+            icon: 'library-outline',
         },
         {
             key: 'download',

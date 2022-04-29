@@ -134,8 +134,20 @@ Just sit, follow the menu, learn, practice and improve.
 The app has been started by Marco Bresciani and is currently maintained
 by Marco Bresciani.
 Same for this document.
-You can keep in touch with the author through Briar:
+
+You can keep in touch with the author through
+[Briar](https://briarproject.org/) with the link
+```text
 briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
+```
+to be copy-pasted as "contact at a distance" in Briar.
+For an easier management, link is also shown in below QR code: anyway,
+you have to read the code with another app (not Briar!), copy the text
+link you read and use it to add the "contact at a distance" in Briar.
+![Briar](docs/svg/briar.svg)
+
+A [Briar Quick Star Guide](https://briarproject.org/quick-start/) is
+available on Briar project site.
 
 ## Thanks
 Thanks to:

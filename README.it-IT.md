@@ -134,8 +134,20 @@ Siediti, segui il menu, impara, esercitati e migliora.
 L'app è stata iniziata da Marco Bresciani ed è attualmente mantenuta da
 Marco Bresciani.
 Lo stesso per questo documento.
-È possibile contattare l'autore tramite Briar:
+
+È possibile contattare l'autore tramite
+[Briar](https://briarproject.org/) con il link
+```text
 briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
+```
+da copiare e aggiungere come "contatto distante" in Briar.
+Per comodità, il link è anche indicato nel codice QR sotto: in ogni
+caso, si deve leggere il codice con un'app che non sia Briar, copiare il
+collegamento letto e usarlo aggiungendo il "contatto distante" in Briar.
+![Briar](docs/svg/briar.svg)
+
+Una veloce guida all'uso di Briar è disponibile (non in lingua italiana)
+sul sito di Briar: https://briarproject.org/quick-start/.
 
 ## Ringraziamenti
 Grazie a:

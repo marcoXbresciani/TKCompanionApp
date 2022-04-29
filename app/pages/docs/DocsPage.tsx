@@ -23,7 +23,7 @@
 import * as React from 'react';
 import {useState} from 'react';
 import DocsSelector from './DocsSelector';
-import PageContainer from '../../globals/PageContainer';
+import PageContainer from './PageContainer';
 import Kts from './Kts';
 import Tkc from './Tkc';
 import Practice from './Practice';

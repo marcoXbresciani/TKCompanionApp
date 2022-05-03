@@ -29,7 +29,7 @@ interface MyProps extends PropsWithChildren<any> {
     onPress: () => void;
 }
 
-const PageContainer = ({children, onPress}: MyProps) => {
+const DocsContainer = ({children, onPress}: MyProps) => {
     return (
         <ScrollView>
             {children}
@@ -42,4 +42,4 @@ const PageContainer = ({children, onPress}: MyProps) => {
     );
 };
 
-export default PageContainer;
+export default DocsContainer;

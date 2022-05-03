@@ -25,6 +25,7 @@ or not.
    Found in v0.6.0.
    Since v0.5.0.
 
+----
 
 8. [Download links error - forbidden](https://github.com/marcoXbresciani/TKCompanionApp/issues/8)
 

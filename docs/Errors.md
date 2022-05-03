@@ -24,3 +24,14 @@ or not.
 
    Found in v0.6.0.
    Since v0.5.0.
+
+
+8. [Download links error - forbidden](https://github.com/marcoXbresciani/TKCompanionApp/issues/8)
+
+   I am getting the below error code for all downloads:
+   ```text
+   Forbidden
+   You don't have permission to access /~mrother/KATA_Files/5Q_Card.pdf on this server.
+
+   Additionally, a 302 Found error was encountered while trying to use an ErrorDocument to handle the request.
+   ```

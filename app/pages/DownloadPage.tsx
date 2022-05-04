@@ -22,61 +22,95 @@
  */
 import {Linking} from 'react-native';
 import * as React from 'react';
-import {List} from 'react-native-paper';
+import {useState} from 'react';
+import {List, Snackbar} from 'react-native-paper';
 import i18next from 'i18next';
 
-const DownloadPage: React.FunctionComponent = () => (
-    <>
-        <List.Section>
-            <List.Subheader>
-                {i18next.t('download.title')}
-            </List.Subheader>
-            <List.Item
-                description={i18next.t('download.pdf')}
-                left={() => <List.Icon icon="download-outline" />}
-                onPress={() => {
-                    Linking.openURL(
-                        'http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
-                    );
+const DownloadPage: React.FunctionComponent = () => {
+    const [message, setMessage] = useState('');
+    const [visible, setVisible] = React.useState(false);
+
+    const onToggleSnackBar = () => setVisible(!visible);
+    const onDismissSnackBar = () => {
+        setVisible(false);
+        setMessage('');
+    };
+
+    const download = (fileName: string) => {
+        Linking.openURL(fileName).catch((reason) => {
+            setMessage(
+                i18next.t('download.error', {
+                    reason: reason,
+                }),
+            );
+            onToggleSnackBar();
+        });
+    };
+
+    return (
+        <>
+            <Snackbar
+                visible={visible}
+                onDismiss={onDismissSnackBar}
+                action={{
+                    label: i18next.t('download.close'),
+                    onPress: () => {},
                 }}
-                title={i18next.t('download.5q')}
-                titleNumberOfLines={2}
-            />
-            <List.Item
-                description={i18next.t('download.pdf')}
-                left={() => <List.Icon icon="download-outline" />}
-                onPress={() => {
-                    Linking.openURL(
-                        'http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf',
-                    );
-                }}
-                title={i18next.t('download.4s')}
-                titleNumberOfLines={2}
-            />
-            <List.Item
-                description={i18next.t('download.pdf')}
-                left={() => <List.Icon icon="download-outline" />}
-                onPress={() => {
-                    Linking.openURL(
-                        'http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
-                    );
-                }}
-                title={i18next.t('download.tkc')}
-                titleNumberOfLines={2}
-            />
-            <List.Item
-                description={i18next.t('download.jpg')}
-                left={() => <List.Icon icon="download-outline" />}
-                onPress={() => {
-                    Linking.openURL(
-                        'http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
-                    );
-                }}
-                title={i18next.t('download.kts')}
-                titleNumberOfLines={2}
-            />
-        </List.Section>
-    </>
-);
+            >
+                {message}
+            </Snackbar>
+
+            <List.Section>
+                <List.Subheader>
+                    {i18next.t('download.title')}
+                </List.Subheader>
+                <List.Item
+                    description={i18next.t('download.pdf')}
+                    left={() => <List.Icon icon="download-outline" />}
+                    onPress={() =>
+                        download(
+                            'http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
+                        )
+                    }
+                    title={i18next.t('download.5q')}
+                    titleNumberOfLines={2}
+                />
+                <List.Item
+                    description={i18next.t('download.pdf')}
+                    left={() => <List.Icon icon="download-outline" />}
+                    onPress={() =>
+                        download(
+                            'http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf',
+                        )
+                    }
+                    title={i18next.t('download.4s')}
+                    titleNumberOfLines={2}
+                />
+                <List.Item
+                    description={i18next.t('download.pdf')}
+                    left={() => <List.Icon icon="download-outline" />}
+                    onPress={() =>
+                        download(
+                            'http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
+                        )
+                    }
+                    title={i18next.t('download.tkc')}
+                    titleNumberOfLines={2}
+                />
+                <List.Item
+                    description={i18next.t('download.jpg')}
+                    left={() => <List.Icon icon="download-outline" />}
+                    onPress={() =>
+                        download(
+                            'http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
+                        )
+                    }
+                    title={i18next.t('download.kts')}
+                    titleNumberOfLines={2}
+                />
+            </List.Section>
+        </>
+    );
+};
 
 export default DownloadPage;

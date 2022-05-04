@@ -64,6 +64,8 @@
     "download": {
         "4s": "$t(4s.title)",
         "5q": "$t(5q.front.title)",
+        "close": "Chiudi",
+        "error": "Errore scaricamento '{{reason}}'",
         "jpg": "Download immagine JPG",
         "kts": "$t(kts.title)",
         "pdf": "Download file PDF",

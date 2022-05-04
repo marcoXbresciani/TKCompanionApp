@@ -64,6 +64,8 @@
     "download": {
         "4s": "$t(4s.title)",
         "5q": "$t(5q.front.title)",
+        "close": "Close",
+        "error": "Download error '{{reason}}'",
         "jpg": "JPG image download",
         "kts": "$t(kts.title)",
         "pdf": "PDF file download",

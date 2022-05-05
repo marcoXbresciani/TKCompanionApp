@@ -36,6 +36,20 @@ This file is offered as-is, without any warranty.
 ### Fixed
 ### Security
 
+## [2.0.2](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.0.2) - 2022-05-05
+### Added
+* [Briar](https://briarproject.org/) link for contact.
+* Proper error management for `Linking` functionality when downloading
+  files.
+  Not a solution for issue
+  [#8](https://github.com/marcoXbresciani/TKCompanionApp/issues/8), but
+  still a possible way to, at least, catch errors.
+  Introducing `rn-fetch-blob` is difficult, due to old toolchain in
+  React Native, also I prefer to let the phone decide how to manage
+  those links.
+### Changed
+* News "Docs" icon.
+
 ## [2.0.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.0.1) - 2022-04-27
 ### Changed
 * Updated dependencies versions.

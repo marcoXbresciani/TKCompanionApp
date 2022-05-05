@@ -1,0 +1,3 @@
+Introduce possible highlight for issue #8.
+Add Briar link in README for contact.
+Add Donate button to F-Droid page.

@@ -1,0 +1,3 @@
+Aggiunge un possibile aiuto per il problema #8.
+Aggiunto il link a Briar nel README per i contatti.
+Aggiunto il bottone Add Donate button to F-Droid page.

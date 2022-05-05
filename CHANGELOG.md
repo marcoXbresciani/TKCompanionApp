@@ -39,6 +39,9 @@ This file is offered as-is, without any warranty.
 ## [2.0.2](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.0.2) - 2022-05-05
 ### Added
 * [Briar](https://briarproject.org/) link for contact.
+* [Donate](https://liberapay.com/marcoXbresciani/donate) button in
+  F-Droid
+  [app page](https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/).
 * Proper error management for `Linking` functionality when downloading
   files.
   Not a solution for issue

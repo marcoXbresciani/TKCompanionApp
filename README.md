@@ -135,7 +135,9 @@ The app has been started by Marco Bresciani and is currently maintained
 by Marco Bresciani.
 Same for this document.
 
-You can keep in touch with the author through
+You can find me on <a rel="me" href="https://fosstodon.org/@AAMfP">Fosstodon</a>, a Mastodon instance.
+
+You can keep in touch with the author also through
 [Briar](https://briarproject.org/) with the link
 ```text
 briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm

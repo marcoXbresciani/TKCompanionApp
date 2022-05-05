@@ -135,7 +135,9 @@ L'app è stata iniziata da Marco Bresciani ed è attualmente mantenuta da
 Marco Bresciani.
 Lo stesso per questo documento.
 
-È possibile contattare l'autore tramite
+Puoi trovarmi su <a rel="me" href="https://fosstodon.org/@AAMfP">Fosstodon</a>, un'istanza Mastodon.
+
+È possibile contattare l'autore anche tramite
 [Briar](https://briarproject.org/) con il link
 ```text
 briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm

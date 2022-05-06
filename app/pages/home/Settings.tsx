@@ -27,6 +27,7 @@ import {View} from 'react-native';
 import {PreferencesContext} from '../../../App';
 import {TkText} from '../../globals/Texts';
 import styled from 'styled-components';
+import {SettingsStorage} from '../../utils/storage/SettingsStorage';
 
 const RowView = styled(View)`
     flex-direction: row;
@@ -42,7 +43,13 @@ const Settings: React.FunctionComponent = () => {
                 <TkText>{i18next.t('settings.theme')}</TkText>
                 <Switch
                     value={isThemeDark}
-                    onValueChange={toggleTheme}
+                    onValueChange={() => {
+                        toggleTheme();
+                        SettingsStorage.write(
+                            SettingsStorage.THEME,
+                            (!isThemeDark).toString(),
+                        );
+                    }}
                 />
             </RowView>
             <List.AccordionGroup>

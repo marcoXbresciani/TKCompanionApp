@@ -30,3 +30,7 @@ Not much of an "architecture":
   a page contains more than one main component.
 * `utils` folder is the same as usual: those are not React components
   but functions and things that are generally used.
+
+Local data (app theme, language, ...) are saved/stored locally on your
+device only, in an encrypted form, through
+[react-native-encrypted-storage](https://github.com/emeraldsanto/react-native-encrypted-storage).

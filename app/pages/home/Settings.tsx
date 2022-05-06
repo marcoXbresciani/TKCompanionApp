@@ -27,7 +27,10 @@ import {View} from 'react-native';
 import {PreferencesContext} from '../../../App';
 import {TkText} from '../../globals/Texts';
 import styled from 'styled-components';
-import {SettingsStorage} from '../../utils/storage/SettingsStorage';
+import {
+    SettingsStorage,
+    SettingsType,
+} from '../../utils/storage/SettingsStorage';
 
 const RowView = styled(View)`
     flex-direction: row;
@@ -46,7 +49,7 @@ const Settings: React.FunctionComponent = () => {
                     onValueChange={() => {
                         toggleTheme();
                         SettingsStorage.write(
-                            SettingsStorage.THEME,
+                            SettingsType.THEME,
                             (!isThemeDark).toString(),
                         );
                     }}

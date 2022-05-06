@@ -22,11 +22,14 @@
  */
 import {Storage} from './Storage';
 
+export enum SettingsType {
+    THEME = 'theme',
+}
+
 export class SettingsStorage {
     private static SETTINGS_ROOT: string = 'settings.';
-    public static THEME: string = 'theme';
 
-    static async write(key: string, value: string) {
+    static async write(key: SettingsType, value: string) {
         try {
             await Storage.write(
                 SettingsStorage.SETTINGS_ROOT + key,
@@ -38,7 +41,7 @@ export class SettingsStorage {
         }
     }
 
-    static async read(key: string) {
+    static async read(key: SettingsType) {
         try {
             let result = await Storage.read(
                 SettingsStorage.SETTINGS_ROOT + key,
@@ -50,7 +53,7 @@ export class SettingsStorage {
         }
     }
 
-    static async remove(key: string) {
+    static async remove(key: SettingsType) {
         try {
             await Storage.remove(SettingsStorage.SETTINGS_ROOT + key);
             console.log('Removed setting', key);

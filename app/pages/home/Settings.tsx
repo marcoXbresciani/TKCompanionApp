@@ -49,7 +49,7 @@ const Settings: React.FunctionComponent = () => {
                     onValueChange={() => {
                         toggleTheme();
                         SettingsStorage.write(
-                            SettingsType.THEME,
+                            SettingsType.DARK_THEME,
                             (!isThemeDark).toString(),
                         );
                     }}

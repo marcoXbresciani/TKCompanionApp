@@ -23,46 +23,49 @@
 import {Storage} from './Storage';
 
 export enum SettingsType {
-    THEME = 'theme',
+    DARK_THEME = 'dark',
 }
 
 export class SettingsStorage {
     private static SETTINGS_ROOT: string = 'settings.';
 
+    private static getFullKey(key: string) {
+        return SettingsStorage.SETTINGS_ROOT + key;
+    }
+
     static async write(key: SettingsType, value: string) {
+        const fullKey = this.getFullKey(key);
         try {
-            await Storage.write(
-                SettingsStorage.SETTINGS_ROOT + key,
-                value,
-            );
-            console.log('Saved setting', key, '=', value);
+            await Storage.write(fullKey, value);
+            console.info(`Saved setting: '${fullKey}' = '${value}'.`);
         } catch (error) {
-            console.error('Error', error, 'while writing setting', key);
+            console.error(
+                `Error '${error}' while writing setting '${fullKey}'.`,
+            );
         }
     }
 
     static async read(key: SettingsType) {
+        const fullKey = this.getFullKey(key);
         try {
-            let result = await Storage.read(
-                SettingsStorage.SETTINGS_ROOT + key,
-            );
-            console.log('Read setting', key, '=', result);
+            let result = await Storage.read(fullKey);
+            console.info(`Read setting '${fullKey}' = '${result}'.`);
             return result;
         } catch (error) {
-            console.error('Error', error, 'while reading setting', key);
+            console.error(
+                `Error '${error}' while reading setting '${fullKey}'.`,
+            );
         }
     }
 
     static async remove(key: SettingsType) {
+        const fullKey = this.getFullKey(key);
         try {
-            await Storage.remove(SettingsStorage.SETTINGS_ROOT + key);
-            console.log('Removed setting', key);
+            await Storage.remove(fullKey);
+            console.info(`Removed setting '${fullKey}'.`);
         } catch (error) {
             console.error(
-                'Error',
-                error,
-                'while removing setting',
-                key,
+                `Error '${error}' while removing setting '${fullKey}'`,
             );
         }
     }

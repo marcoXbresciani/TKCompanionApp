@@ -27,16 +27,18 @@ import {View} from 'react-native';
 import {PreferencesContext} from '../../../App';
 import {TkText} from '../../globals/Texts';
 import styled from 'styled-components';
-import {
-    SettingsStorage,
+import TkKey from '../../utils/storage/TkKey';
+import SimpleKey from '../../utils/storage/SimpleKey';
+import SettingsKey, {
     SettingsType,
-} from '../../utils/storage/SettingsStorage';
+} from '../../utils/storage/SettingsKey';
 
 const RowView = styled(View)`
     flex-direction: row;
 `;
 
 const Settings: React.FunctionComponent = () => {
+    const storage = new TkKey(new SettingsKey(new SimpleKey()));
     const {toggleTheme, isThemeDark} =
         React.useContext(PreferencesContext);
 
@@ -48,10 +50,12 @@ const Settings: React.FunctionComponent = () => {
                     value={isThemeDark}
                     onValueChange={() => {
                         toggleTheme();
-                        SettingsStorage.write(
-                            SettingsType.DARK_THEME,
-                            (!isThemeDark).toString(),
-                        );
+                        storage
+                            .write(
+                                SettingsType.DARK_THEME,
+                                (!isThemeDark).toString(),
+                            )
+                            .then();
                     }}
                 />
             </RowView>

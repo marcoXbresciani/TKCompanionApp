@@ -27,18 +27,15 @@ import {View} from 'react-native';
 import {PreferencesContext} from '../../../App';
 import {TkText} from '../../globals/Texts';
 import styled from 'styled-components';
-import TkKey from '../../utils/storage/TkKey';
-import SimpleKey from '../../utils/storage/SimpleKey';
-import SettingsKey, {
-    SettingsType,
-} from '../../utils/storage/SettingsKey';
+import {AllowedSettings} from '../../utils/storage/SettingsKey';
+import SettingsStorage from '../../utils/storage/SettingsStorage';
 
 const RowView = styled(View)`
     flex-direction: row;
 `;
 
 const Settings: React.FunctionComponent = () => {
-    const storage = new TkKey(new SettingsKey(new SimpleKey()));
+    const storage = SettingsStorage.getInstance();
     const {toggleTheme, isThemeDark} =
         React.useContext(PreferencesContext);
 
@@ -52,7 +49,7 @@ const Settings: React.FunctionComponent = () => {
                         toggleTheme();
                         storage
                             .write(
-                                SettingsType.DARK_THEME,
+                                AllowedSettings.DARK_THEME,
                                 (!isThemeDark).toString(),
                             )
                             .then();
@@ -74,6 +71,9 @@ const Settings: React.FunctionComponent = () => {
                         title="English"
                         onPress={() => {
                             i18next.changeLanguage('en').then();
+                            storage
+                                .write(AllowedSettings.LANGUAGE, 'en')
+                                .then();
                         }}
                     />
                     <List.Item
@@ -84,6 +84,12 @@ const Settings: React.FunctionComponent = () => {
                         title="Italiano"
                         onPress={() => {
                             i18next.changeLanguage('it-IT').then();
+                            storage
+                                .write(
+                                    AllowedSettings.LANGUAGE,
+                                    'it-IT',
+                                )
+                                .then();
                         }}
                     />
                     <List.Item disabled={true} title="日本語" />

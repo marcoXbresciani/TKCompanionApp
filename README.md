@@ -16,13 +16,14 @@ SPDX-License-Identifier: FSFAP
 [![REUSE status](https://api.reuse.software/badge/github.com/marcoXbresciani/TKCompanionApp)](https://api.reuse.software/info/github.com/marcoXbresciani/TKCompanionApp)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/marcoXbresciani/TKCompanionApp?color=black&logo=github&sort=semver&style=plastic)
 ![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp?logo=fdroid)
-<img src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
-<img src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
 [![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational?logo=semver&style=plastic)](https://semver.org/)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![Markdown](https://img.shields.io/badge/made%20with-markdown-black?logo=markdown&style=plastic)](https://github.github.com/gfm/)
+![Mastodon Follow](https://img.shields.io/mastodon/follow/000091124?domain=https%3A%2F%2Ffosstodon.org&style=social)
 [![It works](https://img.shields.io/badge/works%20on-my%20machine-informational?style=plastic)](https://blog.codinghorror.com/the-works-on-my-machine-certification-program/)
 <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+<img src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
+<img src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
 
 A short and small helper for Toyota Kata practitioners
 
@@ -135,7 +136,13 @@ The app has been started by Marco Bresciani and is currently maintained
 by Marco Bresciani.
 Same for this document.
 
-You can find me on <a rel="me" href="https://fosstodon.org/@AAMfP">Fosstodon</a>, a Mastodon instance.
+You can find me on
+<a rel="me" href="https://fosstodon.org/@AAMfP">Fosstodon</a>, a
+Mastodon instance.
+
+You can keep in touch with the author through
+[Delta Chat](https://delta.chat/en/) with the email address
+[marco.530@outlook.it](mailto:marco.530@outlook.it).
 
 You can keep in touch with the author also through
 [Briar](https://briarproject.org/) with the link
@@ -143,13 +150,6 @@ You can keep in touch with the author also through
 briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
 ```
 to be copy-pasted as "contact at a distance" in Briar.
-For an easier management, link is also shown in below QR code: anyway,
-you have to read the code with another app (not Briar!), copy the text
-link you read and use it to add the "contact at a distance" in Briar.
-![Briar](docs/svg/briar.svg)
-
-A [Briar Quick Star Guide](https://briarproject.org/quick-start/) is
-available on Briar project site.
 
 ## Thanks
 Thanks to:

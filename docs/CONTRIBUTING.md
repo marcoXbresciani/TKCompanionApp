@@ -11,7 +11,9 @@ SPDX-FileCopyrightText: 2021-2022 Marco Bresciani
 SPDX-License-Identifier: FSFAP
 -->
 # CONTRIBUTING
+
 Thanks for being here!
+
 If you want to contribute to the project, take a look at this file.
 Any question, feel free to ask!
 
@@ -35,9 +37,17 @@ explaining the problem you've noticed and your proposed solution.
 
 We're here to improve!
 
+> You can even contribute through Liberapay:
+>
+> <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+>
+> <img src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
+> <img src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
+
 ## For Software Developers
 If you are a software developer and want to contribute improving this
 app, you're welcome!
+
 Find the latest current LTS NodeJS
 ([16.15.0](https://nodejs.org/download/release/latest-gallium/), as of
 2022-04-27) for your system.

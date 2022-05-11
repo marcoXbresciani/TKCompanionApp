@@ -11,7 +11,9 @@ SPDX-FileCopyrightText: 2021-2022 Marco Bresciani
 SPDX-License-Identifier: FSFAP
 -->
 # Contribuire
+
 Grazie per essere qui!
+
 Se vuoi contribuire al progetto, dai un'occhiata a questo file.
 Per qualsiasi domanda... chiedi pure!
 
@@ -33,6 +35,13 @@ contributo che puoi dare, per favore
 spiegando il problema che hai notato e la soluzione proposta.
 
 Siamo qui per migliorare!
+
+> Puoi contribure anche tramite Liberapay:
+>
+> <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+>
+> <img src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
+> <img src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
 
 ## Per gli sviluppatori
 Se sei uno sviluppatore software e vuoi contribuire a migliorare l'app,

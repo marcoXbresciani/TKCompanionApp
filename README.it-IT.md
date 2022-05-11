@@ -18,6 +18,7 @@ SPDX-License-Identifier: FSFAP
 ![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp?logo=fdroid)
 [![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational?logo=semver&style=plastic)](https://semver.org/)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![EditorConfig](https://img.shields.io/static/v1?label=use&logo=editorconfig&message=EditorConfig&style=plastic)](https://internal.repos.regiongold.com/bitbucket/projects/GDP/repos/customer-sdk/browse/.editorconfig)
 [![Markdown](https://img.shields.io/badge/made%20with-markdown-black?logo=markdown&style=plastic)](https://github.github.com/gfm/)
 ![Mastodon Follow](https://img.shields.io/mastodon/follow/000091124?domain=https%3A%2F%2Ffosstodon.org&style=social)
 [![It works](https://img.shields.io/badge/works%20on-my%20machine-informational?style=plastic)](https://blog.codinghorror.com/the-works-on-my-machine-certification-program/)
@@ -151,16 +152,22 @@ un'istanza Mastodon.
 
 ## Ringraziamenti
 Grazie a:
-* [Marco Montalbano @marcomontalbano](https://github.com/marconontalbano) perché senza i suoi insegnamenti quest'app non sarebbe mai esistita.
+* [Marco Montalbano (@marcomontalbano)](https://github.com/marconontalbano)
+  perché senza i suoi insegnamenti quest'app non sarebbe mai esistita.
 * [@licaon-kter](https://github.com/licaon-kter) per il supporto nella
   pubblicazione dell'app su F-Droid.
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   per l'icona dell'app.
 
 ## Contribuire
-<a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
-
 Cfr. [CONTRIBUTING.it-IT.md](/docs/CONTRIBUTING-it.IT.md).
+
+> Puoi contribure anche tramite Liberapay:
+>
+> <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+>
+> <img src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
+> <img src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
 
 ## Licenza
 Licenza generale del progetto, in breve:

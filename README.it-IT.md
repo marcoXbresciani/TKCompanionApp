@@ -140,16 +140,14 @@ Puoi trovarmi su
 <a rel="me" href="https://fosstodon.org/@AAMfP">Fosstodon</a>,
 un'istanza Mastodon.
 
-È possibile contattare l'autore tramite
-[Delta Chat](https://delta.chat/en/) con l'indirizzo di posta
-elettronica [marco.530@outlook.it](mailto:marco.530@outlook.it).
-
-È possibile contattare l'autore anche tramite
-[Briar](https://briarproject.org/) con il link
-```text
-briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
-```
-da copiare e aggiungere come "contatto distante" in Briar.
+È possibile contattare l'autore tramite:
+* [**Delta Chat**](https://delta.chat/en/) con l'indirizzo di posta
+  elettronica [marco.530@outlook.it](mailto:marco.530@outlook.it).
+* [Briar](https://briarproject.org/) con il link
+  ```text
+  briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
+  ```
+  da copiare e aggiungere come "contatto distante" in Briar.
 
 ## Ringraziamenti
 Grazie a:

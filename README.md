@@ -140,16 +140,14 @@ You can find me on
 <a rel="me" href="https://fosstodon.org/@AAMfP">Fosstodon</a>, a
 Mastodon instance.
 
-You can keep in touch with the author through
-[Delta Chat](https://delta.chat/en/) with the email address
-[marco.530@outlook.it](mailto:marco.530@outlook.it).
-
-You can keep in touch with the author also through
-[Briar](https://briarproject.org/) with the link
-```text
-briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
-```
-to be copy-pasted as "contact at a distance" in Briar.
+You can keep in touch with the author through:
+* [**Delta Chat**](https://delta.chat/en/) with the email address
+  [marco.530@outlook.it](mailto:marco.530@outlook.it).
+* [Briar](https://briarproject.org/) with the link
+  ```text
+  briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
+  ```
+  to be copy-pasted as "contact at a distance" in Briar.
 
 ## Thanks
 Thanks to:

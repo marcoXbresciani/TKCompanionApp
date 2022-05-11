@@ -20,7 +20,6 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-
 export interface Storage {
     write(key: string, value: string): Promise<void>;
 

@@ -20,12 +20,25 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {StorableValue} from './StorableValue';
+import GenericStorage from '../GenericStorage';
+import {AllowedSettings} from './AllowedSettings';
 
-export interface Storage<T extends StorableValue> {
-    write(key: string, value: T): Promise<void>;
+class SettingsStorage extends GenericStorage<string> {
+    getRoot(): string {
+        return 'settings';
+    }
 
-    read(key: string): Promise<string>;
+    async write(key: AllowedSettings, value: string): Promise<void> {
+        return super.write(key, value);
+    }
 
-    remove(key: string): Promise<void>;
+    async read(key: AllowedSettings): Promise<string> {
+        return super.read(key);
+    }
+
+    async remove(key: AllowedSettings): Promise<void> {
+        return super.remove(key);
+    }
 }
+
+export default SettingsStorage;

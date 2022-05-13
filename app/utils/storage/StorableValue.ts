@@ -20,8 +20,6 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-export interface Key {
-    getRoot(): string;
-
-    getFullKey(key: string): string;
+export interface StorableValue {
+    toString(): string;
 }

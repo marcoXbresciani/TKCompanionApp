@@ -20,12 +20,7 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import BasicStorage from './BasicStorage';
-
-class TkKey extends BasicStorage {
-    getRoot(): string {
-        return 'tkcompanionapp';
-    }
+export enum AllowedSettings {
+    DARK_THEME = 'dark',
+    LANGUAGE = 'language',
 }
-
-export default TkKey;

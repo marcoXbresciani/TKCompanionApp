@@ -27,15 +27,15 @@ import {View} from 'react-native';
 import {PreferencesContext} from '../../../App';
 import {TkText} from '../../globals/Texts';
 import styled from 'styled-components';
-import {AllowedSettings} from '../../utils/storage/SettingsKey';
-import SettingsStorage from '../../utils/storage/SettingsStorage';
+import StorageFactory from '../../utils/storage/StorageFactory';
+import {AllowedSettings} from '../../utils/storage/settings/AllowedSettings';
 
 const RowView = styled(View)`
     flex-direction: row;
 `;
 
 const Settings: React.FunctionComponent = () => {
-    const storage = SettingsStorage.getInstance();
+    const storage = StorageFactory.getSettingsStorage();
     const {toggleTheme, isThemeDark} =
         React.useContext(PreferencesContext);
 

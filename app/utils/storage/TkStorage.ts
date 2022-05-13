@@ -20,21 +20,11 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import TkKey from './TkKey';
-import SimpleKey from './SimpleKey';
-import {Storage} from './Storage';
+import GenericStorage from './GenericStorage';
 
-class TkStorage {
-    private static instance: Storage;
-
-    private constructor() {}
-
-    public static getInstance(): Storage {
-        if (!TkStorage.instance) {
-            TkStorage.instance = new TkKey(new SimpleKey());
-        }
-
-        return TkStorage.instance;
+class TkStorage extends GenericStorage<string> {
+    getRoot(): string {
+        return 'tkcompanionapp';
     }
 }
 

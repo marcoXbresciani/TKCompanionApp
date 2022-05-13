@@ -20,24 +20,8 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import TkKey from './TkKey';
-import SettingsKey from './SettingsKey';
-import SimpleKey from './SimpleKey';
+export interface ComposableKey {
+    getRoot(): string;
 
-class SettingsStorage {
-    private static instance: SettingsKey;
-
-    private constructor() {}
-
-    public static getInstance(): SettingsKey {
-        if (!SettingsStorage.instance) {
-            SettingsStorage.instance = new TkKey(
-                new SettingsKey(new SimpleKey()),
-            );
-        }
-
-        return SettingsStorage.instance;
-    }
+    getFullKey(key: string): string;
 }
-
-export default SettingsStorage;

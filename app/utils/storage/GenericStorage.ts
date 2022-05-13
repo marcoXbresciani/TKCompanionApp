@@ -20,15 +20,21 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {Key} from './Key';
+import {ComposableKey} from './ComposableKey';
 import {Storage} from './Storage';
-import EncryptedStorage from 'react-native-encrypted-storage';
+import BaseStorage from './BaseStorage';
+import SimpleKey from './SimpleKey';
+import {StorableValue} from './StorableValue';
 
-abstract class BasicStorage implements Key, Storage {
-    protected component: Key;
+abstract class GenericStorage<T extends StorableValue>
+    implements ComposableKey, Storage<T>
+{
+    protected component: ComposableKey;
+    private baseStorage: BaseStorage;
 
-    constructor(component: Key) {
+    constructor(component: ComposableKey) {
         this.component = component;
+        this.baseStorage = new BaseStorage(new SimpleKey());
     }
 
     getFullKey(key: string): string {
@@ -39,53 +45,24 @@ abstract class BasicStorage implements Key, Storage {
 
     abstract getRoot(): string;
 
-    async write(key: string, value: string): Promise<void> {
+    async write(key: string, value: T): Promise<void> {
         const fullKey = this.getFullKey(key);
-        try {
-            await EncryptedStorage.setItem(fullKey, value);
-            console.debug(`Saved '${fullKey}' = '${value}'.`);
-        } catch (error) {
-            console.error(
-                `Error '${error}' while writing '${fullKey}'.`,
-            );
-        }
+        await this.baseStorage.write(fullKey, value.toString());
     }
 
     async read(key: string): Promise<string> {
         const fullKey = this.getFullKey(key);
-        let result: string = fullKey;
-        try {
-            result =
-                (await EncryptedStorage.getItem(fullKey)) || fullKey;
-            console.debug(`Read '${fullKey}' = '${result}'.`);
-        } catch (error) {
-            console.error(
-                `Error '${error}' while reading '${fullKey}'.`,
-            );
-        }
-        return result;
+        return this.baseStorage.read(fullKey);
     }
 
     async remove(key: string): Promise<void> {
         const fullKey = this.getFullKey(key);
-        try {
-            await EncryptedStorage.removeItem(fullKey);
-            console.log(`Removed '${fullKey}'.`);
-        } catch (error) {
-            console.error(
-                `Error '${error}' while removing '${fullKey}'.`,
-            );
-        }
+        await this.baseStorage.remove(fullKey);
     }
 
     async clear() {
-        try {
-            await EncryptedStorage.clear();
-            console.debug('Encrypted storage cleared');
-        } catch (error) {
-            console.error(`Error '${error}' while clearing storage.`);
-        }
+        await this.baseStorage.clear();
     }
 }
 
-export default BasicStorage;
+export default GenericStorage;

@@ -20,12 +20,28 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {StorableValue} from './StorableValue';
+import {StorableValue} from '../StorableValue';
 
-export interface Storage<T extends StorableValue> {
-    write(key: string, value: T): Promise<void>;
+class PdsaEntry implements StorableValue {
+    target: string;
+    actual: string;
+    obstacle: string;
+    step: string;
+    learn: string;
 
-    read(key: string): Promise<string>;
-
-    remove(key: string): Promise<void>;
+    constructor(
+        target: string,
+        actual: string,
+        obstacle: string,
+        step: string,
+        learn: string,
+    ) {
+        this.target = target;
+        this.actual = actual;
+        this.obstacle = obstacle;
+        this.step = step;
+        this.learn = learn;
+    }
 }
+
+export default PdsaEntry;

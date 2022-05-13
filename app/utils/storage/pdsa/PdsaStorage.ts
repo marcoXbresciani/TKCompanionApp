@@ -20,29 +20,25 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import BasicStorage from './BasicStorage';
+import GenericStorage from '../GenericStorage';
+import PdsaEntry from './PdsaEntry';
 
-export enum AllowedSettings {
-    DARK_THEME = 'dark',
-    LANGUAGE = 'language',
-}
-
-class SettingsKey extends BasicStorage {
+class PdsaStorage extends GenericStorage<PdsaEntry> {
     getRoot(): string {
         return 'settings';
     }
 
-    async write(key: AllowedSettings, value: string): Promise<void> {
+    async write(key: string, value: PdsaEntry): Promise<void> {
         return super.write(key, value);
     }
 
-    async read(key: AllowedSettings): Promise<string> {
+    async read(key: string): Promise<string> {
         return super.read(key);
     }
 
-    async remove(key: AllowedSettings): Promise<void> {
+    async remove(key: string): Promise<void> {
         return super.remove(key);
     }
 }
 
-export default SettingsKey;
+export default PdsaStorage;

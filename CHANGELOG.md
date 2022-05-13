@@ -31,6 +31,7 @@ This file is offered as-is, without any warranty.
   If your phone is in light mode, but you choose dark/night mode for
   this application, the dark/night mode will be restored on application
   reuse.
+* Basic structure and layout for PDSA page.
 * [Delta Chat](https://delta.chat/en/) link for contact.
 ### Changed
 ### Removed

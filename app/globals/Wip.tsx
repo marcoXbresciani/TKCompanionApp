@@ -21,7 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {ItalicText, TkParagraph, TkText} from './Texts';
+import {TkParagraph, TkText} from './Texts';
 import i18next from 'i18next';
 import {TkCard, TkCardContent, TkCardTitle} from './Pieces';
 import {Card, Dialog, IconButton, Portal} from 'react-native-paper';
@@ -40,6 +40,10 @@ const TkCardWipTitle = styled(TkCardTitle)`
     border-bottom-color: ${isDark()
         ? tkDarkTheme.colors.accent
         : tkLightTheme.colors.accent};
+`;
+
+export const ItalicText = styled(TkText)`
+    font-style: italic;
 `;
 
 const Wip: ({message}: Props) => JSX.Element = ({

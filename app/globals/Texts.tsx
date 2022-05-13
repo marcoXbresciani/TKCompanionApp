@@ -42,10 +42,6 @@ export const BoldText = styled(TkText)`
     font-weight: bold;
 `;
 
-export const ItalicText = styled(TkText)`
-    font-style: italic;
-`;
-
 export const CenteredText = styled(TkText)`
     text-align: center;
 `;

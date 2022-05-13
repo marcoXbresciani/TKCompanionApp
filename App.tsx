@@ -35,6 +35,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {isDark} from './app/utils/Functions';
 import DownloadPage from './app/pages/DownloadPage';
 import DocsPage from './app/pages/docs/DocsPage';
+import PdsaPage from './app/pages/pdsa/PdsaPage';
 
 const locale = (
     Platform.OS === 'ios'
@@ -70,6 +71,11 @@ const AppNavigator: React.FunctionComponent = () => {
             icon: 'home-outline',
         },
         {
+            key: 'pdsa',
+            title: i18next.t('nav.pdsa'),
+            icon: 'journal-outline',
+        },
+        {
             key: 'docs',
             title: i18next.t('nav.docs'),
             icon: 'library-outline',
@@ -82,6 +88,7 @@ const AppNavigator: React.FunctionComponent = () => {
     ]);
     const renderScene = BottomNavigation.SceneMap({
         home: HomePage,
+        pdsa: PdsaPage,
         docs: DocsPage,
         download: DownloadPage,
     });

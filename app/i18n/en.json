@@ -89,7 +89,17 @@
             "about": "About",
             "copyright": "Copyright",
             "settings": "Settings"
-        }
+        },
+        "pdsa": "PDSA Journal"
+    },
+    "pdsa": {
+        "q1": "What is the Target Condition?",
+        "q2": "What is the Actual Condition now?",
+        "q3": "What Obstacles do you think are preventing you from reaching the target condition? Which *one* are you addressing now?",
+        "q4": "What is your Next Step? (Next experiment) What do you expect?",
+        "q5": "How quickly can we go and see what we Have Learned from taking that step?",
+        "temp": "This is an experiment for the next incoming feature: the possibility to write/save a 5Q card, possibly daily, and reviewing/re-reading it any time.",
+        "title": "Plan-Do-Study-Act"
     },
     "practice": {
         "1": "Improvement Kata / Coaching Kata practitioners are creating a dynamic that helps humans everywhere practice more scientific ways of thinking and acting, toward the best we can imagine, and beyond.",

@@ -28,16 +28,8 @@ class PdsaStorage extends GenericStorage<PdsaEntry> {
         return 'settings';
     }
 
-    async write(key: string, value: PdsaEntry): Promise<void> {
-        return super.write(key, value);
-    }
-
     async read(key: string): Promise<string> {
         return super.read(key);
-    }
-
-    async remove(key: string): Promise<void> {
-        return super.remove(key);
     }
 }
 

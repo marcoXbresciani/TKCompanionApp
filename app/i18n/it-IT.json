@@ -89,7 +89,17 @@
             "about": "Informazioni",
             "copyright": "Copyright",
             "settings": "Impostazioni"
-        }
+        },
+        "pdsa": "Diario PDSA"
+    },
+    "pdsa": {
+        "q1": "Qual è la condizione obiettivo?",
+        "q2": "Qual è la condizione attuale ora?",
+        "q3": "Quali ostacoli credi ora ti impediscano di raggiungere la condizione obiettivo? Quale (uno solo!) vuoi affrontare adesso?",
+        "q4": "Qual è il tuo prossimo step (esperimento)? Che cosa ti aspetti di ottenere?",
+        "q5": "Quanto velocemente possiamo andare a vedere che cosa abbiamo appreso da questo passo?",
+        "temp": "Questo è un esperimento per una prossima funzionalità: la possibilità di scrivere/salvare una carta delle 5 domande, giornalmente, e rileggerla/rivederla in ogni momento.",
+        "title": "Plan-Do-Study-Act"
     },
     "practice": {
         "1": "I praticanti del Kata di Miglioramento e Coaching stanno creando una dinamica che aiuta gli esseri umani, ovunque, a praticare modi più scientifici di pensare e agire, verso il meglio che possiamo immaginare e oltre.",

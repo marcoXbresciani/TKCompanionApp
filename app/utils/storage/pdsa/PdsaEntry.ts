@@ -27,21 +27,26 @@ class PdsaEntry implements StorableValue {
     actual: string;
     obstacle: string;
     step: string;
-    learn: string;
+    learnt: string;
 
+    constructor();
     constructor(
-        target: string,
-        actual: string,
-        obstacle: string,
-        step: string,
-        learn: string,
+        target?: string,
+        actual?: string,
+        obstacle?: string,
+        step?: string,
+        learnt?: string,
     ) {
-        this.target = target;
-        this.actual = actual;
-        this.obstacle = obstacle;
-        this.step = step;
-        this.learn = learn;
+        this.target = target ? target : '';
+        this.actual = actual ? actual : '';
+        this.obstacle = obstacle ? obstacle : '';
+        this.step = step ? step : '';
+        this.learnt = learnt ? learnt : '';
     }
+
+    public toString = (): string => {
+        return JSON.stringify(this);
+    };
 }
 
 export default PdsaEntry;

@@ -51,7 +51,11 @@
     },
     "app": {
         "short": "A short and small helper for Toyota Kata practitioners",
-        "wip": "Work in progress..."
+        "wip": {
+          "title": "Work in progress...",
+          "before": "Thanks for clicking, but no actual action here, yet.",
+          "after": "Feedbacks and ideas are very welcome."
+        }
     },
     "docs": {
         "4steps": "4 Steps",

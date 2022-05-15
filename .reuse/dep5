@@ -19,6 +19,10 @@ Files: .eslint*
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
+Files: .github/FUNDING.yml
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
 Files: .github/workflows/*
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP

@@ -46,7 +46,7 @@ Content to be improved and updated from time to time.
 1. [License](#license)
 
 ## Background
-From the Toyota Kata website:
+From [the Toyota Kata website](https://www-personal.umich.edu/~mrother/Homepage.html):
 > Toyota Kata is a way for managers and educators to initiate and coach
 > practice of practical scientific-thinking skills in their teams, to
 > develop and mobilize creative capability.

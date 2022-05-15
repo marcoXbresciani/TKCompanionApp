@@ -161,7 +161,7 @@ Grazie a:
   per l'icona dell'app.
 
 ## Contribuire
-Cfr. [CONTRIBUTING.it-IT.md](/docs/CONTRIBUTING-it.IT.md).
+Cfr. [CONTRIBUTING.it.md](/docs/CONTRIBUTING.it.md).
 
 > Puoi contribure anche tramite Liberapay:
 >

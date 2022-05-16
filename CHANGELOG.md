@@ -27,18 +27,28 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
-* Settings saved for later usage: now if you change language and
-  application theme, these data as saved, in encrypted form, to be
-  reused when reopening the application.
-  If your phone is in light mode, but you choose dark/night mode for
-  this application, the dark/night mode will be saved to be later
-  restored (in next versions) on application reuse.
-* Basic structure and layout for PDSA page.
-* [Delta Chat](https://delta.chat/en/) link for contact.
+* Save and restore selected language.
+  If your phone is in Italian language, but you choose English language
+  for this application, the English language will be saved to be later
+  restored on application reuse.
+  And viceversa.
 ### Changed
 ### Removed
 ### Fixed
 ### Security
+
+## [2.1.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.1.0) - 2022-05-16
+### Added
+* Save and restore selected theme.
+  If your phone is in light mode, but you choose dark/night mode for
+  this application, the dark/night mode will be saved to be later
+  restored on application reuse.
+  And viceversa.
+* Selected language saved: now if you change language, your selection is
+  saved, in encrypted form, to be reused when reopening the application.
+  The selected language is not yet restored on application reuse.
+* Basic structure and layout for PDSA page.
+* [Delta Chat](https://delta.chat/en/) link for contact.
 
 ## [2.0.2](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.0.2) - 2022-05-05
 ### Added

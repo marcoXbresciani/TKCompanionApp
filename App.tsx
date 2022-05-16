@@ -36,6 +36,8 @@ import {isDark} from './app/utils/Functions';
 import DownloadPage from './app/pages/DownloadPage';
 import DocsPage from './app/pages/docs/DocsPage';
 import PdsaPage from './app/pages/pdsa/PdsaPage';
+import StorageFactory from './app/utils/storage/StorageFactory';
+import {AllowedSettings} from './app/utils/storage/settings/AllowedSettings';
 
 const locale = (
     Platform.OS === 'ios'
@@ -122,6 +124,10 @@ const App: React.FunctionComponent = () => {
         }),
         [toggleTheme, isThemeDark],
     );
+
+    StorageFactory.getSettingsStorage()
+        .read(AllowedSettings.DARK_THEME)
+        .then((r) => setIsThemeDark(r === 'true'));
 
     return (
         <PreferencesContext.Provider value={preferences}>

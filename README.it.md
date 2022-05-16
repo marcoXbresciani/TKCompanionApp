@@ -32,17 +32,22 @@ Contiene la carta Coaching Kata 5Q, e (forse) altre cose e informazioni.
 Contenuti da migliorare e aggiornare di volta in volta.
 
 ## Sommario
+1. [Sicurezza](#sicurezza)
 1. [Contesto](#contesto)
 1. [Installazione](#installazione)
 1. [Uso](#uso)
    1. [Legenda](#legenda)
       1. [Icone](#icone)
    1. [Schermate](#schermate)
-1. [Note sui font](#note-sui-font)
+   1. [Note sui font](#note-sui-font)
 1. [Manutentori](#manutentori)
 1. [Ringraziamenti](#ringraziamenti)
 1. [Contribuire](#contribuire)
 1. [Licenza](#licenza)
+
+## Sicurezza
+Vedere il file [SECURITY.md](/docs/SECURITY.md) per note e aggiornamenti
+riguardanti problemi di sicurezza.
 
 ## Contesto
 Dal sito web
@@ -65,9 +70,6 @@ Dal sito web
 > Best of all, you only need to practice 20 minutes a day, under the
 > guidance of your coach.
 
-## Installazione
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-it.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
-
 Questa app è creata usando React Native per fare in modo che l'app per
 Android e iOS sia generata più facilmente dallo stesso codice sorgente.
 
@@ -81,6 +83,9 @@ Programma per Sviluppatori Apple.
 Quindi, per ora, questa app si trova solo su
 [F-Droid](https://f-droid.org/), il _catalogo installabile di FOSS
 (Software libero e open source) per la piattaforma Android_.
+
+## Installazione
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-it.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
 
 Per installare questa app, è necessaria l'app client F-Droid (molto
 simile a Google Play Store o Apple App Store) dal
@@ -98,7 +103,8 @@ si trovano in F-Droid.
 
 ## Uso
 Beh, è facile: installa l'app, apri l'app, fai clic su alcuni pulsanti.
-Non ci sono giochi, nessun quiz, nessuna azione da intraprendere.
+Non ci sono giochi, nessun quiz, nessuna azione da intraprendere (per
+ora).
 Siediti, segui il menu, impara, esercitati e migliora.
 
 ### Legenda
@@ -122,37 +128,36 @@ Siediti, segui il menu, impara, esercitati e migliora.
 ![Documenti](fastlane/metadata/android/it-IT/images/phoneScreenshots/docs.png)
 ![Inizio](fastlane/metadata/android/it-IT/images/phoneScreenshots/home.png)
 
-## Note sui font
+### Note sui font
 * Il font usato è [Free
   Sans](https://www.gnu.org/software/freefont/index.html)
 * Le dimensioni dei caratteri sono derivate da [GRT
   Calculator](https://grtcalculator.com) usando 20px come dimensione di
   riferimento per font [Open Sans](https://mattesontypographics.com/).
   Le misure sono:
-    * piccolo: 16px, 28px altezza della linea
-    * normale: 20px, 34px altezza della linea
-    * grande: 25px, 41px altezza della linea
+  * piccolo: 16px, 28px altezza della linea
+  * normale: 20px, 34px altezza della linea
+  * grande: 25px, 41px altezza della linea
 
 ## Manutentori
 L'app è stata iniziata da Marco Bresciani ed è attualmente mantenuta da
 Marco Bresciani.
 Lo stesso per questo documento.
 
-Puoi trovarmi su
-<a rel="me" href="https://fosstodon.org/@AAMfP">Fosstodon</a>,
-un'istanza Mastodon.
-
 È possibile contattare l'autore tramite:
-* [**Delta Chat**](https://delta.chat/en/) con l'indirizzo di posta
+* [Delta Chat](https://delta.chat/en/) con l'indirizzo di posta
   elettronica [marco.530@outlook.it](mailto:marco.530@outlook.it).
-* [Briar](https://briarproject.org/) con il link
+* Come <a rel="me" href="https://fosstodon.org/@AAMfP">@AAMfP</a>, su
+  [Fosstodon](https://fosstodon.org), un'istanza di
+  [Mastodon](https://joinmastodon.org/).
+* [Briar](https://briarproject.org/), con il link
   ```text
   briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
   ```
   da copiare e aggiungere come "contatto distante" in Briar.
 
 ## Ringraziamenti
-Grazie a:
+Grazie a (in ordine di apparizione):
 * [Marco Montalbano (@marcomontalbano)](https://github.com/marconontalbano)
   perché senza i suoi insegnamenti quest'app non sarebbe mai esistita.
 * [@licaon-kter](https://github.com/licaon-kter) per il supporto nella
@@ -167,10 +172,13 @@ Cfr. [CONTRIBUTING.it.md](/docs/CONTRIBUTING.it.md).
 >
 > <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 >
-> <img src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
-> <img src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
+> <img alt="ricevuti via liberapay" src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
+> <img alt="sostenitori su liberapay" src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
 
 ## Licenza
+Vedere la cartella `LICENSES` o il file `COPYING` per i testi integrali
+delle licenze.
+
 Licenza generale del progetto, in breve:
 [![GPL logo](https://www.gnu.org/graphics/gplv3-or-later.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 ```text
@@ -205,9 +213,6 @@ This file is offered as-is, without any warranty.
 > [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
 > Questa è una opera liberamente licenziata, come spiegato nella
 > [Definizione di Opere Culturali Libere](https://freedomdefined.org/Definition).
-
-Vedere la cartella `LICENSES` o il file `COPYING` per i testi integrali
-delle licenze.
 
 [Free Sans](https://www.gnu.org/software/freefont/index.html) è il font
 usato, licenziato [under the terms of the GNU General Public

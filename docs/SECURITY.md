@@ -1,21 +1,31 @@
+<!--
+© 2022 Marco Bresciani
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+This file is offered as-is, without any warranty.
+
+SPDX-FileCopyrightText: 2022 Marco Bresciani
+
+SPDX-License-Identifier: FSFAP
+-->
 # Security Policy
 
 ## Supported Versions
+Generally the latest version is the only one supported with updates
+related to security, if any.
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Consider that this application does not save files, does not use the
+Internet or ask for any kind of permission when running on your device.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+Should be pretty safe.
+
+Nevertheless, it is suggested to always use the latest available version
+are read the possible security issues reported here.
 
 ## Reporting a Vulnerability
-
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+To report a vulnerability, please use the project
+[Issues](https://github.com/marcoXbresciani/TKCompanionApp/issues) page
+describing the problem, a possible way to reproduce it and the risk it
+poses.

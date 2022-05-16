@@ -33,17 +33,22 @@ and information.
 Content to be improved and updated from time to time.
 
 ## Table of Contents
+1. [Security](#security)
 1. [Background](#background)
 1. [Install](#install)
 1. [Usage](#usage)
    1. [Legend](#legend)
       1. [Icons](#icons)
    1. [Screenshots](#screenshots)
-1. [Font Notes](#font-notes)
+   1. [Font Notes](#font-notes)
 1. [Maintainers](#maintainers)
 1. [Thanks](#thanks)
 1. [Contributing](#contributing)
 1. [License](#license)
+
+## Security
+See file [SECURITY.md](/docs/SECURITY.md) for notes and updates related
+to security issues.
 
 ## Background
 From [the Toyota Kata website](https://www-personal.umich.edu/~mrother/Homepage.html):
@@ -65,9 +70,6 @@ From [the Toyota Kata website](https://www-personal.umich.edu/~mrother/Homepage.
 > Best of all, you only need to practice 20 minutes a day, under the
 > guidance of your coach.
 
-## Install
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
-
 This app is currently built using React Native to make building the app
 for both Android and iOS from the same source code easier.
 
@@ -81,6 +83,9 @@ Apple Developer Program.
 So, for now, you can find this app only through the
 [F-Droid](https://f-droid.org/) _installable catalogue of FOSS (Free and
 Open Source Software) applications for the Android platform_.
+
+## Install
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
 
 To install this app, you then need the F-Droid client app (pretty
 similar to Google Play Store or Apple App Store) from the
@@ -98,7 +103,7 @@ F-Droid.
 
 ## Usage
 Well, it's easy: install the app, open the app, click some buttons.
-There are no games, no quizzes, no actions to take.
+There are no games, no quizzes, no actions to take (yet).
 Just sit, follow the menu, learn, practice and improve.
 
 ### Legend
@@ -121,7 +126,7 @@ Just sit, follow the menu, learn, practice and improve.
 ![Docs](fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png)
 ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
 
-## Font Notes
+### Font Notes
 * Font used is [Free
   Sans](https://www.gnu.org/software/freefont/index.html).
 * Font sizes are derived from [GRT
@@ -137,21 +142,20 @@ The app has been started by Marco Bresciani and is currently maintained
 by Marco Bresciani.
 Same for this document.
 
-You can find me on
-<a rel="me" href="https://fosstodon.org/@AAMfP">Fosstodon</a>, a
-Mastodon instance.
-
 You can keep in touch with the author through:
-* [**Delta Chat**](https://delta.chat/en/) with the email address
+* [Delta Chat](https://delta.chat/en/) with the email address
   [marco.530@outlook.it](mailto:marco.530@outlook.it).
-* [Briar](https://briarproject.org/) with the link
+* as <a rel="me" href="https://fosstodon.org/@AAMfP">@AAMfP</a> on
+  [Fosstodon](https://fosstodon.org), a
+  [Mastodon](https://joinmastodon.org/) instance.
+* [Briar](https://briarproject.org/), with the link
   ```text
   briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
   ```
   to be copy-pasted as "contact at a distance" in Briar.
 
 ## Thanks
-Thanks to:
+Thanks to (in appearing order):
 * [Marco Montalbano (@marcomontalbano)](https://github.com/marcomontalbano)
   because without his teachings, this app would never have happened.
 * [@licaon-kter](https://github.com/licaon-kter) for the support on
@@ -166,10 +170,12 @@ See [CONTRIBUTING.md](/docs/CONTRIBUTING.md).
 >
 > <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 >
-> <img src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
-> <img src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
+> <img alt="receives on liberapay" src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
+> <img alt="patrons on liberapay" src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
 
 ## License
+See `LICENSES` folder or `COPYING` file, for the whole licences text.
+
 Overall project license, in brief:
 [![GPL logo](https://www.gnu.org/graphics/gplv3-or-later.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 ```text
@@ -203,8 +209,6 @@ This file is offered as-is, without any warranty.
 
 > [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
 This is a freely licensed work, as explained in the [Definition of Free Cultural Works](https://freedomdefined.org/Definition).
-
-See `LICENSES` folder or `COPYING` file, for the whole licences text.
 
 [Free Sans](https://www.gnu.org/software/freefont/index.html) is the
 used font, and it's licensed [under the terms of the GNU General Public

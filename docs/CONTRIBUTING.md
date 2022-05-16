@@ -41,8 +41,8 @@ We're here to improve!
 >
 > <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 >
-> <img src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
-> <img src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
+> <img alt="receives on liberapay" src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
+> <img alt="patrons on liberapay" src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
 
 ## For Software Developers
 If you are a software developer and want to contribute improving this
@@ -102,7 +102,9 @@ Once the code is completed and tested, in order to release there are a
 bit of steps to follow.
 
 **Preflight checklist**: these are the tasks to do before creating a new
-release:
+release.
+> After each step is suggested to commit and push the code on main
+> repository.
 1. Update [package.json](/package.json) with the new version number and
    run `npm install`.
 1. Verify that [CHANGELOG.md](/CHANGELOG.md) contains the properly

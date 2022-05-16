@@ -16,12 +16,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+```text
 © 2021-2022 Marco Bresciani
 
 Copying and distribution of this file, with or without modification, are
 permitted in any medium without royalty provided the copyright notice
 and this notice are preserved.
 This file is offered as-is, without any warranty.
+```
 
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
@@ -29,8 +31,8 @@ This file is offered as-is, without any warranty.
   application theme, these data as saved, in encrypted form, to be
   reused when reopening the application.
   If your phone is in light mode, but you choose dark/night mode for
-  this application, the dark/night mode will be restored on application
-  reuse.
+  this application, the dark/night mode will be saved to be later
+  restored (in next versions) on application reuse.
 * Basic structure and layout for PDSA page.
 * [Delta Chat](https://delta.chat/en/) link for contact.
 ### Changed

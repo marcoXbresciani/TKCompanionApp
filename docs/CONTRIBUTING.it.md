@@ -40,22 +40,22 @@ Siamo qui per migliorare!
 >
 > <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 >
-> <img src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
-> <img src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
+> <img alt="ricevuti via liberapay" src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
+> <img alt="sostenitori su liberapay" src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
 
 ## Per gli sviluppatori
 Se sei uno sviluppatore software e vuoi contribuire a migliorare l'app,
 sei benvenuto!
+
 Trova l'ultimo NodeJS LTS corrente
 ([16.15.0](https://nodejs.org/download/release/latest-gallium/), al
 2022-04-27) per il tuo sistema.
 Prendi il codice sorgente clonando
 [il repository](https://github.com/marcoXbresciani/TKCompanionApp).
 Quindi vai nella cartella principale del progetto (contenente anche
-questo stesso file che stai leggendo) ed esegui `npm -g install yarn`.
-Fatto questo, esegui `yarn install` e dovresti vedere che tutte le
-dipendenze necessarie sono scaricate e installate tramite il gestore di
-pacchetti Yarn.
+questo stesso file che stai leggendo) ed esegui `npm install` e dovresti
+vedere che tutte le dipendenze necessarie sono scaricate e installate
+tramite il gestore di pacchetti NPM.
 
 ![dimensione del codice GitHub in byte](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![Attività di commit GitHub](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
@@ -102,7 +102,9 @@ Una volta che il codice è completo e testato, per rilasciare ci sono una
 serie di passi da seguire.
 
 **Lista di controllo pre-volo**: queste sono le attivitò da fare prima
-di creare un nuovo rilascio:
+di creare un nuovo rilascio.
+> Dopo ogni passo è opportuno e consigliato committare e eseguire il
+> push del codice al repository prinicipale.
 1. Aggiornare [package.json](/package.json) col nuovo numero di versione
    ed eseguire `npm install`.
 1. Verificare che [CHANGELOG.md](/CHANGELOG.md) contenga la relativa

@@ -39,6 +39,8 @@ This file is offered as-is, without any warranty.
 
 ## [2.1.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.1.0) - 2022-05-16
 ### Added
+* [ADR-009](/docs/architecture/decisions/009-encrypted-storage.md) for
+  choosing the way to save settings and, possibly, other app data.
 * Save and restore selected theme.
   If your phone is in light mode, but you choose dark/night mode for
   this application, the dark/night mode will be saved to be later

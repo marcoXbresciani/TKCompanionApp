@@ -1,0 +1,10 @@
+Salva e ripristina il tema selezionato: se il telefono è in modalità
+chiara, ma scegli la modalità scura/notturna per questa applicazione, la
+modalità scura/notturna sarà salva, in forma criptata, per essere poi
+ripristinata all'avvio dell'applicazione.
+E viceversa.
+La lingua scelta viene salvata: se cambi la lingua, la scelta viene
+salvata, in forma criptata, per essere poi (in una versione successiva)
+ripristinata all'avvio dell'applicazione.
+Struttura base e contenuti della pagina PDSA.
+Collegamento Delta Chat per il contatto.

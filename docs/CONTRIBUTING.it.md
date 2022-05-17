@@ -23,6 +23,7 @@ Per qualsiasi domanda... chiedi pure!
    1. [Come iniziare](#come-iniziare)
    1. [Come compilare](#come-compilare)
    1. [Come rilasciare](#come-rilasciare)
+   1. [Come testare localmente](#come-testare-localmente)
 
 ## Per tutti i contributi
 Se non sei uno sviluppatore di software e vuoi contribuire a migliorare
@@ -72,6 +73,12 @@ Da (un'altra) riga di comando avvia `npm run android` che preparerà e
 avvierà la tua app, connettendoti al Metro-coso di cui sopra.
 
 ### Come compilare
+Se vuoi creare l'applicazione per sistemi Android, vai nella cartella
+`android` ed esegui `gradlew clean build` per generare gli APK.
+Il file APK in modalità debug sarà disponibile nella cartella
+`android\app\build\outputs\apk\debug` col nome `app-debug.apk`.
+Il file APK in modalità rilascio sarà disponibile nella cartella
+`android\app\build\outputs\apk\release` col nome `app-release.apk`.
 
 #### Aggiornare NodeJS
 Per aggiornare la versione di NodeJS all'ultima LTS disponibile, poiché
@@ -135,9 +142,9 @@ di creare un nuovo rilascio.
    [CHANGELOG.md](/CHANGELOG.md).
 1. Verificare il soddisfacimento dei criteri
    [REUSE](https://reuse.software/) tramite il comando `reuse lint`.
-1. Committare e etichettare il codice col numero di
-   [versionamento (semantico)](https://semver.org/) relativo.
-1. Aggiornare il codice.
+1. *Se non si sta eseguendo un aggiornamento di Node*, etichettare il
+   codice col numero di [versionamento (semantico)](https://semver.org/)
+   relativo.
 
 ### Come testare localmente
 Il file APK generato può essere (auto) firmato per consentirne

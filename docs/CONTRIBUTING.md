@@ -31,8 +31,8 @@ this app, you're welcome!
 You don't need the code, but if you want help translating in your
 language (or fix my English, since I'm not a native speaker), add more
 content, suggest graphical or layout improvement or whatever
-contribution you can give, please [open a new
-issue](https://github.com/marcoXbresciani/TKCompanionApp/issues)
+contribution you can give, please
+[open a new issue](https://github.com/marcoXbresciani/TKCompanionApp/issues)
 explaining the problem you've noticed and your proposed solution.
 
 We're here to improve!
@@ -72,6 +72,12 @@ From (another) command line launch `npm run android` that will prepare
 and launch your app, connecting to the Metro thing above.
 
 ### How to Build
+If you're going to build for Android systems, go in the `android` folder
+and run `gradlew clean build` for generating the APKs.
+The debug mode APK will be available in
+`android\app\build\outputs\apk\debug` folder as `app-debug.apk`.
+The release mode APK will be available in
+`android\app\build\outputs\apk\release` folder as `app-release.apk`.
 
 #### Updating NodeJS
 To update the version of NodeJS to the latest available LTS, it's better
@@ -133,12 +139,11 @@ release.
    file.
 1. Verify [REUSE](https://reuse.software/) compliance through
    `reuse lint` command.
-1. Commit and tag with the corresponding
+1. If you're not updating Node*, tag with the corresponding
    [(semantic) version](https://semver.org/) number.
-1. Push the code.
 
 ### How to Test Locally
-The generated APK shall be (self) signed to be able to install it on a
-real device.
+The generated APK (see [How to Build](#how-to-build)) shall be (self)
+signed to be able to install it on a real device.
 The [uber-apk-signer](https://github.com/patrickfav/uber-apk-signer)
 tool can be used to quickly and easily sign any APK.

@@ -38,6 +38,7 @@ import DocsPage from './app/pages/docs/DocsPage';
 import PdsaPage from './app/pages/pdsa/PdsaPage';
 import StorageFactory from './app/utils/storage/StorageFactory';
 import {AllowedSettings} from './app/utils/storage/settings/AllowedSettings';
+import {PreferencesContext} from './app/utils/Constants';
 
 const locale = (
     Platform.OS === 'ios'
@@ -103,11 +104,6 @@ const AppNavigator: React.FunctionComponent = () => {
         />
     );
 };
-
-export const PreferencesContext = React.createContext({
-    toggleTheme: () => {},
-    isThemeDark: isDark(),
-});
 
 const App: React.FunctionComponent = () => {
     const [isThemeDark, setIsThemeDark] = React.useState(isDark());

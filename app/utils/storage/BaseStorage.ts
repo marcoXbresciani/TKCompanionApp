@@ -34,7 +34,7 @@ class BaseStorage implements Storage<string> {
     async write(key: string, value: string): Promise<void> {
         try {
             await EncryptedStorage.setItem(key, value);
-            console.info(`Saved '${key}' = '${value}'.`);
+            console.debug(`Saved '${key}' = '${value}'.`);
         } catch (error) {
             console.error(`Error '${error}' while writing '${key}'.`);
         }
@@ -44,7 +44,7 @@ class BaseStorage implements Storage<string> {
         let result: string = key;
         try {
             result = (await EncryptedStorage.getItem(key)) || key;
-            console.info(`Read '${key}' = '${result}'.`);
+            console.debug(`Read '${key}' = '${result}'.`);
         } catch (error) {
             console.error(`Error '${error}' while reading '${key}'.`);
         }
@@ -54,7 +54,7 @@ class BaseStorage implements Storage<string> {
     async remove(key: string): Promise<void> {
         try {
             await EncryptedStorage.removeItem(key);
-            console.info(`Removed '${key}'.`);
+            console.debug(`Removed '${key}'.`);
         } catch (error) {
             console.error(`Error '${error}' while removing '${key}'.`);
         }
@@ -63,7 +63,7 @@ class BaseStorage implements Storage<string> {
     async clear() {
         try {
             await EncryptedStorage.clear();
-            console.info('Encrypted storage cleared');
+            console.debug('Encrypted storage cleared');
         } catch (error) {
             console.error(`Error '${error}' while clearing storage.`);
         }

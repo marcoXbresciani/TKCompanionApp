@@ -21,15 +21,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import i18next from 'i18next';
-import {tEn, tItIT} from './app/i18n';
-import {NativeModules, Platform} from 'react-native';
 import {
     BottomNavigation,
     Provider as PaperProvider,
 } from 'react-native-paper';
 import HomePage from './app/pages/home/HomePage';
-import {initReactI18next} from 'react-i18next';
 import {tkDarkTheme, tkLightTheme} from './app/globals/Config';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {isDark} from './app/utils/Functions';
@@ -38,31 +34,7 @@ import DocsPage from './app/pages/docs/DocsPage';
 import PdsaPage from './app/pages/pdsa/PdsaPage';
 import StorageFactory from './app/utils/storage/StorageFactory';
 import {AllowedSettings} from './app/utils/storage/settings/AllowedSettings';
-
-const locale = (
-    Platform.OS === 'ios'
-        ? NativeModules.SettingsManager.settings.AppleLanguages[0] ||
-          NativeModules.SettingsManager.settings.AppleLocale
-        : NativeModules.I18nManager.localeIdentifier
-).replace('_', '-');
-
-const resources = {
-    en: {translation: tEn},
-    'it-IT': {translation: tItIT},
-};
-
-i18next.use(initReactI18next).init({
-    cleanCode: true,
-    compatibilityJSON: 'v3',
-    debug: false,
-    interpolation: {
-        escapeValue: false,
-    },
-    fallbackLng: 'en',
-    lng: locale,
-    nonExplicitSupportedLngs: true,
-    resources,
-});
+import i18next from './app/i18n/i18n';
 
 const AppNavigator: React.FunctionComponent = () => {
     const [index, setIndex] = React.useState(0);

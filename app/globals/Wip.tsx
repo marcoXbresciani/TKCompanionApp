@@ -22,7 +22,7 @@
  */
 import * as React from 'react';
 import {TkParagraph, TkText} from './Texts';
-import i18next from 'i18next';
+import i18next from '../i18n/i18n';
 import {TkCard, TkCardContent, TkCardTitle} from './Pieces';
 import {Card, Dialog, IconButton, Portal} from 'react-native-paper';
 import {Linking} from 'react-native';

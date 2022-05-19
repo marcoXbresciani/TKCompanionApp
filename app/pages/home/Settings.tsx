@@ -22,7 +22,7 @@
  */
 import * as React from 'react';
 import {List, Switch} from 'react-native-paper';
-import i18next from 'i18next';
+import i18next from '../../i18n/i18n';
 import {View} from 'react-native';
 import {PreferencesContext} from '../../../App';
 import {TkText} from '../../globals/Texts';

@@ -21,7 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import i18next from 'i18next';
+import i18next from '../i18n/i18n';
 import {Caption, Subheading, Title} from 'react-native-paper';
 import styled from 'styled-components';
 import {APP_NAME, APP_VERSION} from '../utils/Constants';

@@ -21,7 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import i18next from 'i18next';
+import i18next from '../../../i18n/i18n';
 import {Trans, useTranslation} from 'react-i18next';
 import {BoldText, TkParagraph} from '../../../globals/Texts';
 import {Button, Card} from 'react-native-paper';

@@ -26,7 +26,7 @@ import Version from '../../globals/Version';
 import {Trans, useTranslation} from 'react-i18next';
 import {BoldText} from '../../globals/Texts';
 import {Linking} from 'react-native';
-import i18next from 'i18next';
+import i18next from '../../i18n/i18n';
 import styled from 'styled-components';
 
 const MightItem = styled(List.Item)``;

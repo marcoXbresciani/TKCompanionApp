@@ -35,6 +35,7 @@ import PdsaPage from './app/pages/pdsa/PdsaPage';
 import StorageFactory from './app/utils/storage/StorageFactory';
 import {AllowedSettings} from './app/utils/storage/settings/AllowedSettings';
 import i18next from './app/i18n/i18n';
+import {PreferencesContext} from './app/utils/Constants';
 
 const AppNavigator: React.FunctionComponent = () => {
     const [index, setIndex] = React.useState(0);
@@ -75,11 +76,6 @@ const AppNavigator: React.FunctionComponent = () => {
         />
     );
 };
-
-export const PreferencesContext = React.createContext({
-    toggleTheme: () => {},
-    isThemeDark: isDark(),
-});
 
 const App: React.FunctionComponent = () => {
     const [isThemeDark, setIsThemeDark] = React.useState(isDark());

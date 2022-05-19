@@ -24,7 +24,7 @@ import {Linking} from 'react-native';
 import * as React from 'react';
 import {useState} from 'react';
 import {List, Snackbar} from 'react-native-paper';
-import i18next from 'i18next';
+import i18next from '../i18n/i18n';
 
 const DownloadPage: React.FunctionComponent = () => {
     const [message, setMessage] = useState('');

@@ -35,7 +35,7 @@ import {TkCard, TkCardContent} from '../../globals/Pieces';
 import Settings from './Settings';
 import Copyright from './Copyright';
 import About from './About';
-import i18next from 'i18next';
+import i18next from '../../i18n/i18n';
 
 const HomePage: React.FunctionComponent = () => {
     const [visibleAbout, setVisibleAbout] = React.useState(false);

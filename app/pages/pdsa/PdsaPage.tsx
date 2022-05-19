@@ -23,7 +23,7 @@
 import * as React from 'react';
 import {Appbar, Card, TextInput} from 'react-native-paper';
 import {TkParagraph} from '../../globals/Texts';
-import i18next from 'i18next';
+import i18next from '../../i18n/i18n';
 import {ScrollView} from 'react-native';
 import Wip from '../../globals/Wip';
 import PdsaEntry from '../../utils/storage/pdsa/PdsaEntry';

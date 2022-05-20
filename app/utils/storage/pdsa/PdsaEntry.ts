@@ -37,11 +37,11 @@ class PdsaEntry implements StorableValue {
         step?: string,
         learnt?: string,
     ) {
-        this.target = target ? target : '';
-        this.actual = actual ? actual : '';
-        this.obstacle = obstacle ? obstacle : '';
-        this.step = step ? step : '';
-        this.learnt = learnt ? learnt : '';
+        this.target = target ?? '';
+        this.actual = actual ?? '';
+        this.obstacle = obstacle ?? '';
+        this.step = step ?? '';
+        this.learnt = learnt ?? '';
     }
 
     public toString = (): string => {

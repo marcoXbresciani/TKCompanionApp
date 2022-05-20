@@ -93,6 +93,9 @@
         "pdsa": "Diario PDSA"
     },
     "pdsa": {
+        "alert": {
+            "title": "PDSA non valido"
+        },
         "q1": "Qual è la condizione obiettivo?",
         "q2": "Qual è la condizione attuale ora?",
         "q3": "Quali ostacoli credi ora ti impediscano di raggiungere la condizione obiettivo? Quale (uno solo!) vuoi affrontare adesso?",

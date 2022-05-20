@@ -22,10 +22,15 @@
  */
 import GenericStorage from '../GenericStorage';
 import PdsaEntry from './PdsaEntry';
+import {StorableValue} from '../StorableValue';
 
-class PdsaStorage extends GenericStorage<PdsaEntry> {
+class PdsaStorage extends GenericStorage<StorableValue> {
     getRoot(): string {
         return 'settings';
+    }
+
+    async write(key: string, value: PdsaEntry): Promise<void> {
+        super.write(key, JSON.stringify(value));
     }
 
     async read(key: string): Promise<string> {

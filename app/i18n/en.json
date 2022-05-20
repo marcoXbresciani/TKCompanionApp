@@ -93,6 +93,9 @@
         "pdsa": "PDSA Journal"
     },
     "pdsa": {
+        "alert": {
+            "title": "Invalid PDSA Found"
+        },
         "q1": "What is the Target Condition?",
         "q2": "What is the Actual Condition now?",
         "q3": "What Obstacles do you think are preventing you from reaching the target condition? Which *one* are you addressing now?",

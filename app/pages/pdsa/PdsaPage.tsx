@@ -21,10 +21,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
+import {useEffect} from 'react';
 import {Appbar, Card, TextInput} from 'react-native-paper';
 import {TkParagraph} from '../../globals/Texts';
 import i18next from '../../i18n/i18n';
-import {ScrollView} from 'react-native';
+import {Alert, ScrollView} from 'react-native';
 import Wip from '../../globals/Wip';
 import PdsaEntry from '../../utils/storage/pdsa/PdsaEntry';
 import StorageFactory from '../../utils/storage/StorageFactory';
@@ -33,6 +34,22 @@ const DownloadPage: React.FC = () => {
     const [pdsaEntry, setPdsaEntry] = React.useState(new PdsaEntry());
     const [visibleWip, setVisibleWip] = React.useState(false);
     const pdsaStorage = StorageFactory.getPdsaStorage();
+
+    useEffect(() => {
+        pdsaStorage
+            .read('PDSA')
+            .then((entryString) => {
+                const parse: PdsaEntry = JSON.parse(entryString);
+                setPdsaEntry(parse);
+            })
+            .catch((reason) => {
+                Alert.alert(
+                    i18next.t('pdsa.alert.title'),
+                    `${reason}.`,
+                );
+                setPdsaEntry(new PdsaEntry());
+            });
+    }, [pdsaStorage]);
 
     return (
         <>
@@ -46,11 +63,10 @@ const DownloadPage: React.FC = () => {
                 <Appbar.Action
                     icon="save-outline"
                     onPress={() => {
-                        setVisibleWip(true);
                         // const [today] = new Date()
                         //     .toISOString()
                         //     .split('T');
-                        // pdsaStorage.write(today, pdsaEntry);
+                        pdsaStorage.write('PDSA', pdsaEntry);
                     }}
                 />
                 <Appbar.Action
@@ -74,21 +90,21 @@ const DownloadPage: React.FC = () => {
                             label="Target"
                             mode="outlined"
                             multiline={true}
-                            onChangeText={(txt) =>
-                                setPdsaEntry((entry) => ({
-                                    ...entry,
+                            onChangeText={(txt) => {
+                                setPdsaEntry({
+                                    ...pdsaEntry,
                                     target: txt,
-                                }))
-                            }
+                                });
+                            }}
                             placeholder="Target"
                             right={
                                 <TextInput.Icon
                                     name="trash-outline"
                                     onPress={() =>
-                                        setPdsaEntry((entry) => ({
-                                            ...entry,
+                                        setPdsaEntry({
+                                            ...pdsaEntry,
                                             target: '',
-                                        }))
+                                        })
                                     }
                                 />
                             }
@@ -101,21 +117,21 @@ const DownloadPage: React.FC = () => {
                             label="Actual"
                             mode="outlined"
                             multiline={true}
-                            onChangeText={(txt) =>
-                                setPdsaEntry((entry) => ({
-                                    ...entry,
+                            onChangeText={(txt) => {
+                                setPdsaEntry({
+                                    ...pdsaEntry,
                                     actual: txt,
-                                }))
-                            }
+                                });
+                            }}
                             placeholder="Actual"
                             right={
                                 <TextInput.Icon
                                     name="trash-outline"
                                     onPress={() =>
-                                        setPdsaEntry((entry) => ({
-                                            ...entry,
+                                        setPdsaEntry({
+                                            ...pdsaEntry,
                                             actual: '',
-                                        }))
+                                        })
                                     }
                                 />
                             }
@@ -128,21 +144,21 @@ const DownloadPage: React.FC = () => {
                             label="Obstacle"
                             mode="outlined"
                             multiline={true}
-                            onChangeText={(txt) =>
-                                setPdsaEntry((entry) => ({
-                                    ...entry,
+                            onChangeText={(txt) => {
+                                setPdsaEntry({
+                                    ...pdsaEntry,
                                     obstacle: txt,
-                                }))
-                            }
+                                });
+                            }}
                             placeholder="Obstacle"
                             right={
                                 <TextInput.Icon
                                     name="trash-outline"
                                     onPress={() =>
-                                        setPdsaEntry((entry) => ({
-                                            ...entry,
+                                        setPdsaEntry({
+                                            ...pdsaEntry,
                                             obstacle: '',
-                                        }))
+                                        })
                                     }
                                 />
                             }
@@ -155,21 +171,21 @@ const DownloadPage: React.FC = () => {
                             label="Step"
                             mode="outlined"
                             multiline={true}
-                            onChangeText={(txt) =>
-                                setPdsaEntry((entry) => ({
-                                    ...entry,
+                            onChangeText={(txt) => {
+                                setPdsaEntry({
+                                    ...pdsaEntry,
                                     step: txt,
-                                }))
-                            }
+                                });
+                            }}
                             placeholder="Step"
                             right={
                                 <TextInput.Icon
                                     name="trash-outline"
                                     onPress={() =>
-                                        setPdsaEntry((entry) => ({
-                                            ...entry,
+                                        setPdsaEntry({
+                                            ...pdsaEntry,
                                             step: '',
-                                        }))
+                                        })
                                     }
                                 />
                             }
@@ -182,21 +198,21 @@ const DownloadPage: React.FC = () => {
                             label="Learnt"
                             mode="outlined"
                             multiline={true}
-                            onChangeText={(txt) =>
-                                setPdsaEntry((entry) => ({
-                                    ...entry,
+                            onChangeText={(txt) => {
+                                setPdsaEntry({
+                                    ...pdsaEntry,
                                     learnt: txt,
-                                }))
-                            }
+                                });
+                            }}
                             placeholder="Learnt"
                             right={
                                 <TextInput.Icon
                                     name="trash-outline"
                                     onPress={() =>
-                                        setPdsaEntry((entry) => ({
-                                            ...entry,
-                                            step: '',
-                                        }))
+                                        setPdsaEntry({
+                                            ...pdsaEntry,
+                                            learnt: '',
+                                        })
                                     }
                                 />
                             }

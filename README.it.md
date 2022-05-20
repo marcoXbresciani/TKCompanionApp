@@ -51,7 +51,7 @@ riguardanti problemi di sicurezza.
 
 ## Contesto
 Dal sito web
-[the Toyota Kata website](https://www-personal.umich.edu/~mrother/Homepage.html):
+[the Toyota Kata website](http://www-personal.umich.edu/~mrother/Homepage.html):
 > Toyota Kata is a way for managers and educators to initiate and coach
 > practice of practical scientific-thinking skills in their teams, to
 > develop and mobilize creative capability.
@@ -96,6 +96,14 @@ usare per scaricarla e
 Quindi, aprendo l'app F-Droid si può cercare
 [TKCompanionApp](https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/).
 Installarla e aprirla.
+
+In alternativa, dalla
+[pagina dell'applicazione su sito F-Droid]([TKCompanionApp](https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/),
+si può scaricare direttamente il file APK da installare manualmente sul
+proprio dispositivo.
+Non c'è nessuna differenza nelle funzionalità, l'unica differenza è che,
+in questo modo, non ci sarà l'app client F-Droid a garantire gli
+aggiornamenti automatici (un po' come fa Google Play colle altre app).
 
 Benvenuti nel mondo FOSS.
 Si può dare anche un'occhiata a tutte le altre meravigliose app FOSS che

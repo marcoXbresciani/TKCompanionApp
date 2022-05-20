@@ -51,7 +51,7 @@ See file [SECURITY.md](/docs/SECURITY.md) for notes and updates related
 to security issues.
 
 ## Background
-From [the Toyota Kata website](https://www-personal.umich.edu/~mrother/Homepage.html):
+From [the Toyota Kata website](http://www-personal.umich.edu/~mrother/Homepage.html):
 > Toyota Kata is a way for managers and educators to initiate and coach
 > practice of practical scientific-thinking skills in their teams, to
 > develop and mobilize creative capability.
@@ -96,6 +96,13 @@ download and
 Then, open the F-Droid repository app and search for
 [TKCompanionApp](https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/).
 Install it, and open it.
+
+Eventually, you can directly download the APK from the
+[app page on F-Droid website]([TKCompanionApp](https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/),
+to be installed manually on your device.
+There's no difference in functionalities, the only difference being the
+fact that without the F-Droid client app you won't receive automatic
+updates (just like Google Play did with other apps).
 
 Welcome to the world of FOSS.
 Please also take a look at all other wonderful FOSS apps you can find in

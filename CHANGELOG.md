@@ -33,6 +33,8 @@ This file is offered as-is, without any warranty.
   restored on application reuse.
   And viceversa.
 ### Changed
+* Internal improvement on I18N management.
+* Internal improvement on bottom navigation management.
 ### Removed
 ### Fixed
 ### Security

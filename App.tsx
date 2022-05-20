@@ -21,61 +21,14 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {
-    BottomNavigation,
-    Provider as PaperProvider,
-} from 'react-native-paper';
-import HomePage from './app/pages/home/HomePage';
+import {Provider as PaperProvider} from 'react-native-paper';
 import {tkDarkTheme, tkLightTheme} from './app/globals/Config';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {isDark} from './app/utils/Functions';
-import DownloadPage from './app/pages/DownloadPage';
-import DocsPage from './app/pages/docs/DocsPage';
-import PdsaPage from './app/pages/pdsa/PdsaPage';
 import StorageFactory from './app/utils/storage/StorageFactory';
 import {AllowedSettings} from './app/utils/storage/settings/AllowedSettings';
-import i18next from './app/i18n/i18n';
 import {PreferencesContext} from './app/utils/Constants';
-
-const AppNavigator: React.FunctionComponent = () => {
-    const [index, setIndex] = React.useState(0);
-    const [routes] = React.useState([
-        {
-            key: 'home',
-            title: i18next.t('nav.home'),
-            icon: 'home-outline',
-        },
-        {
-            key: 'pdsa',
-            title: i18next.t('nav.pdsa'),
-            icon: 'journal-outline',
-        },
-        {
-            key: 'docs',
-            title: i18next.t('nav.docs'),
-            icon: 'library-outline',
-        },
-        {
-            key: 'download',
-            title: i18next.t('nav.download'),
-            icon: 'download-outline',
-        },
-    ]);
-    const renderScene = BottomNavigation.SceneMap({
-        home: HomePage,
-        pdsa: PdsaPage,
-        docs: DocsPage,
-        download: DownloadPage,
-    });
-
-    return (
-        <BottomNavigation
-            navigationState={{index, routes}}
-            onIndexChange={setIndex}
-            renderScene={renderScene}
-        />
-    );
-};
+import TkNavigator from './app/globals/TkNavigator';
 
 const App: React.FunctionComponent = () => {
     const [isThemeDark, setIsThemeDark] = React.useState(isDark());
@@ -105,7 +58,7 @@ const App: React.FunctionComponent = () => {
                 }}
                 theme={theme}
             >
-                <AppNavigator />
+                <TkNavigator />
             </PaperProvider>
         </PreferencesContext.Provider>
     );

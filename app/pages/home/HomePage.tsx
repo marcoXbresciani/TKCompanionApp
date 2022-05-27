@@ -35,7 +35,7 @@ import {TkCard, TkCardContent} from '../../globals/Pieces';
 import Settings from './Settings';
 import Copyright from './Copyright';
 import About from './About';
-import i18next from '../../i18n/i18n';
+import i18n from '../../i18n/i18n';
 
 const HomePage: React.FunctionComponent = () => {
     const [visibleAbout, setVisibleAbout] = React.useState(false);
@@ -105,18 +105,18 @@ const HomePage: React.FunctionComponent = () => {
                     <Menu.Item
                         onPress={showSettings}
                         icon="settings-outline"
-                        title={i18next.t('nav.menu.settings')}
+                        title={i18n.t('nav.menu.settings')}
                     />
                     <Menu.Item
                         onPress={showCopyright}
                         icon="document-text-outline"
-                        title={i18next.t('nav.menu.copyright')}
+                        title={i18n.t('nav.menu.copyright')}
                     />
                     <Divider />
                     <Menu.Item
                         onPress={showAbout}
                         icon="information-circle-outline"
-                        title={i18next.t('nav.menu.about')}
+                        title={i18n.t('nav.menu.about')}
                     />
                 </Menu>
             </Appbar>

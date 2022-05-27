@@ -21,10 +21,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import i18next from '../../../i18n/i18n';
 import {Trans, useTranslation} from 'react-i18next';
 import {BoldText, TkParagraph} from '../../../globals/Texts';
 import {Button, Card} from 'react-native-paper';
+import i18n from '../../../i18n/i18n';
 
 type Props = {
     onPress: () => void;
@@ -36,8 +36,8 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
     return (
         <Card>
             <Card.Title
-                title={i18next.t('5q.back.title')}
-                subtitle={i18next.t('5q.back.quote')}
+                title={i18n.t('5q.back.title')}
+                subtitle={i18n.t('5q.back.quote')}
                 subtitleNumberOfLines={2}
             />
             <Card.Content>
@@ -84,7 +84,7 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                     mode="outlined"
                     onPress={() => onPress()}
                 >
-                    {i18next.t('5q.back.return')}
+                    {i18n.t('5q.back.return')}
                 </Button>
             </Card.Actions>
         </Card>

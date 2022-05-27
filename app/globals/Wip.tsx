@@ -22,13 +22,13 @@
  */
 import * as React from 'react';
 import {TkParagraph, TkText} from './Texts';
-import i18next from '../i18n/i18n';
 import {TkCard, TkCardContent, TkCardTitle} from './Pieces';
 import {Card, Dialog, IconButton, Portal} from 'react-native-paper';
 import {Linking} from 'react-native';
 import styled from 'styled-components';
 import {isDark} from '../utils/Functions';
 import {tkDarkTheme, tkLightTheme} from './Config';
+import i18n from '../i18n/i18n';
 
 type Props = {
     message: string;
@@ -61,11 +61,11 @@ const Wip: ({message}: Props) => JSX.Element = ({
                     <TkCard>
                         <TkCardContent>
                             <TkCardWipTitle
-                                title={i18next.t('app.wip.title')}
+                                title={i18n.t('app.wip.title')}
                             />
                             <TkParagraph>
                                 <TkText>
-                                    {i18next.t('app.wip.before')}
+                                    {i18n.t('app.wip.before')}
                                 </TkText>
                             </TkParagraph>
                             <TkParagraph>
@@ -73,7 +73,7 @@ const Wip: ({message}: Props) => JSX.Element = ({
                             </TkParagraph>
                             <TkParagraph>
                                 <TkText>
-                                    {i18next.t('app.wip.after')}
+                                    {i18n.t('app.wip.after')}
                                 </TkText>
                             </TkParagraph>
                         </TkCardContent>

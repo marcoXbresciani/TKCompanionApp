@@ -38,7 +38,9 @@ const resources = {
     'it-IT': {translation: tItIT},
 };
 
-i18next.use(initReactI18next).init({
+const i18n = i18next.use(initReactI18next);
+
+i18n.init({
     cleanCode: true,
     compatibilityJSON: 'v3',
     debug: false,
@@ -46,9 +48,9 @@ i18next.use(initReactI18next).init({
         escapeValue: false,
     },
     fallbackLng: 'en',
-    lng: locale,
+    lng: i18n.options.lng,
     nonExplicitSupportedLngs: true,
     resources,
 });
 
-export default i18next;
+export default i18n;

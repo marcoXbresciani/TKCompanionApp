@@ -21,10 +21,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import i18next from '../../../i18n/i18n';
 import {Trans, useTranslation} from 'react-i18next';
 import {BoldText, TkParagraph} from '../../../globals/Texts';
 import {Button, Card} from 'react-native-paper';
+import i18n from '../../../i18n/i18n';
 
 type Props = {
     onPress: () => void;
@@ -36,8 +36,8 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
     return (
         <Card>
             <Card.Title
-                title={i18next.t('5q.front.header')}
-                subtitle={i18next.t('5q.front.title')}
+                title={i18n.t('5q.front.header')}
+                subtitle={i18n.t('5q.front.title')}
                 subtitleNumberOfLines={2}
             />
             <Card.Content>
@@ -65,7 +65,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                         icon="return-down-forward-outline"
                         onPress={() => onPress()}
                     >
-                        {i18next.t('5q.front.separator')}
+                        {i18n.t('5q.front.separator')}
                     </Button>
                 </Card.Actions>
                 <TkParagraph>
@@ -76,7 +76,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                    {i18next.t('5q.front.q3.2')}
+                    {i18n.t('5q.front.q3.2')}
                 </TkParagraph>
                 <TkParagraph>
                     <Trans
@@ -86,7 +86,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                    {i18next.t('5q.front.q4.2')}
+                    {i18n.t('5q.front.q4.2')}
                 </TkParagraph>
                 <TkParagraph>
                     <Trans

@@ -21,33 +21,33 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import i18next from '../../i18n/i18n';
 import {TkParagraph} from '../../globals/Texts';
 import {Card} from 'react-native-paper';
+import i18n from '../../i18n/i18n';
 
 const Practice: React.FunctionComponent = () => (
     <Card>
         <Card.Title
-            title={i18next.t('practice.title')}
+            title={i18n.t('practice.title')}
             titleNumberOfLines={2}
         />
         <Card.Content>
-            <TkParagraph>{i18next.t('practice.1')}</TkParagraph>
+            <TkParagraph>{i18n.t('practice.1')}</TkParagraph>
         </Card.Content>
         <Card.Content>
-            <TkParagraph>{i18next.t('practice.2')}</TkParagraph>
+            <TkParagraph>{i18n.t('practice.2')}</TkParagraph>
         </Card.Content>
         <Card.Content>
-            <TkParagraph>{i18next.t('practice.3')}</TkParagraph>
+            <TkParagraph>{i18n.t('practice.3')}</TkParagraph>
         </Card.Content>
         <Card.Content>
-            <TkParagraph>{i18next.t('practice.4')}</TkParagraph>
+            <TkParagraph>{i18n.t('practice.4')}</TkParagraph>
         </Card.Content>
         <Card.Content>
-            <TkParagraph>{i18next.t('practice.5')}</TkParagraph>
+            <TkParagraph>{i18n.t('practice.5')}</TkParagraph>
         </Card.Content>
         <Card.Content>
-            <TkParagraph>{i18next.t('practice.6')}</TkParagraph>
+            <TkParagraph>{i18n.t('practice.6')}</TkParagraph>
         </Card.Content>
     </Card>
 );

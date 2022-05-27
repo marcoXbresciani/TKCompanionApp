@@ -22,13 +22,13 @@
  */
 import * as React from 'react';
 import {List, Switch} from 'react-native-paper';
-import i18next from '../../i18n/i18n';
 import {View} from 'react-native';
-import {PreferencesContext} from '../../../App';
 import {TkText} from '../../globals/Texts';
 import styled from 'styled-components';
 import StorageFactory from '../../utils/storage/StorageFactory';
 import {AllowedSettings} from '../../utils/storage/settings/AllowedSettings';
+import {PreferencesContext} from '../../utils/Constants';
+import i18n from '../../i18n/i18n';
 
 const RowView = styled(View)`
     flex-direction: row;
@@ -42,7 +42,7 @@ const Settings: React.FunctionComponent = () => {
     return (
         <>
             <RowView>
-                <TkText>{i18next.t('settings.theme')}</TkText>
+                <TkText>{i18n.t('settings.theme')}</TkText>
                 <Switch
                     value={isThemeDark}
                     onValueChange={() => {
@@ -62,7 +62,7 @@ const Settings: React.FunctionComponent = () => {
                     left={(props) => (
                         <List.Icon {...props} icon="language-outline" />
                     )}
-                    title={i18next.t('settings.language')}
+                    title={i18n.t('settings.language')}
                 >
                     <List.Item
                         left={(props) => (
@@ -70,7 +70,7 @@ const Settings: React.FunctionComponent = () => {
                         )}
                         title="English"
                         onPress={() => {
-                            i18next.changeLanguage('en').then();
+                            i18n.changeLanguage('en').then();
                             storage
                                 .write(AllowedSettings.LANGUAGE, 'en')
                                 .then();
@@ -83,7 +83,7 @@ const Settings: React.FunctionComponent = () => {
                         )}
                         title="Italiano"
                         onPress={() => {
-                            i18next.changeLanguage('it-IT').then();
+                            i18n.changeLanguage('it-IT').then();
                             storage
                                 .write(
                                     AllowedSettings.LANGUAGE,
@@ -92,7 +92,6 @@ const Settings: React.FunctionComponent = () => {
                                 .then();
                         }}
                     />
-                    <List.Item disabled={true} title="日本語" />
                 </List.Accordion>
             </List.AccordionGroup>
         </>

@@ -24,11 +24,11 @@ import * as React from 'react';
 import {useEffect} from 'react';
 import {Appbar, Card, TextInput} from 'react-native-paper';
 import {TkParagraph} from '../../globals/Texts';
-import i18next from '../../i18n/i18n';
 import {Alert, ScrollView} from 'react-native';
 import Wip from '../../globals/Wip';
 import PdsaEntry from '../../utils/storage/pdsa/PdsaEntry';
 import StorageFactory from '../../utils/storage/StorageFactory';
+import i18n from '../../i18n/i18n';
 
 const DownloadPage: React.FC = () => {
     const [pdsaEntry, setPdsaEntry] = React.useState(new PdsaEntry());
@@ -43,10 +43,7 @@ const DownloadPage: React.FC = () => {
                 setPdsaEntry(parse);
             })
             .catch((reason) => {
-                Alert.alert(
-                    i18next.t('pdsa.alert.title'),
-                    `${reason}.`,
-                );
+                Alert.alert(i18n.t('pdsa.alert.title'), `${reason}.`);
                 setPdsaEntry(new PdsaEntry());
             });
     }, [pdsaStorage]);
@@ -54,7 +51,7 @@ const DownloadPage: React.FC = () => {
     return (
         <>
             <Wip
-                message={i18next.t('pdsa.temp')}
+                message={i18n.t('pdsa.temp')}
                 visible={visibleWip}
                 setVisible={setVisibleWip}
             />
@@ -79,13 +76,11 @@ const DownloadPage: React.FC = () => {
             <ScrollView>
                 <Card>
                     <Card.Title
-                        title={i18next.t('pdsa.title')}
+                        title={i18n.t('pdsa.title')}
                         titleNumberOfLines={2}
                     />
                     <Card.Content>
-                        <TkParagraph>
-                            {i18next.t('pdsa.q1')}
-                        </TkParagraph>
+                        <TkParagraph>{i18n.t('pdsa.q1')}</TkParagraph>
                         <TextInput
                             label="Target"
                             mode="outlined"
@@ -110,9 +105,7 @@ const DownloadPage: React.FC = () => {
                             }
                             value={pdsaEntry.target}
                         />
-                        <TkParagraph>
-                            {i18next.t('pdsa.q2')}
-                        </TkParagraph>
+                        <TkParagraph>{i18n.t('pdsa.q2')}</TkParagraph>
                         <TextInput
                             label="Actual"
                             mode="outlined"
@@ -137,9 +130,7 @@ const DownloadPage: React.FC = () => {
                             }
                             value={pdsaEntry.actual}
                         />
-                        <TkParagraph>
-                            {i18next.t('pdsa.q3')}
-                        </TkParagraph>
+                        <TkParagraph>{i18n.t('pdsa.q3')}</TkParagraph>
                         <TextInput
                             label="Obstacle"
                             mode="outlined"
@@ -164,9 +155,7 @@ const DownloadPage: React.FC = () => {
                             }
                             value={pdsaEntry.obstacle}
                         />
-                        <TkParagraph>
-                            {i18next.t('pdsa.q4')}
-                        </TkParagraph>
+                        <TkParagraph>{i18n.t('pdsa.q4')}</TkParagraph>
                         <TextInput
                             label="Step"
                             mode="outlined"
@@ -191,9 +180,7 @@ const DownloadPage: React.FC = () => {
                             }
                             value={pdsaEntry.step}
                         />
-                        <TkParagraph>
-                            {i18next.t('pdsa.q5')}
-                        </TkParagraph>
+                        <TkParagraph>{i18n.t('pdsa.q5')}</TkParagraph>
                         <TextInput
                             label="Learnt"
                             mode="outlined"

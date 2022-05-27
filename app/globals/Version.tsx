@@ -21,10 +21,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import i18next from '../i18n/i18n';
 import {Caption, Subheading, Title} from 'react-native-paper';
 import styled from 'styled-components';
 import {APP_NAME, APP_VERSION} from '../utils/Constants';
+import i18n from '../i18n/i18n';
 
 export const CenteredTitle = styled(Title)`
     text-align: center;
@@ -39,7 +39,7 @@ const Version: React.FunctionComponent = () => {
         <>
             <CenteredTitle>{APP_NAME}</CenteredTitle>
             <CenteredSubheading>{APP_VERSION}</CenteredSubheading>
-            <Caption>{i18next.t('app.short')}</Caption>
+            <Caption>{i18n.t('app.short')}</Caption>
         </>
     );
 };

@@ -21,34 +21,34 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import i18next from '../i18n/i18n';
 import {BottomNavigation} from 'react-native-paper';
 import HomePage from '../pages/home/HomePage';
 import PdsaPage from '../pages/pdsa/PdsaPage';
 import DocsPage from '../pages/docs/DocsPage';
 import DownloadPage from '../pages/DownloadPage';
+import i18n from '../i18n/i18n';
 
 const TkNavigator: React.FunctionComponent = () => {
     const [index, setIndex] = React.useState(0);
     const [routes] = React.useState([
         {
             key: 'home',
-            title: i18next.t('nav.home'),
+            title: i18n.t('nav.home'),
             icon: 'home-outline',
         },
         {
             key: 'pdsa',
-            title: i18next.t('nav.pdsa'),
+            title: i18n.t('nav.pdsa'),
             icon: 'journal-outline',
         },
         {
             key: 'docs',
-            title: i18next.t('nav.docs'),
+            title: i18n.t('nav.docs'),
             icon: 'library-outline',
         },
         {
             key: 'download',
-            title: i18next.t('nav.download'),
+            title: i18n.t('nav.download'),
             icon: 'download-outline',
         },
     ]);

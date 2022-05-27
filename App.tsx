@@ -29,6 +29,7 @@ import StorageFactory from './app/utils/storage/StorageFactory';
 import {AllowedSettings} from './app/utils/storage/settings/AllowedSettings';
 import {PreferencesContext} from './app/utils/Constants';
 import TkNavigator from './app/globals/TkNavigator';
+import i18n from './app/i18n/i18n';
 
 const App: React.FunctionComponent = () => {
     const [isThemeDark, setIsThemeDark] = React.useState(isDark());
@@ -49,6 +50,13 @@ const App: React.FunctionComponent = () => {
     StorageFactory.getSettingsStorage()
         .read(AllowedSettings.DARK_THEME)
         .then((r) => setIsThemeDark(r === 'true'));
+
+    StorageFactory.getSettingsStorage()
+        .read(AllowedSettings.LANGUAGE)
+        .then((r) => {
+            console.log(`changing language to ${r}`);
+            i18n.changeLanguage(r);
+        });
 
     return (
         <PreferencesContext.Provider value={preferences}>

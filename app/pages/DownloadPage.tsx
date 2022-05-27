@@ -68,7 +68,9 @@ const DownloadPage: React.FunctionComponent = () => {
                     description={i18n.t('download.pdf')}
                     left={() => <List.Icon icon="download-outline" />}
                     onPress={() =>
-                        download('file://../assets/files/5Q_Card.pdf')
+                        download(
+                            'http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
+                        )
                     }
                     title={i18n.t('download.5q')}
                     titleNumberOfLines={2}

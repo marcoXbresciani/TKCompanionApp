@@ -47,12 +47,12 @@
             "key6": "ti spia",
             "title": "Quest'applicazione <bold>NON</bold>"
         },
-        "puzzle": "Puzzle"
+        "puzzle": "Rompicapo"
     },
     "app": {
         "short": "Un piccolo e semplice aiuto per i praticanti di Toyota Kata",
         "wip": {
-            "title": "Lavori in corso...",
+            "title": "Lavori in corso…",
             "before": "Grazie per essere qui, ma non succede (ancora) niente.",
             "after": "Idee e commenti sono benvenuti."
         }

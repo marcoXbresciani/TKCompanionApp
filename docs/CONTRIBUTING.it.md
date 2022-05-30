@@ -40,7 +40,7 @@ Siamo qui per migliorare!
 Puoi contribuire colle traduzioni dall'italiano (o dall'inglese) alla
 tua lingua madre, qualsiasi essa sia.
 Le traduzioni sono gestite tramite il software e piattaforma libera
-Weblate: https://hosted.weblate.org/projects/tkcompanionapp/ tramite cui
+Weblate: https://hosted.weblate.org/engage/tkcompanionapp/ tramite cui
 si possono aggiungere lingue, completare e correggere le traduzioni, ...
 
 > Puoi contribure anche tramite Liberapay:

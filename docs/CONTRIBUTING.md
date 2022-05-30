@@ -40,8 +40,8 @@ We're here to improve!
 You can contribute with translations from English (or Italian) to your
 native language, whichever it is.
 Translations are managed through the free software and platform Weblate:
-https://hosted.weblate.org/projects/tkcompanionapp/ through which you
-can add languages, complete and correct translations, ...
+https://hosted.weblate.org/engage/tkcompanionapp/ through which you can
+add languages, complete and correct translations, ...
 
 > You can even contribute through Liberapay:
 >

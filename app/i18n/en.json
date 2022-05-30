@@ -113,10 +113,6 @@
         "6": "Best wishes!",
         "title": "Changing thinking through practice"
     },
-    "puzzle": {
-        "button": "You did {{steps}} steps.",
-        "instructions": "Shuffle the pieces, click the button above to reset the count, and play. To restart, close the puzzle and reopen it."
-    },
     "settings": {
         "language": "Language",
         "theme": "Switch light/dark theme"

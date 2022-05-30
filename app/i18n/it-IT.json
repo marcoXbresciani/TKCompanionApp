@@ -113,10 +113,6 @@
         "6": "Auguri!",
         "title": "Cambiare il modo di pensare attraverso la pratica"
     },
-    "puzzle": {
-        "button": "Hai fatto {{steps}} passi.",
-        "instructions": "Mescola i pezzi, clicca il bottone in alto per riavviare il conteggio e gioca. Per ricominciare, chiudi il puzzle e riaprilo."
-    },
     "settings": {
         "language": "Lingua",
         "theme": "Scambia tema chiaro/scuro"

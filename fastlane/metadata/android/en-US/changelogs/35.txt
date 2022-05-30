@@ -1,1 +1,2 @@
-Graphical revamping. Updated NodeJS LTS.
+Graphical revamping.
+Updated NodeJS LTS.

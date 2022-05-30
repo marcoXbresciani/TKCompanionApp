@@ -1,3 +1,2 @@
-It contains the Coaching Kata 5Q card, plus (possibly) more things
-and information.
+It contains the Coaching Kata 5Q card, plus (possibly) more things and information.
 Content to be improved and updated from time to time.

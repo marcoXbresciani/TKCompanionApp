@@ -1,9 +1,5 @@
-Save and restore selected theme: if your phone is in light mode, but you
-choose dark/night mode for this application, the dark/night mode will be
-saved, in encrypted form, to be later restored on application reuse.
+Save and restore selected theme: if your phone is in light mode, but you choose dark/night one, it will be saved, in encrypted form, to be later restored on application reuse.
 And viceversa.
-Selected language saved: now if you change language, your selection is
-saved, in encrypted form, to be reused (in a later version) when
-reopening the application.
+Selected language saved: now if you change language, your selection is saved, in encrypted form, to be reused (in a later version) when reopening the application.
 Basic structure and layout for PDSA page.
 Delta Chat link for contact.

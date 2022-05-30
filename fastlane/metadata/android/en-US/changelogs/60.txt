@@ -1,2 +1,1 @@
-Dark/Light theme switcher and automatic initial selection of theme based
-on phone theme.
+Dark/Light theme switcher and automatic initial selection of theme based on phone theme.

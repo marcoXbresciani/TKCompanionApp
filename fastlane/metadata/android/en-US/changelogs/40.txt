@@ -1,2 +1,1 @@
-Added support for light/dark theme and The Four Steps of Improvement
-Kata.
+Added support for light/dark theme and The Four Steps of Improvement Kata.

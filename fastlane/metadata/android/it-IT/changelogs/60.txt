@@ -1,2 +1,1 @@
-Interruttore per scambiare il tema chiaro/scuro e selezione iniziale
-automatica del tema in base al tema del telefono.
+Interruttore per scambiare il tema chiaro/scuro e selezione iniziale automatica del tema in base al tema del telefono.

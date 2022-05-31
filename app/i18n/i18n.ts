@@ -25,6 +25,7 @@ import i18next from 'i18next';
 import {initReactI18next} from 'react-i18next';
 import {default as tEn} from './en.json';
 import {default as tItIT} from './it-IT.json';
+import {default as tNbNO} from './nb_NO.json';
 
 const locale = (
     Platform.OS === 'ios'
@@ -36,6 +37,7 @@ const locale = (
 const resources = {
     en: {translation: tEn},
     'it-IT': {translation: tItIT},
+    'nb-NO': {translation: tNbNO},
 };
 
 const i18n = i18next.use(initReactI18next);
@@ -48,7 +50,7 @@ i18n.init({
         escapeValue: false,
     },
     fallbackLng: 'en',
-    lng: i18n.options.lng,
+    lng: i18n.options.lng || locale,
     nonExplicitSupportedLngs: true,
     resources,
 });

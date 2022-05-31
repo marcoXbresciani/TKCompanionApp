@@ -170,6 +170,8 @@ Thanks to (in appearing order):
   publishing the app to F-Droid.
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   for the app icon.
+* [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) for
+  the Norwegian Bokmål translation in progress.
 
 ## Contributing
 See [CONTRIBUTING.md](/docs/CONTRIBUTING.md).

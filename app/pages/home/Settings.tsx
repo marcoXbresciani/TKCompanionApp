@@ -92,6 +92,22 @@ const Settings: React.FunctionComponent = () => {
                                 .then();
                         }}
                     />
+                    <List.Item
+                        disabled={true}
+                        // left={(props) => (
+                        //     <List.Icon {...props} icon="flag-outline" />
+                        // )}
+                        title="Norsk (Bokmål)"
+                        onPress={() => {
+                            i18n.changeLanguage('nb-NO').then();
+                            storage
+                                .write(
+                                    AllowedSettings.LANGUAGE,
+                                    'nb-NO',
+                                )
+                                .then();
+                        }}
+                    />
                 </List.Accordion>
             </List.AccordionGroup>
         </>

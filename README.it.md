@@ -173,6 +173,9 @@ Grazie a (in ordine di apparizione):
   pubblicazione dell'app su F-Droid.
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   per l'icona dell'app.
+* [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) per
+  la traduzione in norgevese Bokmål in corso.
+
 
 ## Contribuire
 Cfr. [CONTRIBUTING.it.md](/docs/CONTRIBUTING.it.md).

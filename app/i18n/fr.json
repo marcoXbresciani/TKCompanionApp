@@ -1,1 +1,92 @@
-{}
+{
+    "about": {
+        "not": {
+            "key6": "vous espionner",
+            "key5": "enregistrer des choses sur votre appareil",
+            "key1": "collecter vos données",
+            "key2": "contiennent des bibliothèques de suivi",
+            "key3": "téléphoner à personne",
+            "key4": "utiliser les API de Google Play Store"
+        },
+        "copyright": "droit d'auteur",
+        "might": {
+            "key1": "vous aider à améliorer",
+            "key2": "vous aider à apprendre le Kata",
+            "key3": "être amusant",
+            "key4": "vous apprendre la pensée scientifique",
+            "title": "Cette application POURRAIT"
+        },
+        "translation": {
+            "author": [
+                "Marco Bresciani <marco.530@outlook.it>"
+            ],
+            "title": "Traduction en français par :"
+        }
+    },
+    "4s": {
+        "s3": "③ Établir votre prochaine condition cible",
+        "s1": "① Comprendre la direction",
+        "s2": "② Saisir la situation actuelle",
+        "title": "Les quatre étapes du kata de l'amélioration",
+        "s4": "④ Conduire des expériences pour y arriver"
+    },
+    "5q": {
+        "front": {
+            "q4.2": "À quoi vous attendez-vous ?",
+            "q1": "① Quelle est la <bold>condition cible</bold> ?",
+            "separator": "Retourner la carte",
+            "title": "Les cinq questions",
+            "header": "Kata d'entraînement"
+        },
+        "back": {
+            "q1": "1) Qu'avez-vous prévu comme étant votre <bold>Dernière étape</bold> ?",
+            "q2": "2) À quoi vous attendiez-vous <bold></bold> ?",
+            "q3": "3) Que s'est-il <bold>réellement passé</bold> ?",
+            "quote": "Parce que vous ne savez pas vraiment quel sera le résultat d'une étape !",
+            "return": "Retour à la question 3",
+            "title": "Réfléchir à la dernière étape",
+            "q4": "4) Qu'avez-vous <bold>appris</bold> ?"
+        }
+    },
+    "app": {
+        "short": "Une petite et courte aide pour les pratiquants de Toyota Kata",
+        "wip": {
+            "before": "Merci d'avoir cliqué, mais il ne se passe rien ici, pas encore.",
+            "after": "Les commentaires et les idées sont les bienvenus.",
+            "title": "Travail en cours…"
+        }
+    },
+    "docs": {
+        "4steps": "4 étapes",
+        "5qcard": "5 questions",
+        "title": "Lire les documents",
+        "tkc": "$t(tkc.title)",
+        "kts": "$t(kts.title)",
+        "practice": "$t(practice.title)"
+    },
+    "download": {
+        "close": "Fermer",
+        "error": "Erreur de téléchargement « {{reason}} »",
+        "title": "Téléchargements du site Web Toyota Kata",
+        "tkc": "$t(tkc.title)",
+        "kts": "$t(kts.title)",
+        "pdf": "Téléchargement du fichier PDF",
+        "jpg": "Téléchargement de l'image JPG"
+    },
+    "kts": {
+        "tip": "[κατα]"
+    },
+    "nav": {
+        "docs": "Documents",
+        "download": "Téléchargements",
+        "home": "Accueil",
+        "menu": {
+            "about": "À propos",
+            "copyright": "Droit d'auteur",
+            "settings": "Paramètres"
+        }
+    },
+    "settings": {
+        "language": "Langue"
+    }
+}

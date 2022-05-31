@@ -229,6 +229,7 @@ const About: React.FunctionComponent = () => {
                     return (
                         <List.Item
                             title={name}
+                            key={name}
                             titleNumberOfLines={3}
                             left={(props) => (
                                 <List.Icon

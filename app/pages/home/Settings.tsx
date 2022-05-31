@@ -108,6 +108,18 @@ const Settings: React.FunctionComponent = () => {
                                 .then();
                         }}
                     />
+                    <List.Item
+                        left={(props) => (
+                            <List.Icon {...props} icon="flag-outline" />
+                        )}
+                        title="Français"
+                        onPress={() => {
+                            i18n.changeLanguage('fr').then();
+                            storage
+                                .write(AllowedSettings.LANGUAGE, 'fr')
+                                .then();
+                        }}
+                    />
                 </List.Accordion>
             </List.AccordionGroup>
         </>

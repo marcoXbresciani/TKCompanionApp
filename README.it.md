@@ -174,8 +174,9 @@ Grazie a (in ordine di apparizione):
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   per l'icona dell'app.
 * [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) per
-  la traduzione in norgevese Bokmål in corso.
-
+  la traduzione in norgevese Bokmål. in corso.
+* [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) per la
+  traduzione in francese, in corso.
 
 ## Contribuire
 Cfr. [CONTRIBUTING.it.md](/docs/CONTRIBUTING.it.md).

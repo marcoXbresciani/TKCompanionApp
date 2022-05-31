@@ -32,6 +32,8 @@ This file is offered as-is, without any warranty.
   for this application, the English language will be saved to be later
   restored on application reuse.
   And viceversa.
+* Introduce French translation (thanks
+  [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/)!)
 ### Changed
 * Internal improvement on I18N management.
 * Internal improvement on bottom navigation management.

@@ -26,6 +26,7 @@ import {initReactI18next} from 'react-i18next';
 import {default as tEn} from './en.json';
 import {default as tItIT} from './it-IT.json';
 import {default as tNbNO} from './nb_NO.json';
+import {default as tFr} from './fr.json';
 
 const locale = (
     Platform.OS === 'ios'
@@ -38,6 +39,7 @@ const resources = {
     en: {translation: tEn},
     'it-IT': {translation: tItIT},
     'nb-NO': {translation: tNbNO},
+    fr: {translation: tFr},
 };
 
 const i18n = i18next.use(initReactI18next);

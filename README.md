@@ -171,7 +171,9 @@ Thanks to (in appearing order):
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   for the app icon.
 * [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) for
-  the Norwegian Bokmål translation in progress.
+  the Norwegian Bokmål translation, in progress.
+* [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) for the
+  French translation, in progress.
 
 ## Contributing
 See [CONTRIBUTING.md](/docs/CONTRIBUTING.md).

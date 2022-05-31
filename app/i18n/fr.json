@@ -18,7 +18,7 @@
         },
         "translation": {
             "author": [
-                "Marco Bresciani <marco.530@outlook.it>"
+                "J. Lavoie (@Edanas)"
             ],
             "title": "Traduction en français par :"
         }
@@ -40,7 +40,7 @@
         },
         "back": {
             "q1": "1) Qu'avez-vous prévu comme étant votre <bold>Dernière étape</bold> ?",
-            "q2": "2) À quoi vous attendiez-vous <bold></bold> ?",
+            "q2": "2) À quoi vous <bold>attendiez-vous</bold> ?",
             "q3": "3) Que s'est-il <bold>réellement passé</bold> ?",
             "quote": "Parce que vous ne savez pas vraiment quel sera le résultat d'une étape !",
             "return": "Retour à la question 3",
@@ -71,7 +71,9 @@
         "tkc": "$t(tkc.title)",
         "kts": "$t(kts.title)",
         "pdf": "Téléchargement du fichier PDF",
-        "jpg": "Téléchargement de l'image JPG"
+        "jpg": "Téléchargement de l'image JPG",
+        "4s": "$t(4s.title)",
+        "5q": "$t(5q.front.title)"
     },
     "kts": {
         "tip": "[κατα]"

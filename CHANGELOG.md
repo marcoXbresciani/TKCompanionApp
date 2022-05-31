@@ -37,6 +37,8 @@ This file is offered as-is, without any warranty.
 * Internal improvement on bottom navigation management.
 ### Removed
 ### Fixed
+* Introduce translator(s) field(s) for fixing
+  [#9](https://github.com/marcoXbresciani/TKCompanionApp/issues/9).
 ### Security
 
 ## [2.1.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.1.0) - 2022-05-16

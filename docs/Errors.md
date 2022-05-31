@@ -36,3 +36,18 @@ or not.
 
    Additionally, a 302 Found error was encountered while trying to use an ErrorDocument to handle the request.
    ```
+
+----
+
+9. [Move translation info into the info field](https://github.com/marcoXbresciani/TKCompanionApp/issues/9)
+
+   https://hosted.weblate.org/contributor-agreement/tkcompanionapp/fastlane/?next=/projects/tkcompanionapp/fastlane/
+   and
+   https://hosted.weblate.org/contributor-agreement/tkcompanionapp/i18n/?next=/projects/tkcompanionapp/i18n/
+   belongs in the info field.
+
+   3.2 in https://weblate.org/en/terms/ already covers the licensing.
+
+   Representing translators and providing freedback-loops is better
+   facilitated through a translator-credit field (in the actual app).
+   Info from there can be copied into the README if needed.

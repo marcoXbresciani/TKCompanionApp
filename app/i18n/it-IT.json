@@ -47,7 +47,10 @@
             "key6": "ti spia",
             "title": "Quest'applicazione <bold>NON</bold>"
         },
-        "puzzle": "Rompicapo"
+        "translation": {
+            "author": ["Marco Bresciani <marco.530@outlook.it>"],
+            "title": "Traduzione italiana di:"
+        }
     },
     "app": {
         "short": "Un piccolo e semplice aiuto per i praticanti di Toyota Kata",

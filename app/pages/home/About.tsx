@@ -41,6 +41,9 @@ NotItem.defaultProps = {
 
 const About: React.FunctionComponent = () => {
     const {t} = useTranslation();
+    const translators: string[] = i18n.t('about.translation.author', {
+        returnObjects: true,
+    });
 
     return (
         <>
@@ -221,6 +224,22 @@ const About: React.FunctionComponent = () => {
                     />
                 </List.Accordion>
             </List.AccordionGroup>
+            <List.Section title={i18n.t('about.translation.title')}>
+                {translators.flatMap((name) => {
+                    return (
+                        <List.Item
+                            title={name}
+                            titleNumberOfLines={3}
+                            left={(props) => (
+                                <List.Icon
+                                    {...props}
+                                    icon="earth-outline"
+                                />
+                            )}
+                        />
+                    );
+                })}
+            </List.Section>
         </>
     );
 };

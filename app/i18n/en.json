@@ -47,7 +47,10 @@
             "key6": "spy on you",
             "title": "This application <bold>does NOT</bold>"
         },
-        "puzzle": "Puzzle"
+        "translation": {
+            "author": ["Marco Bresciani <marco.530@outlook.it>"],
+            "title": "English translation by:"
+        }
     },
     "app": {
         "short": "A short and small helper for Toyota Kata practitioners",

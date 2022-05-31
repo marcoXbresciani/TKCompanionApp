@@ -19,6 +19,8 @@ Any question, feel free to ask!
 
 ## Table of Contents
 1. [For All Contributions](#for-all-contributions)
+   1. [Translations](#translations)
+   1. [Other Contributions](#other-contributions)
 1. [For Software Developers](#for-software-developers)
    1. [How to Start](#how-to-start)
    1. [How to Build](#how-to-build)
@@ -37,12 +39,17 @@ explaining the problem you've noticed and your proposed solution.
 
 We're here to improve!
 
+### Translations
 You can contribute with translations from English (or Italian) to your
 native language, whichever it is.
-Translations are managed through the free software and platform Weblate:
-https://hosted.weblate.org/engage/tkcompanionapp/ through which you can
-add languages, complete and correct translations, ...
 
+[![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-white.png)](https://hosted.weblate.org/engage/tkcompanionapp/)
+
+Translations are managed through the free software and platform
+[Weblate](https://hosted.weblate.org/engage/tkcompanionapp/) through
+which you can add languages, complete and correct translations, ...
+
+### Other Contributions
 > You can even contribute through Liberapay:
 >
 > <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>

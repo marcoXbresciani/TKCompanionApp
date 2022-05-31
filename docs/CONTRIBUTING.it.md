@@ -19,6 +19,8 @@ Per qualsiasi domanda... chiedi pure!
 
 ## Sommario
 1. [Per tutti i contributi](#per-tutti-i-contributi)
+   1. [Traduzioni](#traduzioni)
+   1. [Altri contributi](#altri-contributi)
 1. [Per gli sviluppatori](#per-gli-sviluppatori)
    1. [Come iniziare](#come-iniziare)
    1. [Come compilare](#come-compilare)
@@ -37,12 +39,17 @@ spiegando il problema che hai notato e la soluzione proposta.
 
 Siamo qui per migliorare!
 
+### Traduzioni
 Puoi contribuire colle traduzioni dall'italiano (o dall'inglese) alla
 tua lingua madre, qualsiasi essa sia.
+
+[![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-white.png)](https://hosted.weblate.org/engage/tkcompanionapp/)
+
 Le traduzioni sono gestite tramite il software e piattaforma libera
-Weblate: https://hosted.weblate.org/engage/tkcompanionapp/ tramite cui
+[Weblate](https://hosted.weblate.org/engage/tkcompanionapp/) tramite cui
 si possono aggiungere lingue, completare e correggere le traduzioni, ...
 
+### Altri contributi
 > Puoi contribure anche tramite Liberapay:
 >
 > <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>

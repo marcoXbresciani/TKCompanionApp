@@ -1,0 +1,2 @@
+Grafisk oppgradering.
+Oppgradert til NodeJS LTS.

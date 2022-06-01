@@ -1,0 +1,3 @@
+Ny meny i «programfeltet» for «Om», «Opphavsrett», og «Innstillinger».
+5Q-kort og fire steg flyttet til dokumentasjon.
+Puslespill fjernet.

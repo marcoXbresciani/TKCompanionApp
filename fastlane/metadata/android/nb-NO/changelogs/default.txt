@@ -1,0 +1,6 @@
+TKCompanionApp
+
+En liten og kort hjelp for utøvere av Toyota Kata
+
+Den har et 5Q-kort for bortlæring av Kata, og (muligens) flere ting og info.
+Innhold vil forbedre seg og oppdateres nå og da.

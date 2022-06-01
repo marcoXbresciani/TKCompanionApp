@@ -1,0 +1,2 @@
+Expo-rammeverk fjernet siden det ikke er kompatibelt med F-Droid.
+Ingen penger til «utviklerprogrammene» til Google og Apple.

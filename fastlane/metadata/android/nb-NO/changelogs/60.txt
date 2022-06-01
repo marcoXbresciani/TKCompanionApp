@@ -1,0 +1,1 @@
+Bryter for å veksle mellom mørk/lys drakt og automatisk draktvalg basert på systeminnstilling.

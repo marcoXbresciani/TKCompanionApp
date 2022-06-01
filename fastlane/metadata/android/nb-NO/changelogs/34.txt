@@ -1,0 +1,2 @@
+Introduksjon av React Native-papir, og draktfarger.
+Nye sider underveis.

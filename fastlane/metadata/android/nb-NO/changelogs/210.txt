@@ -1,0 +1,4 @@
+Lagre og gjenopprett valgt drakt: Hvis enheten din har iført lys drakt men du ikler mørk, vil dette bli lagret kryptert. Du kan gjenopprette det senere.
+Valgt språk lagret. Nå kan du endre språk og det blir lagret kryptert, noe som kan gjenbrukes senere (i en ny versjon).
+Grunnleggende struktur og oppsett for PDSA-siden.
+Delta Chat-lenke for kontakt.

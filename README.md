@@ -43,7 +43,7 @@ Content to be improved and updated from time to time.
    1. [Screenshots](#screenshots)
    1. [Font Notes](#font-notes)
 1. [Maintainers](#maintainers)
-   1. [Translations] (#translations)
+   1. [Translations](#translations)
 1. [Thanks](#thanks)
 1. [Contributing](#contributing)
 1. [License](#license)

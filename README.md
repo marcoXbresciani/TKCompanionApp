@@ -43,6 +43,7 @@ Content to be improved and updated from time to time.
    1. [Screenshots](#screenshots)
    1. [Font Notes](#font-notes)
 1. [Maintainers](#maintainers)
+   1. [Translations] (#translations)
 1. [Thanks](#thanks)
 1. [Contributing](#contributing)
 1. [License](#license)
@@ -162,6 +163,12 @@ You can keep in touch with the author through:
   ```
   to be copy-pasted as "contact at a distance" in Briar.
 
+### Translations
+* [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) for
+  the Norwegian Bokmål translation.
+* [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) for the
+  French translation.
+
 ## Thanks
 Thanks to (in appearing order):
 * [Marco Montalbano (@marcomontalbano)](https://github.com/marcomontalbano)
@@ -170,10 +177,6 @@ Thanks to (in appearing order):
   publishing the app to F-Droid.
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   for the app icon.
-* [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) for
-  the Norwegian Bokmål translation, in progress.
-* [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) for the
-  French translation, in progress.
 
 ## Contributing
 See [CONTRIBUTING.md](/docs/CONTRIBUTING.md).

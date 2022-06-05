@@ -18,6 +18,7 @@ SPDX-License-Identifier: FSFAP
 ![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp?logo=fdroid)
 [![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational?logo=semver&style=plastic)](https://semver.org/)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/6084/badge)](https://bestpractices.coreinfrastructure.org/projects/6084)
 [![EditorConfig](https://img.shields.io/static/v1?label=use&logo=editorconfig&message=EditorConfig&style=plastic)](https://internal.repos.regiongold.com/bitbucket/projects/GDP/repos/customer-sdk/browse/.editorconfig)
 [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/)
 [![Markdown](https://img.shields.io/badge/made%20with-markdown-black?logo=markdown&style=plastic)](https://github.github.com/gfm/)

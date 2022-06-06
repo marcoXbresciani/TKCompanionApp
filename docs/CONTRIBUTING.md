@@ -152,6 +152,7 @@ release.
    file.
 1. Verify [REUSE](https://reuse.software/) compliance through
    `reuse lint` command.
+1. Verify clean code criteria through `npm run lint` command.
 1. If you're not updating Node*, tag with the corresponding
    [(semantic) version](https://semver.org/) number.
 

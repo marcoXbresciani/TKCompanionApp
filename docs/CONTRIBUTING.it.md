@@ -155,6 +155,8 @@ di creare un nuovo rilascio.
    [CHANGELOG.md](/CHANGELOG.md).
 1. Verificare il soddisfacimento dei criteri
    [REUSE](https://reuse.software/) tramite il comando `reuse lint`.
+1. Verificare il soddisfacimento dei criteri di pulizia del codice
+   tramite il comando `npm run lint`.
 1. *Se non si sta eseguendo un aggiornamento di Node*, etichettare il
    codice col numero di [versionamento (semantico)](https://semver.org/)
    relativo.

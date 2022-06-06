@@ -33,6 +33,8 @@ A short and small helper for Toyota Kata practitioners
 It contains the Coaching Kata 5Q card, plus (possibly) more things
 and information.
 Content to be improved and updated from time to time.
+Goal of this app is to be a practical vademecum/handbook for those
+interested in applying scientific thinking through Toyota Kata.
 
 ## Table of Contents
 1. [Security](#security)

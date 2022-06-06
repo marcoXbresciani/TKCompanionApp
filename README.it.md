@@ -32,6 +32,9 @@ Un piccolo e semplice aiuto per i praticanti di Toyota Kata
 
 Contiene la carta Coaching Kata 5Q, e (forse) altre cose e informazioni.
 Contenuti da migliorare e aggiornare di volta in volta.
+L'obiettivo di quest'app è di diventare un pratico vademecum/manuale per
+le persone interessate ad applicare il metodo scientifico tramite Toyota
+Kata.
 
 ## Sommario
 1. [Sicurezza](#sicurezza)

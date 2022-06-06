@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/android" />
     <file type="web" url="file://$PROJECT_DIR$/node_modules/react-native-device-info/android" />
+    <file type="web" url="file://$PROJECT_DIR$/node_modules/react-native-encrypted-storage/android" />
     <file type="web" url="file://$PROJECT_DIR$/node_modules/react-native-gesture-handler/android" />
     <file type="web" url="file://$PROJECT_DIR$/node_modules/react-native-safe-area-context/android" />
     <file type="web" url="file://$PROJECT_DIR$/node_modules/react-native-screens/android" />

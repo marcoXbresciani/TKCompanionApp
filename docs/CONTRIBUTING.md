@@ -77,6 +77,12 @@ You might want to also run `npm install -g npm-check-updates` to make
 the `ncu` tool globally available, to check possible dependencies
 versions updates.
 
+Please take note of the current status and improve the app code an
+content based on the
+[OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/en/projects/6084),
+without reducing the already achieved level of quality.
+
+
 ### How to Start
 From command line launch `npm start` that will run Metro tool (don't
 know what it actually is, but seems something needed).

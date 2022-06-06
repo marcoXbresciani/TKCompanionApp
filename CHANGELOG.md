@@ -34,6 +34,12 @@ This file is offered as-is, without any warranty.
   And viceversa.
 * Introduce French translation (thanks
   [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/)!)
+* Introduce Norwegian Bokmål translation (thanks
+  [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu)!)
+* [ADR-010](/docs/architecture/decisions/010-i18n-wrapping.md) for
+  using the I18N APIs in a more wrapped and safer way.
+* [ADR-011](/docs/architecture/decisions/011-openssf-best-practices.md)
+  for complying with OpenSSF Best Practices, when working on this app.
 ### Changed
 * Internal improvement on I18N management.
 * Internal improvement on bottom navigation management.

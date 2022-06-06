@@ -78,6 +78,11 @@ Puoi anche eseguire `npm install -g npm-check-updates` per avere il tool
 `ncu` disponibile globalmente, per controllare possibili aggiornamenti
 di versioni delle dipendenze.
 
+Per favore, è opportuno prendere in considerazione lo stato corrente
+dell'app e del suo codice, rispetto a quanto indicato dalle
+[OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/en/projects/6084),
+senza ridurre il livello di qualità già raggiunto.
+
 ### Come iniziare
 Dalla riga di comando avvia `npm start` che eseguirà lo strumento Metro
 (non so cosa sia, in realtà, ma sembra necessario).

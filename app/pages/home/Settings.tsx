@@ -77,7 +77,18 @@ const Settings: React.FunctionComponent = () => {
                         }}
                     />
                     <List.Item
-                        disabled={false}
+                        left={(props) => (
+                            <List.Icon {...props} icon="flag-outline" />
+                        )}
+                        title="Français"
+                        onPress={() => {
+                            i18n.changeLanguage('fr').then();
+                            storage
+                                .write(AllowedSettings.LANGUAGE, 'fr')
+                                .then();
+                        }}
+                    />
+                    <List.Item
                         left={(props) => (
                             <List.Icon {...props} icon="flag-outline" />
                         )}
@@ -93,10 +104,9 @@ const Settings: React.FunctionComponent = () => {
                         }}
                     />
                     <List.Item
-                        disabled={true}
-                        // left={(props) => (
-                        //     <List.Icon {...props} icon="flag-outline" />
-                        // )}
+                        left={(props) => (
+                            <List.Icon {...props} icon="flag-outline" />
+                        )}
                         title="Norsk (Bokmål)"
                         onPress={() => {
                             i18n.changeLanguage('nb-NO').then();
@@ -105,18 +115,6 @@ const Settings: React.FunctionComponent = () => {
                                     AllowedSettings.LANGUAGE,
                                     'nb-NO',
                                 )
-                                .then();
-                        }}
-                    />
-                    <List.Item
-                        left={(props) => (
-                            <List.Icon {...props} icon="flag-outline" />
-                        )}
-                        title="Français"
-                        onPress={() => {
-                            i18n.changeLanguage('fr').then();
-                            storage
-                                .write(AllowedSettings.LANGUAGE, 'fr')
                                 .then();
                         }}
                     />

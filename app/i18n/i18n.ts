@@ -25,7 +25,7 @@ import i18next from 'i18next';
 import {initReactI18next} from 'react-i18next';
 import {default as tEn} from './en.json';
 import {default as tItIT} from './it-IT.json';
-import {default as tNbNO} from './nb_NO.json';
+import {default as tNbNO} from './nb-NO.json';
 import {default as tFr} from './fr.json';
 
 const locale = (
@@ -51,7 +51,7 @@ i18n.init({
     interpolation: {
         escapeValue: false,
     },
-    fallbackLng: 'en',
+    fallbackLng: ['en', 'it-IT', 'nb-NO', 'fr'],
     lng: i18n.options.lng || locale,
     nonExplicitSupportedLngs: true,
     resources,

@@ -39,6 +39,10 @@ Files: .prettierrc.js
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
+Files: .ruby-version
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
 Files: .watchmanconfig
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP

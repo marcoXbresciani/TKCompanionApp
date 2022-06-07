@@ -75,6 +75,7 @@ From [the Toyota Kata website](http://www-personal.umich.edu/~mrother/Homepage.h
 > Best of all, you only need to practice 20 minutes a day, under the
 > guidance of your coach.
 
+## Install
 This app is currently built using React Native to make building the app
 for both Android and iOS from the same source code easier.
 
@@ -89,7 +90,6 @@ So, for now, you can find this app only through the
 [F-Droid](https://f-droid.org/) _installable catalogue of FOSS (Free and
 Open Source Software) applications for the Android platform_.
 
-## Install
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
 
 To install this app, you then need the F-Droid client app (pretty
@@ -103,7 +103,7 @@ Then, open the F-Droid repository app and search for
 Install it, and open it.
 
 Eventually, you can directly download the APK from the
-[app page on F-Droid website]([TKCompanionApp](https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/),
+[app page on F-Droid website](https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/),
 to be installed manually on your device.
 There's no difference in functionalities, the only difference being the
 fact that without the F-Droid client app you won't receive automatic

@@ -10,7 +10,7 @@
     <file type="web" url="file://$PROJECT_DIR$/node_modules/react-native-screens/android" />
     <file type="web" url="file://$PROJECT_DIR$/node_modules/react-native-vector-icons/android" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
   <component name="ProjectType">
     <option name="id" value="jpab" />
   </component>

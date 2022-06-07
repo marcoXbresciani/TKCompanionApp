@@ -76,6 +76,7 @@ Dal sito web
 > Best of all, you only need to practice 20 minutes a day, under the
 > guidance of your coach.
 
+## Installazione
 Questa app è creata usando React Native per fare in modo che l'app per
 Android e iOS sia generata più facilmente dallo stesso codice sorgente.
 
@@ -90,7 +91,6 @@ Quindi, per ora, questa app si trova solo su
 [F-Droid](https://f-droid.org/), il _catalogo installabile di FOSS
 (Software libero e open source) per la piattaforma Android_.
 
-## Installazione
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-it.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
 
 Per installare questa app, è necessaria l'app client F-Droid (molto
@@ -104,7 +104,7 @@ Quindi, aprendo l'app F-Droid si può cercare
 Installarla e aprirla.
 
 In alternativa, dalla
-[pagina dell'applicazione su sito F-Droid]([TKCompanionApp](https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/),
+[pagina dell'applicazione su sito F-Droid](https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/),
 si può scaricare direttamente il file APK da installare manualmente sul
 proprio dispositivo.
 Non c'è nessuna differenza nelle funzionalità, l'unica differenza è che,

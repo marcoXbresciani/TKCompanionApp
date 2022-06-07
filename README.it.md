@@ -172,7 +172,7 @@ Lo stesso per questo documento.
 
 ### Traduzioni
 * [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) per
-  la traduzione in norgevese Bokmål.
+  la traduzione in norvegese Bokmål.
 * [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) per la
   traduzione in francese.
 

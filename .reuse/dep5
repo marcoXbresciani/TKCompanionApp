@@ -88,16 +88,8 @@ Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
 Files: docs/svg/*.svg
-Copyright: 2021-2022 Marco Bresciani
-License: GPL-3.0-or-later
-
-Files: docs/svg/navigate-circle-outline.svg
 Copyright: 2022 Ionic
 License: MIT
-
-Files: eas.json
-Copyright: 2021-2022 Marco Bresciani
-License: FSFAP
 
 Files: fastlane/*
 Copyright: 2021-2022 Marco Bresciani
@@ -124,10 +116,6 @@ Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
 Files: index.js
-Copyright: 2021-2022 Marco Bresciani
-License: FSFAP
-
-Files: jest.config.js
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 

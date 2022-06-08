@@ -23,10 +23,10 @@
 import {NativeModules, Platform} from 'react-native';
 import i18next from 'i18next';
 import {initReactI18next} from 'react-i18next';
-import {default as tEn} from './en.json';
-import {default as tItIT} from './it-IT.json';
-import {default as tNbNO} from './nb-NO.json';
-import {default as tFr} from './fr.json';
+import {default as en} from './en.json';
+import {default as itIT} from './it-IT.json';
+import {default as nbNO} from './nb_NO.json';
+import {default as fr} from './fr.json';
 
 const locale = (
     Platform.OS === 'ios'
@@ -36,10 +36,10 @@ const locale = (
 ).replace('_', '-');
 
 const resources = {
-    en: {translation: tEn},
-    'it-IT': {translation: tItIT},
-    'nb-NO': {translation: tNbNO},
-    fr: {translation: tFr},
+    en: {translation: en},
+    'it-IT': {translation: itIT},
+    'nb-NO': {translation: nbNO},
+    fr: {translation: fr},
 };
 
 const i18n = i18next.use(initReactI18next);
@@ -55,6 +55,6 @@ i18n.init({
     lng: i18n.options.lng || locale,
     nonExplicitSupportedLngs: true,
     resources,
-});
+}).then();
 
 export default i18n;

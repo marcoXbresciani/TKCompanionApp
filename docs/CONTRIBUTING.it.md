@@ -11,9 +11,13 @@ SPDX-FileCopyrightText: 2021-2022 Marco Bresciani
 SPDX-License-Identifier: FSFAP
 -->
 # Contribuire
+Un piccolo e semplice aiuto per i praticanti di Toyota Kata.
+
+L'obiettivo di quest'app è di diventare un pratico vademecum/manuale per
+le persone interessate ad applicare il metodo scientifico tramite Toyota
+Kata.
 
 Grazie per essere qui!
-
 Se vuoi contribuire al progetto, dai un'occhiata a questo file.
 Per qualsiasi domanda... chiedi pure!
 
@@ -28,14 +32,48 @@ Per qualsiasi domanda... chiedi pure!
    1. [Come testare localmente](#come-testare-localmente)
 
 ## Per tutti i contributi
-Se non sei uno sviluppatore di software e vuoi contribuire a migliorare
-questa app, sei benvenuto!
-Non ti serve il codice, ma se vuoi aiutare per tradurre nella tua lingua
-(o correggere il mio inglese, dato che non sono madrelingua), aggiungere
+Eccoci qui.
+Quindi vuoi contribuire a questo progetto?
+Grazie mille!
+
+Non c'è ancora un codice di condotta del progetto, ma se questo progetto
+si ingrandirà ne sarà subito adottato uno.
+
+Nella cartella principale del progetto, il file
+[README.md](../README.it.md) è un utile punto di parteza per capire
+meglio questo progetto.
+E, ovviamente, se non si dovesse capire... dimmelo, che si migliora!
+
+In ogni caso, per qualsiasi domanda o richiesta, puoi contattarmi
+tramite:
+* [Delta Chat](https://delta.chat/en/) con l'indirizzo di posta
+  elettronica [marco.530@outlook.it](mailto:marco.530@outlook.it).
+* Come <a rel="me" href="https://fosstodon.org/@AAMfP">@AAMfP</a>, su
+  [Fosstodon](https://fosstodon.org), un'istanza di
+  [Mastodon](https://joinmastodon.org/).
+* [Briar](https://briarproject.org/), con il link
+  ```text
+  briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
+  ```
+  da copiare e aggiungere come "contatto distante" in Briar.
+
+Se non sviluppi software ma vuoi contribuire comunque a migliorare
+quest'app, ogni contributo sarà ben accetto!
+
+Non serve il codice, ma se vuoi aiutare per tradurre nella tua lingua (o
+correggere il mio inglese, dato che non sono madrelingua), aggiungere
 altro contenuto, suggerire miglioramenti grafici o di layout o altro
 contributo che puoi dare, per favore
 [crea una nuova attività](https://github.com/marcoXbresciani/TKCompanionApp/issues)
 spiegando il problema che hai notato e la soluzione proposta.
+Tramite la pagina
+[issues](https://github.com/marcoXbresciani/TKCompanionApp/issues) puoi
+* segnalare problemi (_bug_),
+* proporre miglioramenti (_enhancement_),
+* migliorare la documentazione (_documentation_),
+* fare domande generiche (_question_)
+
+e, in generale, contribuire al miglioramento del progetto.
 
 Siamo qui per migliorare!
 
@@ -46,30 +84,35 @@ tua lingua madre, qualsiasi essa sia.
 [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-white.png)](https://hosted.weblate.org/engage/tkcompanionapp/)
 
 Le traduzioni sono gestite tramite il software e piattaforma libera
-[Weblate](https://hosted.weblate.org/engage/tkcompanionapp/) tramite cui
-si possono aggiungere lingue, completare e correggere le traduzioni, ...
+[Weblate](https://hosted.weblate.org/engage/tkcompanionapp/) con cui si
+possono aggiungere lingue, completare e correggere le traduzioni, ...
 
 ### Altri contributi
-> Puoi contribure anche tramite Liberapay:
->
+Se proprio non riesci a decidere su come contribuire al progetto, puoi
+sempre pensare alla via più semplice, puoi contribure tramite Liberapay:
 > <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 >
 > <img alt="ricevuti via liberapay" src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
 > <img alt="sostenitori su liberapay" src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
 
+In questo modo il progetto potrebbe riuscire a crescere un po' di più e,
+magari, essere disponibile anche su altre piattaforme.
+
 ## Per gli sviluppatori
-Se sei uno sviluppatore software e vuoi contribuire a migliorare l'app,
-sei benvenuto!
+Se sviluppi software e vuoi contribuire a migliorare l'app, anche in
+questo caso ogni contributo è ben accetto!
 
 Trova l'ultimo NodeJS LTS corrente
-([16.15.0](https://nodejs.org/download/release/latest-gallium/), al
-2022-04-27) per il tuo sistema.
-Prendi il codice sorgente clonando
+([16.15.1](https://nodejs.org/download/release/latest-gallium/), al
+2022-06-08) per il tuo sistema.
+
+Prenditi il codice sorgente clonando
 [il repository](https://github.com/marcoXbresciani/TKCompanionApp).
-Quindi vai nella cartella principale del progetto (contenente anche
-questo stesso file che stai leggendo) ed esegui `npm install` e dovresti
-vedere che tutte le dipendenze necessarie sono scaricate e installate
-tramite il gestore di pacchetti NPM.
+
+Quindi vai nella cartella principale del progetto ed esegui
+`npm install`.
+Dovresti vedere che tutte le dipendenze necessarie sono state scaricate
+e installate tramite il gestore di pacchetti NPM.
 
 ![dimensione del codice GitHub in byte](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![Attività di commit GitHub](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
@@ -77,8 +120,9 @@ tramite il gestore di pacchetti NPM.
 Puoi anche eseguire `npm install -g npm-check-updates` per avere il tool
 `ncu` disponibile globalmente, per controllare possibili aggiornamenti
 di versioni delle dipendenze.
+Non è usato molto però, al momento.
 
-Per favore, è opportuno prendere in considerazione lo stato corrente
+Per favore, cerca di prendere in considerazione lo stato corrente
 dell'app e del suo codice, rispetto a quanto indicato dalle
 [OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/en/projects/6084),
 senza ridurre il livello di qualità già raggiunto.
@@ -89,21 +133,28 @@ Dalla riga di comando avvia `npm start` che eseguirà lo strumento Metro
 
 Da (un'altra) riga di comando avvia `npm run android` che preparerà e
 avvierà la tua app, connettendoti al Metro-coso di cui sopra.
+Esegui ovviamente `npm run ios` se sei in un sistema Apple: io non ce
+l'ho, non ho mai collaudato l'app su un Apple, quindi se vuoi farlo...
+beh, prova!
 
 ### Come compilare
-Se vuoi creare l'applicazione per sistemi Android, vai nella cartella
+Se vuoi creare l'applicazione (il file APK da copiare ed eseguire sul
+telefono, per intenderci!) per sistemi Android, vai nella cartella
 `android` ed esegui `gradlew clean build` per generare gli APK.
 Il file APK in modalità debug sarà disponibile nella cartella
 `android\app\build\outputs\apk\debug` col nome `app-debug.apk`.
 Il file APK in modalità rilascio sarà disponibile nella cartella
 `android\app\build\outputs\apk\release` col nome `app-release.apk`.
 
+Non ho idea di come si faccia la stessa cosa, per iOS.
+Se lo scopri, fammi sapere che aggiorniamo questo documento!
+
 #### Aggiornare NodeJS
 Per aggiornare la versione di NodeJS all'ultima LTS disponibile, poiché
 F-Droid gestisce autonomamente i rilasci non appena è disponibile una
-nuova versione etichettata sul repository, è opportuno preparare la
+nuova versione etichettata sul repository, è necessario preparare la
 versione senza il tag e creare una MR (richiesta di merge) su un fork
-del repository F-Droid/Data di GitLab, con l'aggiornamento del file
+del repository `F-Droid/Data` di GitLab, con l'aggiornamento del file
 metadata dell'applicazione e, solo dopo che è stata integrata la
 modifica, rendere disponibile il tag sul repository del codice.
 Cfr. https://gitlab.com/fdroid/fdroiddata/-/merge_requests/10826#note_895731121
@@ -116,7 +167,7 @@ Quindi:
   versione, con l'aggiornamento della versione di NodeJS, il suo SHA,
   il numero di commit, ecc. guardando, per esempio, le differenze di
   NodeJS tra la versione 0.5.0 (50) e 0.6.0 (60) sul file metadata.
-* Creare una MR sul repository F-Droid/Data originale con questa
+* Creare una MR sul repository `F-Droid/Data` originale con questa
   modifica dal fork.
 * Una volta che la MR è stata approvata e integrata sul repository
   principale di F-Droid/Data, inviare il proprio tag in modo che il
@@ -126,16 +177,16 @@ Quindi:
 Una volta che il codice è completo e testato, per rilasciare ci sono una
 serie di passi da seguire.
 
-**Lista di controllo pre-volo**: queste sono le attivitò da fare prima
+**Lista di controllo pre-volo**: queste sono le attività da fare prima
 di creare un nuovo rilascio.
-> Dopo ogni passo è opportuno e consigliato committare e eseguire il
-> push del codice al repository prinicipale.
+> Dopo ogni passo è opportuno e consigliato committare ed eseguire il
+> push del codice al repository principale.
 1. Aggiornare [package.json](/package.json) col nuovo numero di versione
    ed eseguire `npm install`.
 1. Verificare che [CHANGELOG.md](/CHANGELOG.md) contenga la relativa
    sezione numerata per il rilascio, spostando il contenuto relativo e
    rilevante da [Unreleased](CHANGELOG.md) alla suddetta sezione.
-   E verificahe che il relativo link al tag sia aggiunto al titolo della
+   E verificare che il relativo link al tag sia aggiunto al titolo della
    specifica sezione.
 1. Verificare che la cartella `fastlane` contenga i relativi file
    `changelogs` per lo specifico *codice* di versione, in tutte le

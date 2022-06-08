@@ -11,9 +11,12 @@ SPDX-FileCopyrightText: 2021-2022 Marco Bresciani
 SPDX-License-Identifier: FSFAP
 -->
 # CONTRIBUTING
+A short and small helper for Toyota Kata practitioners.
+
+Goal of this app is to be a practical vademecum/handbook for those
+interested in applying scientific thinking through Toyota Kata.
 
 Thanks for being here!
-
 If you want to contribute to the project, take a look at this file.
 Any question, feel free to ask!
 
@@ -28,14 +31,48 @@ Any question, feel free to ask!
    1. [How to Test Locally](#how-to-test-locally)
 
 ## For All Contributions
+Here we are.
+So you want to contribute to this project?
+Thanks a lot!
+
+There's no code of conduct, yet, but if this project will grow up,
+something will be introduced.
+
+In project main folder, the file [README.md](../README.md) is a useful
+starting point to better understand this project.
+Obviously, if you don't understand it... let me know, so that we can
+improve it!
+
+Anyway, for any question or request you can contact me through:
+* [Delta Chat](https://delta.chat/en/) with the email address
+  [marco.530@outlook.it](mailto:marco.530@outlook.it).
+* as <a rel="me" href="https://fosstodon.org/@AAMfP">@AAMfP</a> on
+  [Fosstodon](https://fosstodon.org), a
+  [Mastodon](https://joinmastodon.org/) instance.
+* [Briar](https://briarproject.org/), with the link
+  ```text
+  briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
+  ```
+  to be copy-pasted as "contact at a distance" in Briar.
+
 If you're not a software developer, and want to contribute improving
 this app, you're welcome!
+
 You don't need the code, but if you want help translating in your
-language (or fix my English, since I'm not a native speaker), add more
-content, suggest graphical or layout improvement or whatever
+native language (or fix my English, since I'm not a native speaker), add
+more content, suggest graphical or layout improvement or whatever
 contribution you can give, please
 [open a new issue](https://github.com/marcoXbresciani/TKCompanionApp/issues)
 explaining the problem you've noticed and your proposed solution.
+Through the
+[issues](https://github.com/marcoXbresciani/TKCompanionApp/issues) page
+you can
+* notify problems (_bug_),
+* propose improvements (_enhancement_),
+* improve descriptions (_documentation_),
+* ask questions (_question_)
+
+and, generally speaking, contribute to improve this project.
 
 We're here to improve!
 
@@ -50,25 +87,30 @@ Translations are managed through the free software and platform
 which you can add languages, complete and correct translations, ...
 
 ### Other Contributions
-> You can even contribute through Liberapay:
->
+If you can't decide on how to contribute to this project, you can always
+choose the easier way, contributing through Liberapay:
 > <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 >
 > <img alt="receives on liberapay" src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
 > <img alt="patrons on liberapay" src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
+
+In this way, the project might be able to grow and even be available on
+other platform.
 
 ## For Software Developers
 If you are a software developer and want to contribute improving this
 app, you're welcome!
 
 Find the latest current LTS NodeJS
-([16.15.0](https://nodejs.org/download/release/latest-gallium/), as of
-2022-04-27) for your system.
+([16.15.1](https://nodejs.org/download/release/latest-gallium/), as of
+2022-06-06) for your system.
+
 Grab the source code by cloning
 [the repository](https://github.com/marcoXbresciani/TKCompanionApp).
-Then go to this project main folder (also containing this same file
-you're reading) and run `npm install` and you should see all the needed
-dependencies downloaded and installed through NPM package manager.
+
+Then go to this project main folder and run `npm install`.
+You should see all the needed dependencies downloaded and installed
+through NPM package manager.
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
@@ -76,12 +118,12 @@ dependencies downloaded and installed through NPM package manager.
 You might want to also run `npm install -g npm-check-updates` to make
 the `ncu` tool globally available, to check possible dependencies
 versions updates.
+Not much used, though.
 
 Please take note of the current status and improve the app code an
 content based on the
 [OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/en/projects/6084),
 without reducing the already achieved level of quality.
-
 
 ### How to Start
 From command line launch `npm start` that will run Metro tool (don't
@@ -89,6 +131,9 @@ know what it actually is, but seems something needed).
 
 From (another) command line launch `npm run android` that will prepare
 and launch your app, connecting to the Metro thing above.
+Run `npm run ios` if you're on an Apple system: I don't have one, never
+tried the app on an Apple, so if you want to do that... feel free to
+try!
 
 ### How to Build
 If you're going to build for Android systems, go in the `android` folder
@@ -97,6 +142,9 @@ The debug mode APK will be available in
 `android\app\build\outputs\apk\debug` folder as `app-debug.apk`.
 The release mode APK will be available in
 `android\app\build\outputs\apk\release` folder as `app-release.apk`.
+
+I actually have no idea on how to do that, for iOS.
+If you find it out, let me know so that we can update this document!
 
 #### Updating NodeJS
 To update the version of NodeJS to the latest available LTS, it's better

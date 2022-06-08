@@ -39,15 +39,40 @@ or not.
 
 ----
 
-9. [Move translation info into the info field](https://github.com/marcoXbresciani/TKCompanionApp/issues/9)
+10. [Add support for ts-standard](https://github.com/marcoXbresciani/TKCompanionApp/issues/10)
 
-   https://hosted.weblate.org/contributor-agreement/tkcompanionapp/fastlane/?next=/projects/tkcompanionapp/fastlane/
-   and
-   https://hosted.weblate.org/contributor-agreement/tkcompanionapp/i18n/?next=/projects/tkcompanionapp/i18n/
-   belongs in the info field.
+    Trying to add support for `ts-standard` is branch with same name.
+    I'm having configuration issues and an error I can't solve.
+    Running `ts-standard` from the command line, as per current
+    `ts-standard` branch, I see this:
+    ```
+    ts-standard: Unexpected linter output:
 
-   3.2 in https://weblate.org/en/terms/ already covers the licensing.
+    Failed to load plugin '@typescript-eslint' declared in '--config » eslint-config-standard-with-typescript': Class extends value undefined is not a constructor or null: TypeError: Failed
+    js:12:34)
+        at Module._compile (node:internal/modules/cjs/loader:1105:14)
 
-   Representing translators and providing freedback-loops is better
-   facilitated through a translator-credit field (in the actual app).
-   Info from there can be copied into the README if needed.
+        at Module.load (node:internal/modules/cjs/loader:981:32)
+        at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+        at Module.require (node:internal/modules/cjs/loader:1005:19)
+        at require (node:internal/modules/cjs/helpers:102:18)
+        at Object.<anonymous> ([........]\node_modules\@typescript-eslint\experimental-utils\dist\ts-eslint\index.js:14:14)
+        at Module._compile (node:internal/modules/cjs/loader:1105:14)
+        at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+
+    If you think this is a bug in `ts-standard`, open an issue: https://github.com/standard/ts-standard/issues
+    ```
+    (I've only replaced the actual path with `[........]`.)
+
+    Can't make it work. Ideas?
+
+----
+
+11. [Cope with OpenSSF Best Practices](https://github.com/marcoXbresciani/TKCompanionApp/issues/11)
+
+    It would be nice to fulfill the requirements for the OpenSSF Best
+    Practices concepts, competing all the needed information to apply
+    for a badge describing these practices.
+    See https://bestpractices.coreinfrastructure.org/en
+
+----

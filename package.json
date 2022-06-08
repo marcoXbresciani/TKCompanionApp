@@ -10,7 +10,6 @@
     },
     "homepage": "https://github.com/marcoXbresciani/TKCompanionApp",
     "dependencies": {
-        "@types/styled-components": "^5.1.25",
         "i18next": "^21.6.16",
         "react": "17.0.2",
         "react-i18next": "^11.16.7",
@@ -22,30 +21,30 @@
         "react-native-safe-area-context": "^4.1.2",
         "react-native-screens": "^3.13.1",
         "react-native-vector-icons": "^9.1.0",
-        "styled-components": "^5.3.3"
+        "styled-components": "^5.3.5"
     },
     "description": "A short and small helper for Toyota Kata practitioners",
     "devDependencies": {
-        "@babel/core": "^7.17.9",
-        "@babel/runtime": "^7.17.9",
-        "@react-native-community/eslint-config": "^3.0.1",
-        "@types/jest": "^27.4.1",
+        "@babel/core": "^7.12.9",
+        "@babel/runtime": "^7.12.5",
+        "@react-native-community/eslint-config": "^2.0.0",
+        "@types/jest": "^26.0.23",
         "@types/react-native": "^0.67.3",
         "@types/react-native-vector-icons": "^6.4.10",
         "@types/react-test-renderer": "^17.0.1",
         "@typescript-eslint/eslint-plugin": "^5.17.0",
         "@typescript-eslint/parser": "^5.17.0",
-        "babel-jest": "^27.5.1",
+        "babel-jest": "^26.6.3",
         "babel-plugin-styled-components": "^2.0.6",
         "eslint": "^7.32.0",
-        "jest": "^28.0.2",
-        "metro-react-native-babel-preset": "^0.69.0",
+        "jest": "^26.6.3",
+        "metro-react-native-babel-preset": "^0.67.0",
         "react-test-renderer": "17.0.2",
-        "typescript": "^4.6.3"
+        "typescript": "^4.4.4"
     },
     "engines": {
-        "node": "16.15.0",
-        "npm": "8.5.5"
+        "node": "16.15.1",
+        "npm": "8.11.0"
     },
     "engineStrict": true,
     "funding": {
@@ -82,5 +81,5 @@
         "start": "react-native start",
         "test": "jest"
     },
-    "version": "2.1.0"
+    "version": "2.1.1"
 }

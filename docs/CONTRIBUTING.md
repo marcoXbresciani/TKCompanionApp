@@ -112,13 +112,6 @@ Then go to this project main folder and run `npm install`.
 You should see all the needed dependencies downloaded and installed
 through NPM package manager.
 
-> **2022-06-09**: there's currently some problem with configuration and
-> dependencies versions.
-> It's better using `npm install --legacy-peer-deps` to avoid conflict
-> within somehow incompatible dependencies versions.
->
-> See https://github.com/styled-components/styled-components/issues/3751
-
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 
@@ -133,12 +126,6 @@ content based on the
 without reducing the already achieved level of quality.
 
 ### How to Start
-> **2022-06-09**: following compatibility issues mentionen above, it's
-> suggested to set `JAVA_HOME` environment variable to a value greater
-> than or equal to JDK 11.
->
-> See https://github.com/styled-components/styled-components/issues/3751
-
 From command line launch `npm start` that will run Metro tool (don't
 know what it actually is, but seems something needed).
 

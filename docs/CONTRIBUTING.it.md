@@ -114,6 +114,14 @@ Quindi vai nella cartella principale del progetto ed esegui
 Dovresti vedere che tutte le dipendenze necessarie sono state scaricate
 e installate tramite il gestore di pacchetti NPM.
 
+> **2022-06-09**: al momento c'è qualche problema colla configurazione e
+> le versioni delle varie dipendenze.
+> E' consigliabile usare il comando `npm install --legacy-peer-deps` per
+> evitare conflitti tra versioni di dipendenze in qualche modo non
+> compatibili.
+>
+> Cfr. https://github.com/styled-components/styled-components/issues/3751
+
 ![dimensione del codice GitHub in byte](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![Attività di commit GitHub](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 
@@ -128,6 +136,12 @@ dell'app e del suo codice, rispetto a quanto indicato dalle
 senza ridurre il livello di qualità già raggiunto.
 
 ### Come iniziare
+> **2022-06-09**: rispetto ai problemi di configurazione indicati sopra,
+> è consigliato impostare la variabile di ambiente `JAVA_HOME` a una
+> versione superiore o uguale a JDK 11.
+>
+> Cfr. https://github.com/styled-components/styled-components/issues/3751
+
 Dalla riga di comando avvia `npm start` che eseguirà lo strumento Metro
 (non so cosa sia, in realtà, ma sembra necessario).
 

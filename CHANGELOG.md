@@ -43,6 +43,7 @@ This file is offered as-is, without any warranty.
 ### Changed
 * Internal improvement on I18N management.
 * Internal improvement on bottom navigation management.
+* Update to latest Node LTS: 16.15.1.
 ### Removed
 ### Fixed
 * Introduce translator(s) field(s) for fixing

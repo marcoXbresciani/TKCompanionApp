@@ -1,1 +1,133 @@
-{}
+{
+    "5q": {
+        "back": {
+            "return": "Zurück zu Frage 3",
+            "q1": "1) Was war Ihr <bold>letzter Schritt</bold>?",
+            "q3": "3) Was ist <bold>tatsächlich passiert</bold>?",
+            "quote": "Weil Sie nicht genau wissen, was das Ergebnis eines Schritts sein wird!",
+            "q2": "2) Was haben Sie <bold>erwartet</bold>?",
+            "q4": "4) Was hast du <bold>gelernt</bold>?",
+            "title": "Denken Sie über den letzten Schritt nach"
+        },
+        "front": {
+            "header": "Kata trainieren",
+            "q1": "① Was ist die <bold>Zielbedingung</bold>?",
+            "q3.1": "③ Welche <bold>Hindernisse</bold> halten Sie Ihrer Meinung nach davon ab, den Zielzustand zu erreichen?",
+            "q3.2": "Welchen *einen* sprichst du jetzt an?",
+            "q4.2": "Was erwartest du?",
+            "separator": "Karte umdrehen",
+            "q5": "⑤ Wie schnell können wir sehen, was wir aus diesem Schritt <bold>gelernt</bold> haben?",
+            "q2": "② Wie ist jetzt der <bold>Ist-Zustand</bold>?",
+            "q4.1": "④ Was ist Ihr <bold>nächster Schritt</bold>? (Nächster Versuch)",
+            "title": "Die fünf Fragen"
+        }
+    },
+    "4s": {
+        "s3": "③ Legen Sie Ihren nächsten Zielzustand fest",
+        "s4": "④ Führen Sie Experimente durch, um dorthin zu gelangen",
+        "s1": "① Holen Sie sich die Richtung oder Herausforderung",
+        "s2": "② Erfassen Sie den aktuellen Zustand",
+        "title": "Die vier Schritte der Verbesserungs-Kata"
+    },
+    "about": {
+        "copyright": "Urheberrechte ©",
+        "might": {
+            "key2": "helfen Ihnen, Kata zu lernen",
+            "key3": "sei lustig",
+            "key4": "lehrt Ihnen wissenschaftliches Denken",
+            "title": "Diese Anwendung KÖNNTE",
+            "key1": "helfen Ihnen, sich zu verbessern"
+        },
+        "not": {
+            "key1": "Ihre Daten sammeln",
+            "key2": "Tracking-Bibliotheken enthalten",
+            "key3": "Zuhause anrufen",
+            "key4": "Verwenden Sie Google Play Store-APIs",
+            "key5": "Speichern Sie Dinge auf Ihrem Gerät",
+            "key6": "dich ausspionieren",
+            "title": "Diese Anwendung <bold>tut nicht</bold>"
+        },
+        "translation": {
+            "title": "Englische Übersetzung von:",
+            "author": [
+                "Dieses Feld enthält die Namen aller Mitwirkenden der relevanten Sprache. Bitte zögern Sie nicht, Ihren Namen zu schreiben oder ihn am Ende der Liste der bestehenden Mitwirkenden hinzuzufügen. Drücken Sie einfach die Eingabetaste und fügen Sie Ihren Namen in Ihrem bevorzugten Format hinzu."
+            ]
+        }
+    },
+    "app": {
+        "wip": {
+            "title": "In Arbeit…",
+            "before": "Danke fürs Klicken, aber hier noch keine tatsächliche Aktion.",
+            "after": "Rückmeldungen und Ideen sind sehr willkommen."
+        },
+        "short": "Ein kurzer und kleiner Helfer für Toyota-Kata-Praktizierende"
+    },
+    "docs": {
+        "4steps": "4 Schritte",
+        "5qcard": "5Q-Karte",
+        "kts": "$t(kts.title)",
+        "title": "Lesen Sie die Dokumente",
+        "practice": "$t(practice.title)",
+        "tkc": "$t(tkc.title)"
+    },
+    "download": {
+        "close": "Schließen",
+        "error": "Download-Fehler „{{reason}}“",
+        "jpg": "JPG-Bild herunterladen",
+        "kts": "$t(kts.title)",
+        "pdf": "PDF-Datei herunterladen",
+        "title": "Downloads von der Toyota Kata-Website",
+        "tkc": "$t(tkc.title)",
+        "4s": "$t(4s.title)",
+        "5q": "$t(5q.front.title)"
+    },
+    "kts": {
+        "tip": "Zu belassen wie es ist. Eine Art falsches Ausspracheschema.",
+        "title": "Kata that Shit",
+        "text": "Anwendung des Musters der Verbesserungs-Kata (aus dem Buch „Toyota Kata“) auf ein sich ständig verschlimmerndes Problem, das Hindernisse mit sich bringt und für das es keine offensichtliche Lösung gibt. Aussage, die verwendet wird, wenn jemand wiederholt frustriert war, Schwarz-Weiß-Antworten will oder erwartet, dass jemand anderes das Problem löst."
+    },
+    "nav": {
+        "docs": "Dokumente",
+        "download": "Downloads",
+        "home": "Startseite",
+        "menu": {
+            "about": "Über uns",
+            "copyright": "Urheberrechte ©",
+            "settings": "Einstellungen"
+        },
+        "pdsa": "PDSA Journal"
+    },
+    "pdsa": {
+        "alert": {
+            "title": "Ungültiger PDSA gefunden"
+        },
+        "q1": "Was ist die Zielbedingung?",
+        "q2": "Wie ist jetzt der Ist-Zustand?",
+        "q3": "Welche Hindernisse hindern Sie Ihrer Meinung nach daran, den Zielzustand zu erreichen? Welchen *einen* sprichst du jetzt an?",
+        "title": "Planen-Machen-Studieren-Handeln",
+        "q4": "Was ist Ihr nächster Schritt? (Nächstes Experiment) Was erwartest du?",
+        "q5": "Wie schnell können wir sehen, was wir aus diesem Schritt gelernt haben?",
+        "temp": "Dies ist ein Experiment für das nächste eingehende Feature: die Möglichkeit, eine 5Q-Karte zu schreiben/zu speichern, möglicherweise täglich, und sie jederzeit zu überprüfen/neu zu lesen."
+    },
+    "practice": {
+        "5": "Der „Kata-Code“ definiert, was sich unserer Meinung nach wahrscheinlich nicht ändern sollte, wenn Sie Ihren eigenen Stil weiterentwickeln und weiterentwickeln.",
+        "6": "Mit freundlichen Grüßen!",
+        "title": "Umdenken durch Praxis",
+        "3": "Die Kata-Community hat strukturierte Übungsroutinen, sogenannte „Starter-Kata“, zum Erlernen der Grundlagen sowohl für den Lernenden als auch für den Trainer – wie das Spielen von Tonleitern beim Erlernen eines neuen Instruments. Das Üben von Starter-Kata ist eine Grundlage, auf der die Kreativität und Initiative jedes Lernenden wachsen kann.",
+        "1": "Verbesserungs-Kata / Coaching Kata-Praktizierende schaffen eine Dynamik, die Menschen überall hilft, wissenschaftlichere Denk- und Handlungsweisen zu üben, um das Beste zu erreichen, was wir uns vorstellen können, und darüber hinaus.",
+        "2": "Das 21. Jahrhundert verlangt nach einer kognitiv komplexen, zwischenmenschlichen, iterativen und sogar unternehmerischen Arbeitsweise. Das Üben der Verbesserungs-Kata und Coaching-Kata ist eine Möglichkeit, diese Fähigkeiten und Denkweisen zu erlangen und uns dabei zu helfen, uns an die Welt um uns herum anzupassen. Es gibt Ihnen keine Lösungen, sondern einen Denkprozess, wie Sie Ihre Ziele und Hindernisse angehen können.",
+        "4": "Die Übungsroutinen der Verbesserungs-Kata und Coaching-Kata sind ein nützlicher Ausgangspunkt für jedes Team oder jede Organisation, die einen wissenschaftlicheren Ansatz entwickeln und anwenden möchten. Anfänger versuchen zunächst, dem Muster der Starter-Kata genau zu folgen. Wenn ihre Kenntnisse zunehmen und sie den Zweck hinter den Routinen verstehen, können sie damit beginnen, ihren eigenen Stil zu entwickeln, solange er weiterhin das zugrunde liegende wissenschaftliche Muster und den zugrunde liegenden Zweck enthält."
+    },
+    "settings": {
+        "language": "Sprache",
+        "theme": "Schalten Sie das helle/dunkle Thema um"
+    },
+    "tkc": {
+        "1": "◉ Bedingungen sind unvorhersehbar.",
+        "4": "◉ Anfänger üben Starter-Kata genau.",
+        "5": "◉ Habe einen Coach, sei Coach.",
+        "title": "Der Kata-Code",
+        "2": "◉ Genießen Sie die Lernzone.",
+        "3": "◉ Die Richtung verstehen, den aktuellen Zustand erfassen, einen Zielzustand festlegen, in Richtung des Zielzustands experimentieren."
+    }
+}

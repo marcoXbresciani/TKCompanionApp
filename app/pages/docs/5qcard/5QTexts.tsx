@@ -26,13 +26,13 @@ import {Text} from 'react-native';
 
 export const Text5Q = styled(Text)`
     color: black;
-    font-family: FreeSans;
+    font-family: FreeSans, sans-serif;
     font-size: 16px;
     line-height: 27px;
 `;
 
 export const Bold5Q = styled(Text5Q)`
-    font-family: FreeSansBold;
+    font-family: FreeSansBold, sans-serif;
 `;
 
 export const Centered5Q = styled(Text5Q)`
@@ -40,7 +40,7 @@ export const Centered5Q = styled(Text5Q)`
 `;
 
 export const BoldCentered5Q = styled(Centered5Q)`
-    font-family: FreeSansBold;
+    font-family: FreeSansBold, sans-serif;
 `;
 
 export const Title5Q = styled(BoldCentered5Q)`

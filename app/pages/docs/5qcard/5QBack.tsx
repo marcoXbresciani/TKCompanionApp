@@ -22,9 +22,10 @@
  */
 import * as React from 'react';
 import {Trans, useTranslation} from 'react-i18next';
-import {BoldText, TkParagraph} from '../../../globals/Texts';
 import {Button, Card} from 'react-native-paper';
 import i18n from '../../../i18n/i18n';
+import {TkParagraph} from '../../../components/TkParagraph';
+import {BoldText} from '../../../components/BoldText';
 
 type Props = {
     onPress: () => void;

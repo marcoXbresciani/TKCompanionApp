@@ -20,13 +20,7 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {
-    configureFonts,
-    DarkTheme,
-    DefaultTheme,
-} from 'react-native-paper';
-
-const fontConfig = {
+export const fontConfig = {
     web: {
         regular: {
             fontFamily: 'FreeSans',
@@ -81,32 +75,4 @@ const fontConfig = {
             fontWeight: 'normal' as 'normal',
         },
     },
-};
-
-export const tkLightTheme = {
-    ...DefaultTheme,
-    animation: {
-        scale: 1.0,
-    },
-    colors: {
-        ...DefaultTheme.colors,
-        accent: 'gold',
-        primary: 'royalblue',
-    },
-    dark: false,
-    fonts: configureFonts(fontConfig),
-};
-
-export const tkDarkTheme = {
-    ...DarkTheme,
-    animation: {
-        scale: 1.0,
-    },
-    colors: {
-        ...DarkTheme.colors,
-        accent: 'royalblue',
-        primary: 'gold',
-    },
-    dark: true,
-    fonts: configureFonts(fontConfig),
 };

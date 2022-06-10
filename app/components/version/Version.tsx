@@ -21,21 +21,19 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {Card} from 'react-native-paper';
+import {Caption} from 'react-native-paper';
+import {APP_NAME, APP_VERSION} from '../../utils/Constants';
 import i18n from '../../i18n/i18n';
-import {TkParagraph} from '../../components/TkParagraph';
+import {CenteredTitle} from './CenteredTitle';
+import {CenteredSubheading} from './CenteredSubheading';
 
-const Tkc: React.FunctionComponent = () => (
-    <Card>
-        <Card.Title title={`${i18n.t('tkc.title')}`} />
-        <Card.Content>
-            <TkParagraph>{`${i18n.t('tkc.1')}`}</TkParagraph>
-            <TkParagraph>{`${i18n.t('tkc.2')}`}</TkParagraph>
-            <TkParagraph>{`${i18n.t('tkc.3')}`}</TkParagraph>
-            <TkParagraph>{`${i18n.t('tkc.4')}`}</TkParagraph>
-            <TkParagraph>{`${i18n.t('tkc.5')}`}</TkParagraph>
-        </Card.Content>
-    </Card>
-);
-
-export default Tkc;
+const Version: React.FunctionComponent = () => {
+    return (
+        <>
+            <CenteredTitle>{APP_NAME}</CenteredTitle>
+            <CenteredSubheading>{APP_VERSION}</CenteredSubheading>
+            <Caption>{`${i18n.t('app.short')}`}</Caption>
+        </>
+    );
+};
+export default Version;

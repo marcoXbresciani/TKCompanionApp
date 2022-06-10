@@ -20,35 +20,14 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-
 import styled from 'styled-components';
-import {Text} from 'react-native';
+import {Card} from 'react-native-paper';
+import {isDark} from '../../utils/Functions';
+import {tkDarkTheme} from '../../config/tkDarkTheme';
+import {tkLightTheme} from '../../config/tkLightTheme';
 
-export const Text5Q = styled(Text)`
-    color: black;
-    font-family: FreeSans, sans-serif;
-    font-size: 16px;
-    line-height: 27px;
-`;
-
-export const Bold5Q = styled(Text5Q)`
-    font-family: FreeSansBold, sans-serif;
-`;
-
-export const Centered5Q = styled(Text5Q)`
-    text-align: center;
-`;
-
-export const BoldCentered5Q = styled(Centered5Q)`
-    font-family: FreeSansBold, sans-serif;
-`;
-
-export const Title5Q = styled(BoldCentered5Q)`
-    font-size: 20px;
-    line-height: 33px;
-`;
-
-export const Smaller5Q = styled(Text5Q)`
-    font-size: 13px;
-    line-height: 23px;
+export const TkCard = styled(Card)`
+    border: 1px solid
+        ${isDark() ? tkDarkTheme.colors.text : tkLightTheme.colors.text};
+    border-radius: 15px;
 `;

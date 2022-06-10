@@ -20,22 +20,10 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import * as React from 'react';
-import {Card} from 'react-native-paper';
-import i18n from '../../i18n/i18n';
-import {TkParagraph} from '../../components/TkParagraph';
+import styled from 'styled-components';
+import {Text5Q} from './Text5Q';
 
-const Tkc: React.FunctionComponent = () => (
-    <Card>
-        <Card.Title title={`${i18n.t('tkc.title')}`} />
-        <Card.Content>
-            <TkParagraph>{`${i18n.t('tkc.1')}`}</TkParagraph>
-            <TkParagraph>{`${i18n.t('tkc.2')}`}</TkParagraph>
-            <TkParagraph>{`${i18n.t('tkc.3')}`}</TkParagraph>
-            <TkParagraph>{`${i18n.t('tkc.4')}`}</TkParagraph>
-            <TkParagraph>{`${i18n.t('tkc.5')}`}</TkParagraph>
-        </Card.Content>
-    </Card>
-);
-
-export default Tkc;
+export const Smaller5Q = styled(Text5Q)`
+    font-size: 13px;
+    line-height: 23px;
+`;

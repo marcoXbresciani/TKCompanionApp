@@ -21,27 +21,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components';
-import {Paragraph, Text} from 'react-native-paper';
+import {Centered5Q} from './Centered5Q';
 
-export const TkText = styled(Text)`
-    font-size: 16px;
-    line-height: 27px;
-`;
-
-export const TkParagraph = styled(Paragraph)`
-    font-size: 16px;
-    line-height: 27px;
-`;
-
-export const SmallerText = styled(TkText)`
-    font-size: 13px;
-    line-height: 23px;
-`;
-
-export const BoldText = styled(TkText)`
-    font-weight: bold;
-`;
-
-export const CenteredText = styled(TkText)`
-    text-align: center;
+export const BoldCentered5Q = styled(Centered5Q)`
+    font-family: FreeSansBold, sans-serif;
 `;

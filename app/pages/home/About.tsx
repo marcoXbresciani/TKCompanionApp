@@ -22,12 +22,12 @@
  */
 import * as React from 'react';
 import {List} from 'react-native-paper';
-import Version from '../../globals/Version';
+import Version from '../../components/version/Version';
 import {Trans, useTranslation} from 'react-i18next';
-import {BoldText} from '../../globals/Texts';
 import {Linking} from 'react-native';
 import styled from 'styled-components';
 import i18n from '../../i18n/i18n';
+import {BoldText} from '../../components/BoldText';
 
 const MightItem = styled(List.Item)``;
 const NotItem = styled(List.Item)``;

@@ -23,12 +23,12 @@
 import * as React from 'react';
 import {useEffect} from 'react';
 import {Appbar, Card, TextInput} from 'react-native-paper';
-import {TkParagraph} from '../../globals/Texts';
 import {Alert, ScrollView} from 'react-native';
-import Wip from '../../globals/Wip';
+import Wip from '../../components/wip/Wip';
 import PdsaEntry from '../../utils/storage/pdsa/PdsaEntry';
 import StorageFactory from '../../utils/storage/StorageFactory';
 import i18n from '../../i18n/i18n';
+import {TkParagraph} from '../../components/TkParagraph';
 
 const DownloadPage: React.FC = () => {
     const [pdsaEntry, setPdsaEntry] = React.useState(new PdsaEntry());

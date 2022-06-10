@@ -21,8 +21,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {TkParagraph} from '../../globals/Texts';
 import {Card} from 'react-native-paper';
+import {TkParagraph} from '../../components/TkParagraph';
 import i18n from '../../i18n/i18n';
 
 const FourS: React.FunctionComponent = () => (

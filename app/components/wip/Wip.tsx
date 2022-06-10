@@ -21,30 +21,21 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {TkParagraph, TkText} from './Texts';
-import {TkCard, TkCardContent, TkCardTitle} from './Pieces';
 import {Card, Dialog, IconButton, Portal} from 'react-native-paper';
 import {Linking} from 'react-native';
-import styled from 'styled-components';
-import {isDark} from '../utils/Functions';
-import {tkDarkTheme, tkLightTheme} from './Config';
-import i18n from '../i18n/i18n';
+import i18n from '../../i18n/i18n';
+import {TkText} from '../TkText';
+import {TkCardContent} from '../tkcard/TkCardContent';
+import {TkParagraph} from '../TkParagraph';
+import {TkCard} from '../tkcard/TkCard';
+import {TkCardWipTitle} from './TkCardWipTitle';
+import {ItalicText} from './ItalicText';
 
 type Props = {
     message: string;
     visible: boolean;
     setVisible: React.Dispatch<React.SetStateAction<boolean>>;
 };
-
-const TkCardWipTitle = styled(TkCardTitle)`
-    border-bottom-color: ${isDark()
-        ? tkDarkTheme.colors.accent
-        : tkLightTheme.colors.accent};
-`;
-
-export const ItalicText = styled(TkText)`
-    font-style: italic;
-`;
 
 const Wip: ({message}: Props) => JSX.Element = ({
     message,

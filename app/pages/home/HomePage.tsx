@@ -21,7 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import Version from '../../globals/Version';
+import Version from '../../components/version/Version';
 import {
     Appbar,
     Card,
@@ -31,11 +31,12 @@ import {
     Portal,
     useTheme,
 } from 'react-native-paper';
-import {TkCard, TkCardContent} from '../../globals/Pieces';
 import Settings from './Settings';
 import Copyright from './Copyright';
 import About from './About';
 import i18n from '../../i18n/i18n';
+import {TkCardContent} from '../../components/tkcard/TkCardContent';
+import {TkCard} from '../../components/tkcard/TkCard';
 
 const HomePage: React.FunctionComponent = () => {
     const [visibleAbout, setVisibleAbout] = React.useState(false);

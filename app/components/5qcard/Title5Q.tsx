@@ -21,24 +21,9 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components';
-import {Card} from 'react-native-paper';
-import {tkDarkTheme, tkLightTheme} from './Config';
-import {isDark} from '../utils/Functions';
+import {BoldCentered5Q} from './BoldCentered5Q';
 
-export const TkCard = styled(Card)`
-    border: 1px solid
-        ${isDark() ? tkDarkTheme.colors.text : tkLightTheme.colors.text};
-    border-radius: 15px;
-`;
-
-export const TkCardTitle = styled(Card.Title)`
-    border-bottom-color: ${isDark()
-        ? tkDarkTheme.colors.primary
-        : tkLightTheme.colors.primary};
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-`;
-
-export const TkCardContent = styled(Card.Content)`
-    padding: 5%;
+export const Title5Q = styled(BoldCentered5Q)`
+    font-size: 20px;
+    line-height: 33px;
 `;

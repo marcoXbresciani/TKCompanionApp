@@ -23,12 +23,12 @@
 import * as React from 'react';
 import {List, Switch} from 'react-native-paper';
 import {View} from 'react-native';
-import {TkText} from '../../globals/Texts';
 import styled from 'styled-components';
 import StorageFactory from '../../utils/storage/StorageFactory';
 import {AllowedSettings} from '../../utils/storage/settings/AllowedSettings';
 import {PreferencesContext} from '../../utils/Constants';
 import i18n from '../../i18n/i18n';
+import {TkText} from '../../components/TkText';
 
 const RowView = styled(View)`
     flex-direction: row;

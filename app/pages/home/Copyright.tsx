@@ -21,10 +21,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {TkText, SmallerText} from '../../globals/Texts';
 import styled from 'styled-components';
 import {Linking, ScrollView, View} from 'react-native';
 import {IconButton} from 'react-native-paper';
+import {TkText} from '../../components/TkText';
+import {SmallerText} from '../../components/SmallerText';
 
 const Notice = styled(View)`
     align-content: center;

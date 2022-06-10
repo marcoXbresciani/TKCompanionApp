@@ -31,12 +31,14 @@ const NicerAreaView = styled(SafeAreaView)`
     flex: 1;
 `;
 
-const PageContainer: React.FunctionComponent = ({children}) => (
-    <NicerAreaView>
-        <StatusBar />
-        <View>{children}</View>
-    </NicerAreaView>
-);
+const PageContainer = (props: React.PropsWithChildren) => {
+    return (
+        <NicerAreaView>
+            <StatusBar />
+            <View>{props.children}</View>
+        </NicerAreaView>
+    );
+};
 
 export default PageContainer;
 

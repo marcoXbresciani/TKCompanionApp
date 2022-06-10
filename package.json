@@ -26,19 +26,23 @@
     },
     "description": "A short and small helper for Toyota Kata practitioners",
     "devDependencies": {
-        "@babel/core": "^7.12.9",
+        "@babel/core": "^7.18.2",
+        "@babel/preset-env": "^7.18.2",
+        "@babel/preset-typescript": "^7.17.12",
         "@babel/runtime": "^7.12.5",
         "@react-native-community/eslint-config": "^2.0.0",
         "@types/jest": "^26.0.23",
         "@types/react-native": "^0.67.3",
         "@types/react-native-vector-icons": "^6.4.10",
         "@types/react-test-renderer": "^17.0.1",
+        "@types/styled-components": "^5.1.25",
         "@typescript-eslint/eslint-plugin": "^5.17.0",
         "@typescript-eslint/parser": "^5.17.0",
         "babel-jest": "^26.6.3",
-        "babel-plugin-styled-components": "^2.0.6",
+        "babel-plugin-styled-components": "^2.0.7",
         "eslint": "^7.32.0",
         "jest": "^26.6.3",
+        "jest-styled-components": "^7.0.8",
         "metro-react-native-babel-preset": "^0.67.0",
         "react-test-renderer": "17.0.2",
         "typescript": "^4.4.4"
@@ -53,7 +57,6 @@
         "url": "https://liberapay.com/marcoXbresciani/donate"
     },
     "jest": {
-        "preset": "react-native",
         "moduleFileExtensions": [
             "ts",
             "tsx",
@@ -61,9 +64,14 @@
             "jsx",
             "json",
             "node"
+        ],
+        "preset": "react-native",
+        "transformIgnorePatterns": [
+            "node_modules/(?!(react-native|@react-native|react-native-iphone-x-helper|react-native-vector-icons)/)"
         ]
     },
     "license": "GPL-3.0-or-later",
+    "main": "index.js",
     "name": "tkcompanionapp",
     "private": true,
     "repository": {

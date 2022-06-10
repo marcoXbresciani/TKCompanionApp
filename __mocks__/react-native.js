@@ -20,13 +20,13 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import 'react-native';
-import React from 'react';
-import App from '../App';
-
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
-
-it('renders correctly', () => {
-    renderer.create(<App />);
-});
+module.exports = {
+    NativeModules: {
+        RNEncryptedStorage: {
+            setItem: jest.fn(() => Promise.resolve()),
+            getItem: jest.fn(() => Promise.resolve('{ "foo": 1 }')),
+            removeItem: jest.fn(() => Promise.resolve()),
+            clear: jest.fn(() => Promise.resolve()),
+        },
+    },
+};

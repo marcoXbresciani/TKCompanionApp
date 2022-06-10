@@ -171,6 +171,8 @@ You can keep in touch with the author through:
   the Norwegian Bokmål translation.
 * [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) for the
   French translation.
+* [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
+  for the German translation.
 
 ## Thanks
 Thanks to (in appearing order):

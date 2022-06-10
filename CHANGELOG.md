@@ -36,6 +36,7 @@ This file is offered as-is, without any warranty.
   [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/)!)
 * Introduce Norwegian Bokmål translation (thanks
   [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu)!)
+* Introduce German translation (thanks Amy Dora Lang (@amydoralang) )
 * [ADR-010](/docs/architecture/decisions/010-i18n-wrapping.md) for
   using the I18N APIs in a more wrapped and safer way.
 * [ADR-011](/docs/architecture/decisions/011-openssf-best-practices.md)

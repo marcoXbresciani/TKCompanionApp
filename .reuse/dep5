@@ -87,6 +87,10 @@ Files: app/i18n/nb_NO.json
 Copyright: 2022 Allan Nordhøy (@comradekingu)
 License: GPL-3.0-or-later
 
+Files: app/i18n/fr.json
+Copyright: 2022 J. Lavoie (@Edanas)
+License: GPL-3.0-or-later
+
 Files: babel.config.js
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP

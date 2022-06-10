@@ -79,16 +79,24 @@ Files: app/assets/images/dh000004.jpg
 Copyright: 2007 Marco Bresciani
 License: CC-BY-SA-4.0
 
-Files: app/i18n/*.json
+Files: app/i18n/de.json
+Copyright: 2022 Amy Dora Lang (@amydoralang)
+License: GPL-3.0-or-later
+
+Files: app/i18n/en.json
+Copyright: 2021-2022 Marco Bresciani
+License: GPL-3.0-or-later
+
+Files: app/i18n/fr.json
+Copyright: 2022 J. Lavoie (@Edanas)
+License: GPL-3.0-or-later
+
+Files: app/i18n/it-IT.json
 Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: app/i18n/nb_NO.json
 Copyright: 2022 Allan Nordhøy (@comradekingu)
-License: GPL-3.0-or-later
-
-Files: app/i18n/fr.json
-Copyright: 2022 J. Lavoie (@Edanas)
 License: GPL-3.0-or-later
 
 Files: babel.config.js

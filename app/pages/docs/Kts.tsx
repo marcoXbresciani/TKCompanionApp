@@ -28,11 +28,11 @@ import i18n from '../../i18n/i18n';
 const Kts: React.FunctionComponent = () => (
     <Card>
         <Card.Title
-            title={i18n.t('kts.title')}
-            subtitle={i18n.t('kts.tip')}
+            title={`${i18n.t('kts.title')}`}
+            subtitle={`${i18n.t('kts.tip')}`}
         />
         <Card.Content>
-            <TkParagraph>{i18n.t('kts.text')}</TkParagraph>
+            <TkParagraph>{`${i18n.t('kts.text')}`}</TkParagraph>
         </Card.Content>
     </Card>
 );

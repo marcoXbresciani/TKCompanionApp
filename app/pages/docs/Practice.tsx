@@ -28,26 +28,26 @@ import i18n from '../../i18n/i18n';
 const Practice: React.FunctionComponent = () => (
     <Card>
         <Card.Title
-            title={i18n.t('practice.title')}
+            title={`${i18n.t('practice.title')}`}
             titleNumberOfLines={2}
         />
         <Card.Content>
-            <TkParagraph>{i18n.t('practice.1')}</TkParagraph>
+            <TkParagraph>{`${i18n.t('practice.1')}`}</TkParagraph>
         </Card.Content>
         <Card.Content>
-            <TkParagraph>{i18n.t('practice.2')}</TkParagraph>
+            <TkParagraph>{`${i18n.t('practice.2')}`}</TkParagraph>
         </Card.Content>
         <Card.Content>
-            <TkParagraph>{i18n.t('practice.3')}</TkParagraph>
+            <TkParagraph>{`${i18n.t('practice.3')}`}</TkParagraph>
         </Card.Content>
         <Card.Content>
-            <TkParagraph>{i18n.t('practice.4')}</TkParagraph>
+            <TkParagraph>{`${i18n.t('practice.4')}`}</TkParagraph>
         </Card.Content>
         <Card.Content>
-            <TkParagraph>{i18n.t('practice.5')}</TkParagraph>
+            <TkParagraph>{`${i18n.t('practice.5')}`}</TkParagraph>
         </Card.Content>
         <Card.Content>
-            <TkParagraph>{i18n.t('practice.6')}</TkParagraph>
+            <TkParagraph>{`${i18n.t('practice.6')}`}</TkParagraph>
         </Card.Content>
     </Card>
 );

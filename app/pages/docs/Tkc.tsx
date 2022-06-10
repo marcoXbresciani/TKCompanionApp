@@ -27,13 +27,13 @@ import i18n from '../../i18n/i18n';
 
 const Tkc: React.FunctionComponent = () => (
     <Card>
-        <Card.Title title={i18n.t('tkc.title')} />
+        <Card.Title title={`${i18n.t('tkc.title')}`} />
         <Card.Content>
-            <TkParagraph>{i18n.t('tkc.1')}</TkParagraph>
-            <TkParagraph>{i18n.t('tkc.2')}</TkParagraph>
-            <TkParagraph>{i18n.t('tkc.3')}</TkParagraph>
-            <TkParagraph>{i18n.t('tkc.4')}</TkParagraph>
-            <TkParagraph>{i18n.t('tkc.5')}</TkParagraph>
+            <TkParagraph>{`${i18n.t('tkc.1')}`}</TkParagraph>
+            <TkParagraph>{`${i18n.t('tkc.2')}`}</TkParagraph>
+            <TkParagraph>{`${i18n.t('tkc.3')}`}</TkParagraph>
+            <TkParagraph>{`${i18n.t('tkc.4')}`}</TkParagraph>
+            <TkParagraph>{`${i18n.t('tkc.5')}`}</TkParagraph>
         </Card.Content>
     </Card>
 );

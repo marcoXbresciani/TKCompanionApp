@@ -39,7 +39,7 @@ const Version: React.FunctionComponent = () => {
         <>
             <CenteredTitle>{APP_NAME}</CenteredTitle>
             <CenteredSubheading>{APP_VERSION}</CenteredSubheading>
-            <Caption>{i18n.t('app.short')}</Caption>
+            <Caption>{`${i18n.t('app.short')}`}</Caption>
         </>
     );
 };

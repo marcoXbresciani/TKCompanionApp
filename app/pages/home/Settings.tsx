@@ -42,7 +42,7 @@ const Settings: React.FunctionComponent = () => {
     return (
         <>
             <RowView>
-                <TkText>{i18n.t('settings.theme')}</TkText>
+                <TkText>{`${i18n.t('settings.theme')}`}</TkText>
                 <Switch
                     value={isThemeDark}
                     onValueChange={() => {
@@ -62,7 +62,7 @@ const Settings: React.FunctionComponent = () => {
                     left={(props) => (
                         <List.Icon {...props} icon="language-outline" />
                     )}
-                    title={i18n.t('settings.language')}
+                    title={`${i18n.t('settings.language')}`}
                 >
                     <List.Item
                         left={(props) => (

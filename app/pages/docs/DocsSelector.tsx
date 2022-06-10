@@ -33,31 +33,33 @@ const DocsSelector: React.FC<Props> = ({onPress}: Props) => {
     return (
         <>
             <List.Section>
-                <List.Subheader>{i18n.t('docs.title')}</List.Subheader>
+                <List.Subheader>{`${i18n.t(
+                    'docs.title',
+                )}`}</List.Subheader>
                 <List.Item
                     left={() => (
                         <List.Icon icon="chatbubbles-outline" />
                     )}
                     onPress={() => onPress(Pages.FiveQCard)}
-                    title={i18n.t('docs.5qcard')}
+                    title={`${i18n.t('docs.5qcard')}`}
                     titleNumberOfLines={2}
                 />
                 <List.Item
                     left={() => <List.Icon icon="analytics-outline" />}
                     onPress={() => onPress(Pages.FourSteps)}
-                    title={i18n.t('docs.4steps')}
+                    title={`${i18n.t('docs.4steps')}`}
                     titleNumberOfLines={2}
                 />
                 <List.Item
                     left={() => <List.Icon icon="code-outline" />}
                     onPress={() => onPress(Pages.TkcPage)}
-                    title={i18n.t('docs.tkc')}
+                    title={`${i18n.t('docs.tkc')}`}
                     titleNumberOfLines={2}
                 />
                 <List.Item
                     left={() => <List.Icon icon="construct-outline" />}
                     onPress={() => onPress(Pages.PracticePage)}
-                    title={i18n.t('docs.practice')}
+                    title={`${i18n.t('docs.practice')}`}
                     titleNumberOfLines={2}
                 />
                 <List.Item
@@ -65,7 +67,7 @@ const DocsSelector: React.FC<Props> = ({onPress}: Props) => {
                         <List.Icon icon="thunderstorm-outline" />
                     )}
                     onPress={() => onPress(Pages.KtsPage)}
-                    title={i18n.t('docs.kts')}
+                    title={`${i18n.t('docs.kts')}`}
                     titleNumberOfLines={2}
                 />
             </List.Section>

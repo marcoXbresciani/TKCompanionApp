@@ -72,7 +72,7 @@ const About: React.FunctionComponent = () => {
                                 'http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html',
                             );
                         }}
-                        title={i18n.t('about.might.key1')}
+                        title={`${i18n.t('about.might.key1')}`}
                         titleNumberOfLines={2}
                     />
                     <MightItem
@@ -87,7 +87,7 @@ const About: React.FunctionComponent = () => {
                                 'http://www-personal.umich.edu/~mrother/The_Coaching_Kata.html',
                             );
                         }}
-                        title={i18n.t('about.might.key2')}
+                        title={`${i18n.t('about.might.key2')}`}
                         titleNumberOfLines={2}
                     />
                     <MightItem
@@ -102,7 +102,7 @@ const About: React.FunctionComponent = () => {
                                 'http://www-personal.umich.edu/~mrother/Extras.html',
                             );
                         }}
-                        title={i18n.t('about.might.key3')}
+                        title={`${i18n.t('about.might.key3')}`}
                         titleNumberOfLines={2}
                     />
                     <MightItem
@@ -117,7 +117,7 @@ const About: React.FunctionComponent = () => {
                                 'http://www-personal.umich.edu/~mrother/Challenge.html',
                             );
                         }}
-                        title={i18n.t('about.might.key4')}
+                        title={`${i18n.t('about.might.key4')}`}
                         titleNumberOfLines={2}
                     />
                 </List.Accordion>
@@ -144,7 +144,7 @@ const About: React.FunctionComponent = () => {
                                 'https://www.eff.org/issues/privacy',
                             );
                         }}
-                        title={i18n.t('about.not.key1')}
+                        title={`${i18n.t('about.not.key1')}`}
                         titleNumberOfLines={2}
                     />
                     <NotItem
@@ -159,7 +159,7 @@ const About: React.FunctionComponent = () => {
                                 'https://www.eff.org/issues/privacy',
                             );
                         }}
-                        title={i18n.t('about.not.key2')}
+                        title={`${i18n.t('about.not.key2')}`}
                         titleNumberOfLines={2}
                     />
                     <NotItem
@@ -174,7 +174,7 @@ const About: React.FunctionComponent = () => {
                                 'https://en.wikipedia.org/wiki/Phoning_home',
                             );
                         }}
-                        title={i18n.t('about.not.key3')}
+                        title={`${i18n.t('about.not.key3')}`}
                         titleNumberOfLines={2}
                     />
                     <NotItem
@@ -189,7 +189,7 @@ const About: React.FunctionComponent = () => {
                                 'https://en.wikipedia.org/wiki/Google_Play_Services#Concerns',
                             );
                         }}
-                        title={i18n.t('about.not.key4')}
+                        title={`${i18n.t('about.not.key4')}`}
                         titleNumberOfLines={2}
                     />
                     <NotItem
@@ -204,7 +204,7 @@ const About: React.FunctionComponent = () => {
                                 'https://www.eff.org/issues/privacy',
                             );
                         }}
-                        title={i18n.t('about.not.key5')}
+                        title={`${i18n.t('about.not.key5')}`}
                         titleNumberOfLines={2}
                     />
                     <NotItem
@@ -219,7 +219,7 @@ const About: React.FunctionComponent = () => {
                                 'https://www.eff.org/issues/privacy',
                             );
                         }}
-                        title={i18n.t('about.not.key6')}
+                        title={`${i18n.t('about.not.key6')}`}
                         titleNumberOfLines={2}
                     />
                 </List.Accordion>

@@ -62,50 +62,50 @@ const DownloadPage: React.FunctionComponent = () => {
 
             <List.Section>
                 <List.Subheader>
-                    {i18n.t('download.title')}
+                    {`${i18n.t('download.title')}`}
                 </List.Subheader>
                 <List.Item
-                    description={i18n.t('download.pdf')}
+                    description={`${i18n.t('download.pdf')}`}
                     left={() => <List.Icon icon="download-outline" />}
                     onPress={() =>
                         download(
                             'http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
                         )
                     }
-                    title={i18n.t('download.5q')}
+                    title={`${i18n.t('download.5q')}`}
                     titleNumberOfLines={2}
                 />
                 <List.Item
-                    description={i18n.t('download.pdf')}
+                    description={`${i18n.t('download.pdf')}`}
                     left={() => <List.Icon icon="download-outline" />}
                     onPress={() =>
                         download(
                             'http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf',
                         )
                     }
-                    title={i18n.t('download.4s')}
+                    title={`${i18n.t('download.4s')}`}
                     titleNumberOfLines={2}
                 />
                 <List.Item
-                    description={i18n.t('download.pdf')}
+                    description={`${i18n.t('download.pdf')}`}
                     left={() => <List.Icon icon="download-outline" />}
                     onPress={() =>
                         download(
                             'http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
                         )
                     }
-                    title={i18n.t('download.tkc')}
+                    title={`${i18n.t('download.tkc')}`}
                     titleNumberOfLines={2}
                 />
                 <List.Item
-                    description={i18n.t('download.jpg')}
+                    description={`${i18n.t('download.jpg')}`}
                     left={() => <List.Icon icon="download-outline" />}
                     onPress={() =>
                         download(
                             'http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
                         )
                     }
-                    title={i18n.t('download.kts')}
+                    title={`${i18n.t('download.kts')}`}
                     titleNumberOfLines={2}
                 />
             </List.Section>

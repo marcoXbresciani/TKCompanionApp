@@ -105,18 +105,18 @@ const HomePage: React.FunctionComponent = () => {
                     <Menu.Item
                         onPress={showSettings}
                         icon="settings-outline"
-                        title={i18n.t('nav.menu.settings')}
+                        title={`${i18n.t('nav.menu.settings')}`}
                     />
                     <Menu.Item
                         onPress={showCopyright}
                         icon="document-text-outline"
-                        title={i18n.t('nav.menu.copyright')}
+                        title={`${i18n.t('nav.menu.copyright')}`}
                     />
                     <Divider />
                     <Menu.Item
                         onPress={showAbout}
                         icon="information-circle-outline"
-                        title={i18n.t('nav.menu.about')}
+                        title={`${i18n.t('nav.menu.about')}`}
                     />
                 </Menu>
             </Appbar>

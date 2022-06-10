@@ -36,8 +36,8 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
     return (
         <Card>
             <Card.Title
-                title={i18n.t('5q.front.header')}
-                subtitle={i18n.t('5q.front.title')}
+                title={`${i18n.t('5q.front.header')}`}
+                subtitle={`${i18n.t('5q.front.title')}`}
                 subtitleNumberOfLines={2}
             />
             <Card.Content>
@@ -65,7 +65,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                         icon="return-down-forward-outline"
                         onPress={() => onPress()}
                     >
-                        {i18n.t('5q.front.separator')}
+                        {`${i18n.t('5q.front.separator')}`}
                     </Button>
                 </Card.Actions>
                 <TkParagraph>
@@ -76,7 +76,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                    {i18n.t('5q.front.q3.2')}
+                    {`${i18n.t('5q.front.q3.2')}`}
                 </TkParagraph>
                 <TkParagraph>
                     <Trans
@@ -86,7 +86,7 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                             bold: <BoldText />,
                         }}
                     />
-                    {i18n.t('5q.front.q4.2')}
+                    {`${i18n.t('5q.front.q4.2')}`}
                 </TkParagraph>
                 <TkParagraph>
                     <Trans

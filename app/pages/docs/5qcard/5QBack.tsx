@@ -36,8 +36,8 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
     return (
         <Card>
             <Card.Title
-                title={i18n.t('5q.back.title')}
-                subtitle={i18n.t('5q.back.quote')}
+                title={`${i18n.t('5q.back.title')}`}
+                subtitle={`${i18n.t('5q.back.quote')}`}
                 subtitleNumberOfLines={2}
             />
             <Card.Content>
@@ -84,7 +84,7 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                     mode="outlined"
                     onPress={() => onPress()}
                 >
-                    {i18n.t('5q.back.return')}
+                    {`${i18n.t('5q.back.return')}`}
                 </Button>
             </Card.Actions>
         </Card>

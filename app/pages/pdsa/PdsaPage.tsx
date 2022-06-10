@@ -76,11 +76,13 @@ const DownloadPage: React.FC = () => {
             <ScrollView>
                 <Card>
                     <Card.Title
-                        title={i18n.t('pdsa.title')}
+                        title={`${i18n.t('pdsa.title')}`}
                         titleNumberOfLines={2}
                     />
                     <Card.Content>
-                        <TkParagraph>{i18n.t('pdsa.q1')}</TkParagraph>
+                        <TkParagraph>{`${i18n.t(
+                            'pdsa.q1',
+                        )}`}</TkParagraph>
                         <TextInput
                             label="Target"
                             mode="outlined"
@@ -105,7 +107,9 @@ const DownloadPage: React.FC = () => {
                             }
                             value={pdsaEntry.target}
                         />
-                        <TkParagraph>{i18n.t('pdsa.q2')}</TkParagraph>
+                        <TkParagraph>{`${i18n.t(
+                            'pdsa.q2',
+                        )}`}</TkParagraph>
                         <TextInput
                             label="Actual"
                             mode="outlined"
@@ -130,7 +134,9 @@ const DownloadPage: React.FC = () => {
                             }
                             value={pdsaEntry.actual}
                         />
-                        <TkParagraph>{i18n.t('pdsa.q3')}</TkParagraph>
+                        <TkParagraph>{`${i18n.t(
+                            'pdsa.q3',
+                        )}`}</TkParagraph>
                         <TextInput
                             label="Obstacle"
                             mode="outlined"
@@ -155,7 +161,9 @@ const DownloadPage: React.FC = () => {
                             }
                             value={pdsaEntry.obstacle}
                         />
-                        <TkParagraph>{i18n.t('pdsa.q4')}</TkParagraph>
+                        <TkParagraph>{`${i18n.t(
+                            'pdsa.q4',
+                        )}`}</TkParagraph>
                         <TextInput
                             label="Step"
                             mode="outlined"
@@ -180,7 +188,9 @@ const DownloadPage: React.FC = () => {
                             }
                             value={pdsaEntry.step}
                         />
-                        <TkParagraph>{i18n.t('pdsa.q5')}</TkParagraph>
+                        <TkParagraph>{`${i18n.t(
+                            'pdsa.q5',
+                        )}`}</TkParagraph>
                         <TextInput
                             label="Learnt"
                             mode="outlined"

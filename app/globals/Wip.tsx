@@ -61,11 +61,11 @@ const Wip: ({message}: Props) => JSX.Element = ({
                     <TkCard>
                         <TkCardContent>
                             <TkCardWipTitle
-                                title={i18n.t('app.wip.title')}
+                                title={`${i18n.t('app.wip.title')}`}
                             />
                             <TkParagraph>
                                 <TkText>
-                                    {i18n.t('app.wip.before')}
+                                    {`${i18n.t('app.wip.before')}`}
                                 </TkText>
                             </TkParagraph>
                             <TkParagraph>
@@ -73,7 +73,7 @@ const Wip: ({message}: Props) => JSX.Element = ({
                             </TkParagraph>
                             <TkParagraph>
                                 <TkText>
-                                    {i18n.t('app.wip.after')}
+                                    {`${i18n.t('app.wip.after')}`}
                                 </TkText>
                             </TkParagraph>
                         </TkCardContent>

@@ -175,6 +175,8 @@ Lo stesso per questo documento.
   la traduzione in norvegese Bokmål.
 * [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) per la
   traduzione in francese.
+* [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
+  per la traduzione in tedesco.
 
 ## Ringraziamenti
 Grazie a (in ordine di apparizione):

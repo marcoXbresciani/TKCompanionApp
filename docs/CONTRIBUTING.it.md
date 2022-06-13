@@ -40,7 +40,7 @@ Non c'è ancora un codice di condotta del progetto, ma se questo progetto
 si ingrandirà ne sarà subito adottato uno.
 
 Nella cartella principale del progetto, il file
-[README.md](../README.it.md) è un utile punto di parteza per capire
+[README.md](../README.it.md) è un utile punto di partenza per capire
 meglio questo progetto.
 E, ovviamente, se non si dovesse capire... dimmelo, che si migliora!
 
@@ -223,3 +223,33 @@ l'installazione su un dispositivo reale.
 Lo strumento
 [uber-apk-signer](https://github.com/patrickfav/uber-apk-signer) può
 essere usato per firmare qualsiasi APK facilmente e velocemente.
+
+### Come aggiungere una traduzione
+Se compare la traduzione in una nuova lingua nelle Weblate del progetto,
+dopo il commit di Weblate il nuovo file JSON colla traduzione sarà
+disponibile nel
+[repository](https://github.com/marcoXbresciani/TKCompanionApp).
+
+Non appena il file colla nuova lingua sarà disponibile, si può
+aggiungere l'import del file all'interno del file
+[i18n.ts](../app/i18n/i18n.ts) come per
+```typescript
+import {default as itIT} from './it-IT.json';
+import {default as nbNO} from './nb_NO.json';
+```
+Poi bisogna aggiungere la nuova lingua tra le risorse disponibili come
+in
+```typescript
+    fr: {translation: fr},
+    'it-IT': {translation: itIT},
+```
+E, infine, aggiungere la lingua nella lista delle lingue di "fallback"
+in caso di traduzioni mancanti.
+```typescript
+fallbackLng: ['en', 'it-IT', 'fr', 'de', 'nb-NO'],
+```
+Mentre nei casi precedenti è consigliabile mantenere l'ordinamento
+alfabetico, in questo ho preferito usare quello che mi sembra essere un
+ordinamento per uso/popolarità, mantenendo fissi inglese e italiano e
+aggiungendo le altre lingue in base a quello che mi sembra essere un
+buon ordine... spero!

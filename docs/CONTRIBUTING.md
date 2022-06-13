@@ -215,3 +215,31 @@ The generated APK (see [How to Build](#how-to-build)) shall be (self)
 signed to be able to install it on a real device.
 The [uber-apk-signer](https://github.com/patrickfav/uber-apk-signer)
 tool can be used to quickly and easily sign any APK.
+
+### How to add a new translation
+If there's a new translated language in the project Weblate page, after
+Weblate commit the new file JSON will be available in the
+[repository](https://github.com/marcoXbresciani/TKCompanionApp).
+
+As soon as the new language file will be available, it's possible to
+import it in the [i18n.ts](../app/i18n/i18n.ts) file, as in
+```typescript
+import {default as itIT} from './it-IT.json';
+import {default as nbNO} from './nb_NO.json';
+```
+Then you have to add the new language in the available resoruces as done
+in
+```typescript
+    fr: {translation: fr},
+    'it-IT': {translation: itIT},
+```
+And, add the language in the list of fallback languages when
+translations are missing.
+```typescript
+fallbackLng: ['en', 'it-IT', 'fr', 'de', 'nb-NO'],
+```
+While in the previous cases it is advisable to keep the alphabetical
+order, in this situation I preferred to use what seems to me to be a
+sorting by use / popularity, keeping English and Italian fixed and
+adding the other languages based on what I think it's a good order ...
+or so I hope!

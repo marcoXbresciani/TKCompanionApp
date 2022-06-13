@@ -68,6 +68,18 @@ const Settings: React.FunctionComponent = () => {
                         left={(props) => (
                             <List.Icon {...props} icon="flag-outline" />
                         )}
+                        title="Deutsch"
+                        onPress={() => {
+                            i18n.changeLanguage('de').then();
+                            storage
+                                .write(AllowedSettings.LANGUAGE, 'de')
+                                .then();
+                        }}
+                    />
+                    <List.Item
+                        left={(props) => (
+                            <List.Icon {...props} icon="flag-outline" />
+                        )}
                         title="English"
                         onPress={() => {
                             i18n.changeLanguage('en').then();

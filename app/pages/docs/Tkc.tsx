@@ -21,21 +21,23 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {Card} from 'react-native-paper';
 import i18n from '../../i18n/i18n';
 import {TkParagraph} from '../../components/TkParagraph';
+import {TkCard} from '../../components/tkcard/TkCard';
+import TkCardTitle from '../../components/tkcard/TkCardTitle';
+import {TkCardContent} from '../../components/tkcard/TkCardContent';
 
 const Tkc: React.FunctionComponent = () => (
-    <Card>
-        <Card.Title title={`${i18n.t('tkc.title')}`} />
-        <Card.Content>
+    <TkCard>
+        <TkCardTitle title={`${i18n.t('tkc.title')}`} />
+        <TkCardContent>
             <TkParagraph>{`${i18n.t('tkc.1')}`}</TkParagraph>
             <TkParagraph>{`${i18n.t('tkc.2')}`}</TkParagraph>
             <TkParagraph>{`${i18n.t('tkc.3')}`}</TkParagraph>
             <TkParagraph>{`${i18n.t('tkc.4')}`}</TkParagraph>
             <TkParagraph>{`${i18n.t('tkc.5')}`}</TkParagraph>
-        </Card.Content>
-    </Card>
+        </TkCardContent>
+    </TkCard>
 );
 
 export default Tkc;

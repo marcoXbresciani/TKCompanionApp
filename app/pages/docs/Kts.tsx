@@ -21,20 +21,22 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {Card} from 'react-native-paper';
 import i18n from '../../i18n/i18n';
 import {TkParagraph} from '../../components/TkParagraph';
+import {TkCard} from '../../components/tkcard/TkCard';
+import TkCardTitle from '../../components/tkcard/TkCardTitle';
+import {TkCardContent} from '../../components/tkcard/TkCardContent';
 
 const Kts: React.FunctionComponent = () => (
-    <Card>
-        <Card.Title
+    <TkCard>
+        <TkCardTitle
             title={`${i18n.t('kts.title')}`}
             subtitle={`${i18n.t('kts.tip')}`}
         />
-        <Card.Content>
+        <TkCardContent>
             <TkParagraph>{`${i18n.t('kts.text')}`}</TkParagraph>
-        </Card.Content>
-    </Card>
+        </TkCardContent>
+    </TkCard>
 );
 
 export default Kts;

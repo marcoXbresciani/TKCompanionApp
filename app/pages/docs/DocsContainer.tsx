@@ -22,14 +22,16 @@
  */
 import {ScrollView} from 'react-native';
 import * as React from 'react';
-import {PropsWithChildren} from 'react';
 import {IconButton} from 'react-native-paper';
 
-interface MyProps extends PropsWithChildren<any> {
+type MyProps = {
     onPress: () => void;
-}
+};
 
-const DocsContainer = ({children, onPress}: MyProps) => {
+const DocsContainer = ({
+    children,
+    onPress,
+}: React.PropsWithChildren<MyProps>) => {
     return (
         <ScrollView>
             {children}

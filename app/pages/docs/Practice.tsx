@@ -21,35 +21,37 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {Card} from 'react-native-paper';
 import i18n from '../../i18n/i18n';
 import {TkParagraph} from '../../components/TkParagraph';
+import {TkCard} from '../../components/tkcard/TkCard';
+import TkCardTitle from '../../components/tkcard/TkCardTitle';
+import {TkCardContent} from '../../components/tkcard/TkCardContent';
 
 const Practice: React.FunctionComponent = () => (
-    <Card>
-        <Card.Title
+    <TkCard>
+        <TkCardTitle
             title={`${i18n.t('practice.title')}`}
             titleNumberOfLines={2}
         />
-        <Card.Content>
+        <TkCardContent>
             <TkParagraph>{`${i18n.t('practice.1')}`}</TkParagraph>
-        </Card.Content>
-        <Card.Content>
+        </TkCardContent>
+        <TkCardContent>
             <TkParagraph>{`${i18n.t('practice.2')}`}</TkParagraph>
-        </Card.Content>
-        <Card.Content>
+        </TkCardContent>
+        <TkCardContent>
             <TkParagraph>{`${i18n.t('practice.3')}`}</TkParagraph>
-        </Card.Content>
-        <Card.Content>
+        </TkCardContent>
+        <TkCardContent>
             <TkParagraph>{`${i18n.t('practice.4')}`}</TkParagraph>
-        </Card.Content>
-        <Card.Content>
+        </TkCardContent>
+        <TkCardContent>
             <TkParagraph>{`${i18n.t('practice.5')}`}</TkParagraph>
-        </Card.Content>
-        <Card.Content>
+        </TkCardContent>
+        <TkCardContent>
             <TkParagraph>{`${i18n.t('practice.6')}`}</TkParagraph>
-        </Card.Content>
-    </Card>
+        </TkCardContent>
+    </TkCard>
 );
 
 export default Practice;

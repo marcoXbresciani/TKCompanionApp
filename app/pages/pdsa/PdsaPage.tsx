@@ -22,13 +22,16 @@
  */
 import * as React from 'react';
 import {useEffect} from 'react';
-import {Appbar, Card, TextInput} from 'react-native-paper';
+import {Appbar, TextInput} from 'react-native-paper';
 import {Alert, ScrollView} from 'react-native';
 import Wip from '../../components/wip/Wip';
 import PdsaEntry from '../../utils/storage/pdsa/PdsaEntry';
 import StorageFactory from '../../utils/storage/StorageFactory';
 import i18n from '../../i18n/i18n';
 import {TkParagraph} from '../../components/TkParagraph';
+import TkCardTitle from '../../components/tkcard/TkCardTitle';
+import {TkCard} from '../../components/tkcard/TkCard';
+import {TkCardContent} from '../../components/tkcard/TkCardContent';
 
 const DownloadPage: React.FC = () => {
     const [pdsaEntry, setPdsaEntry] = React.useState(new PdsaEntry());
@@ -74,12 +77,12 @@ const DownloadPage: React.FC = () => {
             </Appbar>
 
             <ScrollView>
-                <Card>
-                    <Card.Title
+                <TkCard>
+                    <TkCardTitle
                         title={`${i18n.t('pdsa.title')}`}
                         titleNumberOfLines={2}
                     />
-                    <Card.Content>
+                    <TkCardContent>
                         <TkParagraph>{`${i18n.t(
                             'pdsa.q1',
                         )}`}</TkParagraph>
@@ -215,8 +218,8 @@ const DownloadPage: React.FC = () => {
                             }
                             value={pdsaEntry.learnt}
                         />
-                    </Card.Content>
-                </Card>
+                    </TkCardContent>
+                </TkCard>
             </ScrollView>
         </>
     );

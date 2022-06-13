@@ -26,6 +26,9 @@ import {Button, Card} from 'react-native-paper';
 import i18n from '../../../i18n/i18n';
 import {TkParagraph} from '../../../components/TkParagraph';
 import {BoldText} from '../../../components/BoldText';
+import {TkCard} from '../../../components/tkcard/TkCard';
+import TkCardTitle from '../../../components/tkcard/TkCardTitle';
+import {TkCardContent} from '../../../components/tkcard/TkCardContent';
 
 type Props = {
     onPress: () => void;
@@ -35,13 +38,13 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
     const {t} = useTranslation();
 
     return (
-        <Card>
-            <Card.Title
+        <TkCard>
+            <TkCardTitle
                 title={`${i18n.t('5q.back.title')}`}
                 subtitle={`${i18n.t('5q.back.quote')}`}
                 subtitleNumberOfLines={2}
             />
-            <Card.Content>
+            <TkCardContent>
                 <TkParagraph>
                     <Trans
                         t={t}
@@ -78,7 +81,7 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                         }}
                     />
                 </TkParagraph>
-            </Card.Content>
+            </TkCardContent>
             <Card.Actions>
                 <Button
                     icon="return-down-back-outline"
@@ -88,7 +91,7 @@ const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
                     {`${i18n.t('5q.back.return')}`}
                 </Button>
             </Card.Actions>
-        </Card>
+        </TkCard>
     );
 };
 

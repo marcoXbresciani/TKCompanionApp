@@ -26,6 +26,9 @@ import {Button, Card} from 'react-native-paper';
 import i18n from '../../../i18n/i18n';
 import {BoldText} from '../../../components/BoldText';
 import {TkParagraph} from '../../../components/TkParagraph';
+import {TkCard} from '../../../components/tkcard/TkCard';
+import TkCardTitle from '../../../components/tkcard/TkCardTitle';
+import {TkCardContent} from '../../../components/tkcard/TkCardContent';
 
 type Props = {
     onPress: () => void;
@@ -35,13 +38,13 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
     const {t} = useTranslation();
 
     return (
-        <Card>
-            <Card.Title
+        <TkCard>
+            <TkCardTitle
                 title={`${i18n.t('5q.front.header')}`}
                 subtitle={`${i18n.t('5q.front.title')}`}
                 subtitleNumberOfLines={2}
             />
-            <Card.Content>
+            <TkCardContent>
                 <TkParagraph>
                     <Trans
                         t={t}
@@ -98,8 +101,8 @@ const Front5Q: React.FC<Props> = ({onPress}: Props) => {
                         }}
                     />
                 </TkParagraph>
-            </Card.Content>
-        </Card>
+            </TkCardContent>
+        </TkCard>
     );
 };
 

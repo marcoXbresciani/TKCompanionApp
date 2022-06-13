@@ -21,24 +21,26 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react';
-import {Card} from 'react-native-paper';
 import {TkParagraph} from '../../components/TkParagraph';
 import i18n from '../../i18n/i18n';
+import {TkCard} from '../../components/tkcard/TkCard';
+import TkCardTitle from '../../components/tkcard/TkCardTitle';
+import {TkCardContent} from '../../components/tkcard/TkCardContent';
 
 const FourS: React.FunctionComponent = () => (
     <>
-        <Card>
-            <Card.Title
+        <TkCard>
+            <TkCardTitle
                 title={`${i18n.t('4s.title')}`}
                 titleNumberOfLines={2}
             />
-            <Card.Content>
+            <TkCardContent>
                 <TkParagraph>{`${i18n.t('4s.s1')}`}</TkParagraph>
                 <TkParagraph>{`${i18n.t('4s.s2')}`}</TkParagraph>
                 <TkParagraph>{`${i18n.t('4s.s3')}`}</TkParagraph>
                 <TkParagraph>{`${i18n.t('4s.s4')}`}</TkParagraph>
-            </Card.Content>
-        </Card>
+            </TkCardContent>
+        </TkCard>
     </>
 );
 

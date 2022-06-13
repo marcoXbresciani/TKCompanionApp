@@ -28,8 +28,8 @@ import {TkText} from '../TkText';
 import {TkCardContent} from '../tkcard/TkCardContent';
 import {TkParagraph} from '../TkParagraph';
 import {TkCard} from '../tkcard/TkCard';
-import {TkCardWipTitle} from './TkCardWipTitle';
 import {ItalicText} from './ItalicText';
+import TkCardTitle from '../tkcard/TkCardTitle';
 
 type Props = {
     message: string;
@@ -51,8 +51,9 @@ const Wip: ({message}: Props) => JSX.Element = ({
                 <Dialog.Content>
                     <TkCard>
                         <TkCardContent>
-                            <TkCardWipTitle
+                            <TkCardTitle
                                 title={`${i18n.t('app.wip.title')}`}
+                                wip
                             />
                             <TkParagraph>
                                 <TkText>

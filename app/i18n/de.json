@@ -50,7 +50,7 @@
         "translation": {
             "title": "Englische Übersetzung von:",
             "author": [
-                "Dieses Feld enthält die Namen aller Mitwirkenden der relevanten Sprache. Bitte zögern Sie nicht, Ihren Namen zu schreiben oder ihn am Ende der Liste der bestehenden Mitwirkenden hinzuzufügen. Drücken Sie einfach die Eingabetaste und fügen Sie Ihren Namen in Ihrem bevorzugten Format hinzu."
+                "Amy Dora Lang (@amydoralang)"
             ]
         }
     },
@@ -82,7 +82,7 @@
         "5q": "$t(5q.front.title)"
     },
     "kts": {
-        "tip": "Zu belassen wie es ist. Eine Art falsches Ausspracheschema.",
+        "tip": "[κατα]",
         "title": "Kata that Shit",
         "text": "Anwendung des Musters der Verbesserungs-Kata (aus dem Buch „Toyota Kata“) auf ein sich ständig verschlimmerndes Problem, das Hindernisse mit sich bringt und für das es keine offensichtliche Lösung gibt. Aussage, die verwendet wird, wenn jemand wiederholt frustriert war, Schwarz-Weiß-Antworten will oder erwartet, dass jemand anderes das Problem löst."
     },

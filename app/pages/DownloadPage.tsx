@@ -69,7 +69,7 @@ const DownloadPage: React.FunctionComponent = () => {
                     left={() => <List.Icon icon="download-outline" />}
                     onPress={() =>
                         download(
-                            'http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
+                            'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
                         )
                     }
                     title={`${i18n.t('download.5q')}`}
@@ -80,7 +80,7 @@ const DownloadPage: React.FunctionComponent = () => {
                     left={() => <List.Icon icon="download-outline" />}
                     onPress={() =>
                         download(
-                            'http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf',
+                            'https://web.archive.org/web/20220326213548/http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf',
                         )
                     }
                     title={`${i18n.t('download.4s')}`}
@@ -91,7 +91,7 @@ const DownloadPage: React.FunctionComponent = () => {
                     left={() => <List.Icon icon="download-outline" />}
                     onPress={() =>
                         download(
-                            'http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
+                            'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
                         )
                     }
                     title={`${i18n.t('download.tkc')}`}
@@ -102,7 +102,7 @@ const DownloadPage: React.FunctionComponent = () => {
                     left={() => <List.Icon icon="download-outline" />}
                     onPress={() =>
                         download(
-                            'http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
+                            'https://web.archive.org/web/20220409213239/http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
                         )
                     }
                     title={`${i18n.t('download.kts')}`}

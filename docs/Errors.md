@@ -27,18 +27,6 @@ or not.
 
 ----
 
-8. [Download links error - forbidden](https://github.com/marcoXbresciani/TKCompanionApp/issues/8)
-
-   I am getting the below error code for all downloads:
-   ```text
-   Forbidden
-   You don't have permission to access /~mrother/KATA_Files/5Q_Card.pdf on this server.
-
-   Additionally, a 302 Found error was encountered while trying to use an ErrorDocument to handle the request.
-   ```
-
-----
-
 10. [Add support for ts-standard](https://github.com/marcoXbresciani/TKCompanionApp/issues/10)
 
     Trying to add support for `ts-standard` is branch with same name.

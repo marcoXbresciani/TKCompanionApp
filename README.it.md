@@ -171,11 +171,14 @@ Lo stesso per questo documento.
   da copiare e aggiungere come "contatto distante" in Briar.
 
 ### Traduzioni
-* [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) per
+* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/nb_NO/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/nb_NO/)
+  [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) per
   la traduzione in norvegese Bokmål.
-* [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) per la
+* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/fr/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/fr/)
+  [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) per la
   traduzione in francese.
-* [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
+* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/de/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/de/)
+  [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
   per la traduzione in tedesco.
 
 ## Ringraziamenti

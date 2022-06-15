@@ -167,11 +167,14 @@ You can keep in touch with the author through:
   to be copy-pasted as "contact at a distance" in Briar.
 
 ### Translations
-* [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) for
+* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/nb_NO/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/nb_NO/)
+  [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) for
   the Norwegian Bokmål translation.
-* [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) for the
+* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/fr/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/fr/)
+  [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) for the
   French translation.
-* [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
+* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/de/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/de/)
+  [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
   for the German translation.
 
 ## Thanks

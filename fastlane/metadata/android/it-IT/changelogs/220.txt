@@ -1,0 +1,2 @@
+Aggiunge nuove traduzioni (grazie a chi ha contribuito!).
+Sistema il bug di download delle risorse.

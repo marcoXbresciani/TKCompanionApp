@@ -1,0 +1,2 @@
+Introduce multiple translations (thanks to contributors!).
+Fix resources download bug.

@@ -32,6 +32,13 @@ This file is offered as-is, without any warranty.
   for this application, the English language will be saved to be later
   restored on application reuse.
   And viceversa.
+### Changed
+### Removed
+### Fixed
+### Security
+
+## [2.2.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.2.0) - 2022-06/15
+### Added
 * Introduce French translation (thanks
   [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/)!)
 * Introduce Norwegian Bokmål translation (thanks
@@ -46,11 +53,14 @@ This file is offered as-is, without any warranty.
 * Internal improvement on I18N management.
 * Internal improvement on bottom navigation management.
 * Update to latest Node LTS: 16.15.1.
-* Proper attributions for translations licenses.
-### Removed
+* Proper attributions for translations licences.
 ### Fixed
 * Introduce translator(s) field(s) for fixing
   [#9](https://github.com/marcoXbresciani/TKCompanionApp/issues/9).
+* Bug "Download links error"
+  [#8](https://github.com/marcoXbresciani/TKCompanionApp/issues/8).
+* Bug "Change download links to TK website"
+  [#12](https://github.com/marcoXbresciani/TKCompanionApp/issues/12).
 ### Security
 
 ## [2.1.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.1.0) - 2022-05-16

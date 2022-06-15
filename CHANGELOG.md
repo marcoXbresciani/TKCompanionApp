@@ -37,7 +37,7 @@ This file is offered as-is, without any warranty.
 ### Fixed
 ### Security
 
-## [2.2.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.2.0) - 2022-06/15
+## [2.2.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.2.0) - 2022-06-15
 ### Added
 * Introduce French translation (thanks
   [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/)!)

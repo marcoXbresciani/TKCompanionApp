@@ -66,22 +66,6 @@ indent_size = 4
 ij_continuation_indent_size = 8
 
 ########################################################################
-[*.json]
-indent_size = 4
-
-# Property (apparently/possibly) supported by IntelliJ IDEA
-ij_continuation_indent_size = 8
-
-########################################################################
-# See Code Conventions for the JavaScript Programming Language at
-# https://crockford.com/javascript/code.html
-[*.js]
-indent_size = 4
-
-# Property (apparently/possibly) supported by IntelliJ IDEA
-ij_continuation_indent_size = 8
-
-########################################################################
 [*.{sh, spec}]
 indent_size = 2
 

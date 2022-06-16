@@ -28,15 +28,15 @@ class SettingsStorage extends GenericStorage<string> {
     return 'settings'
   }
 
-  async write (key: AllowedSettings, value: string): Promise<void> {
+  override async write (key: AllowedSettings, value: string): Promise<void> {
     return await super.write(key, value)
   }
 
-  async read (key: AllowedSettings): Promise<string> {
+  override async read (key: AllowedSettings): Promise<string> {
     return await super.read(key)
   }
 
-  async remove (key: AllowedSettings): Promise<void> {
+  override async remove (key: AllowedSettings): Promise<void> {
     return await super.remove(key)
   }
 }

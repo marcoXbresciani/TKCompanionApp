@@ -23,7 +23,6 @@
     "strict": true,                                   /* Enable all strict type-checking options. */
     "target": "esnext",                               /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
   },
-  "include": ["app/i18n/*.json"],
   "exclude": [
     "node_modules", "babel.config.js", "metro.config.js", "jest.config.js"
   ]

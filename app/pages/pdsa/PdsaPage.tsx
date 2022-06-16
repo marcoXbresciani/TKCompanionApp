@@ -66,7 +66,7 @@ const DownloadPage: React.FC = () => {
             // const [today] = new Date()
             //     .toISOString()
             //     .split('T');
-            pdsaStorage.write('PDSA', pdsaEntry)
+            void pdsaStorage.write('PDSA', pdsaEntry)
           }}
         />
         <Appbar.Action

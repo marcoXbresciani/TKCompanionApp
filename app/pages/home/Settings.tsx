@@ -47,7 +47,7 @@ const Settings: React.FunctionComponent = () => {
           value={isThemeDark}
           onValueChange={() => {
             toggleTheme()
-            storage
+            void storage
               .write(
                 AllowedSettings.DARK_THEME,
                 (!isThemeDark).toString()
@@ -70,8 +70,8 @@ const Settings: React.FunctionComponent = () => {
             )}
             title='Deutsch'
             onPress={() => {
-              i18n.changeLanguage('de').then()
-              storage
+              void i18n.changeLanguage('de').then()
+              void storage
                 .write(AllowedSettings.LANGUAGE, 'de')
                 .then()
             }}
@@ -82,8 +82,8 @@ const Settings: React.FunctionComponent = () => {
             )}
             title='English'
             onPress={() => {
-              i18n.changeLanguage('en').then()
-              storage
+              void i18n.changeLanguage('en').then()
+              void storage
                 .write(AllowedSettings.LANGUAGE, 'en')
                 .then()
             }}
@@ -94,8 +94,8 @@ const Settings: React.FunctionComponent = () => {
             )}
             title='Français'
             onPress={() => {
-              i18n.changeLanguage('fr').then()
-              storage
+              void i18n.changeLanguage('fr').then()
+              void storage
                 .write(AllowedSettings.LANGUAGE, 'fr')
                 .then()
             }}
@@ -106,8 +106,8 @@ const Settings: React.FunctionComponent = () => {
             )}
             title='Italiano'
             onPress={() => {
-              i18n.changeLanguage('it-IT').then()
-              storage
+              void i18n.changeLanguage('it-IT').then()
+              void storage
                 .write(
                   AllowedSettings.LANGUAGE,
                   'it-IT'
@@ -121,8 +121,8 @@ const Settings: React.FunctionComponent = () => {
             )}
             title='Norsk (Bokmål)'
             onPress={() => {
-              i18n.changeLanguage('nb-NO').then()
-              storage
+              void i18n.changeLanguage('nb-NO').then()
+              void storage
                 .write(
                   AllowedSettings.LANGUAGE,
                   'nb-NO'

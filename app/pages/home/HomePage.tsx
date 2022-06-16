@@ -40,30 +40,30 @@ import { TkCard } from '../../components/tkcard/TkCard'
 
 const HomePage: React.FunctionComponent = () => {
   const [visibleAbout, setVisibleAbout] = React.useState(false)
-  const showAbout = () => {
+  const showAbout = (): void => {
     closeMenu()
     setVisibleAbout(true)
   }
-  const hideAbout = () => setVisibleAbout(false)
+  const hideAbout = (): void => setVisibleAbout(false)
 
   const [visibleCopyright, setVisibleCopyright] =
         React.useState(false)
-  const showCopyright = () => {
+  const showCopyright = (): void => {
     closeMenu()
     setVisibleCopyright(true)
   }
-  const hideCopyright = () => setVisibleCopyright(false)
+  const hideCopyright = (): void => setVisibleCopyright(false)
 
   const [visibleSettings, setVisibleSettings] = React.useState(false)
-  const showSettings = () => {
+  const showSettings = (): void => {
     closeMenu()
     setVisibleSettings(true)
   }
-  const hideSettings = () => setVisibleSettings(false)
+  const hideSettings = (): void => setVisibleSettings(false)
 
   const [visible, setVisible] = React.useState(false)
-  const openMenu = () => setVisible(true)
-  const closeMenu = () => setVisible(false)
+  const openMenu = (): void => setVisible(true)
+  const closeMenu = (): void => setVisible(false)
 
   return (
     <>

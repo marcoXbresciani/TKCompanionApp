@@ -43,7 +43,7 @@ class BaseStorage implements Storage<string> {
   async read (key: string): Promise<string> {
     let result: string = key
     try {
-      result = (await EncryptedStorage.getItem(key)) || key
+      result = key ?? (await EncryptedStorage.getItem(key))
       console.debug(`Read '${key}' = '${result}'.`)
     } catch (error) {
       console.error(`Error '${error}' while reading '${key}'.`)

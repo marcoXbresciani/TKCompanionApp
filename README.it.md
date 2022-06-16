@@ -13,15 +13,16 @@ SPDX-License-Identifier: FSFAP
 # TKCompanionApp
 
 ![GitHub](https://img.shields.io/github/license/marcoxbresciani/tkcompanionapp?logo=gnu&style=plastic)
-[![REUSE status](https://api.reuse.software/badge/github.com/marcoXbresciani/TKCompanionApp)](https://api.reuse.software/info/github.com/marcoXbresciani/TKCompanionApp)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/marcoXbresciani/TKCompanionApp?color=black&logo=github&sort=semver&style=plastic)
 ![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp?logo=fdroid)
-[![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational?logo=semver&style=plastic)](https://semver.org/)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![REUSE status](https://api.reuse.software/badge/github.com/marcoXbresciani/TKCompanionApp)](https://api.reuse.software/info/github.com/marcoXbresciani/TKCompanionApp)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/6084/badge)](https://bestpractices.coreinfrastructure.org/projects/6084)
+[![SemVer](https://img.shields.io/badge/SemVer-2.0.0-informational?logo=semver&style=plastic)](https://semver.org/)
 [![EditorConfig](https://img.shields.io/static/v1?label=use&logo=editorconfig&message=EditorConfig&style=plastic)](https://internal.repos.regiongold.com/bitbucket/projects/GDP/repos/customer-sdk/browse/.editorconfig)
-[![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/)
 [![Markdown](https://img.shields.io/badge/made%20with-markdown-black?logo=markdown&style=plastic)](https://github.github.com/gfm/)
+[![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/)
 ![Mastodon Follow](https://img.shields.io/mastodon/follow/000091124?domain=https%3A%2F%2Ffosstodon.org&style=social)
 [![It works](https://img.shields.io/badge/works%20on-my%20machine-informational?style=plastic)](https://blog.codinghorror.com/the-works-on-my-machine-certification-program/)
 <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>

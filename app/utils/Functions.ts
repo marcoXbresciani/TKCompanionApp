@@ -20,8 +20,8 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {Appearance} from 'react-native';
+import { Appearance } from 'react-native'
 
-export function isDark(): boolean {
-    return Appearance.getColorScheme() === 'dark';
+export function isDark (): boolean {
+  return Appearance.getColorScheme() === 'dark'
 }

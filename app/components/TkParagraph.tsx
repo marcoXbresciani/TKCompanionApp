@@ -20,10 +20,10 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import styled from 'styled-components';
-import {Paragraph} from 'react-native-paper';
+import styled from 'styled-components'
+import { Paragraph } from 'react-native-paper'
 
 export const TkParagraph = styled(Paragraph)`
     font-size: 16px;
     line-height: 27px;
-`;
+`

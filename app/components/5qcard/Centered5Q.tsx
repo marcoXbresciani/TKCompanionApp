@@ -20,9 +20,9 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import styled from 'styled-components';
-import {Text5Q} from './Text5Q';
+import styled from 'styled-components'
+import { Text5Q } from './Text5Q'
 
 export const Centered5Q = styled(Text5Q)`
     text-align: center;
-`;
+`

@@ -20,19 +20,19 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {configureFonts, DarkTheme} from 'react-native-paper';
-import {fontConfig} from './fontConfig';
+import { configureFonts, DarkTheme } from 'react-native-paper'
+import { fontConfig } from './fontConfig'
 
 export const tkDarkTheme = {
-    ...DarkTheme,
-    animation: {
-        scale: 1.0,
-    },
-    colors: {
-        ...DarkTheme.colors,
-        accent: 'royalblue',
-        primary: 'gold',
-    },
-    dark: true,
-    fonts: configureFonts(fontConfig),
-};
+  ...DarkTheme,
+  animation: {
+    scale: 1.0
+  },
+  colors: {
+    ...DarkTheme.colors,
+    accent: 'royalblue',
+    primary: 'gold'
+  },
+  dark: true,
+  fonts: configureFonts(fontConfig)
+}

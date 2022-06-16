@@ -20,28 +20,28 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {ScrollView} from 'react-native';
-import * as React from 'react';
-import {IconButton} from 'react-native-paper';
+import { ScrollView } from 'react-native'
+import * as React from 'react'
+import { IconButton } from 'react-native-paper'
 
-type MyProps = {
-    onPress: () => void;
-};
+interface MyProps {
+  onPress: () => void
+}
 
 const DocsContainer = ({
-    children,
-    onPress,
+  children,
+  onPress
 }: React.PropsWithChildren<MyProps>) => {
-    return (
-        <ScrollView>
-            {children}
+  return (
+    <ScrollView>
+      {children}
 
-            <IconButton
-                icon="return-down-back-outline"
-                onPress={onPress}
-            />
-        </ScrollView>
-    );
-};
+      <IconButton
+        icon='return-down-back-outline'
+        onPress={onPress}
+      />
+    </ScrollView>
+  )
+}
 
-export default DocsContainer;
+export default DocsContainer

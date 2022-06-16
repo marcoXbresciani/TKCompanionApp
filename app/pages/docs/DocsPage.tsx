@@ -20,51 +20,51 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import * as React from 'react';
-import {useState} from 'react';
-import DocsSelector from './DocsSelector';
-import PageContainer from './PageContainer';
-import Kts from './Kts';
-import Tkc from './Tkc';
-import Practice from './Practice';
-import DocsContainer from './DocsContainer';
-import FiveQ from './5qcard/FiveQ';
-import FourS from './FourS';
+import * as React from 'react'
+import { useState } from 'react'
+import DocsSelector from './DocsSelector'
+import PageContainer from './PageContainer'
+import Kts from './Kts'
+import Tkc from './Tkc'
+import Practice from './Practice'
+import DocsContainer from './DocsContainer'
+import FiveQ from './5qcard/FiveQ'
+import FourS from './FourS'
 
 export enum Pages {
-    DefaultPage,
-    FiveQCard,
-    FourSteps,
-    KtsPage,
-    PracticePage,
-    TkcPage,
+  DefaultPage,
+  FiveQCard,
+  FourSteps,
+  KtsPage,
+  PracticePage,
+  TkcPage,
 }
 
 const DocsPage: React.FunctionComponent = () => {
-    const [status, setStatus] = useState<Pages>(Pages.DefaultPage);
+  const [status, setStatus] = useState<Pages>(Pages.DefaultPage)
 
-    return (
-        <>
-            {status === Pages.DefaultPage && (
-                <DocsSelector onPress={setStatus} />
-            )}
-            {status !== Pages.DefaultPage && (
-                <PageContainer>
-                    <DocsContainer
-                        onPress={() => {
-                            setStatus(Pages.DefaultPage);
-                        }}
-                    >
-                        {status === Pages.FiveQCard && <FiveQ />}
-                        {status === Pages.FourSteps && <FourS />}
-                        {status === Pages.TkcPage && <Tkc />}
-                        {status === Pages.PracticePage && <Practice />}
-                        {status === Pages.KtsPage && <Kts />}
-                    </DocsContainer>
-                </PageContainer>
-            )}
-        </>
-    );
-};
+  return (
+    <>
+      {status === Pages.DefaultPage && (
+        <DocsSelector onPress={setStatus} />
+      )}
+      {status !== Pages.DefaultPage && (
+        <PageContainer>
+          <DocsContainer
+            onPress={() => {
+              setStatus(Pages.DefaultPage)
+            }}
+          >
+            {status === Pages.FiveQCard && <FiveQ />}
+            {status === Pages.FourSteps && <FourS />}
+            {status === Pages.TkcPage && <Tkc />}
+            {status === Pages.PracticePage && <Practice />}
+            {status === Pages.KtsPage && <Kts />}
+          </DocsContainer>
+        </PageContainer>
+      )}
+    </>
+  )
+}
 
-export default DocsPage;
+export default DocsPage

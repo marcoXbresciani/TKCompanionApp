@@ -20,12 +20,12 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GenericStorage from './GenericStorage';
+import GenericStorage from './GenericStorage'
 
 class TkStorage extends GenericStorage<string> {
-    getRoot(): string {
-        return 'tkcompanionapp';
-    }
+  getRoot (): string {
+    return 'tkcompanionapp'
+  }
 }
 
-export default TkStorage;
+export default TkStorage

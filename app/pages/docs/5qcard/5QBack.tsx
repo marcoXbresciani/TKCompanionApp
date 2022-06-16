@@ -20,79 +20,79 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import * as React from 'react';
-import {Trans, useTranslation} from 'react-i18next';
-import {Button, Card} from 'react-native-paper';
-import i18n from '../../../i18n/i18n';
-import {TkParagraph} from '../../../components/TkParagraph';
-import {BoldText} from '../../../components/BoldText';
-import {TkCard} from '../../../components/tkcard/TkCard';
-import TkCardTitle from '../../../components/tkcard/TkCardTitle';
-import {TkCardContent} from '../../../components/tkcard/TkCardContent';
+import * as React from 'react'
+import { Trans, useTranslation } from 'react-i18next'
+import { Button, Card } from 'react-native-paper'
+import i18n from '../../../i18n/i18n'
+import { TkParagraph } from '../../../components/TkParagraph'
+import { BoldText } from '../../../components/BoldText'
+import { TkCard } from '../../../components/tkcard/TkCard'
+import TkCardTitle from '../../../components/tkcard/TkCardTitle'
+import { TkCardContent } from '../../../components/tkcard/TkCardContent'
 
-type Props = {
-    onPress: () => void;
-};
+interface Props {
+  onPress: () => void
+}
 
-const Back5QScreen: React.FC<Props> = ({onPress}: Props) => {
-    const {t} = useTranslation();
+const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
+  const { t } = useTranslation()
 
-    return (
-        <TkCard>
-            <TkCardTitle
-                title={`${i18n.t('5q.back.title')}`}
-                subtitle={`${i18n.t('5q.back.quote')}`}
-                subtitleNumberOfLines={2}
-            />
-            <TkCardContent>
-                <TkParagraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.back.q1'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                </TkParagraph>
-                <TkParagraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.back.q2'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                </TkParagraph>
-                <TkParagraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.back.q3'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                </TkParagraph>
-                <TkParagraph>
-                    <Trans
-                        t={t}
-                        i18nKey={'5q.back.q4'}
-                        components={{
-                            bold: <BoldText />,
-                        }}
-                    />
-                </TkParagraph>
-            </TkCardContent>
-            <Card.Actions>
-                <Button
-                    icon="return-down-back-outline"
-                    mode="outlined"
-                    onPress={() => onPress()}
-                >
-                    {`${i18n.t('5q.back.return')}`}
-                </Button>
-            </Card.Actions>
-        </TkCard>
-    );
-};
+  return (
+    <TkCard>
+      <TkCardTitle
+        title={`${i18n.t('5q.back.title')}`}
+        subtitle={`${i18n.t('5q.back.quote')}`}
+        subtitleNumberOfLines={2}
+      />
+      <TkCardContent>
+        <TkParagraph>
+          <Trans
+            t={t}
+            i18nKey='5q.back.q1'
+            components={{
+              bold: <BoldText />
+            }}
+          />
+        </TkParagraph>
+        <TkParagraph>
+          <Trans
+            t={t}
+            i18nKey='5q.back.q2'
+            components={{
+              bold: <BoldText />
+            }}
+          />
+        </TkParagraph>
+        <TkParagraph>
+          <Trans
+            t={t}
+            i18nKey='5q.back.q3'
+            components={{
+              bold: <BoldText />
+            }}
+          />
+        </TkParagraph>
+        <TkParagraph>
+          <Trans
+            t={t}
+            i18nKey='5q.back.q4'
+            components={{
+              bold: <BoldText />
+            }}
+          />
+        </TkParagraph>
+      </TkCardContent>
+      <Card.Actions>
+        <Button
+          icon='return-down-back-outline'
+          mode='outlined'
+          onPress={() => onPress()}
+        >
+          {`${i18n.t('5q.back.return')}`}
+        </Button>
+      </Card.Actions>
+    </TkCard>
+  )
+}
 
-export default Back5QScreen;
+export default Back5QScreen

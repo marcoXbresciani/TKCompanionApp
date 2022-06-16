@@ -20,45 +20,45 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import TkStorage from './TkStorage';
-import SimpleKey from './SimpleKey';
-import SettingsStorage from './settings/SettingsStorage';
-import PdsaStorage from './pdsa/PdsaStorage';
+import TkStorage from './TkStorage'
+import SimpleKey from './SimpleKey'
+import SettingsStorage from './settings/SettingsStorage'
+import PdsaStorage from './pdsa/PdsaStorage'
 
 class StorageFactory {
-    private static tkStorage: TkStorage;
-    private static settingsStorage: SettingsStorage;
-    private static pdsaStorage: PdsaStorage;
+  private static tkStorage: TkStorage
+  private static settingsStorage: SettingsStorage
+  private static pdsaStorage: PdsaStorage
 
-    private constructor() {}
+  private constructor () {}
 
-    static getTkStorage(): TkStorage {
-        if (!StorageFactory.tkStorage) {
-            StorageFactory.tkStorage = new TkStorage(new SimpleKey());
-        }
-
-        return StorageFactory.tkStorage;
+  static getTkStorage (): TkStorage {
+    if (!StorageFactory.tkStorage) {
+      StorageFactory.tkStorage = new TkStorage(new SimpleKey())
     }
 
-    static getSettingsStorage(): SettingsStorage {
-        if (!StorageFactory.settingsStorage) {
-            StorageFactory.settingsStorage = new SettingsStorage(
-                new TkStorage(new SimpleKey()),
-            );
-        }
+    return StorageFactory.tkStorage
+  }
 
-        return StorageFactory.settingsStorage;
+  static getSettingsStorage (): SettingsStorage {
+    if (!StorageFactory.settingsStorage) {
+      StorageFactory.settingsStorage = new SettingsStorage(
+        new TkStorage(new SimpleKey())
+      )
     }
 
-    static getPdsaStorage(): PdsaStorage {
-        if (!StorageFactory.pdsaStorage) {
-            StorageFactory.pdsaStorage = new PdsaStorage(
-                new TkStorage(new SimpleKey()),
-            );
-        }
+    return StorageFactory.settingsStorage
+  }
 
-        return StorageFactory.pdsaStorage;
+  static getPdsaStorage (): PdsaStorage {
+    if (!StorageFactory.pdsaStorage) {
+      StorageFactory.pdsaStorage = new PdsaStorage(
+        new TkStorage(new SimpleKey())
+      )
     }
+
+    return StorageFactory.pdsaStorage
+  }
 }
 
-export default StorageFactory;
+export default StorageFactory

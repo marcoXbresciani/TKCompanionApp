@@ -20,19 +20,19 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {configureFonts, DefaultTheme} from 'react-native-paper';
-import {fontConfig} from './fontConfig';
+import { configureFonts, DefaultTheme } from 'react-native-paper'
+import { fontConfig } from './fontConfig'
 
 export const tkLightTheme = {
-    ...DefaultTheme,
-    animation: {
-        scale: 1.0,
-    },
-    colors: {
-        ...DefaultTheme.colors,
-        accent: 'gold',
-        primary: 'royalblue',
-    },
-    dark: false,
-    fonts: configureFonts(fontConfig),
-};
+  ...DefaultTheme,
+  animation: {
+    scale: 1.0
+  },
+  colors: {
+    ...DefaultTheme.colors,
+    accent: 'gold',
+    primary: 'royalblue'
+  },
+  dark: false,
+  fonts: configureFonts(fontConfig)
+}

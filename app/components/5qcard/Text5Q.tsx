@@ -20,12 +20,12 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import styled from 'styled-components';
-import {Text} from 'react-native';
+import styled from 'styled-components'
+import { Text } from 'react-native'
 
 export const Text5Q = styled(Text)`
     color: black;
     font-family: FreeSans, sans-serif;
     font-size: 16px;
     line-height: 27px;
-`;
+`

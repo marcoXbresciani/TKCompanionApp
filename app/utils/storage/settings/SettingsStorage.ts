@@ -20,25 +20,25 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GenericStorage from '../GenericStorage';
-import {AllowedSettings} from './AllowedSettings';
+import GenericStorage from '../GenericStorage'
+import { AllowedSettings } from './AllowedSettings'
 
 class SettingsStorage extends GenericStorage<string> {
-    getRoot(): string {
-        return 'settings';
-    }
+  getRoot (): string {
+    return 'settings'
+  }
 
-    async write(key: AllowedSettings, value: string): Promise<void> {
-        return super.write(key, value);
-    }
+  async write (key: AllowedSettings, value: string): Promise<void> {
+    return await super.write(key, value)
+  }
 
-    async read(key: AllowedSettings): Promise<string> {
-        return super.read(key);
-    }
+  async read (key: AllowedSettings): Promise<string> {
+    return await super.read(key)
+  }
 
-    async remove(key: AllowedSettings): Promise<void> {
-        return super.remove(key);
-    }
+  async remove (key: AllowedSettings): Promise<void> {
+    return await super.remove(key)
+  }
 }
 
-export default SettingsStorage;
+export default SettingsStorage

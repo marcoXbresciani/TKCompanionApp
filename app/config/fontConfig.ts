@@ -21,58 +21,58 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 export const fontConfig = {
-    web: {
-        regular: {
-            fontFamily: 'FreeSans',
-            fontWeight: '400' as '400',
-        },
-        medium: {
-            fontFamily: 'FreeSansBold',
-            fontWeight: '700' as '700',
-        },
-        light: {
-            fontFamily: 'FreeSans',
-            fontWeight: '300' as '300',
-        },
-        thin: {
-            fontFamily: 'FreeSans',
-            fontWeight: '100' as '100',
-        },
+  web: {
+    regular: {
+      fontFamily: 'FreeSans',
+      fontWeight: '400' as '400'
     },
-    ios: {
-        regular: {
-            fontFamily: 'FreeSans',
-            fontWeight: '400' as '400',
-        },
-        medium: {
-            fontFamily: 'FreeSansBold',
-            fontWeight: '700' as '700',
-        },
-        light: {
-            fontFamily: 'FreeSans',
-            fontWeight: '300' as '300',
-        },
-        thin: {
-            fontFamily: 'FreeSans',
-            fontWeight: '100' as '100',
-        },
+    medium: {
+      fontFamily: 'FreeSansBold',
+      fontWeight: '700' as '700'
     },
-    default: {
-        regular: {
-            fontFamily: 'FreeSans',
-            fontWeight: 'normal' as 'normal',
-        },
-        medium: {
-            fontFamily: 'FreeSansBold',
-            fontWeight: 'bold' as 'bold',
-        },
-        light: {
-            fontFamily: 'FreeSans',
-            fontWeight: 'normal' as 'normal',
-        },
-        thin: {
-            fontFamily: 'FreeSans',
-            fontWeight: 'normal' as 'normal',
-        },
+    light: {
+      fontFamily: 'FreeSans',
+      fontWeight: '300' as '300'
     },
-};
+    thin: {
+      fontFamily: 'FreeSans',
+      fontWeight: '100' as '100'
+    }
+  },
+  ios: {
+    regular: {
+      fontFamily: 'FreeSans',
+      fontWeight: '400' as '400'
+    },
+    medium: {
+      fontFamily: 'FreeSansBold',
+      fontWeight: '700' as '700'
+    },
+    light: {
+      fontFamily: 'FreeSans',
+      fontWeight: '300' as '300'
+    },
+    thin: {
+      fontFamily: 'FreeSans',
+      fontWeight: '100' as '100'
+    }
+  },
+  default: {
+    regular: {
+      fontFamily: 'FreeSans',
+      fontWeight: 'normal' as 'normal'
+    },
+    medium: {
+      fontFamily: 'FreeSansBold',
+      fontWeight: 'bold' as 'bold'
+    },
+    light: {
+      fontFamily: 'FreeSans',
+      fontWeight: 'normal' as 'normal'
+    },
+    thin: {
+      fontFamily: 'FreeSans',
+      fontWeight: 'normal' as 'normal'
+    }
+  }
+}

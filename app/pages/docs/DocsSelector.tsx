@@ -20,59 +20,60 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import * as React from 'react';
-import {List} from 'react-native-paper';
-import {Pages} from './DocsPage';
-import i18n from '../../i18n/i18n';
+import * as React from 'react'
+import { List } from 'react-native-paper'
+import { Pages } from './DocsPage'
+import i18n from '../../i18n/i18n'
 
-type Props = {
-    onPress: (page: Pages) => void;
-};
+interface Props {
+  onPress: (page: Pages) => void
+}
 
-const DocsSelector: React.FC<Props> = ({onPress}: Props) => {
-    return (
-        <>
-            <List.Section>
-                <List.Subheader>{`${i18n.t(
-                    'docs.title',
-                )}`}</List.Subheader>
-                <List.Item
-                    left={() => (
-                        <List.Icon icon="chatbubbles-outline" />
-                    )}
-                    onPress={() => onPress(Pages.FiveQCard)}
-                    title={`${i18n.t('docs.5qcard')}`}
-                    titleNumberOfLines={2}
-                />
-                <List.Item
-                    left={() => <List.Icon icon="analytics-outline" />}
-                    onPress={() => onPress(Pages.FourSteps)}
-                    title={`${i18n.t('docs.4steps')}`}
-                    titleNumberOfLines={2}
-                />
-                <List.Item
-                    left={() => <List.Icon icon="code-outline" />}
-                    onPress={() => onPress(Pages.TkcPage)}
-                    title={`${i18n.t('docs.tkc')}`}
-                    titleNumberOfLines={2}
-                />
-                <List.Item
-                    left={() => <List.Icon icon="construct-outline" />}
-                    onPress={() => onPress(Pages.PracticePage)}
-                    title={`${i18n.t('docs.practice')}`}
-                    titleNumberOfLines={2}
-                />
-                <List.Item
-                    left={() => (
-                        <List.Icon icon="thunderstorm-outline" />
-                    )}
-                    onPress={() => onPress(Pages.KtsPage)}
-                    title={`${i18n.t('docs.kts')}`}
-                    titleNumberOfLines={2}
-                />
-            </List.Section>
-        </>
-    );
-};
+const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
+  return (
+    <>
+      <List.Section>
+        <List.Subheader>{`${i18n.t(
+                    'docs.title'
+                )}`}
+        </List.Subheader>
+        <List.Item
+          left={() => (
+            <List.Icon icon='chatbubbles-outline' />
+          )}
+          onPress={() => onPress(Pages.FiveQCard)}
+          title={`${i18n.t('docs.5qcard')}`}
+          titleNumberOfLines={2}
+        />
+        <List.Item
+          left={() => <List.Icon icon='analytics-outline' />}
+          onPress={() => onPress(Pages.FourSteps)}
+          title={`${i18n.t('docs.4steps')}`}
+          titleNumberOfLines={2}
+        />
+        <List.Item
+          left={() => <List.Icon icon='code-outline' />}
+          onPress={() => onPress(Pages.TkcPage)}
+          title={`${i18n.t('docs.tkc')}`}
+          titleNumberOfLines={2}
+        />
+        <List.Item
+          left={() => <List.Icon icon='construct-outline' />}
+          onPress={() => onPress(Pages.PracticePage)}
+          title={`${i18n.t('docs.practice')}`}
+          titleNumberOfLines={2}
+        />
+        <List.Item
+          left={() => (
+            <List.Icon icon='thunderstorm-outline' />
+          )}
+          onPress={() => onPress(Pages.KtsPage)}
+          title={`${i18n.t('docs.kts')}`}
+          titleNumberOfLines={2}
+        />
+      </List.Section>
+    </>
+  )
+}
 
-export default DocsSelector;
+export default DocsSelector

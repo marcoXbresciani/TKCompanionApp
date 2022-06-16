@@ -20,97 +20,93 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {Linking} from 'react-native';
-import * as React from 'react';
-import {useState} from 'react';
-import {List, Snackbar} from 'react-native-paper';
-import i18n from '../i18n/i18n';
+import { Linking } from 'react-native'
+import * as React from 'react'
+import { useState } from 'react'
+import { List, Snackbar } from 'react-native-paper'
+import i18n from '../i18n/i18n'
 
 const DownloadPage: React.FunctionComponent = () => {
-    const [message, setMessage] = useState('');
-    const [visible, setVisible] = React.useState(false);
+  const [message, setMessage] = useState('')
+  const [visible, setVisible] = React.useState(false)
 
-    const onToggleSnackBar = () => setVisible(!visible);
-    const onDismissSnackBar = () => {
-        setVisible(false);
-        setMessage('');
-    };
+  const onToggleSnackBar = () => setVisible(!visible)
+  const onDismissSnackBar = () => {
+    setVisible(false)
+    setMessage('')
+  }
 
-    const download = (fileName: string) => {
-        Linking.openURL(fileName).catch((reason) => {
-            setMessage(
-                i18n.t('download.error', {
-                    reason: reason,
-                }),
-            );
-            onToggleSnackBar();
-        });
-    };
+  const download = (fileName: string) => {
+    Linking.openURL(fileName).catch((reason) => {
+      setMessage(
+        i18n.t('download.error', {
+          reason: reason
+        })
+      )
+      onToggleSnackBar()
+    })
+  }
 
-    return (
-        <>
-            <Snackbar
-                visible={visible}
-                onDismiss={onDismissSnackBar}
-                action={{
-                    label: i18n.t('download.close'),
-                    onPress: () => {},
-                }}
-            >
-                {message}
-            </Snackbar>
+  return (
+    <>
+      <Snackbar
+        visible={visible}
+        onDismiss={onDismissSnackBar}
+        action={{
+          label: i18n.t('download.close'),
+          onPress: () => {}
+        }}
+      >
+        {message}
+      </Snackbar>
 
-            <List.Section>
-                <List.Subheader>
-                    {`${i18n.t('download.title')}`}
-                </List.Subheader>
-                <List.Item
-                    description={`${i18n.t('download.pdf')}`}
-                    left={() => <List.Icon icon="download-outline" />}
-                    onPress={() =>
-                        download(
-                            'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
-                        )
-                    }
-                    title={`${i18n.t('download.5q')}`}
-                    titleNumberOfLines={2}
-                />
-                <List.Item
-                    description={`${i18n.t('download.pdf')}`}
-                    left={() => <List.Icon icon="download-outline" />}
-                    onPress={() =>
-                        download(
-                            'https://web.archive.org/web/20220326213548/http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf',
-                        )
-                    }
-                    title={`${i18n.t('download.4s')}`}
-                    titleNumberOfLines={2}
-                />
-                <List.Item
-                    description={`${i18n.t('download.pdf')}`}
-                    left={() => <List.Icon icon="download-outline" />}
-                    onPress={() =>
-                        download(
-                            'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
-                        )
-                    }
-                    title={`${i18n.t('download.tkc')}`}
-                    titleNumberOfLines={2}
-                />
-                <List.Item
-                    description={`${i18n.t('download.jpg')}`}
-                    left={() => <List.Icon icon="download-outline" />}
-                    onPress={() =>
-                        download(
-                            'https://web.archive.org/web/20220409213239/http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
-                        )
-                    }
-                    title={`${i18n.t('download.kts')}`}
-                    titleNumberOfLines={2}
-                />
-            </List.Section>
-        </>
-    );
-};
+      <List.Section>
+        <List.Subheader>
+          {`${i18n.t('download.title')}`}
+        </List.Subheader>
+        <List.Item
+          description={`${i18n.t('download.pdf')}`}
+          left={() => <List.Icon icon='download-outline' />}
+          onPress={() =>
+            download(
+              'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf'
+            )}
+          title={`${i18n.t('download.5q')}`}
+          titleNumberOfLines={2}
+        />
+        <List.Item
+          description={`${i18n.t('download.pdf')}`}
+          left={() => <List.Icon icon='download-outline' />}
+          onPress={() =>
+            download(
+              'https://web.archive.org/web/20220326213548/http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf'
+            )}
+          title={`${i18n.t('download.4s')}`}
+          titleNumberOfLines={2}
+        />
+        <List.Item
+          description={`${i18n.t('download.pdf')}`}
+          left={() => <List.Icon icon='download-outline' />}
+          onPress={() =>
+            download(
+              'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf'
+            )}
+          title={`${i18n.t('download.tkc')}`}
+          titleNumberOfLines={2}
+        />
+        <List.Item
+          description={`${i18n.t('download.jpg')}`}
+          left={() => <List.Icon icon='download-outline' />}
+          onPress={() =>
+            download(
+              'https://web.archive.org/web/20220409213239/http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg'
+            )}
+          title={`${i18n.t('download.kts')}`}
+          titleNumberOfLines={2}
+        />
+      </List.Section>
+    </>
+  )
+}
 
-export default DownloadPage;
+export default DownloadPage

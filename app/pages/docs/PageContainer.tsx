@@ -20,26 +20,26 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {StatusBar, View} from 'react-native';
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import {SafeAreaView} from 'react-native-safe-area-context';
-import styled from 'styled-components';
+import { StatusBar, View } from 'react-native'
+import * as React from 'react'
+import PropTypes from 'prop-types'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import styled from 'styled-components'
 
 const NicerAreaView = styled(SafeAreaView)`
     margin: ${StatusBar.currentHeight + 'px'} 2.5% 0;
     flex: 1;
-`;
+`
 
 const PageContainer = (props: React.PropsWithChildren) => {
-    return (
-        <NicerAreaView>
-            <StatusBar />
-            <View>{props.children}</View>
-        </NicerAreaView>
-    );
-};
+  return (
+    <NicerAreaView>
+      <StatusBar />
+      <View>{props.children}</View>
+    </NicerAreaView>
+  )
+}
 
-export default PageContainer;
+export default PageContainer
 
-PageContainer.propTypes = {children: PropTypes.node.isRequired};
+PageContainer.propTypes = { children: PropTypes.node.isRequired }

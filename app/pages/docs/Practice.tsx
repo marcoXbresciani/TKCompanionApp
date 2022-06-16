@@ -20,38 +20,38 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import * as React from 'react';
-import i18n from '../../i18n/i18n';
-import {TkParagraph} from '../../components/TkParagraph';
-import {TkCard} from '../../components/tkcard/TkCard';
-import TkCardTitle from '../../components/tkcard/TkCardTitle';
-import {TkCardContent} from '../../components/tkcard/TkCardContent';
+import * as React from 'react'
+import i18n from '../../i18n/i18n'
+import { TkParagraph } from '../../components/TkParagraph'
+import { TkCard } from '../../components/tkcard/TkCard'
+import TkCardTitle from '../../components/tkcard/TkCardTitle'
+import { TkCardContent } from '../../components/tkcard/TkCardContent'
 
 const Practice: React.FunctionComponent = () => (
-    <TkCard>
-        <TkCardTitle
-            title={`${i18n.t('practice.title')}`}
-            titleNumberOfLines={2}
-        />
-        <TkCardContent>
-            <TkParagraph>{`${i18n.t('practice.1')}`}</TkParagraph>
-        </TkCardContent>
-        <TkCardContent>
-            <TkParagraph>{`${i18n.t('practice.2')}`}</TkParagraph>
-        </TkCardContent>
-        <TkCardContent>
-            <TkParagraph>{`${i18n.t('practice.3')}`}</TkParagraph>
-        </TkCardContent>
-        <TkCardContent>
-            <TkParagraph>{`${i18n.t('practice.4')}`}</TkParagraph>
-        </TkCardContent>
-        <TkCardContent>
-            <TkParagraph>{`${i18n.t('practice.5')}`}</TkParagraph>
-        </TkCardContent>
-        <TkCardContent>
-            <TkParagraph>{`${i18n.t('practice.6')}`}</TkParagraph>
-        </TkCardContent>
-    </TkCard>
-);
+  <TkCard>
+    <TkCardTitle
+      title={`${i18n.t('practice.title')}`}
+      titleNumberOfLines={2}
+    />
+    <TkCardContent>
+      <TkParagraph>{`${i18n.t('practice.1')}`}</TkParagraph>
+    </TkCardContent>
+    <TkCardContent>
+      <TkParagraph>{`${i18n.t('practice.2')}`}</TkParagraph>
+    </TkCardContent>
+    <TkCardContent>
+      <TkParagraph>{`${i18n.t('practice.3')}`}</TkParagraph>
+    </TkCardContent>
+    <TkCardContent>
+      <TkParagraph>{`${i18n.t('practice.4')}`}</TkParagraph>
+    </TkCardContent>
+    <TkCardContent>
+      <TkParagraph>{`${i18n.t('practice.5')}`}</TkParagraph>
+    </TkCardContent>
+    <TkCardContent>
+      <TkParagraph>{`${i18n.t('practice.6')}`}</TkParagraph>
+    </TkCardContent>
+  </TkCard>
+)
 
-export default Practice;
+export default Practice

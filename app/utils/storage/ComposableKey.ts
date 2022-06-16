@@ -21,7 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 export interface ComposableKey {
-    getRoot(): string;
+  getRoot: () => string
 
-    getFullKey(key: string): string;
+  getFullKey: (key: string) => string
 }

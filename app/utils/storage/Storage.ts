@@ -20,12 +20,12 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {StorableValue} from './StorableValue';
+import { StorableValue } from './StorableValue'
 
 export interface Storage<T extends StorableValue> {
-    write(key: string, value: T): Promise<void>;
+  write: (key: string, value: T) => Promise<void>
 
-    read(key: string): Promise<string>;
+  read: (key: string) => Promise<string>
 
-    remove(key: string): Promise<void>;
+  remove: (key: string) => Promise<void>
 }

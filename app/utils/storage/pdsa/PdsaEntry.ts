@@ -20,33 +20,33 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {StorableValue} from '../StorableValue';
+import { StorableValue } from '../StorableValue'
 
 class PdsaEntry implements StorableValue {
-    target: string;
-    actual: string;
-    obstacle: string;
-    step: string;
-    learnt: string;
+  target: string
+  actual: string
+  obstacle: string
+  step: string
+  learnt: string
 
-    constructor();
-    constructor(
-        target?: string,
-        actual?: string,
-        obstacle?: string,
-        step?: string,
-        learnt?: string,
-    ) {
-        this.target = target ?? '';
-        this.actual = actual ?? '';
-        this.obstacle = obstacle ?? '';
-        this.step = step ?? '';
-        this.learnt = learnt ?? '';
-    }
+  constructor ();
+  constructor (
+    target?: string,
+    actual?: string,
+    obstacle?: string,
+    step?: string,
+    learnt?: string
+  ) {
+    this.target = target ?? ''
+    this.actual = actual ?? ''
+    this.obstacle = obstacle ?? ''
+    this.step = step ?? ''
+    this.learnt = learnt ?? ''
+  }
 
-    public toString = (): string => {
-        return JSON.stringify(this);
-    };
+  public toString = (): string => {
+    return JSON.stringify(this)
+  }
 }
 
-export default PdsaEntry;
+export default PdsaEntry

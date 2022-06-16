@@ -20,49 +20,48 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {ComposableKey} from './ComposableKey';
-import {Storage} from './Storage';
-import BaseStorage from './BaseStorage';
-import SimpleKey from './SimpleKey';
-import {StorableValue} from './StorableValue';
+import { ComposableKey } from './ComposableKey'
+import { Storage } from './Storage'
+import BaseStorage from './BaseStorage'
+import SimpleKey from './SimpleKey'
+import { StorableValue } from './StorableValue'
 
 abstract class GenericStorage<T extends StorableValue>
-    implements ComposableKey, Storage<T>
-{
-    protected component: ComposableKey;
-    private baseStorage: BaseStorage;
+implements ComposableKey, Storage<T> {
+  protected component: ComposableKey
+  private readonly baseStorage: BaseStorage
 
-    constructor(component: ComposableKey) {
-        this.component = component;
-        this.baseStorage = new BaseStorage(new SimpleKey());
-    }
+  constructor (component: ComposableKey) {
+    this.component = component
+    this.baseStorage = new BaseStorage(new SimpleKey())
+  }
 
-    getFullKey(key: string): string {
-        return this.getRoot() !== ''
-            ? this.getRoot() + '.' + this.component.getFullKey(key)
-            : this.component.getFullKey(key);
-    }
+  getFullKey (key: string): string {
+    return this.getRoot() !== ''
+      ? this.getRoot() + '.' + this.component.getFullKey(key)
+      : this.component.getFullKey(key)
+  }
 
-    abstract getRoot(): string;
+  abstract getRoot (): string
 
-    async write(key: string, value: T): Promise<void> {
-        const fullKey = this.getFullKey(key);
-        await this.baseStorage.write(fullKey, value.toString());
-    }
+  async write (key: string, value: T): Promise<void> {
+    const fullKey = this.getFullKey(key)
+    await this.baseStorage.write(fullKey, value.toString())
+  }
 
-    async read(key: string): Promise<string> {
-        const fullKey = this.getFullKey(key);
-        return this.baseStorage.read(fullKey);
-    }
+  async read (key: string): Promise<string> {
+    const fullKey = this.getFullKey(key)
+    return await this.baseStorage.read(fullKey)
+  }
 
-    async remove(key: string): Promise<void> {
-        const fullKey = this.getFullKey(key);
-        await this.baseStorage.remove(fullKey);
-    }
+  async remove (key: string): Promise<void> {
+    const fullKey = this.getFullKey(key)
+    await this.baseStorage.remove(fullKey)
+  }
 
-    async clear() {
-        await this.baseStorage.clear();
-    }
+  async clear () {
+    await this.baseStorage.clear()
+  }
 }
 
-export default GenericStorage;
+export default GenericStorage

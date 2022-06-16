@@ -20,9 +20,9 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import styled from 'styled-components';
-import {TkText} from './TkText';
+import styled from 'styled-components'
+import { TkText } from './TkText'
 
 export const BoldText = styled(TkText)`
     font-weight: bold;
-`;
+`

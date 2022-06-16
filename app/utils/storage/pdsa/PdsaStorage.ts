@@ -20,22 +20,22 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GenericStorage from '../GenericStorage';
-import PdsaEntry from './PdsaEntry';
-import {StorableValue} from '../StorableValue';
+import GenericStorage from '../GenericStorage'
+import PdsaEntry from './PdsaEntry'
+import { StorableValue } from '../StorableValue'
 
 class PdsaStorage extends GenericStorage<StorableValue> {
-    getRoot(): string {
-        return 'settings';
-    }
+  getRoot (): string {
+    return 'settings'
+  }
 
-    async write(key: string, value: PdsaEntry): Promise<void> {
-        super.write(key, JSON.stringify(value));
-    }
+  async write (key: string, value: PdsaEntry): Promise<void> {
+    super.write(key, JSON.stringify(value))
+  }
 
-    async read(key: string): Promise<string> {
-        return super.read(key);
-    }
+  async read (key: string): Promise<string> {
+    return await super.read(key)
+  }
 }
 
-export default PdsaStorage;
+export default PdsaStorage

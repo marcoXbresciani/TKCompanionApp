@@ -20,9 +20,9 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import styled from 'styled-components';
-import {Subheading} from 'react-native-paper';
+import styled from 'styled-components'
+import { Subheading } from 'react-native-paper'
 
 export const CenteredSubheading = styled(Subheading)`
     text-align: center;
-`;
+`

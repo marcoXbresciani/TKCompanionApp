@@ -20,86 +20,86 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import * as React from 'react';
-import {Card, Dialog, IconButton, Portal} from 'react-native-paper';
-import {Linking} from 'react-native';
-import i18n from '../../i18n/i18n';
-import {TkText} from '../TkText';
-import {TkCardContent} from '../tkcard/TkCardContent';
-import {TkParagraph} from '../TkParagraph';
-import {TkCard} from '../tkcard/TkCard';
-import {ItalicText} from './ItalicText';
-import TkCardTitle from '../tkcard/TkCardTitle';
+import * as React from 'react'
+import { Card, Dialog, IconButton, Portal } from 'react-native-paper'
+import { Linking } from 'react-native'
+import i18n from '../../i18n/i18n'
+import { TkText } from '../TkText'
+import { TkCardContent } from '../tkcard/TkCardContent'
+import { TkParagraph } from '../TkParagraph'
+import { TkCard } from '../tkcard/TkCard'
+import { ItalicText } from './ItalicText'
+import TkCardTitle from '../tkcard/TkCardTitle'
 
-type Props = {
-    message: string;
-    visible: boolean;
-    setVisible: React.Dispatch<React.SetStateAction<boolean>>;
-};
+interface Props {
+  message: string
+  visible: boolean
+  setVisible: React.Dispatch<React.SetStateAction<boolean>>
+}
 
-const Wip: ({message}: Props) => JSX.Element = ({
-    message,
-    visible,
-    setVisible,
+const Wip: ({ message }: Props) => JSX.Element = ({
+  message,
+  visible,
+  setVisible
 }: Props) => {
-    return (
-        <Portal>
-            <Dialog
-                visible={visible}
-                onDismiss={() => setVisible(false)}
-            >
-                <Dialog.Content>
-                    <TkCard>
-                        <TkCardContent>
-                            <TkCardTitle
-                                title={`${i18n.t('app.wip.title')}`}
-                                wip
-                            />
-                            <TkParagraph>
-                                <TkText>
-                                    {`${i18n.t('app.wip.before')}`}
-                                </TkText>
-                            </TkParagraph>
-                            <TkParagraph>
-                                <ItalicText>{message}</ItalicText>
-                            </TkParagraph>
-                            <TkParagraph>
-                                <TkText>
-                                    {`${i18n.t('app.wip.after')}`}
-                                </TkText>
-                            </TkParagraph>
-                        </TkCardContent>
-                        <Card.Actions>
-                            <IconButton
-                                icon="mail-outline"
-                                onPress={() => {
-                                    Linking.openURL(
-                                        'mailto://marco.530@outlook.it',
-                                    );
-                                }}
-                            />
-                            <IconButton
-                                icon="chatbox-outline"
-                                onPress={() => {
-                                    Linking.openURL(
-                                        'mailto://marco.530@outlook.it',
-                                    );
-                                }}
-                            />
-                            <IconButton
-                                icon="chatbubble-outline"
-                                onPress={() => {
-                                    Linking.openURL(
-                                        'briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm',
-                                    );
-                                }}
-                            />
-                        </Card.Actions>
-                    </TkCard>
-                </Dialog.Content>
-            </Dialog>
-        </Portal>
-    );
-};
+  return (
+    <Portal>
+      <Dialog
+        visible={visible}
+        onDismiss={() => setVisible(false)}
+      >
+        <Dialog.Content>
+          <TkCard>
+            <TkCardContent>
+              <TkCardTitle
+                title={`${i18n.t('app.wip.title')}`}
+                wip
+              />
+              <TkParagraph>
+                <TkText>
+                  {`${i18n.t('app.wip.before')}`}
+                </TkText>
+              </TkParagraph>
+              <TkParagraph>
+                <ItalicText>{message}</ItalicText>
+              </TkParagraph>
+              <TkParagraph>
+                <TkText>
+                  {`${i18n.t('app.wip.after')}`}
+                </TkText>
+              </TkParagraph>
+            </TkCardContent>
+            <Card.Actions>
+              <IconButton
+                icon='mail-outline'
+                onPress={() => {
+                  Linking.openURL(
+                    'mailto://marco.530@outlook.it'
+                  )
+                }}
+              />
+              <IconButton
+                icon='chatbox-outline'
+                onPress={() => {
+                  Linking.openURL(
+                    'mailto://marco.530@outlook.it'
+                  )
+                }}
+              />
+              <IconButton
+                icon='chatbubble-outline'
+                onPress={() => {
+                  Linking.openURL(
+                    'briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm'
+                  )
+                }}
+              />
+            </Card.Actions>
+          </TkCard>
+        </Dialog.Content>
+      </Dialog>
+    </Portal>
+  )
+}
 
-export default Wip;
+export default Wip

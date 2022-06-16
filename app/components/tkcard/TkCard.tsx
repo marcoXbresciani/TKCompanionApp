@@ -20,14 +20,14 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import styled from 'styled-components';
-import {Card} from 'react-native-paper';
-import {isDark} from '../../utils/Functions';
-import {tkDarkTheme} from '../../config/tkDarkTheme';
-import {tkLightTheme} from '../../config/tkLightTheme';
+import styled from 'styled-components'
+import { Card } from 'react-native-paper'
+import { isDark } from '../../utils/Functions'
+import { tkDarkTheme } from '../../config/tkDarkTheme'
+import { tkLightTheme } from '../../config/tkLightTheme'
 
 export const TkCard = styled(Card)`
     border: 1px solid
         ${isDark() ? tkDarkTheme.colors.text : tkLightTheme.colors.text};
     border-radius: 15px;
-`;
+`

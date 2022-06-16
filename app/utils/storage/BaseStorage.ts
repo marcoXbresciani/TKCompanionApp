@@ -20,54 +20,54 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {ComposableKey} from './ComposableKey';
-import {Storage} from './Storage';
-import EncryptedStorage from 'react-native-encrypted-storage';
+import { ComposableKey } from './ComposableKey'
+import { Storage } from './Storage'
+import EncryptedStorage from 'react-native-encrypted-storage'
 
 class BaseStorage implements Storage<string> {
-    protected component: ComposableKey;
+  protected component: ComposableKey
 
-    constructor(component: ComposableKey) {
-        this.component = component;
-    }
+  constructor (component: ComposableKey) {
+    this.component = component
+  }
 
-    async write(key: string, value: string): Promise<void> {
-        try {
-            await EncryptedStorage.setItem(key, value);
-            console.debug(`Saved '${key}' = '${value}'.`);
-        } catch (error) {
-            console.error(`Error '${error}' while writing '${key}'.`);
-        }
+  async write (key: string, value: string): Promise<void> {
+    try {
+      await EncryptedStorage.setItem(key, value)
+      console.debug(`Saved '${key}' = '${value}'.`)
+    } catch (error) {
+      console.error(`Error '${error}' while writing '${key}'.`)
     }
+  }
 
-    async read(key: string): Promise<string> {
-        let result: string = key;
-        try {
-            result = (await EncryptedStorage.getItem(key)) || key;
-            console.debug(`Read '${key}' = '${result}'.`);
-        } catch (error) {
-            console.error(`Error '${error}' while reading '${key}'.`);
-        }
-        return result;
+  async read (key: string): Promise<string> {
+    let result: string = key
+    try {
+      result = (await EncryptedStorage.getItem(key)) || key
+      console.debug(`Read '${key}' = '${result}'.`)
+    } catch (error) {
+      console.error(`Error '${error}' while reading '${key}'.`)
     }
+    return result
+  }
 
-    async remove(key: string): Promise<void> {
-        try {
-            await EncryptedStorage.removeItem(key);
-            console.debug(`Removed '${key}'.`);
-        } catch (error) {
-            console.error(`Error '${error}' while removing '${key}'.`);
-        }
+  async remove (key: string): Promise<void> {
+    try {
+      await EncryptedStorage.removeItem(key)
+      console.debug(`Removed '${key}'.`)
+    } catch (error) {
+      console.error(`Error '${error}' while removing '${key}'.`)
     }
+  }
 
-    async clear() {
-        try {
-            await EncryptedStorage.clear();
-            console.debug('Encrypted storage cleared');
-        } catch (error) {
-            console.error(`Error '${error}' while clearing storage.`);
-        }
+  async clear () {
+    try {
+      await EncryptedStorage.clear()
+      console.debug('Encrypted storage cleared')
+    } catch (error) {
+      console.error(`Error '${error}' while clearing storage.`)
     }
+  }
 }
 
-export default BaseStorage;
+export default BaseStorage

@@ -20,16 +20,16 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import {ComposableKey} from './ComposableKey';
+import { ComposableKey } from './ComposableKey'
 
 class SimpleKey implements ComposableKey {
-    getFullKey(key: string): string {
-        return key;
-    }
+  getFullKey (key: string): string {
+    return key
+  }
 
-    getRoot(): string {
-        return '';
-    }
+  getRoot (): string {
+    return ''
+  }
 }
 
-export default SimpleKey;
+export default SimpleKey

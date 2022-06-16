@@ -20,52 +20,52 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import * as React from 'react';
-import {BottomNavigation} from 'react-native-paper';
-import HomePage from '../pages/home/HomePage';
-import PdsaPage from '../pages/pdsa/PdsaPage';
-import DocsPage from '../pages/docs/DocsPage';
-import DownloadPage from '../pages/DownloadPage';
-import i18n from '../i18n/i18n';
+import * as React from 'react'
+import { BottomNavigation } from 'react-native-paper'
+import HomePage from '../pages/home/HomePage'
+import PdsaPage from '../pages/pdsa/PdsaPage'
+import DocsPage from '../pages/docs/DocsPage'
+import DownloadPage from '../pages/DownloadPage'
+import i18n from '../i18n/i18n'
 
 const TkNavigator: React.FunctionComponent = () => {
-    const [index, setIndex] = React.useState(0);
-    const [routes] = React.useState([
-        {
-            key: 'home',
-            title: i18n.t('nav.home'),
-            icon: 'home-outline',
-        },
-        {
-            key: 'pdsa',
-            title: i18n.t('nav.pdsa'),
-            icon: 'journal-outline',
-        },
-        {
-            key: 'docs',
-            title: i18n.t('nav.docs'),
-            icon: 'library-outline',
-        },
-        {
-            key: 'download',
-            title: i18n.t('nav.download'),
-            icon: 'download-outline',
-        },
-    ]);
-    const renderScene = BottomNavigation.SceneMap({
-        home: HomePage,
-        pdsa: PdsaPage,
-        docs: DocsPage,
-        download: DownloadPage,
-    });
+  const [index, setIndex] = React.useState(0)
+  const [routes] = React.useState([
+    {
+      key: 'home',
+      title: i18n.t('nav.home'),
+      icon: 'home-outline'
+    },
+    {
+      key: 'pdsa',
+      title: i18n.t('nav.pdsa'),
+      icon: 'journal-outline'
+    },
+    {
+      key: 'docs',
+      title: i18n.t('nav.docs'),
+      icon: 'library-outline'
+    },
+    {
+      key: 'download',
+      title: i18n.t('nav.download'),
+      icon: 'download-outline'
+    }
+  ])
+  const renderScene = BottomNavigation.SceneMap({
+    home: HomePage,
+    pdsa: PdsaPage,
+    docs: DocsPage,
+    download: DownloadPage
+  })
 
-    return (
-        <BottomNavigation
-            navigationState={{index, routes}}
-            onIndexChange={setIndex}
-            renderScene={renderScene}
-        />
-    );
-};
+  return (
+    <BottomNavigation
+      navigationState={{ index, routes }}
+      onIndexChange={setIndex}
+      renderScene={renderScene}
+    />
+  )
+}
 
-export default TkNavigator;
+export default TkNavigator

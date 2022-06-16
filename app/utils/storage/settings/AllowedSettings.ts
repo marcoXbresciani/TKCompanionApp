@@ -21,6 +21,6 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 export enum AllowedSettings {
-    DARK_THEME = 'dark',
-    LANGUAGE = 'language',
+  DARK_THEME = 'dark',
+  LANGUAGE = 'language',
 }

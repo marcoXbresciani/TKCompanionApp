@@ -20,31 +20,33 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import * as React from 'react';
-import {useState} from 'react';
-import Front5Q from './5QFront';
-import Back5Q from './5QBack';
+import * as React from 'react'
+import { useState } from 'react'
+import Front5Q from './5QFront'
+import Back5Q from './5QBack'
 
 const FiveQ: React.FunctionComponent = () => {
-    const [front, setFront] = useState<boolean>(true);
+  const [front, setFront] = useState<boolean>(true)
 
-    return (
-        <>
-            {front ? (
-                <Front5Q
-                    onPress={() => {
-                        setFront(false);
-                    }}
-                />
-            ) : (
-                <Back5Q
-                    onPress={() => {
-                        setFront(true);
-                    }}
-                />
-            )}
-        </>
-    );
-};
+  return (
+    <>
+      {front
+        ? (
+          <Front5Q
+            onPress={() => {
+              setFront(false)
+            }}
+          />
+          )
+        : (
+          <Back5Q
+            onPress={() => {
+              setFront(true)
+            }}
+          />
+          )}
+    </>
+  )
+}
 
-export default FiveQ;
+export default FiveQ

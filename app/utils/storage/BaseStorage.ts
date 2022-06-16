@@ -60,7 +60,7 @@ class BaseStorage implements Storage<string> {
     }
   }
 
-  async clear () {
+  async clear (): Promise<void> {
     try {
       await EncryptedStorage.clear()
       console.debug('Encrypted storage cleared')

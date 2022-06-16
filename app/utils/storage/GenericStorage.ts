@@ -59,7 +59,7 @@ implements ComposableKey, Storage<T> {
     await this.baseStorage.remove(fullKey)
   }
 
-  async clear () {
+  async clear (): Promise<void> {
     await this.baseStorage.clear()
   }
 }

@@ -48,15 +48,15 @@ const App: React.FunctionComponent = () => {
     [toggleTheme, isThemeDark]
   )
 
-  StorageFactory.getSettingsStorage()
+  void StorageFactory.getSettingsStorage()
     .read(AllowedSettings.DARK_THEME)
     .then((r) => setIsThemeDark(r === 'true'))
 
-  StorageFactory.getSettingsStorage()
+  void StorageFactory.getSettingsStorage()
     .read(AllowedSettings.LANGUAGE)
     .then((r) => {
       console.log(`changing language to ${r}`)
-      i18n.changeLanguage(r)
+      void i18n.changeLanguage(r)
     })
 
   return (

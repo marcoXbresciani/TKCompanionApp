@@ -29,11 +29,11 @@ class PdsaStorage extends GenericStorage<StorableValue> {
     return 'settings'
   }
 
-  async write (key: string, value: PdsaEntry): Promise<void> {
-    super.write(key, JSON.stringify(value))
+  override async write (key: string, value: PdsaEntry): Promise<void> {
+    void super.write(key, JSON.stringify(value))
   }
 
-  async read (key: string): Promise<string> {
+  override async read (key: string): Promise<string> {
     return await super.read(key)
   }
 }

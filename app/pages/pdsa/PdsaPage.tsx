@@ -102,10 +102,10 @@ const DownloadPage: React.FC = () => {
                 <TextInput.Icon
                   name='trash-outline'
                   onPress={() =>
-                      setPdsaEntry({
-                        ...pdsaEntry,
-                        target: ''
-                      })}
+                    setPdsaEntry({
+                      ...pdsaEntry,
+                      target: ''
+                    })}
                 />
                             }
               value={pdsaEntry.target}
@@ -129,10 +129,10 @@ const DownloadPage: React.FC = () => {
                 <TextInput.Icon
                   name='trash-outline'
                   onPress={() =>
-                      setPdsaEntry({
-                        ...pdsaEntry,
-                        actual: ''
-                      })}
+                    setPdsaEntry({
+                      ...pdsaEntry,
+                      actual: ''
+                    })}
                 />
                             }
               value={pdsaEntry.actual}
@@ -156,10 +156,10 @@ const DownloadPage: React.FC = () => {
                 <TextInput.Icon
                   name='trash-outline'
                   onPress={() =>
-                      setPdsaEntry({
-                        ...pdsaEntry,
-                        obstacle: ''
-                      })}
+                    setPdsaEntry({
+                      ...pdsaEntry,
+                      obstacle: ''
+                    })}
                 />
                             }
               value={pdsaEntry.obstacle}
@@ -183,10 +183,10 @@ const DownloadPage: React.FC = () => {
                 <TextInput.Icon
                   name='trash-outline'
                   onPress={() =>
-                      setPdsaEntry({
-                        ...pdsaEntry,
-                        step: ''
-                      })}
+                    setPdsaEntry({
+                      ...pdsaEntry,
+                      step: ''
+                    })}
                 />
                             }
               value={pdsaEntry.step}
@@ -210,10 +210,10 @@ const DownloadPage: React.FC = () => {
                 <TextInput.Icon
                   name='trash-outline'
                   onPress={() =>
-                      setPdsaEntry({
-                        ...pdsaEntry,
-                        learnt: ''
-                      })}
+                    setPdsaEntry({
+                      ...pdsaEntry,
+                      learnt: ''
+                    })}
                 />
                             }
               value={pdsaEntry.learnt}

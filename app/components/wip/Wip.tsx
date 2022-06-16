@@ -73,7 +73,7 @@ const Wip: ({ message }: Props) => JSX.Element = ({
               <IconButton
                 icon='mail-outline'
                 onPress={() => {
-                  Linking.openURL(
+                  void Linking.openURL(
                     'mailto://marco.530@outlook.it'
                   )
                 }}
@@ -81,7 +81,7 @@ const Wip: ({ message }: Props) => JSX.Element = ({
               <IconButton
                 icon='chatbox-outline'
                 onPress={() => {
-                  Linking.openURL(
+                  void Linking.openURL(
                     'mailto://marco.530@outlook.it'
                   )
                 }}
@@ -89,7 +89,7 @@ const Wip: ({ message }: Props) => JSX.Element = ({
               <IconButton
                 icon='chatbubble-outline'
                 onPress={() => {
-                  Linking.openURL(
+                  void Linking.openURL(
                     'briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm'
                   )
                 }}

@@ -56,20 +56,6 @@
         "type": "liberaPay",
         "url": "https://liberapay.com/marcoXbresciani/donate"
     },
-    "jest": {
-        "moduleFileExtensions": [
-            "ts",
-            "tsx",
-            "js",
-            "jsx",
-            "json",
-            "node"
-        ],
-        "preset": "react-native",
-        "transformIgnorePatterns": [
-            "node_modules/(?!(react-native|@react-native|react-native-iphone-x-helper|react-native-vector-icons)/)"
-        ]
-    },
     "license": "GPL-3.0-or-later",
     "main": "index.js",
     "name": "tkcompanionapp",

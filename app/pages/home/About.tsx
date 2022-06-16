@@ -68,7 +68,7 @@ const About: React.FunctionComponent = () => {
               />
             )}
             onPress={() => {
-              Linking.openURL(
+              void Linking.openURL(
                 'http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html'
               )
             }}
@@ -83,7 +83,7 @@ const About: React.FunctionComponent = () => {
               />
             )}
             onPress={() => {
-              Linking.openURL(
+              void Linking.openURL(
                 'http://www-personal.umich.edu/~mrother/The_Coaching_Kata.html'
               )
             }}
@@ -98,7 +98,7 @@ const About: React.FunctionComponent = () => {
               />
             )}
             onPress={() => {
-              Linking.openURL(
+              void Linking.openURL(
                 'http://www-personal.umich.edu/~mrother/Extras.html'
               )
             }}
@@ -113,7 +113,7 @@ const About: React.FunctionComponent = () => {
               />
             )}
             onPress={() => {
-              Linking.openURL(
+              void Linking.openURL(
                 'http://www-personal.umich.edu/~mrother/Challenge.html'
               )
             }}
@@ -140,7 +140,7 @@ const About: React.FunctionComponent = () => {
               />
             )}
             onPress={() => {
-              Linking.openURL(
+              void Linking.openURL(
                 'https://www.eff.org/issues/privacy'
               )
             }}
@@ -155,7 +155,7 @@ const About: React.FunctionComponent = () => {
               />
             )}
             onPress={() => {
-              Linking.openURL(
+              void Linking.openURL(
                 'https://www.eff.org/issues/privacy'
               )
             }}
@@ -170,7 +170,7 @@ const About: React.FunctionComponent = () => {
               />
             )}
             onPress={() => {
-              Linking.openURL(
+              void Linking.openURL(
                 'https://en.wikipedia.org/wiki/Phoning_home'
               )
             }}
@@ -185,7 +185,7 @@ const About: React.FunctionComponent = () => {
               />
             )}
             onPress={() => {
-              Linking.openURL(
+              void Linking.openURL(
                 'https://en.wikipedia.org/wiki/Google_Play_Services#Concerns'
               )
             }}
@@ -200,7 +200,7 @@ const About: React.FunctionComponent = () => {
               />
             )}
             onPress={() => {
-              Linking.openURL(
+              void Linking.openURL(
                 'https://www.eff.org/issues/privacy'
               )
             }}
@@ -215,7 +215,7 @@ const About: React.FunctionComponent = () => {
               />
             )}
             onPress={() => {
-              Linking.openURL(
+              void Linking.openURL(
                 'https://www.eff.org/issues/privacy'
               )
             }}

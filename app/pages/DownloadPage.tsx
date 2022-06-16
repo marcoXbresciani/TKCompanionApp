@@ -30,13 +30,13 @@ const DownloadPage: React.FunctionComponent = () => {
   const [message, setMessage] = useState('')
   const [visible, setVisible] = React.useState(false)
 
-  const onToggleSnackBar = () => setVisible(!visible)
-  const onDismissSnackBar = () => {
+  const onToggleSnackBar = (): void => setVisible(!visible)
+  const onDismissSnackBar = (): void => {
     setVisible(false)
     setMessage('')
   }
 
-  const download = (fileName: string) => {
+  const download = (fileName: string): void => {
     Linking.openURL(fileName).catch((reason) => {
       setMessage(
         i18n.t('download.error', {

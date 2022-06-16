@@ -74,7 +74,7 @@ const Copyright: React.FunctionComponent = () => {
         <IconButton
           icon='document-text-outline'
           onPress={() => {
-            Linking.openURL(
+            void Linking.openURL(
               'http://creativecommons.org/licenses/by-sa/4.0/'
             )
           }}
@@ -87,7 +87,7 @@ const Copyright: React.FunctionComponent = () => {
           <IconButton
             icon='document-text-outline'
             onPress={() => {
-              Linking.openURL(
+              void Linking.openURL(
                 'https://www.gnu.org/software/freefont/license.html'
               )
             }}
@@ -95,7 +95,7 @@ const Copyright: React.FunctionComponent = () => {
           <IconButton
             icon='home-outline'
             onPress={() => {
-              Linking.openURL(
+              void Linking.openURL(
                 'https://www.gnu.org/software/freefont/'
               )
             }}

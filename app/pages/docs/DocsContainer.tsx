@@ -31,7 +31,7 @@ interface MyProps {
 const DocsContainer = ({
   children,
   onPress
-}: React.PropsWithChildren<MyProps>) => {
+}: React.PropsWithChildren<MyProps>): JSX.Element => {
   return (
     <ScrollView>
       {children}

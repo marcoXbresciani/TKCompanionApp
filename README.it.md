@@ -91,7 +91,7 @@ Quindi, per ora, questa app si trova solo su
 [F-Droid](https://f-droid.org/), il _catalogo installabile di FOSS
 (Software libero e open source) per la piattaforma Android_.
 
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-it.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-it.png" alt="Disponibile su F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
 
 Per installare questa app, è necessaria l'app client F-Droid (molto
 simile a Google Play Store o Apple App Store) dal

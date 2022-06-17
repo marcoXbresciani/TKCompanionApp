@@ -35,6 +35,8 @@ This file is offered as-is, without any warranty.
 ### Changed
 ### Removed
 ### Fixed
+* Add support for ts-standard
+  [#10](https://github.com/marcoXbresciani/TKCompanionApp/issues/10).
 ### Security
 
 ## [2.2.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.2.0) - 2022-06-15

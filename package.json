@@ -37,6 +37,7 @@
         "@types/styled-components": "^5.1.25",
         "babel-jest": "^26.6.3",
         "babel-plugin-styled-components": "^2.0.7",
+        "husky": "^8.0.1",
         "jest": "^26.6.3",
         "jest-styled-components": "^7.0.8",
         "metro-react-native-babel-preset": "^0.67.0",
@@ -70,12 +71,15 @@
         "ios": "react-native run-ios",
         "lint": "ts-standard",
         "lint:fix": "ts-standard --fix",
+        "prepare": "husky install",
         "start": "react-native start",
         "test": "jest"
     },
     "ts-standard": {
-      "ignore": [ "__mocks__/react-native.js"],
-      "project": "tsconfig.json"
+        "ignore": [
+            "__mocks__/react-native.js"
+        ],
+        "project": "tsconfig.json"
     },
     "version": "2.2.0"
 }

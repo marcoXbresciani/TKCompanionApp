@@ -35,7 +35,7 @@ const RowView = styled(View)`
 `
 
 const Settings: React.FunctionComponent = () => {
-  const storage = StorageFactory.getSettingsStorage()
+  const storage = StorageFactory.getInstance().getSettingsStorage()
   const { toggleTheme, isThemeDark } =
         React.useContext(PreferencesContext)
 

@@ -29,8 +29,13 @@ import fr from './fr.json'
 import itIT from './it-IT.json'
 import nbNO from './nb_NO.json'
 
-const appleLocale = NativeModules.SettingsManager.settings.AppleLanguages[0] ||
-  NativeModules.SettingsManager.settings.AppleLocale
+let appleLocale
+
+if (NativeModules.SettingsManager.settings.AppleLanguages[0] !== undefined) {
+  appleLocale = NativeModules.SettingsManager.settings.AppleLanguages[0]
+} else if (NativeModules.SettingsManager.settings.AppleLocale !== undefined) {
+  appleLocale = NativeModules.SettingsManager.settings.AppleLocale
+}
 
 const locale = (
   Platform.OS === 'ios'

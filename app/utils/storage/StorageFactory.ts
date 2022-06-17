@@ -26,13 +26,22 @@ import SettingsStorage from './settings/SettingsStorage'
 import PdsaStorage from './pdsa/PdsaStorage'
 
 class StorageFactory {
+  private static instance: StorageFactory
   private static tkStorage: TkStorage
   private static settingsStorage: SettingsStorage
   private static pdsaStorage: PdsaStorage
 
   private constructor () {}
 
-  static getTkStorage (): TkStorage {
+  public static getInstance (): StorageFactory {
+    if (StorageFactory.instance === undefined) {
+      StorageFactory.instance = new StorageFactory()
+    }
+
+    return StorageFactory.instance
+  }
+
+  getTkStorage (): TkStorage {
     if (StorageFactory.tkStorage === undefined) {
       StorageFactory.tkStorage = new TkStorage(new SimpleKey())
     }
@@ -40,7 +49,7 @@ class StorageFactory {
     return StorageFactory.tkStorage
   }
 
-  static getSettingsStorage (): SettingsStorage {
+  getSettingsStorage (): SettingsStorage {
     if (StorageFactory.settingsStorage === undefined) {
       StorageFactory.settingsStorage = new SettingsStorage(
         new TkStorage(new SimpleKey())
@@ -50,7 +59,7 @@ class StorageFactory {
     return StorageFactory.settingsStorage
   }
 
-  static getPdsaStorage (): PdsaStorage {
+  getPdsaStorage (): PdsaStorage {
     if (StorageFactory.pdsaStorage === undefined) {
       StorageFactory.pdsaStorage = new PdsaStorage(
         new TkStorage(new SimpleKey())

@@ -36,7 +36,7 @@ import { TkCardContent } from '../../components/tkcard/TkCardContent'
 const DownloadPage: React.FC = () => {
   const [pdsaEntry, setPdsaEntry] = React.useState(new PdsaEntry())
   const [visibleWip, setVisibleWip] = React.useState(false)
-  const pdsaStorage = StorageFactory.getPdsaStorage()
+  const pdsaStorage = StorageFactory.getInstance().getPdsaStorage()
 
   useEffect(() => {
     pdsaStorage

@@ -33,7 +33,7 @@ class StorageFactory {
   private constructor () {}
 
   static getTkStorage (): TkStorage {
-    if (!StorageFactory.tkStorage) {
+    if (StorageFactory.tkStorage === undefined) {
       StorageFactory.tkStorage = new TkStorage(new SimpleKey())
     }
 
@@ -41,7 +41,7 @@ class StorageFactory {
   }
 
   static getSettingsStorage (): SettingsStorage {
-    if (!StorageFactory.settingsStorage) {
+    if (StorageFactory.settingsStorage === undefined) {
       StorageFactory.settingsStorage = new SettingsStorage(
         new TkStorage(new SimpleKey())
       )
@@ -51,7 +51,7 @@ class StorageFactory {
   }
 
   static getPdsaStorage (): PdsaStorage {
-    if (!StorageFactory.pdsaStorage) {
+    if (StorageFactory.pdsaStorage === undefined) {
       StorageFactory.pdsaStorage = new PdsaStorage(
         new TkStorage(new SimpleKey())
       )

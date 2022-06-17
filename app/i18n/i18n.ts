@@ -29,10 +29,12 @@ import fr from './fr.json'
 import itIT from './it-IT.json'
 import nbNO from './nb_NO.json'
 
+const appleLocale = NativeModules.SettingsManager.settings.AppleLanguages[0] ||
+  NativeModules.SettingsManager.settings.AppleLocale
+
 const locale = (
   Platform.OS === 'ios'
-    ? NativeModules.SettingsManager.settings.AppleLanguages[0] ||
-          NativeModules.SettingsManager.settings.AppleLocale
+    ? appleLocale
     : NativeModules.I18nManager.localeIdentifier
 ).replace('_', '-')
 

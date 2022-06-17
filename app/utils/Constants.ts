@@ -24,9 +24,8 @@ import DeviceInfo from 'react-native-device-info'
 import * as React from 'react'
 import { isDark } from './Functions'
 
-export const APP_NAME =
-    DeviceInfo.getApplicationName() || 'TKCompanionApp'
-export const APP_VERSION = DeviceInfo.getVersion() || ''
+export const APP_NAME = DeviceInfo.getApplicationName()
+export const APP_VERSION = DeviceInfo.getVersion()
 
 export const PreferencesContext = React.createContext({
   toggleTheme: () => {},

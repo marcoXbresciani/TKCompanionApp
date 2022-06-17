@@ -36,7 +36,7 @@ class BaseStorage implements Storage<string> {
       await EncryptedStorage.setItem(key, value)
       console.debug(`Saved '${key}' = '${value}'.`)
     } catch (error) {
-      console.error(`Error '${error}' while writing '${key}'.`)
+      console.error(`Error '${error as string}' while writing '${key}'.`)
     }
   }
 
@@ -46,7 +46,7 @@ class BaseStorage implements Storage<string> {
       result = key ?? (await EncryptedStorage.getItem(key))
       console.debug(`Read '${key}' = '${result}'.`)
     } catch (error) {
-      console.error(`Error '${error}' while reading '${key}'.`)
+      console.error(`Error '${error as string}' while reading '${key}'.`)
     }
     return result
   }
@@ -56,7 +56,7 @@ class BaseStorage implements Storage<string> {
       await EncryptedStorage.removeItem(key)
       console.debug(`Removed '${key}'.`)
     } catch (error) {
-      console.error(`Error '${error}' while removing '${key}'.`)
+      console.error(`Error '${error as string}' while removing '${key}'.`)
     }
   }
 
@@ -65,7 +65,7 @@ class BaseStorage implements Storage<string> {
       await EncryptedStorage.clear()
       console.debug('Encrypted storage cleared')
     } catch (error) {
-      console.error(`Error '${error}' while clearing storage.`)
+      console.error(`Error '${error as string}' while clearing storage.`)
     }
   }
 }

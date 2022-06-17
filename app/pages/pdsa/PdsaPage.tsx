@@ -46,7 +46,7 @@ const DownloadPage: React.FC = () => {
         setPdsaEntry(parse)
       })
       .catch((reason) => {
-        Alert.alert(i18n.t('pdsa.alert.title'), `${reason}.`)
+        Alert.alert(i18n.t('pdsa.alert.title'), `${reason as string}.`)
         setPdsaEntry(new PdsaEntry())
       })
   }, [pdsaStorage])

@@ -31,7 +31,15 @@ Files: .gitignore
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
+Files: .husky/pre-commit
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
 Files: .idea/*
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
+Files: jest.config.js
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 

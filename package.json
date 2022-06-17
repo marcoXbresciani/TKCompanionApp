@@ -73,5 +73,9 @@
         "start": "react-native start",
         "test": "jest"
     },
+    "ts-standard": {
+      "ignore": [ "__mocks__/react-native.js"],
+      "project": "tsconfig.json"
+    },
     "version": "2.2.0"
 }

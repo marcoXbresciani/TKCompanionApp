@@ -38,6 +38,8 @@ This file is offered as-is, without any warranty.
 * Add support for ts-standard
   [#10](https://github.com/marcoXbresciani/TKCompanionApp/issues/10).
 ### Security
+* OpenSSF Best Practices moved from 82% to 88% (see
+  [#10](https://github.com/marcoXbresciani/TKCompanionApp/issues/10)).
 
 ## [2.2.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.2.0) - 2022-06-15
 ### Added

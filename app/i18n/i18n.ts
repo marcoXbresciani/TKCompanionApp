@@ -31,10 +31,12 @@ import nbNO from './nb_NO.json'
 
 let appleLocale
 
-if (NativeModules.SettingsManager.settings.AppleLanguages[0] !== undefined) {
-  appleLocale = NativeModules.SettingsManager.settings.AppleLanguages[0]
-} else if (NativeModules.SettingsManager.settings.AppleLocale !== undefined) {
-  appleLocale = NativeModules.SettingsManager.settings.AppleLocale
+if (Platform.OS === 'ios') {
+  if (NativeModules.SettingsManager.settings.AppleLanguages[0] !== undefined) {
+    appleLocale = NativeModules.SettingsManager.settings.AppleLanguages[0]
+  } else if (NativeModules.SettingsManager.settings.AppleLocale !== undefined) {
+    appleLocale = NativeModules.SettingsManager.settings.AppleLocale
+  }
 }
 
 const locale = (

@@ -33,6 +33,8 @@ This file is offered as-is, without any warranty.
   restored on application reuse.
   And viceversa.
 ### Changed
+* Downloads page removed.
+  Download icon buttons added to the documents selector page.
 ### Removed
 ### Fixed
 * Add support for ts-standard

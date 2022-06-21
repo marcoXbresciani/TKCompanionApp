@@ -25,7 +25,6 @@ import { BottomNavigation } from 'react-native-paper'
 import HomePage from '../pages/home/HomePage'
 import PdsaPage from '../pages/pdsa/PdsaPage'
 import DocsPage from '../pages/docs/DocsPage'
-import DownloadPage from '../pages/DownloadPage'
 import i18n from '../i18n/i18n'
 
 const TkNavigator: React.FunctionComponent = () => {
@@ -45,18 +44,12 @@ const TkNavigator: React.FunctionComponent = () => {
       key: 'docs',
       title: i18n.t('nav.docs'),
       icon: 'library-outline'
-    },
-    {
-      key: 'download',
-      title: i18n.t('nav.download'),
-      icon: 'download-outline'
     }
   ])
   const renderScene = BottomNavigation.SceneMap({
     home: HomePage,
     pdsa: PdsaPage,
-    docs: DocsPage,
-    download: DownloadPage
+    docs: DocsPage
   })
 
   return (

@@ -65,6 +65,7 @@
         "5qcard": "5Q Card",
         "kts": "$t(kts.title)",
         "practice": "$t(practice.title)",
+        "subtitle": "... or download them!",
         "title": "Read The Docs",
         "tkc": "$t(tkc.title)"
     },

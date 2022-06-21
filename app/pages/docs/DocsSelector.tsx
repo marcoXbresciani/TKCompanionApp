@@ -21,57 +21,126 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import { List } from 'react-native-paper'
+import { IconButton, List, Snackbar } from 'react-native-paper'
 import { Pages } from './DocsPage'
 import i18n from '../../i18n/i18n'
+import { Linking } from 'react-native'
+import { useState } from 'react'
+import { TkCard } from '../../components/tkcard/TkCard'
+import TkCardTitle from '../../components/tkcard/TkCardTitle'
+import { TkCardContent } from '../../components/tkcard/TkCardContent'
 
 interface Props {
   onPress: (page: Pages) => void
 }
 
 const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
+  const [message, setMessage] = useState('')
+  const [visible, setVisible] = React.useState(false)
+
+  const onToggleSnackBar = (): void => setVisible(!visible)
+  const onDismissSnackBar = (): void => {
+    setVisible(false)
+    setMessage('')
+  }
+
+  const download = (fileName: string): void => {
+    Linking.openURL(fileName).catch((reason) => {
+      setMessage(
+        i18n.t('download.error', {
+          reason: reason
+        })
+      )
+      onToggleSnackBar()
+    })
+  }
+
   return (
     <>
-      <List.Section>
-        <List.Subheader>{`${i18n.t(
-                    'docs.title'
-                )}`}
-        </List.Subheader>
-        <List.Item
-          left={() => (
-            <List.Icon icon='chatbubbles-outline' />
-          )}
-          onPress={() => onPress(Pages.FiveQCard)}
-          title={`${i18n.t('docs.5qcard')}`}
-          titleNumberOfLines={2}
-        />
-        <List.Item
-          left={() => <List.Icon icon='analytics-outline' />}
-          onPress={() => onPress(Pages.FourSteps)}
-          title={`${i18n.t('docs.4steps')}`}
-          titleNumberOfLines={2}
-        />
-        <List.Item
-          left={() => <List.Icon icon='code-outline' />}
-          onPress={() => onPress(Pages.TkcPage)}
-          title={`${i18n.t('docs.tkc')}`}
-          titleNumberOfLines={2}
-        />
-        <List.Item
-          left={() => <List.Icon icon='construct-outline' />}
-          onPress={() => onPress(Pages.PracticePage)}
-          title={`${i18n.t('docs.practice')}`}
-          titleNumberOfLines={2}
-        />
-        <List.Item
-          left={() => (
-            <List.Icon icon='thunderstorm-outline' />
-          )}
-          onPress={() => onPress(Pages.KtsPage)}
-          title={`${i18n.t('docs.kts')}`}
-          titleNumberOfLines={2}
-        />
-      </List.Section>
+      <Snackbar
+        visible={visible}
+        onDismiss={onDismissSnackBar}
+        action={{
+          label: i18n.t('download.close'),
+          onPress: () => {}
+        }}
+      >
+        {message}
+      </Snackbar>
+
+      <TkCard>
+        <TkCardTitle title={`${i18n.t('docs.title')}`} subtitle={`${i18n.t('docs.subtitle')}`} />
+        <TkCardContent>
+          <List.Section>
+            <List.Item
+              left={() => (
+                <List.Icon icon='chatbubbles-outline' />
+              )}
+              onPress={() => onPress(Pages.FiveQCard)}
+              title={`${i18n.t('docs.5qcard')}`}
+              titleNumberOfLines={3}
+            />
+            <List.Item
+              left={() => <List.Icon icon='analytics-outline' />}
+              onPress={() => onPress(Pages.FourSteps)}
+              right={() => (
+                <IconButton
+                  icon='download-outline' onPress={() =>
+                    download(
+                      'https://web.archive.org/web/20220326213548/http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf'
+                    )}
+                />
+              )}
+              title={`${i18n.t('docs.4steps')}`}
+              titleNumberOfLines={3}
+            />
+            <List.Item
+              left={() => <List.Icon icon='code-outline' />}
+              onPress={() => onPress(Pages.TkcPage)}
+              right={() => (
+                <IconButton
+                  icon='download-outline' onPress={() =>
+                    download(
+                      'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf'
+                    )}
+                />
+              )}
+              title={`${i18n.t('docs.tkc')}`}
+              titleNumberOfLines={3}
+            />
+            <List.Item
+              left={() => <List.Icon icon='construct-outline' />}
+              onPress={() => onPress(Pages.PracticePage)}
+              right={() => (
+                <IconButton
+                  icon='download-outline' onPress={() =>
+                    download(
+                      'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf'
+                    )}
+                />
+              )}
+              title={`${i18n.t('docs.practice')}`}
+              titleNumberOfLines={3}
+            />
+            <List.Item
+              left={() => (
+                <List.Icon icon='thunderstorm-outline' />
+              )}
+              onPress={() => onPress(Pages.KtsPage)}
+              right={() => (
+                <IconButton
+                  icon='download-outline' onPress={() =>
+                    download(
+                      'https://web.archive.org/web/20220409213239/http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg'
+                    )}
+                />
+              )}
+              title={`${i18n.t('docs.kts')}`}
+              titleNumberOfLines={3}
+            />
+          </List.Section>
+        </TkCardContent>
+      </TkCard>
     </>
   )
 }

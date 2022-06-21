@@ -65,6 +65,7 @@
         "5qcard": "5 Domande",
         "kts": "$t(kts.title)",
         "practice": "$t(practice.title)",
+        "subtitle": "... oppure scaricali!",
         "title": "Leggi i documenti",
         "tkc": "$t(tkc.title)"
     },

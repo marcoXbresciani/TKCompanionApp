@@ -30,10 +30,12 @@ import Practice from './Practice'
 import DocsContainer from './DocsContainer'
 import FiveQ from './5qcard/FiveQ'
 import FourS from './FourS'
+import CoachPattern from './CoachPattern'
 
 export enum Pages {
   DefaultPage,
   FiveQCard,
+  Pattern,
   FourSteps,
   KtsPage,
   PracticePage,
@@ -44,26 +46,27 @@ const DocsPage: React.FunctionComponent = () => {
   const [status, setStatus] = useState<Pages>(Pages.DefaultPage)
 
   return (
-    <>
+    <PageContainer>
       {status === Pages.DefaultPage && (
         <DocsSelector onPress={setStatus} />
       )}
       {status !== Pages.DefaultPage && (
-        <PageContainer>
+        <>
           <DocsContainer
             onPress={() => {
               setStatus(Pages.DefaultPage)
             }}
           >
             {status === Pages.FiveQCard && <FiveQ />}
+            {status === Pages.Pattern && <CoachPattern />}
             {status === Pages.FourSteps && <FourS />}
             {status === Pages.TkcPage && <Tkc />}
             {status === Pages.PracticePage && <Practice />}
             {status === Pages.KtsPage && <Kts />}
           </DocsContainer>
-        </PageContainer>
+        </>
       )}
-    </>
+    </PageContainer>
   )
 }
 

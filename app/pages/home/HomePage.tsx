@@ -21,10 +21,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import Version from '../../components/version/Version'
 import {
   Appbar,
-  Card,
   Dialog,
   Divider,
   Menu,
@@ -35,8 +33,8 @@ import Settings from './Settings'
 import Copyright from './Copyright'
 import About from './About'
 import i18n from '../../i18n/i18n'
-import { TkCardContent } from '../../components/tkcard/TkCardContent'
-import { TkCard } from '../../components/tkcard/TkCard'
+import { APP_NAME, APP_VERSION } from '../../utils/Constants'
+import FiveQ from '../docs/5qcard/FiveQ'
 
 const HomePage: React.FunctionComponent = () => {
   const [visibleAbout, setVisibleAbout] = React.useState(false)
@@ -92,13 +90,14 @@ const HomePage: React.FunctionComponent = () => {
       </Portal>
 
       <Appbar>
+        <Appbar.Content title={APP_NAME} subtitle={APP_VERSION} />
         <Menu
           visible={visible}
           onDismiss={closeMenu}
           anchor={
             <Appbar.Action
               icon='menu-outline'
-              color={useTheme().colors.background}
+              color={useTheme().colors.onSurface}
               onPress={openMenu}
             />
                     }
@@ -122,14 +121,7 @@ const HomePage: React.FunctionComponent = () => {
         </Menu>
       </Appbar>
 
-      <TkCard>
-        <Card.Cover
-          source={require('../../assets/images/dh000004.jpg')}
-        />
-        <TkCardContent>
-          <Version />
-        </TkCardContent>
-      </TkCard>
+      <FiveQ />
     </>
   )
 }

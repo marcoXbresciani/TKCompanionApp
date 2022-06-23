@@ -24,12 +24,13 @@ import * as React from 'react'
 import { useState } from 'react'
 import Front5Q from './5QFront'
 import Back5Q from './5QBack'
+import PageContainer from '../PageContainer'
 
 const FiveQ: React.FunctionComponent = () => {
   const [front, setFront] = useState<boolean>(true)
 
   return (
-    <>
+    <PageContainer>
       {front
         ? (
           <Front5Q
@@ -45,7 +46,7 @@ const FiveQ: React.FunctionComponent = () => {
             }}
           />
           )}
-    </>
+    </PageContainer>
   )
 }
 

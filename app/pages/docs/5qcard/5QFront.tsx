@@ -20,15 +20,50 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
+import styled from 'styled-components'
+import { Pressable, View } from 'react-native'
 import * as React from 'react'
+import i18next from 'i18next'
 import { Trans, useTranslation } from 'react-i18next'
-import { Button, Card } from 'react-native-paper'
-import i18n from '../../../i18n/i18n'
+import { TkText } from '../../../components/TkText'
 import { BoldText } from '../../../components/BoldText'
-import { TkParagraph } from '../../../components/TkParagraph'
-import { TkCard } from '../../../components/tkcard/TkCard'
-import TkCardTitle from '../../../components/tkcard/TkCardTitle'
-import { TkCardContent } from '../../../components/tkcard/TkCardContent'
+import { CenteredTitle } from '../../../components/CenteredTitle'
+import Separator from './Separator'
+import { Caption, useTheme } from 'react-native-paper'
+
+const FrontView = styled(View)`
+    border: 10px solid ${props => props.theme.bg};
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+`
+
+const CkView = styled(View)`
+  background: ${props => props.theme.bg}
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+`
+
+const CKText = styled(TkText)`
+  font-weight: bold;
+  height:40px;
+  margin: auto;
+  padding: 5px;
+  text-transform: uppercase;
+`
+
+const CkTitle = styled(CenteredTitle)`
+  color: ${props => props.theme.bg}
+`
+
+const QuestionsView = styled(View)`
+  border-radius: 20px;
+  padding: 10px;
+`
 
 interface Props {
   onPress: () => void
@@ -37,72 +72,76 @@ interface Props {
 const Front5Q: React.FC<Props> = ({ onPress }: Props) => {
   const { t } = useTranslation()
 
+  const borderTheme = {
+    bg: `${useTheme().colors.primary}`
+  }
+
   return (
-    <TkCard>
-      <TkCardTitle
-        title={`${i18n.t('5q.front.header')}`}
-        subtitle={`${i18n.t('5q.front.title')}`}
-        subtitleNumberOfLines={2}
-      />
-      <TkCardContent>
-        <TkParagraph>
-          <Trans
-            t={t}
-            i18nKey='5q.front.q1'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-        </TkParagraph>
-        <TkParagraph>
-          <Trans
-            t={t}
-            i18nKey='5q.front.q2'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-        </TkParagraph>
-        <Card.Actions>
-          <Button
-            mode='outlined'
-            icon='return-down-forward-outline'
-            onPress={() => onPress()}
-          >
-            {`${i18n.t('5q.front.separator')}`}
-          </Button>
-        </Card.Actions>
-        <TkParagraph>
-          <Trans
-            t={t}
-            i18nKey='5q.front.q3.1'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-          {`${i18n.t('5q.front.q3.2')}`}
-        </TkParagraph>
-        <TkParagraph>
-          <Trans
-            t={t}
-            i18nKey='5q.front.q4.1'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-          {`${i18n.t('5q.front.q4.2')}`}
-        </TkParagraph>
-        <TkParagraph>
-          <Trans
-            t={t}
-            i18nKey='5q.front.q5'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-        </TkParagraph>
-      </TkCardContent>
-    </TkCard>
+    <>
+      <CkView theme={borderTheme}>
+        <CKText>{`${i18next.t('5q.front.header')}`}</CKText>
+      </CkView>
+      <FrontView theme={borderTheme}>
+        <QuestionsView>
+          <CkTitle theme={borderTheme}>{`${i18next.t('5q.front.title')}`}</CkTitle>
+          <TkText>
+            <Trans
+              t={t}
+              i18nKey='5q.front.q1'
+              components={{
+                bold: <BoldText />
+              }}
+            />
+          </TkText>
+          <TkText>
+            <Trans
+              t={t}
+              i18nKey='5q.front.q2'
+              components={{
+                bold: <BoldText />
+              }}
+            />
+          </TkText>
+          <Pressable onPress={() => onPress()}>
+            <Separator>
+              {`${i18next.t('5q.front.separator')}`}
+            </Separator>
+          </Pressable>
+          <TkText>
+            <Trans
+              t={t}
+              i18nKey='5q.front.q3.1'
+              components={{
+                bold: <BoldText />
+              }}
+            />
+            {'\n'}
+            {`${i18next.t('5q.front.q3.2')}`}
+          </TkText>
+          <TkText>
+            <Trans
+              t={t}
+              i18nKey='5q.front.q4.1'
+              components={{
+                bold: <BoldText />
+              }}
+            />
+            {'\n'}
+            {`${i18next.t('5q.front.q4.2')}`}
+          </TkText>
+          <TkText>
+            <Trans
+              t={t}
+              i18nKey='5q.front.q5'
+              components={{
+                bold: <BoldText />
+              }}
+            />
+          </TkText>
+          <Caption>{`${i18next.t('5q.front.caption')}`}</Caption>
+        </QuestionsView>
+      </FrontView>
+    </>
   )
 }
 

@@ -21,19 +21,28 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import { Caption } from 'react-native-paper'
-import { APP_NAME, APP_VERSION } from '../../utils/Constants'
 import i18n from '../../i18n/i18n'
-import { CenteredTitle } from '../CenteredTitle'
-import { CenteredSubheading } from './CenteredSubheading'
+import { TkParagraph } from '../../components/TkParagraph'
+import { TkCard } from '../../components/tkcard/TkCard'
+import TkCardTitle from '../../components/tkcard/TkCardTitle'
+import { TkCardContent } from '../../components/tkcard/TkCardContent'
 
-const Version: React.FunctionComponent = () => {
-  return (
-    <>
-      <CenteredTitle>{APP_NAME}</CenteredTitle>
-      <CenteredSubheading>{APP_VERSION}</CenteredSubheading>
-      <Caption>{`${i18n.t('app.short')}`}</Caption>
-    </>
-  )
-}
-export default Version
+const CoachPattern: React.FunctionComponent = () => (
+  <TkCard>
+    <TkCardTitle
+      subtitle={`${i18n.t('pattern.subtitle')}`}
+      subtitleNumberOfLines={3}
+      title={`${i18n.t('pattern.title')}`}
+      titleNumberOfLines={2}
+    />
+    <TkCardContent>
+      <TkParagraph>{`${i18n.t('pattern.p1')}`}</TkParagraph>
+      <TkParagraph>{`${i18n.t('pattern.p2')}`}</TkParagraph>
+      <TkParagraph>{`${i18n.t('pattern.p3')}`}</TkParagraph>
+      <TkParagraph>{`${i18n.t('pattern.p4')}`}</TkParagraph>
+      <TkParagraph>{`${i18n.t('pattern.p5')}`}</TkParagraph>
+    </TkCardContent>
+  </TkCard>
+)
+
+export default CoachPattern

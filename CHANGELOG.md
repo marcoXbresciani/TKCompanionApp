@@ -32,10 +32,12 @@ This file is offered as-is, without any warranty.
   for this application, the English language will be saved to be later
   restored on application reuse.
   And viceversa.
+* New coaching model page added.
 ### Changed
-* Downloads page removed.
-  Download icon buttons added to the documents selector page.
+* Download icon buttons added to the documents selector page.
+* 5Q card revamp in the original style, placed in home page.
 ### Removed
+* Downloads page removed.
 ### Fixed
 * Add support for ts-standard
   [#10](https://github.com/marcoXbresciani/TKCompanionApp/issues/10).

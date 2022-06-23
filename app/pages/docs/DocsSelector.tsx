@@ -74,15 +74,36 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
           <List.Section>
             <List.Item
               left={() => (
-                <List.Icon icon='chatbubbles-outline' />
+                <IconButton icon='chatbubbles-outline' onPress={() => onPress(Pages.FiveQCard)} />
               )}
-              onPress={() => onPress(Pages.FiveQCard)}
+              right={() => (
+                <IconButton
+                  icon='download-outline' onPress={() =>
+                    download(
+                      'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf'
+                    )}
+                />
+              )}
               title={`${i18n.t('docs.5qcard')}`}
               titleNumberOfLines={3}
             />
             <List.Item
-              left={() => <List.Icon icon='analytics-outline' />}
-              onPress={() => onPress(Pages.FourSteps)}
+              left={() => (
+                <IconButton icon='egg-outline' onPress={() => onPress(Pages.Pattern)} />
+              )}
+              right={() => (
+                <IconButton
+                  icon='download-outline' onPress={() =>
+                    download(
+                      'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf'
+                    )}
+                />
+              )}
+              title={`${i18n.t('docs.pattern')}`}
+              titleNumberOfLines={3}
+            />
+            <List.Item
+              left={() => <IconButton icon='analytics-outline' onPress={() => onPress(Pages.FourSteps)} />}
               right={() => (
                 <IconButton
                   icon='download-outline' onPress={() =>
@@ -95,8 +116,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
               titleNumberOfLines={3}
             />
             <List.Item
-              left={() => <List.Icon icon='code-outline' />}
-              onPress={() => onPress(Pages.TkcPage)}
+              left={() => <IconButton icon='code-outline' onPress={() => onPress(Pages.TkcPage)} />}
               right={() => (
                 <IconButton
                   icon='download-outline' onPress={() =>
@@ -109,8 +129,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
               titleNumberOfLines={3}
             />
             <List.Item
-              left={() => <List.Icon icon='construct-outline' />}
-              onPress={() => onPress(Pages.PracticePage)}
+              left={() => <IconButton icon='construct-outline' onPress={() => onPress(Pages.PracticePage)} />}
               right={() => (
                 <IconButton
                   icon='download-outline' onPress={() =>
@@ -124,9 +143,8 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
             />
             <List.Item
               left={() => (
-                <List.Icon icon='thunderstorm-outline' />
+                <IconButton icon='thunderstorm-outline' onPress={() => onPress(Pages.KtsPage)} />
               )}
-              onPress={() => onPress(Pages.KtsPage)}
               right={() => (
                 <IconButton
                   icon='download-outline' onPress={() =>

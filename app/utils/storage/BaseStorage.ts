@@ -34,7 +34,6 @@ class BaseStorage implements Storage<string> {
   async write (key: string, value: string): Promise<void> {
     try {
       await EncryptedStorage.setItem(key, value)
-      console.debug(`Saved '${key}' = '${value}'.`)
     } catch (error) {
       console.error(`Error '${error as string}' while writing '${key}'.`)
     }
@@ -44,7 +43,6 @@ class BaseStorage implements Storage<string> {
     let result: string = key
     try {
       result = (await EncryptedStorage.getItem(key)) ?? key
-      console.debug(`Read '${key}' = '${result}'.`)
     } catch (error) {
       console.error(`Error '${error as string}' while reading '${key}'.`)
     }
@@ -54,7 +52,6 @@ class BaseStorage implements Storage<string> {
   async remove (key: string): Promise<void> {
     try {
       await EncryptedStorage.removeItem(key)
-      console.debug(`Removed '${key}'.`)
     } catch (error) {
       console.error(`Error '${error as string}' while removing '${key}'.`)
     }
@@ -63,7 +60,6 @@ class BaseStorage implements Storage<string> {
   async clear (): Promise<void> {
     try {
       await EncryptedStorage.clear()
-      console.debug('Encrypted storage cleared')
     } catch (error) {
       console.error(`Error '${error as string}' while clearing storage.`)
     }

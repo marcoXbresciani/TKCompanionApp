@@ -41,9 +41,11 @@ This file is offered as-is, without any warranty.
 ### Fixed
 * Add support for ts-standard
   [#10](https://github.com/marcoXbresciani/TKCompanionApp/issues/10).
+* JSON Syntax Error bug
+  [#13](https://github.com/marcoXbresciani/TKCompanionApp/issues/13).
 ### Security
 * OpenSSF Best Practices moved from 82% to 88% (see
-  [#10](https://github.com/marcoXbresciani/TKCompanionApp/issues/10)).
+  [#11](https://github.com/marcoXbresciani/TKCompanionApp/issues/11)).
 
 ## [2.2.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/2.2.0) - 2022-06-15
 ### Added

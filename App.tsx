@@ -51,18 +51,14 @@ const App: React.FunctionComponent = () => {
   void StorageFactory.getInstance().getSettingsStorage()
     .read(AllowedSettings.DARK_THEME)
     .then((r) => setIsThemeDark(r === 'true'))
-    .catch((reason) => {
-      console.log(`Missing theme: ${reason as string}`)
-      setIsThemeDark(false)
-    })
+    .catch(() => setIsThemeDark(false))
 
   void StorageFactory.getInstance().getSettingsStorage()
     .read(AllowedSettings.LANGUAGE)
     .then((r) => {
       void i18n.changeLanguage(r)
     })
-    .catch((reason) => {
-      console.log(`Missing language: ${reason as string}`)
+    .catch(() => {
       void i18n.changeLanguage(i18n.options.lng)
     })
 

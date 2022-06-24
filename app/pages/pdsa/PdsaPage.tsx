@@ -23,7 +23,7 @@
 import * as React from 'react'
 import { useEffect } from 'react'
 import { Appbar, TextInput } from 'react-native-paper'
-import { Alert, ScrollView } from 'react-native'
+import { ScrollView } from 'react-native'
 import Wip from '../../components/wip/Wip'
 import PdsaEntry from '../../utils/storage/pdsa/PdsaEntry'
 import StorageFactory from '../../utils/storage/StorageFactory'
@@ -45,10 +45,7 @@ const DownloadPage: React.FC = () => {
         const parse: PdsaEntry = JSON.parse(entryString)
         setPdsaEntry(parse)
       })
-      .catch((reason) => {
-        Alert.alert(i18n.t('pdsa.alert.title'), `${reason as string}.`)
-        setPdsaEntry(new PdsaEntry())
-      })
+      .catch(() => setPdsaEntry(new PdsaEntry()))
   }, [pdsaStorage])
 
   return (

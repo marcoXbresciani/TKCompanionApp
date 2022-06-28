@@ -139,9 +139,9 @@ Siediti, segui il menu, impara, esercitati e migliora.
   file che sarà scaricato.
 
 ### Schermate
-![Carta 5 domande](fastlane/metadata/android/it-IT/images/phoneScreenshots/5Q.png)
-![Documenti](fastlane/metadata/android/it-IT/images/phoneScreenshots/docs.png)
 ![Inizio](fastlane/metadata/android/it-IT/images/phoneScreenshots/home.png)
+![Documenti](fastlane/metadata/android/it-IT/images/phoneScreenshots/docs.png)
+![PDSA](fastlane/metadata/android/it-IT/images/phoneScreenshots/pdsa.png)
 
 ### Note sui font
 * Il font usato è [Free

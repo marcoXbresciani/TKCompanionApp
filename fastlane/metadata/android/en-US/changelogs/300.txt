@@ -1,0 +1,4 @@
+Reshuffle of home page, 5Q card and docs merged with downloads.
+New coaching model page.
+Fixes issues #10 and #13.
+Issue #11 improved.

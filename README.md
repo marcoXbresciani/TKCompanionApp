@@ -135,9 +135,9 @@ Just sit, follow the menu, learn, practice and improve.
   of file that will be downloaded.
 
 ### Screenshots
-![5Q Card](fastlane/metadata/android/en-US/images/phoneScreenshots/5Q.png)
-![Docs](fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png)
 ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
+![Docs](fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png)
+![PDSA](fastlane/metadata/android/en-US/images/phoneScreenshots/pdsa.png)
 
 ### Font Notes
 * Font used is [Free

@@ -23,8 +23,6 @@
 import * as React from 'react'
 import { useEffect } from 'react'
 import { Appbar, TextInput } from 'react-native-paper'
-import { ScrollView } from 'react-native'
-import Wip from '../../components/wip/Wip'
 import PdsaEntry from '../../utils/storage/pdsa/PdsaEntry'
 import StorageFactory from '../../utils/storage/StorageFactory'
 import i18n from '../../i18n/i18n'
@@ -32,52 +30,78 @@ import { TkParagraph } from '../../components/TkParagraph'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import { TkCard } from '../../components/tkcard/TkCard'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
+import PageContainer from '../docs/PageContainer'
+import PdsaCalendar from './PdsaCalendar'
+
+const getTodayIso8601 = (): string => {
+  return new Date().toISOString().substring(0, 10)
+}
 
 const DownloadPage: React.FC = () => {
-  const [pdsaEntry, setPdsaEntry] = React.useState(new PdsaEntry())
-  const [visibleWip, setVisibleWip] = React.useState(false)
   const pdsaStorage = StorageFactory.getInstance().getPdsaStorage()
+
+  const [day, setDay] = React.useState(getTodayIso8601())
+  const [disabledSave, setDisabledSave] = React.useState(true)
+  const [pdsaEntry, setPdsaEntry] = React.useState(new PdsaEntry())
+  const [visibleDialog, setVisibleDialog] = React.useState(false)
 
   useEffect(() => {
     pdsaStorage
-      .read('PDSA')
+      .read(`PDSA.${day}`)
       .then((entryString) => {
         const parse: PdsaEntry = JSON.parse(entryString)
         setPdsaEntry(parse)
       })
       .catch(() => setPdsaEntry(new PdsaEntry()))
-  }, [pdsaStorage])
+  }, [pdsaStorage, day])
 
   return (
     <>
-      <Wip
-        message={i18n.t('pdsa.temp')}
-        visible={visibleWip}
-        setVisible={setVisibleWip}
+      <PdsaCalendar
+        day={day}
+        setDay={setDay}
+        visible={visibleDialog}
+        setVisible={setVisibleDialog}
       />
 
       <Appbar>
         <Appbar.Action
-          icon='save-outline'
+          icon='today-outline'
           onPress={() => {
-            // const [today] = new Date()
-            //     .toISOString()
-            //     .split('T');
-            void pdsaStorage.write('PDSA', pdsaEntry)
+            setDay(getTodayIso8601())
+          }}
+
+        />
+        <Appbar.Action
+          icon='calendar-outline'
+          onPress={() => {
+            setVisibleDialog(true)
           }}
         />
         <Appbar.Action
-          disabled
-          icon='calendar-outline'
-          onPress={() => setVisibleWip(true)}
+          icon='save-outline'
+          disabled={disabledSave}
+          onPress={() => {
+            void pdsaStorage.write(`PDSA.${day}`, pdsaEntry)
+            setDisabledSave(true)
+          }}
+        />
+        <Appbar.Action
+          icon='trash-outline'
+          disabled={!disabledSave}
+          onPress={() => {
+            void pdsaStorage.remove(`PDSA.${day}`)
+            setPdsaEntry(new PdsaEntry())
+            setDisabledSave(true)
+          }}
         />
       </Appbar>
-
-      <ScrollView>
+      <PageContainer>
         <TkCard>
           <TkCardTitle
             title={`${i18n.t('pdsa.title')}`}
             titleNumberOfLines={2}
+            subtitle={day}
           />
           <TkCardContent>
             <TkParagraph>{`${i18n.t(
@@ -93,16 +117,19 @@ const DownloadPage: React.FC = () => {
                   ...pdsaEntry,
                   target: txt
                 })
+                setDisabledSave(false)
               }}
               placeholder='Target'
               right={
                 <TextInput.Icon
                   name='trash-outline'
-                  onPress={() =>
+                  onPress={() => {
                     setPdsaEntry({
                       ...pdsaEntry,
                       target: ''
-                    })}
+                    })
+                    setDisabledSave(false)
+                  }}
                 />
                             }
               value={pdsaEntry.target}
@@ -120,6 +147,7 @@ const DownloadPage: React.FC = () => {
                   ...pdsaEntry,
                   actual: txt
                 })
+                setDisabledSave(false)
               }}
               placeholder='Actual'
               right={
@@ -147,16 +175,19 @@ const DownloadPage: React.FC = () => {
                   ...pdsaEntry,
                   obstacle: txt
                 })
+                setDisabledSave(false)
               }}
               placeholder='Obstacle'
               right={
                 <TextInput.Icon
                   name='trash-outline'
-                  onPress={() =>
+                  onPress={() => {
                     setPdsaEntry({
                       ...pdsaEntry,
                       obstacle: ''
-                    })}
+                    })
+                    setDisabledSave(false)
+                  }}
                 />
                             }
               value={pdsaEntry.obstacle}
@@ -174,16 +205,19 @@ const DownloadPage: React.FC = () => {
                   ...pdsaEntry,
                   step: txt
                 })
+                setDisabledSave(false)
               }}
               placeholder='Step'
               right={
                 <TextInput.Icon
                   name='trash-outline'
-                  onPress={() =>
+                  onPress={() => {
                     setPdsaEntry({
                       ...pdsaEntry,
                       step: ''
-                    })}
+                    })
+                    setDisabledSave(false)
+                  }}
                 />
                             }
               value={pdsaEntry.step}
@@ -201,23 +235,26 @@ const DownloadPage: React.FC = () => {
                   ...pdsaEntry,
                   learnt: txt
                 })
+                setDisabledSave(true)
               }}
               placeholder='Learnt'
               right={
                 <TextInput.Icon
                   name='trash-outline'
-                  onPress={() =>
+                  onPress={() => {
                     setPdsaEntry({
                       ...pdsaEntry,
                       learnt: ''
-                    })}
+                    })
+                    setDisabledSave(true)
+                  }}
                 />
-                            }
+              }
               value={pdsaEntry.learnt}
             />
           </TkCardContent>
         </TkCard>
-      </ScrollView>
+      </PageContainer>
     </>
   )
 }

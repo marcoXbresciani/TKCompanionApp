@@ -57,23 +57,51 @@
         }
     },
     "calendar": {
-      "monthNames": [ "Janvier",
-        "Février",
-        "Mars",
-        "Avril",
-        "Mai",
-        "Juin",
-        "Juillet",
-        "Août",
-        "Septembre",
-        "Octobre",
-        "Novembre",
-        "Décembre"
-      ],
-      "monthNamesShort": ["Janv.", "Févr.", "Mars", "Avril", "Mai", "Juin", "Juil.", "Août", "Sept.", "Oct.", "Nov.", "Déc."],
-      "dayNames": ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
-      "dayNamesShort": ["Dim.", "Lun.", "Mar.", "Mer.", "Jeu.", "Ven.", "Sam."],
-      "today": "Aujourd'hui"
+        "monthNames": [
+            null,
+            "Février",
+            null,
+            "Avril",
+            null,
+            "Juin",
+            null,
+            "Août",
+            null,
+            "Octobre",
+            null,
+            "Décembre"
+        ],
+        "monthNamesShort": [
+            null,
+            "Févr.",
+            null,
+            "Avril",
+            null,
+            "Juin",
+            null,
+            "Août",
+            null,
+            "Oct.",
+            null,
+            "Déc."
+        ],
+        "dayNames": [
+            null,
+            "Lundi",
+            null,
+            "Mercredi",
+            null,
+            "Vendredi"
+        ],
+        "dayNamesShort": [
+            "Dim.",
+            null,
+            "Mar.",
+            null,
+            "Jeu.",
+            null,
+            "Sam."
+        ]
     },
     "docs": {
         "4steps": "4 étapes",

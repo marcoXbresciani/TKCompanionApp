@@ -49,7 +49,7 @@ implements ComposableKey, Storage<T> {
     await this.baseStorage.write(fullKey, value.toString())
   }
 
-  async read (key: string): Promise<string> {
+  async read (key: string): Promise<string | null> {
     const fullKey = this.getFullKey(key)
     return await this.baseStorage.read(fullKey)
   }

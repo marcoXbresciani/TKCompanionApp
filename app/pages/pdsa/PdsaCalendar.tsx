@@ -27,13 +27,15 @@ import { Calendar } from 'react-native-calendars/src'
 interface Props {
   day: string
   setDay: React.Dispatch<React.SetStateAction<string>>
+  markedDates: { [key: string]: object }
   visible: boolean
   setVisible: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const PdsaCalendar: ({ day, setDay }: Props) => JSX.Element = ({
+const PdsaCalendar: ({ day, setDay, markedDates }: Props) => JSX.Element = ({
   day,
   setDay,
+  markedDates,
   visible,
   setVisible
 }: Props) => {
@@ -45,12 +47,18 @@ const PdsaCalendar: ({ day, setDay }: Props) => JSX.Element = ({
       >
         <Dialog.Content>
           <Calendar
+            allowSelectionOutOfRange={false}
+            disableArrowLeft={false}
+            disableArrowRight={false}
+            firstDay={1}
             initialDate={day}
+            markedDates={markedDates}
+            markingType='dot'
             onDayPress={date => {
               setDay(date.dateString)
               setVisible(false)
             }}
-            allowSelectionOutOfRange={false}
+            showWeekNumbers={false}
           />
         </Dialog.Content>
       </Dialog>

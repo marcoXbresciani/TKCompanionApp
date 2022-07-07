@@ -25,7 +25,7 @@ import { StorableValue } from './StorableValue'
 export interface Storage<T extends StorableValue> {
   write: (key: string, value: T) => Promise<void>
 
-  read: (key: string) => Promise<string>
-
   remove: (key: string) => Promise<void>
+
+  read: (key: string) => Promise<string | null>
 }

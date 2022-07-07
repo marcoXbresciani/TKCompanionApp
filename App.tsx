@@ -25,7 +25,9 @@ import { Provider as PaperProvider } from 'react-native-paper'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import { isDark } from './app/utils/Functions'
 import StorageFactory from './app/utils/storage/StorageFactory'
-import { AllowedSettings } from './app/utils/storage/settings/AllowedSettings'
+import {
+  AllowedSettings
+} from './app/utils/storage/settings/AllowedSettings'
 import { PreferencesContext } from './app/utils/Constants'
 import TkNavigator from './app/components/TkNavigator'
 import i18n from './app/i18n/i18n'
@@ -48,12 +50,14 @@ const App: React.FunctionComponent = () => {
     [toggleTheme, isThemeDark]
   )
 
-  void StorageFactory.getInstance().getSettingsStorage()
+  const settingsStorage = StorageFactory.getInstance().getSettingsStorage()
+
+  void settingsStorage
     .read(AllowedSettings.DARK_THEME)
     .then((r) => setIsThemeDark(r === 'true'))
     .catch(() => setIsThemeDark(false))
 
-  void StorageFactory.getInstance().getSettingsStorage()
+  void settingsStorage
     .read(AllowedSettings.LANGUAGE)
     .then((r) => {
       void i18n.changeLanguage(r)

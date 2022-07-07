@@ -20,8 +20,22 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-export enum AllowedSettings {
-  DARK_THEME = 'dark',
-  FIRST_RUN = 'opening',
-  LANGUAGE = 'language',
+import GenericStorage from '../GenericStorage'
+import { StorableValue } from '../StorableValue'
+import { Journal } from './Journal'
+
+class JournalStorage extends GenericStorage<StorableValue> {
+  getRoot (): string {
+    return 'settings'
+  }
+
+  override async write (key: string, value: Journal): Promise<void> {
+    void super.write(key, JSON.stringify(value))
+  }
+
+  override async read (key: string): Promise<string | null> {
+    return await super.read(key)
+  }
 }
+
+export default JournalStorage

@@ -25,3 +25,7 @@ import { Appearance } from 'react-native'
 export function isDark (): boolean {
   return Appearance.getColorScheme() === 'dark'
 }
+
+export const getTodayIso8601 = (): string => {
+  return new Date().toISOString().substring(0, 10)
+}

@@ -22,6 +22,7 @@
  */
 import GenericStorage from '../GenericStorage'
 import { AllowedSettings } from './AllowedSettings'
+import StoredItem from '../StoredItem'
 
 class SettingsStorage extends GenericStorage<string> {
   getRoot (): string {
@@ -32,7 +33,7 @@ class SettingsStorage extends GenericStorage<string> {
     return await super.write(key, value)
   }
 
-  override async read (key: AllowedSettings): Promise<string> {
+  override async read (key: AllowedSettings): Promise<StoredItem> {
     return await super.read(key)
   }
 

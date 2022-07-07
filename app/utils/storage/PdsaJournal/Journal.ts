@@ -20,8 +20,6 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-export enum AllowedSettings {
-  DARK_THEME = 'dark',
-  FIRST_RUN = 'opening',
-  LANGUAGE = 'language',
-}
+import pdsaEntry from '../pdsa/PdsaEntry'
+
+export type Journal = {[date:string]: pdsaEntry}

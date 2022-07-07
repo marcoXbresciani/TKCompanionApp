@@ -32,13 +32,16 @@ import { TkCard } from '../../components/tkcard/TkCard'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
 import PageContainer from '../docs/PageContainer'
 import PdsaCalendar from './PdsaCalendar'
-
-const getTodayIso8601 = (): string => {
-  return new Date().toISOString().substring(0, 10)
-}
+import { getTodayIso8601 } from '../../utils/Functions'
+import { Journal } from '../../utils/storage/PdsaJournal/Journal'
+import { ScrollView } from 'react-native'
 
 const DownloadPage: React.FC = () => {
   const pdsaStorage = StorageFactory.getInstance().getPdsaStorage()
+  const journalStorage = StorageFactory.getInstance().getJournalStorage()
+
+  pdsaStorage.read('PDSA')
+    .then(value => console.log(`>>> ${value}`))
 
   const [day, setDay] = React.useState(getTodayIso8601())
   const [disabledSave, setDisabledSave] = React.useState(true)
@@ -46,20 +49,25 @@ const DownloadPage: React.FC = () => {
   const [visibleDialog, setVisibleDialog] = React.useState(false)
 
   useEffect(() => {
-    pdsaStorage
-      .read(`PDSA.${day}`)
-      .then((entryString) => {
-        const parse: PdsaEntry = JSON.parse(entryString)
-        setPdsaEntry(parse)
-      })
-      .catch(() => setPdsaEntry(new PdsaEntry()))
-  }, [pdsaStorage, day])
+    journalStorage.read('PDSA').then(value => {
+      let journal: Journal = { };
+
+      if (value == null) {
+        setPdsaEntry(new PdsaEntry())
+        journal[day] = pdsaEntry
+      } else {
+        journal = JSON.parse(value)
+        setPdsaEntry(journal[day])
+      }
+    }).finally(() => setDisabledSave(true))
+  }, [day])
 
   return (
     <>
       <PdsaCalendar
         day={day}
         setDay={setDay}
+        markedDates={{ '`${getTodayIso8601()}`': { selected: true, marked: false } }}
         visible={visibleDialog}
         setVisible={setVisibleDialog}
       />
@@ -82,7 +90,9 @@ const DownloadPage: React.FC = () => {
           icon='save-outline'
           disabled={disabledSave}
           onPress={() => {
-            void pdsaStorage.write(`PDSA.${day}`, pdsaEntry)
+            const journal: Journal = void journalStorage.read('PDSA') as unknown as Journal
+            journal[day] = pdsaEntry
+            void journalStorage.write('PDSA', journal)
             setDisabledSave(true)
           }}
         />
@@ -96,165 +106,168 @@ const DownloadPage: React.FC = () => {
           }}
         />
       </Appbar>
-      <PageContainer>
-        <TkCard>
-          <TkCardTitle
-            title={`${i18n.t('pdsa.title')}`}
-            titleNumberOfLines={2}
-            subtitle={day}
-          />
-          <TkCardContent>
-            <TkParagraph>{`${i18n.t(
-                            'pdsa.q1'
-                        )}`}
-            </TkParagraph>
-            <TextInput
-              label='Target'
-              mode='outlined'
-              multiline
-              onChangeText={(txt) => {
-                setPdsaEntry({
-                  ...pdsaEntry,
-                  target: txt
-                })
-                setDisabledSave(false)
-              }}
-              placeholder='Target'
-              right={
-                <TextInput.Icon
-                  name='trash-outline'
-                  onPress={() => {
-                    setPdsaEntry({
-                      ...pdsaEntry,
-                      target: ''
-                    })
-                    setDisabledSave(false)
-                  }}
-                />
-                            }
-              value={pdsaEntry.target}
+
+      <ScrollView>
+        <PageContainer>
+          <TkCard>
+            <TkCardTitle
+              title={`${i18n.t('pdsa.title')}`}
+              titleNumberOfLines={2}
+              subtitle={day}
             />
-            <TkParagraph>{`${i18n.t(
-                            'pdsa.q2'
-                        )}`}
-            </TkParagraph>
-            <TextInput
-              label='Actual'
-              mode='outlined'
-              multiline
-              onChangeText={(txt) => {
-                setPdsaEntry({
-                  ...pdsaEntry,
-                  actual: txt
-                })
-                setDisabledSave(false)
-              }}
-              placeholder='Actual'
-              right={
-                <TextInput.Icon
-                  name='trash-outline'
-                  onPress={() =>
-                    setPdsaEntry({
-                      ...pdsaEntry,
-                      actual: ''
-                    })}
-                />
-                            }
-              value={pdsaEntry.actual}
-            />
-            <TkParagraph>{`${i18n.t(
-                            'pdsa.q3'
-                        )}`}
-            </TkParagraph>
-            <TextInput
-              label='Obstacle'
-              mode='outlined'
-              multiline
-              onChangeText={(txt) => {
-                setPdsaEntry({
-                  ...pdsaEntry,
-                  obstacle: txt
-                })
-                setDisabledSave(false)
-              }}
-              placeholder='Obstacle'
-              right={
-                <TextInput.Icon
-                  name='trash-outline'
-                  onPress={() => {
-                    setPdsaEntry({
-                      ...pdsaEntry,
-                      obstacle: ''
-                    })
-                    setDisabledSave(false)
-                  }}
-                />
-                            }
-              value={pdsaEntry.obstacle}
-            />
-            <TkParagraph>{`${i18n.t(
-                            'pdsa.q4'
-                        )}`}
-            </TkParagraph>
-            <TextInput
-              label='Step'
-              mode='outlined'
-              multiline
-              onChangeText={(txt) => {
-                setPdsaEntry({
-                  ...pdsaEntry,
-                  step: txt
-                })
-                setDisabledSave(false)
-              }}
-              placeholder='Step'
-              right={
-                <TextInput.Icon
-                  name='trash-outline'
-                  onPress={() => {
-                    setPdsaEntry({
-                      ...pdsaEntry,
-                      step: ''
-                    })
-                    setDisabledSave(false)
-                  }}
-                />
-                            }
-              value={pdsaEntry.step}
-            />
-            <TkParagraph>{`${i18n.t(
-                            'pdsa.q5'
-                        )}`}
-            </TkParagraph>
-            <TextInput
-              label='Learnt'
-              mode='outlined'
-              multiline
-              onChangeText={(txt) => {
-                setPdsaEntry({
-                  ...pdsaEntry,
-                  learnt: txt
-                })
-                setDisabledSave(true)
-              }}
-              placeholder='Learnt'
-              right={
-                <TextInput.Icon
-                  name='trash-outline'
-                  onPress={() => {
-                    setPdsaEntry({
-                      ...pdsaEntry,
-                      learnt: ''
-                    })
-                    setDisabledSave(true)
-                  }}
-                />
-              }
-              value={pdsaEntry.learnt}
-            />
-          </TkCardContent>
-        </TkCard>
-      </PageContainer>
+            <TkCardContent>
+              <TkParagraph>{`${i18n.t(
+                              'pdsa.q1'
+                          )}`}
+              </TkParagraph>
+              <TextInput
+                label='Target'
+                mode='outlined'
+                multiline
+                onChangeText={(txt) => {
+                  setPdsaEntry({
+                    ...pdsaEntry,
+                    target: txt
+                  })
+                  setDisabledSave(false)
+                }}
+                placeholder='Target'
+                right={
+                  <TextInput.Icon
+                    name='trash-outline'
+                    onPress={() => {
+                      setPdsaEntry({
+                        ...pdsaEntry,
+                        target: ''
+                      })
+                      setDisabledSave(false)
+                    }}
+                  />
+                              }
+                value={pdsaEntry.target}
+              />
+              <TkParagraph>{`${i18n.t(
+                              'pdsa.q2'
+                          )}`}
+              </TkParagraph>
+              <TextInput
+                label='Actual'
+                mode='outlined'
+                multiline
+                onChangeText={(txt) => {
+                  setPdsaEntry({
+                    ...pdsaEntry,
+                    actual: txt
+                  })
+                  setDisabledSave(false)
+                }}
+                placeholder='Actual'
+                right={
+                  <TextInput.Icon
+                    name='trash-outline'
+                    onPress={() =>
+                      setPdsaEntry({
+                        ...pdsaEntry,
+                        actual: ''
+                      })}
+                  />
+                              }
+                value={pdsaEntry.actual}
+              />
+              <TkParagraph>{`${i18n.t(
+                              'pdsa.q3'
+                          )}`}
+              </TkParagraph>
+              <TextInput
+                label='Obstacle'
+                mode='outlined'
+                multiline
+                onChangeText={(txt) => {
+                  setPdsaEntry({
+                    ...pdsaEntry,
+                    obstacle: txt
+                  })
+                  setDisabledSave(false)
+                }}
+                placeholder='Obstacle'
+                right={
+                  <TextInput.Icon
+                    name='trash-outline'
+                    onPress={() => {
+                      setPdsaEntry({
+                        ...pdsaEntry,
+                        obstacle: ''
+                      })
+                      setDisabledSave(false)
+                    }}
+                  />
+                              }
+                value={pdsaEntry.obstacle}
+              />
+              <TkParagraph>{`${i18n.t(
+                              'pdsa.q4'
+                          )}`}
+              </TkParagraph>
+              <TextInput
+                label='Step'
+                mode='outlined'
+                multiline
+                onChangeText={(txt) => {
+                  setPdsaEntry({
+                    ...pdsaEntry,
+                    step: txt
+                  })
+                  setDisabledSave(false)
+                }}
+                placeholder='Step'
+                right={
+                  <TextInput.Icon
+                    name='trash-outline'
+                    onPress={() => {
+                      setPdsaEntry({
+                        ...pdsaEntry,
+                        step: ''
+                      })
+                      setDisabledSave(false)
+                    }}
+                  />
+                              }
+                value={pdsaEntry.step}
+              />
+              <TkParagraph>{`${i18n.t(
+                              'pdsa.q5'
+                          )}`}
+              </TkParagraph>
+              <TextInput
+                label='Learnt'
+                mode='outlined'
+                multiline
+                onChangeText={(txt) => {
+                  setPdsaEntry({
+                    ...pdsaEntry,
+                    learnt: txt
+                  })
+                  setDisabledSave(true)
+                }}
+                placeholder='Learnt'
+                right={
+                  <TextInput.Icon
+                    name='trash-outline'
+                    onPress={() => {
+                      setPdsaEntry({
+                        ...pdsaEntry,
+                        learnt: ''
+                      })
+                      setDisabledSave(true)
+                    }}
+                  />
+                }
+                value={pdsaEntry.learnt}
+              />
+            </TkCardContent>
+          </TkCard>
+        </PageContainer>
+      </ScrollView>
     </>
   )
 }

@@ -24,11 +24,13 @@ import TkStorage from './TkStorage'
 import SimpleKey from './SimpleKey'
 import SettingsStorage from './settings/SettingsStorage'
 import PdsaStorage from './pdsa/PdsaStorage'
+import JournalStorage from './PdsaJournal/JournalStorage'
 
 class StorageFactory {
   private static instance: StorageFactory
   private static tkStorage: TkStorage
   private static settingsStorage: SettingsStorage
+  private static journalStorage: JournalStorage
   private static pdsaStorage: PdsaStorage
 
   private constructor () {}
@@ -57,6 +59,16 @@ class StorageFactory {
     }
 
     return StorageFactory.settingsStorage
+  }
+
+  getJournalStorage (): JournalStorage {
+    if (StorageFactory.journalStorage === undefined) {
+      StorageFactory.journalStorage = new JournalStorage(
+        new TkStorage(new SimpleKey())
+      )
+    }
+
+    return StorageFactory.journalStorage
   }
 
   getPdsaStorage (): PdsaStorage {

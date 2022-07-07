@@ -102,13 +102,12 @@
             "Venerdì"
         ],
         "dayNamesShort": [
-            "Dom",
             null,
-            "Mar",
             null,
-            "Gio",
             null,
-            "Sab"
+            null,
+            null,
+            null
         ]
     },
     "docs": {

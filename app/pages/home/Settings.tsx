@@ -29,7 +29,6 @@ import { AllowedSettings } from '../../utils/storage/settings/AllowedSettings'
 import { PreferencesContext } from '../../utils/Constants'
 import i18n from '../../i18n/i18n'
 import { TkText } from '../../components/TkText'
-import { LocaleConfig } from 'react-native-calendars/src'
 
 const RowView = styled(View)`
     flex-direction: row;
@@ -72,7 +71,6 @@ const Settings: React.FunctionComponent = () => {
             title='Deutsch'
             onPress={() => {
               void i18n.changeLanguage('de').then()
-              LocaleConfig.defaultLocale('de')
               void storage
                 .write(AllowedSettings.LANGUAGE, 'de')
                 .then()
@@ -85,7 +83,6 @@ const Settings: React.FunctionComponent = () => {
             title='English'
             onPress={() => {
               void i18n.changeLanguage('en').then()
-              LocaleConfig.defaultLocale('en')
               void storage
                 .write(AllowedSettings.LANGUAGE, 'en')
                 .then()
@@ -98,7 +95,6 @@ const Settings: React.FunctionComponent = () => {
             title='Français'
             onPress={() => {
               void i18n.changeLanguage('fr').then()
-              LocaleConfig.defaultLocale('fr')
               void storage
                 .write(AllowedSettings.LANGUAGE, 'fr')
                 .then()
@@ -111,7 +107,6 @@ const Settings: React.FunctionComponent = () => {
             title='Italiano'
             onPress={() => {
               void i18n.changeLanguage('it-IT').then()
-              LocaleConfig.defaultLocale('it-IT')
               void storage
                 .write(
                   AllowedSettings.LANGUAGE,
@@ -127,7 +122,6 @@ const Settings: React.FunctionComponent = () => {
             title='Norsk (Bokmål)'
             onPress={() => {
               void i18n.changeLanguage('nb-NO').then()
-              LocaleConfig.defaultLocale('nb-NO')
               void storage
                 .write(
                   AllowedSettings.LANGUAGE,

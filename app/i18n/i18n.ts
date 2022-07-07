@@ -28,7 +28,6 @@ import en from './en.json'
 import fr from './fr.json'
 import itIT from './it-IT.json'
 import nbNO from './nb_NO.json'
-import { LocaleConfig } from 'react-native-calendars/src'
 
 let appleLocale
 
@@ -68,10 +67,5 @@ void i18n.init({
   nonExplicitSupportedLngs: true,
   resources
 })
-
-LocaleConfig.locales.it = itIT.calendar
-LocaleConfig.locales.fr = fr.calendar
-
-LocaleConfig.defaultLocale = i18n.language
 
 export default i18n

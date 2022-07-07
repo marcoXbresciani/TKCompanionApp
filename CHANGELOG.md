@@ -27,9 +27,6 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
-* Basic daily PDSA with save, read and delete.
-  Now you can choose a day, read/write/modify your own PDSA notes, save
-  them and delete the whole day if needed.
 ### Changed
 ### Removed
 ### Fixed

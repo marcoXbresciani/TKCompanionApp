@@ -32,6 +32,10 @@ This file is offered as-is, without any warranty.
 ### Fixed
 ### Security
 
+## [3.0.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/3.0.1) - 2022-07-07
+### Added
+* Alert on calendar click for PDSA WIP status page.
+
 ## [3.0.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/3.0.0) - 2022-06-28
 ### Added
 * Save and restore selected language.

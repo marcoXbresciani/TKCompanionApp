@@ -94,13 +94,12 @@
             "Vendredi"
         ],
         "dayNamesShort": [
-            "Dim.",
             null,
-            "Mar.",
             null,
-            "Jeu.",
             null,
-            "Sam."
+            null,
+            null,
+            null
         ]
     },
     "docs": {

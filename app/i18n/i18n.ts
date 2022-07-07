@@ -69,8 +69,9 @@ void i18n.init({
   resources
 })
 
-LocaleConfig.locales['it-IT'] = itIT.calendar
+LocaleConfig.locales.it = itIT.calendar
 LocaleConfig.locales.fr = fr.calendar
+
 LocaleConfig.defaultLocale = i18n.language
 
 export default i18n

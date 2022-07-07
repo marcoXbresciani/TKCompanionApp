@@ -67,7 +67,6 @@ const DownloadPage: React.FC = () => {
           }}
         />
         <Appbar.Action
-          disabled
           icon='calendar-outline'
           onPress={() => setVisibleWip(true)}
         />

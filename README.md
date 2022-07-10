@@ -87,7 +87,7 @@ for a Google Developer Account, and it's even
 [$99/year](https://developer.apple.com/support/enrollment/) (!) for the
 Apple Developer Program.
 
-So, for now, you can find this app only through the
+So (for now?) you can find this app only through the
 [F-Droid](https://f-droid.org/) _installable catalogue of FOSS (Free and
 Open Source Software) applications for the Android platform_.
 
@@ -161,11 +161,6 @@ You can keep in touch with the author through:
 * as <a rel="me" href="https://fosstodon.org/@AAMfP">@AAMfP</a> on
   [Fosstodon](https://fosstodon.org), a
   [Mastodon](https://joinmastodon.org/) instance.
-* [Briar](https://briarproject.org/), with the link
-  ```text
-  briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
-  ```
-  to be copy-pasted as "contact at a distance" in Briar.
 
 ### Translations
 * [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/nb_NO/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/nb_NO/)

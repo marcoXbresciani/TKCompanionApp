@@ -88,7 +88,7 @@ per un account sviluppatore Google, ed è pari a
 [$99/anno](https://developer.apple.com/support/enrollment/) (!) per il
 Programma per Sviluppatori Apple.
 
-Quindi, per ora, questa app si trova solo su
+Quindi (per ora?) questa app si trova solo su
 [F-Droid](https://f-droid.org/), il _catalogo installabile di FOSS
 (Software libero e open source) per la piattaforma Android_.
 
@@ -165,11 +165,6 @@ Lo stesso per questo documento.
 * Come <a rel="me" href="https://fosstodon.org/@AAMfP">@AAMfP</a>, su
   [Fosstodon](https://fosstodon.org), un'istanza di
   [Mastodon](https://joinmastodon.org/).
-* [Briar](https://briarproject.org/), con il link
-  ```text
-  briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
-  ```
-  da copiare e aggiungere come "contatto distante" in Briar.
 
 ### Traduzioni
 * [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/nb_NO/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/nb_NO/)

@@ -31,6 +31,7 @@ This file is offered as-is, without any warranty.
   Now you can choose a day, read/write/modify your own PDSA notes, save
   them and delete the whole day if needed.
 ### Changed
+* Updated NodeJS to LTS v16.16.0.
 ### Removed
 ### Fixed
 ### Security

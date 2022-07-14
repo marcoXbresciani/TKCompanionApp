@@ -60,7 +60,7 @@ const App: React.FunctionComponent = () => {
   void settingsStorage
     .read(AllowedSettings.LANGUAGE)
     .then((r) => {
-      void i18n.changeLanguage(r)
+      void i18n.changeLanguage(r ?? i18n.options.lng)
     })
     .catch(() => {
       void i18n.changeLanguage(i18n.options.lng)

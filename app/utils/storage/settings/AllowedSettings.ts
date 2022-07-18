@@ -22,6 +22,5 @@
  */
 export enum AllowedSettings {
   DARK_THEME = 'dark',
-  FIRST_RUN = 'opening',
   LANGUAGE = 'language',
 }

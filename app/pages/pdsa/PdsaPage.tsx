@@ -22,7 +22,7 @@
  */
 import * as React from 'react'
 import { useEffect } from 'react'
-import { Appbar, TextInput } from 'react-native-paper'
+import { Appbar, TextInput, useTheme } from 'react-native-paper'
 import PdsaEntry from '../../utils/storage/pdsa/PdsaEntry'
 import StorageFactory from '../../utils/storage/StorageFactory'
 import i18n from '../../i18n/i18n'
@@ -37,37 +37,45 @@ import { Journal } from '../../utils/storage/PdsaJournal/Journal'
 import { ScrollView } from 'react-native'
 
 const DownloadPage: React.FC = () => {
-  const pdsaStorage = StorageFactory.getInstance().getPdsaStorage()
+  const selectionColour = useTheme().colors.accent
+  const dotColour = useTheme().colors.primary
   const journalStorage = StorageFactory.getInstance().getJournalStorage()
-
-  pdsaStorage.read('PDSA')
-    .then(value => console.log(`>>> ${value}`))
-
   const [day, setDay] = React.useState(getTodayIso8601())
   const [disabledSave, setDisabledSave] = React.useState(true)
   const [pdsaEntry, setPdsaEntry] = React.useState(new PdsaEntry())
   const [visibleDialog, setVisibleDialog] = React.useState(false)
 
+  const markedDates: { [key: string]: object } = {}
+
   useEffect(() => {
     journalStorage.read('PDSA').then(value => {
-      let journal: Journal = { };
+      let journal: Journal = {}
 
-      if (value == null) {
+      if ((value == null) || (value === '') || (value === '{}')) {
         setPdsaEntry(new PdsaEntry())
         journal[day] = pdsaEntry
       } else {
         journal = JSON.parse(value)
-        setPdsaEntry(journal[day])
+
+        Object.keys(journal).forEach(key => { markedDates[key] = { marked: true, dotColor: dotColour } })
+
+        if (journal[day] === undefined) {
+          setPdsaEntry(new PdsaEntry())
+        } else {
+          setPdsaEntry(journal[day])
+        }
       }
     }).finally(() => setDisabledSave(true))
   }, [day])
+
+  markedDates[day] = { ...markedDates[day], selected: true, selectedColor: selectionColour }
 
   return (
     <>
       <PdsaCalendar
         day={day}
         setDay={setDay}
-        markedDates={{ '`${getTodayIso8601()}`': { selected: true, marked: false } }}
+        markedDates={markedDates}
         visible={visibleDialog}
         setVisible={setVisibleDialog}
       />
@@ -90,19 +98,32 @@ const DownloadPage: React.FC = () => {
           icon='save-outline'
           disabled={disabledSave}
           onPress={() => {
-            const journal: Journal = void journalStorage.read('PDSA') as unknown as Journal
-            journal[day] = pdsaEntry
-            void journalStorage.write('PDSA', journal)
-            setDisabledSave(true)
+            void journalStorage.read('PDSA').then(value => {
+              let journal: Journal = {}
+
+              if (value != null) {
+                journal = JSON.parse(value)
+              }
+              journal[day] = pdsaEntry
+              void journalStorage.write('PDSA', journal)
+              setDisabledSave(true)
+            })
           }}
         />
         <Appbar.Action
           icon='trash-outline'
           disabled={!disabledSave}
           onPress={() => {
-            void pdsaStorage.remove(`PDSA.${day}`)
-            setPdsaEntry(new PdsaEntry())
-            setDisabledSave(true)
+            void journalStorage.read('PDSA').then(value => {
+              let journal: Journal = {}
+              if (value != null) {
+                journal = JSON.parse(value)
+              }
+              setPdsaEntry(new PdsaEntry())
+              journal[day] = undefined as unknown as PdsaEntry
+              void journalStorage.write('PDSA', journal)
+              setDisabledSave(true)
+            })
           }}
         />
       </Appbar>
@@ -117,8 +138,8 @@ const DownloadPage: React.FC = () => {
             />
             <TkCardContent>
               <TkParagraph>{`${i18n.t(
-                              'pdsa.q1'
-                          )}`}
+                'pdsa.q1'
+              )}`}
               </TkParagraph>
               <TextInput
                 label='Target'
@@ -143,12 +164,10 @@ const DownloadPage: React.FC = () => {
                       setDisabledSave(false)
                     }}
                   />
-                              }
+                }
                 value={pdsaEntry.target}
               />
-              <TkParagraph>{`${i18n.t(
-                              'pdsa.q2'
-                          )}`}
+              <TkParagraph>{`${i18n.t('pdsa.q2')}`}
               </TkParagraph>
               <TextInput
                 label='Actual'
@@ -171,12 +190,10 @@ const DownloadPage: React.FC = () => {
                         actual: ''
                       })}
                   />
-                              }
+                }
                 value={pdsaEntry.actual}
               />
-              <TkParagraph>{`${i18n.t(
-                              'pdsa.q3'
-                          )}`}
+              <TkParagraph>{`${i18n.t('pdsa.q3')}`}
               </TkParagraph>
               <TextInput
                 label='Obstacle'
@@ -201,12 +218,10 @@ const DownloadPage: React.FC = () => {
                       setDisabledSave(false)
                     }}
                   />
-                              }
+                }
                 value={pdsaEntry.obstacle}
               />
-              <TkParagraph>{`${i18n.t(
-                              'pdsa.q4'
-                          )}`}
+              <TkParagraph>{`${i18n.t('pdsa.q4')}`}
               </TkParagraph>
               <TextInput
                 label='Step'
@@ -231,12 +246,10 @@ const DownloadPage: React.FC = () => {
                       setDisabledSave(false)
                     }}
                   />
-                              }
+                }
                 value={pdsaEntry.step}
               />
-              <TkParagraph>{`${i18n.t(
-                              'pdsa.q5'
-                          )}`}
+              <TkParagraph>{`${i18n.t('pdsa.q5')}`}
               </TkParagraph>
               <TextInput
                 label='Learnt'

@@ -22,4 +22,4 @@
  */
 import pdsaEntry from '../pdsa/PdsaEntry'
 
-export type Journal = {[date:string]: pdsaEntry}
+export interface Journal {[date: string]: pdsaEntry}

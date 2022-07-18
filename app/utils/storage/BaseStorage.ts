@@ -40,7 +40,7 @@ class BaseStorage implements Storage<string> {
   }
 
   async read (key: string): Promise<string | null> {
-    let result = null;
+    let result = null
     try {
       result = await EncryptedStorage.getItem(key)
     } catch (error) {

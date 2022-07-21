@@ -14,10 +14,13 @@ SPDX-License-Identifier: FSFAP
 
 ## Known Security Issues
 
-* **Improper Neutralization of Special Elements used in a Command in Shell-quote**
-  * Opened on *shell-quote*
-  * Weaknesses: CWE-77
-  * CVE ID: CVE-2021-42740
+> NO KNOWN SECURITY ISSUES @ 2022-07-21
+
+For more information
+If you have any questions or comments about this advisory:
+
+Open an issue in node-fetch
+Contact one of the core maintainers.
 
 ## Supported Versions
 Generally the latest version is the only one supported with updates

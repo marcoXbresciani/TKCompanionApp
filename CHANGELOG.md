@@ -27,14 +27,19 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
-* Basic daily PDSA with save, read and delete.
-  Now you can choose a day, read/write/modify your own PDSA notes, save
-  them and delete the whole day if needed.
 ### Changed
-* Updated NodeJS to LTS v16.16.0.
 ### Removed
 ### Fixed
 ### Security
+
+## [3.1.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/3.1.0) - 2022-07-21
+### Added
+* Basic daily PDSA with save, read and delete.
+  Now you can choose a day, read/write/modify your own PDSA notes, save
+  or delete them or even delete the whole day, if needed.
+  Plus a button for the current day.
+### Changed
+* Updated NodeJS to LTS v16.16.0.
 
 ## [3.0.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/3.0.1) - 2022-07-07
 ### Added

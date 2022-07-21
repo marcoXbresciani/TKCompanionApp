@@ -46,7 +46,7 @@ const DownloadPage: React.FC = () => {
   const [pdsaEntry, setPdsaEntry] = React.useState(new PdsaEntry())
   const [visibleDialog, setVisibleDialog] = React.useState(false)
   const [visibleSnack, setVisibleSnack] = React.useState(false)
-  const [snackMessage, setSnackMessage] = React.useState("")
+  const [snackMessage, setSnackMessage] = React.useState('')
 
   const markedDates: { [key: string]: object } = {}
 

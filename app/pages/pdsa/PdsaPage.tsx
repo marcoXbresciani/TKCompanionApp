@@ -35,6 +35,7 @@ import PdsaCalendar from './PdsaCalendar'
 import { getTodayIso8601 } from '../../utils/Functions'
 import { Journal } from '../../utils/storage/PdsaJournal/Journal'
 import { ScrollView } from 'react-native'
+import TkSnackbar from '../../components/TkSnackbar'
 
 const DownloadPage: React.FC = () => {
   const selectionColour = useTheme().colors.accent
@@ -44,6 +45,8 @@ const DownloadPage: React.FC = () => {
   const [disabledSave, setDisabledSave] = React.useState(true)
   const [pdsaEntry, setPdsaEntry] = React.useState(new PdsaEntry())
   const [visibleDialog, setVisibleDialog] = React.useState(false)
+  const [visibleSnack, setVisibleSnack] = React.useState(false)
+  const [snackMessage, setSnackMessage] = React.useState("")
 
   const markedDates: { [key: string]: object } = {}
 
@@ -98,6 +101,7 @@ const DownloadPage: React.FC = () => {
           icon='save-outline'
           disabled={disabledSave}
           onPress={() => {
+            setSnackMessage(`Saved ${day}.`)
             void journalStorage.read('PDSA').then(value => {
               let journal: Journal = {}
 
@@ -107,6 +111,7 @@ const DownloadPage: React.FC = () => {
               journal[day] = pdsaEntry
               void journalStorage.write('PDSA', journal)
               setDisabledSave(true)
+              setVisibleSnack(true)
             })
           }}
         />
@@ -114,6 +119,7 @@ const DownloadPage: React.FC = () => {
           icon='trash-outline'
           disabled={!disabledSave}
           onPress={() => {
+            setSnackMessage(`Deleted ${day}.`)
             void journalStorage.read('PDSA').then(value => {
               let journal: Journal = {}
               if (value != null) {
@@ -123,6 +129,7 @@ const DownloadPage: React.FC = () => {
               journal[day] = undefined as unknown as PdsaEntry
               void journalStorage.write('PDSA', journal)
               setDisabledSave(true)
+              setVisibleSnack(true)
             })
           }}
         />
@@ -157,11 +164,13 @@ const DownloadPage: React.FC = () => {
                   <TextInput.Icon
                     name='trash-outline'
                     onPress={() => {
+                      setSnackMessage(`Deleted ${day} Target.`)
                       setPdsaEntry({
                         ...pdsaEntry,
                         target: ''
                       })
                       setDisabledSave(false)
+                      setVisibleSnack(true)
                     }}
                   />
                 }
@@ -184,11 +193,14 @@ const DownloadPage: React.FC = () => {
                 right={
                   <TextInput.Icon
                     name='trash-outline'
-                    onPress={() =>
+                    onPress={() => {
+                      setSnackMessage(`Deleted ${day} Actual.`)
                       setPdsaEntry({
                         ...pdsaEntry,
                         actual: ''
-                      })}
+                      })
+                      setVisibleSnack(true)
+                    }}
                   />
                 }
                 value={pdsaEntry.actual}
@@ -211,11 +223,13 @@ const DownloadPage: React.FC = () => {
                   <TextInput.Icon
                     name='trash-outline'
                     onPress={() => {
+                      setSnackMessage(`Deleted ${day} Obstacle.`)
                       setPdsaEntry({
                         ...pdsaEntry,
                         obstacle: ''
                       })
                       setDisabledSave(false)
+                      setVisibleSnack(true)
                     }}
                   />
                 }
@@ -239,11 +253,13 @@ const DownloadPage: React.FC = () => {
                   <TextInput.Icon
                     name='trash-outline'
                     onPress={() => {
+                      setSnackMessage(`Deleted ${day} Step.`)
                       setPdsaEntry({
                         ...pdsaEntry,
                         step: ''
                       })
                       setDisabledSave(false)
+                      setVisibleSnack(true)
                     }}
                   />
                 }
@@ -267,11 +283,13 @@ const DownloadPage: React.FC = () => {
                   <TextInput.Icon
                     name='trash-outline'
                     onPress={() => {
+                      setSnackMessage(`Deleted ${day} Learnt.`)
                       setPdsaEntry({
                         ...pdsaEntry,
                         learnt: ''
                       })
                       setDisabledSave(true)
+                      setVisibleSnack(true)
                     }}
                   />
                 }
@@ -281,6 +299,8 @@ const DownloadPage: React.FC = () => {
           </TkCard>
         </PageContainer>
       </ScrollView>
+
+      <TkSnackbar message={snackMessage} visible={visibleSnack} setVisible={setVisibleSnack} />
     </>
   )
 }

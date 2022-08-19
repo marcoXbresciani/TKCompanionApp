@@ -40,6 +40,16 @@ import TkSnackbar from '../../components/TkSnackbar'
 const DownloadPage: React.FC = () => {
   const selectionColour = useTheme().colors.accent
   const dotColour = useTheme().colors.primary
+  const coloursDay = { color: dotColour, selectedDotColor: selectionColour }
+  const marked = { marked: true }
+  const unMarked = { marked: false }
+  const selected = { selected: true }
+  const unSelected = { selected: false }
+
+  const markedDay = { ...coloursDay, ...marked, ...unSelected }
+  const markedSelectedDay = { ...coloursDay, ...marked, ...selected }
+  const unmarkedSelectedDay = { ...coloursDay, ...unMarked, ...selected }
+
   const journalStorage = StorageFactory.getInstance().getJournalStorage()
   const [day, setDay] = React.useState(getTodayIso8601())
   const [disabledSave, setDisabledSave] = React.useState(true)
@@ -47,20 +57,27 @@ const DownloadPage: React.FC = () => {
   const [visibleDialog, setVisibleDialog] = React.useState(false)
   const [visibleSnack, setVisibleSnack] = React.useState(false)
   const [snackMessage, setSnackMessage] = React.useState('')
-
-  const markedDates: { [key: string]: object } = {}
+  const [markedDates] = React.useState<{ [key: string]: object }>({})
 
   useEffect(() => {
     journalStorage.read('PDSA').then(value => {
       let journal: Journal = {}
 
+      Object.keys(markedDates).forEach(key => {
+        markedDates[key] = { ...markedDates[key], ...unSelected }
+      })
+
       if ((value == null) || (value === '') || (value === '{}')) {
         setPdsaEntry(new PdsaEntry())
+        markedDates[day] = { ...markedDates[day], ...unmarkedSelectedDay }
         journal[day] = pdsaEntry
       } else {
         journal = JSON.parse(value)
 
-        Object.keys(journal).forEach(key => { markedDates[key] = { marked: true, dotColor: dotColour } })
+        Object.keys(journal).forEach(key => {
+          markedDates[key] = markedDay
+        })
+        markedDates[day] = { ...markedDates[day], ...selected }
 
         if (journal[day] === undefined) {
           setPdsaEntry(new PdsaEntry())
@@ -70,8 +87,6 @@ const DownloadPage: React.FC = () => {
       }
     }).finally(() => setDisabledSave(true))
   }, [day])
-
-  markedDates[day] = { ...markedDates[day], selected: true, selectedColor: selectionColour }
 
   return (
     <>
@@ -109,6 +124,7 @@ const DownloadPage: React.FC = () => {
                 journal = JSON.parse(value)
               }
               journal[day] = pdsaEntry
+              markedDates[day] = markedSelectedDay
               void journalStorage.write('PDSA', journal)
               setDisabledSave(true)
               setVisibleSnack(true)
@@ -127,6 +143,7 @@ const DownloadPage: React.FC = () => {
               }
               setPdsaEntry(new PdsaEntry())
               journal[day] = undefined as unknown as PdsaEntry
+              markedDates[day] = unmarkedSelectedDay
               void journalStorage.write('PDSA', journal)
               setDisabledSave(true)
               setVisibleSnack(true)

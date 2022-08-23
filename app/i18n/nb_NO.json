@@ -11,7 +11,7 @@
             "q2": "2) Hva slags <bold>forventning</bold> hadde du?",
             "q3": "3) Hva <bold>fant sted</bold>?",
             "return": "Gå tilbake til spørsmål 3",
-            "quote": "Fordi du ikke faktisk vet hva resultatet av et steg vil være.",
+            "quote": "Fordi du ikke faktisk vet hva resultatet av et steg vil være!",
             "title": "Overvei forrige steg",
             "q1": "1) Hva planla du som ditt <bold>siste steg</bold>?",
             "q4": "4) Hva <bold>lærte du</bold>?"
@@ -51,7 +51,7 @@
             "author": [
                 "Allan Nordhøy <epost@anotheragency.no>"
             ],
-            "title": "Bokmålsoversettelse ved"
+            "title": "Bokmålsoversettelse ved:"
         }
     },
     "app": {
@@ -94,7 +94,7 @@
     },
     "practice": {
         "1": "Utøvere av forbedrings-Kata/bortlærings-Kata skaper en dynamikk som hjelper mennesker å finne et mer vitenskapelig tenke- og handlesett, mot det beste vi kan estimere, og videre.",
-        "6": "Lykke til.",
+        "6": "Lykke til!",
         "title": "Endring av tankemønster gjennom utøvelse",
         "5": "«Kata-koden» definerer hva man antagelig ikke bør endre etterhvert som man utvikler sin egen stil.",
         "2": "Det 21 århundre krever en måte å jobbe på som er kognitivt kompleks, interpersonlig, iterativ, og faktisk også grunderbasert. Øving på forbedring av Kata og bortlæring av Kata for å oppnå disse ferdighetene og tankemønsteret forandrer verden rundt oss. Det gir deg ikke svar, men kan være en prosess for hvordan du skal imøtegå dine mål og hindre.",

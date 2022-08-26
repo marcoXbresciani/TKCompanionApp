@@ -1,0 +1,6 @@
+Gestione base del PDSA giornaliero con salvataggio, lettura e
+cancellazione.
+Ora puoi scegliere un giorno, leggere/scrivere/modificare le tue note
+PDSA, salvarle o cancellarle oppure cancellare l'intero giorno, se
+necessario.
+Più un bottone per il giorno corrente.

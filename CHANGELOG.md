@@ -32,6 +32,14 @@ This file is offered as-is, without any warranty.
 ### Fixed
 ### Security
 
+## [3.1.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/3.1.1) - 2022-08-26
+### Added
+* Marker for saved dates
+### Changed
+* Update pre-commit hook
+* Update security file
+* Update Norwegian translation
+
 ## [3.1.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/3.1.0) - 2022-07-21
 ### Added
 * Basic daily PDSA with save, read and delete.

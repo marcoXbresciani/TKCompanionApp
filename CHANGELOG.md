@@ -28,6 +28,10 @@ This file is offered as-is, without any warranty.
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
 ### Changed
+* Versioning management automated through `npm-version` and `fastlane`
+  tooling.
+  See
+  https://osamaqarem.com/blog/automatic-versioning-for-react-native-apps
 ### Removed
 ### Fixed
 ### Security

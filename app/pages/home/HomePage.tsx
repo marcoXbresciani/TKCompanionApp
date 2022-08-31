@@ -35,6 +35,7 @@ import About from './About'
 import i18n from '../../i18n/i18n'
 import { APP_NAME, APP_VERSION } from '../../utils/Constants'
 import FiveQ from '../docs/5qcard/FiveQ'
+import Wip from '../../components/wip/Wip'
 
 const HomePage: React.FunctionComponent = () => {
   const [visibleAbout, setVisibleAbout] = React.useState(false)
@@ -62,6 +63,7 @@ const HomePage: React.FunctionComponent = () => {
   const [visible, setVisible] = React.useState(false)
   const openMenu = (): void => setVisible(true)
   const closeMenu = (): void => setVisible(false)
+  const [visibleWip, setVisibleWip] = React.useState(false)
 
   return (
     <>
@@ -88,6 +90,12 @@ const HomePage: React.FunctionComponent = () => {
           </Dialog.ScrollArea>
         </Dialog>
       </Portal>
+
+      <Wip
+        message={i18n.t('pdsa.temp')}
+        visible={visibleWip}
+        setVisible={setVisibleWip}
+      />
 
       <Appbar>
         <Appbar.Content title={APP_NAME} subtitle={APP_VERSION} />

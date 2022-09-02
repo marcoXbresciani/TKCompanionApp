@@ -27,6 +27,8 @@ This file is offered as-is, without any warranty.
 
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
+* Welcome/splash dialog on first time application open.
+  Same content and new "Contact" menu entry.
 ### Changed
 * Versioning management automated through `npm-version` and `fastlane`
   tooling.

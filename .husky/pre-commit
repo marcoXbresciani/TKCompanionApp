@@ -9,7 +9,7 @@ function xargsr() {
     echo "$path" | cat - | xargs "$@"
   fi
 }
-git diff --name-only --cached --relative | grep '\.[jt]sx\?$' | sed 's/[^[:alnum:]]/\\&/g' | xargsr -E '' -t ./ts-standard
+git diff --name-only --cached --relative | grep '\.[jt]sx\?$' | sed 's/[^[:alnum:]]/\\&/g' | xargsr -E '' -t ts-standard
 if [[ $? -ne 0 ]]; then
   echo 'TypeScript Standard Style errors were detected. Aborting commit.'
   exit 1

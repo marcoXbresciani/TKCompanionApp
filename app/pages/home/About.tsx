@@ -21,10 +21,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import { List } from 'react-native-paper'
+import { List, Text } from 'react-native-paper'
 import Version from '../../components/version/Version'
 import { Trans, useTranslation } from 'react-i18next'
-import { Linking } from 'react-native'
+import { Linking, View } from 'react-native'
 import styled from 'styled-components'
 import i18n from '../../i18n/i18n'
 import { BoldText } from '../../components/BoldText'
@@ -41,7 +41,7 @@ NotItem.defaultProps = {
 
 const About: React.FunctionComponent = () => {
   const { t } = useTranslation()
-  const translators: string[] = i18n.t('about.translation.author', {
+  const urls: Array<{ address: string, icon: string, name: string }> = i18n.t('about.url.page', {
     returnObjects: true
   })
 
@@ -224,23 +224,30 @@ const About: React.FunctionComponent = () => {
           />
         </List.Accordion>
       </List.AccordionGroup>
-      <List.Section title={i18n.t('about.translation.title')}>
-        {translators.flatMap((name) => {
-          return (
-            <List.Item
-              title={name}
-              key={name}
-              titleNumberOfLines={3}
-              left={(props) => (
-                <List.Icon
-                  {...props}
-                  icon='earth-outline'
-                />
-              )}
-            />
-          )
-        })}
-      </List.Section>
+      <View><Text> </Text></View>
+      <List.AccordionGroup>
+        <List.Accordion description={i18n.t('about.url.description')} id={1} title={i18n.t('about.url.title')}>
+          {urls.flatMap(({ address, icon, name }) => {
+            return (
+              <List.Item
+                description={address}
+                key={name}
+                left={(props) => (
+                  <List.Icon
+                    {...props}
+                    icon={icon}
+                  />
+                )}
+                onPress={() => {
+                  void Linking.openURL(address)
+                }}
+                title={name}
+                titleNumberOfLines={3}
+              />
+            )
+          })}
+        </List.Accordion>
+      </List.AccordionGroup>
     </>
   )
 }

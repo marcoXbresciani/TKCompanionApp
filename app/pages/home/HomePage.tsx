@@ -21,6 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
+import { useEffect } from 'react'
 import {
   Appbar,
   Dialog,
@@ -35,7 +36,11 @@ import About from './About'
 import i18n from '../../i18n/i18n'
 import { APP_NAME, APP_VERSION } from '../../utils/Constants'
 import FiveQ from '../docs/5qcard/FiveQ'
-import Wip from '../../components/wip/Wip'
+import TkPanel from '../../components/wip/TkPanel'
+import StorageFactory from '../../utils/storage/StorageFactory'
+import {
+  AllowedSettings
+} from '../../utils/storage/settings/AllowedSettings'
 
 const HomePage: React.FunctionComponent = () => {
   const [visibleAbout, setVisibleAbout] = React.useState(false)
@@ -46,7 +51,7 @@ const HomePage: React.FunctionComponent = () => {
   const hideAbout = (): void => setVisibleAbout(false)
 
   const [visibleCopyright, setVisibleCopyright] =
-        React.useState(false)
+    React.useState(false)
   const showCopyright = (): void => {
     closeMenu()
     setVisibleCopyright(true)
@@ -63,7 +68,19 @@ const HomePage: React.FunctionComponent = () => {
   const [visible, setVisible] = React.useState(false)
   const openMenu = (): void => setVisible(true)
   const closeMenu = (): void => setVisible(false)
-  const [visibleWip, setVisibleWip] = React.useState(false)
+
+  const [visiblePanel, setVisiblePanel] = React.useState(false)
+  const showPanel = (): void => {
+    closeMenu()
+    setVisiblePanel(true)
+  }
+
+  useEffect(() => {
+    const storage = StorageFactory.getInstance().getSettingsStorage()
+    const read = Boolean(storage.read(AllowedSettings.HOME_TITLE))
+
+    setVisiblePanel(!read)
+  }, [])
 
   return (
     <>
@@ -91,10 +108,13 @@ const HomePage: React.FunctionComponent = () => {
         </Dialog>
       </Portal>
 
-      <Wip
-        message={i18n.t('pdsa.temp')}
-        visible={visibleWip}
-        setVisible={setVisibleWip}
+      <TkPanel
+        title={i18n.t('panel.home.title')}
+        before={i18n.t('panel.home.before')}
+        message={i18n.t('panel.home.message')}
+        after={i18n.t('panel.home.after')}
+        visible={visiblePanel}
+        setVisible={setVisiblePanel}
       />
 
       <Appbar>
@@ -108,7 +128,7 @@ const HomePage: React.FunctionComponent = () => {
               color={useTheme().colors.onSurface}
               onPress={openMenu}
             />
-                    }
+          }
         >
           <Menu.Item
             onPress={showSettings}
@@ -119,6 +139,11 @@ const HomePage: React.FunctionComponent = () => {
             onPress={showCopyright}
             icon='document-text-outline'
             title={`${i18n.t('nav.menu.copyright')}`}
+          />
+          <Menu.Item
+            onPress={showPanel}
+            icon='at-outline'
+            title={`${i18n.t('nav.menu.contact')}`}
           />
           <Divider />
           <Menu.Item

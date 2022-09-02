@@ -23,4 +23,5 @@
 export enum AllowedSettings {
   DARK_THEME = 'dark',
   LANGUAGE = 'language',
+  HOME_TITLE = 'home.title'
 }

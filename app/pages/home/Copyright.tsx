@@ -26,6 +26,7 @@ import { Linking, ScrollView, View } from 'react-native'
 import { IconButton } from 'react-native-paper'
 import { TkText } from '../../components/TkText'
 import { SmallerText } from '../../components/SmallerText'
+import i18n from '../../i18n/i18n'
 
 const Notice = styled(View)`
     align-content: center;
@@ -40,6 +41,10 @@ const ButtonsStrip = styled(View)`
 `
 
 const Copyright: React.FunctionComponent = () => {
+  const translators: string[] = i18n.t('about.translation.author', {
+    returnObjects: true
+  })
+
   return (
     <ScrollView>
       <Notice>
@@ -65,20 +70,12 @@ const Copyright: React.FunctionComponent = () => {
         </SmallerText>
       </Notice>
       <Notice>
-        <TkText>© 2007 Marco Bresciani</TkText>
-        <SmallerText>
-          "Tainai and Murakami areas with Arakawa river" by
-          Marco Bresciani is Licensed under a Creative Commons
-          Attribution-ShareAlike 4.0 International License.
-        </SmallerText>
-        <IconButton
-          icon='document-text-outline'
-          onPress={() => {
-            void Linking.openURL(
-              'http://creativecommons.org/licenses/by-sa/4.0/'
-            )
-          }}
-        />
+        <TkText>{i18n.t('about.translation.title')}</TkText>
+        {translators.flatMap((name) => {
+          return (
+            <SmallerText>&bull; {name}</SmallerText>
+          )
+        })}
       </Notice>
       <Notice>
         <TkText>© 2012 Primož Peterlin, Steve White</TkText>

@@ -47,10 +47,10 @@ const locale = (
 ).replace('_', '-')
 
 const resources = {
-  de: { translation: de },
   en: { translation: en },
-  fr: { translation: fr },
   'it-IT': { translation: itIT },
+  de: { translation: de },
+  fr: { translation: fr },
   'nb-NO': { translation: nbNO }
 }
 
@@ -63,14 +63,17 @@ void i18n.init({
   interpolation: {
     escapeValue: false
   },
-  fallbackLng: ['en', 'it-IT', 'fr', 'de', 'nb-NO'],
+  fallbackLng: ['en', 'it-IT', 'de', 'fr', 'nb-NO'],
   lng: locale ?? i18n.options.lng,
   nonExplicitSupportedLngs: true,
   resources
 })
 
+LocaleConfig.locales.de = de.calendar
+LocaleConfig.locales.en = en.calendar
+LocaleConfig.locales.fr = de.calendar
 LocaleConfig.locales['it-IT'] = itIT.calendar
-LocaleConfig.locales.fr = fr.calendar
+LocaleConfig.locales['nb-NO'] = nbNO.calendar
 LocaleConfig.defaultLocale = i18n.language
 
 export default i18n

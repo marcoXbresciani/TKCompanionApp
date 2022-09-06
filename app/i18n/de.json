@@ -62,6 +62,55 @@
       "title": "In Arbeit…"
     }
   },
+  "calendar": {
+    "dayNames": [
+      "Sonntag",
+      "Montag",
+      "Dienstag",
+      "Mittwoch",
+      "Donnerstag",
+      "Freitag",
+      "Samstag"
+    ],
+    "dayNamesShort": [
+      "Son",
+      "Mon",
+      "Die",
+      "Mit",
+      "Don",
+      "Fre",
+      "Sam"
+    ],
+    "monthNames": [
+      "Januar",
+      "Februar",
+      "Marsch",
+      "April",
+      "Kann",
+      "Juni",
+      "Juli",
+      "August",
+      "September",
+      "Oktober",
+      "November",
+      "Dezember"
+    ],
+    "monthNamesShort": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "Kan",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Okt",
+      "Nov",
+      "Dez"
+    ],
+    "today": "heute"
+  },
   "docs": {
     "4steps": "4 Schritte",
     "5qcard": "5Q-Karte",

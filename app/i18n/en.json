@@ -136,7 +136,8 @@
       "Oct",
       "Nov",
       "Dec"
-    ]
+    ],
+    "today": "today"
   },
   "docs": {
     "4steps": "4 Steps",

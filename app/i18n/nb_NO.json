@@ -62,6 +62,55 @@
       "title": "Underveis …"
     }
   },
+  "calendar": {
+    "dayNames": [
+      "Søndag",
+      "Mandag",
+      "Tirsdag",
+      "Onsdag",
+      "Torsdag",
+      "Fredag",
+      "Lørdag"
+    ],
+    "dayNamesShort": [
+      "Søn",
+      "Man",
+      "Tir",
+      "Ons",
+      "Tor",
+      "Fre",
+      "Lør"
+    ],
+    "monthNames": [
+      "Januar",
+      "Februar",
+      "Mars",
+      "April",
+      "Kan",
+      "Juni",
+      "Juli",
+      "August",
+      "September",
+      "Oktober",
+      "November",
+      "Desember"
+    ],
+    "monthNamesShort": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "Kan",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Okt",
+      "Nov",
+      "Des"
+    ],
+    "today": "i dag"
+  },
   "docs": {
     "4steps": "4 steg",
     "5qcard": "5Q-kort",

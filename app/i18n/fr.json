@@ -1,135 +1,131 @@
 {
-    "about": {
-        "not": {
-            "key6": "vous espionner",
-            "key5": "enregistrer des choses sur votre appareil",
-            "key1": "collecter vos données",
-            "key2": "contiennent des bibliothèques de suivi",
-            "key3": "téléphoner à personne",
-            "key4": "utiliser les API de Google Play Store"
-        },
-        "copyright": "droit d'auteur",
-        "might": {
-            "key1": "vous aider à améliorer",
-            "key2": "vous aider à apprendre le Kata",
-            "key3": "être amusant",
-            "key4": "vous apprendre la pensée scientifique",
-            "title": "Cette application POURRAIT"
-        },
-        "translation": {
-            "author": [
-                "J. Lavoie (@Edanas)"
-            ],
-            "title": "Traduction en français par :"
-        }
+  "4s": {
+    "s1": "① Comprendre la direction",
+    "s2": "② Saisir la situation actuelle",
+    "s3": "③ Établir votre prochaine condition cible",
+    "s4": "④ Conduire des expériences pour y arriver",
+    "title": "Les quatre étapes du kata de l'amélioration"
+  },
+  "5q": {
+    "back": {
+      "q1": "1) Qu'avez-vous prévu comme étant votre <bold>Dernière étape</bold>?",
+      "q2": "2) À quoi vous <bold>attendiez-vous</bold>?",
+      "q3": "3) Que s'est-il <bold>réellement passé</bold>?",
+      "q4": "4) Qu'avez-vous <bold>appris</bold>?",
+      "quote": "Parce que vous ne savez pas vraiment quel sera le résultat d'une étape!",
+      "return": "Retour à la question 3",
+      "title": "Réfléchir à la dernière étape"
     },
-    "4s": {
-        "s3": "③ Établir votre prochaine condition cible",
-        "s1": "① Comprendre la direction",
-        "s2": "② Saisir la situation actuelle",
-        "title": "Les quatre étapes du kata de l'amélioration",
-        "s4": "④ Conduire des expériences pour y arriver"
-    },
-    "5q": {
-        "front": {
-            "q4.2": "À quoi vous attendez-vous ?",
-            "q1": "① Quelle est la <bold>condition cible</bold> ?",
-            "separator": "Retourner la carte",
-            "title": "Les cinq questions",
-            "header": "Kata d'entraînement"
-        },
-        "back": {
-            "q1": "1) Qu'avez-vous prévu comme étant votre <bold>Dernière étape</bold> ?",
-            "q2": "2) À quoi vous <bold>attendiez-vous</bold> ?",
-            "q3": "3) Que s'est-il <bold>réellement passé</bold> ?",
-            "quote": "Parce que vous ne savez pas vraiment quel sera le résultat d'une étape !",
-            "return": "Retour à la question 3",
-            "title": "Réfléchir à la dernière étape",
-            "q4": "4) Qu'avez-vous <bold>appris</bold> ?"
-        }
-    },
-    "app": {
-        "short": "Une petite et courte aide pour les pratiquants de Toyota Kata",
-        "wip": {
-            "before": "Merci d'avoir cliqué, mais il ne se passe rien ici, pas encore.",
-            "after": "Les commentaires et les idées sont les bienvenus.",
-            "title": "Travail en cours…"
-        }
-    },
-    "calendar": {
-        "monthNames": [
-            null,
-            "Février",
-            null,
-            "Avril",
-            null,
-            "Juin",
-            null,
-            "Août",
-            null,
-            "Octobre",
-            null,
-            "Décembre"
-        ],
-        "monthNamesShort": [
-            null,
-            "Févr.",
-            null,
-            "Avril",
-            null,
-            "Juin",
-            null,
-            "Août",
-            null,
-            "Oct.",
-            null,
-            "Déc."
-        ],
-        "dayNames": [
-            null,
-            "Lundi",
-            null,
-            "Mercredi",
-            null,
-            "Vendredi"
-        ],
-        "dayNamesShort": [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-        ]
-    },
-    "docs": {
-        "4steps": "4 étapes",
-        "5qcard": "5 questions",
-        "title": "Lire les documents",
-        "tkc": "$t(tkc.title)",
-        "kts": "$t(kts.title)",
-        "practice": "$t(practice.title)"
-    },
-    "download": {
-        "error": "Erreur de téléchargement « {{reason}} »",
-        "tkc": "$t(tkc.title)",
-        "pdf": "Téléchargement du fichier PDF",
-        "4s": "$t(4s.title)"
-    },
-    "kts": {
-        "tip": "[κατα]"
-    },
-    "nav": {
-        "docs": "Documents",
-        "download": "Téléchargements",
-        "home": "Accueil",
-        "menu": {
-            "about": "À propos",
-            "copyright": "Droit d'auteur",
-            "settings": "Paramètres"
-        }
-    },
-    "settings": {
-        "language": "Langue"
+    "front": {
+      "header": "Kata d'entraînement",
+      "q1": "① Quelle est la <bold>condition cible</bold>?",
+      "q4.2": "À quoi vous attendez-vous?",
+      "separator": "Retourner la carte",
+      "title": "Les cinq questions"
     }
+  },
+  "about": {
+    "copyright": "droit d'auteur",
+    "might": {
+      "key1": "vous aider à améliorer",
+      "key2": "vous aider à apprendre le Kata",
+      "key3": "être amusant",
+      "key4": "vous apprendre la pensée scientifique",
+      "title": "Cette application POURRAIT"
+    },
+    "not": {
+      "key1": "collecter vos données",
+      "key2": "contiennent des bibliothèques de suivi",
+      "key3": "téléphoner à personne",
+      "key4": "utiliser les API de Google Play Store",
+      "key5": "enregistrer des choses sur votre appareil",
+      "key6": "vous espionner"
+    },
+    "translation": {
+      "author": [
+        "J. Lavoie (@Edanas)"
+      ],
+      "title": "Traduction en français par :"
+    }
+  },
+  "app": {
+    "short": "Une petite et courte aide pour les pratiquants de Toyota Kata",
+    "wip": {
+      "before": "Merci d'avoir cliqué, mais il ne se passe rien ici, pas encore.",
+      "after": "Les commentaires et les idées sont les bienvenus.",
+      "title": "Travail en cours…"
+    }
+  },
+  "calendar": {
+    "dayNames": [
+      "Dimanche",
+      "Lundi",
+      "Mardi",
+      "Mercredi",
+      "Jeudi",
+      "Vendredi",
+      "Samedi"
+    ],
+    "dayNamesShort": [
+      "Dim.",
+      "Lun.",
+      "Mar.",
+      "Mer.",
+      "Jeu.",
+      "Ven.",
+      "Sam."
+    ],
+    "monthNames": [
+      "Janvier",
+      "Février",
+      "Mars",
+      "Avril",
+      "Mai",
+      "Juin",
+      "Juillet",
+      "Août",
+      "Septembre",
+      "Octobre",
+      "Novembre",
+      "Décembre"
+    ],
+    "monthNamesShort": [
+      "Janv.",
+      "Févr.",
+      "Mars",
+      "Avril",
+      "Mai",
+      "Juin",
+      "Juil.",
+      "Août",
+      "Sept.",
+      "Oct.",
+      "Nov.",
+      "Déc."
+    ]
+  },
+  "docs": {
+    "4steps": "4 étapes",
+    "5qcard": "5 questions",
+    "kts": "$t(kts.title)",
+    "practice": "$t(practice.title)",
+    "title": "Lire les documents",
+    "tkc": "$t(tkc.title)"
+  },
+  "kts": {
+    "tip": "[κατα]"
+  },
+  "nav": {
+    "docs": "Documents",
+    "download": "Téléchargements",
+    "home": "Accueil",
+    "menu": {
+      "about": "À propos",
+      "copyright": "Droit d'auteur",
+      "settings": "Paramètres"
+    }
+  },
+  "settings": {
+    "language": "Langue"
+  }
 }

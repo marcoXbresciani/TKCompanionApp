@@ -57,7 +57,6 @@
     },
     "url": {
       "description": "TkCompanionApp is Free Software",
-      "title": "See the code",
       "page": [
         {
           "address": "https://codeberg.org/marco.bresciani/TKCompanionApp",
@@ -79,16 +78,65 @@
           "icon": "code-working-outline",
           "name": "Gitlab"
         }
-      ]
+      ],
+      "title": "See the code"
     }
   },
   "app": {
     "short": "A short and small helper for Toyota Kata practitioners",
     "wip": {
-      "title": "Work in progress…",
+      "after": "Feedbacks and ideas are very welcome.",
       "before": "Thanks for clicking, but no actual action here, yet.",
-      "after": "Feedbacks and ideas are very welcome."
+      "title": "Work in progress…"
     }
+  },
+  "calendar": {
+    "dayNames": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "dayNamesShort": [
+      "Sun",
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
+    "monthNames": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "monthNamesShort": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ]
   },
   "docs": {
     "4steps": "4 Steps",

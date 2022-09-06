@@ -29,12 +29,14 @@ This file is offered as-is, without any warranty.
 ### Added
 * Welcome/splash dialog on first time application open.
   Same content and new "Contact" menu entry.
+* Calendar translations (working on bug #14)
 ### Changed
 * Versioning management automated through `npm-version` and `fastlane`
   tooling.
   See
   https://osamaqarem.com/blog/automatic-versioning-for-react-native-apps
 ### Removed
+* Briar link.
 ### Fixed
 ### Security
 

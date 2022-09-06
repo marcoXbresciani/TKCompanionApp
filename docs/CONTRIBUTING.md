@@ -49,11 +49,6 @@ Anyway, for any question or request you can contact me through:
 * as <a rel="me" href="https://fosstodon.org/@AAMfP">@AAMfP</a> on
   [Fosstodon](https://fosstodon.org), a
   [Mastodon](https://joinmastodon.org/) instance.
-* [Briar](https://briarproject.org/), with the link
-  ```text
-  briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
-  ```
-  to be copy-pasted as "contact at a distance" in Briar.
 
 If you're not a software developer, and want to contribute improving
 this app, you're welcome!

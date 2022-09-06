@@ -51,11 +51,6 @@ tramite:
 * Come <a rel="me" href="https://fosstodon.org/@AAMfP">@AAMfP</a>, su
   [Fosstodon](https://fosstodon.org), un'istanza di
   [Mastodon](https://joinmastodon.org/).
-* [Briar](https://briarproject.org/), con il link
-  ```text
-  briar://advt45wcki7nmxhnb25sezrohkiistjq7qqjjeyo7njsdwflymydm
-  ```
-  da copiare e aggiungere come "contatto distante" in Briar.
 
 Se non sviluppi software ma vuoi contribuire comunque a migliorare
 quest'app, ogni contributo sarà ben accetto!

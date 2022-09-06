@@ -71,15 +71,10 @@
         "kts": "$t(kts.title)"
     },
     "download": {
-        "jpg": "JPG-bilde nedlastet",
         "4s": "$t(4s.title)",
-        "5q": "$t(5q.front.title)",
         "kts": "$t(kts.title)",
-        "pdf": "PDF-fil nedlastet",
         "title": "Nedlastninger fra Toyota Kata-nettsiden",
-        "tkc": "$t(tkc.title)",
-        "close": "Lukk",
-        "error": "Nedlastingsfeil «{{reason}}»"
+        "close": "Lukk"
     },
     "nav": {
         "pdsa": "PDSA-journal",

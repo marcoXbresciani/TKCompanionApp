@@ -71,15 +71,10 @@
         "tkc": "$t(tkc.title)"
     },
     "download": {
-        "close": "Schließen",
         "error": "Download-Fehler „{{reason}}“",
-        "jpg": "JPG-Bild herunterladen",
         "kts": "$t(kts.title)",
-        "pdf": "PDF-Datei herunterladen",
         "title": "Downloads von der Toyota Kata-Website",
-        "tkc": "$t(tkc.title)",
-        "4s": "$t(4s.title)",
-        "5q": "$t(5q.front.title)"
+        "4s": "$t(4s.title)"
     },
     "kts": {
         "tip": "[κατα]",

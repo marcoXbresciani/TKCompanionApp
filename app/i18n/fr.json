@@ -111,15 +111,10 @@
         "practice": "$t(practice.title)"
     },
     "download": {
-        "close": "Fermer",
         "error": "Erreur de téléchargement « {{reason}} »",
-        "title": "Téléchargements du site Web Toyota Kata",
         "tkc": "$t(tkc.title)",
-        "kts": "$t(kts.title)",
         "pdf": "Téléchargement du fichier PDF",
-        "jpg": "Téléchargement de l'image JPG",
-        "4s": "$t(4s.title)",
-        "5q": "$t(5q.front.title)"
+        "4s": "$t(4s.title)"
     },
     "kts": {
         "tip": "[κατα]"

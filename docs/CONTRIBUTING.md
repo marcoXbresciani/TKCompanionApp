@@ -115,6 +115,11 @@ through NPM package manager.
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 
+Also run `npm install -g ts-standard` to make the `ts-standard` command
+available into your system.
+This is used in `husky` pre-commit hook to verify the coding conventions
+consistency.
+
 You might want to also run `npm install -g npm-check-updates` to make
 the `ncu` tool globally available, to check possible dependencies
 versions updates.

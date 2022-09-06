@@ -117,6 +117,11 @@ e installate tramite il gestore di pacchetti NPM.
 ![dimensione del codice GitHub in byte](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![Attività di commit GitHub](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 
+Esegui anche `npm install -g ts-standard` to rendere il comando
+`ts-standard` disponibile sul tuo sistema.
+Viene usato dall'attivatore pre-commit di `husky` per verificare la
+consistenza delle convenzioni di scrittura del codice.
+
 Puoi anche eseguire `npm install -g npm-check-updates` per avere il tool
 `ncu` disponibile globalmente, per controllare possibili aggiornamenti
 di versioni delle dipendenze.

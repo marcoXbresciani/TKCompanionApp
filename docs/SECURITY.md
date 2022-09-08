@@ -17,6 +17,11 @@ SPDX-License-Identifier: FSFAP
 > any), please remember that **TKCompanionApp** has _neither_ network
 > _nor_ files access.
 
+* **node-fetch is vulnerable to Exposure of Sensitive Information to an
+  Unauthorized Actor** High
+* **The `size` option isn't honored after following a redirect in
+  node-fetch** Low
+
 For more information
 If you have any questions or comments about this advisory:
 * Open an issue in node-fetch

@@ -35,3 +35,11 @@ or not.
     See https://bestpractices.coreinfrastructure.org/en
 
 ----
+
+14. [App crashes when opening calendar in a language different from Italian](https://github.com/marcoXbresciani/TKCompanionApp/issues/14)
+
+    When opening the PDSA calendar in a language that is not Italian,
+    the app crashes.
+
+----
+

@@ -35,11 +35,3 @@ or not.
     See https://bestpractices.coreinfrastructure.org/en
 
 ----
-
-15. [Switching language make calendar crashes](https://github.com/marcoXbresciani/TKCompanionApp/issues/15)
-
-    Follow up of #14, not Calendar is working, but switching language
-    makes it crashes again.
-
-----
-

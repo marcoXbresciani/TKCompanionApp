@@ -72,7 +72,7 @@ const Settings: React.FunctionComponent = () => {
             title='Deutsch'
             onPress={() => {
               void i18n.changeLanguage('de').then()
-              LocaleConfig.defaultLocale('de')
+              LocaleConfig.defaultLocale = 'de'
               void storage
                 .write(AllowedSettings.LANGUAGE, 'de')
                 .then()
@@ -85,7 +85,7 @@ const Settings: React.FunctionComponent = () => {
             title='English'
             onPress={() => {
               void i18n.changeLanguage('en').then()
-              LocaleConfig.defaultLocale('en')
+              LocaleConfig.defaultLocale = 'en'
               void storage
                 .write(AllowedSettings.LANGUAGE, 'en')
                 .then()
@@ -98,7 +98,7 @@ const Settings: React.FunctionComponent = () => {
             title='Français'
             onPress={() => {
               void i18n.changeLanguage('fr').then()
-              LocaleConfig.defaultLocale('fr')
+              LocaleConfig.defaultLocale = 'fr'
               void storage
                 .write(AllowedSettings.LANGUAGE, 'fr')
                 .then()
@@ -111,7 +111,7 @@ const Settings: React.FunctionComponent = () => {
             title='Italiano'
             onPress={() => {
               void i18n.changeLanguage('it-IT').then()
-              LocaleConfig.defaultLocale('it-IT')
+              LocaleConfig.defaultLocale = 'it-IT'
               void storage
                 .write(
                   AllowedSettings.LANGUAGE,
@@ -127,7 +127,7 @@ const Settings: React.FunctionComponent = () => {
             title='Norsk (Bokmål)'
             onPress={() => {
               void i18n.changeLanguage('nb-NO').then()
-              LocaleConfig.defaultLocale('nb-NO')
+              LocaleConfig.defaultLocale = 'nb-NO'
               void storage
                 .write(
                   AllowedSettings.LANGUAGE,

@@ -49,10 +49,10 @@ const locale = (
 interface Resources { [key: string]: { translation: { calendar: {} } } }
 
 const resources: Resources = {
-  en: { translation: en },
-  'it-IT': { translation: itIT },
   de: { translation: de },
+  en: { translation: en },
   fr: { translation: fr },
+  'it-IT': { translation: itIT },
   'nb-NO': { translation: nbNO }
 }
 

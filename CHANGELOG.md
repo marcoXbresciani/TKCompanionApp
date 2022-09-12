@@ -29,7 +29,6 @@ This file is offered as-is, without any warranty.
 ### Added
 * Welcome/splash dialog on first time application open.
   Same content and new "Contact" menu entry.
-* Calendar translations (working on bug #14)
 ### Changed
 * Versioning management automated through `npm-version` and `fastlane`
   tooling.
@@ -38,6 +37,7 @@ This file is offered as-is, without any warranty.
 ### Removed
 * Briar link.
 ### Fixed
+* Fix bugs #14 and €15 for calendar translations.
 ### Security
 
 ## [3.1.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/3.1.1) - 2022-08-26

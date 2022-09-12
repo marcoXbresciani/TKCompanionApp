@@ -36,10 +36,10 @@ or not.
 
 ----
 
-14. [App crashes when opening calendar in a language different from Italian](https://github.com/marcoXbresciani/TKCompanionApp/issues/14)
+15. [Switching language make calendar crashes](https://github.com/marcoXbresciani/TKCompanionApp/issues/15)
 
-    When opening the PDSA calendar in a language that is not Italian,
-    the app crashes.
+    Follow up of #14, not Calendar is working, but switching language
+    makes it crashes again.
 
 ----
 

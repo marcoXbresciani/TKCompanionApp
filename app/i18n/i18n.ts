@@ -46,7 +46,9 @@ const locale = (
     : NativeModules.I18nManager.localeIdentifier
 ).replace('_', '-')
 
-const resources = {
+interface Resources { [key: string]: { translation: { calendar: {} } } }
+
+const resources: Resources = {
   en: { translation: en },
   'it-IT': { translation: itIT },
   de: { translation: de },
@@ -63,17 +65,15 @@ void i18n.init({
   interpolation: {
     escapeValue: false
   },
-  fallbackLng: ['en', 'it-IT', 'de', 'fr', 'nb-NO'],
+  fallbackLng: [...Object.keys(resources)],
   lng: locale ?? i18n.options.lng,
   nonExplicitSupportedLngs: true,
   resources
 })
 
-LocaleConfig.locales.de = de.calendar
-LocaleConfig.locales.en = en.calendar
-LocaleConfig.locales.fr = de.calendar
-LocaleConfig.locales['it-IT'] = itIT.calendar
-LocaleConfig.locales['nb-NO'] = nbNO.calendar
+Object.keys(resources).forEach((key) => {
+  LocaleConfig.locales[key] = resources[`${key}`].translation.calendar
+})
 LocaleConfig.defaultLocale = i18n.language
 
 export default i18n

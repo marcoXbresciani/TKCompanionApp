@@ -24,7 +24,7 @@ SPDX-License-Identifier: FSFAP
 [![Markdown](https://img.shields.io/badge/made%20with-markdown-black?logo=markdown&style=plastic)](https://github.github.com/gfm/)
 [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/)
 ![Mastodon Follow](https://img.shields.io/mastodon/follow/000091124?domain=https%3A%2F%2Ffosstodon.org&style=social)
-[![It works](https://img.shields.io/badge/works%20on-my%20machine-informational?style=plastic)](https://blog.codinghorror.com/the-works-on-my-machine-certification-program/)
+[![It works](https://img.shields.io/badge/works-on%20my%20machine-informational?style=plastic)](https://blog.codinghorror.com/the-works-on-my-machine-certification-program/)
 <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 <img src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
 <img src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
@@ -88,9 +88,9 @@ per un account sviluppatore Google, ed è pari a
 [$99/anno](https://developer.apple.com/support/enrollment/) (!) per il
 Programma per Sviluppatori Apple.
 
-Quindi (per ora?) questa app si trova solo su
+Quindi (per ora?) quest'app si trova solo su
 [F-Droid](https://f-droid.org/), il _catalogo installabile di FOSS
-(Software libero e open source) per la piattaforma Android_.
+(software libero e open source) per la piattaforma Android_.
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-it.png" alt="Disponibile su F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
 
@@ -139,9 +139,12 @@ Siediti, segui il menu, impara, esercitati e migliora.
   file che sarà scaricato.
 
 ### Schermate
-![Inizio](fastlane/metadata/android/it-IT/images/phoneScreenshots/home.png)
-![Documenti](fastlane/metadata/android/it-IT/images/phoneScreenshots/docs.png)
-![PDSA](fastlane/metadata/android/it-IT/images/phoneScreenshots/pdsa.png)
+<img alt="5Q" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/5Q.png" width="50%"/>
+<img alt="Informazioni" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/about.png" width="50%"/>
+<img alt="Inizio" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/home.png" width="50%"/>
+<img alt="Documenti" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/docs.png" width="50%"/>
+<img alt="PDSA" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/pdsa.png" width="50%"/>
+<img alt="TKC" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/tkc.png" width="50%"/>
 
 ### Note sui font
 * Il font usato è [Free
@@ -167,15 +170,21 @@ Lo stesso per questo documento.
   [Mastodon](https://joinmastodon.org/).
 
 ### Traduzioni
-* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/nb_NO/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/nb_NO/)
-  [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) per
-  la traduzione in norvegese Bokmål.
-* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/fr/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/fr/)
-  [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) per la
-  traduzione in francese.
 * [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/de/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/de/)
   [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
   per la traduzione in tedesco.
+* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/en/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/en/)
+  [Marco Bresciani (@marcoXbresciani)](https://github.com/marcoXbresciani)
+  per la versione inglese.
+* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/fr/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/fr/)
+  [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) per la
+  traduzione in francese.
+* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/it-IT/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/it-IT/)
+  [Marco Bresciani (@marcoXbresciani)](https://github.com/marcoXbresciani)
+  per la versione italiana.
+* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/nb_NO/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/nb_NO/)
+  [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) per
+  la traduzione in norvegese Bokmål.
 
 ## Ringraziamenti
 Grazie a (in ordine di apparizione):

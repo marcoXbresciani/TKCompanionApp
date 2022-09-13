@@ -135,9 +135,12 @@ Just sit, follow the menu, learn, practice and improve.
   of file that will be downloaded.
 
 ### Screenshots
-![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
-![Docs](fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png)
-![PDSA](fastlane/metadata/android/en-US/images/phoneScreenshots/pdsa.png)
+<img alt="5Q" src="fastlane/metadata/android/en-US/images/phoneScreenshots/5Q.png" width="50%"/>
+<img alt="About" src="fastlane/metadata/android/en-US/images/phoneScreenshots/about.png" width="50%"/>
+<img alt="Home" src="fastlane/metadata/android/en-US/images/phoneScreenshots/home.png" width="50%"/>
+<img alt="Docs" src="fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png" width="50%"/>
+<img alt="PDSA" src="fastlane/metadata/android/en-US/images/phoneScreenshots/pdsa.png" width="50%"/>
+<img alt="TKC" src="fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png" width="50%"/>
 
 ### Font Notes
 * Font used is [Free
@@ -163,15 +166,21 @@ You can keep in touch with the author through:
   [Mastodon](https://joinmastodon.org/) instance.
 
 ### Translations
-* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/nb_NO/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/nb_NO/)
-  [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) for
-  the Norwegian Bokmål translation.
-* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/fr/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/fr/)
-  [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) for the
-  French translation.
-* [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/de/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/de/)
+* [![Translation status](https://hosted.weblate.org/widgets/tkcompanionapp/de/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/de/)
   [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
   for the German translation.
+* [![Translation status](https://hosted.weblate.org/widgets/tkcompanionapp/en/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/en/)
+  [Marco Bresciani (@marcoXbresciani)](https://github.com/marcoXbresciani)
+  for the English version.
+* [![Translation status](https://hosted.weblate.org/widgets/tkcompanionapp/fr/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/fr/)
+  [J. Lavoie (@Edanas)](https://hosted.weblate.org/user/Edanas/) for the
+  French translation.
+* [![Translation status](https://hosted.weblate.org/widgets/tkcompanionapp/it-IT/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/it-IT/)
+  [Marco Bresciani (@marcoXbresciani)](https://github.com/marcoXbresciani)
+  for the Italian version.
+* [![Translation status](https://hosted.weblate.org/widgets/tkcompanionapp/nb_NO/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/nb_NO/)
+  [Allan Nordhøy (@comradekingu)](https://github.com/comradekingu) for
+  the Norwegian Bokmål translation.
 
 ## Thanks
 Thanks to (in appearing order):

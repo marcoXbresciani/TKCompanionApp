@@ -32,6 +32,6 @@ Not much of an "architecture":
 * `utils` folder is the same as usual: those are not React components
   but functions and things that are generally used.
 
-Local data (app theme, language, ...) are saved/stored locally on your
-device only, in an encrypted form, through
-[react-native-encrypted-storage](https://github.com/emeraldsanto/react-native-encrypted-storage).
+Local data (app theme, language, ...) are saved/stored locally (in app
+memory area, not on files) on your device only, in an encrypted form,
+through [react-native-encrypted-storage](https://github.com/emeraldsanto/react-native-encrypted-storage).

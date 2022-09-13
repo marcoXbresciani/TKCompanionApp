@@ -35,10 +35,14 @@ This file is offered as-is, without any warranty.
   See
   https://osamaqarem.com/blog/automatic-versioning-for-react-native-apps
 ### Removed
+### Fixed
+### Security
+
+## [3.1.2](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/3.1.2) - 2022-09-13
+### Removed
 * Briar link.
 ### Fixed
 * Fix bugs #14 and €15 for calendar translations.
-### Security
 
 ## [3.1.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/3.1.1) - 2022-08-26
 ### Added

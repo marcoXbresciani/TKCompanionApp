@@ -161,17 +161,28 @@ Cfr. https://gitlab.com/fdroid/fdroiddata/-/merge_requests/10826#note_895731121
 Quindi:
 * Eseguire la procedura che indica [Come rilasciare](#come-rilasciare),
   senza l'ultimo passo, quindi senza inviare il tag sul repository.
+* aggiorna il tuo fork del repository F-Droid/Data colle ultime
+  modifiche provenienti dal
+  [repository principale](https://gitlab.com/fdroid/fdroiddata/),
+  seguendo
+  [queste istruzioni](https://forum.gitlab.com/t/refreshing-a-fork/32469/2)
+  da linea di comando (la ricezione dei repository remoti non sembra
+  disponibile su GitLab).
 * aggiornare il
   [file metadata dell'app](https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/name.bresciani.marco.tkcompanionapp.yml)
-  su un fork del repository F-Droid/Data, aggiungendo una nuova
-  versione, con l'aggiornamento della versione di NodeJS, il suo SHA,
-  il numero di commit, ecc. guardando, per esempio, le differenze di
-  NodeJS tra la versione 0.5.0 (50) e 0.6.0 (60) sul file metadata.
+  su un branch (non protetto) del tuo fork del repository F-Droid/Data,
+  aggiungendo una nuova versione, con l'aggiornamento della versione di
+  NodeJS, il suo SHA, il numero di commit, ecc. guardando, per esempio,
+  le differenze di NodeJS tra la versione 0.5.0 (50) e 0.6.0 (60) sul
+  file metadata.
 * Creare una MR sul repository `F-Droid/Data` originale con questa
   modifica dal fork.
 * Una volta che la MR è stata approvata e integrata sul repository
   principale di F-Droid/Data, inviare il proprio tag in modo che il
   processo di build di F-Droid poss individuarlo e usarlo.
+
+Le stesse istruzioni valgono per l'aggiornamento delle versioni di JDK,
+NPM o Android NDK.
 
 ### Come rilasciare
 Una volta che il codice è completo e testato, per rilasciare ci sono una

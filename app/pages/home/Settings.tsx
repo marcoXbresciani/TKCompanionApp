@@ -21,7 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import { List, Switch } from 'react-native-paper'
+import { List, Switch, useTheme } from 'react-native-paper'
 import { View } from 'react-native'
 import styled from 'styled-components'
 import StorageFactory from '../../utils/storage/StorageFactory'
@@ -45,6 +45,7 @@ const Settings: React.FunctionComponent = () => {
       <RowView>
         <TkText>{`${i18n.t('settings.theme')}`}</TkText>
         <Switch
+          color={useTheme().colors.primary}
           value={isThemeDark}
           onValueChange={() => {
             toggleTheme()

@@ -21,11 +21,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components'
-import { isDark } from '../../utils/Functions'
-import { tkDarkTheme } from '../../config/tkDarkTheme'
-import { tkLightTheme } from '../../config/tkLightTheme'
 import * as React from 'react'
-import { Card } from 'react-native-paper'
+import { Card, useTheme } from 'react-native-paper'
 
 const TKCardTitleBorder = styled(Card.Title)`
     border-bottom-style: solid;
@@ -33,15 +30,11 @@ const TKCardTitleBorder = styled(Card.Title)`
 `
 
 const TkCardDefaultTitle = styled(TKCardTitleBorder)`
-    border-bottom-color: ${isDark()
-        ? tkDarkTheme.colors.primary
-        : tkLightTheme.colors.primary};
+    border-bottom-color: ${props => props.theme.bg};
 `
 
 const TkCardWipTitle = styled(TKCardTitleBorder)`
-    border-bottom-color: ${isDark()
-        ? tkDarkTheme.colors.accent
-        : tkLightTheme.colors.accent};
+    border-bottom-color: ${props => props.theme.bg};
 `
 
 interface MyProps {
@@ -59,11 +52,20 @@ const TkCardTitle: React.FunctionComponent<MyProps> = ({
   subtitleNumberOfLines,
   wip = false
 }) => {
+  const wipTitleTheme = {
+    bg: `${useTheme().colors.accent}`
+  }
+
+  const defaultTitleTheme = {
+    bg: `${useTheme().colors.primary}`
+  }
+
   return (
     <>
       {wip
         ? (
           <TkCardWipTitle
+            theme={wipTitleTheme}
             title={title}
             titleNumberOfLines={titleNumberOfLines}
             subtitle={subtitle}
@@ -72,6 +74,7 @@ const TkCardTitle: React.FunctionComponent<MyProps> = ({
           )
         : (
           <TkCardDefaultTitle
+            theme={defaultTitleTheme}
             title={title}
             titleNumberOfLines={titleNumberOfLines}
             subtitle={subtitle}

@@ -36,6 +36,7 @@ This file is offered as-is, without any warranty.
   https://osamaqarem.com/blog/automatic-versioning-for-react-native-apps
 * React Native version 0.68.3.
 * NPM version 8.19.2.
+* Android NDK r23c
 ### Removed
 ### Fixed
 ### Security

@@ -26,7 +26,7 @@ import { Pages } from './DocsPage'
 import i18n from '../../i18n/i18n'
 import { Linking } from 'react-native'
 import { useState } from 'react'
-import { TkCard } from '../../components/tkcard/TkCard'
+import TkCard from '../../components/tkcard/TkCard'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
 

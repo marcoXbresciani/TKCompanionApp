@@ -21,13 +21,20 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components'
-import { Card } from 'react-native-paper'
-import { isDark } from '../../utils/Functions'
-import { tkDarkTheme } from '../../config/tkDarkTheme'
-import { tkLightTheme } from '../../config/tkLightTheme'
+import { Card, useTheme } from 'react-native-paper'
+import * as React from 'react'
 
-export const TkCard = styled(Card)`
-    border: 1px solid
-        ${isDark() ? tkDarkTheme.colors.text : tkLightTheme.colors.text};
+const StyledTkCard = styled(Card)`
+    border: 1px solid ${props => props.theme.bg};
     border-radius: 15px;
 `
+
+const TkCard = (props: React.PropsWithChildren<any>): JSX.Element => {
+  const borderTheme = {
+    bg: `${useTheme().colors.text}`
+  }
+
+  return (<StyledTkCard theme={borderTheme}>{props.children}</StyledTkCard>)
+}
+
+export default TkCard

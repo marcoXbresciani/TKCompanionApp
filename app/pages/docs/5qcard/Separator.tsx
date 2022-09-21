@@ -48,7 +48,7 @@ const Content = styled(TkText)`
     padding-right: 5px;
 `
 
-export const Separator = ({ children }: React.PropsWithChildren): JSX.Element => {
+export const Separator = ({ children }: React.PropsWithChildren<any>): JSX.Element => {
   const lineTheme = {
     bg: `${useTheme().colors.text}`
   }

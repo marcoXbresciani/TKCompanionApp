@@ -31,7 +31,7 @@ const NicerAreaView = styled(SafeAreaView)`
     flex: 1;
 `
 
-const PageContainer = (props: React.PropsWithChildren): JSX.Element => {
+const PageContainer = (props: React.PropsWithChildren<any>): JSX.Element => {
   return (
     <NicerAreaView>
       <StatusBar />

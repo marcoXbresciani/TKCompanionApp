@@ -29,6 +29,7 @@ import fr from './fr.json'
 import itIT from './it-IT.json'
 import nbNO from './nb_NO.json'
 import { LocaleConfig } from 'react-native-calendars/src'
+import { getLocaleCountry } from '../utils/Functions'
 
 let appleLocale
 
@@ -40,7 +41,7 @@ if (Platform.OS === 'ios') {
   }
 }
 
-const locale = (
+const deviceLocale = (
   Platform.OS === 'ios'
     ? appleLocale
     : NativeModules.I18nManager.localeIdentifier
@@ -55,6 +56,8 @@ const resources: Resources = {
   'it-IT': { translation: itIT },
   'nb-NO': { translation: nbNO }
 }
+
+const locale = (resources[deviceLocale] !== null ? deviceLocale : getLocaleCountry(deviceLocale))
 
 const i18n = i18next.use(initReactI18next)
 
@@ -74,6 +77,7 @@ void i18n.init({
 Object.keys(resources).forEach((key) => {
   LocaleConfig.locales[key] = resources[`${key}`].translation.calendar
 })
+
 LocaleConfig.defaultLocale = i18n.language
 
 export default i18n

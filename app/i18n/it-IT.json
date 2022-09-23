@@ -57,7 +57,6 @@
         },
         "url": {
             "description": "TkCompanionApp è software libero",
-            "title": "Guarda il codice",
             "page": [
                 {
                     "address": "https://codeberg.org/marco.bresciani/TKCompanionApp",
@@ -79,7 +78,8 @@
                     "icon": "code-working-outline",
                     "name": "Gitlab"
                 }
-            ]
+            ],
+            "title": "Guarda il codice"
         }
     },
     "app": {

@@ -45,7 +45,7 @@ This file is offered as-is, without any warranty.
 ### Removed
 * Briar link.
 ### Fixed
-* Fix bugs #14 and €15 for calendar translations.
+* Fix bugs #14 and #15 for calendar translations.
 
 ## [3.1.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/3.1.1) - 2022-08-26
 ### Added

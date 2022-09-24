@@ -68,7 +68,7 @@ void i18n.init({
   interpolation: {
     escapeValue: false
   },
-  fallbackLng: [...Object.keys(resources)],
+  fallbackLng: 'en',
   lng: locale ?? i18n.options.lng,
   nonExplicitSupportedLngs: true,
   resources

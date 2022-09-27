@@ -37,8 +37,13 @@ This file is offered as-is, without any warranty.
 * React Native version 0.68.3.
 * NPM version 8.19.2.
 * Android NDK r23c
+* OpenSSF Best Practices moved from 88% to 90% (see
+  [#11](https://github.com/marcoXbresciani/TKCompanionApp/issues/11)).
+* Updated NodeJS to LTS v16.17.1.
 ### Removed
 ### Fixed
+* Wrong dark/light mode and default language
+  [#17](https://github.com/marcoXbresciani/TKCompanionApp/issues/17)
 ### Security
 
 ## [3.1.2](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/3.1.2) - 2022-09-13

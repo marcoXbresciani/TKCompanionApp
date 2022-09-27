@@ -55,7 +55,7 @@ const App: React.FunctionComponent = () => {
   void settingsStorage
     .read(AllowedSettings.DARK_THEME)
     .then((r) => setIsThemeDark(r === 'true'))
-    .catch(() => setIsThemeDark(false))
+    .catch(() => setIsThemeDark(isThemeDark))
 
   void settingsStorage
     .read(AllowedSettings.LANGUAGE)
@@ -63,7 +63,7 @@ const App: React.FunctionComponent = () => {
       void i18n.changeLanguage(r ?? i18n.options.lng)
     })
     .catch(() => {
-      void i18n.changeLanguage(i18n.options.lng)
+      void i18n.changeLanguage(i18n.options.fallbackLng as string)
     })
 
   return (

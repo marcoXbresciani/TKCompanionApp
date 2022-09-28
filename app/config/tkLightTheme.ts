@@ -25,14 +25,10 @@ import { fontConfig } from './fontConfig'
 
 export const tkLightTheme = {
   ...DefaultTheme,
-  animation: {
-    scale: 1.0
-  },
   colors: {
     ...DefaultTheme.colors,
-    accent: 'gold',
-    primary: 'royalblue'
+    accent: '#FFD700',
+    primary: '#4169E1'
   },
-  dark: false,
   fonts: configureFonts(fontConfig)
 }

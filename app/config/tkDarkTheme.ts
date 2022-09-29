@@ -28,7 +28,8 @@ export const tkDarkTheme = {
   colors: {
     ...DarkTheme.colors,
     accent: '#4169E1',
-    primary: '#FFD700'
+    background: '#000000',
+    primary: '#E1B941'
   },
   fonts: configureFonts(fontConfig)
 }

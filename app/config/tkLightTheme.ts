@@ -27,8 +27,9 @@ export const tkLightTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    accent: '#FFD700',
-    primary: '#4169E1'
+    accent: '#E1B941',
+    background: '#FFFFFF',
+    primary: '#4169E1',
   },
   fonts: configureFonts(fontConfig)
 }

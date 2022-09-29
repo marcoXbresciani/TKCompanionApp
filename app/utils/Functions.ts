@@ -29,7 +29,3 @@ export function isDark (): boolean {
 export const getTodayIso8601 = (): string => {
   return new Date().toISOString().substring(0, 10)
 }
-
-export function getLocaleCountry (locale: string): string {
-  return locale.split('-')[0]
-}

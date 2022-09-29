@@ -99,7 +99,7 @@ Files: app/i18n/it-IT.json
 Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
-Files: app/i18n/nb_NO.json
+Files: app/i18n/nb-NO.json
 Copyright: 2022 Allan Nordhøy (@comradekingu)
 License: GPL-3.0-or-later
 

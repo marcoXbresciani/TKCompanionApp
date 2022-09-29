@@ -146,12 +146,14 @@ The release mode APK will be available in
 I actually have no idea on how to do that, for iOS.
 If you find it out, let me know so that we can update this document!
 
-#### Updating NodeJS
-To update the version of NodeJS to the latest available LTS, it's better
-to prepare the version without the tag and create an MR (merge request)
-on a fork of the GitLab F-Droid/Data repository, with the update of the
-application metadata file and, only after the merge has been added, make
-the tag available on the code repository.
+#### Updating NodeJS (& Co.)
+To update the version of NodeJS (or NPM, Java and, generally, everything
+related to building tools used by F-Droid building system through
+metadata file, it's better to prepare the version without the tag and
+create an MR (merge request) on a fork of the GitLab F-Droid/Data
+repository, with the update of the application metadata file and, only
+after the merge has been added, make the tag available on the code
+repository.
 This is because F-Droid independently manages releases as soon as one is
 available (labeled) on the repository.
 See https://gitlab.com/fdroid/fdroiddata/-/merge_requests/10826#note_895731121

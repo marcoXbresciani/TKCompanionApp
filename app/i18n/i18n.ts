@@ -27,7 +27,7 @@ import de from './de.json'
 import en from './en.json'
 import fr from './fr.json'
 import itIT from './it-IT.json'
-import nbNO from './nb_NO.json'
+import nbNO from './nb-NO.json'
 import { LocaleConfig } from 'react-native-calendars/src'
 
 let appleLocale

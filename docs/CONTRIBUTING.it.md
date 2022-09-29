@@ -149,14 +149,16 @@ Il file APK in modalità rilascio sarà disponibile nella cartella
 Non ho idea di come si faccia la stessa cosa, per iOS.
 Se lo scopri, fammi sapere che aggiorniamo questo documento!
 
-#### Aggiornare NodeJS
-Per aggiornare la versione di NodeJS all'ultima LTS disponibile, poiché
-F-Droid gestisce autonomamente i rilasci non appena è disponibile una
-nuova versione etichettata sul repository, è necessario preparare la
-versione senza il tag e creare una MR (richiesta di merge) su un fork
-del repository `F-Droid/Data` di GitLab, con l'aggiornamento del file
-metadata dell'applicazione e, solo dopo che è stata integrata la
-modifica, rendere disponibile il tag sul repository del codice.
+#### Aggiornare NodeJS (& C.)
+Per aggiornare la versione di NodeJS (o NPM, Java e, in generale, tutto
+quanto collegato agli strumenti di build di F-Droid, specificati nel
+file metadata, poiché F-Droid gestisce autonomamente i rilasci non
+appena è disponibile una nuova versione etichettata sul repository, è
+necessario preparare la versione senza il tag e creare una MR (richiesta
+di merge) su un fork del repository `F-Droid/Data` di GitLab, con
+l'aggiornamento del file metadata dell'applicazione e, solo dopo che è
+stata integrata la modifica, rendere disponibile il tag sul repository
+del codice.
 Cfr. https://gitlab.com/fdroid/fdroiddata/-/merge_requests/10826#note_895731121
 Quindi:
 * Eseguire la procedura che indica [Come rilasciare](#come-rilasciare),

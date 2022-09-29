@@ -10,7 +10,8 @@ module.exports = {
       {
         displayName: false,
         pure: true
-      }
+      },
+      'react-native-paper/babel'
     ]
   ]
 }

@@ -1,0 +1,3 @@
+Fix bugs #14 (again!) and #17 for calendar translations.
+Some technical updates for libraries and frameworks.
+Remove unused fonts.

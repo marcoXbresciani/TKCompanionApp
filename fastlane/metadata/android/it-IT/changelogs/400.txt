@@ -1,0 +1,3 @@
+Risolve i bug #14 e #15 sulle traduzioni del calendario.
+Alcuni aggiornamenti tecnici per librerie e framework.
+Rimossi i font inutilizzati.

@@ -34,14 +34,25 @@ This file is offered as-is, without any warranty.
   tooling.
   See
   https://osamaqarem.com/blog/automatic-versioning-for-react-native-apps
+### Removed
+### Fixed
+### Security
+
+## [4.0.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/4.0.0)
+### Added
+### Changed
 * React Native version 0.68.3.
 * NPM version 8.19.2.
 * Android NDK r23c
 * OpenSSF Best Practices moved from 88% to 90% (see
   [#11](https://github.com/marcoXbresciani/TKCompanionApp/issues/11)).
 * Updated NodeJS to LTS v16.17.1.
+* Rework of `nb_NO.json` translation file to use proper standard with
+  `nb-NO.json` name.
 ### Removed
 ### Fixed
+* App crashes when opening calendar in a language different from Italian bug
+  [#14](https://github.com/marcoXbresciani/TKCompanionApp/issues/14)
 * Wrong dark/light mode and default language
   [#17](https://github.com/marcoXbresciani/TKCompanionApp/issues/17)
 ### Security

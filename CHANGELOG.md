@@ -50,6 +50,7 @@ This file is offered as-is, without any warranty.
 * Rework of `nb_NO.json` translation file to use proper standard with
   `nb-NO.json` name.
 ### Removed
+* Unused fonts removed.
 ### Fixed
 * App crashes when opening calendar in a language different from Italian bug
   [#14](https://github.com/marcoXbresciani/TKCompanionApp/issues/14)

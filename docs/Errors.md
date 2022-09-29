@@ -35,3 +35,9 @@ or not.
     See https://bestpractices.coreinfrastructure.org/en
 
 ----
+
+18. [Introduce Material You](https://github.com/marcoXbresciani/TKCompanionApp/issues/18)
+    Introduce Material You design for most modern systems.
+
+    Originally posted by [@the4anoni](https://github.com/the4anoni) in
+    [#16 (comment)](https://github.com/marcoXbresciani/TKCompanionApp/issues/16#issuecomment-1256922586)

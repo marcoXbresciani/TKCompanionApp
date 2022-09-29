@@ -1,24 +1,24 @@
 {
     "4s": {
-        "s1": "① Comprendre la direction",
-        "s2": "② Saisir la situation actuelle",
-        "s3": "③ Établir votre prochaine condition cible",
-        "s4": "④ Conduire des expériences pour y arriver",
+        "s1": "1. Comprendre la direction",
+        "s2": "2. Saisir la situation actuelle",
+        "s3": "3. Établir votre prochaine condition cible",
+        "s4": "4. Conduire des expériences pour y arriver",
         "title": "Les quatre étapes du kata de l'amélioration"
     },
     "5q": {
         "back": {
-            "q1": "1) Qu'avez-vous prévu comme étant votre <bold>Dernière étape</bold>?",
-            "q2": "2) À quoi vous <bold>attendiez-vous</bold>?",
-            "q3": "3) Que s'est-il <bold>réellement passé</bold>?",
-            "q4": "4) Qu'avez-vous <bold>appris</bold>?",
+            "q1": "1. Qu'avez-vous prévu comme étant votre <bold>Dernière étape</bold>?",
+            "q2": "2. À quoi vous <bold>attendiez-vous</bold>?",
+            "q3": "3. Que s'est-il <bold>réellement passé</bold>?",
+            "q4": "4. Qu'avez-vous <bold>appris</bold>?",
             "quote": "Parce que vous ne savez pas vraiment quel sera le résultat d'une étape!",
             "return": "Retour à la question 3",
             "title": "Réfléchir à la dernière étape"
         },
         "front": {
             "header": "Kata d'entraînement",
-            "q1": "① Quelle est la <bold>condition cible</bold>?",
+            "q1": "1. Quelle est la <bold>condition cible</bold>?",
             "q4.2": "À quoi vous attendez-vous?",
             "separator": "Retourner la carte",
             "title": "Les cinq questions"
@@ -45,7 +45,7 @@
             "author": [
                 "J. Lavoie (@Edanas)"
             ],
-            "title": "Traduction en français par :"
+            "title": "Traduction en français par:"
         }
     },
     "app": {

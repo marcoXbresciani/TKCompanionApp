@@ -1,30 +1,30 @@
 {
     "4s": {
-        "s1": "① Holen Sie sich die Richtung oder Herausforderung",
-        "s2": "② Erfassen Sie den aktuellen Zustand",
-        "s3": "③ Legen Sie Ihren nächsten Zielzustand fest",
-        "s4": "④ Führen Sie Experimente durch, um dorthin zu gelangen",
+        "s1": "1. Holen Sie sich die Richtung oder Herausforderung",
+        "s2": "2. Erfassen Sie den aktuellen Zustand",
+        "s3": "3. Legen Sie Ihren nächsten Zielzustand fest",
+        "s4": "4. Führen Sie Experimente durch, um dorthin zu gelangen",
         "title": "Die vier Schritte der Verbesserungs-Kata"
     },
     "5q": {
         "back": {
-            "q1": "1) Was war Ihr <bold>letzter Schritt</bold>?",
-            "q2": "2) Was haben Sie <bold>erwartet</bold>?",
-            "q3": "3) Was ist <bold>tatsächlich passiert</bold>?",
-            "q4": "4) Was hast du <bold>gelernt</bold>?",
+            "q1": "1. Was war Ihr <bold>letzter Schritt</bold>?",
+            "q2": "2. Was haben Sie <bold>erwartet</bold>?",
+            "q3": "3. Was ist <bold>tatsächlich passiert</bold>?",
+            "q4": "4. Was hast du <bold>gelernt</bold>?",
             "quote": "Weil Sie nicht genau wissen, was das Ergebnis eines Schritts sein wird!",
             "return": "Zurück zu Frage 3",
             "title": "Denken Sie über den letzten Schritt nach"
         },
         "front": {
             "header": "Kata trainieren",
-            "q1": "① Was ist die <bold>Zielbedingung</bold>?",
-            "q2": "② Wie ist jetzt der <bold>Ist-Zustand</bold>?",
-            "q3.1": "③ Welche <bold>Hindernisse</bold> halten Sie Ihrer Meinung nach davon ab, den Zielzustand zu erreichen?",
+            "q1": "1. Was ist die <bold>Zielbedingung</bold>?",
+            "q2": "2. Wie ist jetzt der <bold>Ist-Zustand</bold>?",
+            "q3.1": "3. Welche <bold>Hindernisse</bold> halten Sie Ihrer Meinung nach davon ab, den Zielzustand zu erreichen?",
             "q3.2": "Welchen *einen* sprichst du jetzt an?",
-            "q4.1": "④ Was ist Ihr <bold>nächster Schritt</bold>? (Nächster Versuch)",
+            "q4.1": "4. Was ist Ihr <bold>nächster Schritt</bold>? (Nächster Versuch)",
             "q4.2": "Was erwartest du?",
-            "q5": "⑤ Wie schnell können wir sehen, was wir aus diesem Schritt <bold>gelernt</bold> haben?",
+            "q5": "5. Wie schnell können wir sehen, was wir aus diesem Schritt <bold>gelernt</bold> haben?",
             "separator": "Karte umdrehen",
             "title": "Die fünf Fragen"
         }
@@ -161,11 +161,11 @@
         "theme": "Schalten Sie das helle/dunkle Thema um"
     },
     "tkc": {
-        "1": "◉ Bedingungen sind unvorhersehbar.",
-        "2": "◉ Genießen Sie die Lernzone.",
-        "3": "◉ Die Richtung verstehen, den aktuellen Zustand erfassen, einen Zielzustand festlegen, in Richtung des Zielzustands experimentieren.",
-        "4": "◉ Anfänger üben Starter-Kata genau.",
-        "5": "◉ Habe einen Coach, sei Coach.",
+        "1": "* Bedingungen sind unvorhersehbar.",
+        "2": "* Genießen Sie die Lernzone.",
+        "3": "* Die Richtung verstehen, den aktuellen Zustand erfassen, einen Zielzustand festlegen, in Richtung des Zielzustands experimentieren.",
+        "4": "* Anfänger üben Starter-Kata genau.",
+        "5": "* Habe einen Coach, sei Coach.",
         "title": "Der Kata-Code"
     }
 }

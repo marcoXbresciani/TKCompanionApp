@@ -1,18 +1,18 @@
 {
     "4s": {
-        "s1": "① Get the Direction or Challenge",
-        "s2": "② Grasp the Current Condition",
-        "s3": "③ Establish your Next Target Condition",
-        "s4": "④ Conduct Experiments to get there",
+        "s1": "1. Get the Direction or Challenge",
+        "s2": "2. Grasp the Current Condition",
+        "s3": "3. Establish your Next Target Condition",
+        "s4": "4. Conduct Experiments to get there",
         "title": "The Four Steps of the Improvement Kata"
     },
     "5q": {
         "back": {
             "caption": "Have the learner state the <bold>obstacle</bold> being worked on",
-            "q1": "1) What did you plan as your <bold>Last Step</bold>?",
-            "q2": "2) What did you <bold>Expect</bold>?",
-            "q3": "3) What <bold>Actually Happened</bold>?",
-            "q4": "4) What did you <bold>Learn</bold>?",
+            "q1": "1. What did you plan as your <bold>Last Step</bold>?",
+            "q2": "2. What did you <bold>Expect</bold>?",
+            "q3": "3. What <bold>Actually Happened</bold>?",
+            "q4": "4. What did you <bold>Learn</bold>?",
             "quote": "Because you don't actually know what the result of a step will be!",
             "return": "Return to question 3",
             "title": "Reflect on the Last Step"
@@ -20,13 +20,13 @@
         "front": {
             "caption": "*You'll often work on the same obstacle with several experiments",
             "header": "Coaching Kata",
-            "q1": "① What is the <bold>Target Condition</bold>?",
-            "q2": "② What is the <bold>Actual Condition</bold> now?",
-            "q3.1": "③ What <bold>Obstacles</bold> do you think are preventing you from reaching the target condition?",
+            "q1": "1. What is the <bold>Target Condition</bold>?",
+            "q2": "2. What is the <bold>Actual Condition</bold> now?",
+            "q3.1": "3. What <bold>Obstacles</bold> do you think are preventing you from reaching the target condition?",
             "q3.2": "Which *one* are you addressing now?",
-            "q4.1": "④ What is your <bold>Next Step</bold>? (Next experiment)",
+            "q4.1": "4. What is your <bold>Next Step</bold>? (Next experiment)",
             "q4.2": "What do you expect?",
-            "q5": "⑤ How quickly can we go and see what we <bold>Have Learned</bold> from taking that step?",
+            "q5": "5. How quickly can we go and see what we <bold>Have Learned</bold> from taking that step?",
             "separator": "Turn Card Over",
             "title": "The Five Questions"
         }
@@ -209,11 +209,11 @@
         "theme": "Switch light/dark theme"
     },
     "tkc": {
-        "1": "◉ Conditions are unpredictable.",
-        "2": "◉ Enjoy the learning zone.",
-        "3": "◉ Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
-        "4": "◉ Beginners practice Starter Kata exactly.",
-        "5": "◉ Have a coach, be a coach.",
+        "1": "* Conditions are unpredictable.",
+        "2": "* Enjoy the learning zone.",
+        "3": "* Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
+        "4": "* Beginners practice Starter Kata exactly.",
+        "5": "* Have a coach, be a coach.",
         "title": "The Kata Code"
     }
 }

@@ -14,34 +14,9 @@
 		6172F2D35A4C3AA820D92908 /* libPods-TKCompanionApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-TKCompanionApp.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-TKCompanionApp-TKCompanionAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-TKCompanionApp-TKCompanionAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		F0C92DC0AE0441358F4D40AC /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3304B6E26EB44549880AFE32 /* OpenSans-Bold.ttf */; };
-		A98AA8E14AA547FE8F70D006 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FD31B92CB884E28AEDEE16D /* OpenSans-Italic.ttf */; };
-		0351250D3B584B7B95A83885 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BDA1A620C2740FCB1012243 /* OpenSans-Regular.ttf */; };
-		7B9C9BCF80D742F9A88F4A35 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0678B20C0D12429382C4320B /* AntDesign.ttf */; };
-		DE0C69F75A8C4F4890B754CE /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD3C65F7FFBE4621B3E184D0 /* Entypo.ttf */; };
-		1443735ED7154CF0B3D36B95 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91439F4F067A49E5A401542C /* EvilIcons.ttf */; };
-		3F7638E3F11D4964A9E7AD9D /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0132A82637BF46EFADCF9E52 /* Feather.ttf */; };
-		5EA2D92CBBBC43D0B60D4BA2 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB453F747664DEEA8DF3558 /* FontAwesome.ttf */; };
-		282586DF541B4A7CB2E7503D /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8824A9F7F04ACC9DEC7905 /* FontAwesome5_Brands.ttf */; };
-		748346A10FB04558A8DBBC83 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AF2D8705FE2449183BD65F0 /* FontAwesome5_Regular.ttf */; };
-		B7A4CBD93D6047DBB2DCA183 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD93241707FB42A1A9624702 /* FontAwesome5_Solid.ttf */; };
-		4774DBC9DB4242D6A3C3D53B /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 060FB3765B224DDAA99550D3 /* Fontisto.ttf */; };
-		AB50F1993E04476DA1ADD0F4 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA82ACEEAC3844A39A9799EC /* Foundation.ttf */; };
 		863960612B864069AF6B67AC /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6E017CEB62A45DA870AED15 /* Ionicons.ttf */; };
-		B37E42D014434037B414FFF1 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCE0B237E340425BBA77BEE9 /* MaterialCommunityIcons.ttf */; };
-		8A78206F9CFE424BB6038C71 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6244293F72FF4FFD907BF692 /* MaterialIcons.ttf */; };
-		ABB5643D1FF74F579FB5A1BD /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1B888FA680D460BBFECF34F /* Octicons.ttf */; };
-		94CCED3CE4B146788BA5053A /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 298ADCBCA576489096DBA153 /* SimpleLineIcons.ttf */; };
-		CB2D61008AD144EEB098566C /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 713727A0E2234D1F9BA8BF0B /* Zocial.ttf */; };
-		FBF5FD039F0A4CE7922FC27F /* FreeSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 672B51224CF946DE87F24176 /* FreeSans.ttf */; };
-		C331ACD8509A436093E58C33 /* FreeSansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3C209C4D3CD44C9AFF7DD78 /* FreeSansBold.ttf */; };
-		95E35D049C4843C4BCC61F00 /* Sarpanch-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E16AF8AC54BE28B99C221 /* Sarpanch-Black.ttf */; };
-		13889472B43B42F297B06D80 /* Sarpanch-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88FA6FB96FFC4A54A5A4593E /* Sarpanch-Bold.ttf */; };
-		450B9660775745FC81D9FD54 /* Sarpanch-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D41DF8A44F0A4010B7755F27 /* Sarpanch-ExtraBold.ttf */; };
-		87FE6E909B2D49ED8F029E2F /* Sarpanch-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CBF6F42846402AB334D568 /* Sarpanch-Medium.ttf */; };
-		C1FB541AD0B345DA866A93E2 /* Sarpanch-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C59E478E16842F68DA6A67E /* Sarpanch-Regular.ttf */; };
-		EDC4006847CD478480A429A3 /* Sarpanch-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B0FFD1355FA408281BAFA79 /* Sarpanch-SemiBold.ttf */; };
-		1EA567C8060542BA9DCC7D13 /* Unifont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFD4F6DC7B0F4653BC5251C9 /* Unifont.ttf */; };
+		80F35DFF3EE046B580DE8E03 /* FreeSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 562676AF7D454715ACD346DF /* FreeSans.ttf */; };
+		76307E7C66D44DAF8AE416CF /* FreeSansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB8D389DE76A4348A96D4CBC /* FreeSansBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +65,8 @@
 		713727A0E2234D1F9BA8BF0B /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		672B51224CF946DE87F24176 /* FreeSans.ttf */ = {isa = PBXFileReference; name = "FreeSans.ttf"; path = "../assets/fonts/FreeSans.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		F3C209C4D3CD44C9AFF7DD78 /* FreeSansBold.ttf */ = {isa = PBXFileReference; name = "FreeSansBold.ttf"; path = "../assets/fonts/FreeSansBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		562676AF7D454715ACD346DF /* FreeSans.ttf */ = {isa = PBXFileReference; name = "FreeSans.ttf"; path = "../app/assets/fonts/FreeSans.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FB8D389DE76A4348A96D4CBC /* FreeSansBold.ttf */ = {isa = PBXFileReference; name = "FreeSansBold.ttf"; path = "../app/assets/fonts/FreeSansBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +204,8 @@
 				8C59E478E16842F68DA6A67E /* Sarpanch-Regular.ttf */,
 				2B0FFD1355FA408281BAFA79 /* Sarpanch-SemiBold.ttf */,
 				CFD4F6DC7B0F4653BC5251C9 /* Unifont.ttf */,
+				562676AF7D454715ACD346DF /* FreeSans.ttf */,
+				FB8D389DE76A4348A96D4CBC /* FreeSansBold.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -356,6 +335,8 @@
 				C1FB541AD0B345DA866A93E2 /* Sarpanch-Regular.ttf in Resources */,
 				EDC4006847CD478480A429A3 /* Sarpanch-SemiBold.ttf in Resources */,
 				1EA567C8060542BA9DCC7D13 /* Unifont.ttf in Resources */,
+				80F35DFF3EE046B580DE8E03 /* FreeSans.ttf in Resources */,
+				76307E7C66D44DAF8AE416CF /* FreeSansBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

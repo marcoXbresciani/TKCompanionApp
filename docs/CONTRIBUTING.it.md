@@ -223,6 +223,17 @@ Quindi:
   [queste istruzioni](https://forum.gitlab.com/t/refreshing-a-fork/32469/2)
   da linea di comando (la ricezione dei repository remoti non sembra
   disponibile su GitLab).
+  Solo la prima volta, eseguire
+  `git remote add upstream https://gitlab.com/fdroid/fdroiddata.git` per
+  aggiungere il repository sorgente per aggiornare facilmente.
+  Poi, ogni volta che si deve aggiornare, bisogna eseguire questi
+  comandi:
+  ```shell
+  git checkout master
+  git fetch upstream
+  git pull upstream master
+  git push origin master
+  ```
 * aggiornare il
   [file metadata dell'app](https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/name.bresciani.marco.tkcompanionapp.yml)
   su un branch (non protetto) del tuo fork del repository F-Droid/Data,

@@ -216,6 +216,16 @@ So:
   following
   [these instructions](https://forum.gitlab.com/t/refreshing-a-fork/32469/2)
   through command line (pull mirroring seems not available on GitLab).
+  Only the first time, execute
+  `git remote add upstream https://gitlab.com/fdroid/fdroiddata.git` to
+  add the upstream source repository to easily mirror it.
+  Then, every time you need to update it, just run these commands:
+  ```shell
+  git checkout master
+  git fetch upstream
+  git pull upstream master
+  git push origin master
+  ```
 * update the
   [app metadata file](https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/name.bresciani.marco.tkcompanionapp.yml)
   on a(n unprotected) branch of your fork of the F-Droid/Data

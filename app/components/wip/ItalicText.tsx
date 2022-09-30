@@ -21,7 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components'
-import { TkText } from '../TkText'
+import TkText from '../TkText'
 
 export const ItalicText = styled(TkText)`
     font-style: italic;

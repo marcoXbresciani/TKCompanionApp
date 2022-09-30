@@ -23,7 +23,7 @@
 import { View } from 'react-native'
 import * as React from 'react'
 import styled from 'styled-components'
-import { TkText } from '../../../components/TkText'
+import TkText from '../../../components/TkText'
 import { useTheme } from 'react-native-paper'
 
 const Container = styled(View)`

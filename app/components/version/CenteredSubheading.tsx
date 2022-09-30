@@ -21,8 +21,20 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components'
-import { Subheading } from 'react-native-paper'
+import * as React from 'react'
+import TkText from '../TkText'
 
-export const CenteredSubheading = styled(Subheading)`
+const StyledSubheading = styled(TkText)`
     text-align: center;
 `
+
+const CenteredSubheading = (props: React.PropsWithChildren<any>): JSX.Element => {
+  return (
+
+    <StyledSubheading variant='titleMedium'>
+      {props.children}
+    </StyledSubheading>
+  )
+}
+
+export default CenteredSubheading

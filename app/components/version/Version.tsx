@@ -21,18 +21,18 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import { Caption } from 'react-native-paper'
 import { APP_NAME, APP_VERSION } from '../../utils/Constants'
 import i18n from '../../i18n/i18n'
-import { CenteredTitle } from '../CenteredTitle'
-import { CenteredSubheading } from './CenteredSubheading'
+import CenteredTitle from '../CenteredTitle'
+import CenteredSubheading from './CenteredSubheading'
+import TkText from '../TkText'
 
 const Version: React.FunctionComponent = () => {
   return (
     <>
       <CenteredTitle>{APP_NAME}</CenteredTitle>
       <CenteredSubheading>{APP_VERSION}</CenteredSubheading>
-      <Caption>{`${i18n.t('app.short')}`}</Caption>
+      <TkText variant='bodySmall'>{`${i18n.t('app.short')}`}</TkText>
     </>
   )
 }

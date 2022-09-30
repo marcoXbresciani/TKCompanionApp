@@ -21,7 +21,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import { TkParagraph } from '../../components/TkParagraph'
+import TkParagraph from '../../components/TkParagraph'
 import i18n from '../../i18n/i18n'
 import TkCard from '../../components/tkcard/TkCard'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'

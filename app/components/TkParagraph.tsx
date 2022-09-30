@@ -21,9 +21,20 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components'
-import { Paragraph } from 'react-native-paper'
+import * as React from 'react'
+import TkText from './TkText'
 
-export const TkParagraph = styled(Paragraph)`
-    font-size: 16px;
-    line-height: 27px;
+const StyledParagraph = styled(TkText)`
+    text-align: center;
 `
+
+const TkParagraph = (props: React.PropsWithChildren<any>): JSX.Element => {
+  return (
+
+    <StyledParagraph variant='bodyMedium'>
+      {props.children}
+    </StyledParagraph>
+  )
+}
+
+export default TkParagraph

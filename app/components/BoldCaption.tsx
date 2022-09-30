@@ -21,8 +21,20 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components'
+import * as React from 'react'
 import TkText from './TkText'
 
-export const BoldText = styled(TkText)`
+const StyledCaption = styled(TkText)`
     font-weight: bold;
 `
+
+const BoldCaption = (props: React.PropsWithChildren<any>): JSX.Element => {
+  return (
+
+    <StyledCaption variant='bodySmall'>
+      {props.children}
+    </StyledCaption>
+  )
+}
+
+export default BoldCaption

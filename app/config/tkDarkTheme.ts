@@ -20,7 +20,7 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { configureFonts, DarkTheme } from 'react-native-paper'
+import { configureFonts, MD3DarkTheme as DarkTheme } from 'react-native-paper'
 import { fontConfig } from './fontConfig'
 
 export const tkDarkTheme = {

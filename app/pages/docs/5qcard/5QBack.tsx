@@ -25,10 +25,11 @@ import { Pressable, View } from 'react-native'
 import * as React from 'react'
 import i18next from 'i18next'
 import { Trans, useTranslation } from 'react-i18next'
-import { TkText } from '../../../components/TkText'
-import { Caption, useTheme } from 'react-native-paper'
+import TkText from '../../../components/TkText'
+import { useTheme } from 'react-native-paper'
 import { BoldText } from '../../../components/BoldText'
-import { CenteredTitle } from '../../../components/CenteredTitle'
+import CenteredTitle from '../../../components/CenteredTitle'
+import BoldCaption from '../../../components/BoldCaption'
 
 const BackView = styled(View)`
     border: 1px solid ${props => props.theme.bc};
@@ -61,10 +62,6 @@ const Returner = styled(TkText)`
     text-align: right;
 `
 
-const BoldCaption = styled(Caption)`
-  font-weight: bold;
-`
-
 interface Props {
   onPress: () => void
 }
@@ -85,14 +82,14 @@ const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
       <BackView theme={backTheme}>
         <CenteredTitle>{`${i18next.t('5q.back.title')}`}</CenteredTitle>
         <QuoteText>{`${i18next.t('5q.back.quote')}`}</QuoteText>
-        <Caption><Trans
+        <TkText variant='bodySmall'><Trans
           t={t}
           i18nKey='5q.back.caption'
           components={{
             bold: <BoldCaption />
           }}
                  />
-        </Caption>
+        </TkText>
         <View>
           <TkText>
             <Trans

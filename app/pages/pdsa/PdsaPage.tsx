@@ -26,7 +26,7 @@ import { Appbar, TextInput, useTheme } from 'react-native-paper'
 import PdsaEntry from '../../utils/storage/pdsa/PdsaEntry'
 import StorageFactory from '../../utils/storage/StorageFactory'
 import i18n from '../../i18n/i18n'
-import { TkParagraph } from '../../components/TkParagraph'
+import TkParagraph from '../../components/TkParagraph'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import TkCard from '../../components/tkcard/TkCard'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
@@ -179,7 +179,7 @@ const DownloadPage: React.FC = () => {
                 placeholder='Target'
                 right={
                   <TextInput.Icon
-                    name='trash-outline'
+                    icon='trash-outline'
                     onPress={() => {
                       setSnackMessage(`Deleted ${day} Target.`)
                       setPdsaEntry({
@@ -209,7 +209,7 @@ const DownloadPage: React.FC = () => {
                 placeholder='Actual'
                 right={
                   <TextInput.Icon
-                    name='trash-outline'
+                    icon='trash-outline'
                     onPress={() => {
                       setSnackMessage(`Deleted ${day} Actual.`)
                       setPdsaEntry({
@@ -238,7 +238,7 @@ const DownloadPage: React.FC = () => {
                 placeholder='Obstacle'
                 right={
                   <TextInput.Icon
-                    name='trash-outline'
+                    icon='trash-outline'
                     onPress={() => {
                       setSnackMessage(`Deleted ${day} Obstacle.`)
                       setPdsaEntry({
@@ -268,7 +268,7 @@ const DownloadPage: React.FC = () => {
                 placeholder='Step'
                 right={
                   <TextInput.Icon
-                    name='trash-outline'
+                    icon='trash-outline'
                     onPress={() => {
                       setSnackMessage(`Deleted ${day} Step.`)
                       setPdsaEntry({
@@ -298,7 +298,7 @@ const DownloadPage: React.FC = () => {
                 placeholder='Learnt'
                 right={
                   <TextInput.Icon
-                    name='trash-outline'
+                    icon='trash-outline'
                     onPress={() => {
                       setSnackMessage(`Deleted ${day} Learnt.`)
                       setPdsaEntry({

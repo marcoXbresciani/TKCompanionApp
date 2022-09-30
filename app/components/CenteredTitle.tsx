@@ -21,8 +21,20 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import styled from 'styled-components'
-import { Title } from 'react-native-paper'
+import * as React from 'react'
+import TkText from './TkText'
 
-export const CenteredTitle = styled(Title)`
+const StyledCenteredTitle = styled(TkText)`
     text-align: center;
 `
+
+const CenteredTitle = (props: React.PropsWithChildren<any>): JSX.Element => {
+  return (
+
+    <StyledCenteredTitle variant='titleLarge'>
+      {props.children}
+    </StyledCenteredTitle>
+  )
+}
+
+export default CenteredTitle

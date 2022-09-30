@@ -33,17 +33,17 @@ const TkNavigator: React.FunctionComponent = () => {
     {
       key: 'home',
       title: i18n.t('nav.home'),
-      icon: 'home-outline'
+      focusedIcon: 'home-outline'
     },
     {
       key: 'pdsa',
       title: i18n.t('nav.pdsa'),
-      icon: 'journal-outline'
+      focusedIcon: 'journal-outline'
     },
     {
       key: 'docs',
       title: i18n.t('nav.docs'),
-      icon: 'library-outline'
+      focusedIcon: 'library-outline'
     }
   ])
   const renderScene = BottomNavigation.SceneMap({
@@ -54,9 +54,11 @@ const TkNavigator: React.FunctionComponent = () => {
 
   return (
     <BottomNavigation
+      compact
       navigationState={{ index, routes }}
       onIndexChange={setIndex}
       renderScene={renderScene}
+      sceneAnimationType='shifting'
     />
   )
 }

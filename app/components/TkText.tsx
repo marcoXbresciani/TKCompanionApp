@@ -22,8 +22,17 @@
  */
 import styled from 'styled-components'
 import { Text } from 'react-native-paper'
+import * as React from 'react'
 
-export const TkText = styled(Text)`
+const StyledText = styled(Text)`
     font-size: 16px;
     line-height: 27px;
 `
+
+const TkText = (props: React.PropsWithChildren<any>): JSX.Element => {
+  return (
+    <StyledText>{props.children}</StyledText>
+  )
+}
+
+export default TkText

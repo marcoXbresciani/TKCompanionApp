@@ -24,7 +24,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { Linking, ScrollView, View } from 'react-native'
 import { IconButton } from 'react-native-paper'
-import { TkText } from '../../components/TkText'
+import TkText from '../../components/TkText'
 import { SmallerText } from '../../components/SmallerText'
 import i18n from '../../i18n/i18n'
 

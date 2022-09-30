@@ -25,21 +25,18 @@ import { Pressable, View } from 'react-native'
 import * as React from 'react'
 import i18next from 'i18next'
 import { Trans, useTranslation } from 'react-i18next'
-import { TkText } from '../../../components/TkText'
+import TkText from '../../../components/TkText'
 import { BoldText } from '../../../components/BoldText'
-import { CenteredTitle } from '../../../components/CenteredTitle'
+import CenteredTitle from '../../../components/CenteredTitle'
 import Separator from './Separator'
-import { Caption, useTheme } from 'react-native-paper'
+import { useTheme } from 'react-native-paper'
 
 const FrontView = styled(View)`
-    border: 10px solid ${props => props.theme.bg};
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+  border: 10px solid ${props => props.theme.bg};
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 `
 
 const CkView = styled(View)`
@@ -138,7 +135,7 @@ const Front5Q: React.FC<Props> = ({ onPress }: Props) => {
               }}
             />
           </TkText>
-          <Caption>{`${i18next.t('5q.front.caption')}`}</Caption>
+          <TkText variant='bodySmall'>{`${i18next.t('5q.front.caption')}`}</TkText>
         </QuestionsView>
       </FrontView>
     </>

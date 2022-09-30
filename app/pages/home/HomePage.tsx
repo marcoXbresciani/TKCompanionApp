@@ -118,7 +118,7 @@ const HomePage: React.FunctionComponent = () => {
       />
 
       <Appbar>
-        <Appbar.Content title={APP_NAME} subtitle={APP_VERSION} />
+        <Appbar.Content title={APP_NAME + ", " + APP_VERSION}/>
         <Menu
           visible={visible}
           onDismiss={closeMenu}
@@ -132,23 +132,23 @@ const HomePage: React.FunctionComponent = () => {
         >
           <Menu.Item
             onPress={showSettings}
-            icon='settings-outline'
+            leadingIcon='settings-outline'
             title={`${i18n.t('nav.menu.settings')}`}
           />
           <Menu.Item
             onPress={showCopyright}
-            icon='document-text-outline'
+            leadingIcon='document-text-outline'
             title={`${i18n.t('nav.menu.copyright')}`}
           />
           <Menu.Item
             onPress={showPanel}
-            icon='at-outline'
+            leadingIcon='at-outline'
             title={`${i18n.t('nav.menu.contact')}`}
           />
           <Divider />
           <Menu.Item
             onPress={showAbout}
-            icon='information-circle-outline'
+            leadingIcon='information-circle-outline'
             title={`${i18n.t('nav.menu.about')}`}
           />
         </Menu>

@@ -34,6 +34,7 @@ This file is offered as-is, without any warranty.
   tooling.
   See
   https://osamaqarem.com/blog/automatic-versioning-for-react-native-apps
+* Update React Native Paper to v5.
 ### Removed
 ### Fixed
 ### Security

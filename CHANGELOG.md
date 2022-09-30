@@ -39,7 +39,7 @@ This file is offered as-is, without any warranty.
 ### Fixed
 ### Security
 
-## [4.0.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/4.0.0)
+## [4.0.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/4.0.0) - 2022-09-30
 ### Added
 ### Changed
 * React Native version 0.68.3.

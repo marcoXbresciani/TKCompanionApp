@@ -39,6 +39,11 @@ This file is offered as-is, without any warranty.
 ### Fixed
 ### Security
 
+## [4.0.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/4.0.1) - 2022-10-04
+### Fixed
+* Version 4.0.0 crashes
+  [#19](https://github.com/marcoXbresciani/TKCompanionApp/issues/19)
+
 ## [4.0.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/4.0.0) - 2022-09-30
 ### Added
 ### Changed

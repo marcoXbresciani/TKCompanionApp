@@ -17,6 +17,8 @@ SPDX-License-Identifier: FSFAP
 > any), please remember that **TKCompanionApp** has _neither_ network
 > _nor_ files access.
 
+* No known issues.
+
 For more information
 If you have any questions or comments about this advisory:
 * Open an issue in node-fetch

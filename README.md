@@ -14,6 +14,7 @@ SPDX-License-Identifier: FSFAP
 
 ![GitHub](https://img.shields.io/github/license/marcoxbresciani/tkcompanionapp?logo=gnu&style=plastic)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/marcoXbresciani/TKCompanionApp?color=black&logo=github&sort=semver&style=plastic)
+![GitHub all releases](https://img.shields.io/github/downloads/marcoXbresciani/TKCompanionApp/total?logo=github&style=plastic)
 ![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp?logo=fdroid)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![REUSE status](https://api.reuse.software/badge/github.com/marcoXbresciani/TKCompanionApp)](https://api.reuse.software/info/github.com/marcoXbresciani/TKCompanionApp)
@@ -135,12 +136,12 @@ Just sit, follow the menu, learn, practice and improve.
   of file that will be downloaded.
 
 ### Screenshots
-<img alt="5Q" src="fastlane/metadata/android/en-US/images/phoneScreenshots/5Q.png" width="50%"/>
-<img alt="About" src="fastlane/metadata/android/en-US/images/phoneScreenshots/about.png" width="50%"/>
-<img alt="Home" src="fastlane/metadata/android/en-US/images/phoneScreenshots/home.png" width="50%"/>
-<img alt="Docs" src="fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png" width="50%"/>
-<img alt="PDSA" src="fastlane/metadata/android/en-US/images/phoneScreenshots/pdsa.png" width="50%"/>
-<img alt="TKC" src="fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png" width="50%"/>
+<img alt="5Q" src="fastlane/metadata/android/en-US/images/phoneScreenshots/5Q.png" sizes="50%"/>
+<img alt="About" src="fastlane/metadata/android/en-US/images/phoneScreenshots/about.png" sizes="50%"/>
+<img alt="Home" src="fastlane/metadata/android/en-US/images/phoneScreenshots/home.png" sizes="50%"/>
+<img alt="Docs" src="fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png" sizes="50%"/>
+<img alt="PDSA" src="fastlane/metadata/android/en-US/images/phoneScreenshots/pdsa.png" sizes="50%"/>
+<img alt="TKC" src="fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png" sizes="50%"/>
 
 ### Font Notes
 * Font used is [Free

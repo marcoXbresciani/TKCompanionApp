@@ -109,7 +109,7 @@ Then go to this project main folder and run `npm install`.
 You should see all the needed dependencies downloaded and installed
 through NPM package manager.
 
-![GitHub repo size](https://img.shields.io/github/repo-size/marcoXbresciani/TKCompanionApp)
+![GitHub repo size](https://img.shields.io/github/repo-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 

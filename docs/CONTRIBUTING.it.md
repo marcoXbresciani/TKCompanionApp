@@ -111,6 +111,7 @@ Quindi vai nella cartella principale del progetto ed esegui
 Dovresti vedere che tutte le dipendenze necessarie sono state scaricate
 e installate tramite il gestore di pacchetti NPM.
 
+![dimensione del repository Github](https://img.shields.io/github/repo-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![dimensione del codice GitHub in byte](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 ![Attività di commit GitHub](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
 

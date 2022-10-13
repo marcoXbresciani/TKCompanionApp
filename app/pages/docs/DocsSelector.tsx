@@ -44,7 +44,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
     setMessage('')
   }
 
-  const download = (fileName: string): void => {
+  const openUrl = (fileName: string): void => {
     Linking.openURL(fileName).catch((reason) => {
       setMessage(
         i18n.t('download.error', {
@@ -79,7 +79,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
               right={() => (
                 <IconButton
                   icon='download-outline' onPress={() =>
-                    download(
+                    openUrl(
                       'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf'
                     )}
                 />
@@ -94,7 +94,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
               right={() => (
                 <IconButton
                   icon='download-outline' onPress={() =>
-                    download(
+                    openUrl(
                       'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf'
                     )}
                 />
@@ -107,7 +107,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
               right={() => (
                 <IconButton
                   icon='download-outline' onPress={() =>
-                    download(
+                    openUrl(
                       'https://web.archive.org/web/20220326213548/http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf'
                     )}
                 />
@@ -120,7 +120,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
               right={() => (
                 <IconButton
                   icon='download-outline' onPress={() =>
-                    download(
+                    openUrl(
                       'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf'
                     )}
                 />
@@ -133,7 +133,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
               right={() => (
                 <IconButton
                   icon='download-outline' onPress={() =>
-                    download(
+                    openUrl(
                       'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf'
                     )}
                 />
@@ -148,12 +148,27 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
               right={() => (
                 <IconButton
                   icon='download-outline' onPress={() =>
-                    download(
+                    openUrl(
                       'https://web.archive.org/web/20220409213239/http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg'
                     )}
                 />
               )}
               title={`${i18n.t('docs.kts')}`}
+              titleNumberOfLines={3}
+            />
+            <List.Item
+              left={() => (
+                <IconButton icon='musical-note-outline' onPress={() => onPress(Pages.Carnegie)} />
+              )}
+              right={() => (
+                <IconButton
+                  icon='browsers-outline' onPress={() =>
+                    openUrl(
+                      'https://www.carnegiehall.org/Explore/Articles/2020/04/10/The-Joke'
+                    )}
+                />
+              )}
+              title={`${i18n.t('docs.carnegie')}`}
               titleNumberOfLines={3}
             />
           </List.Section>

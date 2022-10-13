@@ -22,19 +22,18 @@
  */
 import styled from 'styled-components'
 import * as React from 'react'
-import TkText from './TkText'
+import SmallerText from './SmallerText'
 
-const StyledCaption = styled(TkText)`
+const StyledCaption = styled(SmallerText)`
     font-weight: bold;
 `
 
-const BoldCaption = (props: React.PropsWithChildren<any>): JSX.Element => {
+const BoldSmaller = (props: React.PropsWithChildren<any>): JSX.Element => {
   return (
-
-    <StyledCaption variant='bodySmall'>
+    <StyledCaption>
       {props.children}
     </StyledCaption>
   )
 }
 
-export default BoldCaption
+export default BoldSmaller

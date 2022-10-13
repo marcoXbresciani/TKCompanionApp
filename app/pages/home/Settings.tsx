@@ -28,8 +28,8 @@ import StorageFactory from '../../utils/storage/StorageFactory'
 import { AllowedSettings } from '../../utils/storage/settings/AllowedSettings'
 import { PreferencesContext } from '../../utils/Constants'
 import i18n from '../../i18n/i18n'
-import { TkText } from '../../components/TkText'
 import { LocaleConfig } from 'react-native-calendars/src'
+import TkText from '../../components/TkText'
 
 const RowView = styled(View)`
     flex-direction: row;

@@ -31,6 +31,7 @@ import DocsContainer from './DocsContainer'
 import FiveQ from './5qcard/FiveQ'
 import FourS from './FourS'
 import CoachPattern from './CoachPattern'
+import Carnegie from './Carnegie'
 
 export enum Pages {
   DefaultPage,
@@ -40,6 +41,7 @@ export enum Pages {
   KtsPage,
   PracticePage,
   TkcPage,
+  Carnegie
 }
 
 const DocsPage: React.FunctionComponent = () => {
@@ -63,6 +65,7 @@ const DocsPage: React.FunctionComponent = () => {
             {status === Pages.TkcPage && <Tkc />}
             {status === Pages.PracticePage && <Practice />}
             {status === Pages.KtsPage && <Kts />}
+            {status === Pages.Carnegie && <Carnegie />}
           </DocsContainer>
         </>
       )}

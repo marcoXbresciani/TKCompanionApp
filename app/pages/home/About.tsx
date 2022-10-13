@@ -27,7 +27,7 @@ import { Trans, useTranslation } from 'react-i18next'
 import { Linking, View } from 'react-native'
 import styled from 'styled-components'
 import i18n from '../../i18n/i18n'
-import { BoldText } from '../../components/BoldText'
+import BoldText from '../../components/BoldText'
 
 const MightItem = styled(List.Item)``
 const NotItem = styled(List.Item)``

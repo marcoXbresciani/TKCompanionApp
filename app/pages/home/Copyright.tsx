@@ -25,8 +25,8 @@ import styled from 'styled-components'
 import { Linking, ScrollView, View } from 'react-native'
 import { IconButton } from 'react-native-paper'
 import TkText from '../../components/TkText'
-import { SmallerText } from '../../components/SmallerText'
 import i18n from '../../i18n/i18n'
+import SmallerText from '../../components/SmallerText'
 
 const Notice = styled(View)`
     align-content: center;
@@ -47,7 +47,7 @@ const Copyright: React.FunctionComponent = () => {
 
   return (
     <ScrollView>
-      <Notice>
+      <Notice key='licence'>
         <TkText>© 2021-2022 Marco Bresciani</TkText>
         <SmallerText>
           TKCompanionApp is free software: you can redistribute it
@@ -68,7 +68,7 @@ const Copyright: React.FunctionComponent = () => {
           &lt;https://www.gnu.org/licenses/&gt;.
         </SmallerText>
       </Notice>
-      <Notice>
+      <Notice key='translators'>
         <TkText>{i18n.t('about.translation.title')}</TkText>
         {translators.flatMap((name) => {
           return (
@@ -76,7 +76,7 @@ const Copyright: React.FunctionComponent = () => {
           )
         })}
       </Notice>
-      <Notice>
+      <Notice key='font'>
         <TkText>© 2012 Primož Peterlin, Steve White</TkText>
         <SmallerText>GNU FreeFont</SmallerText>
         <ButtonsStrip>

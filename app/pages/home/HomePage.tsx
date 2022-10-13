@@ -118,7 +118,7 @@ const HomePage: React.FunctionComponent = () => {
       />
 
       <Appbar>
-        <Appbar.Content title={APP_NAME + ", " + APP_VERSION}/>
+        <Appbar.Content title={APP_NAME + ', ' + APP_VERSION} />
         <Menu
           visible={visible}
           onDismiss={closeMenu}

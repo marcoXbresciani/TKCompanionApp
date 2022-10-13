@@ -20,9 +20,13 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import styled from 'styled-components'
-import TkText from './TkText'
+import * as React from 'react'
+import { Text } from 'react-native-paper'
 
-export const BoldText = styled(TkText)`
-    font-weight: bold;
-`
+const BoldText = (props: React.PropsWithChildren<any>): JSX.Element => {
+  return (
+    <Text style={{ fontWeight: 'bold' }}>{props.children}</Text>
+  )
+}
+
+export default BoldText

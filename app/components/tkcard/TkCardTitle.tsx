@@ -25,9 +25,9 @@ import * as React from 'react'
 import { Card, useTheme } from 'react-native-paper'
 
 const TKCardTitleBorder = styled(Card.Title)`
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-bottom-color: ${props => props.theme.bg};
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: ${props => props.theme.bg};
 `
 
 interface MyProps {
@@ -55,6 +55,8 @@ const TkCardTitle: React.FunctionComponent<MyProps> = ({
 
   return (
     <TKCardTitleBorder
+      titleVariant='headlineSmall'
+      subtitleVariant='labelLarge'
       theme={wip ? wipTitleTheme : defaultTitleTheme}
       title={title}
       titleNumberOfLines={titleNumberOfLines}

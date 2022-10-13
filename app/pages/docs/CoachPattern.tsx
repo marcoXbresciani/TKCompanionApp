@@ -22,10 +22,10 @@
  */
 import * as React from 'react'
 import i18n from '../../i18n/i18n'
-import { TkParagraph } from '../../components/TkParagraph'
 import TkCard from '../../components/tkcard/TkCard'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
+import TkText from '../../components/TkText'
 
 const CoachPattern: React.FunctionComponent = () => (
   <TkCard>
@@ -36,11 +36,11 @@ const CoachPattern: React.FunctionComponent = () => (
       titleNumberOfLines={2}
     />
     <TkCardContent>
-      <TkParagraph>{`${i18n.t('pattern.p1')}`}</TkParagraph>
-      <TkParagraph>{`${i18n.t('pattern.p2')}`}</TkParagraph>
-      <TkParagraph>{`${i18n.t('pattern.p3')}`}</TkParagraph>
-      <TkParagraph>{`${i18n.t('pattern.p4')}`}</TkParagraph>
-      <TkParagraph>{`${i18n.t('pattern.p5')}`}</TkParagraph>
+      <TkText>{`${i18n.t('pattern.p1')}`}</TkText>
+      <TkText>{`${i18n.t('pattern.p2')}`}</TkText>
+      <TkText>{`${i18n.t('pattern.p3')}`}</TkText>
+      <TkText>{`${i18n.t('pattern.p4')}`}</TkText>
+      <TkText>{`${i18n.t('pattern.p5')}`}</TkText>
     </TkCardContent>
   </TkCard>
 )

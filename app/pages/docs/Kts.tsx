@@ -22,10 +22,10 @@
  */
 import * as React from 'react'
 import i18n from '../../i18n/i18n'
-import TkParagraph from '../../components/TkParagraph'
 import TkCard from '../../components/tkcard/TkCard'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
+import TkText from '../../components/TkText'
 
 const Kts: React.FunctionComponent = () => (
   <TkCard>
@@ -34,7 +34,7 @@ const Kts: React.FunctionComponent = () => (
       subtitle={`${i18n.t('kts.tip')}`}
     />
     <TkCardContent>
-      <TkParagraph>{`${i18n.t('kts.text')}`}</TkParagraph>
+      <TkText>{`${i18n.t('kts.text')}`}</TkText>
     </TkCardContent>
   </TkCard>
 )

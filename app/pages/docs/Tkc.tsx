@@ -22,20 +22,20 @@
  */
 import * as React from 'react'
 import i18n from '../../i18n/i18n'
-import TkParagraph from '../../components/TkParagraph'
 import TkCard from '../../components/tkcard/TkCard'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
+import TkText from '../../components/TkText'
 
 const Tkc: React.FunctionComponent = () => (
   <TkCard>
     <TkCardTitle title={`${i18n.t('tkc.title')}`} />
     <TkCardContent>
-      <TkParagraph>{`${i18n.t('tkc.1')}`}</TkParagraph>
-      <TkParagraph>{`${i18n.t('tkc.2')}`}</TkParagraph>
-      <TkParagraph>{`${i18n.t('tkc.3')}`}</TkParagraph>
-      <TkParagraph>{`${i18n.t('tkc.4')}`}</TkParagraph>
-      <TkParagraph>{`${i18n.t('tkc.5')}`}</TkParagraph>
+      <TkText>{`${i18n.t('tkc.1')}`}</TkText>
+      <TkText>{`${i18n.t('tkc.2')}`}</TkText>
+      <TkText>{`${i18n.t('tkc.3')}`}</TkText>
+      <TkText>{`${i18n.t('tkc.4')}`}</TkText>
+      <TkText>{`${i18n.t('tkc.5')}`}</TkText>
     </TkCardContent>
   </TkCard>
 )

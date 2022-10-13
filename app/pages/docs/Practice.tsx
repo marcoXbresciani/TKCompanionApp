@@ -22,10 +22,10 @@
  */
 import * as React from 'react'
 import i18n from '../../i18n/i18n'
-import { TkParagraph } from '../../components/TkParagraph'
 import TkCard from '../../components/tkcard/TkCard'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
+import TkText from '../../components/TkText'
 
 const Practice: React.FunctionComponent = () => (
   <TkCard>
@@ -34,22 +34,12 @@ const Practice: React.FunctionComponent = () => (
       titleNumberOfLines={2}
     />
     <TkCardContent>
-      <TkParagraph>{`${i18n.t('practice.1')}`}</TkParagraph>
-    </TkCardContent>
-    <TkCardContent>
-      <TkParagraph>{`${i18n.t('practice.2')}`}</TkParagraph>
-    </TkCardContent>
-    <TkCardContent>
-      <TkParagraph>{`${i18n.t('practice.3')}`}</TkParagraph>
-    </TkCardContent>
-    <TkCardContent>
-      <TkParagraph>{`${i18n.t('practice.4')}`}</TkParagraph>
-    </TkCardContent>
-    <TkCardContent>
-      <TkParagraph>{`${i18n.t('practice.5')}`}</TkParagraph>
-    </TkCardContent>
-    <TkCardContent>
-      <TkParagraph>{`${i18n.t('practice.6')}`}</TkParagraph>
+      <TkText>{`${i18n.t('practice.1')}`}</TkText>
+      <TkText>{`${i18n.t('practice.2')}`}</TkText>
+      <TkText>{`${i18n.t('practice.3')}`}</TkText>
+      <TkText>{`${i18n.t('practice.4')}`}</TkText>
+      <TkText>{`${i18n.t('practice.5')}`}</TkText>
+      <TkText>{`${i18n.t('practice.6')}`}</TkText>
     </TkCardContent>
   </TkCard>
 )

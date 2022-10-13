@@ -21,11 +21,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import TkParagraph from '../../components/TkParagraph'
 import i18n from '../../i18n/i18n'
 import TkCard from '../../components/tkcard/TkCard'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
+import TkText from '../../components/TkText'
 
 const FourS: React.FunctionComponent = () => (
   <>
@@ -35,10 +35,10 @@ const FourS: React.FunctionComponent = () => (
         titleNumberOfLines={2}
       />
       <TkCardContent>
-        <TkParagraph>{`${i18n.t('4s.s1')}`}</TkParagraph>
-        <TkParagraph>{`${i18n.t('4s.s2')}`}</TkParagraph>
-        <TkParagraph>{`${i18n.t('4s.s3')}`}</TkParagraph>
-        <TkParagraph>{`${i18n.t('4s.s4')}`}</TkParagraph>
+        <TkText>{`${i18n.t('4s.s1')}`}</TkText>
+        <TkText>{`${i18n.t('4s.s2')}`}</TkText>
+        <TkText>{`${i18n.t('4s.s3')}`}</TkText>
+        <TkText>{`${i18n.t('4s.s4')}`}</TkText>
       </TkCardContent>
     </TkCard>
   </>

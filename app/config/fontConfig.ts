@@ -125,21 +125,23 @@ export const fontConfig = {
     ...regularType,
     fontWeight: typeface.weightRegular,
     fontFamily: typeface.brandRegular,
-    fontSize: 18
-  },
-  bodyMedium: {
-    ...regularType,
-    fontWeight: typeface.weightRegular,
-    fontFamily: typeface.brandRegular,
     lineHeight: 24,
     fontSize: 16
   },
-  bodySmall: {
+  bodyMedium: {
     ...regularType,
     fontWeight: typeface.weightRegular,
     fontFamily: typeface.brandRegular,
     letterSpacing: 0.25,
     lineHeight: 20,
     fontSize: 14
+  },
+  bodySmall: {
+    ...regularType,
+    fontWeight: typeface.weightRegular,
+    fontFamily: typeface.brandRegular,
+    letterSpacing: 0.4,
+    lineHeight: 16,
+    fontSize: 12
   }
 }

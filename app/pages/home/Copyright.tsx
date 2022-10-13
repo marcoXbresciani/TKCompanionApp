@@ -70,9 +70,9 @@ const Copyright: React.FunctionComponent = () => {
       </Notice>
       <Notice key='translators'>
         <TkText>{i18n.t('about.translation.title')}</TkText>
-        {translators.flatMap((name) => {
+        {translators.flatMap((name, index) => {
           return (
-            <SmallerText>&bull; {name}</SmallerText>
+            <SmallerText key={index}>&bull; {name}</SmallerText>
           )
         })}
       </Notice>

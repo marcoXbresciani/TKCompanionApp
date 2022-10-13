@@ -32,7 +32,9 @@ import { LocaleConfig } from 'react-native-calendars/src'
 import TkText from '../../components/TkText'
 
 const RowView = styled(View)`
-    flex-direction: row;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
 `
 
 const Settings: React.FunctionComponent = () => {

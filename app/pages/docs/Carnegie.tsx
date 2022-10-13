@@ -20,21 +20,24 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import styled from 'styled-components'
 import * as React from 'react'
-import TkText from './TkText'
+import i18n from '../../i18n/i18n'
+import TkCard from '../../components/tkcard/TkCard'
+import TkCardTitle from '../../components/tkcard/TkCardTitle'
+import { TkCardContent } from '../../components/tkcard/TkCardContent'
+import TkText from '../../components/TkText'
 
-const StyledParagraph = styled(TkText)`
-    text-align: center;
-`
+const Carnegie: React.FunctionComponent = () => (
+  <TkCard>
+    <TkCardTitle
+      title={`${i18n.t('carnegie.title')}`}
+      titleNumberOfLines={2}
+    />
+    <TkCardContent>
+      <TkText>{`${i18n.t('carnegie.p1')}`}</TkText>
+      <TkText>{`${i18n.t('carnegie.p2')}`}</TkText>
+    </TkCardContent>
+  </TkCard>
+)
 
-const TkParagraph = (props: React.PropsWithChildren<any>): JSX.Element => {
-  return (
-
-    <StyledParagraph variant='bodyMedium'>
-      {props.children}
-    </StyledParagraph>
-  )
-}
-
-export default TkParagraph
+export default Carnegie

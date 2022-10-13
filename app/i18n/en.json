@@ -139,9 +139,15 @@
         ],
         "today": "today"
     },
+    "carnegie": {
+        "title": "Carnegie Hall",
+        "p1": "A pedestrian on 57th Street sees a musician getting out of a cab and asks, “How do you get to Carnegie Hall?”.",
+        "p2": "Without pause, the artist replies wearily, “Practice.”."
+    },
     "docs": {
         "4steps": "4 Steps",
         "5qcard": "5Q Card",
+        "carnegie": "Carnegie Hall",
         "kts": "$t(kts.title)",
         "pattern": "Coaching Basic Pattern",
         "practice": "$t(practice.title)",

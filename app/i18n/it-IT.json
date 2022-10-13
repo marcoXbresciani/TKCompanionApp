@@ -139,9 +139,15 @@
         ],
         "today": "oggi"
     },
+    "carnegie": {
+        "title": "Carnegie Hall",
+        "p1": "Un passante sulla 57ma strada vede un musicista uscire da un taxi e chiede: “Come si arriva a Carnegie Hall?”.",
+        "p2": "Senza pause, l'artista risponde stancamente, “Pratica.”."
+    },
     "docs": {
         "4steps": "4 Passi",
         "5qcard": "5 Domande",
+        "carnegie": "Carnegie Hall",
         "kts": "$t(kts.title)",
         "pattern": "Modello di base del coaching",
         "practice": "$t(practice.title)",

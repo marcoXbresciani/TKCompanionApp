@@ -26,40 +26,19 @@ import * as React from 'react'
 import i18next from 'i18next'
 import { Trans, useTranslation } from 'react-i18next'
 import TkText from '../../../components/TkText'
-import { useTheme } from 'react-native-paper'
-import { BoldText } from '../../../components/BoldText'
-import CenteredTitle from '../../../components/CenteredTitle'
-import BoldCaption from '../../../components/BoldCaption'
+import { Card, Divider, useTheme } from 'react-native-paper'
+import BoldSmaller from '../../../components/BoldSmaller'
+import TkCardTitle from '../../../components/tkcard/TkCardTitle'
+import TkCard from '../../../components/tkcard/TkCard'
+import { TkCardContent } from '../../../components/tkcard/TkCardContent'
+import SmallerText from '../../../components/SmallerText'
+import BoldText from '../../../components/BoldText'
 
-const BackView = styled(View)`
-    border: 1px solid ${props => props.theme.bc};
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 10px 10px 10px 10px;
-`
-
-const QuoteText = styled(TkText)`
-    margin: 0 5% 5% 5%;
-    text-align: center;
-`
-
-const Line = styled(View)`
-    align-self: center;
-    background-color: ${props => props.theme.bc};
-    height: 1px;
-    margin-bottom: 0;
-    margin-left: 50%;
-    margin-top: 15px;
-    width: 50%;
-`
-
-const Returner = styled(TkText)`
-    font-size: 13px;
-    line-height: 23px;
-    margin-top: 15px;
-    padding: 0 5px;
-    text-align: right;
+const Returner = styled(View)`
+  border-top-color: ${props => props.theme.bg};
+  border-top-width: 1px;
+  padding: 0 5px;
+  text-align: right;
 `
 
 interface Props {
@@ -68,72 +47,68 @@ interface Props {
 
 const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
   const { t } = useTranslation('')
-
-  const backTheme = {
-    bc: `${useTheme().colors.text}`
-  }
-
-  const linkTheme = {
-    col: `${useTheme().colors.notification}`
+  const lineTheme = {
+    bg: `${useTheme().colors.primary}`
   }
 
   return (
-    <>
-      <BackView theme={backTheme}>
-        <CenteredTitle>{`${i18next.t('5q.back.title')}`}</CenteredTitle>
-        <QuoteText>{`${i18next.t('5q.back.quote')}`}</QuoteText>
-        <TkText variant='bodySmall'><Trans
+    <TkCard>
+      <TkCardTitle title={`${i18next.t('5q.back.title')}`}
+                   subtitle={`${i18next.t('5q.back.quote')}`}
+                   subtitleNumberOfLines={3}/>
+      <TkCardContent>
+        <SmallerText><Trans
           t={t}
-          i18nKey='5q.back.caption'
+          i18nKey="5q.back.caption"
           components={{
-            bold: <BoldCaption />
+            bold: <BoldSmaller/>
           }}
-                 />
+        />
+        </SmallerText>
+        <Divider />
+        <TkText>
+          <Trans
+            t={t}
+            i18nKey="5q.back.q1"
+            components={{
+              bold: <BoldText/>
+            }}
+          />
         </TkText>
-        <View>
-          <TkText>
-            <Trans
-              t={t}
-              i18nKey='5q.back.q1'
-              components={{
-                bold: <BoldText />
-              }}
-            />
-          </TkText>
-          <TkText>
-            <Trans
-              t={t}
-              i18nKey='5q.back.q2'
-              components={{
-                bold: <BoldText />
-              }}
-            />
-          </TkText>
-          <TkText>
-            <Trans
-              t={t}
-              i18nKey='5q.back.q3'
-              components={{
-                bold: <BoldText />
-              }}
-            />
-          </TkText>
-          <TkText>
-            <Trans
-              t={t}
-              i18nKey='5q.back.q4'
-              components={{
-                bold: <BoldText />
-              }}
-            />
-          </TkText>
-        </View>
+        <TkText>
+          <Trans
+            t={t}
+            i18nKey="5q.back.q2"
+            components={{
+              bold: <BoldText/>
+            }}
+          />
+        </TkText>
+        <TkText>
+          <Trans
+            t={t}
+            i18nKey="5q.back.q3"
+            components={{
+              bold: <BoldText/>
+            }}
+          />
+        </TkText>
+        <TkText>
+          <Trans
+            t={t}
+            i18nKey="5q.back.q4"
+            components={{
+              bold: <BoldText/>
+            }}
+          />
+        </TkText>
+      </TkCardContent>
+      <Card.Actions>
         <Pressable onPress={() => onPress()}>
-          <Line theme={backTheme} />
-          <Returner theme={linkTheme}>{`${i18next.t('5q.back.return')}`}</Returner>
+          <Returner theme={lineTheme}><SmallerText>{`${i18next.t('5q.back.return')}`}</SmallerText></Returner>
         </Pressable>
-      </BackView>
-    </>
+      </Card.Actions>
+    </TkCard>
   )
 }
 

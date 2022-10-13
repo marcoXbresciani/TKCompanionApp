@@ -46,11 +46,11 @@ const TkCardTitle: React.FunctionComponent<MyProps> = ({
   wip = false
 }) => {
   const wipTitleTheme = {
-    bg: `${useTheme().colors.accent}`
+    bg: `${useTheme().colors.error as string}`
   }
 
   const defaultTitleTheme = {
-    bg: `${useTheme().colors.primary}`
+    bg: `${useTheme().colors.primary as string}`
   }
 
   return (

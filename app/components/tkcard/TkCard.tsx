@@ -26,12 +26,12 @@ import * as React from 'react'
 
 const StyledTkCard = styled(Card)`
     border: 1px solid ${props => props.theme.bg};
-    border-radius: 15px;
+    border-radius: 10px;
 `
 
 const TkCard = (props: React.PropsWithChildren<any>): JSX.Element => {
   const borderTheme = {
-    bg: `${useTheme().colors.text}`
+    bg: `${useTheme().colors.error as string}`
   }
 
   return (<StyledTkCard theme={borderTheme}>{props.children}</StyledTkCard>)

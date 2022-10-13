@@ -23,16 +23,16 @@
 import * as React from 'react'
 import { APP_NAME, APP_VERSION } from '../../utils/Constants'
 import i18n from '../../i18n/i18n'
-import CenteredTitle from '../CenteredTitle'
-import CenteredSubheading from './CenteredSubheading'
 import TkText from '../TkText'
+import { Text } from 'react-native-paper'
+import SmallerText from '../SmallerText'
 
 const Version: React.FunctionComponent = () => {
   return (
     <>
-      <CenteredTitle>{APP_NAME}</CenteredTitle>
-      <CenteredSubheading>{APP_VERSION}</CenteredSubheading>
-      <TkText variant='bodySmall'>{`${i18n.t('app.short')}`}</TkText>
+      <Text variant='titleLarge'>{APP_NAME}</Text>
+      <TkText>{APP_VERSION}</TkText>
+      <SmallerText>{`${i18n.t('app.short')}`}</SmallerText>
     </>
   )
 }

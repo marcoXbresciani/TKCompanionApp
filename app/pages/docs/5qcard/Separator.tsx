@@ -23,45 +23,28 @@
 import { View } from 'react-native'
 import * as React from 'react'
 import styled from 'styled-components'
-import TkText from '../../../components/TkText'
-import { useTheme } from 'react-native-paper'
+import { Divider, useTheme } from 'react-native-paper'
+import SmallerText from '../../../components/SmallerText'
 
 const Container = styled(View)`
+    border-bottom-color: ${props => props.theme.bg};
+    border-bottom-width: 1px;
+    border-top-color: ${props => props.theme.bg};
+    border-top-width: 1px;
     flex-direction: row;
-    margin: 10px 0;
-`
-
-const Line = styled(View)`
-    align-self: center;
-    background-color: ${props => props.theme.bg};
-    height: 1px;
-    flex: 1;
-    margin: 3px 0 0 0;
-`
-
-const Content = styled(TkText)`
-    align-self: center;
-    font-size: 13px;
-    font-style: italic;
-    line-height: 23px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin: 10px auto;
 `
 
 export const Separator = ({ children }: React.PropsWithChildren<any>): JSX.Element => {
   const lineTheme = {
-    bg: `${useTheme().colors.text}`
-  }
-
-  const linkTheme = {
-    bg: `${useTheme().colors.notification}`
+    bg: `${useTheme().colors.primary as string}`
   }
 
   return (
-    <Container>
-      <Line theme={lineTheme} />
-      <Content theme={linkTheme}>{children}</Content>
-      <Line theme={lineTheme} />
+    <Container theme={lineTheme}>
+      <Divider />
+      <SmallerText>{children}</SmallerText>
+      <Divider />
     </Container>
   )
 }

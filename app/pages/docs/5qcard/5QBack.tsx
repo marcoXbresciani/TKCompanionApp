@@ -48,57 +48,59 @@ interface Props {
 const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
   const { t } = useTranslation('')
   const lineTheme = {
-    bg: `${useTheme().colors.primary}`
+    bg: `${useTheme().colors.primary as string}`
   }
 
   return (
     <TkCard>
-      <TkCardTitle title={`${i18next.t('5q.back.title')}`}
-                   subtitle={`${i18next.t('5q.back.quote')}`}
-                   subtitleNumberOfLines={3}/>
+      <TkCardTitle
+        title={`${i18next.t('5q.back.title')}`}
+        subtitle={`${i18next.t('5q.back.quote')}`}
+        subtitleNumberOfLines={3}
+      />
       <TkCardContent>
         <SmallerText><Trans
           t={t}
-          i18nKey="5q.back.caption"
+          i18nKey='5q.back.caption'
           components={{
-            bold: <BoldSmaller/>
+            bold: <BoldSmaller />
           }}
-        />
+                     />
         </SmallerText>
         <Divider />
         <TkText>
           <Trans
             t={t}
-            i18nKey="5q.back.q1"
+            i18nKey='5q.back.q1'
             components={{
-              bold: <BoldText/>
+              bold: <BoldText />
             }}
           />
         </TkText>
         <TkText>
           <Trans
             t={t}
-            i18nKey="5q.back.q2"
+            i18nKey='5q.back.q2'
             components={{
-              bold: <BoldText/>
+              bold: <BoldText />
             }}
           />
         </TkText>
         <TkText>
           <Trans
             t={t}
-            i18nKey="5q.back.q3"
+            i18nKey='5q.back.q3'
             components={{
-              bold: <BoldText/>
+              bold: <BoldText />
             }}
           />
         </TkText>
         <TkText>
           <Trans
             t={t}
-            i18nKey="5q.back.q4"
+            i18nKey='5q.back.q4'
             components={{
-              bold: <BoldText/>
+              bold: <BoldText />
             }}
           />
         </TkText>

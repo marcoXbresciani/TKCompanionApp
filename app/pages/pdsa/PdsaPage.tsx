@@ -26,7 +26,6 @@ import { Appbar, TextInput, useTheme } from 'react-native-paper'
 import PdsaEntry from '../../utils/storage/pdsa/PdsaEntry'
 import StorageFactory from '../../utils/storage/StorageFactory'
 import i18n from '../../i18n/i18n'
-import TkParagraph from '../../components/TkParagraph'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import TkCard from '../../components/tkcard/TkCard'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
@@ -36,11 +35,15 @@ import { getTodayIso8601 } from '../../utils/Functions'
 import { Journal } from '../../utils/storage/PdsaJournal/Journal'
 import { ScrollView } from 'react-native'
 import TkSnackbar from '../../components/TkSnackbar'
+import TkText from '../../components/TkText'
 
 const DownloadPage: React.FC = () => {
-  const selectionColour = useTheme().colors.accent
+  const selectionColour = useTheme().colors.onPrimary
   const dotColour = useTheme().colors.primary
-  const coloursDay = { color: dotColour, selectedDotColor: selectionColour }
+  const coloursDay = {
+    color: dotColour,
+    selectedDotColor: selectionColour
+  }
   const marked = { marked: true }
   const unMarked = { marked: false }
   const selected = { selected: true }
@@ -161,10 +164,7 @@ const DownloadPage: React.FC = () => {
               subtitle={day}
             />
             <TkCardContent>
-              <TkParagraph>{`${i18n.t(
-                'pdsa.q1'
-              )}`}
-              </TkParagraph>
+              <TkText>{`${i18n.t('pdsa.q1')}`}</TkText>
               <TextInput
                 label='Target'
                 mode='outlined'
@@ -193,8 +193,7 @@ const DownloadPage: React.FC = () => {
                 }
                 value={pdsaEntry.target}
               />
-              <TkParagraph>{`${i18n.t('pdsa.q2')}`}
-              </TkParagraph>
+              <TkText>{`${i18n.t('pdsa.q2')}`}</TkText>
               <TextInput
                 label='Actual'
                 mode='outlined'
@@ -222,8 +221,7 @@ const DownloadPage: React.FC = () => {
                 }
                 value={pdsaEntry.actual}
               />
-              <TkParagraph>{`${i18n.t('pdsa.q3')}`}
-              </TkParagraph>
+              <TkText>{`${i18n.t('pdsa.q3')}`}</TkText>
               <TextInput
                 label='Obstacle'
                 mode='outlined'
@@ -252,8 +250,7 @@ const DownloadPage: React.FC = () => {
                 }
                 value={pdsaEntry.obstacle}
               />
-              <TkParagraph>{`${i18n.t('pdsa.q4')}`}
-              </TkParagraph>
+              <TkText>{`${i18n.t('pdsa.q4')}`}</TkText>
               <TextInput
                 label='Step'
                 mode='outlined'
@@ -282,8 +279,7 @@ const DownloadPage: React.FC = () => {
                 }
                 value={pdsaEntry.step}
               />
-              <TkParagraph>{`${i18n.t('pdsa.q5')}`}
-              </TkParagraph>
+              <TkText>{`${i18n.t('pdsa.q5')}`}</TkText>
               <TextInput
                 label='Learnt'
                 mode='outlined'
@@ -317,7 +313,10 @@ const DownloadPage: React.FC = () => {
         </PageContainer>
       </ScrollView>
 
-      <TkSnackbar message={snackMessage} visible={visibleSnack} setVisible={setVisibleSnack} />
+      <TkSnackbar
+        message={snackMessage} visible={visibleSnack}
+        setVisible={setVisibleSnack}
+      />
     </>
   )
 }

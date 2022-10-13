@@ -24,9 +24,6 @@ import * as React from 'react'
 import { Chip, Dialog, Divider, Portal } from 'react-native-paper'
 import { Linking } from 'react-native'
 import TkText from '../TkText'
-import { TkCardContent } from '../tkcard/TkCardContent'
-import TkCard from '../tkcard/TkCard'
-import TkCardTitle from '../tkcard/TkCardTitle'
 import StorageFactory from '../../utils/storage/StorageFactory'
 import {
   AllowedSettings
@@ -66,22 +63,15 @@ const TkPanel: ({
           void storage.write(AllowedSettings.HOME_TITLE, 'true')
         }}
       >
+        <Dialog.Title>{title}</Dialog.Title>
         <Dialog.Content>
-          <TkCard>
-            <TkCardTitle
-              title={title}
-              wip
-            />
-            <TkCardContent>
-              <TkText>{before}</TkText>
-              <Divider />
-              {messages.flatMap((message) => {
-                return <BoldText>{message}</BoldText>
-              })}
-              <Divider />
-              <TkText>{after}</TkText>
-            </TkCardContent>
-          </TkCard>
+          <TkText>{before}</TkText>
+          <Divider />
+          {messages.flatMap((message, index) => {
+            return <BoldText key={index}>{message}</BoldText>
+          })}
+          <Divider />
+          <TkText>{after}</TkText>
         </Dialog.Content>
         <Dialog.Actions>
           <Chip

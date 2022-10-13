@@ -20,18 +20,12 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import styled from 'styled-components'
 import { Text } from 'react-native-paper'
 import * as React from 'react'
 
-const StyledText = styled(Text)`
-    font-size: 16px;
-    line-height: 27px;
-`
-
 const TkText = (props: React.PropsWithChildren<any>): JSX.Element => {
   return (
-    <StyledText>{props.children}</StyledText>
+    <Text variant='bodyMedium'>{props.children}</Text>
   )
 }
 

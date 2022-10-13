@@ -20,10 +20,13 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import styled from 'styled-components'
-import TkText from './TkText'
+import * as React from 'react'
+import { Text } from 'react-native-paper'
 
-export const SmallerText = styled(TkText)`
-    font-size: 13px;
-    line-height: 23px;
-`
+const SmallerText = (props: React.PropsWithChildren<any>): JSX.Element => {
+  return (
+    <Text variant='bodySmall'>{props.children}</Text>
+  )
+}
+
+export default SmallerText

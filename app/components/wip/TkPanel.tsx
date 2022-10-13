@@ -25,7 +25,6 @@ import { Chip, Dialog, Portal } from 'react-native-paper'
 import { Linking } from 'react-native'
 import TkText from '../TkText'
 import { TkCardContent } from '../tkcard/TkCardContent'
-import TkParagraph from '../TkParagraph'
 import TkCard from '../tkcard/TkCard'
 import { ItalicText } from './ItalicText'
 import TkCardTitle from '../tkcard/TkCardTitle'
@@ -74,19 +73,13 @@ const TkPanel: ({
                 title={title}
                 wip
               />
-              <TkParagraph>
-                <TkText>
-                  {before}
-                </TkText>
-              </TkParagraph>
-              <TkParagraph>
-                <ItalicText>{message}</ItalicText>
-              </TkParagraph>
-              <TkParagraph>
-                <TkText>
-                  {after}
-                </TkText>
-              </TkParagraph>
+              <TkText>
+                {before}
+              </TkText>
+              <ItalicText>{message}</ItalicText>
+              <TkText>
+                {after}
+              </TkText>
             </TkCardContent>
           </TkCard>
         </Dialog.Content>

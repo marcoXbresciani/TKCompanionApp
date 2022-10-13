@@ -45,7 +45,7 @@
             "key2": "contiene librerie traccianti",
             "key3": "contatta nessuno",
             "key4": "usa le API del Google Play Store",
-            "key5": "salva informazioni sul tuo dispositivo",
+            "key5": "accede ai tuoi file",
             "key6": "ti spia",
             "title": "Quest'applicazione <bold>NON</bold>"
         },
@@ -58,11 +58,6 @@
         "url": {
             "description": "TkCompanionApp è software libero",
             "page": [
-                {
-                    "address": "https://codeberg.org/marco.bresciani/TKCompanionApp",
-                    "icon": "code-working-outline",
-                    "name": "Codeberg"
-                },
                 {
                     "address": "https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/",
                     "icon": "logo-android",
@@ -176,7 +171,9 @@
         "home": {
             "after": "Puoi anche visitare le pagine dell'app, indicate nel menu $t(nav.menu.about).",
             "before": "Benvenuti in TkCompanionApp, e grazie di essere qui.",
-            "message": "Quest'app non si collega a Internet né ha strumenti di tracciamento, quindi non posso sapere se ti piace oppure no né come usi (o vorresti usare) l'app. Per favore, sentiti libero di contattarmi tramite uno dei canali qui sotto, per qualsiasi riscontro. Sono tutti benvenuti.",
+            "messages":["Quest'app non si collega a Internet né ha strumenti di tracciamento, quindi non posso sapere se ti piace oppure no, né come usi (o vorresti usare) l'app.",
+                "Per favore, sentiti libero di contattarmi tramite uno dei canali qui sotto, per qualsiasi riscontro.",
+                "Tutti i riscontri sono tutti benvenuti."],
             "title": "Restiamo in contatto!"
         }
     },

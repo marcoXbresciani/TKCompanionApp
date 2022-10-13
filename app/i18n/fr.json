@@ -46,13 +46,33 @@
                 "J. Lavoie (@Edanas)"
             ],
             "title": "Traduction en français par:"
+        },
+        "url": {
+            "description": "TkCompanionApp è software libero",
+            "page": [
+                {
+                    "address": "https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/",
+                    "icon": "logo-android",
+                    "name": "F-Droid"
+                },
+                {
+                    "address": "https://github.com/marcoXbresciani/TKCompanionApp",
+                    "icon": "logo-github",
+                    "name": "GitHub"
+                },
+                {
+                    "address": "https://gitlab.com/marcoXbresciani/TKCompanionApp",
+                    "icon": "code-working-outline",
+                    "name": "Gitlab"
+                }
+            ]
         }
     },
     "app": {
         "short": "Une petite et courte aide pour les pratiquants de Toyota Kata",
         "wip": {
-            "before": "Merci d'avoir cliqué, mais il ne se passe rien ici, pas encore.",
             "after": "Les commentaires et les idées sont les bienvenus.",
+            "before": "Merci d'avoir cliqué, mais il ne se passe rien ici, pas encore.",
             "title": "Travail en cours…"
         }
     },
@@ -105,9 +125,13 @@
         ],
         "today": "Aujourd'hui"
     },
+    "carnegie": {
+        "title": "Carnegie Hall"
+    },
     "docs": {
         "4steps": "4 étapes",
         "5qcard": "5 questions",
+        "carnegie": "Carnegie Hall",
         "kts": "$t(kts.title)",
         "practice": "$t(practice.title)",
         "title": "Lire les documents",

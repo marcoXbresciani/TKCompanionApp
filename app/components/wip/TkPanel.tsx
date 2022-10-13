@@ -21,22 +21,22 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import { Chip, Dialog, Portal } from 'react-native-paper'
+import { Chip, Dialog, Divider, Portal } from 'react-native-paper'
 import { Linking } from 'react-native'
 import TkText from '../TkText'
 import { TkCardContent } from '../tkcard/TkCardContent'
 import TkCard from '../tkcard/TkCard'
-import { ItalicText } from './ItalicText'
 import TkCardTitle from '../tkcard/TkCardTitle'
 import StorageFactory from '../../utils/storage/StorageFactory'
 import {
   AllowedSettings
 } from '../../utils/storage/settings/AllowedSettings'
+import BoldText from '../BoldText'
 
 interface Props {
   title: string
   before: string
-  message: string
+  messages: string[]
   after: string
   visible: boolean
   setVisible: React.Dispatch<React.SetStateAction<boolean>>
@@ -45,12 +45,12 @@ interface Props {
 const TkPanel: ({
   title,
   before,
-  message,
+  messages,
   after
 }: Props) => JSX.Element = ({
   title,
   before,
-  message,
+  messages,
   after,
   visible,
   setVisible
@@ -68,18 +68,18 @@ const TkPanel: ({
       >
         <Dialog.Content>
           <TkCard>
+            <TkCardTitle
+              title={title}
+              wip
+            />
             <TkCardContent>
-              <TkCardTitle
-                title={title}
-                wip
-              />
-              <TkText>
-                {before}
-              </TkText>
-              <ItalicText>{message}</ItalicText>
-              <TkText>
-                {after}
-              </TkText>
+              <TkText>{before}</TkText>
+              <Divider />
+              {messages.flatMap((message) => {
+                return <BoldText>{message}</BoldText>
+              })}
+              <Divider />
+              <TkText>{after}</TkText>
             </TkCardContent>
           </TkCard>
         </Dialog.Content>

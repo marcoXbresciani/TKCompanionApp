@@ -111,7 +111,7 @@ const HomePage: React.FunctionComponent = () => {
       <TkPanel
         title={i18n.t('panel.home.title')}
         before={i18n.t('panel.home.before')}
-        message={i18n.t('panel.home.message')}
+        messages={i18n.t('panel.home.messages', { returnObjects: true })}
         after={i18n.t('panel.home.after')}
         visible={visiblePanel}
         setVisible={setVisiblePanel}

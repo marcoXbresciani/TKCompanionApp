@@ -45,7 +45,7 @@
             "key2": "contain tracking libraries",
             "key3": "phone home",
             "key4": "use Google Play Store APIs",
-            "key5": "save things on your device",
+            "key5": "access your files",
             "key6": "spy on you",
             "title": "This Application <bold>Does NOT</bold>"
         },
@@ -58,11 +58,6 @@
         "url": {
             "description": "TkCompanionApp is Free Software",
             "page": [
-                {
-                    "address": "https://codeberg.org/marco.bresciani/TKCompanionApp",
-                    "icon": "code-working-outline",
-                    "name": "Codeberg"
-                },
                 {
                     "address": "https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/",
                     "icon": "logo-android",
@@ -176,7 +171,9 @@
         "home": {
             "after": "You can also visit app pages listed in $t(nav.menu.about).",
             "before": "Welcome to TKCompanionApp, and thank you for being here.",
-            "message": "This app has neither Internet connection nor tracking tools, so I cannot know if you like it or not, or how you (want to) use it. Please, feel free to reach out to me through the contact channels below, for any feedback. You're welcome.",
+            "messages": ["This app has neither Internet connection nor tracking tools, so I cannot know if you like it or not, or how you (want to) use it.",
+                        "Please, feel free to reach out to me through the contact channels below, for any feedback.",
+                        "All feedbacks are welcome."],
             "title": "Let's get in touch!"
         }
     },

@@ -52,6 +52,27 @@
                 "Allan Nordhøy <epost@anotheragency.no>"
             ],
             "title": "Bokmålsoversettelse ved:"
+        },
+        "url": {
+            "description": "TkCompanionApp è software libero",
+            "page": [
+                {
+                    "address": "https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/",
+                    "icon": "logo-android",
+                    "name": "F-Droid"
+                },
+                {
+                    "address": "https://github.com/marcoXbresciani/TKCompanionApp",
+                    "icon": "logo-github",
+                    "name": "GitHub"
+                },
+                {
+                    "address": "https://gitlab.com/marcoXbresciani/TKCompanionApp",
+                    "icon": "code-working-outline",
+                    "name": "Gitlab"
+                }
+            ],
+            "title": "Guarda il codice"
         }
     },
     "app": {
@@ -111,13 +132,17 @@
         ],
         "today": "i dag"
     },
+    "carnegie": {
+        "title": "Carnegie Hall"
+    },
     "docs": {
         "4steps": "4 steg",
         "5qcard": "5Q-kort",
+        "carnegie": "Carnegie Hall",
+        "kts": "$t(kts.title)",
         "practice": "$t(practice.title)",
         "title": "Les dokumentasjonen",
-        "tkc": "$t(tkc.title)",
-        "kts": "$t(kts.title)"
+        "tkc": "$t(tkc.title)"
     },
     "kts": {
         "text": "Å bruke forbedrelsmønsteret Kata (fra boken «Toyota Kata») til å takle et vedvarende og ergerlig problem som har hindre og ingen åpenbar løsning. Et uttrykk som brukes når noen har blitt gjentagende frustrert, ønsker svart-hvitt-svar, eller forventer at noen andre løser problemet.",

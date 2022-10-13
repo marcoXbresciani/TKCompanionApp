@@ -48,10 +48,30 @@
             "title": "Diese Anwendung <bold>tut nicht</bold>"
         },
         "translation": {
-            "title": "Englische Übersetzung von:",
             "author": [
                 "Amy Dora Lang (@amydoralang)"
-            ]
+            ],
+            "title": "Englische Übersetzung von:"
+        },
+        "url": {
+            "page": [
+                {
+                    "address": "https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/",
+                    "icon": "logo-android",
+                    "name": "F-Droid"
+                },
+                {
+                    "address": "https://github.com/marcoXbresciani/TKCompanionApp",
+                    "icon": "logo-github",
+                    "name": "GitHub"
+                },
+                {
+                    "address": "https://gitlab.com/marcoXbresciani/TKCompanionApp",
+                    "icon": "code-working-outline",
+                    "name": "Gitlab"
+                }
+            ],
+            "title": "Guarda il codice"
         }
     },
     "app": {
@@ -111,9 +131,13 @@
         ],
         "today": "heute"
     },
+    "carnegie": {
+        "title": "Carnegie Hall"
+    },
     "docs": {
         "4steps": "4 Schritte",
         "5qcard": "5Q-Karte",
+        "carnegie": "Carnegie Hall",
         "kts": "$t(kts.title)",
         "practice": "$t(practice.title)",
         "title": "Lesen Sie die Dokumente",

@@ -28,13 +28,10 @@ This file is offered as-is, without any warranty.
 ## [Unreleased](https://github.com/marcoXbresciani/TKCompanionApp/commits/HEAD)
 ### Added
 * Welcome/splash dialog on first time application open.
-  Same content and new "Contact" menu entry.
+  Same content of new "Contact" menu entry.
 ### Changed
-* Versioning management automated through `npm-version` and `fastlane`
-  tooling.
-  See
-  https://osamaqarem.com/blog/automatic-versioning-for-react-native-apps
 * Update React Native Paper to v5.
+* Upgraded Gradle Wrapper with SHA256 checksum.
 ### Removed
 ### Fixed
 ### Security

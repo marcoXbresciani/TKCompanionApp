@@ -21,23 +21,12 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import { List, Text } from 'react-native-paper'
+import { Divider, List } from 'react-native-paper'
 import Version from '../../components/version/Version'
 import { Trans, useTranslation } from 'react-i18next'
-import { Linking, View } from 'react-native'
-import styled from 'styled-components'
+import { Linking } from 'react-native'
 import i18n from '../../i18n/i18n'
 import BoldText from '../../components/BoldText'
-
-const MightItem = styled(List.Item)``
-const NotItem = styled(List.Item)``
-
-MightItem.defaultProps = {
-  titleStyle: { color: 'forestgreen' }
-}
-NotItem.defaultProps = {
-  titleStyle: { color: 'crimson' }
-}
 
 const About: React.FunctionComponent = () => {
   const { t } = useTranslation()
@@ -59,8 +48,9 @@ const About: React.FunctionComponent = () => {
             />
                     }
           titleNumberOfLines={2}
+          titleStyle={{ color: 'forestgreen' }}
         >
-          <MightItem
+          <List.Item
             left={(props) => (
               <List.Icon
                 {...props}
@@ -75,7 +65,7 @@ const About: React.FunctionComponent = () => {
             title={`${i18n.t('about.might.key1')}`}
             titleNumberOfLines={2}
           />
-          <MightItem
+          <List.Item
             left={(props) => (
               <List.Icon
                 {...props}
@@ -90,7 +80,7 @@ const About: React.FunctionComponent = () => {
             title={`${i18n.t('about.might.key2')}`}
             titleNumberOfLines={2}
           />
-          <MightItem
+          <List.Item
             left={(props) => (
               <List.Icon
                 {...props}
@@ -105,7 +95,7 @@ const About: React.FunctionComponent = () => {
             title={`${i18n.t('about.might.key3')}`}
             titleNumberOfLines={2}
           />
-          <MightItem
+          <List.Item
             left={(props) => (
               <List.Icon
                 {...props}
@@ -131,8 +121,9 @@ const About: React.FunctionComponent = () => {
             />
                     }
           titleNumberOfLines={2}
+          titleStyle={{ color: 'crimson' }}
         >
-          <NotItem
+          <List.Item
             left={(props) => (
               <List.Icon
                 {...props}
@@ -147,7 +138,7 @@ const About: React.FunctionComponent = () => {
             title={`${i18n.t('about.not.key1')}`}
             titleNumberOfLines={2}
           />
-          <NotItem
+          <List.Item
             left={(props) => (
               <List.Icon
                 {...props}
@@ -162,7 +153,7 @@ const About: React.FunctionComponent = () => {
             title={`${i18n.t('about.not.key2')}`}
             titleNumberOfLines={2}
           />
-          <NotItem
+          <List.Item
             left={(props) => (
               <List.Icon
                 {...props}
@@ -177,7 +168,7 @@ const About: React.FunctionComponent = () => {
             title={`${i18n.t('about.not.key3')}`}
             titleNumberOfLines={2}
           />
-          <NotItem
+          <List.Item
             left={(props) => (
               <List.Icon
                 {...props}
@@ -192,7 +183,7 @@ const About: React.FunctionComponent = () => {
             title={`${i18n.t('about.not.key4')}`}
             titleNumberOfLines={2}
           />
-          <NotItem
+          <List.Item
             left={(props) => (
               <List.Icon
                 {...props}
@@ -207,7 +198,7 @@ const About: React.FunctionComponent = () => {
             title={`${i18n.t('about.not.key5')}`}
             titleNumberOfLines={2}
           />
-          <NotItem
+          <List.Item
             left={(props) => (
               <List.Icon
                 {...props}
@@ -224,7 +215,7 @@ const About: React.FunctionComponent = () => {
           />
         </List.Accordion>
       </List.AccordionGroup>
-      <View><Text> </Text></View>
+      <Divider />
       <List.AccordionGroup>
         <List.Accordion description={i18n.t('about.url.description')} id={1} title={i18n.t('about.url.title')}>
           {urls.flatMap(({ address, icon, name }) => {

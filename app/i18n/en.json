@@ -33,6 +33,10 @@
     },
     "about": {
         "copyright": "copyright",
+        "dates": {
+            "first": "First installation: <0>{{date}}</0>",
+            "latest": "Latest update: <0>{{date}}</0>"
+        },
         "might": {
             "key1": "help you improving",
             "key2": "help you learning Kata",

@@ -27,6 +27,9 @@ import { Trans, useTranslation } from 'react-i18next'
 import { Linking } from 'react-native'
 import i18n from '../../i18n/i18n'
 import BoldText from '../../components/BoldText'
+import TkText from '../../components/TkText'
+import { getIso8601 } from '../../utils/Functions'
+import { FIRST_INSTALL, LATEST_UPDATE } from '../../utils/Constants'
 
 const About: React.FunctionComponent = () => {
   const { t } = useTranslation()
@@ -239,6 +242,21 @@ const About: React.FunctionComponent = () => {
           })}
         </List.Accordion>
       </List.AccordionGroup>
+
+      <TkText>
+        <Trans
+          t={t}
+          i18nKey='about.dates.latest'
+          values={{ date: getIso8601(LATEST_UPDATE) }}
+        />
+      </TkText>
+      <TkText>
+        <Trans
+          t={t}
+          i18nKey='about.dates.first' // optional -> fallbacks to defaults if not provided
+          values={{ date: getIso8601(FIRST_INSTALL) }}
+        />
+      </TkText>
     </>
   )
 }

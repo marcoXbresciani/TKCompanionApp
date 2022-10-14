@@ -101,7 +101,7 @@ const DownloadPage: React.FC = () => {
         setVisible={setVisibleDialog}
       />
 
-      <Appbar>
+      <Appbar.Header>
         <Appbar.Action
           icon='today-outline'
           onPress={() => {
@@ -153,7 +153,7 @@ const DownloadPage: React.FC = () => {
             })
           }}
         />
-      </Appbar>
+      </Appbar.Header>
 
       <ScrollView>
         <PageContainer>

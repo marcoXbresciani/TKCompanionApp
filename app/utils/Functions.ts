@@ -27,5 +27,9 @@ export function isDark (): boolean {
 }
 
 export const getTodayIso8601 = (): string => {
-  return new Date().toISOString().substring(0, 10)
+  return getIso8601(new Date().valueOf())
+}
+
+export const getIso8601 = (date: number): string => {
+  return new Date(date).toISOString().substring(0, 10)
 }

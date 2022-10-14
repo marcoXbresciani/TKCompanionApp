@@ -26,6 +26,8 @@ import { isDark } from './Functions'
 
 export const APP_NAME = DeviceInfo.getApplicationName()
 export const APP_VERSION = DeviceInfo.getVersion()
+export const FIRST_INSTALL = DeviceInfo.getFirstInstallTimeSync()
+export const LATEST_UPDATE = DeviceInfo.getLastUpdateTimeSync()
 
 export const PreferencesContext = React.createContext({
   toggleTheme: () => {},

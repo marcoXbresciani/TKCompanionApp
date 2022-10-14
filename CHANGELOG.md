@@ -36,6 +36,17 @@ This file is offered as-is, without any warranty.
 ### Fixed
 ### Security
 
+## [5.0.0]
+### Added
+* Introduce Carnegie Hall joke.
+### Changed
+* Update React Native Paper to v5.
+* Upgraded Gradle Wrapper with SHA256 checksum.
+* Home page, 5Q card, Contact dialog, About, ... many screens have been
+  reviewed and simplified.
+### Removed
+* Simplification lead to unused components that has been removed.
+
 ## [4.0.1](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/4.0.1) - 2022-10-04
 ### Fixed
 * Version 4.0.0 crashes

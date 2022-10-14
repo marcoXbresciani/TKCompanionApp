@@ -54,7 +54,6 @@ const TkNavigator: React.FunctionComponent = () => {
 
   return (
     <BottomNavigation
-      compact
       navigationState={{ index, routes }}
       onIndexChange={setIndex}
       renderScene={renderScene}

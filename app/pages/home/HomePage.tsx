@@ -22,30 +22,24 @@
  */
 import * as React from 'react'
 import { useEffect } from 'react'
-import {
-  Appbar,
-  Dialog,
-  Divider,
-  Menu,
-  Portal,
-  useTheme
-} from 'react-native-paper'
+import { Appbar, Card, Dialog, Portal } from 'react-native-paper'
 import Settings from './Settings'
 import Copyright from './Copyright'
 import About from './About'
 import i18n from '../../i18n/i18n'
 import { APP_NAME, APP_VERSION } from '../../utils/Constants'
-import FiveQ from '../docs/5qcard/FiveQ'
 import TkPanel from '../../components/wip/TkPanel'
 import StorageFactory from '../../utils/storage/StorageFactory'
 import {
   AllowedSettings
 } from '../../utils/storage/settings/AllowedSettings'
+import TkCard from '../../components/tkcard/TkCard'
+import TkCardTitle from '../../components/tkcard/TkCardTitle'
+import TkText from '../../components/TkText'
 
 const HomePage: React.FunctionComponent = () => {
   const [visibleAbout, setVisibleAbout] = React.useState(false)
   const showAbout = (): void => {
-    closeMenu()
     setVisibleAbout(true)
   }
   const hideAbout = (): void => setVisibleAbout(false)
@@ -53,25 +47,18 @@ const HomePage: React.FunctionComponent = () => {
   const [visibleCopyright, setVisibleCopyright] =
     React.useState(false)
   const showCopyright = (): void => {
-    closeMenu()
     setVisibleCopyright(true)
   }
   const hideCopyright = (): void => setVisibleCopyright(false)
 
   const [visibleSettings, setVisibleSettings] = React.useState(false)
   const showSettings = (): void => {
-    closeMenu()
     setVisibleSettings(true)
   }
   const hideSettings = (): void => setVisibleSettings(false)
 
-  const [visible, setVisible] = React.useState(false)
-  const openMenu = (): void => setVisible(true)
-  const closeMenu = (): void => setVisible(false)
-
   const [visiblePanel, setVisiblePanel] = React.useState(false)
   const showPanel = (): void => {
-    closeMenu()
     setVisiblePanel(true)
   }
 
@@ -117,44 +104,34 @@ const HomePage: React.FunctionComponent = () => {
         setVisible={setVisiblePanel}
       />
 
-      <Appbar>
-        <Appbar.Content title={APP_NAME + ', ' + APP_VERSION} />
-        <Menu
-          visible={visible}
-          onDismiss={closeMenu}
-          anchor={
-            <Appbar.Action
-              icon='menu-outline'
-              color={useTheme().colors.onSurface}
-              onPress={openMenu}
-            />
-          }
-        >
-          <Menu.Item
-            onPress={showSettings}
-            leadingIcon='settings-outline'
-            title={`${i18n.t('nav.menu.settings')}`}
-          />
-          <Menu.Item
-            onPress={showCopyright}
-            leadingIcon='document-text-outline'
-            title={`${i18n.t('nav.menu.copyright')}`}
-          />
-          <Menu.Item
-            onPress={showPanel}
-            leadingIcon='at-outline'
-            title={`${i18n.t('nav.menu.contact')}`}
-          />
-          <Divider />
-          <Menu.Item
-            onPress={showAbout}
-            leadingIcon='information-circle-outline'
-            title={`${i18n.t('nav.menu.about')}`}
-          />
-        </Menu>
-      </Appbar>
+      <Appbar.Header>
+        <Appbar.Action
+          onPress={showSettings}
+          icon='settings-outline'
+          isLeading
+        />
+        <Appbar.Content title='' />
+        <Appbar.Action
+          onPress={showPanel}
+          icon='ear-outline'
+        />
+        <Appbar.Action
+          onPress={showCopyright}
+          icon='document-text-outline'
+        />
+        <Appbar.Action
+          onPress={showAbout}
+          icon='information-circle-outline'
+        />
+      </Appbar.Header>
 
-      <FiveQ />
+      <TkCard>
+        <Card.Cover source={require('../../assets/images/featureGraphic.png')} />
+        <TkCardTitle title={APP_NAME} subtitle={APP_VERSION} />
+        <Card.Content>
+          <TkText>{`${i18n.t('app.short')}`}</TkText>
+        </Card.Content>
+      </TkCard>
     </>
   )
 }

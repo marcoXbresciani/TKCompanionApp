@@ -30,17 +30,15 @@ This file is offered as-is, without any warranty.
 * Welcome/splash dialog on first time application open.
   Same content of new "Contact" menu entry.
 ### Changed
-* Update React Native Paper to v5.
-* Upgraded Gradle Wrapper with SHA256 checksum.
 ### Removed
 ### Fixed
 ### Security
 
-## [5.0.0]
+## [5.0.0](https://github.com/marcoXbresciani/TKCompanionApp/releases/tag/5.0.0) - 2022-11-04
 ### Added
 * Introduce Carnegie Hall joke.
 ### Changed
-* Update React Native Paper to v5.
+* Update React Native Paper to v5(RC9).
 * Upgraded Gradle Wrapper with SHA256 checksum.
 * Home page, 5Q card, Contact dialog, About, ... many screens have been
   reviewed and simplified.

@@ -16,6 +16,11 @@ They might be in the
 [GitHub Issues page](https://github.com/marcoXbresciani/TKCompanionApp/issues)
 or not.
 
+1. ~~Bump tmpl from 1.0.4 to 1.0.5~~
+2. ~~Remove useless permission~~
+3. ~~Remove offending libs for F-Droid full FOSS release~~
+4. ~~appID confusion~~
+5. ~~I18N not fully completed~~
 6. [Switching language through settings does not switch bottom navigation bar](https://github.com/marcoXbresciani/TKCompanionApp/issues/6)
 
    When switching languages through the Info -> Language area, the
@@ -24,20 +29,36 @@ or not.
 
    Found in v0.6.0.
    Since v0.5.0.
-
-----
-
+7. ~~App crashes on Android 11 (Moto G31) when opening the newly added
+   puzzle~~
+8. ~~Download links error - forbidden~~
+9. ~~Move translation info into the info field~~
+10. ~~Add support for ts-standard~~
 11. [Cope with OpenSSF Best Practices](https://github.com/marcoXbresciani/TKCompanionApp/issues/11)
 
     It would be nice to fulfill the requirements for the OpenSSF Best
     Practices concepts, competing all the needed information to apply
     for a badge describing these practices.
     See https://bestpractices.coreinfrastructure.org/en
-
-----
-
+12. ~~Change download links to TK website~~
+13. ~~JSON Syntax Error~~
+14. ~~App crashes when opening calendar in a language different from Italian~~
+15. ~~Switching language make calendar crashes~~
+16. ~~Make app language and theme depending on system settings, implement Material You~~
+17. ~~Wrong dark/light mode and default language~~
 18. [Introduce Material You](https://github.com/marcoXbresciani/TKCompanionApp/issues/18)
+
     Introduce Material You design for most modern systems.
 
     Originally posted by [@the4anoni](https://github.com/the4anoni) in
     [#16 (comment)](https://github.com/marcoXbresciani/TKCompanionApp/issues/16#issuecomment-1256922586)
+19. [Version 4.0.0 crashes](https://github.com/marcoXbresciani/TKCompanionApp/issues/19)
+
+    The new version, 4.0.0 does not even start are installation.
+
+    It's also strangely bigger than previous versions.
+20. [Version 4.0.1 crashes](https://github.com/marcoXbresciani/TKCompanionApp/issues/20)
+
+    The new version, 4.0.1 does not even start after installation.
+
+    It's also way smaller than previous version, but similar to <4.x.

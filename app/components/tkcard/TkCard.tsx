@@ -31,7 +31,7 @@ const StyledTkCard = styled(Card)`
 
 const TkCard = (props: React.PropsWithChildren<any>): JSX.Element => {
   const borderTheme = {
-    bg: `${useTheme().colors.primary as string}`
+    bg: `${useTheme().colors.primary}`
   }
 
   return (<StyledTkCard theme={borderTheme}>{props.children}</StyledTkCard>)

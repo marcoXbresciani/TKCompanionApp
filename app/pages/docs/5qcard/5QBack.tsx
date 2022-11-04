@@ -48,7 +48,7 @@ interface Props {
 const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
   const { t } = useTranslation('')
   const lineTheme = {
-    bg: `${useTheme().colors.primary as string}`
+    bg: `${useTheme().colors.primary}`
   }
 
   return (

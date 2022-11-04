@@ -37,7 +37,7 @@ const Container = styled(View)`
 
 export const Separator = ({ children }: React.PropsWithChildren<any>): JSX.Element => {
   const lineTheme = {
-    bg: `${useTheme().colors.primary as string}`
+    bg: `${useTheme().colors.primary}`
   }
 
   return (

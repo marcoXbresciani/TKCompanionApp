@@ -22,7 +22,7 @@
  */
 import { ComposableKey } from './ComposableKey'
 import { Storage } from './Storage'
-import EncryptedStorage from 'react-native-encrypted-storage'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 class BaseStorage implements Storage<string> {
   protected component: ComposableKey
@@ -33,7 +33,7 @@ class BaseStorage implements Storage<string> {
 
   async write (key: string, value: string): Promise<void> {
     try {
-      await EncryptedStorage.setItem(key, value)
+      await AsyncStorage.setItem(key, value)
     } catch (error) {
       console.error(`Error '${error as string}' while writing '${key}'.`)
     }
@@ -42,7 +42,7 @@ class BaseStorage implements Storage<string> {
   async read (key: string): Promise<string | null> {
     let result = null
     try {
-      result = await EncryptedStorage.getItem(key)
+      result = await AsyncStorage.getItem(key)
     } catch (error) {
       console.error(`Error '${error as string}' while reading '${key}'.`)
     }
@@ -51,7 +51,7 @@ class BaseStorage implements Storage<string> {
 
   async remove (key: string): Promise<void> {
     try {
-      await EncryptedStorage.removeItem(key)
+      await AsyncStorage.removeItem(key)
     } catch (error) {
       console.error(`Error '${error as string}' while removing '${key}'.`)
     }
@@ -59,7 +59,7 @@ class BaseStorage implements Storage<string> {
 
   async clear (): Promise<void> {
     try {
-      await EncryptedStorage.clear()
+      await AsyncStorage.clear()
     } catch (error) {
       console.error(`Error '${error as string}' while clearing storage.`)
     }

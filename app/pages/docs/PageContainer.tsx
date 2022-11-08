@@ -20,13 +20,12 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { StatusBar, View } from 'react-native'
+import { ScrollView, StatusBar, View } from 'react-native'
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import { SafeAreaView } from 'react-native-safe-area-context'
 import styled from 'styled-components'
 
-const NicerAreaView = styled(SafeAreaView)`
+const NicerAreaView = styled(ScrollView)`
     margin: ${String(StatusBar.currentHeight) + 'px'} 2.5% 0;
     flex: 1;
 `

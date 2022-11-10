@@ -1,0 +1,22 @@
+title: TKCompanionApp
+author:
+  name: marcoXbresciani
+  email: marco.530@outlook.it
+description: A short and small helper for Toyota Kata practitioners
+  Goal of this app is to be a practical vademecum/handbook for those interested in applying scientific thinking through Toyota Kata.
+  It contains the Coaching Kata 5Q card, plus (possibly) more things and information.
+  Content to be improved and updated from time to time.
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+minima:
+  date_format: "%Y-%m-%d"
+
+  # generate social links in footer
+  social_links:
+    mastodon:
+     - username: AAMfP
+       instance: fosstodon.org
+header_pages:
+ - README.md
+ 

@@ -29,15 +29,15 @@ import i18n from '../../../i18n/i18n'
 import SmallerText from '../../../components/SmallerText'
 
 const Notice = styled(View)`
-    align-content: center;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 5% 5%;
-    padding: 10px;
+  align-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5% 5%;
+  padding: 10px;
 `
 
 const ButtonsStrip = styled(View)`
-    flex-direction: row;
+  flex-direction: row;
 `
 
 const Copyright: React.FunctionComponent = () => {
@@ -53,29 +53,21 @@ const Copyright: React.FunctionComponent = () => {
           <Notice key='licence'>
             <TkText>© 2021-2022 Marco Bresciani</TkText>
             <SmallerText>
-              TKCompanionApp is free software: you can redistribute
-              it
-              and/or modify it under the terms of the GNU General
-              Public
+              TKCompanionApp is free software: you can redistribute it
+              and/or modify it under the terms of the GNU General Public
               License as published by the Free Software Foundation,
-              either
-              version 3 of the License, or (at your option) any
-              later
-              version.
+              either version 3 of the License, or (at your option) any
+              later version.
             </SmallerText>
             <SmallerText>
-              TKCompanionApp is distributed in the hope that it will
-              be
-              useful, but WITHOUT ANY WARRANTY; without even the
-              implied
-              warranty of MERCHANTABILITY or FITNESS FOR A
-              PARTICULAR
+              TKCompanionApp is distributed in the hope that it will be
+              useful, but WITHOUT ANY WARRANTY; without even the implied
+              warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
               PURPOSE. See the GNU General Public License for more
               details.
             </SmallerText>
             <SmallerText>
-              You should have received a copy of the GNU General
-              Public
+              You should have received a copy of the GNU General Public
               License along with TKCompanionApp. If not, see
               &lt;https://www.gnu.org/licenses/&gt;.
             </SmallerText>

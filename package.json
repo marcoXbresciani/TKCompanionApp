@@ -30,6 +30,7 @@
         "@types/jest": "^26.0.23",
         "@types/react": "^18.0.21",
         "@types/react-native": "^0.70.6",
+        "@types/react-native-vector-icons": "^6.4.12",
         "@types/react-test-renderer": "^18.0.0",
         "@types/styled-components": "^5.1.26",
         "@typescript-eslint/eslint-plugin": "^5.37.0",

@@ -3,20 +3,8 @@ Upstream-Name: TKCompanionApp
 Upstream-Contact: Marco Bresciani <marcobresciani_1974@libero.it>
 Source:
 
-Files: __tests__/*
-Copyright: 2021-2022 Marco Bresciani
-License: GPL-3.0-or-later
-
-Files: .buckconfig
-Copyright: 2021-2022 Marco Bresciani
-License: FSFAP
-
-Files: .editorconfig
-Copyright: 2021-2022 Marco Bresciani
-License: FSFAP
-
-Files: .eslint*
-Copyright: 2021-2022 Marco Bresciani
+Files: .bundle/config
+Copyright: 2022 Marco Bresciani
 License: FSFAP
 
 Files: .github/FUNDING.yml
@@ -24,10 +12,6 @@ Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
 Files: .github/workflows/*
-Copyright: 2021-2022 Marco Bresciani
-License: FSFAP
-
-Files: .gitignore
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
@@ -39,21 +23,13 @@ Files: .idea/*
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
-Files: jest.config.js
+Files: .node_version
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
-Files: .prettierrc.js
+Files: __tests__/*
 Copyright: 2021-2022 Marco Bresciani
-License: FSFAP
-
-Files: .ruby-version
-Copyright: 2021-2022 Marco Bresciani
-License: FSFAP
-
-Files: .watchmanconfig
-Copyright: 2021-2022 Marco Bresciani
-License: FSFAP
+License: GPL-3.0-or-later
 
 Files: android/*
 Copyright: 2021-2022 Marco Bresciani
@@ -74,10 +50,6 @@ License: Apache-2.0
 Files: android/gradlew.bat
 Copyright: 2015 the original author or authors.
 License: Apache-2.0
-
-Files: app.json
-Copyright: 2021-2022 Marco Bresciani
-License: GPL-3.0-or-later
 
 Files: app/assets/fonts/FreeSans*.ttf
 Copyright: Primož Peterlin, Steve White
@@ -107,14 +79,6 @@ Files: app/i18n/nb-NO.json
 Copyright: 2022 Allan Nordhøy (@comradekingu)
 License: GPL-3.0-or-later
 
-Files: babel.config.js
-Copyright: 2021-2022 Marco Bresciani
-License: FSFAP
-
-Files: docs/svg/*.svg
-Copyright: 2022 Ionic
-License: MIT
-
 Files: fastlane/*
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
@@ -123,23 +87,51 @@ Files: fastlane/metadata/android/*/images/featureGraphic.png
 Copyright: 2007 Marco Bresciani
 License: CC-BY-SA-4.0
 
-Files: Gemfile
+Files: ios/*
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
-
-Files: ios/*.m
-Copyright: 2021-2022 Marco Bresciani
-License: GPL-3.0-or-later
 
 Files: ios/*.h
 Copyright: 2021-2022 Marco Bresciani
 License: GPL-3.0-or-later
 
-Files: ios/*
+Files: ios/*.mm
+Copyright: 2021-2022 Marco Bresciani
+License: GPL-3.0-or-later
+
+Files: .buckconfig
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
+Files: .gitignore
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
+Files: .ruby-version
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
+Files: .watchmanconfig
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
+Files: app.json
+Copyright: 2021-2022 Marco Bresciani
+License: GPL-3.0-or-later
+
+Files: babel.config.js
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
+Files: Gemfile
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
 Files: index.js
+Copyright: 2021-2022 Marco Bresciani
+License: FSFAP
+
+Files: jest.config.js
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 

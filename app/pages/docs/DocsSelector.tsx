@@ -36,7 +36,7 @@ interface Props {
 
 const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
   const [message, setMessage] = useState('')
-  const [visible, setVisible] = React.useState(false)
+  const [visible, setVisible] = useState(false)
 
   const onToggleSnackBar = (): void => setVisible(!visible)
   const onDismissSnackBar = (): void => {
@@ -46,11 +46,8 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
 
   const openUrl = (fileName: string): void => {
     Linking.openURL(fileName).catch((reason) => {
-      setMessage(
-        i18n.t('download.error', {
-          reason: reason
-        })
-      )
+      const message = i18n.t('download.error', { reason })
+      setMessage(message)
       onToggleSnackBar()
     })
   }
@@ -74,11 +71,11 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
           <List.Section>
             <List.Item
               left={() => (
-                <IconButton icon='chatbubbles-outline' onPress={() => onPress(Pages.FiveQCard)} />
+                <IconButton icon='page-next-outline' onPress={() => onPress(Pages.FiveQCard)} />
               )}
               right={() => (
                 <IconButton
-                  icon='download-outline' onPress={() =>
+                  icon='tray-arrow-down' onPress={() =>
                     openUrl(
                       'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf'
                     )}
@@ -89,11 +86,11 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
             />
             <List.Item
               left={() => (
-                <IconButton icon='egg-outline' onPress={() => onPress(Pages.Pattern)} />
+                <IconButton icon='page-next-outline' onPress={() => onPress(Pages.Pattern)} />
               )}
               right={() => (
                 <IconButton
-                  icon='download-outline' onPress={() =>
+                  icon='tray-arrow-down' onPress={() =>
                     openUrl(
                       'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf'
                     )}
@@ -103,10 +100,10 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
               titleNumberOfLines={3}
             />
             <List.Item
-              left={() => <IconButton icon='analytics-outline' onPress={() => onPress(Pages.FourSteps)} />}
+              left={() => <IconButton icon='page-next-outline' onPress={() => onPress(Pages.FourSteps)} />}
               right={() => (
                 <IconButton
-                  icon='download-outline' onPress={() =>
+                  icon='tray-arrow-down' onPress={() =>
                     openUrl(
                       'https://web.archive.org/web/20220326213548/http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf'
                     )}
@@ -116,10 +113,10 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
               titleNumberOfLines={3}
             />
             <List.Item
-              left={() => <IconButton icon='code-outline' onPress={() => onPress(Pages.TkcPage)} />}
+              left={() => <IconButton icon='page-next-outline' onPress={() => onPress(Pages.TkcPage)} />}
               right={() => (
                 <IconButton
-                  icon='download-outline' onPress={() =>
+                  icon='tray-arrow-down' onPress={() =>
                     openUrl(
                       'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf'
                     )}
@@ -129,10 +126,10 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
               titleNumberOfLines={3}
             />
             <List.Item
-              left={() => <IconButton icon='construct-outline' onPress={() => onPress(Pages.PracticePage)} />}
+              left={() => <IconButton icon='page-next-outline' onPress={() => onPress(Pages.PracticePage)} />}
               right={() => (
                 <IconButton
-                  icon='download-outline' onPress={() =>
+                  icon='tray-arrow-down' onPress={() =>
                     openUrl(
                       'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf'
                     )}
@@ -143,11 +140,11 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
             />
             <List.Item
               left={() => (
-                <IconButton icon='thunderstorm-outline' onPress={() => onPress(Pages.KtsPage)} />
+                <IconButton icon='page-next-outline' onPress={() => onPress(Pages.KtsPage)} />
               )}
               right={() => (
                 <IconButton
-                  icon='download-outline' onPress={() =>
+                  icon='tray-arrow-down' onPress={() =>
                     openUrl(
                       'https://web.archive.org/web/20220409213239/http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg'
                     )}
@@ -158,11 +155,11 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
             />
             <List.Item
               left={() => (
-                <IconButton icon='musical-note-outline' onPress={() => onPress(Pages.Carnegie)} />
+                <IconButton icon='page-next-outline' onPress={() => onPress(Pages.Carnegie)} />
               )}
               right={() => (
                 <IconButton
-                  icon='browsers-outline' onPress={() =>
+                  icon='home-export-outline' onPress={() =>
                     openUrl(
                       'https://www.carnegiehall.org/Explore/Articles/2020/04/10/The-Joke'
                     )}

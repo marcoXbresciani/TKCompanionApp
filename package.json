@@ -11,40 +11,41 @@
     "homepage": "https://github.com/marcoXbresciani/TKCompanionApp",
     "dependencies": {
         "@react-native-async-storage/async-storage": "^1.17.10",
-        "i18next": "^21.9.1",
-        "react": "17.0.2",
-        "react-i18next": "^11.18.4",
-        "react-is": "^18.2.0",
-        "react-native": "0.68.3",
+        "i18next": "^22.0.4",
+        "react": "18.1.0",
+        "react-i18next": "^12.0.0",
+        "react-native": "0.70.5",
         "react-native-calendars": "^1.1275.0",
-        "react-native-device-info": "^8.7.0",
+        "react-native-device-info": "^10.3.0",
         "react-native-paper": "^5.0.0-rc.9",
-        "react-native-vector-icons": "^9.1.0",
-        "styled-components": "^5.3.5"
+        "react-native-vector-icons": "^9.2.0",
+        "styled-components": "^5.3.6"
     },
     "description": "A short and small helper for Toyota Kata practitioners",
     "devDependencies": {
-        "@babel/core": "^7.18.10",
-        "@babel/preset-env": "^7.18.10",
-        "@babel/preset-typescript": "^7.17.12",
-        "@babel/runtime": "^7.18.9",
+        "@babel/core": "^7.12.9",
+        "@babel/runtime": "^7.12.5",
+        "@react-native-community/eslint-config": "^2.0.0",
+        "@tsconfig/react-native": "^2.0.2",
         "@types/jest": "^26.0.23",
-        "@types/react-native": "^0.67.3",
-        "@types/react-native-vector-icons": "^6.4.10",
-        "@types/react-test-renderer": "^17.0.1",
+        "@types/react": "^18.0.21",
+        "@types/react-native": "^0.70.6",
+        "@types/react-test-renderer": "^18.0.0",
         "@types/styled-components": "^5.1.26",
+        "@typescript-eslint/eslint-plugin": "^5.37.0",
+        "@typescript-eslint/parser": "^5.37.0",
         "babel-jest": "^26.6.3",
         "babel-plugin-styled-components": "^2.0.7",
-        "husky": "^8.0.1",
+        "eslint": "^7.32.0",
+        "husky": "^8.0.2",
         "jest": "^26.6.3",
-        "jest-styled-components": "^7.1.0",
-        "metro-react-native-babel-preset": "^0.67.0",
-        "react-test-renderer": "17.0.2",
-        "ts-standard": "^11.0.0",
-        "typescript": "^4.4.4"
+        "metro-react-native-babel-preset": "0.72.3",
+        "react-test-renderer": "18.1.0",
+        "ts-standard": "^12.0.1",
+        "typescript": "^4.8.3"
     },
     "engines": {
-        "node": "16.17.1",
+        "node": "18.12.1",
         "npm": "8.19.2"
     },
     "engineStrict": true,
@@ -52,17 +53,24 @@
         "type": "liberaPay",
         "url": "https://liberapay.com/marcoXbresciani/donate"
     },
+    "jest": {
+        "preset": "react-native",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
+    },
     "license": "GPL-3.0-or-later",
     "main": "index.js",
-    "name": "tkcompanionapp",
+    "name": "TKCompanionApp",
     "private": true,
     "repository": {
         "type": "git",
         "url": "https://github.com/marcoXbresciani/TKCompanionApp"
-    },
-    "resolutions": {
-        "@types/react": "^17",
-        "styled-components": "^5"
     },
     "scripts": {
         "android": "react-native run-android",

@@ -25,7 +25,7 @@ import { Card, useTheme } from 'react-native-paper'
 import * as React from 'react'
 
 const StyledTkCard = styled(Card)`
-    border: 1px solid ${props => props.theme.bg};
+    border: 1px solid ${(props: { theme: { bg: any } }) => props.theme.bg};
     border-radius: 10px;
 `
 

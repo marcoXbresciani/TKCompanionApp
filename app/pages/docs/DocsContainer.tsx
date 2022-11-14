@@ -37,7 +37,7 @@ const DocsContainer = ({
       {children}
 
       <IconButton
-        icon='return-down-back-outline'
+        icon='page-previous-outline'
         onPress={onPress}
       />
     </ScrollView>

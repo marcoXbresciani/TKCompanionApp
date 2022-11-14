@@ -64,17 +64,17 @@
             "page": [
                 {
                     "address": "https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/",
-                    "icon": "logo-android",
+                    "icon": "android",
                     "name": "F-Droid"
                 },
                 {
                     "address": "https://github.com/marcoXbresciani/TKCompanionApp",
-                    "icon": "logo-github",
+                    "icon": "github",
                     "name": "GitHub"
                 },
                 {
                     "address": "https://gitlab.com/marcoXbresciani/TKCompanionApp",
-                    "icon": "code-working-outline",
+                    "icon": "gitlab",
                     "name": "Gitlab"
                 }
             ],

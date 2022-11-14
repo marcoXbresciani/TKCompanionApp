@@ -6,7 +6,6 @@
       <entry key="MermaidLanguageExtension" value="false" />
       <entry key="PlantUMLLanguageExtension" value="true" />
     </enabledExtensions>
-    <option name="enhancedEditingEnabled" value="false" />
-    <option name="hideErrorsInCodeBlocks" value="true" />
+    <option name="showProblemsInCodeBlocks" value="false" />
   </component>
 </project>

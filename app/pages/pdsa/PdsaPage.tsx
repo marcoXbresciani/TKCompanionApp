@@ -29,7 +29,7 @@ import i18n from '../../i18n/i18n'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import TkCard from '../../components/tkcard/TkCard'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
-import PageContainer from '../docs/PageContainer'
+import PageContainer from '../PageContainer'
 import PdsaCalendar from './PdsaCalendar'
 import { getTodayIso8601 } from '../../utils/Functions'
 import { Journal } from '../../utils/storage/PdsaJournal/Journal'
@@ -103,20 +103,20 @@ const DownloadPage: React.FC = () => {
 
       <Appbar.Header>
         <Appbar.Action
-          icon='today-outline'
+          icon='calendar-cursor'
           onPress={() => {
             setDay(getTodayIso8601())
           }}
 
         />
         <Appbar.Action
-          icon='calendar-outline'
+          icon='calendar-blank'
           onPress={() => {
             setVisibleDialog(true)
           }}
         />
         <Appbar.Action
-          icon='save-outline'
+          icon='content-save-all'
           disabled={disabledSave}
           onPress={() => {
             setSnackMessage(`Saved ${day}.`)
@@ -135,7 +135,7 @@ const DownloadPage: React.FC = () => {
           }}
         />
         <Appbar.Action
-          icon='trash-outline'
+          icon='trash-can-outline'
           disabled={!disabledSave}
           onPress={() => {
             setSnackMessage(`Deleted ${day}.`)
@@ -161,7 +161,7 @@ const DownloadPage: React.FC = () => {
             <TkCardTitle
               title={`${i18n.t('pdsa.title')}`}
               titleNumberOfLines={2}
-              subtitle={day}
+              subtitle={day === getTodayIso8601() ? `${i18n.t('calendar.today').toUpperCase()}: ${day}` : day}
             />
             <TkCardContent>
               <TkText>{`${i18n.t('pdsa.q1')}`}</TkText>
@@ -179,7 +179,7 @@ const DownloadPage: React.FC = () => {
                 placeholder='Target'
                 right={
                   <TextInput.Icon
-                    icon='trash-outline'
+                    icon='trash-can'
                     onPress={() => {
                       setSnackMessage(`Deleted ${day} Target.`)
                       setPdsaEntry({
@@ -208,7 +208,7 @@ const DownloadPage: React.FC = () => {
                 placeholder='Actual'
                 right={
                   <TextInput.Icon
-                    icon='trash-outline'
+                    icon='trash-can'
                     onPress={() => {
                       setSnackMessage(`Deleted ${day} Actual.`)
                       setPdsaEntry({
@@ -236,7 +236,7 @@ const DownloadPage: React.FC = () => {
                 placeholder='Obstacle'
                 right={
                   <TextInput.Icon
-                    icon='trash-outline'
+                    icon='trash-can'
                     onPress={() => {
                       setSnackMessage(`Deleted ${day} Obstacle.`)
                       setPdsaEntry({
@@ -265,7 +265,7 @@ const DownloadPage: React.FC = () => {
                 placeholder='Step'
                 right={
                   <TextInput.Icon
-                    icon='trash-outline'
+                    icon='trash-can'
                     onPress={() => {
                       setSnackMessage(`Deleted ${day} Step.`)
                       setPdsaEntry({
@@ -294,7 +294,7 @@ const DownloadPage: React.FC = () => {
                 placeholder='Learnt'
                 right={
                   <TextInput.Icon
-                    icon='trash-outline'
+                    icon='trash-can'
                     onPress={() => {
                       setSnackMessage(`Deleted ${day} Learnt.`)
                       setPdsaEntry({

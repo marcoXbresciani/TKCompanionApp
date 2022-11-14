@@ -21,57 +21,27 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import { Chip, Dialog, Divider, Portal } from 'react-native-paper'
-import { Linking } from 'react-native'
-import TkText from '../TkText'
-import StorageFactory from '../../utils/storage/StorageFactory'
-import {
-  AllowedSettings
-} from '../../utils/storage/settings/AllowedSettings'
-import BoldText from '../BoldText'
+import { Linking, ScrollView } from 'react-native'
+import { Chip, Dialog, Divider } from 'react-native-paper'
+import i18n from '../../../i18n/i18n'
+import TkText from '../../../components/TkText'
+import BoldText from '../../../components/BoldText'
 
-interface Props {
-  title: string
-  before: string
-  messages: string[]
-  after: string
-  visible: boolean
-  setVisible: React.Dispatch<React.SetStateAction<boolean>>
-}
-
-const TkPanel: ({
-  title,
-  before,
-  messages,
-  after
-}: Props) => JSX.Element = ({
-  title,
-  before,
-  messages,
-  after,
-  visible,
-  setVisible
-}: Props) => {
-  const storage = StorageFactory.getInstance().getSettingsStorage()
+const Feedback: React.FC = () => {
+  const messages: string[] = i18n.t('panel.home.messages', { returnObjects: true })
 
   return (
-    <Portal>
-      <Dialog
-        visible={visible}
-        onDismiss={() => {
-          setVisible(false)
-          void storage.write(AllowedSettings.HOME_TITLE, 'true')
-        }}
-      >
-        <Dialog.Title>{title}</Dialog.Title>
+    <>
+      <Dialog.Title>{i18n.t('panel.home.title')}</Dialog.Title>
+      <ScrollView>
         <Dialog.Content>
-          <TkText>{before}</TkText>
+          <TkText>{i18n.t('panel.home.before')}</TkText>
           <Divider />
           {messages.flatMap((message, index) => {
             return <BoldText key={index}>{message}</BoldText>
           })}
           <Divider />
-          <TkText>{after}</TkText>
+          <TkText>{i18n.t('panel.home.after')}</TkText>
         </Dialog.Content>
         <Dialog.Actions>
           <Chip
@@ -91,9 +61,9 @@ const TkPanel: ({
           >Delta Chat
           </Chip>
         </Dialog.Actions>
-      </Dialog>
-    </Portal>
+      </ScrollView>
+    </>
   )
 }
 
-export default TkPanel
+export default Feedback

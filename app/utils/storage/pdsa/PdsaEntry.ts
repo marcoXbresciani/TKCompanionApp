@@ -29,7 +29,7 @@ class PdsaEntry implements StorableValue {
   step: string
   learnt: string
 
-  constructor ();
+  constructor ()
   constructor (
     target?: string,
     actual?: string,

@@ -38,12 +38,12 @@ const TkNavigator: React.FunctionComponent = () => {
     {
       key: 'pdsa',
       title: i18n.t('nav.pdsa'),
-      focusedIcon: 'journal-outline'
+      focusedIcon: 'note-edit-outline'
     },
     {
       key: 'docs',
       title: i18n.t('nav.docs'),
-      focusedIcon: 'library-outline'
+      focusedIcon: 'library-shelves'
     }
   ])
   const renderScene = BottomNavigation.SceneMap({

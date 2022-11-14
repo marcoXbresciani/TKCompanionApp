@@ -120,28 +120,13 @@ Well, it's easy: install the app, open the app, click some buttons.
 There are no games, no quizzes, no actions to take (yet).
 Just sit, follow the menu, learn, practice and improve.
 
-### Legend
-
-#### Icons
-* <img src="docs/svg/navigate-circle-outline.svg" height="16px" alt="navigate-circle-outline"/>
-  this icon means that the app will open a web page outside the app
-  itself, using whatever browser or app you have configured on your
-  device to browse the Internet and show you an external web page.
-* <img src="docs/svg/download-outline.svg" height="16px" alt="download-outline"/>
-  this icon means that the app will download a specific file (from The
-  Toyota Kata Website, if not otherwise specified).
-  The way your device will manage such file will depend on the device
-  configuration.
-  The text associated to the download icon will always specify the type
-  of file that will be downloaded.
-
 ### Screenshots
 <img alt="5Q" src="fastlane/metadata/android/en-US/images/phoneScreenshots/5Q.png" sizes="50%"/>
 <img alt="About" src="fastlane/metadata/android/en-US/images/phoneScreenshots/about.png" sizes="50%"/>
+<img alt="Documents" src="fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png" sizes="50%"/>
 <img alt="Home" src="fastlane/metadata/android/en-US/images/phoneScreenshots/home.png" sizes="50%"/>
-<img alt="Docs" src="fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png" sizes="50%"/>
-<img alt="PDSA" src="fastlane/metadata/android/en-US/images/phoneScreenshots/pdsa.png" sizes="50%"/>
-<img alt="TKC" src="fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png" sizes="50%"/>
+<img alt="PDSA Journal" src="fastlane/metadata/android/en-US/images/phoneScreenshots/pdsa.png" sizes="50%"/>
+<img alt="The Kata Code" src="fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png" sizes="50%"/>
 
 ### Font Notes
 * Font used is [Free

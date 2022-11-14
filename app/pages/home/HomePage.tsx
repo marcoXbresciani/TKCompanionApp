@@ -21,21 +21,17 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import { useEffect } from 'react'
 import { Appbar, Card, Dialog, Portal } from 'react-native-paper'
-import Settings from './Settings'
-import Copyright from './Copyright'
-import About from './About'
+import Settings from './dialogs/Settings'
+import Copyright from './dialogs/Copyright'
+import About from './dialogs/About'
 import i18n from '../../i18n/i18n'
 import { APP_NAME, APP_VERSION } from '../../utils/Constants'
-import TkPanel from '../../components/wip/TkPanel'
-import StorageFactory from '../../utils/storage/StorageFactory'
-import {
-  AllowedSettings
-} from '../../utils/storage/settings/AllowedSettings'
 import TkCard from '../../components/tkcard/TkCard'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import TkText from '../../components/TkText'
+import Legend from './dialogs/Legend'
+import Feedback from './dialogs/Feedback'
 
 const HomePage: React.FunctionComponent = () => {
   const [visibleAbout, setVisibleAbout] = React.useState(false)
@@ -57,71 +53,62 @@ const HomePage: React.FunctionComponent = () => {
   }
   const hideSettings = (): void => setVisibleSettings(false)
 
-  const [visiblePanel, setVisiblePanel] = React.useState(false)
-  const showPanel = (): void => {
-    setVisiblePanel(true)
+  const [visibleLegend, setVisibleLegend] = React.useState(false)
+  const showLegend = (): void => {
+    setVisibleLegend(true)
   }
+  const hideLegend = (): void => setVisibleLegend(false)
 
-  useEffect(() => {
-    const storage = StorageFactory.getInstance().getSettingsStorage()
-    const read = Boolean(storage.read(AllowedSettings.HOME_TITLE))
-
-    setVisiblePanel(!read)
-  }, [])
+  const [visibleFeedback, setVisibleFeedback] = React.useState(false)
+  const showFeedback = (): void => {
+    setVisibleFeedback(true)
+  }
+  const hideFeedback = (): void => setVisibleFeedback(false)
 
   return (
     <>
       <Portal>
+        <Dialog visible={visibleSettings} onDismiss={hideSettings}>
+          <Settings />
+        </Dialog>
+        <Dialog visible={visibleLegend} onDismiss={hideLegend}>
+          <Legend />
+        </Dialog>
+
+        <Dialog visible={visibleFeedback} onDismiss={hideFeedback}>
+          <Feedback />
+        </Dialog>
         <Dialog visible={visibleAbout} onDismiss={hideAbout}>
-          <Dialog.Content>
-            <About />
-          </Dialog.Content>
+          <About />
         </Dialog>
-        <Dialog
-          visible={visibleCopyright}
-          onDismiss={hideCopyright}
-        >
-          <Dialog.ScrollArea>
-            <Copyright />
-          </Dialog.ScrollArea>
-        </Dialog>
-        <Dialog
-          visible={visibleSettings}
-          onDismiss={hideSettings}
-        >
-          <Dialog.ScrollArea>
-            <Settings />
-          </Dialog.ScrollArea>
+        <Dialog visible={visibleCopyright} onDismiss={hideCopyright}>
+          <Copyright />
         </Dialog>
       </Portal>
-
-      <TkPanel
-        title={i18n.t('panel.home.title')}
-        before={i18n.t('panel.home.before')}
-        messages={i18n.t('panel.home.messages', { returnObjects: true })}
-        after={i18n.t('panel.home.after')}
-        visible={visiblePanel}
-        setVisible={setVisiblePanel}
-      />
 
       <Appbar.Header>
         <Appbar.Action
           onPress={showSettings}
-          icon='settings-outline'
+          icon='tune-variant'
+          isLeading
+        />
+        <Appbar.Action
+          onPress={showLegend}
+          icon='help-box'
           isLeading
         />
         <Appbar.Content title='' />
         <Appbar.Action
-          onPress={showPanel}
-          icon='ear-outline'
+          onPress={showFeedback}
+          icon='comment-quote-outline'
         />
         <Appbar.Action
           onPress={showCopyright}
-          icon='document-text-outline'
+          icon='copyleft'
         />
         <Appbar.Action
           onPress={showAbout}
-          icon='information-circle-outline'
+          icon='information-variant'
         />
       </Appbar.Header>
 

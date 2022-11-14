@@ -22,7 +22,7 @@
  */
 import * as React from 'react'
 import { Provider as PaperProvider } from 'react-native-paper'
-import Ionicons from 'react-native-vector-icons/Ionicons'
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import { isDark } from './app/utils/Functions'
 import StorageFactory from './app/utils/storage/StorageFactory'
 import {
@@ -70,7 +70,7 @@ const App: React.FunctionComponent = () => {
     <PreferencesContext.Provider value={preferences}>
       <PaperProvider
         settings={{
-          icon: (props) => <Ionicons {...props} />
+          icon: (props) => <MaterialCommunityIcons {...props} />
         }}
         theme={theme}
       >

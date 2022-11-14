@@ -142,10 +142,10 @@ Siediti, segui il menu, impara, esercitati e migliora.
 ### Schermate
 <img alt="5Q" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/5Q.png" sizes="50%"/>
 <img alt="Informazioni" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/about.png" sizes="50%"/>
-<img alt="Inizio" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/home.png" sizes="50%"/>
 <img alt="Documenti" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/docs.png" sizes="50%"/>
-<img alt="PDSA" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/pdsa.png" sizes="50%"/>
-<img alt="TKC" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/tkc.png" sizes="50%"/>
+<img alt="Inizio" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/home.png" sizes="50%"/>
+<img alt="Diario PDSA" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/pdsa.png" sizes="50%"/>
+<img alt="Il codice Kata" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/tkc.png" sizes="50%"/>
 
 ### Note sui font
 * Il font usato è [Free

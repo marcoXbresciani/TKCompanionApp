@@ -1,0 +1,6 @@
+Aggiornamento generale delle dipendenze tecniche, framework e librerie
+software.
+Rimozione del Encrypted Storage: se incontri problemi con questa
+versione disinstalla le versioni vecchie e installa questa, invece di
+aggiornare.
+Il repository di riferimento ora è Codeberg.

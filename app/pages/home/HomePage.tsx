@@ -79,7 +79,8 @@ const HomePage: React.FunctionComponent = () => {
           messages={i18n.t('home.feedback.messages', { returnObjects: true })}
           after={i18n.t('home.feedback.after')}
           visible={visibleFeedback}
-          setVisible={setVisibleFeedback} />
+          setVisible={setVisibleFeedback}
+        />
         <Dialog visible={visibleAbout} onDismiss={hideAbout}>
           <About />
         </Dialog>

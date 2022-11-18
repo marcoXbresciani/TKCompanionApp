@@ -1,34 +1,4 @@
 {
-    "4s": {
-        "s1": "① Få anvisningen eller utfordringen",
-        "s2": "② Skaff oversikt over nåværende tilstand",
-        "s3": "③ Etabler din neste måltilstand",
-        "s4": "④ Gjør eksperimenter for å komme dithen",
-        "title": "De fire stegene for forbedrings-Kata"
-    },
-    "5q": {
-        "back": {
-            "q1": "1) Hva planla du som ditt <bold>siste steg</bold>?",
-            "q2": "2) Hva slags <bold>forventning</bold> hadde du?",
-            "q3": "3) Hva <bold>fant sted</bold>?",
-            "q4": "4) Hva <bold>lærte du</bold>?",
-            "quote": "Fordi du ikke faktisk vet hva resultatet av et steg vil være!",
-            "return": "Gå tilbake til spørsmål 3",
-            "title": "Overvei forrige steg"
-        },
-        "front": {
-            "header": "Bortlæring av Kata",
-            "q1": "① Hva er <bold>måltilstanden</bold>?",
-            "q2": "② Hva er <bold>faktisk tilstand</bold> nå?",
-            "q3.1": "③ Hvilke <bold>hindre</bold> tror du forhindrer deg i å nå måltilstanden?",
-            "q3.2": "Hvilket *enkeltstående* hinder jobber du med nå?",
-            "q4.1": "④ Hva er ditt <bold>neste steg</bold>? (Neste eksperiment)",
-            "q4.2": "Hva forventer du?",
-            "q5": "⑤ Hvor raskt kan finne ut hva man <bold>har lært</bold> av å utføre forrige steg?",
-            "separator": "Snu kortet",
-            "title": "De fem spørsmålene"
-        }
-    },
     "about": {
         "copyright": "opphavsrett",
         "might": {
@@ -76,12 +46,7 @@
         }
     },
     "app": {
-        "short": "En kort og liten hjelper for Toyota Kata-utøvere",
-        "wip": {
-            "after": "Tilbakemeldinger og ideér er veldig velkomne.",
-            "before": "Takk for at du klikket, men dette har ikke blitt lagt til enda.",
-            "title": "Underveis …"
-        }
+        "short": "En kort og liten hjelper for Toyota Kata-utøvere"
     },
     "calendar": {
         "dayNames": [
@@ -132,42 +97,75 @@
         ],
         "today": "i dag"
     },
-    "carnegie": {
-        "title": "Carnegie Hall"
-    },
     "docs": {
-        "4steps": "4 steg",
-        "5qcard": "5Q-kort",
-        "carnegie": "Carnegie Hall",
-        "kts": "$t(kts.title)",
-        "practice": "$t(practice.title)",
+        "4steps": {
+            "s1": "① Få anvisningen eller utfordringen",
+            "s2": "② Skaff oversikt over nåværende tilstand",
+            "s3": "③ Etabler din neste måltilstand",
+            "s4": "④ Gjør eksperimenter for å komme dithen",
+            "title": "De fire stegene for forbedrings-Kata"
+        },
+        "5qcard": {
+            "back": {
+                "q1": "1) Hva planla du som ditt <bold>siste steg</bold>?",
+                "q2": "2) Hva slags <bold>forventning</bold> hadde du?",
+                "q3": "3) Hva <bold>fant sted</bold>?",
+                "q4": "4) Hva <bold>lærte du</bold>?",
+                "quote": "Fordi du ikke faktisk vet hva resultatet av et steg vil være!",
+                "return": "Gå tilbake til spørsmål 3",
+                "title": "Overvei forrige steg"
+            },
+            "front": {
+                "header": "Bortlæring av Kata",
+                "q1": "① Hva er <bold>måltilstanden</bold>?",
+                "q2": "② Hva er <bold>faktisk tilstand</bold> nå?",
+                "q3.1": "③ Hvilke <bold>hindre</bold> tror du forhindrer deg i å nå måltilstanden?",
+                "q3.2": "Hvilket *enkeltstående* hinder jobber du med nå?",
+                "q4.1": "④ Hva er ditt <bold>neste steg</bold>? (Neste eksperiment)",
+                "q4.2": "Hva forventer du?",
+                "q5": "⑤ Hvor raskt kan finne ut hva man <bold>har lært</bold> av å utføre forrige steg?",
+                "separator": "Snu kortet",
+                "title": "De fem spørsmålene"
+            }
+        },
+        "carnegie": {
+            "title": "Carnegie Hall"
+        },
+        "kts": {
+            "text": "Å bruke forbedrelsmønsteret Kata (fra boken «Toyota Kata») til å takle et vedvarende og ergerlig problem som har hindre og ingen åpenbar løsning. Et uttrykk som brukes når noen har blitt gjentagende frustrert, ønsker svart-hvitt-svar, eller forventer at noen andre løser problemet.",
+            "tip": "[κατα]",
+            "title": "Utfør Kata"
+        },
+        "practice": {
+            "1": "Utøvere av forbedrings-Kata/bortlærings-Kata skaper en dynamikk som hjelper mennesker å finne et mer vitenskapelig tenke- og handlesett, mot det beste vi kan estimere, og videre.",
+            "2": "Det 21 århundre krever en måte å jobbe på som er kognitivt kompleks, interpersonlig, iterativ, og faktisk også grunderbasert. Øving på forbedring av Kata og bortlæring av Kata for å oppnå disse ferdighetene og tankemønsteret forandrer verden rundt oss. Det gir deg ikke svar, men kan være en prosess for hvordan du skal imøtegå dine mål og hindre.",
+            "3": "Kata-gemenskapen har strukturerte øvelsesrutiner, som heter «Nybegynner-Kata», for læring av det grunnleggende for både den som skal lære og lære bort—som å spille akkorder når man lærer et instrument. Utøvelse av Kata er grunnlaget all læringskreativitet og initiativ kommer fra.",
+            "4": "Øvelsesrutinene i forbedrings-Kata og bortlærings-Kata er nyttige som startpunkt for ethvert lag eller organisasjon som ønsker å utvikle og bruke en mer vitenskapelig innfallsvinkel. Nybegynnere starter med å følge mønsteret for nybegynner-Kata regelrett. Etterhvert som de blir bedre og forstår målet bak rutinene kan de begynne å utvikle sin egen stil, så lenge de fortsetter å holde seg til det underliggende vitenskapelige mønsteret og hensikten.",
+            "5": "«Kata-koden» definerer hva man antagelig ikke bør endre etterhvert som man utvikler sin egen stil.",
+            "6": "Lykke til!",
+            "title": "Endring av tankemønster gjennom utøvelse"
+        },
         "title": "Les dokumentasjonen",
-        "tkc": "$t(tkc.title)"
-    },
-    "kts": {
-        "text": "Å bruke forbedrelsmønsteret Kata (fra boken «Toyota Kata») til å takle et vedvarende og ergerlig problem som har hindre og ingen åpenbar løsning. Et uttrykk som brukes når noen har blitt gjentagende frustrert, ønsker svart-hvitt-svar, eller forventer at noen andre løser problemet.",
-        "tip": "[κατα]",
-        "title": "Utfør Kata"
+        "tkc": {
+            "1": "◉ Betingelsene er uforutsigbare.",
+            "2": "◉ Kos deg i læringssonen.",
+            "3": "◉ Forstå retningen, ta innover deg nåværende tilstand, etabler en måltilstand, og eksperimenter deg mot måltilstanden.",
+            "4": "◉ Nybegynnere utfører nybegynner-Kata regelrett.",
+            "5": "◉ Ha en trener, vær en trener.",
+            "title": "Kata-koden"
+        }
     },
     "nav": {
-        "docs": "Dokumenter",
-        "download": "Nedlastninger",
         "home": "Hjem",
         "menu": {
             "about": "Om",
             "copyright": "Opphavsrett",
-            "settings": "Innstillinger"
-        },
-        "pdsa": "PDSA-journal"
-    },
-    "practice": {
-        "1": "Utøvere av forbedrings-Kata/bortlærings-Kata skaper en dynamikk som hjelper mennesker å finne et mer vitenskapelig tenke- og handlesett, mot det beste vi kan estimere, og videre.",
-        "2": "Det 21 århundre krever en måte å jobbe på som er kognitivt kompleks, interpersonlig, iterativ, og faktisk også grunderbasert. Øving på forbedring av Kata og bortlæring av Kata for å oppnå disse ferdighetene og tankemønsteret forandrer verden rundt oss. Det gir deg ikke svar, men kan være en prosess for hvordan du skal imøtegå dine mål og hindre.",
-        "3": "Kata-gemenskapen har strukturerte øvelsesrutiner, som heter «Nybegynner-Kata», for læring av det grunnleggende for både den som skal lære og lære bort—som å spille akkorder når man lærer et instrument. Utøvelse av Kata er grunnlaget all læringskreativitet og initiativ kommer fra.",
-        "4": "Øvelsesrutinene i forbedrings-Kata og bortlærings-Kata er nyttige som startpunkt for ethvert lag eller organisasjon som ønsker å utvikle og bruke en mer vitenskapelig innfallsvinkel. Nybegynnere starter med å følge mønsteret for nybegynner-Kata regelrett. Etterhvert som de blir bedre og forstår målet bak rutinene kan de begynne å utvikle sin egen stil, så lenge de fortsetter å holde seg til det underliggende vitenskapelige mønsteret og hensikten.",
-        "5": "«Kata-koden» definerer hva man antagelig ikke bør endre etterhvert som man utvikler sin egen stil.",
-        "6": "Lykke til!",
-        "title": "Endring av tankemønster gjennom utøvelse"
+            "settings": {
+                "language": "Språk",
+                "theme": "Veksle mellom mørk og lys drakt",
+                "title": "Innstillinger"
+            }
+        }
     },
     "pdsa": {
         "alert": {
@@ -181,16 +179,9 @@
         "temp": "Dette er et eksperiment for neste funksjon: muligheten til å skrive/lagre til et 5Q-kort, muligens daglig, samt vurdere og lese det igjen når som helst.",
         "title": "Planlegg-gjør-studer-ager"
     },
-    "settings": {
-        "language": "Språk",
-        "theme": "Veksle mellom mørk og lys drakt"
-    },
-    "tkc": {
-        "1": "◉ Betingelsene er uforutsigbare.",
-        "2": "◉ Kos deg i læringssonen.",
-        "3": "◉ Forstå retningen, ta innover deg nåværende tilstand, etabler en måltilstand, og eksperimenter deg mot måltilstanden.",
-        "4": "◉ Nybegynnere utfører nybegynner-Kata regelrett.",
-        "5": "◉ Ha en trener, vær en trener.",
-        "title": "Kata-koden"
+    "wip": {
+        "after": "Tilbakemeldinger og ideér er veldig velkomne.",
+        "before": "Takk for at du klikket, men dette har ikke blitt lagt til enda.",
+        "title": "Underveis …"
     }
 }

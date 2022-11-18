@@ -30,16 +30,16 @@ import TkText from '../../components/TkText'
 const Practice: React.FunctionComponent = () => (
   <TkCard>
     <TkCardTitle
-      title={`${i18n.t('practice.title')}`}
+      title={`${i18n.t('docs.practice.title')}`}
       titleNumberOfLines={2}
     />
     <TkCardContent>
-      <TkText>{`${i18n.t('practice.1')}`}</TkText>
-      <TkText>{`${i18n.t('practice.2')}`}</TkText>
-      <TkText>{`${i18n.t('practice.3')}`}</TkText>
-      <TkText>{`${i18n.t('practice.4')}`}</TkText>
-      <TkText>{`${i18n.t('practice.5')}`}</TkText>
-      <TkText>{`${i18n.t('practice.6')}`}</TkText>
+      <TkText>{`${i18n.t('docs.practice.1')}`}</TkText>
+      <TkText>{`${i18n.t('docs.practice.2')}`}</TkText>
+      <TkText>{`${i18n.t('docs.practice.3')}`}</TkText>
+      <TkText>{`${i18n.t('docs.practice.4')}`}</TkText>
+      <TkText>{`${i18n.t('docs.practice.5')}`}</TkText>
+      <TkText>{`${i18n.t('docs.practice.6')}`}</TkText>
     </TkCardContent>
   </TkCard>
 )

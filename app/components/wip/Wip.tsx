@@ -44,9 +44,11 @@ const TkPanel: ({
 }: Props) => {
   return (
     <TkPanel
-      title={`${i18n.t('app.wip.title')}`}
-      before={`${i18n.t('app.wip.before')}`} message={message}
-      after={`${i18n.t('app.wip.after')}`} visible={visible}
+      title={`${i18n.t('wip.title')}`}
+      before={`${i18n.t('wip.before')}`}
+      message={message}
+      after={`${i18n.t('wip.after')}`}
+      visible={visible}
       setVisible={setVisible}
     />
 

@@ -29,13 +29,13 @@ import TkText from '../../components/TkText'
 
 const Tkc: React.FunctionComponent = () => (
   <TkCard>
-    <TkCardTitle title={`${i18n.t('tkc.title')}`} />
+    <TkCardTitle title={`${i18n.t('docs.tkc.title')}`} />
     <TkCardContent>
-      <TkText>{`${i18n.t('tkc.1')}`}</TkText>
-      <TkText>{`${i18n.t('tkc.2')}`}</TkText>
-      <TkText>{`${i18n.t('tkc.3')}`}</TkText>
-      <TkText>{`${i18n.t('tkc.4')}`}</TkText>
-      <TkText>{`${i18n.t('tkc.5')}`}</TkText>
+      <TkText>{`${i18n.t('docs.tkc.1')}`}</TkText>
+      <TkText>{`${i18n.t('docs.tkc.2')}`}</TkText>
+      <TkText>{`${i18n.t('docs.tkc.3')}`}</TkText>
+      <TkText>{`${i18n.t('docs.tkc.4')}`}</TkText>
+      <TkText>{`${i18n.t('docs.tkc.5')}`}</TkText>
     </TkCardContent>
   </TkCard>
 )

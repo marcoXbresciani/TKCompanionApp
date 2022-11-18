@@ -30,12 +30,12 @@ import TkText from '../../components/TkText'
 const Carnegie: React.FunctionComponent = () => (
   <TkCard>
     <TkCardTitle
-      title={`${i18n.t('carnegie.title')}`}
+      title={`${i18n.t('docs.carnegie.title')}`}
       titleNumberOfLines={2}
     />
     <TkCardContent>
-      <TkText>{`${i18n.t('carnegie.p1')}`}</TkText>
-      <TkText>{`${i18n.t('carnegie.p2')}`}</TkText>
+      <TkText>{`${i18n.t('docs.carnegie.p1')}`}</TkText>
+      <TkText>{`${i18n.t('docs.carnegie.p2')}`}</TkText>
     </TkCardContent>
   </TkCard>
 )

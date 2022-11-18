@@ -44,11 +44,11 @@ const Settings: React.FunctionComponent = () => {
 
   return (
     <>
-      <Dialog.Title>Settings</Dialog.Title>
+      <Dialog.Title>{`${i18n.t('nav.menu.settings.title')}`}</Dialog.Title>
       <ScrollView>
         <Dialog.Content>
           <RowView>
-            <TkText>{`${i18n.t('settings.theme')}`}</TkText>
+            <TkText>{`${i18n.t('nav.menu.settings.theme')}`}</TkText>
             <Switch
               color={useTheme().colors.primary}
               value={isThemeDark}
@@ -66,7 +66,7 @@ const Settings: React.FunctionComponent = () => {
           <List.AccordionGroup>
             <List.Accordion
               id={1}
-              title={`${i18n.t('settings.language')}`}
+              title={`${i18n.t('nav.menu.settings.language')}`}
             >
               <List.Item
                 left={(props) => (

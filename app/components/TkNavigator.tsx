@@ -37,12 +37,12 @@ const TkNavigator: React.FunctionComponent = () => {
     },
     {
       key: 'pdsa',
-      title: i18n.t('nav.pdsa'),
+      title: i18n.t('pdsa.title'),
       focusedIcon: 'note-edit-outline'
     },
     {
       key: 'docs',
-      title: i18n.t('nav.docs'),
+      title: i18n.t('docs.title'),
       focusedIcon: 'library-shelves'
     }
   ])

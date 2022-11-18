@@ -42,14 +42,14 @@ const Front5Q: React.FC<Props> = ({ onPress }: Props) => {
   return (
     <TkCard>
       <TkCardTitle
-        title={`${i18next.t('5q.front.header')}`}
-        subtitle={`${i18next.t('5q.front.title')}`}
+        title={`${i18next.t('docs.5qcard.front.header')}`}
+        subtitle={`${i18next.t('docs.5qcard.front.title')}`}
       />
       <TkCardContent>
         <TkText>
           <Trans
             t={t}
-            i18nKey='5q.front.q1'
+            i18nKey='docs.5qcard.front.q1'
             components={{
               bold: <BoldText />
             }}
@@ -58,7 +58,7 @@ const Front5Q: React.FC<Props> = ({ onPress }: Props) => {
         <TkText>
           <Trans
             t={t}
-            i18nKey='5q.front.q2'
+            i18nKey='docs.5qcard.front.q2'
             components={{
               bold: <BoldText />
             }}
@@ -66,41 +66,41 @@ const Front5Q: React.FC<Props> = ({ onPress }: Props) => {
         </TkText>
         <Pressable onPress={() => onPress()}>
           <Separator>
-            {`${i18next.t('5q.front.separator')}`}
+            {`${i18next.t('docs.5qcard.front.separator')}`}
           </Separator>
         </Pressable>
         <TkText>
           <Trans
             t={t}
-            i18nKey='5q.front.q3.1'
+            i18nKey='docs.5qcard.front.q3.1'
             components={{
               bold: <BoldText />
             }}
           />
           {'\n'}
-          {`${i18next.t('5q.front.q3.2')}`}
+          {`${i18next.t('docs.5qcard.front.q3.2')}`}
         </TkText>
         <TkText>
           <Trans
             t={t}
-            i18nKey='5q.front.q4.1'
+            i18nKey='docs.5qcard.front.q4.1'
             components={{
               bold: <BoldText />
             }}
           />
           {'\n'}
-          {`${i18next.t('5q.front.q4.2')}`}
+          {`${i18next.t('docs.5qcard.front.q4.2')}`}
         </TkText>
         <TkText>
           <Trans
             t={t}
-            i18nKey='5q.front.q5'
+            i18nKey='docs.5qcard.front.q5'
             components={{
               bold: <BoldText />
             }}
           />
         </TkText>
-        <SmallerText>{`${i18next.t('5q.front.caption')}`}</SmallerText>
+        <SmallerText>{`${i18next.t('docs.5qcard.front.caption')}`}</SmallerText>
       </TkCardContent>
     </TkCard>
   )

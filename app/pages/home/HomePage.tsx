@@ -31,7 +31,7 @@ import TkCard from '../../components/tkcard/TkCard'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import TkText from '../../components/TkText'
 import Legend from './dialogs/Legend'
-import Feedback from './dialogs/Feedback'
+import TkPanel from '../../components/wip/TkPanel'
 
 const HomePage: React.FunctionComponent = () => {
   const [visibleAbout, setVisibleAbout] = React.useState(false)
@@ -63,7 +63,6 @@ const HomePage: React.FunctionComponent = () => {
   const showFeedback = (): void => {
     setVisibleFeedback(true)
   }
-  const hideFeedback = (): void => setVisibleFeedback(false)
 
   return (
     <>
@@ -74,10 +73,13 @@ const HomePage: React.FunctionComponent = () => {
         <Dialog visible={visibleLegend} onDismiss={hideLegend}>
           <Legend />
         </Dialog>
-
-        <Dialog visible={visibleFeedback} onDismiss={hideFeedback}>
-          <Feedback />
-        </Dialog>
+        <TkPanel
+          title={i18n.t('home.feedback.title')}
+          before={i18n.t('home.feedback.before')}
+          messages={i18n.t('home.feedback.messages', { returnObjects: true })}
+          after={i18n.t('home.feedback.after')}
+          visible={visibleFeedback}
+          setVisible={setVisibleFeedback} />
         <Dialog visible={visibleAbout} onDismiss={hideAbout}>
           <About />
         </Dialog>

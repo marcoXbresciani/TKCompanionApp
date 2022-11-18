@@ -1,36 +1,4 @@
 {
-    "4s": {
-        "s1": "1. Get the Direction or Challenge",
-        "s2": "2. Grasp the Current Condition",
-        "s3": "3. Establish your Next Target Condition",
-        "s4": "4. Conduct Experiments to get there",
-        "title": "The Four Steps of the Improvement Kata"
-    },
-    "5q": {
-        "back": {
-            "caption": "Have the learner state the <bold>obstacle</bold> being worked on",
-            "q1": "1. What did you plan as your <bold>Last Step</bold>?",
-            "q2": "2. What did you <bold>Expect</bold>?",
-            "q3": "3. What <bold>Actually Happened</bold>?",
-            "q4": "4. What did you <bold>Learn</bold>?",
-            "quote": "Because you don't actually know what the result of a step will be!",
-            "return": "Return to question 3",
-            "title": "Reflect on the Last Step"
-        },
-        "front": {
-            "caption": "*You'll often work on the same obstacle with several experiments",
-            "header": "Coaching Kata",
-            "q1": "1. What is the <bold>Target Condition</bold>?",
-            "q2": "2. What is the <bold>Actual Condition</bold> now?",
-            "q3.1": "3. What <bold>Obstacles</bold> do you think are preventing you from reaching the target condition?",
-            "q3.2": "Which *one* are you addressing now?",
-            "q4.1": "4. What is your <bold>Next Step</bold>? (Next experiment)",
-            "q4.2": "What do you expect?",
-            "q5": "5. How quickly can we go and see what we <bold>Have Learned</bold> from taking that step?",
-            "separator": "Turn Card Over",
-            "title": "The Five Questions"
-        }
-    },
     "about": {
         "copyright": "copyright",
         "dates": {
@@ -82,12 +50,7 @@
         }
     },
     "app": {
-        "short": "A short and small helper for Toyota Kata practitioners",
-        "wip": {
-            "after": "Feedbacks and ideas are very welcome.",
-            "before": "Thanks for clicking, but no actual action here, yet.",
-            "title": "Work in progress…"
-        }
+        "short": "A short and small helper for Toyota Kata practitioners"
     },
     "calendar": {
         "dayNames": [
@@ -138,57 +101,103 @@
         ],
         "today": "today"
     },
-    "carnegie": {
-        "title": "Carnegie Hall",
-        "p1": "A pedestrian on 57th Street sees a musician getting out of a cab and asks, “How do you get to Carnegie Hall?”.",
-        "p2": "Without pause, the artist replies wearily, “Practice.”."
-    },
     "docs": {
-        "4steps": "4 Steps",
-        "5qcard": "5Q Card",
-        "carnegie": "Carnegie Hall",
-        "kts": "$t(kts.title)",
-        "pattern": "Coaching Basic Pattern",
-        "practice": "$t(practice.title)",
+        "4steps": {
+            "s1": "1. Get the Direction or Challenge",
+            "s2": "2. Grasp the Current Condition",
+            "s3": "3. Establish your Next Target Condition",
+            "s4": "4. Conduct Experiments to get there",
+            "title": "The Four Steps of the Improvement Kata"
+        },
+        "5qcard": {
+            "back": {
+                "caption": "Have the learner state the <bold>obstacle</bold> being worked on",
+                "q1": "1. What did you plan as your <bold>Last Step</bold>?",
+                "q2": "2. What did you <bold>Expect</bold>?",
+                "q3": "3. What <bold>Actually Happened</bold>?",
+                "q4": "4. What did you <bold>Learn</bold>?",
+                "quote": "Because you don't actually know what the result of a step will be!",
+                "return": "Return to question 3",
+                "title": "Reflect on the Last Step"
+            },
+            "front": {
+                "caption": "*You'll often work on the same obstacle with several experiments",
+                "header": "Coaching Kata",
+                "q1": "1. What is the <bold>Target Condition</bold>?",
+                "q2": "2. What is the <bold>Actual Condition</bold> now?",
+                "q3.1": "3. What <bold>Obstacles</bold> do you think are preventing you from reaching the target condition?",
+                "q3.2": "Which *one* are you addressing now?",
+                "q4.1": "4. What is your <bold>Next Step</bold>? (Next experiment)",
+                "q4.2": "What do you expect?",
+                "q5": "5. How quickly can we go and see what we <bold>Have Learned</bold> from taking that step?",
+                "separator": "Turn Card Over",
+                "title": "The Five Questions"
+            }
+        },
+        "carnegie": {
+            "p1": "A pedestrian on 57th Street sees a musician getting out of a cab and asks, “How do you get to Carnegie Hall?”.",
+            "p2": "Without pause, the artist replies wearily, “Practice.”.",
+            "title": "Carnegie Hall"
+        },
+        "kts": {
+            "text": "Applying the pattern of the Improvement Kata (from the book 'Toyota Kata') to a persistently aggravating problem that involves obstacles and has no obvious solution. Statement used when someone has been repeatedly frustrated, wants black-and-white answers or expects someone else to solve the problem.",
+            "tip": "[κατα]",
+            "title": "Kata that Shit"
+        },
+        "pattern": {
+            "p1": "1. What are we trying to achieve?",
+            "p2": "2. Where are we now?",
+            "p3": "3. What's currently in our way?",
+            "p4": "4. What's our next experiment, and what do we expect?",
+            "p5": "5. When can we see what we’ve learned from that step?",
+            "subtitle": "The root of the five basic question card is this basic pattern",
+            "title": "Five Coaching Questions"
+        },
+        "practice": {
+            "1": "Improvement Kata / Coaching Kata practitioners are creating a dynamic that helps humans everywhere practice more scientific ways of thinking and acting, toward the best we can imagine, and beyond.",
+            "2": "The 21st Century is demanding a way of working that is cognitively complex, interpersonal, iterative, and even entrepreneurial. Practicing the Improvement Kata and Coaching Kata is a way to obtain those skills and mindset, helping us adapt to the world around us. It doesn't give you solutions, but a thought process for how to approach your goals and obstacles.",
+            "3": "The Kata community has structured practice routines, called 'Starter Kata', for learning fundamentals for both the learner and the coach—like playing musical scales when learning a new instrument. Practicing Starter Kata is a foundation upon which any learner's creativity and initiative can grow.",
+            "4": "The practice routines of the Improvement Kata and Coaching Kata are a useful starting point for any team or organization that wants to develop and utilize a more scientific approach. Beginners start by trying to follow the pattern of the Starter Kata exactly. As their proficiency increases and they understand the purpose behind the routines, they can start to develop their own style, as long as it continues to incorporate the underlying scientific pattern and purpose.",
+            "5": "The 'Kata Code' defines what we think should probably not change as you advance and evolve your own style.",
+            "6": "Best wishes!",
+            "title": "Changing thinking through practice"
+        },
         "subtitle": "… or download them!",
         "title": "Read The Docs",
-        "tkc": "$t(tkc.title)"
+        "tkc": {
+            "1": "* Conditions are unpredictable.",
+            "2": "* Enjoy the learning zone.",
+            "3": "* Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
+            "4": "* Beginners practice Starter Kata exactly.",
+            "5": "* Have a coach, be a coach.",
+            "title": "The Kata Code"
+        }
     },
-    "kts": {
-        "text": "Applying the pattern of the Improvement Kata (from the book 'Toyota Kata') to a persistently aggravating problem that involves obstacles and has no obvious solution. Statement used when someone has been repeatedly frustrated, wants black-and-white answers or expects someone else to solve the problem.",
-        "tip": "[κατα]",
-        "title": "Kata that Shit"
+    "home": {
+        "feedback": {
+            "after": "You can also visit app pages listed in $t(nav.menu.about).",
+            "before": "Welcome to TKCompanionApp, and thank you for being here.",
+            "messages": ["This app has neither Internet connection nor tracking tools, so I cannot know if you like it or not, or how you (want to) use it.",
+                "Please, feel free to reach out to me through the contact channels below, for any feedback.",
+                "All feedbacks are welcome."],
+            "title": "Let's get in touch!"
+        }
     },
     "nav": {
-        "docs": "Documents",
-        "download": "Downloads",
         "home": "Home",
         "menu": {
             "about": "About",
             "contact": "Contact",
             "copyright": "Copyright",
-            "settings": "Settings"
-        },
-        "pdsa": "PDSA Journal"
-    },
-    "panel": {
-        "home": {
-            "after": "You can also visit app pages listed in $t(nav.menu.about).",
-            "before": "Welcome to TKCompanionApp, and thank you for being here.",
-            "messages": ["This app has neither Internet connection nor tracking tools, so I cannot know if you like it or not, or how you (want to) use it.",
-                        "Please, feel free to reach out to me through the contact channels below, for any feedback.",
-                        "All feedbacks are welcome."],
-            "title": "Let's get in touch!"
+            "legend": {
+                "title": "Legend"
+            },
+            "settings": {
+                "language": "Language",
+                "theme": "Switch light/dark theme",
+                "title": "Settings"
+            }
         }
-    },
-    "pattern": {
-        "p1": "1. What are we trying to achieve?",
-        "p2": "2. Where are we now?",
-        "p3": "3. What's currently in our way?",
-        "p4": "4. What's our next experiment, and what do we expect?",
-        "p5": "5. When can we see what we’ve learned from that step?",
-        "subtitle": "The root of the five basic question card is this basic pattern",
-        "title": "Five Coaching Questions"
     },
     "pdsa": {
         "alert": {
@@ -202,25 +211,9 @@
         "temp": "This is an experiment for the next incoming feature: the possibility to write/save a 5Q card, possibly daily, and reviewing/re-reading it any time. Please do not trust this page data management since it might change anytime.",
         "title": "Plan-Do-Study-Act"
     },
-    "practice": {
-        "1": "Improvement Kata / Coaching Kata practitioners are creating a dynamic that helps humans everywhere practice more scientific ways of thinking and acting, toward the best we can imagine, and beyond.",
-        "2": "The 21st Century is demanding a way of working that is cognitively complex, interpersonal, iterative, and even entrepreneurial. Practicing the Improvement Kata and Coaching Kata is a way to obtain those skills and mindset, helping us adapt to the world around us. It doesn't give you solutions, but a thought process for how to approach your goals and obstacles.",
-        "3": "The Kata community has structured practice routines, called 'Starter Kata', for learning fundamentals for both the learner and the coach—like playing musical scales when learning a new instrument. Practicing Starter Kata is a foundation upon which any learner's creativity and initiative can grow.",
-        "4": "The practice routines of the Improvement Kata and Coaching Kata are a useful starting point for any team or organization that wants to develop and utilize a more scientific approach. Beginners start by trying to follow the pattern of the Starter Kata exactly. As their proficiency increases and they understand the purpose behind the routines, they can start to develop their own style, as long as it continues to incorporate the underlying scientific pattern and purpose.",
-        "5": "The 'Kata Code' defines what we think should probably not change as you advance and evolve your own style.",
-        "6": "Best wishes!",
-        "title": "Changing thinking through practice"
-    },
-    "settings": {
-        "language": "Language",
-        "theme": "Switch light/dark theme"
-    },
-    "tkc": {
-        "1": "* Conditions are unpredictable.",
-        "2": "* Enjoy the learning zone.",
-        "3": "* Understand the direction, grasp the current condition, establish a target condition, experiment toward the target condition.",
-        "4": "* Beginners practice Starter Kata exactly.",
-        "5": "* Have a coach, be a coach.",
-        "title": "The Kata Code"
+    "wip": {
+        "after": "Feedbacks and ideas are very welcome.",
+        "before": "Thanks for clicking, but no actual action here, yet.",
+        "title": "Work in progress…"
     }
 }

@@ -31,14 +31,14 @@ const FourS: React.FunctionComponent = () => (
   <>
     <TkCard>
       <TkCardTitle
-        title={`${i18n.t('4s.title')}`}
+        title={`${i18n.t('docs.4steps.title')}`}
         titleNumberOfLines={2}
       />
       <TkCardContent>
-        <TkText>{`${i18n.t('4s.s1')}`}</TkText>
-        <TkText>{`${i18n.t('4s.s2')}`}</TkText>
-        <TkText>{`${i18n.t('4s.s3')}`}</TkText>
-        <TkText>{`${i18n.t('4s.s4')}`}</TkText>
+        <TkText>{`${i18n.t('docs.4steps.s1')}`}</TkText>
+        <TkText>{`${i18n.t('docs.4steps.s2')}`}</TkText>
+        <TkText>{`${i18n.t('docs.4steps.s3')}`}</TkText>
+        <TkText>{`${i18n.t('docs.4steps.s4')}`}</TkText>
       </TkCardContent>
     </TkCard>
   </>

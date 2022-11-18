@@ -30,17 +30,17 @@ import TkText from '../../components/TkText'
 const CoachPattern: React.FunctionComponent = () => (
   <TkCard>
     <TkCardTitle
-      subtitle={`${i18n.t('pattern.subtitle')}`}
+      subtitle={`${i18n.t('docs.pattern.subtitle')}`}
       subtitleNumberOfLines={3}
-      title={`${i18n.t('pattern.title')}`}
+      title={`${i18n.t('docs.pattern.title')}`}
       titleNumberOfLines={2}
     />
     <TkCardContent>
-      <TkText>{`${i18n.t('pattern.p1')}`}</TkText>
-      <TkText>{`${i18n.t('pattern.p2')}`}</TkText>
-      <TkText>{`${i18n.t('pattern.p3')}`}</TkText>
-      <TkText>{`${i18n.t('pattern.p4')}`}</TkText>
-      <TkText>{`${i18n.t('pattern.p5')}`}</TkText>
+      <TkText>{`${i18n.t('docs.pattern.p1')}`}</TkText>
+      <TkText>{`${i18n.t('docs.pattern.p2')}`}</TkText>
+      <TkText>{`${i18n.t('docs.pattern.p3')}`}</TkText>
+      <TkText>{`${i18n.t('docs.pattern.p4')}`}</TkText>
+      <TkText>{`${i18n.t('docs.pattern.p5')}`}</TkText>
     </TkCardContent>
   </TkCard>
 )

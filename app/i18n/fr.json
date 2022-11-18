@@ -1,29 +1,4 @@
 {
-    "4s": {
-        "s1": "1. Comprendre la direction",
-        "s2": "2. Saisir la situation actuelle",
-        "s3": "3. Établir votre prochaine condition cible",
-        "s4": "4. Conduire des expériences pour y arriver",
-        "title": "Les quatre étapes du kata de l'amélioration"
-    },
-    "5q": {
-        "back": {
-            "q1": "1. Qu'avez-vous prévu comme étant votre <bold>Dernière étape</bold>?",
-            "q2": "2. À quoi vous <bold>attendiez-vous</bold>?",
-            "q3": "3. Que s'est-il <bold>réellement passé</bold>?",
-            "q4": "4. Qu'avez-vous <bold>appris</bold>?",
-            "quote": "Parce que vous ne savez pas vraiment quel sera le résultat d'une étape!",
-            "return": "Retour à la question 3",
-            "title": "Réfléchir à la dernière étape"
-        },
-        "front": {
-            "header": "Kata d'entraînement",
-            "q1": "1. Quelle est la <bold>condition cible</bold>?",
-            "q4.2": "À quoi vous attendez-vous?",
-            "separator": "Retourner la carte",
-            "title": "Les cinq questions"
-        }
-    },
     "about": {
         "copyright": "droit d'auteur",
         "might": {
@@ -69,12 +44,7 @@
         }
     },
     "app": {
-        "short": "Une petite et courte aide pour les pratiquants de Toyota Kata",
-        "wip": {
-            "after": "Les commentaires et les idées sont les bienvenus.",
-            "before": "Merci d'avoir cliqué, mais il ne se passe rien ici, pas encore.",
-            "title": "Travail en cours…"
-        }
+        "short": "Une petite et courte aide pour les pratiquants de Toyota Kata"
     },
     "calendar": {
         "dayNames": [
@@ -125,32 +95,54 @@
         ],
         "today": "Aujourd'hui"
     },
-    "carnegie": {
-        "title": "Carnegie Hall"
-    },
     "docs": {
-        "4steps": "4 étapes",
-        "5qcard": "5 questions",
-        "carnegie": "Carnegie Hall",
-        "kts": "$t(kts.title)",
-        "practice": "$t(practice.title)",
-        "title": "Lire les documents",
-        "tkc": "$t(tkc.title)"
-    },
-    "kts": {
-        "tip": "[κατα]"
+        "4steps": {
+            "s1": "1. Comprendre la direction",
+            "s2": "2. Saisir la situation actuelle",
+            "s3": "3. Établir votre prochaine condition cible",
+            "s4": "4. Conduire des expériences pour y arriver",
+            "title": "Les quatre étapes du kata de l'amélioration"
+        },
+        "5qcard": {
+            "back": {
+                "q1": "1. Qu'avez-vous prévu comme étant votre <bold>Dernière étape</bold>?",
+                "q2": "2. À quoi vous <bold>attendiez-vous</bold>?",
+                "q3": "3. Que s'est-il <bold>réellement passé</bold>?",
+                "q4": "4. Qu'avez-vous <bold>appris</bold>?",
+                "quote": "Parce que vous ne savez pas vraiment quel sera le résultat d'une étape!",
+                "return": "Retour à la question 3",
+                "title": "Réfléchir à la dernière étape"
+            },
+            "front": {
+                "header": "Kata d'entraînement",
+                "q1": "1. Quelle est la <bold>condition cible</bold>?",
+                "q4.2": "À quoi vous attendez-vous?",
+                "separator": "Retourner la carte",
+                "title": "Les cinq questions"
+            }
+        },
+        "carnegie": {
+            "title": "Carnegie Hall"
+        },
+        "kts": {
+            "tip": "[κατα]"
+        },
+        "title": "Lire les documents"
     },
     "nav": {
-        "docs": "Documents",
-        "download": "Téléchargements",
         "home": "Accueil",
         "menu": {
             "about": "À propos",
             "copyright": "Droit d'auteur",
-            "settings": "Paramètres"
+            "settings": {
+                "language": "Langue",
+                "title": "Paramètres"
+            }
         }
     },
-    "settings": {
-        "language": "Langue"
+    "wip": {
+        "after": "Les commentaires et les idées sont les bienvenus.",
+        "before": "Merci d'avoir cliqué, mais il ne se passe rien ici, pas encore.",
+        "title": "Travail en cours…"
     }
 }

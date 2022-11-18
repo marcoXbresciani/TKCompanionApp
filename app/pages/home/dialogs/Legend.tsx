@@ -28,24 +28,24 @@ import i18n from '../../../i18n/i18n'
 const Legend: React.FC = () => {
   return (
     <>
-      <Dialog.Title>Legend</Dialog.Title>
+      <Dialog.Title>{i18n.t('nav.menu.legend.title')}</Dialog.Title>
       <ScrollView>
         <Dialog.Content>
           <List.Accordion title={i18n.t('nav.home')}>
-            <List.Item left={props => <List.Icon {...props} icon='tune-variant' />} title='Settings' description='Open the Settings Dialog.' />
-            <List.Item left={props => <List.Icon {...props} icon='comment-quote-outline' />} title='Feedback' description='Open the Feedback Dialog.' />
-            <List.Item left={props => <List.Icon {...props} icon='copyleft' />} title='Copyleft' description='Open the Copyleft Dialog.' />
+            <List.Item left={props => <List.Icon {...props} icon='tune-variant' />} title={i18n.t('nav.menu.settings.title')} description='Open the Settings Dialog.' />
+            <List.Item left={props => <List.Icon {...props} icon='comment-quote-outline' />} title={i18n.t('nav.menu.contact.title')} description='Open the Feedback Dialog.' />
+            <List.Item left={props => <List.Icon {...props} icon='copyleft' />} title={i18n.t('nav.menu.copyleft.title')} description='Open the Copyleft Dialog.' />
             <List.Item left={props => <List.Icon {...props} icon='home-export-outline' />} title='Browse' description='Browse External Web Page.' />
-            <List.Item left={props => <List.Icon {...props} icon='information-variant' />} title={i18n.t('nav.menu.about')} description='Open the About Dialog.' />
+            <List.Item left={props => <List.Icon {...props} icon='information-variant' />} title={i18n.t('nav.menu.about.title')} description='Open the About Dialog.' />
           </List.Accordion>
-          <List.Accordion title={i18n.t('nav.pdsa')}>
+          <List.Accordion title={i18n.t('pdsa.title')}>
             <List.Item left={props => <List.Icon {...props} icon='calendar-cursor' />} title={i18n.t('calendar.today')} description='Go to Today PDSA.' />
             <List.Item left={props => <List.Icon {...props} icon='calendar-blank' />} title='Calendar' description='Open Calendar Dialog.' />
             <List.Item left={props => <List.Icon {...props} icon='content-save-all' />} title='Save' description='Save Current Day PDSA.' />
             <List.Item left={props => <List.Icon {...props} icon='trash-can-outline' />} title='Delete' description='Delete Current Day PDSA.' />
             <List.Item left={props => <List.Icon {...props} icon='trash-can' />} title='Delete' description='Empty PDSA Entry Field.' />
           </List.Accordion>
-          <List.Accordion title={i18n.t('nav.docs')}>
+          <List.Accordion title={i18n.t('docs.title')}>
             <List.Item left={props => <List.Icon {...props} icon='page-next-outline' />} title='Read' description='Go to Document Page in App.' />
             <List.Item left={props => <List.Icon {...props} icon='tray-arrow-down' />} title='Download' description='Download Content from Source Website.' />
             <List.Item left={props => <List.Icon {...props} icon='home-export-outline' />} title='Browse' description='Browse External Web Page.' />

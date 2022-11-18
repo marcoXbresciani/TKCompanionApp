@@ -30,11 +30,11 @@ import TkText from '../../components/TkText'
 const Kts: React.FunctionComponent = () => (
   <TkCard>
     <TkCardTitle
-      title={`${i18n.t('kts.title')}`}
-      subtitle={`${i18n.t('kts.tip')}`}
+      title={`${i18n.t('docs.kts.title')}`}
+      subtitle={`${i18n.t('docs.kts.tip')}`}
     />
     <TkCardContent>
-      <TkText>{`${i18n.t('kts.text')}`}</TkText>
+      <TkText>{`${i18n.t('docs.kts.text')}`}</TkText>
     </TkCardContent>
   </TkCard>
 )

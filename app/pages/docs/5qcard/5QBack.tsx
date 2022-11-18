@@ -54,14 +54,14 @@ const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
   return (
     <TkCard>
       <TkCardTitle
-        title={`${i18next.t('5q.back.title')}`}
-        subtitle={`${i18next.t('5q.back.quote')}`}
+        title={`${i18next.t('docs.5qcard.back.title')}`}
+        subtitle={`${i18next.t('docs.5qcard.back.quote')}`}
         subtitleNumberOfLines={3}
       />
       <TkCardContent>
         <SmallerText><Trans
           t={t}
-          i18nKey='5q.back.caption'
+          i18nKey='docs.5qcard.back.caption'
           components={{
             bold: <BoldSmaller />
           }}
@@ -71,7 +71,7 @@ const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
         <TkText>
           <Trans
             t={t}
-            i18nKey='5q.back.q1'
+            i18nKey='docs.5qcard.back.q1'
             components={{
               bold: <BoldText />
             }}
@@ -80,7 +80,7 @@ const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
         <TkText>
           <Trans
             t={t}
-            i18nKey='5q.back.q2'
+            i18nKey='docs.5qcard.back.q2'
             components={{
               bold: <BoldText />
             }}
@@ -89,7 +89,7 @@ const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
         <TkText>
           <Trans
             t={t}
-            i18nKey='5q.back.q3'
+            i18nKey='docs.5qcard.back.q3'
             components={{
               bold: <BoldText />
             }}
@@ -98,7 +98,7 @@ const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
         <TkText>
           <Trans
             t={t}
-            i18nKey='5q.back.q4'
+            i18nKey='docs.5qcard.back.q4'
             components={{
               bold: <BoldText />
             }}
@@ -107,7 +107,7 @@ const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
       </TkCardContent>
       <Card.Actions>
         <Pressable onPress={() => onPress()}>
-          <Returner theme={lineTheme}><SmallerText>{`${i18next.t('5q.back.return')}`}</SmallerText></Returner>
+          <Returner theme={lineTheme}><SmallerText>{`${i18next.t('docs.5qcard.back.return')}`}</SmallerText></Returner>
         </Pressable>
       </Card.Actions>
     </TkCard>

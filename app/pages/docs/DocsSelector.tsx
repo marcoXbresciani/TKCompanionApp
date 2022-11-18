@@ -81,7 +81,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
                     )}
                 />
               )}
-              title={`${i18n.t('docs.5qcard')}`}
+              title={`${i18n.t('docs.5qcard.front.title')}`}
               titleNumberOfLines={3}
             />
             <List.Item
@@ -96,7 +96,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
                     )}
                 />
               )}
-              title={`${i18n.t('docs.pattern')}`}
+              title={`${i18n.t('docs.pattern.title')}`}
               titleNumberOfLines={3}
             />
             <List.Item
@@ -109,7 +109,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
                     )}
                 />
               )}
-              title={`${i18n.t('docs.4steps')}`}
+              title={`${i18n.t('docs.4steps.title')}`}
               titleNumberOfLines={3}
             />
             <List.Item
@@ -122,7 +122,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
                     )}
                 />
               )}
-              title={`${i18n.t('docs.tkc')}`}
+              title={`${i18n.t('docs.tkc.title')}`}
               titleNumberOfLines={3}
             />
             <List.Item
@@ -135,7 +135,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
                     )}
                 />
               )}
-              title={`${i18n.t('docs.practice')}`}
+              title={`${i18n.t('docs.practice.title')}`}
               titleNumberOfLines={3}
             />
             <List.Item
@@ -150,7 +150,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
                     )}
                 />
               )}
-              title={`${i18n.t('docs.kts')}`}
+              title={`${i18n.t('docs.kts.title')}`}
               titleNumberOfLines={3}
             />
             <List.Item
@@ -165,7 +165,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
                     )}
                 />
               )}
-              title={`${i18n.t('docs.carnegie')}`}
+              title={`${i18n.t('docs.carnegie.title')}`}
               titleNumberOfLines={3}
             />
           </List.Section>

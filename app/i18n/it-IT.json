@@ -1,36 +1,4 @@
 {
-    "4s": {
-        "s1": "1. Capire la direzione",
-        "s2": "2. Afferrare la condizione attuale",
-        "s3": "3. Stabilire la prossima condizione obiettivo",
-        "s4": "4. Iterare verso la condizione obiettivo",
-        "title": "I quattro passi del Kata del miglioramento"
-    },
-    "5q": {
-        "back": {
-            "caption": "Chi apprende deve descrivere l'<bold>ostacolo</bold> su cui sta lavorando",
-            "q1": "1. Che cosa avevi pianificato come <bold>ultimo step</bold>?",
-            "q2": "2. Che cosa ti <bold>aspettavi</bold>?",
-            "q3": "3. Che cosa è <bold>successo nei fatti</bold>?",
-            "q4": "4. Che cosa hai <bold>appreso</bold>?",
-            "quote": "Perché non sai, in realtà, quale sarà il risultato di uno step!",
-            "return": "Ritorna alla domanda 3",
-            "title": "Rifletti sull'ultimo step"
-        },
-        "front": {
-            "caption": "*Lavorerai spesso sullo stesso ostacolo con diversi esperimenti",
-            "header": "Kata del coaching",
-            "q1": "1. Qual è la <bold>condizione obiettivo</bold>?",
-            "q2": "2. Qual è la <bold>condizione attuale</bold> ora?",
-            "q3.1": "3. Quali <bold>ostacoli</bold> credi ora ti impediscano di raggiungere la condizione obiettivo?",
-            "q3.2": "Quale (uno solo!) vuoi affrontare adesso?",
-            "q4.1": "4. Qual è il tuo <bold>prossimo step</bold>? (Prossimo esperimento)",
-            "q4.2": "Che cosa ti aspetti di ottenere?",
-            "q5": "5. Quanto velocemente possiamo andare a vedere che cosa <bold>abbiamo appreso</bold> da questo passo?",
-            "separator": "Gira la carta",
-            "title": "Le cinque domande"
-        }
-    },
     "about": {
         "copyright": "copyright",
         "dates": {
@@ -82,12 +50,7 @@
         }
     },
     "app": {
-        "short": "Un piccolo e semplice aiuto per i praticanti di Toyota Kata",
-        "wip": {
-            "after": "Idee e commenti sono benvenuti.",
-            "before": "Grazie per essere qui, ma non succede (ancora) niente.",
-            "title": "Lavori in corso…"
-        }
+        "short": "Un piccolo e semplice aiuto per i praticanti di Toyota Kata"
     },
     "calendar": {
         "dayNames": [
@@ -138,41 +101,80 @@
         ],
         "today": "oggi"
     },
-    "carnegie": {
-        "title": "Carnegie Hall",
-        "p1": "Un passante sulla 57ma strada vede un musicista uscire da un taxi e chiede: “Come si arriva a Carnegie Hall?”.",
-        "p2": "Senza pause, l'artista risponde stancamente, “Pratica.”."
-    },
     "docs": {
-        "4steps": "4 Passi",
-        "5qcard": "5 Domande",
-        "carnegie": "Carnegie Hall",
-        "kts": "$t(kts.title)",
-        "pattern": "Modello di base del coaching",
-        "practice": "$t(practice.title)",
-        "subtitle": "… oppure scaricali!",
-        "title": "Leggi i documenti",
-        "tkc": "$t(tkc.title)"
-    },
-    "kts": {
-        "text": "Applicare lo schema del Kata di miglioramento (dal libro 'Toyota Kata') a un problema persistentemente in peggioramento, che comporta ostacoli e non ha una soluzione ovvia. Dichiarazione usata quando qualcuno è stato ripetutamente frustrato, vuole risposte in bianco e nero o si aspetta che qualcun altro risolva il problema.",
-        "tip": "[κατα]",
-        "title": "Kàta 'sta roba"
-    },
-    "nav": {
-        "docs": "Documenti",
-        "download": "Download",
-        "home": "Inizio",
-        "menu": {
-            "about": "Informazioni",
-            "contact": "Contatti",
-            "copyright": "Copyright",
-            "settings": "Impostazioni"
+        "4steps": {
+            "s1": "1. Capire la direzione",
+            "s2": "2. Afferrare la condizione attuale",
+            "s3": "3. Stabilire la prossima condizione obiettivo",
+            "s4": "4. Iterare verso la condizione obiettivo",
+            "title": "I quattro passi del Kata del miglioramento"
         },
-        "pdsa": "Diario PDSA"
+        "5qcard": {
+            "back": {
+                "caption": "Chi apprende deve descrivere l'<bold>ostacolo</bold> su cui sta lavorando",
+                "q1": "1. Che cosa avevi pianificato come <bold>ultimo step</bold>?",
+                "q2": "2. Che cosa ti <bold>aspettavi</bold>?",
+                "q3": "3. Che cosa è <bold>successo nei fatti</bold>?",
+                "q4": "4. Che cosa hai <bold>appreso</bold>?",
+                "quote": "Perché non sai, in realtà, quale sarà il risultato di uno step!",
+                "return": "Ritorna alla domanda 3",
+                "title": "Rifletti sull'ultimo step"
+            },
+            "front": {
+                "caption": "*Lavorerai spesso sullo stesso ostacolo con diversi esperimenti",
+                "header": "Kata del coaching",
+                "q1": "1. Qual è la <bold>condizione obiettivo</bold>?",
+                "q2": "2. Qual è la <bold>condizione attuale</bold> ora?",
+                "q3.1": "3. Quali <bold>ostacoli</bold> credi ora ti impediscano di raggiungere la condizione obiettivo?",
+                "q3.2": "Quale (uno solo!) vuoi affrontare adesso?",
+                "q4.1": "4. Qual è il tuo <bold>prossimo step</bold>? (Prossimo esperimento)",
+                "q4.2": "Che cosa ti aspetti di ottenere?",
+                "q5": "5. Quanto velocemente possiamo andare a vedere che cosa <bold>abbiamo appreso</bold> da questo passo?",
+                "separator": "Gira la carta",
+                "title": "Le cinque domande"
+            }
+        },
+        "carnegie": {
+            "p1": "Un passante sulla 57ma strada vede un musicista uscire da un taxi e chiede: “Come si arriva a Carnegie Hall?”.",
+            "p2": "Senza pause, l'artista risponde stancamente, “Pratica.”.",
+            "title": "Carnegie Hall"
+        },
+        "kts": {
+            "text": "Applicare lo schema del Kata di miglioramento (dal libro 'Toyota Kata') a un problema persistentemente in peggioramento, che comporta ostacoli e non ha una soluzione ovvia. Dichiarazione usata quando qualcuno è stato ripetutamente frustrato, vuole risposte in bianco e nero o si aspetta che qualcun altro risolva il problema.",
+            "tip": "[κατα]",
+            "title": "Kàta 'sta roba"
+        },
+        "pattern": {
+            "p1": "1. Cosa stiamo cercando di ottenere?",
+            "p2": "2. A che punto siamo ora?",
+            "p3": "3. Quali problemi vediamo?",
+            "p4": "4. Qual è il nostro prossimo esperimento e cosa ci aspettiamo?",
+            "p5": "5. Quando scopriremo cosa abbiamo imparato in questo esperimento?",
+            "subtitle": "La radice della carta delle cinque domande di base è questo schema di base",
+            "title": "Modello di base del coaching"
+        },
+        "practice": {
+            "1": "I praticanti del Kata di Miglioramento e Coaching stanno creando una dinamica che aiuta gli esseri umani, ovunque, a praticare modi più scientifici di pensare e agire, verso il meglio che possiamo immaginare e oltre.",
+            "2": "Il 21° secolo richiede un modo di lavorare che sia cognitivamente complesso, interpersonale, iterativo e persino imprenditoriale. Praticare il Kata di miglioramento e il Kata del coaching è un modo per ottenere quelle abilità e mentalità, aiutandoci ad adattarci al mondo che ci circonda. Non ti dà soluzioni, ma un modo di pensare su come affrontare i tuoi obiettivi e ostacoli.",
+            "3": "La comunità di Kata ha strutturato routine di pratica, chiamate 'Starter Kata', per l'apprendimento dei fondamenti sia per lo studente che per il coach, come suonare scale musicali quando si impara un nuovo strumento. La pratica del Kata iniziale è una base su cui la creatività e l'iniziativa di ogni studente può crescere.",
+            "4": "Le routine di pratica del Kata di miglioramento e del Kata di coaching sono un utile punto di partenza per qualsiasi team o organizzazione che desideri sviluppare e utilizzare un approccio più scientifico. I principianti iniziano cercando di seguire esattamente lo schema dello Starter Kata. Man mano che la loro competenza aumenta e capiscono lo scopo dietro le routine, possono iniziare a sviluppare il proprio stile, purché continui a incorporare il modello e lo scopo scientifico sottostanti.",
+            "5": "Il 'Codice Kata' definisce ciò che pensiamo non dovrebbe probabilmente cambiare man mano che avanzi ed evolvi il tuo stile.",
+            "6": "Auguri!",
+            "title": "Cambiare il modo di pensare attraverso la pratica"
+        },
+        "subtitle": "Da leggere qui o scaricare dal web!",
+        "title": "Documentazione",
+        "tkc": {
+            "1": "* Le condizioni non sono predicibili.",
+            "2": "* Goditi la zona di apprendimento.",
+            "3": "* Capire la direzione, afferrare la condizione attuale, stabilire la prossima condizione obiettivo, sperimentare verso la prossima condizione obiettivo.",
+            "4": "* I principianti seguono lo Starter Kata alla lettera.",
+            "5": "* Abbi un coach, sii un coach.",
+            "title": "Il codice Kata"
+        }
     },
-    "panel": {
-        "home": {
+    "home": {
+        "feedback": {
             "after": "Puoi anche visitare le pagine dell'app, indicate nel menu $t(nav.menu.about).",
             "before": "Benvenuti in TkCompanionApp, e grazie di essere qui.",
             "messages":["Quest'app non si collega a Internet né ha strumenti di tracciamento, quindi non posso sapere se ti piace oppure no, né come usi (o vorresti usare) l'app.",
@@ -181,14 +183,21 @@
             "title": "Restiamo in contatto!"
         }
     },
-    "pattern": {
-        "p1": "1. Cosa stiamo cercando di ottenere?",
-        "p2": "2. A che punto siamo ora?",
-        "p3": "3. Quali problemi vediamo?",
-        "p4": "4. Qual è il nostro prossimo esperimento e cosa ci aspettiamo?",
-        "p5": "5. Quando scopriremo cosa abbiamo imparato in questo esperimento?",
-        "subtitle": "La radice della carta delle cinque domande di base è questo schema di base",
-        "title": "Cinque domande del coaching"
+    "nav": {
+        "home": "Inizio",
+        "menu": {
+            "about": "Informazioni",
+            "contact": "Contatti",
+            "copyright": "Copyright",
+            "legend": {
+                "title": "Legenda"
+            },
+            "settings": {
+                "language": "Lingua",
+                "theme": "Scambia tema chiaro/scuro",
+                "title": "Impostazioni"
+            }
+        }
     },
     "pdsa": {
         "alert": {
@@ -200,27 +209,11 @@
         "q4": "Qual è il tuo prossimo step (esperimento)? Che cosa ti aspetti di ottenere?",
         "q5": "Quanto velocemente possiamo andare a vedere che cosa abbiamo appreso da questo passo?",
         "temp": "Questo è un esperimento per una prossima funzionalità: la possibilità di scrivere/salvare una carta delle 5 domande, giornalmente, e rileggerla/rivederla in ogni momento.",
-        "title": "Pianifica-Fai-Studia-Agisci"
+        "title": "Diario PDSA"
     },
-    "practice": {
-        "1": "I praticanti del Kata di Miglioramento e Coaching stanno creando una dinamica che aiuta gli esseri umani, ovunque, a praticare modi più scientifici di pensare e agire, verso il meglio che possiamo immaginare e oltre.",
-        "2": "Il 21° secolo richiede un modo di lavorare che sia cognitivamente complesso, interpersonale, iterativo e persino imprenditoriale. Praticare il Kata di miglioramento e il Kata del coaching è un modo per ottenere quelle abilità e mentalità, aiutandoci ad adattarci al mondo che ci circonda. Non ti dà soluzioni, ma un modo di pensare su come affrontare i tuoi obiettivi e ostacoli.",
-        "3": "La comunità di Kata ha strutturato routine di pratica, chiamate 'Starter Kata', per l'apprendimento dei fondamenti sia per lo studente che per il coach, come suonare scale musicali quando si impara un nuovo strumento. La pratica del Kata iniziale è una base su cui la creatività e l'iniziativa di ogni studente può crescere.",
-        "4": "Le routine di pratica del Kata di miglioramento e del Kata di coaching sono un utile punto di partenza per qualsiasi team o organizzazione che desideri sviluppare e utilizzare un approccio più scientifico. I principianti iniziano cercando di seguire esattamente lo schema dello Starter Kata. Man mano che la loro competenza aumenta e capiscono lo scopo dietro le routine, possono iniziare a sviluppare il proprio stile, purché continui a incorporare il modello e lo scopo scientifico sottostanti.",
-        "5": "Il 'Codice Kata' definisce ciò che pensiamo non dovrebbe probabilmente cambiare man mano che avanzi ed evolvi il tuo stile.",
-        "6": "Auguri!",
-        "title": "Cambiare il modo di pensare attraverso la pratica"
-    },
-    "settings": {
-        "language": "Lingua",
-        "theme": "Scambia tema chiaro/scuro"
-    },
-    "tkc": {
-        "1": "* Le condizioni non sono predicibili.",
-        "2": "* Goditi la zona di apprendimento.",
-        "3": "* Capire la direzione, afferrare la condizione attuale, stabilire la prossima condizione obiettivo, sperimentare verso la prossima condizione obiettivo.",
-        "4": "* I principianti seguono lo Starter Kata alla lettera.",
-        "5": "* Abbi un coach, sii un coach.",
-        "title": "Il codice Kata"
+    "wip": {
+        "after": "Idee e commenti sono benvenuti.",
+        "before": "Grazie per essere qui, ma non succede (ancora) niente.",
+        "title": "Lavori in corso…"
     }
 }

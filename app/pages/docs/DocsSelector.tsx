@@ -52,6 +52,44 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
     })
   }
 
+  const documents = [
+    {
+      onPress: Pages.FiveQCard,
+      url: 'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
+      title: 'docs.5qcard.front.title'
+    },
+    {
+      onPress: Pages.Pattern,
+      url: 'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
+      title: 'docs.pattern.title'
+    },
+    {
+      onPress: Pages.FourSteps,
+      url: 'https://web.archive.org/web/20220326213548/http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf',
+      title: 'docs.4steps.title'
+    },
+    {
+      onPress: Pages.TkcPage,
+      url: 'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
+      title: 'docs.tkc.title'
+    },
+    {
+      onPress: Pages.PracticePage,
+      url: 'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
+      title: 'docs.practice.title'
+    },
+    {
+      onPress: Pages.KtsPage,
+      url: 'https://web.archive.org/web/20220409213239/http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
+      title: 'docs.kts.title'
+    },
+    {
+      onPress: Pages.Carnegie,
+      url: 'https://www.carnegiehall.org/Explore/Articles/2020/04/10/The-Joke',
+      title: 'docs.carnegie.title'
+    }
+  ]
+
   return (
     <>
       <Snackbar
@@ -69,105 +107,28 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
         <TkCardTitle title={`${i18n.t('docs.title')}`} subtitle={`${i18n.t('docs.subtitle')}`} />
         <TkCardContent>
           <List.Section>
-            <List.Item
-              left={() => (
-                <IconButton icon='page-next-outline' onPress={() => onPress(Pages.FiveQCard)} />
-              )}
-              right={() => (
-                <IconButton
-                  icon='tray-arrow-down' onPress={() =>
-                    openUrl(
-                      'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf'
+            {
+              documents.flatMap(document => {
+                return (
+                  <List.Item
+                    key={document.title}
+                    left={() => (
+                      <IconButton icon='page-next-outline' onPress={() => onPress(document.onPress)} />
                     )}
-                />
-              )}
-              title={`${i18n.t('docs.5qcard.front.title')}`}
-              titleNumberOfLines={3}
-            />
-            <List.Item
-              left={() => (
-                <IconButton icon='page-next-outline' onPress={() => onPress(Pages.Pattern)} />
-              )}
-              right={() => (
-                <IconButton
-                  icon='tray-arrow-down' onPress={() =>
-                    openUrl(
-                      'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf'
+                    right={() => (
+                      <IconButton
+                        icon='tray-arrow-down' onPress={() =>
+                          openUrl(
+                            document.url
+                          )}
+                      />
                     )}
-                />
-              )}
-              title={`${i18n.t('docs.pattern.title')}`}
-              titleNumberOfLines={3}
-            />
-            <List.Item
-              left={() => <IconButton icon='page-next-outline' onPress={() => onPress(Pages.FourSteps)} />}
-              right={() => (
-                <IconButton
-                  icon='tray-arrow-down' onPress={() =>
-                    openUrl(
-                      'https://web.archive.org/web/20220326213548/http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf'
-                    )}
-                />
-              )}
-              title={`${i18n.t('docs.4steps.title')}`}
-              titleNumberOfLines={3}
-            />
-            <List.Item
-              left={() => <IconButton icon='page-next-outline' onPress={() => onPress(Pages.TkcPage)} />}
-              right={() => (
-                <IconButton
-                  icon='tray-arrow-down' onPress={() =>
-                    openUrl(
-                      'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf'
-                    )}
-                />
-              )}
-              title={`${i18n.t('docs.tkc.title')}`}
-              titleNumberOfLines={3}
-            />
-            <List.Item
-              left={() => <IconButton icon='page-next-outline' onPress={() => onPress(Pages.PracticePage)} />}
-              right={() => (
-                <IconButton
-                  icon='tray-arrow-down' onPress={() =>
-                    openUrl(
-                      'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf'
-                    )}
-                />
-              )}
-              title={`${i18n.t('docs.practice.title')}`}
-              titleNumberOfLines={3}
-            />
-            <List.Item
-              left={() => (
-                <IconButton icon='page-next-outline' onPress={() => onPress(Pages.KtsPage)} />
-              )}
-              right={() => (
-                <IconButton
-                  icon='tray-arrow-down' onPress={() =>
-                    openUrl(
-                      'https://web.archive.org/web/20220409213239/http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg'
-                    )}
-                />
-              )}
-              title={`${i18n.t('docs.kts.title')}`}
-              titleNumberOfLines={3}
-            />
-            <List.Item
-              left={() => (
-                <IconButton icon='page-next-outline' onPress={() => onPress(Pages.Carnegie)} />
-              )}
-              right={() => (
-                <IconButton
-                  icon='home-export-outline' onPress={() =>
-                    openUrl(
-                      'https://www.carnegiehall.org/Explore/Articles/2020/04/10/The-Joke'
-                    )}
-                />
-              )}
-              title={`${i18n.t('docs.carnegie.title')}`}
-              titleNumberOfLines={3}
-            />
+                    title={`${i18n.t(document.title)}`}
+                    titleNumberOfLines={3}
+                  />
+                )
+              })
+}
           </List.Section>
         </TkCardContent>
       </TkCard>

@@ -175,8 +175,6 @@ release.
 1. Verify that [CHANGELOG.md](/CHANGELOG.md) contains the properly
    numbered section for the upcoming release, moving the related and
    relevant [Unreleased](/CHANGELOG.md) content to such section.
-   And verify that the related tag link is added to the specific section
-   header.
 1. Verify that `README.md` files contain the latest tag (you're
    releasing) in the badges.
 1. Verify that `fastlane` folder contain the proper `changelogs` files

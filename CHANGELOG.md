@@ -29,15 +29,23 @@ This file is offered as-is, without any warranty.
 ### Added
 * Welcome/splash dialog on first time application open.
   Same content of new "Contact" menu entry.
+### Changed
+### Removed
+### Fixed
+### Security
+
+## [6.0.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.0.0)
+### Added
 * New [ADR-12](docs/architecture/decisions/012-async-storage.md)
   introduced, to deprecate and cancel
   [ADR-9](docs/architecture/decisions/009-encrypted-storage.md).
 ### Changed
 * Main repository is now [Codeberg](https://codeberg.org/) and the
   reference URL is [TKCompanionApp](https://codeberg.org/marco.bresciani/TKCompanionApp).
-### Removed
-### Fixed
-### Security
+* Update dependencies (React Native, RN Calendars, ...).
+* Update README files badges.
+  Goal is to remove dependency from external services, where possible.
+* Refactored translations and naming.
 
 ## [5.0.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/5.0.0) - 2022-11-04
 ### Added

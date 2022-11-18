@@ -38,6 +38,6 @@ are read the possible security issues reported here.
 
 ## Reporting a Vulnerability
 To report a vulnerability, please use the project
-[Issues](https://github.com/marcoXbresciani/TKCompanionApp/issues) page
+[Issues](https://codeberg.org/marco.bresciani/TKCompanionApp/issues) page
 describing the problem, a possible way to reproduce it and the risk it
 poses.

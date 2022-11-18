@@ -58,12 +58,12 @@ this app, you're welcome!
 You don't need the code, but if you want help translating in your
 native language (or fix my English, since I'm not a native speaker), add
 more content, suggest graphical or layout improvement or whatever
-contribution you can give, please
-[open a new issue](https://github.com/marcoXbresciani/TKCompanionApp/issues)
+contribution you can give, please open a new
+[issue](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
 explaining the problem you've noticed and your proposed solution.
 Through the
-[issues](https://github.com/marcoXbresciani/TKCompanionApp/issues) page
-you can
+[issues](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
+page you can
 * notify problems (_bug_),
 * propose improvements (_enhancement_),
 * improve descriptions (_documentation_),
@@ -103,33 +103,32 @@ Find the latest current LTS NodeJS
 2022-08-16) for your system.
 
 Grab the source code by cloning
-[the repository](https://github.com/marcoXbresciani/TKCompanionApp).
+[the repository](https://codeberg.org/marco.bresciani/TKCompanionApp).
 
 Then go to this project main folder and run `npm install`.
 You should see all the needed dependencies downloaded and installed
 through NPM package manager.
 
-[![Maintenance](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODAuMDEiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAxODAuMDEgMzUiPjxyZWN0IGNsYXNzPSJzdmdfX3JlY3QiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMjQuOTEiIGhlaWdodD0iMzUiIGZpbGw9IiMwMDAwMDAiLz48cmVjdCBjbGFzcz0ic3ZnX19yZWN0IiB4PSIxMjIuOTEiIHk9IjAiIHdpZHRoPSI1Ny4wOTk5OTk5OTk5OTk5OTQiIGhlaWdodD0iMzUiIGZpbGw9IiM4RkM5NjUiLz48cGF0aCBjbGFzcz0ic3ZnX190ZXh0IiBkPSJNMTUuNjkgMjJMMTQuMjIgMjJMMTQuMjIgMTMuNDdMMTYuMTQgMTMuNDdMMTguNjAgMjAuMDFMMjEuMDYgMTMuNDdMMjIuOTcgMTMuNDdMMjIuOTcgMjJMMjEuNDkgMjJMMjEuNDkgMTkuMTlMMjEuNjQgMTUuNDNMMTkuMTIgMjJMMTguMDYgMjJMMTUuNTUgMTUuNDNMMTUuNjkgMTkuMTlMMTUuNjkgMjJaTTI4LjQ5IDIyTDI2Ljk1IDIyTDMwLjE3IDEzLjQ3TDMxLjUwIDEzLjQ3TDM0LjczIDIyTDMzLjE4IDIyTDMyLjQ5IDIwLjAxTDI5LjE4IDIwLjAxTDI4LjQ5IDIyWk0zMC44MyAxNS4yOEwyOS42MCAxOC44MkwzMi4wNyAxOC44MkwzMC44MyAxNS4yOFpNNDAuMjUgMjJMMzguNzcgMjJMMzguNzcgMTMuNDdMNDAuMjUgMTMuNDdMNDAuMjUgMjJaTTQ2LjU0IDIyTDQ1LjA2IDIyTDQ1LjA2IDEzLjQ3TDQ2LjU0IDEzLjQ3TDUwLjM2IDE5LjU0TDUwLjM2IDEzLjQ3TDUxLjgzIDEzLjQ3TDUxLjgzIDIyTDUwLjM1IDIyTDQ2LjU0IDE1Ljk1TDQ2LjU0IDIyWk01OC4yNSAxNC42Nkw1NS42MSAxNC42Nkw1NS42MSAxMy40N0w2Mi4zOCAxMy40N0w2Mi4zOCAxNC42Nkw1OS43MiAxNC42Nkw1OS43MiAyMkw1OC4yNSAyMkw1OC4yNSAxNC42NlpNNjYuOTIgMjJMNjUuMzggMjJMNjguNjAgMTMuNDdMNjkuOTMgMTMuNDdMNzMuMTYgMjJMNzEuNjEgMjJMNzAuOTEgMjAuMDFMNjcuNjEgMjAuMDFMNjYuOTIgMjJaTTY5LjI2IDE1LjI4TDY4LjAyIDE4LjgyTDcwLjUwIDE4LjgyTDY5LjI2IDE1LjI4Wk03OC42OCAyMkw3Ny4yMCAyMkw3Ny4yMCAxMy40N0w3OC42OCAxMy40N0w3OC42OCAyMlpNODQuOTcgMjJMODMuNDkgMjJMODMuNDkgMTMuNDdMODQuOTcgMTMuNDdMODguNzggMTkuNTRMODguNzggMTMuNDdMOTAuMjUgMTMuNDdMOTAuMjUgMjJMODguNzcgMjJMODQuOTcgMTUuOTVMODQuOTcgMjJaTTEwMC41NyAyMkw5NC45OSAyMkw5NC45OSAxMy40N0wxMDAuNTMgMTMuNDdMMTAwLjUzIDE0LjY2TDk2LjQ4IDE0LjY2TDk2LjQ4IDE3LjAyTDk5Ljk4IDE3LjAyTDk5Ljk4IDE4LjE5TDk2LjQ4IDE4LjE5TDk2LjQ4IDIwLjgyTDEwMC41NyAyMC44MkwxMDAuNTcgMjJaTTEwNy4yMiAyMkwxMDQuNzcgMjJMMTA0Ljc3IDEzLjQ3TDEwNy4yOSAxMy40N1ExMDguNDIgMTMuNDcgMTA5LjI5IDEzLjk3UTExMC4xNyAxNC40OCAxMTAuNjUgMTUuNDBRMTExLjEzIDE2LjMzIDExMS4xMyAxNy41MkwxMTEuMTMgMTcuNTJMMTExLjEzIDE3Ljk1UTExMS4xMyAxOS4xNiAxMTAuNjUgMjAuMDhRMTEwLjE2IDIxLjAwIDEwOS4yNyAyMS41MFExMDguMzggMjIgMTA3LjIyIDIyTDEwNy4yMiAyMlpNMTA2LjI1IDE0LjY2TDEwNi4yNSAyMC44MkwxMDcuMjIgMjAuODJRMTA4LjM4IDIwLjgyIDEwOS4wMSAyMC4wOVExMDkuNjMgMTkuMzYgMTA5LjY0IDE3Ljk5TDEwOS42NCAxNy45OUwxMDkuNjQgMTcuNTJRMTA5LjY0IDE2LjEzIDEwOS4wNCAxNS40MFExMDguNDQgMTQuNjYgMTA3LjI5IDE0LjY2TDEwNy4yOSAxNC42NkwxMDYuMjUgMTQuNjZaIiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggY2xhc3M9InN2Z19fdGV4dCIgZD0iTTEzOS4yMiAxOC45NUwxMzYuMDIgMTMuNjBMMTM4LjUzIDEzLjYwTDE0MC41MiAxNi45NEwxNDIuNTEgMTMuNjBMMTQ0LjgxIDEzLjYwTDE0MS42MCAxOC45OUwxNDEuNjAgMjJMMTM5LjIyIDIyTDEzOS4yMiAxOC45NVpNMTU1LjY0IDIyTDE0OC45MCAyMkwxNDguOTAgMTMuNjBMMTU1LjQ5IDEzLjYwTDE1NS40OSAxNS40NEwxNTEuMjUgMTUuNDRMMTUxLjI1IDE2Ljg1TDE1NC45OSAxNi44NUwxNTQuOTkgMTguNjNMMTUxLjI1IDE4LjYzTDE1MS4yNSAyMC4xN0wxNTUuNjQgMjAuMTdMMTU1LjY0IDIyWk0xNTkuODYgMjEuMjRMMTU5Ljg2IDIxLjI0TDE2MC42NCAxOS40OVExNjEuMjAgMTkuODYgMTYxLjk1IDIwLjA5UTE2Mi42OSAyMC4zMiAxNjMuNDEgMjAuMzJMMTYzLjQxIDIwLjMyUTE2NC43OCAyMC4zMiAxNjQuNzggMTkuNjRMMTY0Ljc4IDE5LjY0UTE2NC43OCAxOS4yOCAxNjQuMzkgMTkuMTFRMTY0LjAwIDE4LjkzIDE2My4xNCAxOC43NEwxNjMuMTQgMTguNzRRMTYyLjE5IDE4LjUzIDE2MS41NSAxOC4zMFExNjAuOTIgMTguMDYgMTYwLjQ2IDE3LjU1UTE2MC4wMSAxNy4wMyAxNjAuMDEgMTYuMTZMMTYwLjAxIDE2LjE2UTE2MC4wMSAxNS4zOSAxNjAuNDMgMTQuNzdRMTYwLjg1IDE0LjE1IDE2MS42OCAxMy43OVExNjIuNTIgMTMuNDMgMTYzLjcyIDEzLjQzTDE2My43MiAxMy40M1ExNjQuNTUgMTMuNDMgMTY1LjM1IDEzLjYyUTE2Ni4xNiAxMy44MCAxNjYuNzggMTQuMTdMMTY2Ljc4IDE0LjE3TDE2Ni4wNCAxNS45M1ExNjQuODQgMTUuMjggMTYzLjcxIDE1LjI4TDE2My43MSAxNS4yOFExNjMuMDAgMTUuMjggMTYyLjY4IDE1LjQ5UTE2Mi4zNiAxNS43MCAxNjIuMzYgMTYuMDRMMTYyLjM2IDE2LjA0UTE2Mi4zNiAxNi4zNyAxNjIuNzQgMTYuNTRRMTYzLjEzIDE2LjcxIDE2My45NyAxNi44OUwxNjMuOTcgMTYuODlRMTY0Ljk0IDE3LjEwIDE2NS41NyAxNy4zM1ExNjYuMjAgMTcuNTYgMTY2LjY2IDE4LjA3UTE2Ny4xMiAxOC41OCAxNjcuMTIgMTkuNDZMMTY3LjEyIDE5LjQ2UTE2Ny4xMiAyMC4yMSAxNjYuNzAgMjAuODNRMTY2LjI4IDIxLjQ0IDE2NS40NCAyMS44MFExNjQuNjAgMjIuMTcgMTYzLjQwIDIyLjE3TDE2My40MCAyMi4xN1ExNjIuMzggMjIuMTcgMTYxLjQyIDIxLjkyUTE2MC40NiAyMS42NyAxNTkuODYgMjEuMjRaIiBmaWxsPSIjRkZGRkZGIiB4PSIxMzUuOTEiLz48L3N2Zz4=)](https://codeberg.org/marco.bresciani/TKCompanionApp/commits/branch/master)
-![GitHub issues](https://img.shields.io/github/issues/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
-![GitHub repo size](https://img.shields.io/github/repo-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github&style=plastic)
+[![Maintenance](https://badgen.net/badge/maintenance/yes/green)](https://codeberg.org/marco.bresciani/TKCompanionApp/commits/branch/master)
+[![Github issues](https://img.shields.io/github/issues/marcoXbresciani/TKCompanionApp?logo=codeberg)](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
+![Github repo size](https://img.shields.io/github/repo-size/marcoXbresciani/TKCompanionApp?logo=github)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp?logo=github)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp?logo=github)
 
-Also run `npm install -g ts-standard` to make the `ts-standard` command
-available into your system.
-This is used in `husky` pre-commit hook to verify the coding conventions
-consistency.
-
-You might want to also run `npm install -g npm-check-updates` to make
-the `ncu` tool globally available, to check possible dependencies
-versions updates.
-Not much used, though: `npm outdated` is also available as NPM command.
+The `husky` pre-commit hook is used to verify the coding conventions
+consistency through the `ts-standard` package, available in the
+development dependencies.
 
 You also need to install REUSE helper tool (by Free Software Foundation
 Europe) to assist with achieving and confirming
 [REUSE](https://reuse.software/) compliance.
 See installation instructions at
 [reuse](https://git.fsfe.org/reuse/tool) repository.
+
+You might want to also run `npm install -g npm-check-updates` to make
+the `ncu` tool globally available, to check possible dependencies
+versions updates.
+Not much used, though: `npm outdated` is also available as NPM command.
 
 Please take note of the current status and improve the app code an
 content based on the
@@ -178,14 +177,17 @@ release.
    relevant [Unreleased](/CHANGELOG.md) content to such section.
    And verify that the related tag link is added to the specific section
    header.
+1. Verify that `README.md` files contain the latest tag (you're
+   releasing) in the badges.
 1. Verify that `fastlane` folder contain the proper `changelogs` files
    for the upcoming version *code* in all available languages.
    If needed, also updates or add relevant screenshots in all available
    languages.
 1. Verify that [Errors.md](Errors.md) contains the currently known
    issues by adding those relevant and removing those solved.
-   If needed, also open specific issues on the project
-   [GitHub Issues page](https://github.com/marcoXbresciani/TKCompanionApp/issues).
+   If needed, also open specific issues on the project Codeberg
+   [Issues](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
+   page.
 1. Update the `versionCode` and `versionName` values inside the
    `android.defaultConfig` field of file
    [build.gradle](/android/app/build.gradle).
@@ -199,6 +201,8 @@ release.
    file.
 1. Verify [REUSE](https://reuse.software/) compliance through
    `reuse lint` command.
+   Please note this command is also automatically launched before each
+   commit.
 1. Verify clean code criteria through `npm run lint` command.
    Please note this command is also automatically launched before each
    commit.
@@ -208,7 +212,7 @@ release.
 #### Updating NodeJS (& Co.)
 To update the version of NodeJS (or NPM, Java and, generally, everything
 related to building tools used by F-Droid building system through
-metadata file), it's better to prepare the version without the tag and
+metadata file), it's better to prepare the version _without the tag_ and
 create an MR (merge request) on a fork of the GitLab F-Droid/Data
 repository, with the update of the application metadata file and, only
 after the merge has been added, make the tag available on the code
@@ -237,11 +241,11 @@ So:
   ```
 * update the
   [app metadata file](https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/name.bresciani.marco.tkcompanionapp.yml)
-  on a(n unprotected) branch of your fork of the F-Droid/Data
-  repository, adding a new version, with  the update of the version of
-  NodeJS, its SHA, commit number, etc. looking, for example, at the
-  NodeJS differences between the version 0.5.0 (50) and 0.6.0 (60) on
-  the metadata file.
+  on an unprotected branch of your fork of the F-Droid/Data repository,
+  adding a new version, with  the update of the version of NodeJS, its
+  SHA, commit number, etc. looking, for example, at the NodeJS
+  differences between the version 0.5.0 (50) and 0.6.0 (60) on the
+  metadata file.
 * Create an MR on the original F-Droid/Data repository with this
   modification from the fork.
 * Once the MR has been approved and integrated into the main
@@ -253,7 +257,7 @@ Same instructions stand for updating JDK, NPM or Android NDK versions.
 ### How to Add a New Translation
 If there's a new translated language in the project Weblate page, after
 Weblate commit the new file JSON will be available in the
-[repository](https://github.com/marcoXbresciani/TKCompanionApp).
+[repository](https://codeberg.org/marco.bresciani/TKCompanionApp/src/branch/master/app/i18n).
 
 As soon as the new language file will be available, it's possible to
 import it in the [i18n.ts](../app/i18n/i18n.ts) file, as in

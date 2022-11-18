@@ -26,7 +26,8 @@ but in encrypted form, for better security.
 There is no need to use files for this purpose.
 
 ## Status
-Accepted.
+Deprecated.
+See [12 Async Storage](012-async-storage.md).
 
 ## Consequences
 There will be soon the need to use a password of the phone unlock

@@ -61,9 +61,9 @@
                     "name": "F-Droid"
                 },
                 {
-                    "address": "https://github.com/marcoXbresciani/TKCompanionApp",
-                    "icon": "github",
-                    "name": "GitHub"
+                    "address": "https://codeberg.org/marco.bresciani/TKCompanionApp",
+                    "icon": "codeberg",
+                    "name": "Codeberg"
                 },
                 {
                     "address": "https://gitlab.com/marcoXbresciani/TKCompanionApp",

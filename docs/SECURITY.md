@@ -11,6 +11,7 @@ SPDX-FileCopyrightText: 2022 Marco Bresciani
 SPDX-License-Identifier: FSFAP
 -->
 # Security Policy
+Please note the app analysis done by Exodus Privacy at https://reports.exodus-privacy.eu.org/it/reports/312206/
 
 ## Known Security Issues
 > In evaluating the impact of these (known) security issues below (if

@@ -186,6 +186,11 @@ release.
    If needed, also open specific issues on the project Codeberg
    [Issues](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
    page.
+1. Verify that [SECURITY.md](SECURITY.md) contains the currently known
+   security issues by adding those relevant and removing those solved.
+   If needed, also open specific issues on the project Codeberg
+   [Issues](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
+   page.
 1. Update the `versionCode` and `versionName` values inside the
    `android.defaultConfig` field of file
    [build.gradle](/android/app/build.gradle).

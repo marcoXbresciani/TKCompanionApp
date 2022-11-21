@@ -11,13 +11,12 @@ SPDX-FileCopyrightText: 2022 Marco Bresciani
 SPDX-License-Identifier: FSFAP
 -->
 # Security Policy
-Please note the app analysis done by Exodus Privacy at https://reports.exodus-privacy.eu.org/it/reports/312206/ and the fact that TKCompanionApp doesn't use Internet at all.
+> In evaluating the impact of the security issues described below (if
+> any), please refer to the app analysis done by Exodus Privacy at
+> https://reports.exodus-privacy.eu.org/it/reports/312206/ and remember
+> that **TKCompanionApp** has _neither_ network _nor_ files access.
 
 ## Known Security Issues
-> In evaluating the impact of these (known) security issues below (if
-> any), please remember that **TKCompanionApp** has _neither_ network
-> _nor_ files access.
-
 * No known issues.
 
 For more information

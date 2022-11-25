@@ -37,7 +37,7 @@ import { ScrollView } from 'react-native'
 import TkSnackbar from '../../components/TkSnackbar'
 import TkText from '../../components/TkText'
 
-const DownloadPage: React.FC = () => {
+const PdsaPage: React.FC = () => {
   const selectionColour = useTheme().colors.onPrimary
   const dotColour = useTheme().colors.primary
   const coloursDay = {
@@ -321,4 +321,4 @@ const DownloadPage: React.FC = () => {
   )
 }
 
-export default DownloadPage
+export default PdsaPage

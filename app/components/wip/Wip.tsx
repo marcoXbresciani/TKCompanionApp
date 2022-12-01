@@ -22,37 +22,31 @@
  */
 import * as React from 'react'
 import i18n from '../../i18n/i18n'
+import TkDialog from './TkDialog'
 
 interface Props {
-  title: string
-  before: string
   message: string
-  after: string
   visible: boolean
   setVisible: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const TkPanel: ({
-  title,
-  before,
+const Wip: ({
   message,
-  after
 }: Props) => JSX.Element = ({
   message,
   visible,
   setVisible
 }: Props) => {
   return (
-    <TkPanel
+    <TkDialog
       title={`${i18n.t('wip.title')}`}
       before={`${i18n.t('wip.before')}`}
-      message={message}
+      messages={[message]}
       after={`${i18n.t('wip.after')}`}
       visible={visible}
       setVisible={setVisible}
     />
-
   )
 }
 
-export default TkPanel
+export default Wip

@@ -176,7 +176,6 @@ const PdsaPage: React.FC = () => {
                   })
                   setDisabledSave(false)
                 }}
-                placeholder='Target'
                 right={
                   <TextInput.Icon
                     icon='trash-can'
@@ -205,7 +204,6 @@ const PdsaPage: React.FC = () => {
                   })
                   setDisabledSave(false)
                 }}
-                placeholder='Actual'
                 right={
                   <TextInput.Icon
                     icon='trash-can'
@@ -233,7 +231,6 @@ const PdsaPage: React.FC = () => {
                   })
                   setDisabledSave(false)
                 }}
-                placeholder='Obstacle'
                 right={
                   <TextInput.Icon
                     icon='trash-can'
@@ -262,7 +259,6 @@ const PdsaPage: React.FC = () => {
                   })
                   setDisabledSave(false)
                 }}
-                placeholder='Step'
                 right={
                   <TextInput.Icon
                     icon='trash-can'
@@ -291,7 +287,6 @@ const PdsaPage: React.FC = () => {
                   })
                   setDisabledSave(true)
                 }}
-                placeholder='Learnt'
                 right={
                   <TextInput.Icon
                     icon='trash-can'

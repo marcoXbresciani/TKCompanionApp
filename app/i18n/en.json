@@ -2,8 +2,8 @@
     "about": {
         "copyright": "copyright",
         "dates": {
-            "first": "First installation: <0>{{date}}</0>",
-            "latest": "Latest update: <0>{{date}}</0>"
+            "first": "First installation: {{date}}",
+            "latest": "Latest update: {{date}}"
         },
         "might": {
             "key1": "help you improving",

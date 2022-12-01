@@ -47,18 +47,10 @@ const About: React.FunctionComponent = () => {
       <ScrollView>
         <Dialog.Content>
           <TkText>
-            <Trans
-              t={t}
-              i18nKey='about.dates.latest'
-              values={{ date: getIso8601(LATEST_UPDATE) }}
-            /> ({APP_VERSION})
+            {i18n.t('about.dates.latest', { date: getIso8601(LATEST_UPDATE) })} ({APP_VERSION})
           </TkText>
           <TkText>
-            <Trans
-              t={t}
-              i18nKey='about.dates.first' // optional -> fallbacks to defaults if not provided
-              values={{ date: getIso8601(FIRST_INSTALL) }}
-            />
+            {i18n.t('about.dates.first', { date: getIso8601(FIRST_INSTALL) })}
           </TkText>
           <List.AccordionGroup>
             <List.Accordion

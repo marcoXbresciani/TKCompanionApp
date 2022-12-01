@@ -203,11 +203,27 @@
         "alert": {
             "title": "PDSA non valido"
         },
+        "labels": {
+            "target": "Obiettivo",
+            "actual": "Corrente",
+            "obstacle": "Ostacolo",
+            "step": "Esperimento",
+            "learnt": "Appreso"
+        },
         "q1": "Qual è la condizione obiettivo?",
         "q2": "Qual è la condizione attuale ora?",
         "q3": "Quali ostacoli credi ora ti impediscano di raggiungere la condizione obiettivo? Quale (uno solo!) vuoi affrontare adesso?",
         "q4": "Qual è il tuo prossimo step (esperimento)? Che cosa ti aspetti di ottenere?",
         "q5": "Quanto velocemente possiamo andare a vedere che cosa abbiamo appreso da questo passo?",
+        "snack": {
+            "day": {
+                "deleted": "{{day}} cancellato",
+                "saved": "{{day}} salvato"
+            },
+            "field": {
+                "deleted": "{{field}} {{day}} cancellato"
+            }
+        },
         "temp": "Questo è un esperimento per una prossima funzionalità: la possibilità di scrivere/salvare una carta delle 5 domande, giornalmente, e rileggerla/rivederla in ogni momento.",
         "title": "Diario PDSA"
     },

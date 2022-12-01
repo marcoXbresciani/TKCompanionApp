@@ -119,7 +119,7 @@ const PdsaPage: React.FC = () => {
           icon='content-save-all'
           disabled={disabledSave}
           onPress={() => {
-            setSnackMessage(`Saved ${day}.`)
+            setSnackMessage(`${i18n.t('pdsa.snack.day.saved', { day })}`)
             void journalStorage.read('PDSA').then(value => {
               let journal: Journal = {}
 
@@ -138,7 +138,7 @@ const PdsaPage: React.FC = () => {
           icon='trash-can-outline'
           disabled={!disabledSave}
           onPress={() => {
-            setSnackMessage(`Deleted ${day}.`)
+            setSnackMessage(`${i18n.t('pdsa.snack.day.deleted', { day })}`)
             void journalStorage.read('PDSA').then(value => {
               let journal: Journal = {}
               if (value != null) {
@@ -166,7 +166,7 @@ const PdsaPage: React.FC = () => {
             <TkCardContent>
               <TkText>{`${i18n.t('pdsa.q1')}`}</TkText>
               <TextInput
-                label='Target'
+                label={`${i18n.t('pdsa.labels.target')}`}
                 mode='outlined'
                 multiline
                 onChangeText={(txt) => {
@@ -180,7 +180,7 @@ const PdsaPage: React.FC = () => {
                   <TextInput.Icon
                     icon='trash-can'
                     onPress={() => {
-                      setSnackMessage(`Deleted ${day} Target.`)
+                      setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.target') })}`)
                       setPdsaEntry({
                         ...pdsaEntry,
                         target: ''
@@ -194,7 +194,7 @@ const PdsaPage: React.FC = () => {
               />
               <TkText>{`${i18n.t('pdsa.q2')}`}</TkText>
               <TextInput
-                label='Actual'
+                label={`${i18n.t('pdsa.labels.actual')}`}
                 mode='outlined'
                 multiline
                 onChangeText={(txt) => {
@@ -208,7 +208,7 @@ const PdsaPage: React.FC = () => {
                   <TextInput.Icon
                     icon='trash-can'
                     onPress={() => {
-                      setSnackMessage(`Deleted ${day} Actual.`)
+                      setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.actual') })}`)
                       setPdsaEntry({
                         ...pdsaEntry,
                         actual: ''
@@ -221,7 +221,7 @@ const PdsaPage: React.FC = () => {
               />
               <TkText>{`${i18n.t('pdsa.q3')}`}</TkText>
               <TextInput
-                label='Obstacle'
+                label={`${i18n.t('pdsa.labels.obstacle')}`}
                 mode='outlined'
                 multiline
                 onChangeText={(txt) => {
@@ -235,7 +235,7 @@ const PdsaPage: React.FC = () => {
                   <TextInput.Icon
                     icon='trash-can'
                     onPress={() => {
-                      setSnackMessage(`Deleted ${day} Obstacle.`)
+                      setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.obstacle') })}`)
                       setPdsaEntry({
                         ...pdsaEntry,
                         obstacle: ''
@@ -249,7 +249,7 @@ const PdsaPage: React.FC = () => {
               />
               <TkText>{`${i18n.t('pdsa.q4')}`}</TkText>
               <TextInput
-                label='Step'
+                label={`${i18n.t('pdsa.labels.step')}`}
                 mode='outlined'
                 multiline
                 onChangeText={(txt) => {
@@ -263,7 +263,7 @@ const PdsaPage: React.FC = () => {
                   <TextInput.Icon
                     icon='trash-can'
                     onPress={() => {
-                      setSnackMessage(`Deleted ${day} Step.`)
+                      setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.step') })}`)
                       setPdsaEntry({
                         ...pdsaEntry,
                         step: ''
@@ -277,7 +277,7 @@ const PdsaPage: React.FC = () => {
               />
               <TkText>{`${i18n.t('pdsa.q5')}`}</TkText>
               <TextInput
-                label='Learnt'
+                label={`${i18n.t('pdsa.labels.learnt')}`}
                 mode='outlined'
                 multiline
                 onChangeText={(txt) => {
@@ -291,7 +291,7 @@ const PdsaPage: React.FC = () => {
                   <TextInput.Icon
                     icon='trash-can'
                     onPress={() => {
-                      setSnackMessage(`Deleted ${day} Learnt.`)
+                      setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.learnt') })}`)
                       setPdsaEntry({
                         ...pdsaEntry,
                         learnt: ''

@@ -203,11 +203,27 @@
         "alert": {
             "title": "Invalid PDSA Found"
         },
+        "labels": {
+            "target": "Target",
+            "actual": "Actual",
+            "obstacle": "Obstacle",
+            "step": "Step",
+            "learnt": "Learnt"
+        },
         "q1": "What is the Target Condition?",
         "q2": "What is the Actual Condition now?",
         "q3": "What Obstacles do you think are preventing you from reaching the target condition? Which *one* are you addressing now?",
         "q4": "What is your Next Step? (Next experiment) What do you expect?",
         "q5": "How quickly can we go and see what we Have Learned from taking that step?",
+        "snack": {
+            "day": {
+                "deleted": "Deleted {{day}}",
+                "saved": "Saved {{day}}"
+            },
+            "field": {
+                "deleted": "Deleted {{day}} {{field}}"
+            }
+        },
         "temp": "This is an experiment for the next incoming feature: the possibility to write/save a 5Q card, possibly daily, and reviewing/re-reading it any time. Please do not trust this page data management since it might change anytime.",
         "title": "Plan-Do-Study-Act"
     },

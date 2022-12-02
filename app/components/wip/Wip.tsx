@@ -31,7 +31,7 @@ interface Props {
 }
 
 const Wip: ({
-  message,
+  message
 }: Props) => JSX.Element = ({
   message,
   visible,

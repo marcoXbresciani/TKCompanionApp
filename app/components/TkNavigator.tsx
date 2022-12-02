@@ -26,7 +26,7 @@ import HomePage from '../pages/home/HomePage'
 import PdsaPage from '../pages/pdsa/PdsaPage'
 import DocsPage from '../pages/docs/DocsPage'
 import i18n from '../i18n/i18n'
-import GoalsPage from '../pages/GoalsPage'
+import BadgesPage from '../pages/BadgesPage'
 
 const TkNavigator: React.FunctionComponent = () => {
   const [index, setIndex] = React.useState(0)
@@ -47,8 +47,8 @@ const TkNavigator: React.FunctionComponent = () => {
       focusedIcon: 'library-shelves'
     },
     {
-      key: 'goals',
-      title: i18n.t('goals.title'),
+      key: 'badges',
+      title: i18n.t('badges.title'),
       focusedIcon: 'medal-outline'
     }
   ])
@@ -56,7 +56,7 @@ const TkNavigator: React.FunctionComponent = () => {
     home: HomePage,
     pdsa: PdsaPage,
     docs: DocsPage,
-    goals: GoalsPage
+    badges: BadgesPage
   })
 
   return (

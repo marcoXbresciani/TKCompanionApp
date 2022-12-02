@@ -52,6 +52,29 @@
     "app": {
         "short": "Un piccolo e semplice aiuto per i praticanti di Toyota Kata"
     },
+    "badges": {
+        "list": [
+            {
+                "description": "Primo giorno PDSA salvato.",
+                "icon": "account-plus-outline"
+            },
+            {
+                "description": "Due giorni PDSA consecutivi.",
+                "icon": "account-switch"
+            },
+            {
+                "description": "Prima settimana PDSA completa.",
+                "icon": "calendar-week"
+            }
+        ],
+        "message": [
+            "Ciao.",
+            "Questa pagina contiene i premi che guadagnerai usando l'app.",
+            "Questa funzionalità è ancora in fase di sviluppo.",
+            "Qui puoi vedere un esempio (parzialmente funzionante) di come potrebbe diventare."
+        ],
+        "title": "Premi"
+    },
     "calendar": {
         "dayNames": [
             "Domenica",
@@ -172,12 +195,6 @@
             "5": "* Abbi un coach, sii un coach.",
             "title": "Il codice Kata"
         }
-    },
-    "goals": {
-        "badges": {
-
-        },
-        "title": "Obiettivi"
     },
     "home": {
         "feedback": {

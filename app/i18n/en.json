@@ -52,6 +52,29 @@
     "app": {
         "short": "A short and small helper for Toyota Kata practitioners"
     },
+    "badges": {
+        "list": [
+            {
+                "description": "First PDSA day saved.",
+                "icon": "account-plus-outline"
+            },
+            {
+                "description": "Two consecutive PDSA days.",
+                "icon": "account-switch"
+            },
+            {
+                "description": "First full PDSA week completed.",
+                "icon": "calendar-week"
+            }
+        ],
+        "message": [
+            "Hello.",
+            "This page will contain the badges you earned while using the app.",
+            "This functionality is still under development.",
+            "Here you can see a (partially working) mockup example of what it might become."
+        ],
+        "title": "Badges"
+    },
     "calendar": {
         "dayNames": [
             "Sunday",
@@ -172,12 +195,6 @@
             "5": "* Have a coach, be a coach.",
             "title": "The Kata Code"
         }
-    },
-    "goals": {
-        "badges": {
-
-        },
-        "title": "Goals"
     },
     "home": {
         "feedback": {

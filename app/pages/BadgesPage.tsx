@@ -31,27 +31,29 @@ import { Chip } from 'react-native-paper'
 import Separator from './docs/5qcard/Separator'
 import i18n from '../i18n/i18n'
 
-const GoalsPage: React.FC = () => {
+const BadgesPage: React.FC = () => {
+  const badges: { description: string, icon: string }[] = i18n.t('badges.list', { returnObjects: true})
+  const messages: string[] = i18n.t('badges.message', { returnObjects: true})
+
   return (
     <ScrollView>
       <PageContainer>
         <TkCard>
-          <TkCardTitle title="Goals"/>
+          <TkCardTitle title={i18n.t('badges.title')}/>
           <TkCardContent>
-            <TkText>Hello.</TkText>
-            <TkText>This page will contain the app goals and earned
-              badges.</TkText>
-            <TkText>This functionality is still under
-              development.</TkText>
-            <TkText>Here you can see a mockup example of what it might
-              become.</TkText>
+            {
+              messages.flatMap((message) => {
+                return <TkText>{message}</TkText>
+              })
+            }
           </TkCardContent>
           <TkCardContent>
-            <Chip icon='account-plus-outline'>{i18n.t('goals.badges.first')}</Chip>
-            <Separator/>
-            <Chip icon='account-switch'>Two consecutive PDSA days saved.</Chip>
-            <Separator/>
-            <Chip icon='calendar-week' disabled={true}>First full PDSA week saved.</Chip>
+            {badges.flatMap((badge) => {
+              return (<>
+                  <Chip disabled={true} icon={badge.icon}>{i18n.t(badge.description)}</Chip>
+                  <Separator />
+              </>)
+            })}
           </TkCardContent>
         </TkCard>
       </PageContainer>
@@ -59,4 +61,4 @@ const GoalsPage: React.FC = () => {
   )
 }
 
-export default GoalsPage
+export default BadgesPage

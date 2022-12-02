@@ -71,7 +71,8 @@
             "Hello.",
             "This page will contain the badges you earned while using the app.",
             "This functionality is still under development.",
-            "Here you can see a (partially working) mockup example of what it might become."
+            "Here you can see a (partially working) mockup example of what it might become.",
+            "Clicking on an earned badge, you can read its description."
         ],
         "title": "Badges"
     },

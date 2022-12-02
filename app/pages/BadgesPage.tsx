@@ -27,37 +27,57 @@ import { TkCardContent } from '../components/tkcard/TkCardContent'
 import { ScrollView } from 'react-native'
 import PageContainer from './PageContainer'
 import TkText from '../components/TkText'
-import { Chip } from 'react-native-paper'
-import Separator from './docs/5qcard/Separator'
+import { IconButton } from 'react-native-paper'
 import i18n from '../i18n/i18n'
+import styled from 'styled-components'
+import TkSnackbar from '../components/TkSnackbar'
 
 const BadgesPage: React.FC = () => {
-  const badges: { description: string, icon: string }[] = i18n.t('badges.list', { returnObjects: true})
-  const messages: string[] = i18n.t('badges.message', { returnObjects: true})
+  const badges: Array<{ description: string, icon: string }> = i18n.t('badges.list', { returnObjects: true })
+  const messages: string[] = i18n.t('badges.message', { returnObjects: true })
+  const [visibleSnack, setVisibleSnack] = React.useState(false)
+  const [snackMessage, setSnackMessage] = React.useState('')
+  const earned: boolean[] = [true, true, true]
+
+  const BadgesContent = styled(TkCardContent)`
+    flex-direction: row;
+    flex-wrap: wrap;
+  `
 
   return (
-    <ScrollView>
-      <PageContainer>
-        <TkCard>
-          <TkCardTitle title={i18n.t('badges.title')}/>
-          <TkCardContent>
-            {
+    <>
+      <ScrollView>
+        <PageContainer>
+          <TkCard>
+            <TkCardTitle title={i18n.t('badges.title')} />
+            <TkCardContent>
+              {
               messages.flatMap((message) => {
-                return <TkText>{message}</TkText>
+                return <TkText key={message}>{message}</TkText>
               })
             }
-          </TkCardContent>
-          <TkCardContent>
-            {badges.flatMap((badge) => {
-              return (<>
-                  <Chip disabled={true} icon={badge.icon}>{i18n.t(badge.description)}</Chip>
-                  <Separator />
-              </>)
-            })}
-          </TkCardContent>
-        </TkCard>
-      </PageContainer>
-    </ScrollView>
+            </TkCardContent>
+            <BadgesContent>
+              {badges.flatMap((badge, index) => {
+                return (
+                  <IconButton
+                    key={badge.icon}
+                    mode='contained-tonal' disabled={earned[index]} icon={badge.icon} onPress={() => {
+                      setSnackMessage(badge.description)
+                      setVisibleSnack(true)
+                    }}
+                  />
+                )
+              })}
+            </BadgesContent>
+          </TkCard>
+        </PageContainer>
+      </ScrollView>
+      <TkSnackbar
+        message={snackMessage} visible={visibleSnack}
+        setVisible={setVisibleSnack}
+      />
+    </>
   )
 }
 

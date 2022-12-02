@@ -173,6 +173,12 @@
             "title": "The Kata Code"
         }
     },
+    "goals": {
+        "badges": {
+
+        },
+        "title": "Goals"
+    },
     "home": {
         "feedback": {
             "after": "You can also visit app pages listed in $t(nav.menu.about).",

@@ -173,6 +173,12 @@
             "title": "Il codice Kata"
         }
     },
+    "goals": {
+        "badges": {
+
+        },
+        "title": "Obiettivi"
+    },
     "home": {
         "feedback": {
             "after": "Puoi anche visitare le pagine dell'app, indicate nel menu $t(nav.menu.about).",

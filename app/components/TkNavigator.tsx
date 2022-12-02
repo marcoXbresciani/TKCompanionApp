@@ -26,6 +26,7 @@ import HomePage from '../pages/home/HomePage'
 import PdsaPage from '../pages/pdsa/PdsaPage'
 import DocsPage from '../pages/docs/DocsPage'
 import i18n from '../i18n/i18n'
+import GoalsPage from '../pages/GoalsPage'
 
 const TkNavigator: React.FunctionComponent = () => {
   const [index, setIndex] = React.useState(0)
@@ -44,12 +45,18 @@ const TkNavigator: React.FunctionComponent = () => {
       key: 'docs',
       title: i18n.t('docs.title'),
       focusedIcon: 'library-shelves'
+    },
+    {
+      key: 'goals',
+      title: i18n.t('goals.title'),
+      focusedIcon: 'medal-outline'
     }
   ])
   const renderScene = BottomNavigation.SceneMap({
     home: HomePage,
     pdsa: PdsaPage,
-    docs: DocsPage
+    docs: DocsPage,
+    goals: GoalsPage
   })
 
   return (

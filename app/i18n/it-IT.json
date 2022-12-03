@@ -250,7 +250,6 @@
                 "deleted": "{{field}} {{day}} cancellato"
             }
         },
-        "temp": "Questo è un esperimento per una prossima funzionalità: la possibilità di scrivere/salvare una carta delle 5 domande, giornalmente, e rileggerla/rivederla in ogni momento.",
         "title": "Diario PDSA"
     },
     "wip": {

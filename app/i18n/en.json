@@ -186,7 +186,7 @@
             "6": "Best wishes!",
             "title": "Changing thinking through practice"
         },
-        "subtitle": "… or download them!",
+        "subtitle": "To be read here or downloaded from the web!",
         "title": "Read The Docs",
         "tkc": {
             "1": "* Conditions are unpredictable.",
@@ -201,9 +201,11 @@
         "feedback": {
             "after": "You can also visit app pages listed in $t(nav.menu.about).",
             "before": "Welcome to TKCompanionApp, and thank you for being here.",
-            "messages": ["This app has neither Internet connection nor tracking tools, so I cannot know if you like it or not, or how you (want to) use it.",
+            "messages": [
+                "This app has neither Internet connection nor tracking tools, so I cannot know if you like it or not, or how you (want to) use it.",
                 "Please, feel free to reach out to me through the contact channels below, for any feedback.",
-                "All feedbacks are welcome."],
+                "All feedbacks are welcome."
+            ],
             "title": "Let's get in touch!"
         }
     },

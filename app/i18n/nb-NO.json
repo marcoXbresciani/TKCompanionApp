@@ -15,7 +15,7 @@
             "key4": "bruke API-er fra Google Play-butikken",
             "key5": "lagre ting på enheten din",
             "key6": "spionere på deg",
-            "title": "Dette programmet vil <bold>IKKE</bold>"
+            "title": "Dette programmet vil IKKE"
         },
         "translation": {
             "author": [
@@ -33,7 +33,7 @@
                 },
                 {
                     "address": "https://codeberg.org/marco.bresciani/TKCompanionApp",
-                    "icon": "codeberg",
+                    "icon": "git",
                     "name": "Codeberg"
                 },
                 {

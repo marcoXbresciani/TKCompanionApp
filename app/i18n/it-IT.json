@@ -19,7 +19,7 @@
             "key4": "usa le API del Google Play Store",
             "key5": "accede ai tuoi file",
             "key6": "ti spia",
-            "title": "Quest'applicazione <bold>NON</bold>"
+            "title": "Quest'applicazione NON"
         },
         "translation": {
             "author": [
@@ -37,7 +37,7 @@
                 },
                 {
                     "address": "https://codeberg.org/marco.bresciani/TKCompanionApp",
-                    "icon": "codeberg",
+                    "icon": "git",
                     "name": "Codeberg"
                 },
                 {

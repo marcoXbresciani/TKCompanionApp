@@ -22,10 +22,8 @@
  */
 import * as React from 'react'
 import { Dialog, List } from 'react-native-paper'
-import { Trans, useTranslation } from 'react-i18next'
 import { Linking, ScrollView } from 'react-native'
 import i18n from '../../../i18n/i18n'
-import BoldText from '../../../components/BoldText'
 import TkText from '../../../components/TkText'
 import { getIso8601 } from '../../../utils/Functions'
 import {
@@ -36,7 +34,6 @@ import {
 } from '../../../utils/Constants'
 
 const About: React.FunctionComponent = () => {
-  const { t } = useTranslation()
   const urls: Array<{ address: string, icon: string, name: string }> = i18n.t('about.url.page', {
     returnObjects: true
   })
@@ -55,7 +52,7 @@ const About: React.FunctionComponent = () => {
           <List.AccordionGroup>
             <List.Accordion
               id={1}
-              title={<Trans t={t} i18nKey='about.might.title' components={{ bold: <BoldText /> }} />}
+              title={i18n.t('about.might.title')}
               titleNumberOfLines={2}
               titleStyle={{ color: 'forestgreen' }}
             >
@@ -86,7 +83,7 @@ const About: React.FunctionComponent = () => {
             </List.Accordion>
             <List.Accordion
               id={2}
-              title={<Trans t={t} i18nKey='about.not.title' components={{ bold: <BoldText /> }} />}
+              title={i18n.t('about.not.title')}
               titleNumberOfLines={2}
               titleStyle={{ color: 'crimson' }}
             >

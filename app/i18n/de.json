@@ -15,7 +15,7 @@
             "key4": "Verwenden Sie Google Play Store-APIs",
             "key5": "Speichern Sie Dinge auf Ihrem Gerät",
             "key6": "dich ausspionieren",
-            "title": "Diese Anwendung <bold>tut nicht</bold>"
+            "title": "Diese Anwendung tut nicht"
         },
         "translation": {
             "author": [
@@ -32,7 +32,7 @@
                 },
                 {
                     "address": "https://codeberg.org/marco.bresciani/TKCompanionApp",
-                    "icon": "codeberg",
+                    "icon": "git",
                     "name": "Codeberg"
                 },
                 {

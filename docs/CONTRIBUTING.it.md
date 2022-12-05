@@ -30,7 +30,7 @@ Per qualsiasi domanda... chiedi pure!
    1. [Come compilare](#come-compilare)
       1. [Come testare localmente](#come-testare-localmente)
    1. [Come rilasciare](#come-rilasciare)
-      1. [Aggiornare NodeJS (& C.)](#aggiornare-nodejs--c)
+      1. [Aggiornare NodeJS (& C.)](#aggiornare-nodejs---c-)
    1. [Come aggiungere una traduzione](#come-aggiungere-una-traduzione)
 
 ## Per tutti i contributi
@@ -79,7 +79,7 @@ Siamo qui per migliorare!
 Puoi contribuire colle traduzioni dall'italiano (o dall'inglese) alla
 tua lingua madre, qualsiasi essa sia.
 
-[![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-white.png)](https://hosted.weblate.org/engage/tkcompanionapp/)
+[![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-grey.png)](https://hosted.weblate.org/engage/tkcompanionapp/)
 
 Le traduzioni sono gestite tramite il software e piattaforma libera
 [Weblate](https://hosted.weblate.org/engage/tkcompanionapp/) con cui si

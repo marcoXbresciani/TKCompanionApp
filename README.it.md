@@ -146,6 +146,8 @@ Lo stesso per questo documento.
   [Mastodon](https://joinmastodon.org/).
 
 ### Traduzioni
+Collaboratori presenti (e passati):
+[![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-grey.png)](https://hosted.weblate.org/engage/tkcompanionapp/)
 * [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/de/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/de/)
   [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
   per la traduzione in tedesco.

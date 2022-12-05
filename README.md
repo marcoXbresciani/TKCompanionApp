@@ -143,6 +143,8 @@ You can keep in touch with the author through:
   [Mastodon](https://joinmastodon.org/) instance.
 
 ### Translations
+Current (and past) contributors:
+[![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-grey.png)](https://hosted.weblate.org/engage/tkcompanionapp/)
 * [![Translation status](https://hosted.weblate.org/widgets/tkcompanionapp/de/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/de/)
   [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
   for the German translation.

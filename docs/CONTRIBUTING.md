@@ -29,7 +29,7 @@ Any question, feel free to ask!
    1. [How to Build](#how-to-build)
       1. [How to Test Locally](#how-to-test-locally)
    1. [How to Release](#how-to-release)
-      1. [Updating NodeJS (& Co.)](#updating-nodejs--co)
+      1. [Updating NodeJS (& Co.)](#updating-nodejs---co-)
    1. [How to Add a New Translation](#how-to-add-a-new-translation)
 
 ## For All Contributions
@@ -77,7 +77,7 @@ We're here to improve!
 You can contribute with translations from English (or Italian) to your
 native language, whichever it is.
 
-[![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-white.png)](https://hosted.weblate.org/engage/tkcompanionapp/)
+[![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-grey.png)](https://hosted.weblate.org/engage/tkcompanionapp/)
 
 Translations are managed through the free software and platform
 [Weblate](https://hosted.weblate.org/engage/tkcompanionapp/) through

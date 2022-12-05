@@ -168,6 +168,20 @@
             "tip": "[κατα]",
             "title": "Kàta 'sta roba"
         },
+        "legend": {
+            "read": {
+                "explain": "Leggi un documento nell'app",
+                "title": "Leggi"
+            },
+            "download": {
+                "explain": "Scarica il documento di riferimento da Internet (dal tuo browser!) ",
+                "title": "Scarica"
+            },
+            "browse": {
+                "explain": "$t(nav.menu.legend.browse.explain)",
+                "title": "$t(nav.menu.legend.browse.title)"
+            }
+        },
         "pattern": {
             "p1": "1. Cosa stiamo cercando di ottenere?",
             "p2": "2. A che punto siamo ora?",
@@ -212,13 +226,28 @@
     "nav": {
         "home": "Inizio",
         "menu": {
-            "about": "Informazioni",
-            "contact": "Contatti",
-            "copyright": "Copyright",
+            "about": {
+                "explain": "Apre la finestra delle $t(nav.menu.about.title)",
+                "title": "Informazioni"
+            },
+            "contact": {
+                "explain": "Apre la finestra dei $t(nav.menu.contact.title)",
+                "title": "Contatti"
+            },
+            "copyright": {
+                "explain": "Apre la finestra del $t(nav.menu.copyright.title)",
+                "title": "Copyright"
+            },
             "legend": {
+                "browse": {
+                    "explain": "Naviga su una pagina Internet esterna (dal tuo browser!)",
+                    "title": "Naviga"
+                },
+                "explain": "Apre la finestra di questa $t(nav.menu.legend.title)",
                 "title": "Legenda"
             },
             "settings": {
+                "explain": "Apre la finestra delle $t(nav.menu.settings.title)",
                 "language": "Lingua",
                 "theme": "Scambia tema chiaro/scuro",
                 "title": "Impostazioni"
@@ -235,6 +264,28 @@
             "obstacle": "Ostacolo",
             "step": "Esperimento",
             "learnt": "Appreso"
+        },
+        "legend": {
+            "calendar": {
+                "explain": "Apri la finestra del $t(pdsa.legend.calendar.title)",
+                "title": "Calendario"
+            },
+            "delete": {
+                "explain": "Cancella il PDSA del giorno corrente",
+                "title": "Cancella"
+            },
+            "empty": {
+                "explain": "Svuota il campo PDSA selezionato",
+                "title": "Svuota"
+            },
+            "save": {
+                "explain": "Salva il PDSA del giorno corrente",
+                "title": "Salva"
+            },
+            "today": {
+                "explain": "Vai al PDSA di $t(calendar.today)",
+                "title": "$t(calendar.today)"
+            }
         },
         "q1": "Qual è la condizione obiettivo?",
         "q2": "Qual è la condizione attuale ora?",

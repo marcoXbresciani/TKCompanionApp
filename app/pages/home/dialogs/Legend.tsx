@@ -32,23 +32,94 @@ const Legend: React.FC = () => {
       <ScrollView>
         <Dialog.Content>
           <List.Accordion title={i18n.t('nav.home')}>
-            <List.Item left={props => <List.Icon {...props} icon='tune-variant' />} title={i18n.t('nav.menu.settings.title')} description='Open the Settings Dialog.' />
-            <List.Item left={props => <List.Icon {...props} icon='comment-quote-outline' />} title={i18n.t('nav.menu.contact.title')} description='Open the Feedback Dialog.' />
-            <List.Item left={props => <List.Icon {...props} icon='copyleft' />} title={i18n.t('nav.menu.copyleft.title')} description='Open the Copyleft Dialog.' />
-            <List.Item left={props => <List.Icon {...props} icon='home-export-outline' />} title='Browse' description='Browse External Web Page.' />
-            <List.Item left={props => <List.Icon {...props} icon='information-variant' />} title={i18n.t('nav.menu.about.title')} description='Open the About Dialog.' />
+            <List.Item
+              left={props => <List.Icon {...props} icon='tune-variant' />}
+              title={i18n.t('nav.menu.settings.title')}
+              description={i18n.t('nav.menu.settings.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='help-box' />}
+              title={i18n.t('nav.menu.legend.title')}
+              description={i18n.t('nav.menu.legend.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='comment-quote-outline' />}
+              title={i18n.t('nav.menu.contact.title')}
+              description={i18n.t('nav.menu.contact.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='copyleft' />}
+              title={i18n.t('nav.menu.copyright.title')}
+              description={i18n.t('nav.menu.copyright.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='home-export-outline' />}
+              title={i18n.t('nav.menu.legend.browse.title')}
+              description={i18n.t('nav.menu.legend.browse.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='information-variant' />}
+              title={i18n.t('nav.menu.about.title')}
+              description={i18n.t('nav.menu.about.explain')}
+              descriptionNumberOfLines={3}
+            />
           </List.Accordion>
           <List.Accordion title={i18n.t('pdsa.title')}>
-            <List.Item left={props => <List.Icon {...props} icon='calendar-cursor' />} title={i18n.t('calendar.today')} description='Go to Today PDSA.' />
-            <List.Item left={props => <List.Icon {...props} icon='calendar-blank' />} title='Calendar' description='Open Calendar Dialog.' />
-            <List.Item left={props => <List.Icon {...props} icon='content-save-all' />} title='Save' description='Save Current Day PDSA.' />
-            <List.Item left={props => <List.Icon {...props} icon='trash-can-outline' />} title='Delete' description='Delete Current Day PDSA.' />
-            <List.Item left={props => <List.Icon {...props} icon='trash-can' />} title='Delete' description='Empty PDSA Entry Field.' />
+            <List.Item
+              left={props => <List.Icon {...props} icon='calendar-cursor' />}
+              title={i18n.t('pdsa.legend.today.title')}
+              description={i18n.t('pdsa.legend.today.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='calendar-blank' />}
+              title={i18n.t('pdsa.legend.calendar.title')}
+              description={i18n.t('pdsa.legend.calendar.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='content-save-all' />}
+              title={i18n.t('pdsa.legend.save.title')}
+              description={i18n.t('pdsa.legend.save.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='trash-can-outline' />}
+              title={i18n.t('pdsa.legend.delete.title')}
+              description={i18n.t('pdsa.legend.delete.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='trash-can' />}
+              title={i18n.t('pdsa.legend.empty.title')}
+              description={i18n.t('pdsa.legend.empty.explain')}
+              descriptionNumberOfLines={3}
+            />
           </List.Accordion>
           <List.Accordion title={i18n.t('docs.title')}>
-            <List.Item left={props => <List.Icon {...props} icon='page-next-outline' />} title='Read' description='Go to Document Page in App.' />
-            <List.Item left={props => <List.Icon {...props} icon='tray-arrow-down' />} title='Download' description='Download Content from Source Website.' />
-            <List.Item left={props => <List.Icon {...props} icon='home-export-outline' />} title='Browse' description='Browse External Web Page.' />
+            <List.Item
+              left={props => <List.Icon {...props} icon='page-next-outline' />}
+              title={i18n.t('docs.legend.read.title')}
+              description={i18n.t('docs.legend.read.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='tray-arrow-down' />}
+              title={i18n.t('docs.legend.download.title')}
+              description={i18n.t('docs.legend.download.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='home-export-outline' />}
+              title={i18n.t('docs.legend.browse.title')}
+              description={i18n.t('docs.legend.browse.explain')}
+              descriptionNumberOfLines={3}
+            />
           </List.Accordion>
         </Dialog.Content>
       </ScrollView>

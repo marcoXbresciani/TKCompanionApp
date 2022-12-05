@@ -168,6 +168,20 @@
             "tip": "[κατα]",
             "title": "Kata that Shit"
         },
+        "legend": {
+            "read": {
+                "explain": "Read a document inside the app",
+                "title": "Read"
+            },
+            "download": {
+                "explain": "Download the reference document from the Internet (with your browser!) ",
+                "title": "Download"
+            },
+            "browse": {
+                "explain": "$t(nav.menu.legend.browse.explain)",
+                "title": "$t(nav.menu.legend.browse.title)"
+            }
+        },
         "pattern": {
             "p1": "1. What are we trying to achieve?",
             "p2": "2. Where are we now?",
@@ -212,13 +226,27 @@
     "nav": {
         "home": "Home",
         "menu": {
-            "about": "About",
-            "contact": "Contact",
-            "copyright": "Copyright",
+            "about": {
+                "explain": "Open the $t(nav.menu.about.title) dialog window",
+                "title": "About"
+            },
+            "contact": {
+                "explain": "Open the $t(nav.menu.contact.title) dialog window",
+                "title": "Contact"
+            },
+            "copyright": {
+                "explain": "Open the $t(nav.menu.copyright.title) dialog window",
+                "title": "Copyright"
+            },
             "legend": {
+                "browse": {
+                    "explain": "Browse an external Internet page (with your browser!)",
+                    "title": "Browse"
+                },
                 "title": "Legend"
             },
             "settings": {
+                "explain": "Open the $t(nav.menu.settings.title) dialog window",
                 "language": "Language",
                 "theme": "Switch light/dark theme",
                 "title": "Settings"
@@ -235,6 +263,28 @@
             "obstacle": "Obstacle",
             "step": "Step",
             "learnt": "Learnt"
+        },
+        "legend": {
+            "calendar": {
+                "explain": "Open the $t(pdsa.legend.calendar.title) dialog window",
+                "title": "Calendar"
+            },
+            "delete": {
+                "explain": "Delete current day PDSA",
+                "title": "Delete"
+            },
+            "empty": {
+                "explain": "Empty current PDSA field",
+                "title": "Empty"
+            },
+            "save": {
+                "explain": "Save current day PDSA",
+                "title": "Save"
+            },
+            "today": {
+                "explain": "Go to $t(calendar.today) PDSA",
+                "title": "$t(calendar.today)"
+            }
         },
         "q1": "What is the Target Condition?",
         "q2": "What is the Actual Condition now?",

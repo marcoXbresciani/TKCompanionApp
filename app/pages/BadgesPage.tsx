@@ -32,7 +32,7 @@ import i18n from '../i18n/i18n'
 import styled from 'styled-components'
 import TkSnackbar from '../components/TkSnackbar'
 
-  const BadgesContent = styled(TkCardContent)`
+const BadgesContent = styled(TkCardContent)`
     flex-direction: row;
     flex-wrap: wrap;
   `

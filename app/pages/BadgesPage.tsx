@@ -32,17 +32,17 @@ import i18n from '../i18n/i18n'
 import styled from 'styled-components'
 import TkSnackbar from '../components/TkSnackbar'
 
+  const BadgesContent = styled(TkCardContent)`
+    flex-direction: row;
+    flex-wrap: wrap;
+  `
+
 const BadgesPage: React.FC = () => {
   const badges: Array<{ description: string, icon: string }> = i18n.t('badges.list', { returnObjects: true })
   const messages: string[] = i18n.t('badges.message', { returnObjects: true })
   const [visibleSnack, setVisibleSnack] = React.useState(false)
   const [snackMessage, setSnackMessage] = React.useState('')
   const earned: boolean[] = [true, true, true]
-
-  const BadgesContent = styled(TkCardContent)`
-    flex-direction: row;
-    flex-wrap: wrap;
-  `
 
   return (
     <>

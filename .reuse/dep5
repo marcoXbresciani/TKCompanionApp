@@ -23,6 +23,10 @@ Files: .idea/*
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
+Files: .idea/shelf/*
+Copyright: 2021-2022 Marco Bresciani
+License: GPL-3.0-or-later
+
 Files: .node_version
 Copyright: 2021-2022 Marco Bresciani
 License: FSFAP

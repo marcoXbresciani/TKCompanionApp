@@ -64,7 +64,7 @@ const TkNavigator: React.FunctionComponent = () => {
       navigationState={{ index, routes }}
       onIndexChange={setIndex}
       renderScene={renderScene}
-      sceneAnimationType='shifting'
+      shifting
     />
   )
 }

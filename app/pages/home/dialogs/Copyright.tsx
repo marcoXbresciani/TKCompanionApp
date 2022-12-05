@@ -88,18 +88,10 @@ const Copyright: React.FunctionComponent = () => {
             <SmallerText>GNU FreeFont</SmallerText>
             <ButtonsStrip>
               <IconButton
-                icon='copyleft'
-                onPress={() => {
-                  void Linking.openURL(
-                    'https://www.gnu.org/software/freefont/license.html'
-                  )
-                }}
-              />
-              <IconButton
                 icon='home-export-outline'
                 onPress={() => {
                   void Linking.openURL(
-                    'https://www.gnu.org/software/freefont/'
+                    'https://www.gnu.org/software/freefont/license.html'
                   )
                 }}
               />

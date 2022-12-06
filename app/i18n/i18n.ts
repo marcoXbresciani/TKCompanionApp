@@ -62,6 +62,7 @@ void i18n.init({
   cleanCode: true,
   compatibilityJSON: 'v3',
   debug: false,
+  initImmediate: false,
   interpolation: {
     escapeValue: false
   },

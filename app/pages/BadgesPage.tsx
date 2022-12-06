@@ -42,7 +42,7 @@ const BadgesPage: React.FC = () => {
   const messages: string[] = i18n.t('badges.message', { returnObjects: true })
   const [visibleSnack, setVisibleSnack] = React.useState(false)
   const [snackMessage, setSnackMessage] = React.useState('')
-  const earned: boolean[] = [true, true, true]
+  const earned: boolean[] = [false, true, true]
 
   return (
     <>
@@ -62,7 +62,7 @@ const BadgesPage: React.FC = () => {
                 return (
                   <IconButton
                     key={badge.icon}
-                    mode='contained-tonal' disabled={earned[index]} icon={badge.icon} onPress={() => {
+                    mode={earned[index] ? 'outlined' : 'contained-tonal'} disabled={earned[index]} icon={badge.icon} onPress={() => {
                       setSnackMessage(badge.description)
                       setVisibleSnack(true)
                     }}

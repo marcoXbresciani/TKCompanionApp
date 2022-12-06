@@ -13,7 +13,7 @@ SPDX-License-Identifier: FSFAP
 # Security Policy
 > In evaluating the impact of the security issues described below (if
 > any), please refer to the app analysis done by Exodus Privacy at
-> https://reports.exodus-privacy.eu.org/it/reports/312206/ and remember
+> https://reports.exodus-privacy.eu.org/en/reports/316354/ and remember
 > that **TKCompanionApp** has _neither_ network _nor_ files access.
 
 ## Known Security Issues

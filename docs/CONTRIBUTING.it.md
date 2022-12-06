@@ -101,14 +101,14 @@ Se sviluppi software e vuoi contribuire a migliorare l'app, anche in
 questo caso ogni contributo è ben accetto!
 
 Trova l'ultimo NodeJS LTS corrente
-([16.15.1](https://nodejs.org/download/release/latest-gallium/), al
-2022-06-08) per il tuo sistema.
+([18.12.1](https://nodejs.org/dist/latest-hydrogen/), al
+2022-12-06) per il tuo sistema.
 
 Prenditi il codice sorgente clonando il
 [repository](https://codeberg.org/marco.bresciani/TKCompanionApp).
 
 Quindi vai nella cartella principale del progetto ed esegui
-`npm install`.
+`npm install --force`.
 Dovresti vedere che tutte le dipendenze necessarie sono state scaricate
 e installate tramite il gestore di pacchetti NPM.
 

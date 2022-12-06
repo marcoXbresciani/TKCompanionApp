@@ -122,12 +122,18 @@ ora).
 Siediti, segui il menu, impara, esercitati e migliora.
 
 ### Schermate
-<img alt="5Q" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/5Q.png" sizes="50%"/>
-<img alt="Informazioni" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/about.png" sizes="50%"/>
-<img alt="Documenti" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/docs.png" sizes="50%"/>
-<img alt="Inizio" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/home.png" sizes="50%"/>
-<img alt="Diario PDSA" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/pdsa.png" sizes="50%"/>
-<img alt="Il codice Kata" src="fastlane/metadata/android/it-IT/images/phoneScreenshots/tkc.png" sizes="50%"/>
+* Inizio
+  ![Home](fastlane/metadata/android/it-IT/images/phoneScreenshots/home.png)
+* Informazioni
+  ![About](fastlane/metadata/android/it-IT/images/phoneScreenshots/about.png)
+* Diario PDSA
+  ![PDSA Journal](fastlane/metadata/android/it-IT/images/phoneScreenshots/pdsa.png)
+* Documenti
+  ![Documents](fastlane/metadata/android/it-IT/images/phoneScreenshots/docs.png)
+* 5Q
+  ![5Q](fastlane/metadata/android/it-IT/images/phoneScreenshots/5Q.png)
+* Il codice Code
+  ![The Kata Code](fastlane/metadata/android/it-IT/images/phoneScreenshots/tkc.png)
 
 ### Note sui font
 * Il font usato è [Free

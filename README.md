@@ -119,12 +119,18 @@ There are no games, no quizzes, no actions to take (yet).
 Just sit, follow the menu, learn, practice and improve.
 
 ### Screenshots
-<img alt="5Q" src="fastlane/metadata/android/en-US/images/phoneScreenshots/5Q.png" sizes="50%"/>
-<img alt="About" src="fastlane/metadata/android/en-US/images/phoneScreenshots/about.png" sizes="50%"/>
-<img alt="Documents" src="fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png" sizes="50%"/>
-<img alt="Home" src="fastlane/metadata/android/en-US/images/phoneScreenshots/home.png" sizes="50%"/>
-<img alt="PDSA Journal" src="fastlane/metadata/android/en-US/images/phoneScreenshots/pdsa.png" sizes="50%"/>
-<img alt="The Kata Code" src="fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png" sizes="50%"/>
+* Home Page
+  ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
+* About Dialog
+  ![About](fastlane/metadata/android/en-US/images/phoneScreenshots/about.png)
+* PDSA Journal Page
+  ![PDSA Journal](fastlane/metadata/android/en-US/images/phoneScreenshots/pdsa.png)
+* Documents Page
+  ![Documents](fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png)
+* 5Q Card
+  ![5Q](fastlane/metadata/android/en-US/images/phoneScreenshots/5Q.png)
+* The Kata Code
+  ![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png)
 
 ### Font Notes
 * Font used is [Free

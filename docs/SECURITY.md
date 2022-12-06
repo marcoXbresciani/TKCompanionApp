@@ -17,12 +17,46 @@ SPDX-License-Identifier: FSFAP
 > that **TKCompanionApp** has _neither_ network _nor_ files access.
 
 ## Known Security Issues
-* No known issues.
+* **node-fetch is vulnerable to Exposure of Sensitive Information to an
+  Unauthorized Actor** High
 
-For more information
-If you have any questions or comments about this advisory:
-* Open an issue in node-fetch
-* Contact one of the core maintainers.
+  **Upgrade node-fetch to fix 2 Dependabot alerts in package-lock.json**
+
+  Upgrade node-fetch to version 2.6.7 or later. For example:
+
+  ```
+  "dependencies": {
+    "node-fetch": ">=2.6.7"
+  }
+  ```
+
+  ```
+  "devDependencies": {
+    "node-fetch": ">=2.6.7"
+  }
+  ```
+* **decode-uri-component vulnerable to Denial of Service (DoS)** Low
+
+  Bump decode-uri-component from 0.2.0 to 0.2.2
+
+* **The `size` option isn't honored after following a redirect in
+  node-fetch** Low
+
+  **Upgrade node-fetch to fix 2 Dependabot alerts in package-lock.json**
+
+  Upgrade node-fetch to version 2.6.7 or later. For example:
+
+  ```
+  "dependencies": {
+    "node-fetch": ">=2.6.7"
+  }
+  ```
+
+  ```
+  "devDependencies": {
+    "node-fetch": ">=2.6.7"
+  }
+  ```
 
 ## Supported Versions
 Generally the latest version is the only one supported with updates

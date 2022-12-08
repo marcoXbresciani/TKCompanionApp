@@ -38,11 +38,6 @@ page or not.
 15. ~~Switching language make calendar crashes~~
 16. ~~Make app language and theme depending on system settings, implement Material You~~
 17. ~~Wrong dark/light mode and default language~~
-18. [Introduce Material You](https://codeberg.org/marco.bresciani/TKCompanionApp/issues/18)
-
-    Introduce Material You design for most modern systems.
-
-    Originally posted by [@the4anoni](https://github.com/the4anoni) in
-    [#16 (comment)](https://codeberg.org/marco.bresciani/TKCompanionApp/issues/16#issuecomment-687985)
+18. ~~Introduce Material You~~
 19. ~~Version 4.0.0 crashes~~
 20. ~~Version 4.0.1 crashes~~

@@ -20,14 +20,7 @@ page or not.
 3. ~~Remove offending libs for F-Droid full FOSS release~~
 4. ~~appID confusion~~
 5. ~~I18N not fully completed~~
-6. [Switching language through settings does not switch bottom navigation bar](https://codeberg.org/marco.bresciani/TKCompanionApp/issues/6)
-
-   When switching languages through the Info -> Language area, the
-   bottom navigation bar remains in the original language.
-   See 5Q Card screenshot in README.md.
-
-   Found in v0.6.0.
-   Since v0.5.0.
+6. ~~Switching language through settings does not switch bottom navigation bar~~
 7. ~~App crashes on Android 11 (Moto G31) when opening the newly added
    puzzle~~
 8. ~~Download links error - forbidden~~

@@ -29,10 +29,20 @@ This file is offered as-is, without any warranty.
 ### Added
 * Welcome/splash dialog on first time application open.
   Same content of new "Contact" menu entry.
+* Daily reminder for remembering to add the PDSA.
+* Reworked navigation to avoid page caching.
+* App usage badges (Badges page).
 ### Changed
 ### Removed
 ### Fixed
 ### Security
+
+## [6.1.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.1.0)
+### Added
+* Draft example for Badges page.
+### Changed
+* Small layout and graphical reviews.
+* Rework for bug #6.
 
 ## [6.0.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.0.0)
 ### Added

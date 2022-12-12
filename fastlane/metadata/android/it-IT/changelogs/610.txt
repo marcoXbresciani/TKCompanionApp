@@ -1,0 +1,2 @@
+Introduce un esempio grezzo di pagina dei Premi.
+Risolve il bug #6.

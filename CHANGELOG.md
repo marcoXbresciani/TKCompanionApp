@@ -43,8 +43,6 @@ This file is offered as-is, without any warranty.
 ### Changed
 * Small layout and graphical reviews.
 * Rework for bug #6.
-### Fixed
-* Bug #6 considered fixed.
 
 ## [6.0.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.0.0)
 ### Added

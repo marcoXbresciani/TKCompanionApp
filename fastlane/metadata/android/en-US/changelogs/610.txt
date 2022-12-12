@@ -1,2 +1,1 @@
 Introduce draft sample for Badges page.
-Fix bug #6.

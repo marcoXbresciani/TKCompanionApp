@@ -20,6 +20,6 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import pdsaEntry from '../pdsa/PdsaEntry'
+import PdsaEntry from '../pdsa/PdsaEntry'
 
-export interface Journal {[date: string]: pdsaEntry}
+export interface Journal {[date: string]: PdsaEntry}

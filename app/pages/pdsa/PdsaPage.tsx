@@ -82,11 +82,7 @@ const PdsaPage: React.FC = () => {
         })
         markedDates[day] = { ...markedDates[day], ...selected }
 
-        if (journal[day] === undefined) {
-          setPdsaEntry(new PdsaEntry())
-        } else {
-          setPdsaEntry(journal[day])
-        }
+        setPdsaEntry(journal[day] ?? new PdsaEntry())
       }
     }).finally(() => setDisabledSave(true))
   }, [day])

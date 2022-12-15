@@ -32,6 +32,7 @@ This file is offered as-is, without any warranty.
 * Daily reminder for remembering to add the PDSA.
 * Reworked navigation to avoid page caching.
 * App usage badges (Badges page).
+* Introduce error message when saving PDSA entry.
 ### Changed
 ### Removed
 ### Fixed

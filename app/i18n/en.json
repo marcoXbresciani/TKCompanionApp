@@ -294,6 +294,7 @@
         "snack": {
             "day": {
                 "deleted": "Deleted {{day}}",
+                "error": "Error saving {{day}}",
                 "saved": "Saved {{day}}"
             },
             "field": {

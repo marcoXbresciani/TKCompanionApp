@@ -115,7 +115,6 @@ const PdsaPage: React.FC = () => {
           icon='content-save-all'
           disabled={disabledSave}
           onPress={() => {
-            setSnackMessage(`${i18n.t('pdsa.snack.day.saved', { day })}`)
             void journalStorage.read('PDSA').then(value => {
               let journal: Journal = {}
 
@@ -124,9 +123,14 @@ const PdsaPage: React.FC = () => {
               }
               journal[day] = pdsaEntry
               markedDates[day] = markedSelectedDay
-              void journalStorage.write('PDSA', journal)
-              setDisabledSave(true)
-              setVisibleSnack(true)
+              journalStorage.write('PDSA', journal).then(() => {
+                setSnackMessage(`${i18n.t('pdsa.snack.day.saved', { day })}`)
+                setDisabledSave(true)
+              }).catch(() => {
+                setSnackMessage(`${i18n.t('pdsa.snack.day.error', { day })}`)
+              }).finally(() => {
+                setVisibleSnack(true)
+              })
             })
           }}
         />

@@ -294,6 +294,7 @@
         "snack": {
             "day": {
                 "deleted": "{{day}} cancellato",
+                "error": "Errore salvataggio {{day}}",
                 "saved": "{{day}} salvato"
             },
             "field": {

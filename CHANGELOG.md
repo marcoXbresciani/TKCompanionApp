@@ -35,6 +35,7 @@ This file is offered as-is, without any warranty.
 * Introduce error message when saving PDSA entry.
 ### Changed
 * Simplify language settings icon(s).
+* Wrap Home Page in PageContainer
 ### Removed
 ### Fixed
 ### Security

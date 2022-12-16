@@ -32,6 +32,7 @@ import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import TkText from '../../components/TkText'
 import Legend from './dialogs/Legend'
 import TkDialog from '../../components/wip/TkDialog'
+import PageContainer from '../PageContainer'
 
 const HomePage: React.FunctionComponent = () => {
   const [visibleAbout, setVisibleAbout] = React.useState(false)
@@ -115,13 +116,15 @@ const HomePage: React.FunctionComponent = () => {
         />
       </Appbar.Header>
 
-      <TkCard>
-        <Card.Cover source={require('../../assets/images/featureGraphic.png')} />
-        <TkCardTitle title={APP_NAME} subtitle={APP_VERSION} />
-        <Card.Content>
-          <TkText>{`${i18n.t('app.short')}`}</TkText>
-        </Card.Content>
-      </TkCard>
+      <PageContainer>
+        <TkCard>
+          <Card.Cover source={require('../../assets/images/featureGraphic.png')} />
+          <TkCardTitle title={APP_NAME} subtitle={APP_VERSION} />
+          <Card.Content>
+            <TkText>{`${i18n.t('app.short')}`}</TkText>
+          </Card.Content>
+        </TkCard>
+      </PageContainer>
     </>
   )
 }

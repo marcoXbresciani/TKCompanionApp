@@ -34,6 +34,7 @@ This file is offered as-is, without any warranty.
 * App usage badges (Badges page).
 * Introduce error message when saving PDSA entry.
 ### Changed
+* Simplify language settings icon(s).
 ### Removed
 ### Fixed
 ### Security

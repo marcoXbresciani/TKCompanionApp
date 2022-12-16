@@ -65,13 +65,13 @@ const Settings: React.FunctionComponent = () => {
           </RowView>
           <List.AccordionGroup>
             <List.Accordion
+              left={(props) => (
+                <List.Icon {...props} icon='translate' />
+              )}
               id={1}
               title={`${i18n.t('nav.menu.settings.language')}`}
             >
               <List.Item
-                left={(props) => (
-                  <List.Icon {...props} icon='translate' />
-                )}
                 title='Deutsch'
                 onPress={() => {
                   void i18n.changeLanguage('de').then()
@@ -82,9 +82,6 @@ const Settings: React.FunctionComponent = () => {
                 }}
               />
               <List.Item
-                left={(props) => (
-                  <List.Icon {...props} icon='translate' />
-                )}
                 title='English'
                 onPress={() => {
                   void i18n.changeLanguage('en').then()
@@ -95,9 +92,6 @@ const Settings: React.FunctionComponent = () => {
                 }}
               />
               <List.Item
-                left={(props) => (
-                  <List.Icon {...props} icon='translate' />
-                )}
                 title='Français'
                 onPress={() => {
                   void i18n.changeLanguage('fr').then()
@@ -108,9 +102,6 @@ const Settings: React.FunctionComponent = () => {
                 }}
               />
               <List.Item
-                left={(props) => (
-                  <List.Icon {...props} icon='translate' />
-                )}
                 title='Italiano'
                 onPress={() => {
                   void i18n.changeLanguage('it-IT').then()
@@ -124,9 +115,6 @@ const Settings: React.FunctionComponent = () => {
                 }}
               />
               <List.Item
-                left={(props) => (
-                  <List.Icon {...props} icon='translate' />
-                )}
                 title='Norsk (Bokmål)'
                 onPress={() => {
                   void i18n.changeLanguage('nb-NO').then()

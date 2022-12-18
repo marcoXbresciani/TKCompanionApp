@@ -243,7 +243,6 @@
                     "explain": "Naviga su una pagina Internet esterna (dal tuo browser!)",
                     "title": "Naviga"
                 },
-                "explain": "Apre la finestra di questa $t(nav.menu.legend.title)",
                 "title": "Legenda"
             },
             "settings": {

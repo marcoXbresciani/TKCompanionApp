@@ -23,7 +23,7 @@
 import TkStorage from './TkStorage'
 import SimpleKey from './SimpleKey'
 import SettingsStorage from './settings/SettingsStorage'
-import JournalStorage from './PdsaJournal/JournalStorage'
+import JournalStorage from './journal/JournalStorage'
 
 class StorageFactory {
   private static instance: StorageFactory

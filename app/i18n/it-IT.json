@@ -213,7 +213,7 @@
     },
     "home": {
         "feedback": {
-            "after": "Puoi anche visitare le pagine dell'app, indicate nel menu $t(nav.menu.about).",
+            "after": "Puoi anche visitare le pagine dell'app, indicate nel menu $t(nav.menu.about.title).",
             "before": "Benvenuti in TkCompanionApp, e grazie di essere qui.",
             "messages": [
                 "Quest'app non si collega a Internet né ha strumenti di tracciamento, quindi non posso sapere se ti piace oppure no, né come usi (o vorresti usare) l'app.",
@@ -243,6 +243,7 @@
                     "explain": "Naviga su una pagina Internet esterna (dal tuo browser!)",
                     "title": "Naviga"
                 },
+                "explain": "Apre la finestra di questa $t(nav.menu.legend.title)",
                 "title": "Legenda"
             },
             "settings": {

@@ -213,7 +213,7 @@
     },
     "home": {
         "feedback": {
-            "after": "You can also visit app pages listed in $t(nav.menu.about).",
+            "after": "You can also visit app pages listed in $t(nav.menu.about.title).",
             "before": "Welcome to TKCompanionApp, and thank you for being here.",
             "messages": [
                 "This app has neither Internet connection nor tracking tools, so I cannot know if you like it or not, or how you (want to) use it.",

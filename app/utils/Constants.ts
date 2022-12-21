@@ -29,7 +29,7 @@ export const APP_VERSION = DeviceInfo.getVersion()
 export const FIRST_INSTALL = DeviceInfo.getFirstInstallTimeSync()
 export const LATEST_UPDATE = DeviceInfo.getLastUpdateTimeSync()
 
-export const PreferencesContext = React.createContext({
+export const ThemeContext = React.createContext({
   toggleTheme: () => {},
   isThemeDark: isDark()
 })

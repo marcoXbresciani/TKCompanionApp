@@ -28,7 +28,7 @@ import StorageFactory from './app/utils/storage/StorageFactory'
 import {
   AllowedSettings
 } from './app/utils/storage/settings/AllowedSettings'
-import { PreferencesContext } from './app/utils/Constants'
+import { ThemeContext } from './app/utils/Constants'
 import TkNavigator from './app/components/TkNavigator'
 import i18n from './app/i18n/i18n'
 import { tkDarkTheme } from './app/config/tkDarkTheme'
@@ -67,7 +67,7 @@ const App: React.FunctionComponent = () => {
     })
 
   return (
-    <PreferencesContext.Provider value={preferences}>
+    <ThemeContext.Provider value={preferences}>
       <PaperProvider
         settings={{
           icon: (props) => <MaterialCommunityIcons {...props} />
@@ -76,7 +76,7 @@ const App: React.FunctionComponent = () => {
       >
         <TkNavigator />
       </PaperProvider>
-    </PreferencesContext.Provider>
+    </ThemeContext.Provider>
   )
 }
 

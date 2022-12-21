@@ -26,7 +26,7 @@ import { ScrollView, View } from 'react-native'
 import styled from 'styled-components'
 import StorageFactory from '../../../utils/storage/StorageFactory'
 import { AllowedSettings } from '../../../utils/storage/settings/AllowedSettings'
-import { PreferencesContext } from '../../../utils/Constants'
+import { ThemeContext } from '../../../utils/Constants'
 import i18n from '../../../i18n/i18n'
 import { LocaleConfig } from 'react-native-calendars/src'
 import TkText from '../../../components/TkText'
@@ -40,7 +40,7 @@ const RowView = styled(View)`
 const Settings: React.FunctionComponent = () => {
   const storage = StorageFactory.getInstance().getSettingsStorage()
   const { toggleTheme, isThemeDark } =
-        React.useContext(PreferencesContext)
+        React.useContext(ThemeContext)
 
   return (
     <>

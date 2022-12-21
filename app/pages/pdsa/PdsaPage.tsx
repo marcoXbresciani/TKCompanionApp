@@ -23,7 +23,7 @@
 import * as React from 'react'
 import { useEffect } from 'react'
 import { Appbar, TextInput, useTheme } from 'react-native-paper'
-import PdsaEntry from '../../utils/storage/pdsa/PdsaEntry'
+import PdsaEntry from '../../utils/storage/journal/PdsaEntry'
 import StorageFactory from '../../utils/storage/StorageFactory'
 import i18n from '../../i18n/i18n'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'

@@ -20,6 +20,33 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import PdsaEntry from './PdsaEntry'
+import { StorableValue } from '../StorableValue'
 
-export interface Journal {[date: string]: PdsaEntry}
+class PdsaEntry implements StorableValue {
+  target: string
+  actual: string
+  obstacle: string
+  step: string
+  learnt: string
+
+  constructor ()
+  constructor (
+    target?: string,
+    actual?: string,
+    obstacle?: string,
+    step?: string,
+    learnt?: string
+  ) {
+    this.target = target ?? ''
+    this.actual = actual ?? ''
+    this.obstacle = obstacle ?? ''
+    this.step = step ?? ''
+    this.learnt = learnt ?? ''
+  }
+
+  public toString = (): string => {
+    return JSON.stringify(this)
+  }
+}
+
+export default PdsaEntry

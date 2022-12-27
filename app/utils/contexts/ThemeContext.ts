@@ -22,23 +22,6 @@
  */
 import * as React from 'react'
 import { isDark } from '../Functions'
-import { tkDarkTheme } from '../../config/tkDarkTheme'
-import { tkLightTheme } from '../../config/tkLightTheme'
-
-export const [isThemeDark, setIsThemeDark] = React.useState(isDark())
-export const theme = isThemeDark ? tkDarkTheme : tkLightTheme
-
-const toggleTheme = React.useCallback(() => {
-  return setIsThemeDark(!isThemeDark)
-}, [isThemeDark])
-
-export const themePreference = React.useMemo(
-  () => ({
-    toggleTheme,
-    isThemeDark
-  }),
-  [toggleTheme, isThemeDark]
-)
 
 export const ThemeContext = React.createContext({
   toggleTheme: () => {},

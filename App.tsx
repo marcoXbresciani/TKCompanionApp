@@ -22,23 +22,34 @@
  */
 import * as React from 'react'
 import { Provider as PaperProvider } from 'react-native-paper'
-import MaterialCommunityIcons
-  from 'react-native-vector-icons/MaterialCommunityIcons'
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import { isDark } from './app/utils/Functions'
 import StorageFactory from './app/utils/storage/StorageFactory'
 import {
   AllowedSettings
 } from './app/utils/storage/settings/AllowedSettings'
+import { ThemeContext } from './app/utils/Constants'
 import TkNavigator from './app/components/TkNavigator'
 import i18n from './app/i18n/i18n'
-import {
-  isThemeDark,
-  setIsThemeDark,
-  theme,
-  ThemeContext,
-  themePreference
-} from './app/utils/contexts/ThemeContext'
+import { tkDarkTheme } from './app/config/tkDarkTheme'
+import { tkLightTheme } from './app/config/tkLightTheme'
 
 const App: React.FunctionComponent = () => {
+  const [isThemeDark, setIsThemeDark] = React.useState(isDark())
+  const theme = isThemeDark ? tkDarkTheme : tkLightTheme
+
+  const toggleTheme = React.useCallback(() => {
+    return setIsThemeDark(!isThemeDark)
+  }, [isThemeDark])
+
+  const preferences = React.useMemo(
+    () => ({
+      toggleTheme,
+      isThemeDark
+    }),
+    [toggleTheme, isThemeDark]
+  )
+
   const settingsStorage = StorageFactory.getInstance().getSettingsStorage()
 
   void settingsStorage
@@ -56,7 +67,7 @@ const App: React.FunctionComponent = () => {
     })
 
   return (
-    <ThemeContext.Provider value={themePreference}>
+    <ThemeContext.Provider value={preferences}>
       <PaperProvider
         settings={{
           icon: (props) => <MaterialCommunityIcons {...props} />

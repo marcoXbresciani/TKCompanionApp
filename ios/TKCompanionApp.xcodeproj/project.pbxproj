@@ -49,7 +49,6 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		205B0E2A9AD64EE086754BDB /* FreeSans.ttf */ = {isa = PBXFileReference; name = "FreeSans.ttf"; path = "../app/assets/fonts/FreeSans.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		2298F19C2EEB4BA1B7446625 /* FreeSansBold.ttf */ = {isa = PBXFileReference; name = "FreeSansBold.ttf"; path = "../app/assets/fonts/FreeSansBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3DE3AA6F8B3648898E9FBFD1 /* featureGraphic.png */ = {isa = PBXFileReference; name = "featureGraphic.png"; path = "../app/assets/images/featureGraphic.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

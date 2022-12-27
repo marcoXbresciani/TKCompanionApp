@@ -21,18 +21,15 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import { Appbar, Card, Dialog, Portal } from 'react-native-paper'
+import { Appbar, Dialog, Portal } from 'react-native-paper'
 import Settings from './dialogs/Settings'
 import Copyright from './dialogs/Copyright'
 import About from './dialogs/About'
 import i18n from '../../i18n/i18n'
-import { APP_NAME, APP_VERSION } from '../../utils/Constants'
-import TkCard from '../../components/tkcard/TkCard'
-import TkCardTitle from '../../components/tkcard/TkCardTitle'
-import TkText from '../../components/TkText'
 import Legend from './dialogs/Legend'
 import TkDialog from '../../components/wip/TkDialog'
 import PageContainer from '../PageContainer'
+import FiveQ from '../docs/5qcard/FiveQ'
 
 const HomePage: React.FunctionComponent = () => {
   const [visibleAbout, setVisibleAbout] = React.useState(false)
@@ -117,13 +114,7 @@ const HomePage: React.FunctionComponent = () => {
       </Appbar.Header>
 
       <PageContainer>
-        <TkCard>
-          <Card.Cover source={require('../../assets/images/featureGraphic.png')} />
-          <TkCardTitle title={APP_NAME} subtitle={APP_VERSION} />
-          <Card.Content>
-            <TkText>{`${i18n.t('app.short')}`}</TkText>
-          </Card.Content>
-        </TkCard>
+        <FiveQ />
       </PageContainer>
     </>
   )

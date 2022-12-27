@@ -59,10 +59,6 @@ Files: app/assets/fonts/FreeSans*.ttf
 Copyright: Primož Peterlin, Steve White
 License: GPL-3.0-or-later
 
-Files: app/assets/images/featureGraphic.png
-Copyright: Marco Bresciani
-License: CC-BY-SA-4.0
-
 Files: app/i18n/de.json
 Copyright: 2022 Amy Dora Lang (@amydoralang)
 License: GPL-3.0-or-later

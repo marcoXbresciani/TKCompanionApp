@@ -38,6 +38,7 @@ This file is offered as-is, without any warranty.
 * Wrap Home Page in PageContainer
 ### Removed
 ### Fixed
+* [#23 Restore 5Q card in Home Page/Screen](https://codeberg.org/marco.bresciani/TKCompanionApp/issues/23)
 ### Security
 
 ## [6.1.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.1.0)

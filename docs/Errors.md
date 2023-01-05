@@ -48,3 +48,6 @@ page or not.
 18. ~~Introduce Material You~~
 19. ~~Version 4.0.0 crashes~~
 20. ~~Version 4.0.1 crashes~~
+21. ~~Bump node-fetch from 1.7.3 to 2.6.7~~
+22. ~~Complete translations for >5.x versions~~
+23. ~~Restore 5Q card in Home Page/Screen~~

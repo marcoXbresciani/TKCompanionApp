@@ -16,7 +16,7 @@ SPDX-License-Identifier: FSFAP
 > files access.
 >
 > See also the latest app analysis done by Exodus Privacy at
-> https://reports.exodus-privacy.eu.org/en/reports/316354/.
+> https://reports.exodus-privacy.eu.org/it/reports/322713/.
 
 ## Known Security Issues
 * **node-fetch is vulnerable to Exposure of Sensitive Information to an

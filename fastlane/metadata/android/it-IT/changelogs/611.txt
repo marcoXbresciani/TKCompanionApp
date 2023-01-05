@@ -1,0 +1,5 @@
+Aggiunge un messaggio di errore durante il salvataggio del PDSA.
+Semplifica le icone della scelta della lingua.
+Ingloba la pagina principale in un PageContainer.
+Risolve il problema #23 ripristinando la carta delle 5 domande nella
+pagina iniziale.

@@ -28,7 +28,7 @@ There is no need to use files for this purpose.
 
 ## Status
 Accepted.
-Deprecates [12 Async Storage](012-async-storage.md).
+Deprecates [9 Encrypted Storage](009-encrypted-storage.md).
 
 ## Consequences
 If users ask for more safety, there'll be the need to password-protect

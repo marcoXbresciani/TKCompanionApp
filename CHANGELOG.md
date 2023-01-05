@@ -1,12 +1,12 @@
 <!--
-© 2021-2022 Marco Bresciani
+© 2021-2023 Marco Bresciani
 
 Copying and distribution of this file, with or without modification, are
 permitted in any medium without royalty provided the copyright notice
 and this notice are preserved.
 This file is offered as-is, without any warranty.
 
-SPDX-FileCopyrightText: 2021-2022 Marco Bresciani
+SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
 
 SPDX-License-Identifier: FSFAP
 -->
@@ -17,7 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ```text
-© 2021-2022 Marco Bresciani
+© 2021-2023 Marco Bresciani
 
 Copying and distribution of this file, with or without modification, are
 permitted in any medium without royalty provided the copyright notice
@@ -37,7 +37,7 @@ This file is offered as-is, without any warranty.
 ### Fixed
 ### Security
 
-## [6.1.1](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.1.1)
+## [6.1.1](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.1.1) - 2023-01-05
 ### Added
 * Introduce error message when saving PDSA entry.
 ### Changed
@@ -53,7 +53,7 @@ This file is offered as-is, without any warranty.
 * Small layout and graphical reviews.
 * Rework for bug #6.
 
-## [6.0.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.0.0)
+## [6.0.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.0.0) - 2022-12-12
 ### Added
 * New [ADR-12](docs/architecture/decisions/012-async-storage.md)
   introduced, to deprecate and cancel

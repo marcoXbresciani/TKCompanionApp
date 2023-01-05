@@ -28,7 +28,7 @@ import StorageFactory from './app/utils/storage/StorageFactory'
 import {
   AllowedSettings
 } from './app/utils/storage/settings/AllowedSettings'
-import { ThemeContext } from './app/utils/Constants'
+import { ThemeContext } from './app/utils/contexts/ThemeContext'
 import TkNavigator from './app/components/TkNavigator'
 import i18n from './app/i18n/i18n'
 import { tkDarkTheme } from './app/config/tkDarkTheme'

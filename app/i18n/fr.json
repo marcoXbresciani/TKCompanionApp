@@ -132,7 +132,6 @@
     "nav": {
         "home": "Accueil",
         "menu": {
-            "copyright": "Droit d'auteur",
             "settings": {
                 "language": "Langue",
                 "title": "Paramètres"

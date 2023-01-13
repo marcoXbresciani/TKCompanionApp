@@ -4,7 +4,7 @@ Upstream-Contact: Marco Bresciani <marcobresciani_1974@libero.it>
 Source:
 
 Files: .bundle/config
-Copyright: 2022 Marco Bresciani
+Copyright: 2022-2023 Marco Bresciani
 License: FSFAP
 
 Files: .github/FUNDING.yml
@@ -20,27 +20,23 @@ Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
 Files: .idea/*
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: FSFAP
 
 Files: .idea/shelf/*
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: GPL-3.0-or-later
 
-Files: .node_version
-Copyright: 2021-2022 Marco Bresciani
-License: FSFAP
-
 Files: __tests__/*
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: android/*
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: android/app/*
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: android/app/src/debug/java/name/bresciani/marco/tkcompanionapp/ReactNativeFlipper.java
@@ -64,7 +60,7 @@ Copyright: 2022 Amy Dora Lang (@amydoralang)
 License: GPL-3.0-or-later
 
 Files: app/i18n/en.json
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: app/i18n/fr.json
@@ -72,7 +68,7 @@ Copyright: 2022 J. Lavoie (@Edanas)
 License: GPL-3.0-or-later
 
 Files: app/i18n/it-IT.json
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: app/i18n/nb-NO.json
@@ -80,7 +76,7 @@ Copyright: 2022 Allan Nordhøy (@comradekingu)
 License: GPL-3.0-or-later
 
 Files: fastlane/*
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: FSFAP
 
 Files: fastlane/metadata/android/*/images/featureGraphic.png
@@ -88,15 +84,15 @@ Copyright: 2007 Marco Bresciani
 License: CC-BY-SA-4.0
 
 Files: ios/*
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: FSFAP
 
 Files: ios/*.h
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: ios/*.mm
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: GPL-3.0-or-later
 
 Files: .buckconfig
@@ -140,15 +136,15 @@ Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
 Files: name.bresciani.marco.tkcompanionapp.yml
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: FSFAP
 
 Files: package.json
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: FSFAP
 
 Files: package-lock.json
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: FSFAP
 
 Files: react-native.config.js
@@ -156,9 +152,9 @@ Copyright: 2021-2022 Marco Bresciani
 License: FSFAP
 
 Files: TKCompanionApp.iml
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: FSFAP
 
 Files: tsconfig.json
-Copyright: 2021-2022 Marco Bresciani
+Copyright: 2021-2023 Marco Bresciani
 License: FSFAP

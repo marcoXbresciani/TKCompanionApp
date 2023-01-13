@@ -199,7 +199,7 @@ See `LICENSES` folder or `COPYING` file, for the whole licences text.
 Overall project license, in brief:
 [![GPL logo](https://www.gnu.org/graphics/gplv3-or-later.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 ```text
-© 2021-2022 Marco Bresciani
+© 2021-2023 Marco Bresciani
 This file is part of TKCompanionApp.
 
 TKCompanionApp is free software: you can redistribute it and/or modify
@@ -219,7 +219,7 @@ with TKCompanionApp. If not, see <https://www.gnu.org/licenses/>.
 This document license, in brief:
 [![FSFAP](https://img.shields.io/badge/license-FSFAP-orange?logo=gnu&style=plastic)](https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html)
 ```text
-© 2021-2022 Marco Bresciani
+© 2021-2023 Marco Bresciani
 
 Copying and distribution of this file, with or without modification,
 are permitted in any medium without royalty provided the copyright

@@ -39,23 +39,26 @@ Contiene la carta Coaching Kata 5Q, e (forse) altre cose e informazioni.
 Contenuti da migliorare e aggiornare di volta in volta.
 
 ## Sommario
+
 1. [Sicurezza](#sicurezza)
 1. [Contesto](#contesto)
 1. [Installazione](#installazione)
 1. [Uso](#uso)
-   1. [Schermate](#schermate)
-   1. [Note sui font](#note-sui-font)
+    1. [Schermate](#schermate)
+    1. [Note sui font](#note-sui-font)
 1. [Manutentori](#manutentori)
-   1. [Traduzioni](#traduzioni)
+    1. [Traduzioni](#traduzioni)
 1. [Ringraziamenti](#ringraziamenti)
 1. [Contribuire](#contribuire)
 1. [Licenza](#licenza)
 
 ## Sicurezza
+
 Vedere il file [SECURITY.md](/docs/SECURITY.md) per note e aggiornamenti
 riguardanti problemi di sicurezza.
 
 ## Contesto
+
 Dal sito web
 [the Toyota Kata website](http://www-personal.umich.edu/~mrother/Homepage.html):
 > Toyota Kata is a way for managers and educators to initiate and coach
@@ -77,6 +80,7 @@ Dal sito web
 > guidance of your coach.
 
 ## Installazione
+
 Questa app è creata usando React Native per fare in modo che l'app per
 Android e iOS sia generata più facilmente dallo stesso codice sorgente.
 
@@ -116,12 +120,14 @@ Si può dare anche un'occhiata a tutte le altre meravigliose app FOSS che
 si trovano in F-Droid.
 
 ## Uso
+
 Beh, è facile: installa l'app, apri l'app, fai clic su alcuni pulsanti.
 Non ci sono giochi, nessun quiz, nessuna azione da intraprendere (per
 ora).
 Siediti, segui il menu, impara, esercitati e migliora.
 
 ### Schermate
+
 * Inizio
   ![Home](fastlane/metadata/android/it-IT/images/phoneScreenshots/home.png)
 * Informazioni
@@ -136,15 +142,18 @@ Siediti, segui il menu, impara, esercitati e migliora.
   ![The Kata Code](fastlane/metadata/android/it-IT/images/phoneScreenshots/tkc.png)
 
 ### Note sui font
+
 * Il font usato è [Free
   Sans](https://www.gnu.org/software/freefont/index.html)
 
 ## Manutentori
+
 L'app è stata iniziata da Marco Bresciani ed è attualmente mantenuta da
 Marco Bresciani.
 Lo stesso per questo documento.
 
 È possibile contattare l'autore tramite:
+
 * [Delta Chat](https://delta.chat/en/) con l'indirizzo di posta
   elettronica [marco.530@outlook.it](mailto:marco.530@outlook.it).
 * Come <a rel="me" href="https://fosstodon.org/@AAMfP">@AAMfP</a>, su
@@ -152,8 +161,10 @@ Lo stesso per questo documento.
   [Mastodon](https://joinmastodon.org/).
 
 ### Traduzioni
+
 Collaboratori presenti (e passati):
 [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-grey.png)](https://hosted.weblate.org/engage/tkcompanionapp/)
+
 * [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/de/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/de/)
   [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
   per la traduzione in tedesco.
@@ -171,7 +182,9 @@ Collaboratori presenti (e passati):
   la traduzione in norvegese Bokmål.
 
 ## Ringraziamenti
+
 Grazie a (in ordine di apparizione):
+
 * [Marco Montalbano (@marcomontalbano)](https://github.com/marconontalbano)
   perché senza i suoi insegnamenti quest'app non sarebbe mai esistita.
 * [@licaon-kter](https://github.com/licaon-kter) per il supporto nella
@@ -180,6 +193,7 @@ Grazie a (in ordine di apparizione):
   per l'icona dell'app.
 
 ## Contribuire
+
 Cfr. [CONTRIBUTING.it.md](/docs/CONTRIBUTING.it.md).
 
 Per contribuire colle traduzioni nella tua lingua madre, puoi vedere
@@ -194,11 +208,13 @@ piattaforma scelta per gestire le traduzioni multi-lingua.
 > <img alt="sostenitori su liberapay" src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
 
 ## Licenza
+
 Vedere la cartella `LICENSES` o il file `COPYING` per i testi integrali
 delle licenze.
 
 Licenza generale del progetto, in breve:
 [![GPL logo](https://www.gnu.org/graphics/gplv3-or-later.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
+
 ```text
 © 2021-2023 Marco Bresciani
 This file is part of TKCompanionApp.
@@ -219,6 +235,7 @@ with TKCompanionApp. If not, see <https://www.gnu.org/licenses/>.
 
 Licenza di questo documento, in breve:
 [![FSFAP](https://img.shields.io/badge/license-FSFAP-orange?logo=gnu&style=plastic)](https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html)
+
 ```text
 © 2021-2023 Marco Bresciani
 
@@ -228,7 +245,7 @@ notice and this notice are preserved.
 This file is offered as-is, without any warranty.
 ```
 
-> [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
+> ![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)
 > Questa è una opera liberamente licenziata, come spiegato nella
 > [Definizione di Opere Culturali Libere](https://freedomdefined.org/Definition).
 

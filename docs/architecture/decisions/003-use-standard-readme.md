@@ -1,18 +1,19 @@
 <!--
-© 2019-2022 Marco Bresciani
+© 2019-2023 Marco Bresciani
 
 Copying and distribution of this file, with or without modification, are
 permitted in any medium without royalty provided the copyright notice
 and this notice are preserved.
 This file is offered as-is, without any warranty.
 
-SPDX-FileCopyrightText: 2019-2022 Marco Bresciani
+SPDX-FileCopyrightText: 2019-2023 Marco Bresciani
 
 SPDX-License-Identifier: FSFAP
 -->
 # 3 Use Standard ReadMe
 
 ## Context
+
 **What is a readme?** A readme is a file which is normally the first
 entry point to your code.
 It should tell people why they should use your module, how they can
@@ -35,12 +36,15 @@ Whether consumers or developers, the end users of software are human
 beings who care about what's in the software and how to use it.
 
 ## Decision
+
 The project will use and keep a `README.md` file, in Markdown format,
 following the guidelines and rules of
 [Standard Readme](https://github.com/RichardLitt/standard-readme).
 
 ## Status
+
 Accepted.
 
 ## Consequences
+
 The `README.md` file shall be taken care of and kept updated.

@@ -1,18 +1,19 @@
 <!--
-© 2019-2022 Marco Bresciani
+© 2019-2023 Marco Bresciani
 
 Copying and distribution of this file, with or without modification, are
 permitted in any medium without royalty provided the copyright notice
 and this notice are preserved.
 This file is offered as-is, without any warranty.
 
-SPDX-FileCopyrightText: 2019-2022 Marco Bresciani
+SPDX-FileCopyrightText: 2019-2023 Marco Bresciani
 
 SPDX-License-Identifier: FSFAP
 -->
 # 5 Apply Semantic Versioning
 
 ## Context
+
 In the world of software management there exists a dreaded place called
 "dependency hell."
 The bigger your system grows, and the more packages you integrate into
@@ -32,6 +33,7 @@ promiscuity prevent you from easily and safely moving your project
 forward.
 
 ## Decision
+
 As a solution to this problem, I propose a simple set of rules and
 requirements that dictate how version numbers are assigned and
 incremented.
@@ -54,9 +56,11 @@ meaning about the underlying code and what has been modified from one
 version to the next.
 
 ## Status
+
 Accepted.
 
 ## Consequences
+
 As a responsible developer you will, of course, want to verify that any
 package upgrades function as advertised.
 The real world is a messy place; there's nothing we can do about that

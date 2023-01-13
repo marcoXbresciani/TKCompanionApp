@@ -11,6 +11,7 @@ SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
 SPDX-License-Identifier: FSFAP
 -->
 # Contribuire
+
 Un piccolo e semplice aiuto per i praticanti di Toyota Kata.
 
 L'obiettivo di quest'app è di diventare un pratico vademecum/manuale per
@@ -22,6 +23,7 @@ Se vuoi contribuire al progetto, dai un'occhiata a questo file.
 Per qualsiasi domanda... chiedi pure!
 
 ## Sommario
+
 1. [Per tutti i contributi](#per-tutti-i-contributi)
    1. [Traduzioni](#traduzioni)
    1. [Altri contributi](#altri-contributi)
@@ -30,10 +32,11 @@ Per qualsiasi domanda... chiedi pure!
    1. [Come compilare](#come-compilare)
       1. [Come testare localmente](#come-testare-localmente)
    1. [Come rilasciare](#come-rilasciare)
-      1. [Aggiornare NodeJS (& C.)](#aggiornare-nodejs---c-)
+      1. [Aggiornare NodeJS e associati](#aggiornare-nodejs-e-associati)
    1. [Come aggiungere una traduzione](#come-aggiungere-una-traduzione)
 
 ## Per tutti i contributi
+
 Eccoci qui.
 Quindi vuoi contribuire a questo progetto?
 Grazie mille!
@@ -48,6 +51,7 @@ E, ovviamente, se non si dovesse capire... dimmelo, che si migliora!
 
 In ogni caso, per qualsiasi domanda o richiesta, puoi contattarmi
 tramite:
+
 * [Delta Chat](https://delta.chat/en/) con l'indirizzo di posta
   elettronica [marco.530@outlook.it](mailto:marco.530@outlook.it).
 * Come <a rel="me" href="https://fosstodon.org/@AAMfP">@AAMfP</a>, su
@@ -66,6 +70,7 @@ spiegando il problema che hai notato e la soluzione proposta.
 Tramite la pagina
 [Problemi](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
 puoi:
+
 * segnalare problemi (_bug_),
 * proporre miglioramenti (_enhancement_),
 * migliorare la documentazione (_documentation_),
@@ -76,6 +81,7 @@ e, in generale, contribuire al miglioramento del progetto.
 Siamo qui per migliorare!
 
 ### Traduzioni
+
 Puoi contribuire colle traduzioni dall'italiano (o dall'inglese) alla
 tua lingua madre, qualsiasi essa sia.
 
@@ -86,6 +92,7 @@ Le traduzioni sono gestite tramite il software e piattaforma libera
 possono aggiungere lingue, completare e correggere le traduzioni, ...
 
 ### Altri contributi
+
 Se proprio non riesci a decidere su come contribuire al progetto, puoi
 sempre pensare alla via più semplice, puoi contribure tramite Liberapay:
 > <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
@@ -97,6 +104,7 @@ In questo modo il progetto potrebbe riuscire a crescere un po' di più e,
 magari, essere disponibile anche su altre piattaforme.
 
 ## Per gli sviluppatori
+
 Se sviluppi software e vuoi contribuire a migliorare l'app, anche in
 questo caso ogni contributo è ben accetto!
 
@@ -140,6 +148,7 @@ dell'app e del suo codice, rispetto a quanto indicato dalle
 senza ridurre il livello di qualità già raggiunto.
 
 ### Come iniziare
+
 Dalla riga di comando avvia `npm start` che eseguirà lo strumento Metro
 (non so cosa sia, in realtà, ma sembra necessario).
 
@@ -150,6 +159,7 @@ l'ho, non ho mai collaudato l'app su un Apple, quindi se vuoi farlo...
 beh, prova!
 
 ### Come compilare
+
 Se vuoi creare l'applicazione (il file APK da copiare ed eseguire sul
 telefono, per intenderci!) per sistemi Android, vai nella cartella
 `android` ed esegui `gradlew clean build` per generare gli APK.
@@ -162,6 +172,7 @@ Non ho idea di come si faccia la stessa cosa, per iOS.
 Se lo scopri, fammi sapere che aggiorniamo questo documento!
 
 #### Come testare localmente
+
 Il file APK generato può essere (auto) firmato per consentirne
 l'installazione su un dispositivo reale.
 Lo strumento
@@ -169,6 +180,7 @@ Lo strumento
 essere usato per firmare qualsiasi APK facilmente e velocemente.
 
 ### Come rilasciare
+
 Una volta che il codice è completo e testato, per rilasciare ci sono una
 serie di passi da seguire.
 
@@ -176,6 +188,7 @@ serie di passi da seguire.
 di creare un nuovo rilascio.
 > Dopo ogni passo è opportuno e consigliato committare ed eseguire il
 > push del codice al repository principale.
+
 1. Aggiorna [package.json](/package.json) col nuovo numero di versione
    ed esegui `npm install`.
 1. Verifica che [CHANGELOG.md](/CHANGELOG.md) contenga la relativa
@@ -184,7 +197,7 @@ di creare un nuovo rilascio.
 1. Verifica che i file `README.md` contengano l'ultimo tag (che stai
    rilasciando) nei badge,
 1. Verifica che la cartella `fastlane` contenga i relativi file
-   `changelogs` per lo specifico *codice* di versione, in tutte le
+   `changelogs` per lo specifico _codice_ di versione, in tutte le
    lingue disponibili.
    Se necessario, aggiorna o aggiungi le relative schermate, in tutte le
    lingue disponibili.
@@ -213,11 +226,12 @@ di creare un nuovo rilascio.
    il comando `npm run lint`.
    Nota che questo comando è eseguito automaticamente prima di ogni
    commit.
-1. *Se non si sta eseguendo un aggiornamento di Node*, etichettare il
+1. _Se non si sta eseguendo un aggiornamento di Node_, etichettare il
    codice col numero di [versionamento (semantico)](https://semver.org/)
    relativo.
 
-#### Aggiornare NodeJS (& C.)
+#### Aggiornare NodeJS e associati
+
 Per aggiornare la versione di NodeJS (o NPM, Java e, in generale, tutto
 quanto collegato agli strumenti di build di F-Droid, specificati nel
 file metadata), poiché F-Droid gestisce autonomamente i rilasci non
@@ -227,8 +241,9 @@ necessario preparare la versione _senza il tag_ e creare una MR
 con l'aggiornamento del file metadata dell'applicazione e, solo dopo che
 è stata integrata la modifica, rendere disponibile il tag sul repository
 del codice.
-Cfr. https://gitlab.com/fdroid/fdroiddata/-/merge_requests/10826#note_895731121
+Cfr. <https://gitlab.com/fdroid/fdroiddata/-/merge_requests/10826#note_895731121>
 Quindi:
+
 * Esegui la procedura che indica [Come rilasciare](#come-rilasciare),
   senza l'ultimo passo, quindi senza inviare il tag sul repository.
 * aggiorna il tuo fork del repository F-Droid/Data colle ultime
@@ -243,12 +258,14 @@ Quindi:
   aggiungere il repository sorgente per aggiornare facilmente.
   Poi, ogni volta che si deve aggiornare, bisogna eseguire questi
   comandi:
+
   ```shell
   git checkout master
   git fetch upstream
   git pull upstream master
   git push origin master
   ```
+
 * aggiorna il
   [file metadata dell'app](https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/name.bresciani.marco.tkcompanionapp.yml)
   su un branch non protetto del tuo fork del repository F-Droid/Data,
@@ -266,6 +283,7 @@ Le stesse istruzioni valgono per l'aggiornamento delle versioni di JDK,
 NPM o Android NDK.
 
 ### Come aggiungere una traduzione
+
 Se compare la traduzione in una nuova lingua nelle Weblate del progetto,
 dopo il commit di Weblate il nuovo file JSON colla traduzione sarà
 disponibile nel
@@ -274,21 +292,27 @@ disponibile nel
 Non appena il file colla nuova lingua sarà disponibile, si può
 aggiungere l'import del file all'interno del file
 [i18n.ts](../app/i18n/i18n.ts) come per
+
 ```typescript
 import {default as itIT} from './it-IT.json';
 import {default as nbNO} from './nb-NO.json';
 ```
+
 Poi bisogna aggiungere la nuova lingua tra le risorse disponibili come
 in
+
 ```typescript
-    fr: {translation: fr},
-    'it-IT': {translation: itIT},
+fr: {translation: fr},
+'it-IT': {translation: itIT},
 ```
+
 E, infine, aggiungere la lingua nella lista delle lingue di "fallback"
 in caso di traduzioni mancanti.
+
 ```typescript
 fallbackLng: ['en', 'it-IT', 'fr', 'de', 'nb-NO'],
 ```
+
 Mentre nei casi precedenti è consigliabile mantenere l'ordinamento
 alfabetico, in questo ho preferito usare quello che mi sembra essere un
 ordinamento per uso/popolarità, mantenendo fissi inglese e italiano e

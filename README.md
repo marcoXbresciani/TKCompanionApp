@@ -19,7 +19,7 @@ SPDX-License-Identifier: FSFAP
 [![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp?logo=fdroid)](https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/)
 [![TS-Standard - TypeScript Standard Style Guide](https://badgen.net/badge/code%20style/ts-standard/blue?icon=typescript)](https://github.com/standard/ts-standard)
 [![REUSE status](https://api.reuse.software/badge/github.com/marcoXbresciani/TKCompanionApp)](https://api.reuse.software/info/github.com/marcoXbresciani/TKCompanionApp)
-![](https://img.shields.io/badge/Keep%20a%20Changelog--555.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmMTVkMzAiIHZpZXdCb3g9IjAgMCAxODcgMTg1Ij48cGF0aCBkPSJNNjIgN2MtMTUgMy0yOCAxMC0zNyAyMmExMjIgMTIyIDAgMDAtMTggOTEgNzQgNzQgMCAwMDE2IDM4YzYgOSAxNCAxNSAyNCAxOGE4OSA4OSAwIDAwMjQgNCA0NSA0NSAwIDAwNiAwbDMtMSAxMy0xYTE1OCAxNTggMCAwMDU1LTE3IDYzIDYzIDAgMDAzNS01MiAzNCAzNCAwIDAwLTEtNWMtMy0xOC05LTMzLTE5LTQ3LTEyLTE3LTI0LTI4LTM4LTM3QTg1IDg1IDAgMDA2MiA3em0zMCA4YzIwIDQgMzggMTQgNTMgMzEgMTcgMTggMjYgMzcgMjkgNTh2MTJjLTMgMTctMTMgMzAtMjggMzhhMTU1IDE1NSAwIDAxLTUzIDE2bC0xMyAyaC0xYTUxIDUxIDAgMDEtMTItMWwtMTctMmMtMTMtNC0yMy0xMi0yOS0yNy01LTEyLTgtMjQtOC0zOWExMzMgMTMzIDAgMDE4LTUwYzUtMTMgMTEtMjYgMjYtMzMgMTQtNyAyOS05IDQ1LTV6TTQwIDQ1YTk0IDk0IDAgMDAtMTcgNTQgNzUgNzUgMCAwMDYgMzJjOCAxOSAyMiAzMSA0MiAzMiAyMSAyIDQxLTIgNjAtMTRhNjAgNjAgMCAwMDIxLTE5IDUzIDUzIDAgMDA5LTI5YzAtMTYtOC0zMy0yMy01MWE0NyA0NyAwIDAwLTUtNWMtMjMtMjAtNDUtMjYtNjctMTgtMTIgNC0yMCA5LTI2IDE4em0xMDggNzZhNTAgNTAgMCAwMS0yMSAyMmMtMTcgOS0zMiAxMy00OCAxMy0xMSAwLTIxLTMtMzAtOS01LTMtOS05LTEzLTE2YTgxIDgxIDAgMDEtNi0zMiA5NCA5NCAwIDAxOC0zNSA5MCA5MCAwIDAxNi0xMmwxLTJjNS05IDEzLTEzIDIzLTE2IDE2LTUgMzItMyA1MCA5IDEzIDggMjMgMjAgMzAgMzYgNyAxNSA3IDI5IDAgNDJ6bS00My03M2MtMTctOC0zMy02LTQ2IDUtMTAgOC0xNiAyMC0xOSAzN2E1NCA1NCAwIDAwNSAzNGM3IDE1IDIwIDIzIDM3IDIyIDIyLTEgMzgtOSA0OC0yNGE0MSA0MSAwIDAwOC0yNCA0MyA0MyAwIDAwLTEtMTJjLTYtMTgtMTYtMzEtMzItMzh6bS0yMyA5MWgtMWMtNyAwLTE0LTItMjEtN2EyNyAyNyAwIDAxLTEwLTEzIDU3IDU3IDAgMDEtNC0yMCA2MyA2MyAwIDAxNi0yNWM1LTEyIDEyLTE5IDI0LTIxIDktMyAxOC0yIDI3IDIgMTQgNiAyMyAxOCAyNyAzM3MtMiAzMS0xNiA0MGMtMTEgOC0yMSAxMS0zMiAxMXptMS0zNHYxNGgtOFY2OGg4djI4bDEwLTEwaDExbC0xNCAxNSAxNyAxOEg5NnoiLz48L3N2Zz4K)
+![Keep a Changelog](https://img.shields.io/badge/Keep%20a%20Changelog--555.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmMTVkMzAiIHZpZXdCb3g9IjAgMCAxODcgMTg1Ij48cGF0aCBkPSJNNjIgN2MtMTUgMy0yOCAxMC0zNyAyMmExMjIgMTIyIDAgMDAtMTggOTEgNzQgNzQgMCAwMDE2IDM4YzYgOSAxNCAxNSAyNCAxOGE4OSA4OSAwIDAwMjQgNCA0NSA0NSAwIDAwNiAwbDMtMSAxMy0xYTE1OCAxNTggMCAwMDU1LTE3IDYzIDYzIDAgMDAzNS01MiAzNCAzNCAwIDAwLTEtNWMtMy0xOC05LTMzLTE5LTQ3LTEyLTE3LTI0LTI4LTM4LTM3QTg1IDg1IDAgMDA2MiA3em0zMCA4YzIwIDQgMzggMTQgNTMgMzEgMTcgMTggMjYgMzcgMjkgNTh2MTJjLTMgMTctMTMgMzAtMjggMzhhMTU1IDE1NSAwIDAxLTUzIDE2bC0xMyAyaC0xYTUxIDUxIDAgMDEtMTItMWwtMTctMmMtMTMtNC0yMy0xMi0yOS0yNy01LTEyLTgtMjQtOC0zOWExMzMgMTMzIDAgMDE4LTUwYzUtMTMgMTEtMjYgMjYtMzMgMTQtNyAyOS05IDQ1LTV6TTQwIDQ1YTk0IDk0IDAgMDAtMTcgNTQgNzUgNzUgMCAwMDYgMzJjOCAxOSAyMiAzMSA0MiAzMiAyMSAyIDQxLTIgNjAtMTRhNjAgNjAgMCAwMDIxLTE5IDUzIDUzIDAgMDA5LTI5YzAtMTYtOC0zMy0yMy01MWE0NyA0NyAwIDAwLTUtNWMtMjMtMjAtNDUtMjYtNjctMTgtMTIgNC0yMCA5LTI2IDE4em0xMDggNzZhNTAgNTAgMCAwMS0yMSAyMmMtMTcgOS0zMiAxMy00OCAxMy0xMSAwLTIxLTMtMzAtOS01LTMtOS05LTEzLTE2YTgxIDgxIDAgMDEtNi0zMiA5NCA5NCAwIDAxOC0zNSA5MCA5MCAwIDAxNi0xMmwxLTJjNS05IDEzLTEzIDIzLTE2IDE2LTUgMzItMyA1MCA5IDEzIDggMjMgMjAgMzAgMzYgNyAxNSA3IDI5IDAgNDJ6bS00My03M2MtMTctOC0zMy02LTQ2IDUtMTAgOC0xNiAyMC0xOSAzN2E1NCA1NCAwIDAwNSAzNGM3IDE1IDIwIDIzIDM3IDIyIDIyLTEgMzgtOSA0OC0yNGE0MSA0MSAwIDAwOC0yNCA0MyA0MyAwIDAwLTEtMTJjLTYtMTgtMTYtMzEtMzItMzh6bS0yMyA5MWgtMWMtNyAwLTE0LTItMjEtN2EyNyAyNyAwIDAxLTEwLTEzIDU3IDU3IDAgMDEtNC0yMCA2MyA2MyAwIDAxNi0yNWM1LTEyIDEyLTE5IDI0LTIxIDktMyAxOC0yIDI3IDIgMTQgNiAyMyAxOCAyNyAzM3MtMiAzMS0xNiA0MGMtMTEgOC0yMSAxMS0zMiAxMXptMS0zNHYxNGgtOFY2OGg4djI4bDEwLTEwaDExbC0xNCAxNSAxNyAxOEg5NnoiLz48L3N2Zz4K)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/6084/badge)](https://bestpractices.coreinfrastructure.org/projects/6084)
 [![Maintenance](https://img.shields.io/maintenance/yes/2023)](https://codeberg.org/marco.bresciani/TKCompanionApp/commits/branch/master)
@@ -42,6 +42,7 @@ and information.
 Content to be improved and updated from time to time.
 
 ## Table of Contents
+
 1. [Security](#security)
 1. [Background](#background)
 1. [Install](#install)
@@ -55,10 +56,12 @@ Content to be improved and updated from time to time.
 1. [License](#license)
 
 ## Security
+
 See file [SECURITY.md](/docs/SECURITY.md) for notes and updates related
 to security issues.
 
 ## Background
+
 From [the Toyota Kata website](http://www-personal.umich.edu/~mrother/Homepage.html):
 > Toyota Kata is a way for managers and educators to initiate and coach
 > practice of practical scientific-thinking skills in their teams, to
@@ -79,6 +82,7 @@ From [the Toyota Kata website](http://www-personal.umich.edu/~mrother/Homepage.h
 > guidance of your coach.
 
 ## Install
+
 This app is currently built using React Native to make building the app
 for both Android and iOS from the same source code easier.
 
@@ -117,11 +121,13 @@ Please also take a look at all other wonderful FOSS apps you can find in
 F-Droid.
 
 ## Usage
+
 Well, it's easy: install the app, open the app, click some buttons.
 There are no games, no quizzes, no actions to take (yet).
 Just sit, follow the menu, learn, practice and improve.
 
 ### Screenshots
+
 * Home Page
   ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/home.png)
 * About Dialog
@@ -136,15 +142,18 @@ Just sit, follow the menu, learn, practice and improve.
   ![The Kata Code](fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png)
 
 ### Font Notes
+
 * Font used is [Free
   Sans](https://www.gnu.org/software/freefont/index.html).
 
 ## Maintainers
+
 The app has been started by Marco Bresciani and is currently maintained
 by Marco Bresciani.
 Same for this document.
 
 You can keep in touch with the author through:
+
 * [Delta Chat](https://delta.chat/en/) with the email address
   [marco.530@outlook.it](mailto:marco.530@outlook.it).
 * as <a rel="me" href="https://fosstodon.org/@AAMfP">@AAMfP</a> on
@@ -152,8 +161,10 @@ You can keep in touch with the author through:
   [Mastodon](https://joinmastodon.org/) instance.
 
 ### Translations
+
 Current (and past) contributors:
 [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-grey.png)](https://hosted.weblate.org/engage/tkcompanionapp/)
+
 * [![Translation status](https://hosted.weblate.org/widgets/tkcompanionapp/de/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/de/)
   [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
   for the German translation.
@@ -171,7 +182,9 @@ Current (and past) contributors:
   the Norwegian Bokmål translation.
 
 ## Thanks
+
 Thanks to (in appearing order):
+
 * [Marco Montalbano (@marcomontalbano)](https://github.com/marcomontalbano)
   because without his teachings, this app would never have happened.
 * [@licaon-kter](https://github.com/licaon-kter) for the support on
@@ -180,6 +193,7 @@ Thanks to (in appearing order):
   for the app icon.
 
 ## Contributing
+
 See [CONTRIBUTING.md](/docs/CONTRIBUTING.md).
 
 For contributing with translations in your own native language, you can
@@ -194,10 +208,12 @@ is the choosen platform for managing translations in multiple languages.
 > <img alt="patrons on liberapay" src="https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay">
 
 ## License
+
 See `LICENSES` folder or `COPYING` file, for the whole licences text.
 
 Overall project license, in brief:
 [![GPL logo](https://www.gnu.org/graphics/gplv3-or-later.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
+
 ```text
 © 2021-2023 Marco Bresciani
 This file is part of TKCompanionApp.
@@ -218,6 +234,7 @@ with TKCompanionApp. If not, see <https://www.gnu.org/licenses/>.
 
 This document license, in brief:
 [![FSFAP](https://img.shields.io/badge/license-FSFAP-orange?logo=gnu&style=plastic)](https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html)
+
 ```text
 © 2021-2023 Marco Bresciani
 
@@ -227,7 +244,7 @@ notice and this notice are preserved.
 This file is offered as-is, without any warranty.
 ```
 
-> [![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)]()
+> ![GNU GPL](https://freedomdefined.org/upload/9/99/GPL_black.png)
 This is a freely licensed work, as explained in the [Definition of Free Cultural Works](https://freedomdefined.org/Definition).
 
 [Free Sans](https://www.gnu.org/software/freefont/index.html) is the

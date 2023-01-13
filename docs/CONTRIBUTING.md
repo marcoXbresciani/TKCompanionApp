@@ -11,6 +11,7 @@ SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
 SPDX-License-Identifier: FSFAP
 -->
 # CONTRIBUTING
+
 A short and small helper for Toyota Kata practitioners.
 
 Goal of this app is to be a practical vademecum/handbook for those
@@ -21,6 +22,7 @@ If you want to contribute to the project, take a look at this file.
 Any question, feel free to ask!
 
 ## Table of Contents
+
 1. [For All Contributions](#for-all-contributions)
    1. [Translations](#translations)
    1. [Other Contributions](#other-contributions)
@@ -29,10 +31,11 @@ Any question, feel free to ask!
    1. [How to Build](#how-to-build)
       1. [How to Test Locally](#how-to-test-locally)
    1. [How to Release](#how-to-release)
-      1. [Updating NodeJS (& Co.)](#updating-nodejs---co-)
+      1. [Updating NodeJS and Related](#updating-nodejs-and-related)
    1. [How to Add a New Translation](#how-to-add-a-new-translation)
 
 ## For All Contributions
+
 Here we are.
 So you want to contribute to this project?
 Thanks a lot!
@@ -46,6 +49,7 @@ Obviously, if you don't understand it... let me know, so that we can
 improve it!
 
 Anyway, for any question or request you can contact me through:
+
 * [Delta Chat](https://delta.chat/en/) with the email address
   [marco.530@outlook.it](mailto:marco.530@outlook.it).
 * as <a rel="me" href="https://fosstodon.org/@AAMfP">@AAMfP</a> on
@@ -64,6 +68,7 @@ explaining the problem you've noticed and your proposed solution.
 Through the
 [issues](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
 page you can
+
 * notify problems (_bug_),
 * propose improvements (_enhancement_),
 * improve descriptions (_documentation_),
@@ -74,6 +79,7 @@ and, generally speaking, contribute to improve this project.
 We're here to improve!
 
 ### Translations
+
 You can contribute with translations from English (or Italian) to your
 native language, whichever it is.
 
@@ -84,6 +90,7 @@ Translations are managed through the free software and platform
 which you can add languages, complete and correct translations, ...
 
 ### Other Contributions
+
 If you can't decide on how to contribute to this project, you can always
 choose the easier way, contributing through Liberapay:
 > <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
@@ -95,6 +102,7 @@ In this way, the project might be able to grow and even be available on
 other platform.
 
 ## For Software Developers
+
 If you are a software developer and want to contribute improving this
 app, you're welcome!
 
@@ -136,6 +144,7 @@ content based on the
 without reducing the already achieved level of quality.
 
 ### How to Start
+
 From command line launch `npm start` that will run Metro tool (don't
 know what it actually is, but seems something needed).
 
@@ -146,6 +155,7 @@ tried the app on an Apple, so if you want to do that... feel free to
 try!
 
 ### How to Build
+
 If you're going to build for Android systems, go in the `android` folder
 and run `gradlew clean build` for generating the APKs.
 The debug mode APK will be available in
@@ -157,12 +167,14 @@ I actually have no idea on how to do that, for iOS.
 If you find it out, let me know so that we can update this document!
 
 #### How to Test Locally
+
 The generated APK (see [How to Build](#how-to-build)) shall be (self)
 signed to be able to install it on a real device.
 The [uber-apk-signer](https://github.com/patrickfav/uber-apk-signer)
 tool can be used to quickly and easily sign any APK.
 
 ### How to Release
+
 Once the code is completed and tested, in order to release there are a
 bit of steps to follow.
 
@@ -170,6 +182,7 @@ bit of steps to follow.
 release.
 > After each step is suggested to commit and push the code on main
 > repository.
+
 1. Update [package.json](/package.json) with the new version number and
    run `npm install`.
 1. Verify that [CHANGELOG.md](/CHANGELOG.md) contains the properly
@@ -178,7 +191,7 @@ release.
 1. Verify that `README.md` files contain the latest tag (you're
    releasing) in the badges.
 1. Verify that `fastlane` folder contain the proper `changelogs` files
-   for the upcoming version *code* in all available languages.
+   for the upcoming version _code_ in all available languages.
    If needed, also updates or add relevant screenshots in all available
    languages.
 1. Verify that [Errors.md](Errors.md) contains the currently known
@@ -212,7 +225,8 @@ release.
 1. If you're not updating Node*, tag with the corresponding
    [(semantic) version](https://semver.org/) number.
 
-#### Updating NodeJS (& Co.)
+#### Updating NodeJS and Related
+
 To update the version of NodeJS (or NPM, Java and, generally, everything
 related to building tools used by F-Droid building system through
 metadata file), it's better to prepare the version _without the tag_ and
@@ -222,8 +236,9 @@ after the merge has been added, make the tag available on the code
 repository.
 This is because F-Droid independently manages releases as soon as one is
 available (labeled) on the repository.
-See https://gitlab.com/fdroid/fdroiddata/-/merge_requests/10826#note_895731121
+See <https://gitlab.com/fdroid/fdroiddata/-/merge_requests/10826#note_895731121>
 So:
+
 * Execute the procedure on [How to release](#how-to-release), without
   the last step, so without sending the tag to the repository.
 * update your fork of the F-Droid/Data repository with the latest
@@ -236,12 +251,14 @@ So:
   `git remote add upstream https://gitlab.com/fdroid/fdroiddata.git` to
   add the upstream source repository to easily mirror it.
   Then, every time you need to update it, just run these commands:
+
   ```shell
   git checkout master
   git fetch upstream
   git pull upstream master
   git push origin master
   ```
+
 * update the
   [app metadata file](https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/name.bresciani.marco.tkcompanionapp.yml)
   on an unprotected branch of your fork of the F-Droid/Data repository,
@@ -258,29 +275,36 @@ So:
 Same instructions stand for updating JDK, NPM or Android NDK versions.
 
 ### How to Add a New Translation
+
 If there's a new translated language in the project Weblate page, after
 Weblate commit the new file JSON will be available in the
 [repository](https://codeberg.org/marco.bresciani/TKCompanionApp/src/branch/master/app/i18n).
 
 As soon as the new language file will be available, it's possible to
 import it in the [i18n.ts](../app/i18n/i18n.ts) file, as in
+
 ```typescript
 import {default as itIT} from './it-IT.json';
 import {default as nbNO} from './nb-NO.json';
 ```
+
 Then you have to add the new language in the available resoruces as done
 in
+
 ```typescript
-    fr: {translation: fr},
-    'it-IT': {translation: itIT},
+fr: {translation: fr},
+'it-IT': {translation: itIT},
 ```
+
 And, add the language in the list of fallback languages when
 translations are missing.
+
 ```typescript
 fallbackLng: ['en', 'it-IT', 'fr', 'de', 'nb-NO'],
 ```
+
 While in the previous cases it is advisable to keep the alphabetical
 order, in this situation I preferred to use what seems to me to be a
 sorting by use / popularity, keeping English and Italian fixed and
 adding the other languages based on what I think it's a good order ...
-or so I hope!
+Or so I hope!

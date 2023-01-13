@@ -11,6 +11,7 @@ SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
 SPDX-License-Identifier: FSFAP
 -->
 # Architecture
+
 The app is using [React Native](https://reactnative.dev/) framework to
 possibly be portable on more platforms.
 Specifically, Android and iOS.
@@ -22,6 +23,7 @@ The `assets` and `i18n` folders have additional resources needed for the
 project.
 
 Not much of an "architecture":
+
 * `assets` folder contains static things like fonts and images.
 * `components` folder contains components that are generally used in all
   pages, or in at least a couple of them.

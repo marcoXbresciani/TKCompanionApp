@@ -11,10 +11,12 @@ SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
 SPDX-License-Identifier: FSFAP
 -->
 # Errors
+
 This is the list of known errors or issues.
 They might be in the Codeberg
 [Issues](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
 page or not.
+
 1. ~~Bump tmpl from 1.0.4 to 1.0.5~~
 2. ~~Remove useless permission~~
 3. ~~Remove offending libs for F-Droid full FOSS release~~
@@ -38,7 +40,7 @@ page or not.
     It would be nice to fulfill the requirements for the OpenSSF Best
     Practices concepts, competing all the needed information to apply
     for a badge describing these practices.
-    See https://bestpractices.coreinfrastructure.org/en
+    See <https://bestpractices.coreinfrastructure.org/en>
 12. ~~Change download links to TK website~~
 13. ~~JSON Syntax Error~~
 14. ~~App crashes when opening calendar in a language different from Italian~~

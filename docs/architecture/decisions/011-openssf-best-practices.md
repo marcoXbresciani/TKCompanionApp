@@ -1,31 +1,35 @@
 <!--
-© 2022 Marco Bresciani
+© 2022-2023 Marco Bresciani
 
 Copying and distribution of this file, with or without modification, are
 permitted in any medium without royalty provided the copyright notice
 and this notice are preserved.
 This file is offered as-is, without any warranty.
 
-SPDX-FileCopyrightText: 2022 Marco Bresciani
+SPDX-FileCopyrightText: 2022-2023 Marco Bresciani
 
 SPDX-License-Identifier: FSFAP
 -->
 # 11 OpenSSF Best Practices
 
 ## Context
+
 Considering that the app is done with the purpose to better study and
 improve on TypeScript (React and the like), there is the need to create
 a properly good code quality application.
 
 ## Decision
+
 The app will follow the
 [OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/en/projects/6084)
 as defined by the Open Source Security Foundation.
 
 ## Status
+
 Accepted.
 
 ## Consequences
+
 Contributors shall take note of the current status and improve the app
 code and content based on the OpenSSF Best Practices, without reducing
 the already achieved level of quality.

@@ -1,18 +1,19 @@
 <!--
-© 2019-2022 Marco Bresciani
+© 2019-2023 Marco Bresciani
 
 Copying and distribution of this file, with or without modification, are
 permitted in any medium without royalty provided the copyright notice
 and this notice are preserved.
 This file is offered as-is, without any warranty.
 
-SPDX-FileCopyrightText: 2019-2022 Marco Bresciani
+SPDX-FileCopyrightText: 2019-2023 Marco Bresciani
 
 SPDX-License-Identifier: FSFAP
 -->
 # 2 Use EditorConfig
 
 ## Context
+
 We all know that conventions when writing code are important.
 
 But we also know that every developer has his ego and his preferences:
@@ -52,7 +53,7 @@ editors.
 You can choose the style of indentation (tab or spaces), you can choose
 the size of the indentation, the type of end of line, the set of
 characters to use, ... here is the main page of the EditorConfig
-project: https://editorconfig.org/
+project: <https://editorconfig.org/>
 
 These might seem trivial when writing code for a large-scale
 application.
@@ -62,15 +63,16 @@ Which in turn ensures that the editor settings do not need to be
 optimized to have consistent coding styles.
 Some editors support EditorConfig natively.
 For most others, there is a plugin that enables EditorConfig support
-(see https://editorconfig.org/#download).
+(see <https://editorconfig.org/#download>).
 Also, you can specify different types of configurations for different
 file types and even override the settings for a folder by creating
 another `.editorconfig` in that specific folder.
 And for the other options to configure, there is a wiki with details on
 those possible:
-https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+<https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties>
 
 ## Decision
+
 [EditorConfig](https://editorconfig.org/) helps developers define and
 maintain consistent coding styles between different editors and IDEs.
 The EditorConfig project consists of a file format for defining coding
@@ -80,8 +82,10 @@ EditorConfig files are easily readable and they work nicely with version
 control systems.
 
 ## Status
+
 Accepted.
 
 ## Consequences
+
 The `.editorconfig` file shall be used by all developers of the project
 and its checks must be activated in the IDE used by each developer.

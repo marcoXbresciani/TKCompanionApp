@@ -30,7 +30,7 @@ This solution is called [EditorConfig](https://editorconfig.org/).
 
 Why should you use an EditorConfig file in your project?
 Let's face it.
-It's 2022 and many of us are still fighting between tabs and spaces
+It's 2023 and many of us are still fighting between tabs and spaces
 instead of thinking about the quality of the code and its features!
 
 Nobody really cares (much...) about the style of code used, the main

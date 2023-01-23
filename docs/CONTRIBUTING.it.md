@@ -71,10 +71,10 @@ Tramite la pagina
 [Problemi](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
 puoi:
 
-* segnalare problemi (_bug_),
-* proporre miglioramenti (_enhancement_),
-* migliorare la documentazione (_documentation_),
-* fare domande generiche (_question_)
+* segnalare problemi (*bug*),
+* proporre miglioramenti (*enhancement*),
+* migliorare la documentazione (*documentation*,
+* fare domande generiche (*question*)
 
 e, in generale, contribuire al miglioramento del progetto.
 
@@ -197,7 +197,7 @@ di creare un nuovo rilascio.
 1. Verifica che i file `README.md` contengano l'ultimo tag (che stai
    rilasciando) nei badge,
 1. Verifica che la cartella `fastlane` contenga i relativi file
-   `changelogs` per lo specifico _codice_ di versione, in tutte le
+   `changelogs` per lo specifico *codice* di versione, in tutte le
    lingue disponibili.
    Se necessario, aggiorna o aggiungi le relative schermate, in tutte le
    lingue disponibili.
@@ -226,7 +226,7 @@ di creare un nuovo rilascio.
    il comando `npm run lint`.
    Nota che questo comando è eseguito automaticamente prima di ogni
    commit.
-1. _Se non si sta eseguendo un aggiornamento di Node_, etichettare il
+1. *Se non si sta eseguendo un aggiornamento di Node*, etichettare il
    codice col numero di [versionamento (semantico)](https://semver.org/)
    relativo.
 
@@ -236,7 +236,7 @@ Per aggiornare la versione di NodeJS (o NPM, Java e, in generale, tutto
 quanto collegato agli strumenti di build di F-Droid, specificati nel
 file metadata), poiché F-Droid gestisce autonomamente i rilasci non
 appena è disponibile una nuova versione etichettata sul repository, è
-necessario preparare la versione _senza il tag_ e creare una MR
+necessario preparare la versione *senza il tag* e creare una MR
 (richiesta di merge) su un fork del repository `F-Droid/Data` di GitLab,
 con l'aggiornamento del file metadata dell'applicazione e, solo dopo che
 è stata integrata la modifica, rendere disponibile il tag sul repository

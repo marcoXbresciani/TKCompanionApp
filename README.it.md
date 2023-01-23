@@ -92,8 +92,8 @@ per un account sviluppatore Google, ed è pari a
 Programma per Sviluppatori Apple.
 
 Quindi (per ora?) quest'app si trova solo su
-[F-Droid](https://f-droid.org/), il _catalogo installabile di FOSS
-(software libero e open source) per la piattaforma Android_.
+[F-Droid](https://f-droid.org/), il *catalogo installabile di FOSS
+(software libero e open source) per la piattaforma Android*.
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-it.png" alt="Disponibile su F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
 

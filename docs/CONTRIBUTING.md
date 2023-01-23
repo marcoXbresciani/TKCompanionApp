@@ -69,10 +69,10 @@ Through the
 [issues](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
 page you can
 
-* notify problems (_bug_),
-* propose improvements (_enhancement_),
-* improve descriptions (_documentation_),
-* ask questions (_question_)
+* notify problems (*bug*),
+* propose improvements (*enhancement*),
+* improve descriptions (*documentation*),
+* ask questions (*question*)
 
 and, generally speaking, contribute to improve this project.
 
@@ -191,7 +191,7 @@ release.
 1. Verify that `README.md` files contain the latest tag (you're
    releasing) in the badges.
 1. Verify that `fastlane` folder contain the proper `changelogs` files
-   for the upcoming version _code_ in all available languages.
+   for the upcoming version *code* in all available languages.
    If needed, also updates or add relevant screenshots in all available
    languages.
 1. Verify that [Errors.md](Errors.md) contains the currently known
@@ -229,7 +229,7 @@ release.
 
 To update the version of NodeJS (or NPM, Java and, generally, everything
 related to building tools used by F-Droid building system through
-metadata file), it's better to prepare the version _without the tag_ and
+metadata file), it's better to prepare the version *without the tag* and
 create an MR (merge request) on a fork of the GitLab F-Droid/Data
 repository, with the update of the application metadata file and, only
 after the merge has been added, make the tag available on the code

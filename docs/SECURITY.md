@@ -13,7 +13,7 @@ SPDX-License-Identifier: FSFAP
 # Security Policy
 >
 > In evaluating the impact of the security issues described below (if
-> any), remember that **TKCompanionApp** has _neither_ network _nor_
+> any), remember that **TKCompanionApp** has *neither* network *nor*
 > files access.
 >
 > See also the latest app analysis done by Exodus Privacy at

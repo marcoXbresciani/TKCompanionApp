@@ -94,8 +94,8 @@ for a Google Developer Account, and it's even
 Apple Developer Program.
 
 So (for now?) you can find this app only through the
-[F-Droid](https://f-droid.org/) _installable catalogue of FOSS (Free and
-Open Source Software) applications for the Android platform_.
+[F-Droid](https://f-droid.org/) *installable catalogue of FOSS (Free and
+Open Source Software) applications for the Android platform*.
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp)
 

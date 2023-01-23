@@ -107,8 +107,8 @@ If you are a software developer and want to contribute improving this
 app, you're welcome!
 
 Find the latest current LTS NodeJS
-([18.12.1](https://nodejs.org/dist/latest-hydrogen/), as of
-2022-12-06) for your system.
+([18.13.0](https://nodejs.org/dist/latest-hydrogen/), as of
+2023-01-12) for your system.
 
 Grab the source code by cloning
 [the repository](https://codeberg.org/marco.bresciani/TKCompanionApp).

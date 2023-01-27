@@ -40,12 +40,16 @@ This file is offered as-is, without any warranty.
 
 ### Removed
 
-* Theme setting removed: the app will start automagically with current
-  device theme.
-
 ### Fixed
 
 ### Security
+
+## [6.2.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.2.0) - 2023-02-03
+
+### Removed
+
+* Theme setting removed: the app will start automagically with current
+  device theme.
 
 ## [6.1.1](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.1.1) - 2023-01-05
 

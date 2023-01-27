@@ -109,11 +109,12 @@ app, you're welcome!
 Find the latest current LTS NodeJS
 ([18.13.0](https://nodejs.org/dist/latest-hydrogen/), as of
 2023-01-12) for your system.
+The correct version is specified in `package.json` file in main folder.
 
 Grab the source code by cloning
 [the repository](https://codeberg.org/marco.bresciani/TKCompanionApp).
 
-Then go to this project main folder and run `npm install --force`.
+Then go to this project main folder and run `npm install`.
 You should see all the needed dependencies downloaded and installed
 through NPM package manager.
 
@@ -133,10 +134,8 @@ Europe) to assist with achieving and confirming
 See installation instructions at
 [reuse](https://git.fsfe.org/reuse/tool) repository.
 
-You might want to also run `npm install -g npm-check-updates` to make
-the `ncu` tool globally available, to check possible dependencies
+You might want to also run `npm outdated` to check possible dependencies
 versions updates.
-Not much used, though: `npm outdated` is also available as NPM command.
 
 Please take note of the current status and improve the app code an
 content based on the
@@ -144,6 +143,9 @@ content based on the
 without reducing the already achieved level of quality.
 
 ### How to Start
+
+Set the `JAVA_HOME` environment variable to a Java (JDK) version at
+least Java 11.
 
 From command line launch `npm start` that will run Metro tool (don't
 know what it actually is, but seems something needed).

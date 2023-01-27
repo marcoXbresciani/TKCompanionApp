@@ -196,8 +196,6 @@ di creare un nuovo rilascio.
 1. Verifica che [CHANGELOG.md](/CHANGELOG.md) contenga la relativa
    sezione numerata per il rilascio, spostando il contenuto relativo e
    rilevante da [Unreleased](CHANGELOG.md) alla suddetta sezione.
-1. Verifica che i file `README.md` contengano l'ultimo tag (che stai
-   rilasciando) nei badge,
 1. Verifica che la cartella `fastlane` contenga i relativi file
    `changelogs` per lo specifico *codice* di versione, in tutte le
    lingue disponibili.

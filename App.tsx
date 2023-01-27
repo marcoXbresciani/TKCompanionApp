@@ -23,39 +23,18 @@
 import * as React from 'react'
 import { Provider as PaperProvider } from 'react-native-paper'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
-import { isDark } from './app/utils/Functions'
 import StorageFactory from './app/utils/storage/StorageFactory'
 import {
   AllowedSettings
 } from './app/utils/storage/settings/AllowedSettings'
-import { ThemeContext } from './app/utils/contexts/ThemeContext'
 import TkNavigator from './app/components/TkNavigator'
 import i18n from './app/i18n/i18n'
 import { tkDarkTheme } from './app/config/tkDarkTheme'
 import { tkLightTheme } from './app/config/tkLightTheme'
+import { isDark } from './app/utils/Functions'
 
 const App: React.FunctionComponent = () => {
-  const [isThemeDark, setIsThemeDark] = React.useState(isDark())
-  const theme = isThemeDark ? tkDarkTheme : tkLightTheme
-
-  const toggleTheme = React.useCallback(() => {
-    return setIsThemeDark(!isThemeDark)
-  }, [isThemeDark])
-
-  const preferences = React.useMemo(
-    () => ({
-      toggleTheme,
-      isThemeDark
-    }),
-    [toggleTheme, isThemeDark]
-  )
-
   const settingsStorage = StorageFactory.getInstance().getSettingsStorage()
-
-  void settingsStorage
-    .read(AllowedSettings.DARK_THEME)
-    .then((r) => setIsThemeDark(r === 'true'))
-    .catch(() => setIsThemeDark(isThemeDark))
 
   void settingsStorage
     .read(AllowedSettings.LANGUAGE)
@@ -67,16 +46,14 @@ const App: React.FunctionComponent = () => {
     })
 
   return (
-    <ThemeContext.Provider value={preferences}>
-      <PaperProvider
-        settings={{
-          icon: (props) => <MaterialCommunityIcons {...props} />
-        }}
-        theme={theme}
-      >
-        <TkNavigator />
-      </PaperProvider>
-    </ThemeContext.Provider>
+    <PaperProvider
+      settings={{
+        icon: (props) => <MaterialCommunityIcons {...props} />
+      }}
+      theme={isDark() ? tkDarkTheme : tkLightTheme}
+    >
+      <TkNavigator />
+    </PaperProvider>
   )
 }
 

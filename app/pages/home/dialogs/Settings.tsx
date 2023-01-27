@@ -21,48 +21,21 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import * as React from 'react'
-import { Dialog, List, Switch, useTheme } from 'react-native-paper'
-import { ScrollView, View } from 'react-native'
-import styled from 'styled-components'
+import { Dialog, List } from 'react-native-paper'
+import { ScrollView } from 'react-native'
 import StorageFactory from '../../../utils/storage/StorageFactory'
 import { AllowedSettings } from '../../../utils/storage/settings/AllowedSettings'
-import { ThemeContext } from '../../../utils/contexts/ThemeContext'
 import i18n from '../../../i18n/i18n'
 import { LocaleConfig } from 'react-native-calendars/src'
-import TkText from '../../../components/TkText'
-
-const RowView = styled(View)`
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-`
 
 const Settings: React.FunctionComponent = () => {
   const storage = StorageFactory.getInstance().getSettingsStorage()
-  const { toggleTheme, isThemeDark } =
-        React.useContext(ThemeContext)
 
   return (
     <>
       <Dialog.Title>{`${i18n.t('nav.menu.settings.title')}`}</Dialog.Title>
       <ScrollView>
         <Dialog.Content>
-          <RowView>
-            <TkText>{`${i18n.t('nav.menu.settings.theme')}`}</TkText>
-            <Switch
-              color={useTheme().colors.primary}
-              value={isThemeDark}
-              onValueChange={() => {
-                toggleTheme()
-                void storage
-                  .write(
-                    AllowedSettings.DARK_THEME,
-                    (!isThemeDark).toString()
-                  )
-                  .then()
-              }}
-            />
-          </RowView>
           <List.AccordionGroup>
             <List.Accordion
               left={(props) => (

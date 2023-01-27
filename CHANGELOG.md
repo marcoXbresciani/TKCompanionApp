@@ -40,6 +40,9 @@ This file is offered as-is, without any warranty.
 
 ### Removed
 
+* Theme setting removed: the app will start automagically with current
+  device theme.
+
 ### Fixed
 
 ### Security

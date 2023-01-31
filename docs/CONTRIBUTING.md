@@ -187,6 +187,7 @@ release.
 
 1. Update [package.json](/package.json) with the new version number and
    run `npm install`.
+1. Run `npm outdated` and possibly update old dependencies.
 1. Verify that [CHANGELOG.md](/CHANGELOG.md) contains the properly
    numbered section for the upcoming release, moving the related and
    relevant [Unreleased](/CHANGELOG.md) content to such section.
@@ -222,6 +223,7 @@ release.
 1. Verify clean code criteria through `npm run lint` command.
    Please note this command is also automatically launched before each
    commit.
+1. Update this file, if you need to update the release steps.
 1. If you're not updating Node*, tag with the corresponding
    [(semantic) version](https://semver.org/) number.
 
@@ -288,7 +290,7 @@ import {default as itIT} from './it-IT.json';
 import {default as nbNO} from './nb-NO.json';
 ```
 
-Then you have to add the new language in the available resoruces as done
+Then you have to add the new language in the available resources as done
 in
 
 ```typescript

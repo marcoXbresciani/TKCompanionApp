@@ -193,6 +193,7 @@ di creare un nuovo rilascio.
 
 1. Aggiorna [package.json](/package.json) col nuovo numero di versione
    ed esegui `npm install`.
+1. Esegui `npm outdated` e, possibilmente, aggiorna le dipendenze.
 1. Verifica che [CHANGELOG.md](/CHANGELOG.md) contenga la relativa
    sezione numerata per il rilascio, spostando il contenuto relativo e
    rilevante da [Unreleased](CHANGELOG.md) alla suddetta sezione.
@@ -226,6 +227,7 @@ di creare un nuovo rilascio.
    il comando `npm run lint`.
    Nota che questo comando è eseguito automaticamente prima di ogni
    commit.
+1. Aggiorna questo file, se devi aggiornare la procedura di rilascio.
 1. *Se non si sta eseguendo un aggiornamento di Node*, etichettare il
    codice col numero di [versionamento (semantico)](https://semver.org/)
    relativo.

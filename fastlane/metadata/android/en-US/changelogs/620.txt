@@ -1,0 +1,2 @@
+Theme setting removed: the app will start automagically with current
+device theme.

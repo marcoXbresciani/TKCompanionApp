@@ -5,6 +5,7 @@
     "allowUnusedLabels": false,
     "alwaysStrict": true,
     "esModuleInterop": true,
+    "exactOptionalPropertyTypes":  true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "react-native",
@@ -12,17 +13,27 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "newLine": "crlf",
+    "noFallthroughCasesInSwitch":  true,
     "noEmit": true,
+    "noImplicitAny":  true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
+    "noImplicitThis":  true,
+    "noPropertyAccessFromIndexSignature":  true,
+    "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
+    "strictBindCallApply":  true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization":  true,
     "target": "esnext",
   },
   "exclude": [
     "node_modules", "babel.config.js", "metro.config.js", "jest.config.js"
-  ]
+  ],
+  "extends": "@tsconfig/recommended/tsconfig.json"
 }

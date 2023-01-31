@@ -62,7 +62,7 @@ const BadgesPage: React.FC = () => {
                 return (
                   <IconButton
                     key={badge.icon}
-                    mode={earned[index] ? 'outlined' : 'contained-tonal'} disabled={earned[index]} icon={badge.icon} onPress={() => {
+                    mode={(earned[index] ?? false) ? 'outlined' : 'contained-tonal'} disabled={earned[index] ?? true} icon={badge.icon} onPress={() => {
                       setSnackMessage(badge.description)
                       setVisibleSnack(true)
                     }}

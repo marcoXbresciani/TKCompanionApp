@@ -38,7 +38,12 @@ This file is offered as-is, without any warranty.
 
 ### Changed
 
+* Update to Node LTS 18.14.0
+
 ### Removed
+
+* Documentation and files in Italian.
+  Removed to avoid misalignment with English.
 
 ### Fixed
 

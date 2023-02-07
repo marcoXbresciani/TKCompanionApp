@@ -20,17 +20,10 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { MD3LightTheme as DefaultTheme } from 'react-native-paper'
+import { configureFonts, MD3LightTheme } from 'react-native-paper'
 import { fontConfig } from './fontConfig'
 
 export const tkLightTheme = {
-  ...DefaultTheme,
-  colors: {
-    ...DefaultTheme.colors
-    // background: '#FFFFFF',
-    // primary: '#4169E1',   // royalblue
-    // secondary: '#B941E1', //triadic
-    // tertiary: '#E14169'
-  },
-  fonts: fontConfig
+  ...MD3LightTheme,
+  fonts: configureFonts({config: fontConfig})
 }

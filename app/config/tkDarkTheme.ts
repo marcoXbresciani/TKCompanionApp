@@ -20,17 +20,10 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { MD3DarkTheme as DarkTheme } from 'react-native-paper'
+import { configureFonts, MD3DarkTheme } from 'react-native-paper'
 import { fontConfig } from './fontConfig'
 
 export const tkDarkTheme = {
-  ...DarkTheme,
-  colors: {
-    ...DarkTheme.colors
-    // background: '#000000',
-    // primary: '#FFD700',   // gold
-    // secondary: '#26FF0', // triadic
-    // tertiary: '#00FFD9'
-  },
-  fonts: fontConfig
+  ...MD3DarkTheme,
+  fonts: configureFonts({config: fontConfig})
 }

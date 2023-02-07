@@ -126,7 +126,9 @@ through NPM package manager.
 
 The `husky` pre-commit hook is used to verify the coding conventions
 consistency through the `ts-standard` package, available in the
-development dependencies.
+development dependencies, so it might be needed to run the command
+`npm install -g ts-standard` if `husky` won't be able to find and run
+the `ts-standard` command.
 
 You also need to install REUSE helper tool (by Free Software Foundation
 Europe) to assist with achieving and confirming

@@ -25,5 +25,5 @@ import { fontConfig } from './fontConfig'
 
 export const tkLightTheme = {
   ...MD3LightTheme,
-  fonts: configureFonts({config: fontConfig})
+  fonts: configureFonts({ config: fontConfig })
 }

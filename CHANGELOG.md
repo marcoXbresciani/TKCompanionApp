@@ -38,7 +38,8 @@ This file is offered as-is, without any warranty.
 
 ### Changed
 
-* Update to Node LTS 18.14.0
+* Update to Node LTS 18.14.0.
+* Simplified font management.
 
 ### Removed
 

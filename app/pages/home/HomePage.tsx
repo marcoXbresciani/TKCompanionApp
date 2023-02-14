@@ -33,42 +33,18 @@ import FiveQ from '../docs/5qcard/FiveQ'
 
 const HomePage: React.FunctionComponent = () => {
   const [visibleAbout, setVisibleAbout] = React.useState(false)
-  const showAbout = (): void => {
-    setVisibleAbout(true)
-  }
-  const hideAbout = (): void => setVisibleAbout(false)
-
-  const [visibleCopyright, setVisibleCopyright] =
-    React.useState(false)
-  const showCopyright = (): void => {
-    setVisibleCopyright(true)
-  }
-  const hideCopyright = (): void => setVisibleCopyright(false)
-
+  const [visibleCopyright, setVisibleCopyright] = React.useState(false)
   const [visibleSettings, setVisibleSettings] = React.useState(false)
-  const showSettings = (): void => {
-    setVisibleSettings(true)
-  }
-  const hideSettings = (): void => setVisibleSettings(false)
-
   const [visibleLegend, setVisibleLegend] = React.useState(false)
-  const showLegend = (): void => {
-    setVisibleLegend(true)
-  }
-  const hideLegend = (): void => setVisibleLegend(false)
-
   const [visibleFeedback, setVisibleFeedback] = React.useState(false)
-  const showFeedback = (): void => {
-    setVisibleFeedback(true)
-  }
 
   return (
     <>
       <Portal>
-        <Dialog visible={visibleSettings} onDismiss={hideSettings}>
+        <Dialog visible={visibleSettings} onDismiss={(): void => setVisibleSettings(false)}>
           <Settings />
         </Dialog>
-        <Dialog visible={visibleLegend} onDismiss={hideLegend}>
+        <Dialog visible={visibleLegend} onDismiss={(): void => setVisibleLegend(false)}>
           <Legend />
         </Dialog>
         <TkDialog
@@ -79,36 +55,36 @@ const HomePage: React.FunctionComponent = () => {
           visible={visibleFeedback}
           setVisible={setVisibleFeedback}
         />
-        <Dialog visible={visibleAbout} onDismiss={hideAbout}>
+        <Dialog visible={visibleAbout} onDismiss={(): void => setVisibleAbout(false)}>
           <About />
         </Dialog>
-        <Dialog visible={visibleCopyright} onDismiss={hideCopyright}>
+        <Dialog visible={visibleCopyright} onDismiss={(): void => setVisibleCopyright(false)}>
           <Copyright />
         </Dialog>
       </Portal>
 
       <Appbar.Header>
         <Appbar.Action
-          onPress={showSettings}
+          onPress={(): void => { setVisibleSettings(true) }}
           icon='tune-variant'
           isLeading
         />
         <Appbar.Action
-          onPress={showLegend}
+          onPress={(): void => { setVisibleLegend(true) }}
           icon='help-box'
           isLeading
         />
         <Appbar.Content title='' />
         <Appbar.Action
-          onPress={showFeedback}
+          onPress={(): void => { setVisibleFeedback(true) }}
           icon='comment-quote-outline'
         />
         <Appbar.Action
-          onPress={showCopyright}
+          onPress={(): void => { setVisibleCopyright(true) }}
           icon='copyleft'
         />
         <Appbar.Action
-          onPress={showAbout}
+          onPress={(): void => { setVisibleAbout(true) }}
           icon='information-variant'
         />
       </Appbar.Header>

@@ -191,6 +191,10 @@ Thanks to (in appearing order):
   publishing the app to F-Droid.
 * [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html)
   for the app icon.
+* [Gant Laborde (@GantMan)](https://github.com/GantMan) for mentioning
+  TKCompanionApp in his
+  [React Native Apps](https://github.com/ReactNativeNews/React-Native-Apps)
+  Curated List of Open Source React Native Apps.
 
 ## Contributing
 

@@ -17,7 +17,7 @@ SPDX-License-Identifier: FSFAP
 > files access.
 >
 > See also the latest app analysis done by Exodus Privacy at
-> <https://reports.exodus-privacy.eu.org/it/reports/328849/>.
+> <https://reports.exodus-privacy.eu.org/it/reports/335891/>.
 
 ## Known Security Issues
 

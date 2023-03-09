@@ -296,7 +296,7 @@ const PdsaPage: React.FC = () => {
                         ...pdsaEntry,
                         learnt: ''
                       })
-                      setDisabledSave(true)
+                      setDisabledSave(false)
                       setVisibleSnack(true)
                     }}
                   />

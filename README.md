@@ -57,6 +57,10 @@ Content to be improved and updated from time to time.
 
 ## Security
 
+> Please note that this app is currently **not** on Google Play and won't be there in the near future.
+> For example, [this app](https://play.google.com/store/apps/details?id=name.bresciani.marco.tkcompanionapp) is possibly a scam and surely a copyright violation!
+> **DO NOT** download TKCompanionApp from Google Play!!!
+
 See file [SECURITY.md](/docs/SECURITY.md) for notes and updates related
 to security issues.
 

@@ -199,6 +199,7 @@ Thanks to (in appearing order):
   TKCompanionApp in his
   [React Native Apps](https://github.com/ReactNativeNews/React-Native-Apps)
   Curated List of Open Source React Native Apps.
+* [@mondstern@mastodon.green](@mondstern@mastodon.green) for mentioning TKCompanionApp in the [we ❤️ @Codeberg](https://welove.codeberg.page/) list of F-Droid apps hosted on Codeberg.
 
 ## Contributing
 

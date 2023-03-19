@@ -97,7 +97,7 @@ const PdsaPage: React.FC = () => {
         setVisible={setVisibleDialog}
       />
 
-      <Appbar.Header>
+      <Appbar.Header mode='small'>
         <Appbar.Action
           icon='calendar-cursor'
           onPress={() => {

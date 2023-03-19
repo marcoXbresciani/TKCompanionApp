@@ -30,9 +30,11 @@ import Legend from './dialogs/Legend'
 import TkDialog from '../../components/wip/TkDialog'
 import PageContainer from '../PageContainer'
 import FiveQ from '../docs/5qcard/FiveQ'
+import Alert from './dialogs/Alert'
 
 const HomePage: React.FunctionComponent = () => {
   const [visibleAbout, setVisibleAbout] = React.useState(false)
+  const [visibleAlert, setVisibleAlert] = React.useState(true)
   const [visibleCopyright, setVisibleCopyright] = React.useState(false)
   const [visibleSettings, setVisibleSettings] = React.useState(false)
   const [visibleLegend, setVisibleLegend] = React.useState(false)
@@ -41,6 +43,9 @@ const HomePage: React.FunctionComponent = () => {
   return (
     <>
       <Portal>
+        <Dialog visible={visibleAlert} onDismiss={(): void => setVisibleAlert(false)}>
+          <Alert />
+        </Dialog>
         <Dialog visible={visibleSettings} onDismiss={(): void => setVisibleSettings(false)}>
           <Settings />
         </Dialog>

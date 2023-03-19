@@ -57,9 +57,16 @@ Content to be improved and updated from time to time.
 
 ## Security
 
-> Please note that TKCompanionApp is currently **not** on Google Play and won't be there in the near future.
-> For example, [this app](https://play.google.com/store/apps/details?id=name.bresciani.marco.tkcompanionapp) is possibly a scam and surely a copyright violation!
 > **DO NOT** download TKCompanionApp from Google Play!!!
+
+**Alert**:
+
+> Please note that TKCompanionApp is currently **not** on Google Play
+> and won't be there in the near future.
+>
+> For example,
+> [this app](https://play.google.com/store/apps/details?id=name.bresciani.marco.tkcompanionapp)
+> is possibly an ad-filled scam and surely a copyright violation!
 
 See file [SECURITY.md](/docs/SECURITY.md) for notes and updates related
 to security issues.
@@ -97,7 +104,11 @@ for a Google Developer Account, and it's even
 [$99/year](https://developer.apple.com/support/enrollment/) (!) for the
 Apple Developer Program.
 
-So (for now?) you can find this app only through the
+> If you found it, **DO NOT** download TKCompanionApp from Google Play
+> or Apple App Store: it's not the real one available from F-Droid or
+> Codeberg!
+
+So (for now) you can find this app _only_ through the
 [F-Droid](https://f-droid.org/) *installable catalogue of FOSS (Free and
 Open Source Software) applications for the Android platform*.
 
@@ -199,7 +210,10 @@ Thanks to (in appearing order):
   TKCompanionApp in his
   [React Native Apps](https://github.com/ReactNativeNews/React-Native-Apps)
   Curated List of Open Source React Native Apps.
-* [@mondstern@mastodon.green](@mondstern@mastodon.green) for mentioning TKCompanionApp in the [we ❤️ @Codeberg](https://welove.codeberg.page/) list of F-Droid apps hosted on Codeberg.
+* [@mondstern@mastodon.green](https://mastodon.green/@mondstern) for
+  mentioning TKCompanionApp in the
+  [we ❤️ @Codeberg](https://welove.codeberg.page/) list of F-Droid apps
+  hosted on Codeberg.
 
 ## Contributing
 

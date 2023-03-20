@@ -23,9 +23,10 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import { ScrollView, View } from 'react-native'
-import { Dialog } from 'react-native-paper'
+import { Dialog, Divider } from 'react-native-paper'
 import TkText from '../../../components/TkText'
 import SmallerText from '../../../components/SmallerText'
+import BoldText from '../../../components/BoldText'
 
 const Notice = styled(View)`
   align-content: center;
@@ -43,9 +44,11 @@ const Alert: React.FunctionComponent = () => {
       <Dialog.Title>Alert</Dialog.Title>
       <ScrollView>
         <Dialog.Content>
-          <Notice key="alert">
-            <TkText>**DO NOT** download TKCompanionApp from Google Play
-              or Apple App Store!</TkText>
+          <Notice key='alert'>
+            <TkText><BoldText>DO NOT</BoldText> download TKCompanionApp
+              from Google Play or Apple App Store!
+            </TkText>
+            <Divider />
             <SmallerText>
               There has been found at least one unauthorized clone of
               TKCompanionApp on Google Play.
@@ -58,10 +61,23 @@ const Alert: React.FunctionComponent = () => {
               TKCompanionApp is available only through F-Droid or via
               Codeberg APK files direct download.
             </SmallerText>
-            <SmallerText>
-              If you have download TKCompanionApp from Google Play,
-              please remove it for your safety and download it from
-              F-Droid.
+            <Divider />
+            <TkText>
+              If you have downloaded TKCompanionApp from Google Play or
+              Apple App Store, please remove it for your safety and
+              download it from F-Droid.
+            </TkText>
+          </Notice>
+          <Notice key='bug'>
+            <TkText>This message will unfortunately remain till that
+              clone/scam app will be removed (as requested, for
+              copyright infringement) by Google from Google
+              Play.
+            </TkText>
+            <Divider />
+            <SmallerText>I'll fix this message in next release, to make
+              it appear only once, instead of every time when opening
+              the app.
             </SmallerText>
           </Notice>
         </Dialog.Content>

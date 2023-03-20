@@ -53,3 +53,19 @@ page or not.
 21. ~~Bump node-fetch from 1.7.3 to 2.6.7~~
 22. ~~Complete translations for >5.x versions~~
 23. ~~Restore 5Q card in Home Page/Screen~~
+24. [Copycat/Clone of TKCompanionApp on Google Play](https://codeberg.org/marco.bresciani/TKCompanionApp/issues/24)
+
+    Hi,
+
+    I just found TKCompanionApp on Google Play here
+    https://play.google.com/store/apps/details?id=name.bresciani.marco.tkcompanionapp
+    from [this developer](https://play.google.com/store/apps/developer?id=Schnupfeld).
+
+    It looks like someone basiccaly took your app, added plenty of ads
+    in it, and uploaded on Google Play, without even changing the
+    package name...
+
+    It doesn't respect the GNU GPLv3+ license neither apparently.
+
+    People from NewPipe wrote a procedure to send a DMCA takedown
+    request to Google Play here if you want to use it.

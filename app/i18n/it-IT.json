@@ -211,6 +211,16 @@
             "title": "Il codice Kata"
         }
     },
+    "events": {
+        "message": [
+            "Ciao.",
+            "Questa pagina contiene gli eventi (che conosco) relativi a Toyota Kata.",
+            "Cercherò di aggiungerli non appena ne vengo a conoscenza e li rimuoverò quando scaduti.",
+            "Contattami pure per aggiungere un evento specifico.",
+            "Cliccando su un evento si aprirà il browser alla pagina dell'evento."
+        ],
+        "title": "Eventi"
+    },
     "home": {
         "feedback": {
             "after": "Puoi anche visitare le pagine dell'app, indicate nel menu $t(nav.menu.about.title).",

@@ -27,7 +27,7 @@ import PdsaPage from '../pages/pdsa/PdsaPage'
 import DocsPage from '../pages/docs/DocsPage'
 import i18n from '../i18n/i18n'
 import BadgesPage from '../pages/BadgesPage'
-import { Route } from 'react-native'
+import EventsPage from '../pages/EventsPage'
 
 const TkNavigator: React.FunctionComponent = () => {
   const [index, setIndex] = React.useState(0)
@@ -35,40 +35,39 @@ const TkNavigator: React.FunctionComponent = () => {
     {
       focusedIcon: 'home-outline',
       key: 'home',
-      testID: 'nav.home'
+      title: i18n.t('nav.home')
     },
     {
       focusedIcon: 'note-edit-outline',
       key: 'pdsa',
-      testID: 'pdsa.title'
+      title: i18n.t('pdsa.title')
     },
     {
       focusedIcon: 'library-shelves',
       key: 'docs',
-      testID: 'docs.title'
+      title: i18n.t('docs.title')
     },
     {
       focusedIcon: 'medal-outline',
       key: 'badges',
-      testID: 'badges.title'
+      title: i18n.t('badges.title')
+    },
+    {
+      focusedIcon: 'human-capacity-increase',
+      key: 'events',
+      title: i18n.t('events.title')
     }
   ])
   const renderScene = BottomNavigation.SceneMap({
     home: HomePage,
     pdsa: PdsaPage,
     docs: DocsPage,
-    badges: BadgesPage
+    badges: BadgesPage,
+    events: EventsPage
   })
-
-  const getTranslatedLabel = (route: Route): string => {
-    return i18n.t(route.route.testID ?? '')
-  }
 
   return (
     <BottomNavigation
-      getLabelText={(route) => { return getTranslatedLabel(route) }}
-      getAccessibilityLabel={(route) => { return getTranslatedLabel(route) }}
-      getLazy={() => { return false }}
       navigationState={{ index, routes }}
       onIndexChange={setIndex}
       renderScene={renderScene}

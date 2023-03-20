@@ -50,6 +50,12 @@ This file is offered as-is, without any warranty.
 
 ### Security
 
+## [6.3.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.3.0) - 2023-03-20
+
+### Added
+
+* Alert splash for scam on Google Play.
+
 ## [6.2.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.2.0) - 2023-02-03
 
 ### Removed

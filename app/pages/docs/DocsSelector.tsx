@@ -128,7 +128,7 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
                   />
                 )
               })
-}
+            }
           </List.Section>
         </TkCardContent>
       </TkCard>

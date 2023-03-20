@@ -41,20 +41,26 @@ This file is offered as-is, without any warranty.
 * Update to Node LTS 18.14.0.
 * Simplified font management.
 
-### Removed
-
-* Documentation and files in Italian.
-  Removed to avoid misalignment with English.
-
 ### Fixed
 
 ### Security
+
+## [6.4.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.0) - 2023-03-22
+
+### Added
+
+* New Events page with known events.
 
 ## [6.3.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.3.0) - 2023-03-20
 
 ### Added
 
 * Alert splash for scam on Google Play.
+
+### Removed
+
+* Documentation and files in Italian.
+  Removed to avoid misalignment with English.
 
 ## [6.2.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.2.0) - 2023-02-03
 

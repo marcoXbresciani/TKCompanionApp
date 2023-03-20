@@ -21,7 +21,19 @@ SPDX-License-Identifier: FSFAP
 
 ## Known Security Issues
 
-No currently known security issues.
+> **DO NOT** download TKCompanionApp from Google Play!!!
+
+**Alert**:
+
+> Please note that TKCompanionApp is currently **not** on Google Play
+> or Apple App Store and won't be there in the near future.
+>
+> For example,
+> [this app](https://play.google.com/store/apps/details?id=name.bresciani.marco.tkcompanionapp)
+> is possibly an ad-filled scam and surely a copyright violation!
+>
+> If you have downloaded TKCompanionApp from Google Play or Apple App
+> Store, please remove it for your safety and download it from F-Droid.
 
 ## Supported Versions
 

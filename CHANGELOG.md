@@ -38,9 +38,6 @@ This file is offered as-is, without any warranty.
 
 ### Changed
 
-* Update to Node LTS 18.14.0.
-* Simplified font management.
-
 ### Fixed
 
 ### Security
@@ -50,6 +47,11 @@ This file is offered as-is, without any warranty.
 ### Added
 
 * New Events page with currently known events.
+
+### Changed
+
+* Update to Node LTS 18.15.0.
+* Simplified font management.
 
 ## [6.3.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.3.0) - 2023-03-20
 

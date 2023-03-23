@@ -45,11 +45,11 @@ This file is offered as-is, without any warranty.
 
 ### Security
 
-## [6.4.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.0) - 2023-03-22
+## [6.4.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.0) - 2023-03-23
 
 ### Added
 
-* New Events page with known events.
+* New Events page with currently known events.
 
 ## [6.3.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.3.0) - 2023-03-20
 

@@ -282,9 +282,10 @@
             "after": "You can also visit app pages listed in $t(nav.menu.about.title).",
             "before": "Welcome to TKCompanionApp, and thank you for being here.",
             "messages": [
-                "This app has neither Internet connection nor tracking tools, so I cannot know if you like it or not, or how you (want to) use it.",
+                "TKCompanionApp does not connect to the Internet and has not tracking tools, so I cannot know if you like it or not, or how you (want to) use it.",
                 "Please, feel free to reach out to me through the contact channels below, for any feedback.",
-                "All feedbacks are welcome."
+                "All feedbacks are welcome.",
+                "TKCompanionApp is not available through Google Play or Apple App Store but only through F-Droid or via APK files direct download from Codeberg."
             ],
             "title": "Let's get in touch!"
         }

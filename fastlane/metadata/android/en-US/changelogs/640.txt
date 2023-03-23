@@ -1,0 +1,3 @@
+New Events page with currently known Toyota Kata events.
+Update to Node LTS 18.15.0.
+Simplified font management.

@@ -1,0 +1,3 @@
+Nuova pagina Eventi cogli eventi Toyota Kata conosciuti.
+Aggiornamento a Node LTS 18.15.0
+Gestione font semplificata.

@@ -146,8 +146,8 @@ android {
         applicationId "name.bresciani.marco.tkcompanionapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 640
-        versionName "6.4.0"
+        versionCode 641
+        versionName "6.4.1"
         buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
 
         if (isNewArchitectureEnabled()) {

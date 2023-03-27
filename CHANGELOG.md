@@ -42,6 +42,13 @@ This file is offered as-is, without any warranty.
 
 ### Security
 
+## [6.4.1](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.1) - 2023-03-28
+
+### Changed
+
+* Events list removed from I18N.
+* Updated Events.
+
 ## [6.4.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.0) - 2023-03-23
 
 ### Added

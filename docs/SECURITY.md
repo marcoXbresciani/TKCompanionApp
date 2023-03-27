@@ -41,7 +41,10 @@ are read the possible security issues reported here.
 
 > If you have downloaded TKCompanionApp from Google Play or Apple App
 > Store, please remove it and download it from F-Droid or grab the APK
-> files directly from either F-Droid or Codeberg.
+> files directly from either
+> [F-Droid](https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/)
+> or
+> [Codeberg](https://codeberg.org/marco.bresciani/TKCompanionApp/releases).
 
 ## Reporting a Vulnerability
 

@@ -31,7 +31,75 @@ import { Chip, IconButton, List } from 'react-native-paper'
 import i18n from '../i18n/i18n'
 
 const BadgesPage: React.FC = () => {
-  const events: Array<{ date: string, location: string, title: string, url: string }> = i18n.t('events.list', { returnObjects: true })
+  const events: Array<{ date: string, location: string, title: string, url: string }> = [
+    {
+      date: '2023-04-11',
+      location: 'WWW',
+      title: "What's Actually Happening- Toyota Kata at Church and Dwight",
+      url: 'https://us02web.zoom.us/webinar/register/WN_-hb9opX0Q9O4D_ieblfo6g'
+    },
+    {
+      date: '2023-04-12',
+      location: 'US',
+      title: '2-Day Toyota Kata Experiential Workshop',
+      url: 'https://www.eventbrite.com/e/2-day-toyota-kata-experiential-workshop-registration-525157288587'
+    },
+    {
+      date: '2023-04-18',
+      location: 'US',
+      title: 'Skillpoint for Toyota Kata',
+      url: 'https://leanfrontiers.com/skillpointkata/'
+    },
+    {
+      date: '2023-04-24',
+      location: 'US',
+      title: 'Central Coast Lean Summit 2023',
+      url: 'https://www.purpose-ccl.org/ccl-summit'
+    },
+    {
+      date: '2023-04-25',
+      location: 'US',
+      title: 'Skillpoint for the Coaching Kata',
+      url: 'https://leanfrontiers.com/skillpointforcoachingkata/'
+    },
+    {
+      date: '2023-05-03',
+      location: 'AT',
+      title: 'KataCon Europe',
+      url: 'https://katacon.eu/'
+    },
+    {
+      date: '2023-05-03',
+      location: 'SW',
+      title: 'Basic course in Toyota kata',
+      url: 'https://btp.dk/eng/our-events/grundkurs-i-toyota-kata/'
+    },
+    {
+      date: '2023-05-10',
+      location: 'PE',
+      title: 'Lean Six Sigma Workshop by Mr. Dave Harry - Toyota Kata / c/o 4th South American Conference on Industrial Engineering and Operations Management',
+      url: 'https://btp.dk/eng/our-events/grundkurs-i-toyota-kata/'
+    },
+    {
+      date: '2023-06-07',
+      location: 'WWW',
+      title: 'ASK ME ANYTHING – TOYOTA KATA',
+      url: 'https://polarismep.org/event/ask-me-anything-toyota-kata/'
+    },
+    {
+      date: '2023-07-22',
+      location: 'CN',
+      title: 'TOYOTA KATA',
+      url: 'https://www.cameraitacina.com/en/events/toyota-kata'
+    },
+    {
+      date: '2023-08-16',
+      location: 'WWW',
+      title: 'A Vision of Process Excellence and Seven Habits for the Journey',
+      url: 'https://us02web.zoom.us/webinar/register/WN_LF16EVAuRAOtp-aEys_OPQ'
+    }
+  ]
+
   const messages: string[] = i18n.t('events.message', { returnObjects: true })
 
   return (
@@ -65,7 +133,7 @@ const BadgesPage: React.FC = () => {
                           />
                         )}
                         title={event.title}
-                        titleNumberOfLines={5}
+                        titleNumberOfLines={8}
                       />
                     )
                   })

@@ -212,62 +212,6 @@
         }
     },
     "events": {
-        "list": [
-            {
-                "date": "2023-04-11",
-                "location": "WWW",
-                "title": "What's Actually Happening- Toyota Kata at Church and Dwight",
-                "url": "https://us02web.zoom.us/webinar/register/WN_-hb9opX0Q9O4D_ieblfo6g"
-            },
-            {
-                "date": "2023-04-12",
-                "location": "US",
-                "title": "2-Day Toyota Kata Experiential Workshop",
-                "url": "https://www.eventbrite.com/e/2-day-toyota-kata-experiential-workshop-registration-525157288587"
-            },
-            {
-                "date": "2023-04-18",
-                "location": "US",
-                "title": "Skillpoint for Toyota Kata",
-                "url": "https://leanfrontiers.com/skillpointkata/"
-            },
-            {
-                "date": "2023-04-25",
-                "location": "US",
-                "title": "Skillpoint for the Coaching Kata",
-                "url": "https://leanfrontiers.com/skillpointforcoachingkata/"
-            },
-            {
-                "date": "2023-05-03",
-                "location": "AT",
-                "title": "KataCon Europe",
-                "url": "https://katacon.eu/"
-            },
-            {
-                "date": "2023-05-03",
-                "location": "SW",
-                "title": "Basic course in Toyota kata",
-                "url": "https://btp.dk/eng/our-events/grundkurs-i-toyota-kata/"
-            },
-            {
-                "date": "2023-06-07",
-                "location": "WWW",
-                "title": "ASK ME ANYTHING – TOYOTA KATA",
-                "url": "https://polarismep.org/event/ask-me-anything-toyota-kata/"
-            },
-            {
-                "date": "2023-07-22",
-                "location": "CN",
-                "title": "TOYOTA KATA",
-                "url": "https://www.cameraitacina.com/en/events/toyota-kata"
-            },
-            {
-                "date": "2023-08-16",
-                "location": "WWW",
-                "title": "A Vision of Process Excellence and Seven Habits for the Journey",
-                "url": "https://us02web.zoom.us/webinar/register/WN_LF16EVAuRAOtp-aEys_OPQ"
-            }
-        ],
         "message": [
             "Hello.",
             "This page will contain the (known, to me) events related to Toyota Kata.",

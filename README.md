@@ -64,9 +64,12 @@ Content to be improved and updated from time to time.
 > Please note that TKCompanionApp is currently **not** on Google Play
 > and won't be there in the near future.
 >
-> There already was a case of an unwanted, ads-filled clone/copycat of TKCompanionApp on Google Play.
+> There already was a case of an unwanted, ads-filled clone/copycat of
+> TKCompanionApp on Google Play.
 >
-> If you have downloaded TKCompanionApp from Google Play or Apple Play Store please, for your safety, remove it and install it only from F-Droid or from APK files available on the Codeberg repository.
+> If you have downloaded TKCompanionApp from Google Play or Apple Play
+> Store please, for your safety, remove it and install it only from
+> F-Droid or from APK files available on the Codeberg repository.
 
 See file [SECURITY.md](/docs/SECURITY.md) for notes and updates related
 to security issues.

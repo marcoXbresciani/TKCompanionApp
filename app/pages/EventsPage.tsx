@@ -33,6 +33,12 @@ import i18n from '../i18n/i18n'
 const BadgesPage: React.FC = () => {
   const events: Array<{ date: string, location: string, title: string, url: string }> = [
     {
+      date: '2023-04-10',
+      location: 'WWW',
+      title: 'Improvement Kata/Coaching Kata Remotely',
+      url: 'https://us02web.zoom.us/webinar/register/WN_-hb9opX0Q9O4D_ieblfo6g'
+    },
+    {
       date: '2023-04-11',
       location: 'WWW',
       title: "What's Actually Happening- Toyota Kata at Church and Dwight",
@@ -81,10 +87,22 @@ const BadgesPage: React.FC = () => {
       url: 'https://btp.dk/eng/our-events/grundkurs-i-toyota-kata/'
     },
     {
+      date: '2023-05-11',
+      location: 'WWW',
+      title: 'Improvement Kata 101 (virtual card sort)',
+      url: 'https://ame.org/event/improvement-kata-101-virtual-card-sort'
+    },
+    {
       date: '2023-06-07',
       location: 'WWW',
       title: 'ASK ME ANYTHING – TOYOTA KATA',
       url: 'https://polarismep.org/event/ask-me-anything-toyota-kata/'
+    },
+    {
+      date: '2023-06-20',
+      location: 'WWW',
+      title: 'Improvement Kata/Coaching Kata Remotely',
+      url: 'https://us02web.zoom.us/webinar/register/WN_-hb9opX0Q9O4D_ieblfo6g'
     },
     {
       date: '2023-07-22',

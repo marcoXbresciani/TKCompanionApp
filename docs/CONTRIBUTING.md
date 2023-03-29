@@ -219,7 +219,7 @@ release.
    folder if needed, tracking them in the [CHANGELOG.md](/CHANGELOG.md)
    file.
 1. Verify [REUSE](https://reuse.software/) compliance through
-   `reuse lint` command.
+   `pipx run reuse lint` command.
    Please note this command is also automatically launched before each
    commit.
 1. Verify clean code criteria through `npm run lint` command.

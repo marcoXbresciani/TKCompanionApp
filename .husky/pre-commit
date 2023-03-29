@@ -15,7 +15,7 @@ if [[ $? -ne 0 ]]; then
   exit 1
 fi
 
-reuse lint
+pipx run reuse lint
 if [[ $? -ne 0 ]]; then
   echo 'Unfortunately, your project is not compliant with version 3.0 of the REUSE Specification :-('
   exit 1

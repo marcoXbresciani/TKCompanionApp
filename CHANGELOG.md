@@ -42,6 +42,12 @@ This file is offered as-is, without any warranty.
 
 ### Security
 
+## [6.4.2](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.2) - 2023-03-29
+
+### Changed
+
+* Updated Events.
+
 ## [6.4.1](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.1) - 2023-03-28
 
 ### Changed

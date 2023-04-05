@@ -71,15 +71,27 @@ const Legend: React.FC = () => {
           </List.Accordion>
           <List.Accordion title={i18n.t('pdsa.title')}>
             <List.Item
-              left={props => <List.Icon {...props} icon='calendar-cursor' />}
+              left={props => <List.Icon {...props} icon='calendar-edit' />}
+              title={i18n.t('pdsa.legend.calendar.title')}
+              description={i18n.t('pdsa.legend.calendar.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='calendar-arrow-left' />}
+              title={i18n.t('pdsa.legend.before.title')}
+              description={i18n.t('pdsa.legend.before.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='calendar-today' />}
               title={i18n.t('pdsa.legend.today.title')}
               description={i18n.t('pdsa.legend.today.explain')}
               descriptionNumberOfLines={3}
             />
             <List.Item
-              left={props => <List.Icon {...props} icon='calendar-blank' />}
-              title={i18n.t('pdsa.legend.calendar.title')}
-              description={i18n.t('pdsa.legend.calendar.explain')}
+              left={props => <List.Icon {...props} icon='calendar-arrow-right' />}
+              title={i18n.t('pdsa.legend.after.title')}
+              description={i18n.t('pdsa.legend.after.explain')}
               descriptionNumberOfLines={3}
             />
             <List.Item
@@ -92,6 +104,12 @@ const Legend: React.FC = () => {
               left={props => <List.Icon {...props} icon='trash-can-outline' />}
               title={i18n.t('pdsa.legend.delete.title')}
               description={i18n.t('pdsa.legend.delete.explain')}
+              descriptionNumberOfLines={3}
+            />
+            <List.Item
+              left={props => <List.Icon {...props} icon='content-duplicate' />}
+              title={i18n.t('pdsa.legend.duplicate.title')}
+              description={i18n.t('pdsa.legend.duplicate.explain')}
               descriptionNumberOfLines={3}
             />
             <List.Item
@@ -118,6 +136,14 @@ const Legend: React.FC = () => {
               left={props => <List.Icon {...props} icon='home-export-outline' />}
               title={i18n.t('docs.legend.browse.title')}
               description={i18n.t('docs.legend.browse.explain')}
+              descriptionNumberOfLines={3}
+            />
+          </List.Accordion>
+          <List.Accordion title={i18n.t('events.title')}>
+            <List.Item
+              left={props => <List.Icon {...props} icon='home-export-outline' />}
+              title={i18n.t('events.legend.browse.title')}
+              description={i18n.t('events.legend.browse.explain')}
               descriptionNumberOfLines={3}
             />
           </List.Accordion>

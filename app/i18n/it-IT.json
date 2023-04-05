@@ -170,11 +170,11 @@
         },
         "legend": {
             "read": {
-                "explain": "Leggi un documento nell'app",
+                "explain": "Leggi un documento nell'app.",
                 "title": "Leggi"
             },
             "download": {
-                "explain": "Scarica il documento di riferimento da Internet (dal tuo browser!) ",
+                "explain": "Scarica il documento di riferimento da Internet (dal tuo browser!).",
                 "title": "Scarica"
             },
             "browse": {
@@ -212,12 +212,17 @@
         }
     },
     "events": {
+        "legend": {
+            "browse": {
+                "explain": "$t(nav.menu.legend.browse.explain)",
+                "title": "$t(nav.menu.legend.browse.title)"
+            }
+        },
         "message": [
-            "Ciao.",
-            "Questa pagina contiene gli eventi (che conosco) relativi a Toyota Kata.",
+            "Eventi (che conosco) relativi a Toyota Kata.",
             "Cercherò di aggiungerli non appena ne vengo a conoscenza e li rimuoverò quando scaduti.",
             "Contattami pure per aggiungere un evento specifico.",
-            "Cliccando su un evento si aprirà il browser alla pagina dell'evento."
+            "Cliccando sull'icona si aprirà il browser alla pagina dell'evento."
         ],
         "title": "Eventi"
     },
@@ -238,26 +243,27 @@
         "home": "Inizio",
         "menu": {
             "about": {
-                "explain": "Apre la finestra delle $t(nav.menu.about.title)",
+                "explain": "Apre la finestra delle $t(nav.menu.about.title).",
                 "title": "Informazioni"
             },
             "contact": {
-                "explain": "Apre la finestra dei $t(nav.menu.contact.title)",
+                "explain": "Apre la finestra dei $t(nav.menu.contact.title).",
                 "title": "Contatti"
             },
             "copyright": {
-                "explain": "Apre la finestra del $t(nav.menu.copyright.title)",
+                "explain": "Apre la finestra del $t(nav.menu.copyright.title).",
                 "title": "Copyright"
             },
             "legend": {
                 "browse": {
-                    "explain": "Naviga su una pagina Internet esterna (dal tuo browser!)",
+                    "explain": "Naviga su una pagina Internet esterna (dal tuo browser!).",
                     "title": "Naviga"
                 },
+                "explain": "Apre questa pagina di spiegazione colla descrizione delle icone.",
                 "title": "Legenda"
             },
             "settings": {
-                "explain": "Apre la finestra delle $t(nav.menu.settings.title)",
+                "explain": "Apre la finestra delle $t(nav.menu.settings.title).",
                 "language": "Lingua",
                 "theme": "Scambia tema chiaro/scuro",
                 "title": "Impostazioni"
@@ -276,24 +282,36 @@
             "learnt": "Appreso"
         },
         "legend": {
+            "after": {
+                "explain": "Vai al giorno successivo rispetto a quello corrente.",
+                "title": "Giorno dopo"
+            },
+            "before": {
+                "explain": "Vai al giorno precedente rispetto a quello corrente.",
+                "title": "Giorno prima"
+            },
             "calendar": {
-                "explain": "Apri la finestra del $t(pdsa.legend.calendar.title)",
+                "explain": "Apri la finestra del $t(pdsa.legend.calendar.title).",
                 "title": "Calendario"
             },
             "delete": {
-                "explain": "Cancella il PDSA del giorno corrente",
+                "explain": "Cancella il PDSA del giorno corrente.",
                 "title": "Cancella"
             },
+            "duplicate": {
+                "explain": "Duplica il contenuto del campo dal primo giorno precedente disponibile (max. 7 giorni prima).",
+                "title": "Duplica"
+            },
             "empty": {
-                "explain": "Svuota il campo PDSA selezionato",
+                "explain": "Svuota il campo PDSA selezionato.",
                 "title": "Svuota"
             },
             "save": {
-                "explain": "Salva il PDSA del giorno corrente",
+                "explain": "Salva il PDSA del giorno corrente.",
                 "title": "Salva"
             },
             "today": {
-                "explain": "Vai al PDSA di $t(calendar.today)",
+                "explain": "Vai al PDSA di $t(calendar.today).",
                 "title": "$t(calendar.today)"
             }
         },
@@ -309,7 +327,8 @@
                 "saved": "{{day}} salvato"
             },
             "field": {
-                "deleted": "{{field}} {{day}} cancellato"
+                "deleted": "{{field}} {{day}} cancellato",
+                "duplicated": "{{field}} {{day}} duplicato"
             }
         },
         "title": "Diario PDSA"

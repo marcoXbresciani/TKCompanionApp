@@ -170,11 +170,11 @@
         },
         "legend": {
             "read": {
-                "explain": "Read a document inside the app",
+                "explain": "Read a document inside the app.",
                 "title": "Read"
             },
             "download": {
-                "explain": "Download the reference document from the Internet (with your browser!) ",
+                "explain": "Download the reference document from the Internet (with your browser!).",
                 "title": "Download"
             },
             "browse": {
@@ -213,11 +213,10 @@
     },
     "events": {
         "message": [
-            "Hello.",
-            "This page will contain the (known, to me) events related to Toyota Kata.",
+            "Known (to me) events related to Toyota Kata.",
             "I'll try to add them as soon as I know them and I'll remove them once expired.",
             "Feel free to contact me to add a specific event.",
-            "Clicking on an event will open a browser to event webpage."
+            "Clicking on the icon will open a browser to event webpage."
         ],
         "title": "Events"
     },
@@ -238,26 +237,27 @@
         "home": "Home",
         "menu": {
             "about": {
-                "explain": "Open the $t(nav.menu.about.title) dialog window",
+                "explain": "Open the $t(nav.menu.about.title) dialog window.",
                 "title": "About"
             },
             "contact": {
-                "explain": "Open the $t(nav.menu.contact.title) dialog window",
+                "explain": "Open the $t(nav.menu.contact.title) dialog window.",
                 "title": "Contact"
             },
             "copyright": {
-                "explain": "Open the $t(nav.menu.copyright.title) dialog window",
+                "explain": "Open the $t(nav.menu.copyright.title) dialog window.",
                 "title": "Copyright"
             },
             "legend": {
                 "browse": {
-                    "explain": "Browse an external Internet page (with your browser!)",
+                    "explain": "Browse an external Internet page (with your browser!).",
                     "title": "Browse"
                 },
+                "explain": "Open this explanation page with icons descriptions.",
                 "title": "Legend"
             },
             "settings": {
-                "explain": "Open the $t(nav.menu.settings.title) dialog window",
+                "explain": "Open the $t(nav.menu.settings.title) dialog window.",
                 "language": "Language",
                 "theme": "Switch light/dark theme",
                 "title": "Settings"
@@ -276,24 +276,36 @@
             "learnt": "Learnt"
         },
         "legend": {
+            "after": {
+                "explain": "Go to next day with respect to current.",
+                "title": "Day After"
+            },
+            "before": {
+                "explain": "Go to previous day with respect to current.",
+                "title": "Day Before"
+            },
             "calendar": {
-                "explain": "Open the $t(pdsa.legend.calendar.title) dialog window",
+                "explain": "Open the $t(pdsa.legend.calendar.title) dialog window.",
                 "title": "Calendar"
             },
             "delete": {
-                "explain": "Delete current day PDSA",
+                "explain": "Delete current day PDSA.",
                 "title": "Delete"
             },
+            "duplicate": {
+                "explain": "Duplicate the content of the field from a previously available day (max. 7 days behind).",
+                "title": "Duplicate"
+            },
             "empty": {
-                "explain": "Empty current PDSA field",
+                "explain": "Empty current PDSA field.",
                 "title": "Empty"
             },
             "save": {
-                "explain": "Save current day PDSA",
+                "explain": "Save current day PDSA.",
                 "title": "Save"
             },
             "today": {
-                "explain": "Go to $t(calendar.today) PDSA",
+                "explain": "Go to $t(calendar.today) PDSA.",
                 "title": "$t(calendar.today)"
             }
         },
@@ -309,7 +321,8 @@
                 "saved": "Saved {{day}}"
             },
             "field": {
-                "deleted": "Deleted {{day}} {{field}}"
+                "deleted": "Deleted {{day}} {{field}}",
+                "duplicated": "Duplicated {{day}} {{field}}"
             }
         },
         "title": "Plan-Do-Study-Act"

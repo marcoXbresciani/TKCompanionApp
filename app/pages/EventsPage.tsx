@@ -66,7 +66,7 @@ const BadgesPage: React.FC = () => {
       date: '2023-05-10',
       location: 'PE',
       title: 'Lean Six Sigma Workshop by Mr. Dave Harry - Toyota Kata / c/o 4th South American Conference on Industrial Engineering and Operations Management',
-      url: 'https://btp.dk/eng/our-events/grundkurs-i-toyota-kata/'
+      url: 'http://ieomsociety.org/peru2023/'
     },
     {
       date: '2023-05-11',

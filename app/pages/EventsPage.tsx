@@ -114,8 +114,6 @@ const BadgesPage: React.FC = () => {
                   return <TkText key={message}>{message}</TkText>
                 })
               }
-            </TkCardContent>
-            <TkCardContent>
               <List.Section>
                 {
                   events.flatMap(event => {

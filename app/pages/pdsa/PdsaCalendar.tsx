@@ -23,7 +23,7 @@
 import * as React from 'react'
 import { Dialog, Portal } from 'react-native-paper'
 import { Calendar } from 'react-native-calendars/src'
-import { getTodayIso8601 } from '../../utils/Functions'
+import { getToday } from '../../utils/Functions'
 
 interface Props {
   day: string
@@ -58,7 +58,7 @@ const PdsaCalendar: ({ day, setDay, markedDates }: Props) => JSX.Element = ({
             initialDate={day}
             markedDates={markedDates}
             markingType='dot'
-            maxDate={getTodayIso8601()}
+            maxDate={getToday()}
             onDayPress={date => {
               setDay(date.dateString)
               setVisible(false)

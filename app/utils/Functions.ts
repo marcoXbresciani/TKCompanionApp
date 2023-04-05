@@ -26,8 +26,20 @@ export function isDark (): boolean {
   return Appearance.getColorScheme() === 'dark'
 }
 
-export const getTodayIso8601 = (): string => {
+export const getPreviousDay = (date: string): string => {
+  const currentDay = new Date(date)
+  currentDay.setUTCDate(currentDay.getUTCDate() - 1)
+  return getIso8601(currentDay.valueOf())
+}
+
+export const getToday = (): string => {
   return getIso8601(new Date().valueOf())
+}
+
+export const getNextDay = (date: string): string => {
+  const currentDay = new Date(date)
+  currentDay.setUTCDate(currentDay.getUTCDate() + 1)
+  return getIso8601(currentDay.valueOf())
 }
 
 export const getIso8601 = (date: number): string => {

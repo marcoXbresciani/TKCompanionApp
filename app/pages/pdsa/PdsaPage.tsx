@@ -31,7 +31,7 @@ import TkCard from '../../components/tkcard/TkCard'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
 import PageContainer from '../PageContainer'
 import PdsaCalendar from './PdsaCalendar'
-import { getTodayIso8601 } from '../../utils/Functions'
+import { getToday } from '../../utils/Functions'
 import { Journal } from '../../utils/storage/journal/Journal'
 import { ScrollView } from 'react-native'
 import TkSnackbar from '../../components/TkSnackbar'
@@ -55,7 +55,7 @@ const PdsaPage: React.FC = () => {
   const unmarkedSelectedDay = { ...coloursDay, ...unMarked, ...selected }
 
   const journalStorage = StorageFactory.getInstance().getJournalStorage()
-  const [day, setDay] = React.useState(getTodayIso8601())
+  const [day, setDay] = React.useState(getToday())
   const [disabledSave, setDisabledSave] = React.useState(true)
   const [pdsaEntry, setPdsaEntry] = React.useState(new PdsaEntry())
   const [visibleDialog, setVisibleDialog] = React.useState(false)
@@ -150,6 +150,7 @@ const PdsaPage: React.FC = () => {
       />
 
       <PdsaHeader
+        day={day}
         setDay={setDay}
         setVisibleDialog={setVisibleDialog}
       />
@@ -159,7 +160,7 @@ const PdsaPage: React.FC = () => {
           <TkCard>
             <TkCardTitle
               right={() => <TitleBar />}
-              subtitle={day === getTodayIso8601() ? `${i18n.t('calendar.today').toLowerCase()}` : ''}
+              subtitle={day === getToday() ? `${i18n.t('calendar.today').toLowerCase()}` : ''}
               titleNumberOfLines={2}
               title={day}
             />

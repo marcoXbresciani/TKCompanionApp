@@ -23,14 +23,20 @@
 import { Appbar } from 'react-native-paper'
 import i18n from '../../i18n/i18n'
 import * as React from 'react'
-import { getTodayIso8601 } from '../../utils/Functions'
+import {
+  getNextDay,
+  getPreviousDay,
+  getToday
+} from '../../utils/Functions'
 
 interface HeaderProps {
+  day: string
   setDay: React.Dispatch<React.SetStateAction<string>>
   setVisibleDialog: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const PdsaHeader: React.FunctionComponent<HeaderProps> = ({
+  day,
   setDay,
   setVisibleDialog
 }) => {
@@ -43,16 +49,16 @@ const PdsaHeader: React.FunctionComponent<HeaderProps> = ({
         onPress={() => { setVisibleDialog(true) }}
       />
       <Appbar.Action
-        disabled icon='calendar-arrow-left'
-        onPress={() => { setDay(getTodayIso8601()) }}
+        icon='calendar-arrow-left'
+        onPress={() => { setDay(getPreviousDay(day)) }}
       />
       <Appbar.Action
         icon='calendar-today'
-        onPress={() => { setDay(getTodayIso8601()) }}
+        onPress={() => { setDay(getToday()) }}
       />
       <Appbar.Action
-        disabled icon='calendar-arrow-right'
-        onPress={() => { setDay(getTodayIso8601()) }}
+        disabled={day === getToday()} icon='calendar-arrow-right'
+        onPress={() => { setDay(getNextDay(day)) }}
       />
     </Appbar.Header>
   )

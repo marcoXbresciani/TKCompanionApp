@@ -49,7 +49,7 @@ const BadgesPage: React.FC = () => {
       <ScrollView>
         <PageContainer>
           <TkCard>
-            <TkCardTitle title={i18n.t('badges.title')} />
+            <TkCardTitle title={i18n.t('badges.title')} titleNumberOfLines={1} />
             <TkCardContent>
               {
               messages.flatMap((message) => {

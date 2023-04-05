@@ -23,6 +23,7 @@
 import * as React from 'react'
 import { Dialog, Portal } from 'react-native-paper'
 import { Calendar } from 'react-native-calendars/src'
+import { getTodayIso8601 } from '../../utils/Functions'
 
 interface Props {
   day: string
@@ -48,16 +49,21 @@ const PdsaCalendar: ({ day, setDay, markedDates }: Props) => JSX.Element = ({
         <Dialog.Content>
           <Calendar
             allowSelectionOutOfRange={false}
+            disableAllTouchEventsForDisabledDays
+            disableAllTouchEventsForInactiveDays
             disableArrowLeft={false}
             disableArrowRight={false}
+            enableSwipeMonths={false}
             firstDay={1}
             initialDate={day}
             markedDates={markedDates}
             markingType='dot'
+            maxDate={getTodayIso8601()}
             onDayPress={date => {
               setDay(date.dateString)
               setVisible(false)
             }}
+            showSixWeeks={false}
             showWeekNumbers={false}
           />
         </Dialog.Content>

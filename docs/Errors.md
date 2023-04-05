@@ -54,3 +54,4 @@ page or not.
 22. ~~Complete translations for >5.x versions~~
 23. ~~Restore 5Q card in Home Page/Screen~~
 24. ~~[Copycat/Clone of TKCompanionApp on Google Play~~
+25. ~~Modifications in PDSA Journal Learnt field do not trigger save icon~~

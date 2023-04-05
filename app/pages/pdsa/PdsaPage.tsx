@@ -22,7 +22,12 @@
  */
 import * as React from 'react'
 import { useEffect } from 'react'
-import { Appbar, TextInput, useTheme } from 'react-native-paper'
+import {
+  Appbar,
+  IconButton,
+  TextInput,
+  useTheme
+} from 'react-native-paper'
 import PdsaEntry from '../../utils/storage/journal/PdsaEntry'
 import StorageFactory from '../../utils/storage/StorageFactory'
 import i18n from '../../i18n/i18n'
@@ -62,6 +67,55 @@ const PdsaPage: React.FC = () => {
   const [snackMessage, setSnackMessage] = React.useState('')
   const [markedDates] = React.useState<{ [key: string]: object }>({})
 
+  const TitleBar = (props: React.PropsWithChildren<any>): JSX.Element => {
+    return (
+      <>
+        <IconButton {...props}
+          disabled={disabledSave}
+          icon='content-save-all'
+          onPress={() => {
+            void journalStorage.read('PDSA').then(value => {
+              let journal: Journal = {}
+
+              if (value != null) {
+                journal = JSON.parse(value)
+              }
+              journal[day] = pdsaEntry
+              markedDates[day] = markedSelectedDay
+              journalStorage.write('PDSA', journal).then(() => {
+                setSnackMessage(`${i18n.t('pdsa.snack.day.saved', { day })}`)
+                setDisabledSave(true)
+              }).catch(() => {
+                setSnackMessage(`${i18n.t('pdsa.snack.day.error', { day })}`)
+              }).finally(() => {
+                setVisibleSnack(true)
+              })
+            })
+          }}
+        />
+        <IconButton {...props}
+          disabled={!disabledSave}
+          icon='trash-can-outline'
+          onPress={() => {
+            setSnackMessage(`${i18n.t('pdsa.snack.day.deleted', { day })}`)
+            void journalStorage.read('PDSA').then(value => {
+              let journal: Journal = {}
+              if (value != null) {
+                journal = JSON.parse(value)
+              }
+              setPdsaEntry(new PdsaEntry())
+              journal[day] = undefined as unknown as PdsaEntry
+              markedDates[day] = unmarkedSelectedDay
+              void journalStorage.write('PDSA', journal)
+              setDisabledSave(true)
+              setVisibleSnack(true)
+            })
+          }}
+        />
+      </>
+    )
+  }
+
   useEffect(() => {
     journalStorage.read('PDSA').then(value => {
       let journal: Journal = {}
@@ -98,60 +152,33 @@ const PdsaPage: React.FC = () => {
       />
 
       <Appbar.Header mode='small'>
+        <Appbar.Content title={i18n.t('pdsa.title')} />
         <Appbar.Action
-          icon='calendar-cursor'
-          onPress={() => {
-            setDay(getTodayIso8601())
-          }}
-
-        />
-        <Appbar.Action
-          icon='calendar-blank'
+          icon='calendar-edit'
           onPress={() => {
             setVisibleDialog(true)
           }}
         />
         <Appbar.Action
-          icon='content-save-all'
-          disabled={disabledSave}
+          disabled={true}
+          icon='calendar-arrow-left'
           onPress={() => {
-            void journalStorage.read('PDSA').then(value => {
-              let journal: Journal = {}
-
-              if (value != null) {
-                journal = JSON.parse(value)
-              }
-              journal[day] = pdsaEntry
-              markedDates[day] = markedSelectedDay
-              journalStorage.write('PDSA', journal).then(() => {
-                setSnackMessage(`${i18n.t('pdsa.snack.day.saved', { day })}`)
-                setDisabledSave(true)
-              }).catch(() => {
-                setSnackMessage(`${i18n.t('pdsa.snack.day.error', { day })}`)
-              }).finally(() => {
-                setVisibleSnack(true)
-              })
-            })
+            setDay(getTodayIso8601())
           }}
         />
         <Appbar.Action
-          icon='trash-can-outline'
-          disabled={!disabledSave}
+          icon='calendar-today'
           onPress={() => {
-            setSnackMessage(`${i18n.t('pdsa.snack.day.deleted', { day })}`)
-            void journalStorage.read('PDSA').then(value => {
-              let journal: Journal = {}
-              if (value != null) {
-                journal = JSON.parse(value)
-              }
-              setPdsaEntry(new PdsaEntry())
-              journal[day] = undefined as unknown as PdsaEntry
-              markedDates[day] = unmarkedSelectedDay
-              void journalStorage.write('PDSA', journal)
-              setDisabledSave(true)
-              setVisibleSnack(true)
-            })
+            setDay(getTodayIso8601())
           }}
+        />
+        <Appbar.Action
+          disabled={true}
+          icon='calendar-arrow-right'
+          onPress={() => {
+            setDay(getTodayIso8601())
+          }}
+
         />
       </Appbar.Header>
 
@@ -159,9 +186,10 @@ const PdsaPage: React.FC = () => {
         <PageContainer>
           <TkCard>
             <TkCardTitle
-              title={`${i18n.t('pdsa.title')}`}
+              right={() => <TitleBar />}
+              subtitle={day === getTodayIso8601() ? `${i18n.t('calendar.today').toLowerCase()}` : ''}
               titleNumberOfLines={2}
-              subtitle={day === getTodayIso8601() ? `${i18n.t('calendar.today').toUpperCase()}: ${day}` : day}
+              title={day}
             />
             <TkCardContent>
               <TkText>{`${i18n.t('pdsa.q1')}`}</TkText>

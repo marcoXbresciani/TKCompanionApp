@@ -31,6 +31,7 @@ const TKCardTitleBorder = styled(Card.Title)`
 `
 
 interface MyProps {
+  right?: (props: { size: number }) => React.ReactNode
   title: string
   titleNumberOfLines?: number
   subtitle?: string
@@ -39,6 +40,7 @@ interface MyProps {
 }
 
 const TkCardTitle: React.FunctionComponent<MyProps> = ({
+  right,
   title,
   titleNumberOfLines,
   subtitle,
@@ -62,6 +64,7 @@ const TkCardTitle: React.FunctionComponent<MyProps> = ({
       titleNumberOfLines={titleNumberOfLines}
       subtitle={subtitle}
       subtitleNumberOfLines={subtitleNumberOfLines}
+      right={right}
     />
   )
 }

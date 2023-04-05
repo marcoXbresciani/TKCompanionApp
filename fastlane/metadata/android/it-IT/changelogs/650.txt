@@ -1,0 +1,18 @@
+* E' ora possibile mantenere il PDSA e i dati quando si disinstalla.
+  I dati saranno automaticamente disponibili, se compatilili, quando si
+  installa nuovamente l'applicazione.
+* La navigazione dei giorni è disponibile nella pagina PDSA.
+* Campi PDSA precedenti duplicabili entro una settimana.
+  Mentre si sta compilando il giornale PDSA, se si vuole duplicare il
+  contenuto di un campo precedente, la funzione "Duplica" (icona a
+  sinistra di ciascun campo) permette di leggere automagicamente il
+  contenuto dello stesso campo, nel giorno precedente o, se non
+  disponibile, nel giorno prima ancora, tornando indietro massimo per 7
+  giorni.
+  Se il campo in uno dei giorni precedenti ha del contenuto, questo
+  contenuto sarà duplicato nello stesso campo del giorno corrente.
+* Aggiorna la lista di eventi.
+* Rivista la struttura del giornale PDSA e della pagina del giorno.
+* Fissato il giorno massimo del calendario al giorno corrente del
+  dispositivo.
+* Corregge #25.

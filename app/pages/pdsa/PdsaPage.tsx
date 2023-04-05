@@ -285,7 +285,7 @@ const PdsaPage: React.FC = () => {
                     ...pdsaEntry,
                     learnt: txt
                   })
-                  setDisabledSave(true)
+                  setDisabledSave(false)
                 }}
                 right={
                   <TextInput.Icon

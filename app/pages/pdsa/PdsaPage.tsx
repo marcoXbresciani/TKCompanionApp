@@ -31,7 +31,7 @@ import TkCard from '../../components/tkcard/TkCard'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
 import PageContainer from '../PageContainer'
 import PdsaCalendar from './PdsaCalendar'
-import { getToday } from '../../utils/Functions'
+import { getPreviousDay, getToday } from '../../utils/Functions'
 import { Journal } from '../../utils/storage/journal/Journal'
 import { ScrollView } from 'react-native'
 import TkSnackbar from '../../components/TkSnackbar'
@@ -114,6 +114,64 @@ const PdsaPage: React.FC = () => {
     )
   }
 
+  interface PreviousJournal {
+    day: string
+    entry: PdsaEntry
+  }
+
+  const getPreviousEntry = async (field: string): Promise<PreviousJournal> => {
+    let result: PreviousJournal = { day: '', entry: new PdsaEntry() }
+    let found = 7
+    let journal: Journal = {}
+
+    for (let previousDay = getPreviousDay(day); found > 0; previousDay = getPreviousDay(previousDay), found--) {
+      await journalStorage.read('PDSA').then(value => {
+        if ((value !== null) && (value !== '') && (value !== '{}')) {
+          journal = JSON.parse(value)
+          if (journal[previousDay] != null) {
+            const previousEntry = journal[previousDay]
+
+            if (previousEntry != null) {
+              switch (field) {
+                case 'target':
+                  if ((previousEntry.target !== undefined) && (previousEntry.target.length > 0)) {
+                    result = { day: previousDay, entry: previousEntry }
+                    found = 0
+                  }
+                  break
+                case 'actual':
+                  if ((previousEntry.actual !== undefined) && (previousEntry.actual.length > 0)) {
+                    result = { day: previousDay, entry: previousEntry }
+                    found = 0
+                  }
+                  break
+                case 'obstacle':
+                  if ((previousEntry.obstacle !== undefined) && (previousEntry.obstacle.length > 0)) {
+                    result = { day: previousDay, entry: previousEntry }
+                    found = 0
+                  }
+                  break
+                case 'step':
+                  if ((previousEntry.step !== undefined) && (previousEntry.step.length > 0)) {
+                    result = { day: previousDay, entry: previousEntry }
+                    found = 0
+                  }
+                  break
+                case 'learnt':
+                  if ((previousEntry.learnt !== undefined) && (previousEntry.learnt.length > 0)) {
+                    result = { day: previousDay, entry: previousEntry }
+                    found = 0
+                  }
+                  break
+              }
+            }
+          }
+        }
+      })
+    }
+    return result
+  }
+
   useEffect(() => {
     journalStorage.read('PDSA').then(value => {
       let journal: Journal = {}
@@ -168,6 +226,28 @@ const PdsaPage: React.FC = () => {
               <TkText>{`${i18n.t('pdsa.q1')}`}</TkText>
               <TextInput
                 label={`${i18n.t('pdsa.labels.target')}`}
+                left={
+                  <TextInput.Icon
+                    icon='content-duplicate'
+                    onPress={() => {
+                      void (async () => {
+                        const previousEntry = await getPreviousEntry('target')
+                        if (previousEntry.day !== '') {
+                          setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
+                            day: previousEntry.day,
+                            field: i18n.t('pdsa.labels.target')
+                          })}`)
+                          setPdsaEntry({
+                            ...pdsaEntry,
+                            target: previousEntry.entry.target
+                          })
+                          setDisabledSave(false)
+                          setVisibleSnack(true)
+                        }
+                      })()
+                    }}
+                  />
+                }
                 mode='outlined'
                 multiline
                 onChangeText={(txt) => {
@@ -196,6 +276,28 @@ const PdsaPage: React.FC = () => {
               <TkText>{`${i18n.t('pdsa.q2')}`}</TkText>
               <TextInput
                 label={`${i18n.t('pdsa.labels.actual')}`}
+                left={
+                  <TextInput.Icon
+                    icon='content-duplicate'
+                    onPress={() => {
+                      void (async () => {
+                        const previousEntry = await getPreviousEntry('actual')
+                        if (previousEntry.day !== '') {
+                          setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
+                            day: previousEntry.day,
+                            field: i18n.t('pdsa.labels.actual')
+                          })}`)
+                          setPdsaEntry({
+                            ...pdsaEntry,
+                            actual: previousEntry.entry.actual
+                          })
+                          setDisabledSave(false)
+                          setVisibleSnack(true)
+                        }
+                      })()
+                    }}
+                  />
+                }
                 mode='outlined'
                 multiline
                 onChangeText={(txt) => {
@@ -223,6 +325,28 @@ const PdsaPage: React.FC = () => {
               <TkText>{`${i18n.t('pdsa.q3')}`}</TkText>
               <TextInput
                 label={`${i18n.t('pdsa.labels.obstacle')}`}
+                left={
+                  <TextInput.Icon
+                    icon='content-duplicate'
+                    onPress={() => {
+                      void (async () => {
+                        const previousEntry = await getPreviousEntry('obstacle')
+                        if (previousEntry.day !== '') {
+                          setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
+                            day: previousEntry.day,
+                            field: i18n.t('pdsa.labels.obstacle')
+                          })}`)
+                          setPdsaEntry({
+                            ...pdsaEntry,
+                            obstacle: previousEntry.entry.obstacle
+                          })
+                          setDisabledSave(false)
+                          setVisibleSnack(true)
+                        }
+                      })()
+                    }}
+                  />
+                }
                 mode='outlined'
                 multiline
                 onChangeText={(txt) => {
@@ -251,6 +375,28 @@ const PdsaPage: React.FC = () => {
               <TkText>{`${i18n.t('pdsa.q4')}`}</TkText>
               <TextInput
                 label={`${i18n.t('pdsa.labels.step')}`}
+                left={
+                  <TextInput.Icon
+                    icon='content-duplicate'
+                    onPress={() => {
+                      void (async () => {
+                        const previousEntry = await getPreviousEntry('step')
+                        if (previousEntry.day !== '') {
+                          setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
+                            day: previousEntry.day,
+                            field: i18n.t('pdsa.labels.step')
+                          })}`)
+                          setPdsaEntry({
+                            ...pdsaEntry,
+                            step: previousEntry.entry.step
+                          })
+                          setDisabledSave(false)
+                          setVisibleSnack(true)
+                        }
+                      })()
+                    }}
+                  />
+                }
                 mode='outlined'
                 multiline
                 onChangeText={(txt) => {
@@ -279,6 +425,28 @@ const PdsaPage: React.FC = () => {
               <TkText>{`${i18n.t('pdsa.q5')}`}</TkText>
               <TextInput
                 label={`${i18n.t('pdsa.labels.learnt')}`}
+                left={
+                  <TextInput.Icon
+                    icon='content-duplicate'
+                    onPress={() => {
+                      void (async () => {
+                        const previousEntry = await getPreviousEntry('learnt')
+                        if (previousEntry.day !== '') {
+                          setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
+                            day: previousEntry.day,
+                            field: i18n.t('pdsa.labels.learnt')
+                          })}`)
+                          setPdsaEntry({
+                            ...pdsaEntry,
+                            learnt: previousEntry.entry.learnt
+                          })
+                          setDisabledSave(false)
+                          setVisibleSnack(true)
+                        }
+                      })()
+                    }}
+                  />
+                }
                 mode='outlined'
                 multiline
                 onChangeText={(txt) => {

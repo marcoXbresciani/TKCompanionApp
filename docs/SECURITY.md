@@ -21,7 +21,10 @@ SPDX-License-Identifier: FSFAP
 
 ## Known Security Issues
 
-No currently known security issues.
+* **node-fetch is vulnerable to Exposure of Sensitive Information to an
+  Unauthorized Actor** High
+* **The `size` option isn't honored after following a redirect in
+  node-fetch** Low
 
 ## Supported Versions
 

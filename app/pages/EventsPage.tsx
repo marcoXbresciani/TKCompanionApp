@@ -33,24 +33,6 @@ import i18n from '../i18n/i18n'
 const BadgesPage: React.FC = () => {
   const events: Array<{ date: string, location: string, title: string, url: string }> = [
     {
-      date: '2023-04-10',
-      location: 'WWW',
-      title: 'Improvement Kata/Coaching Kata Remotely',
-      url: 'https://us02web.zoom.us/webinar/register/WN_-hb9opX0Q9O4D_ieblfo6g'
-    },
-    {
-      date: '2023-04-11',
-      location: 'WWW',
-      title: "What's Actually Happening- Toyota Kata at Church and Dwight",
-      url: 'https://us02web.zoom.us/webinar/register/WN_-hb9opX0Q9O4D_ieblfo6g'
-    },
-    {
-      date: '2023-04-12',
-      location: 'US',
-      title: '2-Day Toyota Kata Experiential Workshop',
-      url: 'https://www.eventbrite.com/e/2-day-toyota-kata-experiential-workshop-registration-525157288587'
-    },
-    {
       date: '2023-04-18',
       location: 'US',
       title: 'Skillpoint for Toyota Kata',

@@ -22,12 +22,7 @@
  */
 import * as React from 'react'
 import { useEffect } from 'react'
-import {
-  Appbar,
-  IconButton,
-  TextInput,
-  useTheme
-} from 'react-native-paper'
+import { IconButton, TextInput, useTheme } from 'react-native-paper'
 import PdsaEntry from '../../utils/storage/journal/PdsaEntry'
 import StorageFactory from '../../utils/storage/StorageFactory'
 import i18n from '../../i18n/i18n'
@@ -41,6 +36,7 @@ import { Journal } from '../../utils/storage/journal/Journal'
 import { ScrollView } from 'react-native'
 import TkSnackbar from '../../components/TkSnackbar'
 import TkText from '../../components/TkText'
+import PdsaHeader from './PdsaHeader'
 
 const PdsaPage: React.FC = () => {
   const selectionColour = useTheme().colors.onPrimary
@@ -70,7 +66,8 @@ const PdsaPage: React.FC = () => {
   const TitleBar = (props: React.PropsWithChildren<any>): JSX.Element => {
     return (
       <>
-        <IconButton {...props}
+        <IconButton
+          {...props}
           disabled={disabledSave}
           icon='content-save-all'
           onPress={() => {
@@ -93,7 +90,8 @@ const PdsaPage: React.FC = () => {
             })
           }}
         />
-        <IconButton {...props}
+        <IconButton
+          {...props}
           disabled={!disabledSave}
           icon='trash-can-outline'
           onPress={() => {
@@ -151,36 +149,10 @@ const PdsaPage: React.FC = () => {
         setVisible={setVisibleDialog}
       />
 
-      <Appbar.Header mode='small'>
-        <Appbar.Content title={i18n.t('pdsa.title')} />
-        <Appbar.Action
-          icon='calendar-edit'
-          onPress={() => {
-            setVisibleDialog(true)
-          }}
-        />
-        <Appbar.Action
-          disabled={true}
-          icon='calendar-arrow-left'
-          onPress={() => {
-            setDay(getTodayIso8601())
-          }}
-        />
-        <Appbar.Action
-          icon='calendar-today'
-          onPress={() => {
-            setDay(getTodayIso8601())
-          }}
-        />
-        <Appbar.Action
-          disabled={true}
-          icon='calendar-arrow-right'
-          onPress={() => {
-            setDay(getTodayIso8601())
-          }}
-
-        />
-      </Appbar.Header>
+      <PdsaHeader
+        setDay={setDay}
+        setVisibleDialog={setVisibleDialog}
+      />
 
       <ScrollView>
         <PageContainer>

@@ -49,7 +49,6 @@ const PdsaCalendar: ({ day, setDay, markedDates }: Props) => JSX.Element = ({
         <Dialog.Content>
           <Calendar
             allowSelectionOutOfRange={false}
-            disableAllTouchEventsForDisabledDays
             disableAllTouchEventsForInactiveDays
             disableArrowLeft={false}
             disableArrowRight={false}

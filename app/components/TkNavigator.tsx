@@ -26,7 +26,7 @@ import HomePage from '../pages/home/HomePage'
 import PdsaPage from '../pages/pdsa/PdsaPage'
 import DocsPage from '../pages/docs/DocsPage'
 import i18n from '../i18n/i18n'
-import BadgesPage from '../pages/BadgesPage'
+// import BadgesPage from '../pages/BadgesPage'
 import EventsPage from '../pages/EventsPage'
 
 const TkNavigator: React.FunctionComponent = () => {
@@ -47,11 +47,11 @@ const TkNavigator: React.FunctionComponent = () => {
       key: 'docs',
       title: i18n.t('docs.title')
     },
-    {
-      focusedIcon: 'medal-outline',
-      key: 'badges',
-      title: i18n.t('badges.title')
-    },
+    // {
+    //   focusedIcon: 'medal-outline',
+    //   key: 'badges',
+    //   title: i18n.t('badges.title')
+    // },
     {
       focusedIcon: 'human-capacity-increase',
       key: 'events',
@@ -62,7 +62,7 @@ const TkNavigator: React.FunctionComponent = () => {
     home: HomePage,
     pdsa: PdsaPage,
     docs: DocsPage,
-    badges: BadgesPage,
+    // badges: BadgesPage,
     events: EventsPage
   })
 

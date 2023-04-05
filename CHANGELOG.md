@@ -42,6 +42,34 @@ This file is offered as-is, without any warranty.
 
 ### Security
 
+## [6.5.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.0)
+
+### Added
+
+* It's now possible to keep PDSA and other app data when uninstalling.
+  Data will be automatically available, if compatible, when installing
+  again the app.
+* Calendar days navigation available in PDSA page.
+* Duplicable previous PDSA fields within a week.
+  If you are filling a new PDSA journal entry and you want to duplicate
+  the content of a field, the duplicate function (left-side icon on each
+  field) will allow to automagically read the content of the same field
+  if the previous day or, if not available, in the day before, moving
+  back in time for maximum 7 days.
+  If a field in a previous day has some content, such content will be
+  duplicated in the same field of the current day.
+
+### Changed
+
+* Updated Events.
+* Reworked PDSA Journal page and daily card structure.
+* Fixed maximum selectable day in calendar to device current day.
+
+### Fixed
+
+* Modifications in PDSA Journal Learnt field do not trigger save icon
+  [#25](https://codeberg.org/marco.bresciani/TKCompanionApp/issues/25)
+
 ## [6.4.2](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.2) - 2023-03-29
 
 ### Changed

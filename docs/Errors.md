@@ -12,10 +12,8 @@ SPDX-License-Identifier: FSFAP
 -->
 # Errors
 
-This is the list of known errors or issues.
-They might be in the Codeberg
-[Issues](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
-page or not.
+This is the list of known errors or
+[Issues](https://codeberg.org/marco.bresciani/TKCompanionApp/issues).
 
 1. ~~Bump tmpl from 1.0.4 to 1.0.5~~
 2. ~~Remove useless permission~~

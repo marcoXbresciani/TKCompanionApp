@@ -111,7 +111,7 @@ Apple Developer Program.
 > or Apple App Store: it's not the real one available from F-Droid or
 > Codeberg!
 
-So (for now) you can find this app _only_ through the
+So (for now) you can find this app *only* through the
 [F-Droid](https://f-droid.org/) *installable catalogue of FOSS (Free and
 Open Source Software) applications for the Android platform*.
 

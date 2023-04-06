@@ -93,6 +93,7 @@ which you can add languages, complete and correct translations, ...
 
 If you can't decide on how to contribute to this project, you can always
 choose the easier way, contributing through Liberapay:
+
 > <a href="https://liberapay.com/marcoXbresciani/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 >
 > <img alt="receives on liberapay" src="https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay">
@@ -107,8 +108,8 @@ If you are a software developer and want to contribute improving this
 app, you're welcome!
 
 Find the latest current LTS NodeJS
-([18.13.0](https://nodejs.org/dist/latest-hydrogen/), as of
-2023-01-12) for your system.
+([18.15.0](https://nodejs.org/dist/latest-hydrogen/), as of
+2023-03-05) for your system.
 The correct version is specified in `package.json` file in main folder.
 
 Grab the source code by cloning
@@ -243,8 +244,8 @@ available (labeled) on the repository.
 See <https://gitlab.com/fdroid/fdroiddata/-/merge_requests/10826#note_895731121>
 So:
 
-* Execute the procedure on [How to release](#how-to-release), without
-  the last step, so without sending the tag to the repository.
+* Execute the procedure on [How to release](#how-to-release), *without
+  the last step*, so without sending the tag to the repository.
 * update your fork of the F-Droid/Data repository with the latest
   modifications from the
   [upstream repository](https://gitlab.com/fdroid/fdroiddata/),
@@ -268,7 +269,7 @@ So:
   on an unprotected branch of your fork of the F-Droid/Data repository,
   adding a new version, with  the update of the version of NodeJS, its
   SHA, commit number, etc. looking, for example, at the NodeJS
-  differences between the version 0.5.0 (50) and 0.6.0 (60) on the
+  differences between the version 6.3.0 (630) and 6.4.2 (642) on the
   metadata file.
 * Create an MR on the original F-Droid/Data repository with this
   modification from the fork.
@@ -292,23 +293,15 @@ import {default as itIT} from './it-IT.json';
 import {default as nbNO} from './nb-NO.json';
 ```
 
-Then you have to add the new language in the available resources as done
-in
+Then you have to add the new language in the available `resources` as
+done in
 
 ```typescript
-fr: {translation: fr},
-'it-IT': {translation: itIT},
+const resources: Resources = {
+    de: { translation: de },
+    en: { translation: en },
+    fr: { translation: fr },
+    'it-IT': { translation: itIT },
+    'nb-NO': { translation: nbNO }
+}
 ```
-
-And, add the language in the list of fallback languages when
-translations are missing.
-
-```typescript
-fallbackLng: ['en', 'it-IT', 'fr', 'de', 'nb-NO'],
-```
-
-While in the previous cases it is advisable to keep the alphabetical
-order, in this situation I preferred to use what seems to me to be a
-sorting by use / popularity, keeping English and Italian fixed and
-adding the other languages based on what I think it's a good order ...
-Or so I hope!

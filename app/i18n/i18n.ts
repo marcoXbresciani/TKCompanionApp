@@ -33,17 +33,17 @@ import { LocaleConfig } from 'react-native-calendars/src'
 let appleLocale
 
 if (Platform.OS === 'ios') {
-  if (NativeModules.SettingsManager.settings.AppleLanguages[0] !== undefined) {
-    appleLocale = NativeModules.SettingsManager.settings.AppleLanguages[0]
-  } else if (NativeModules.SettingsManager.settings.AppleLocale !== undefined) {
-    appleLocale = NativeModules.SettingsManager.settings.AppleLocale
+  if (NativeModules['SettingsManager'].settings.AppleLanguages[0] !== undefined) {
+    appleLocale = NativeModules['SettingsManager'].settings.AppleLanguages[0]
+  } else if (NativeModules['SettingsManager'].settings.AppleLocale !== undefined) {
+    appleLocale = NativeModules['SettingsManager'].settings.AppleLocale
   }
 }
 
 const deviceLocale = (
   Platform.OS === 'ios'
     ? appleLocale
-    : NativeModules.I18nManager.localeIdentifier
+    : NativeModules['I18nManager'].localeIdentifier
 ).replace('_', '-')
 
 interface Resources { [key: string]: { translation: { calendar: {} } } }

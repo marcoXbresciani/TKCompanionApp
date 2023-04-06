@@ -22,7 +22,7 @@
  */
 import styled from 'styled-components'
 import * as React from 'react'
-import { Card, useTheme } from 'react-native-paper'
+import { Card, CardTitleProps, useTheme } from 'react-native-paper'
 
 const TKCardTitleBorder = styled(Card.Title)`
   border-bottom-style: solid;
@@ -30,12 +30,7 @@ const TKCardTitleBorder = styled(Card.Title)`
   border-bottom-color: ${props => props.theme.bg};
 `
 
-interface MyProps {
-  right?: (props: { size: number }) => React.ReactNode
-  title: string
-  titleNumberOfLines?: number
-  subtitle?: string
-  subtitleNumberOfLines?: number
+interface MyProps extends CardTitleProps {
   wip?: boolean
 }
 

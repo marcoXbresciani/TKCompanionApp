@@ -214,7 +214,6 @@
     "events": {
         "legend": {
             "browse": {
-                "explain": "$t(nav.menu.legend.browse.explain)",
                 "title": "$t(nav.menu.legend.browse.title)"
             }
         },

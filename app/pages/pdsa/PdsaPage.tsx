@@ -478,6 +478,7 @@ const PdsaPage: React.FC = () => {
       </ScrollView>
 
       <TkSnackbar
+        duration={750}
         message={snackMessage} visible={visibleSnack}
         setVisible={setVisibleSnack}
       />

@@ -25,12 +25,12 @@ import { Snackbar } from 'react-native-paper'
 
 interface Props {
   message: string
-  duration?: number
+  duration: number
   visible: boolean
   setVisible: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const TkSnackbar: ({ message, duration = 750 }: Props) => JSX.Element = ({
+const TkSnackbar: ({ message, duration }: Props) => JSX.Element = ({
   message,
   duration,
   visible,

@@ -29,23 +29,6 @@
         },
         "url": {
             "description": "TkCompanionApp is Free Software",
-            "page": [
-                {
-                    "address": "https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/",
-                    "icon": "android",
-                    "name": "F-Droid"
-                },
-                {
-                    "address": "https://codeberg.org/marco.bresciani/TKCompanionApp",
-                    "icon": "git",
-                    "name": "Codeberg"
-                },
-                {
-                    "address": "https://gitlab.com/marcoXbresciani/TKCompanionApp",
-                    "icon": "gitlab",
-                    "name": "Gitlab"
-                }
-            ],
             "title": "See the code"
         }
     },

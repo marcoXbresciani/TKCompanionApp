@@ -34,9 +34,67 @@ import {
 } from '../../../utils/Constants'
 
 const About: React.FunctionComponent = () => {
-  const urls: Array<{ address: string, icon: string, name: string }> = i18n.t('about.url.page', {
-    returnObjects: true
-  })
+  const mights = [
+    {
+      url: 'http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html',
+      title: `${i18n.t('about.might.key1')}`
+    },
+    {
+      url: 'http://www-personal.umich.edu/~mrother/The_Coaching_Kata.html',
+      title: `${i18n.t('about.might.key2')}`
+    },
+    {
+      url: 'http://www-personal.umich.edu/~mrother/Extras.html',
+      title: `${i18n.t('about.might.key3')}`
+    },
+    {
+      url: 'http://www-personal.umich.edu/~mrother/Challenge.html',
+      title: `${i18n.t('about.might.key4')}`
+    }
+  ]
+  const nots = [
+    {
+      url: 'https://www.eff.org/issues/privacy',
+      title: `${i18n.t('about.not.key1')}`
+    },
+    {
+      url: 'https://www.eff.org/issues/privacy',
+      title: `${i18n.t('about.not.key2')}`
+    },
+    {
+      url: 'https://en.wikipedia.org/wiki/Phoning_home',
+      title: `${i18n.t('about.not.key3')}`
+    },
+    {
+      url: 'https://en.wikipedia.org/wiki/Google_Play_Services#Concerns',
+      title: `${i18n.t('about.not.key4')}`
+    },
+    {
+      url: 'https://www.eff.org/issues/privacy',
+      title: `${i18n.t('about.not.key5')}`
+    },
+    {
+      url: 'https://www.eff.org/issues/privacy',
+      title: `${i18n.t('about.not.key6')}`
+    }
+  ]
+  const urls = [
+    {
+      address: 'https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/',
+      icon: 'android',
+      name: 'F-Droid'
+    },
+    {
+      address: 'https://codeberg.org/marco.bresciani/TKCompanionApp',
+      icon: 'git',
+      name: 'Codeberg'
+    },
+    {
+      address: 'https://gitlab.com/marcoXbresciani/TKCompanionApp',
+      icon: 'gitlab',
+      name: 'Gitlab'
+    }
+  ]
 
   return (
     <>
@@ -56,30 +114,16 @@ const About: React.FunctionComponent = () => {
               titleNumberOfLines={2}
               titleStyle={{ color: 'forestgreen' }}
             >
-              <List.Item
-                left={(props) => (<List.Icon {...props} icon='home-export-outline' />)}
-                onPress={() => { void Linking.openURL('http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html') }}
-                title={`${i18n.t('about.might.key1')}`}
-                titleNumberOfLines={2}
-              />
-              <List.Item
-                left={(props) => (<List.Icon {...props} icon='home-export-outline' />)}
-                onPress={() => { void Linking.openURL('http://www-personal.umich.edu/~mrother/The_Coaching_Kata.html') }}
-                title={`${i18n.t('about.might.key2')}`}
-                titleNumberOfLines={2}
-              />
-              <List.Item
-                left={(props) => (<List.Icon {...props} icon='home-export-outline' />)}
-                onPress={() => { void Linking.openURL('http://www-personal.umich.edu/~mrother/Extras.html') }}
-                title={`${i18n.t('about.might.key3')}`}
-                titleNumberOfLines={2}
-              />
-              <List.Item
-                left={(props) => (<List.Icon {...props} icon='home-export-outline' />)}
-                onPress={() => { void Linking.openURL('http://www-personal.umich.edu/~mrother/Challenge.html') }}
-                title={`${i18n.t('about.might.key4')}`}
-                titleNumberOfLines={2}
-              />
+              {mights.flatMap(({ title, url }) => {
+                return (
+                  <List.Item
+                    left={(props) => (<List.Icon {...props} icon='home-export-outline' />)}
+                    onPress={() => { void Linking.openURL(url) }}
+                    title={title}
+                    titleNumberOfLines={2}
+                  />
+                )
+              })}
             </List.Accordion>
             <List.Accordion
               id={2}
@@ -87,42 +131,16 @@ const About: React.FunctionComponent = () => {
               titleNumberOfLines={2}
               titleStyle={{ color: 'crimson' }}
             >
-              <List.Item
-                left={(props) => (<List.Icon {...props} icon='home-export-outline' />)}
-                onPress={() => { void Linking.openURL('https://www.eff.org/issues/privacy') }}
-                title={`${i18n.t('about.not.key1')}`}
-                titleNumberOfLines={2}
-              />
-              <List.Item
-                left={(props) => (<List.Icon {...props} icon='home-export-outline' />)}
-                onPress={() => { void Linking.openURL('https://www.eff.org/issues/privacy') }}
-                title={`${i18n.t('about.not.key2')}`}
-                titleNumberOfLines={2}
-              />
-              <List.Item
-                left={(props) => (<List.Icon {...props} icon='home-export-outline' />)}
-                onPress={() => { void Linking.openURL('https://en.wikipedia.org/wiki/Phoning_home') }}
-                title={`${i18n.t('about.not.key3')}`}
-                titleNumberOfLines={2}
-              />
-              <List.Item
-                left={(props) => (<List.Icon {...props} icon='home-export-outline' />)}
-                onPress={() => { void Linking.openURL('https://en.wikipedia.org/wiki/Google_Play_Services#Concerns') }}
-                title={`${i18n.t('about.not.key4')}`}
-                titleNumberOfLines={2}
-              />
-              <List.Item
-                left={(props) => (<List.Icon {...props} icon='home-export-outline' />)}
-                onPress={() => { void Linking.openURL('https://www.eff.org/issues/privacy') }}
-                title={`${i18n.t('about.not.key5')}`}
-                titleNumberOfLines={2}
-              />
-              <List.Item
-                left={(props) => (<List.Icon {...props} icon='home-export-outline' />)}
-                onPress={() => { void Linking.openURL('https://www.eff.org/issues/privacy') }}
-                title={`${i18n.t('about.not.key6')}`}
-                titleNumberOfLines={2}
-              />
+              {nots.flatMap(({ title, url }) => {
+                return (
+                  <List.Item
+                    left={(props) => (<List.Icon {...props} icon='home-export-outline' />)}
+                    onPress={() => { void Linking.openURL(url) }}
+                    title={title}
+                    titleNumberOfLines={2}
+                  />
+                )
+              })}
             </List.Accordion>
             <List.Accordion description={i18n.t('about.url.description')} id={3} title={i18n.t('about.url.title')}>
               {urls.flatMap(({ address, icon, name }) => {

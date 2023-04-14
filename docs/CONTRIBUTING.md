@@ -25,14 +25,14 @@ Any question, feel free to ask!
 
 1. [For All Contributions](#for-all-contributions)
    1. [Translations](#translations)
-   1. [Other Contributions](#other-contributions)
-1. [For Software Developers](#for-software-developers)
+   2[Other Contributions](#other-contributions)
+2. [For Software Developers](#for-software-developers)
    1. [How to Start](#how-to-start)
-   1. [How to Build](#how-to-build)
+   2. [How to Build](#how-to-build)
       1. [How to Test Locally](#how-to-test-locally)
-   1. [How to Release](#how-to-release)
+   3. [How to Release](#how-to-release)
       1. [Updating NodeJS and Related](#updating-nodejs-and-related)
-   1. [How to Add a New Translation](#how-to-add-a-new-translation)
+   4. [How to Add a New Translation](#how-to-add-a-new-translation)
 
 ## For All Contributions
 
@@ -190,45 +190,45 @@ release.
 
 1. Update [package.json](/package.json) with the new version number and
    run `npm install`.
-1. Run `npm outdated` and possibly update old dependencies.
-1. Verify that [CHANGELOG.md](/CHANGELOG.md) contains the properly
+2. Run `npm outdated` and possibly update old dependencies.
+3. Verify that [CHANGELOG.md](/CHANGELOG.md) contains the properly
    numbered section for the upcoming release, moving the related and
    relevant [Unreleased](/CHANGELOG.md) content to such section.
-1. Verify that `fastlane` folder contain the proper `changelogs` files
+4. Verify that `fastlane` folder contain the proper `changelogs` files
    for the upcoming version *code* in all available languages.
    If needed, also updates or add relevant screenshots in all available
    languages.
-1. Verify that [Errors.md](Errors.md) contains the currently known
+5. Verify that [Errors.md](Errors.md) contains the currently known
    issues by adding those relevant and removing those solved.
    If needed, also open specific issues on the project Codeberg
    [Issues](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
    page.
-1. Verify that [SECURITY.md](SECURITY.md) contains the currently known
+6. Verify that [SECURITY.md](SECURITY.md) contains the currently known
    security issues by adding those relevant and removing those solved.
    If needed, also open specific issues on the project Codeberg
    [Issues](https://codeberg.org/marco.bresciani/TKCompanionApp/issues)
    page.
-1. Update the `versionCode` and `versionName` values inside the
+7. Update the `versionCode` and `versionName` values inside the
    `android.defaultConfig` field of file
    [build.gradle](/android/app/build.gradle).
-1. Update the `CFBundleVersion` and `CFBundleShortVersionString` values
+8. Update the `CFBundleVersion` and `CFBundleShortVersionString` values
    inside the `<dict>` field of file
    [Info.plist](/ios/TKCompanionApp/Info.plist).
-1. Verify that [Architecture.md](architecture/Architecture.md)
+9. Verify that [Architecture.md](architecture/Architecture.md)
    has the latest architectural information properly updated, if needed.
    Add relevant ADR documents in the `docs/architecture/decisions`
    folder if needed, tracking them in the [CHANGELOG.md](/CHANGELOG.md)
    file.
-1. Verify [REUSE](https://reuse.software/) compliance through
-   `pipx run reuse lint` command.
-   Please note this command is also automatically launched before each
-   commit.
-1. Verify clean code criteria through `npm run lint` command.
-   Please note this command is also automatically launched before each
-   commit.
-1. Update this file, if you need to update the release steps.
-1. If you're not updating Node*, tag with the corresponding
-   [(semantic) version](https://semver.org/) number.
+10. Verify [REUSE](https://reuse.software/) compliance through
+    `pipx run reuse lint` command.
+    Please note this command is also automatically launched before each
+    commit.
+11. Verify clean code criteria through `npm run lint` command.
+    Please note this command is also automatically launched before each
+    commit.
+12. Update this file, if you need to update the release steps.
+13. If you're not updating Node*, tag with the corresponding
+    [(semantic) version](https://semver.org/) number.
 
 #### Updating NodeJS and Related
 

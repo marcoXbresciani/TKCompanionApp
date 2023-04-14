@@ -44,16 +44,16 @@ Content to be improved and updated from time to time.
 ## Table of Contents
 
 1. [Security](#security)
-1. [Background](#background)
-1. [Install](#install)
-1. [Usage](#usage)
+2. [Background](#background)
+3. [Install](#install)
+4. [Usage](#usage)
    1. [Screenshots](#screenshots)
-   1. [Font Notes](#font-notes)
-1. [Maintainers](#maintainers)
+   2. [Font Notes](#font-notes)
+5. [Maintainers](#maintainers)
    1. [Translations](#translations)
-1. [Thanks](#thanks)
-1. [Contributing](#contributing)
-1. [License](#license)
+6. [Thanks](#thanks)
+7. [Contributing](#contributing)
+8. [License](#license)
 
 ## Security
 

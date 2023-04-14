@@ -39,10 +39,6 @@ Files: android/app/*
 Copyright: 2021-2023 Marco Bresciani
 License: GPL-3.0-or-later
 
-Files: android/app/src/debug/java/name/bresciani/marco/tkcompanionapp/ReactNativeFlipper.java
-Copyright: Facebook, Inc. and its affiliates.
-License: MIT
-
 Files: android/gradlew
 Copyright: 2015 the original author or authors.
 License: Apache-2.0

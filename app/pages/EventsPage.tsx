@@ -33,12 +33,6 @@ import i18n from '../i18n/i18n'
 const BadgesPage: React.FC = () => {
   const events: Array<{ date: string, location: string, title: string, url: string }> = [
     {
-      date: '2023-04-18',
-      location: 'US',
-      title: 'Skillpoint for Toyota Kata',
-      url: 'https://leanfrontiers.com/skillpointkata/'
-    },
-    {
       date: '2023-04-24',
       location: 'US',
       title: 'Central Coast Lean Summit 2023',
@@ -73,6 +67,12 @@ const BadgesPage: React.FC = () => {
       location: 'WWW',
       title: 'Improvement Kata 101 (virtual card sort)',
       url: 'https://ame.org/event/improvement-kata-101-virtual-card-sort'
+    },
+    {
+      date: '2023-06-06',
+      location: 'CA / WWW',
+      title: '3e Rendez-Vous Kata',
+      url: 'https://polesante.hec.ca/#iLightbox[gallery925]/0'
     },
     {
       date: '2023-06-07',

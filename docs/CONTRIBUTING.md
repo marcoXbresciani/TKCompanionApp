@@ -108,8 +108,8 @@ If you are a software developer and want to contribute improving this
 app, you're welcome!
 
 Find the latest current LTS NodeJS
-([18.15.0](https://nodejs.org/dist/latest-hydrogen/), as of
-2023-03-05) for your system.
+([18.16.0](https://nodejs.org/dist/latest-hydrogen/), as of 2023-04-12)
+for your system.
 The correct version is specified in `package.json` file in main folder.
 
 Grab the source code by cloning

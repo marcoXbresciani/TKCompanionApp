@@ -42,7 +42,14 @@ This file is offered as-is, without any warranty.
 
 ### Security
 
-## [6.5.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.0) - 2023-04-05
+## [6.5.1](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.5.1) - 2023-04-14
+
+### Changed
+
+* Updated events list.
+* Update to Node LTS 18.16.0.
+
+## [6.5.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.5.0) - 2023-04-05
 
 ### Added
 

@@ -42,6 +42,10 @@
                 }
             ],
             "title": "Guarda il codice"
+        },
+        "dates": {
+            "latest": "Letzte Aktualisierung: {{date}}",
+            "first": "Erste Installation: {{date}}"
         }
     },
     "app": {

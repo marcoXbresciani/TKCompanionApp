@@ -42,6 +42,16 @@ This file is offered as-is, without any warranty.
 
 ### Security
 
+## [6.6.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.6.0) - 2023-04-18
+
+### Added
+
+* Day of the week in PDSA journal title.
+
+### Changed
+
+* Updated events list.
+
 ## [6.5.1](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.5.1) - 2023-04-14
 
 ### Changed

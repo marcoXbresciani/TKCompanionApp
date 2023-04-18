@@ -31,19 +31,14 @@
             "description": "TkCompanionApp è software libero",
             "page": [
                 {
-                    "address": "https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/",
-                    "icon": "android",
-                    "name": "F-Droid"
+                    "icon": "android"
                 },
                 {
                     "address": "https://codeberg.org/marco.bresciani/TKCompanionApp",
-                    "icon": "git",
                     "name": "Codeberg"
                 },
                 {
-                    "address": "https://gitlab.com/marcoXbresciani/TKCompanionApp",
-                    "icon": "gitlab",
-                    "name": "Gitlab"
+                    "icon": "gitlab"
                 }
             ],
             "title": "Guarda il codice"
@@ -212,11 +207,6 @@
         }
     },
     "events": {
-        "legend": {
-            "browse": {
-                "title": "$t(nav.menu.legend.browse.title)"
-            }
-        },
         "message": [
             "Eventi (che conosco) relativi a Toyota Kata.",
             "Cercherò di aggiungerli non appena ne vengo a conoscenza e li rimuoverò quando scaduti.",

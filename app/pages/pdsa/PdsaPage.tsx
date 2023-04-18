@@ -197,6 +197,27 @@ const PdsaPage: React.FC = () => {
     }).finally(() => setDisabledSave(true))
   }, [day])
 
+  console.log(i18n.t('calendar.dayNamesShort', { returnObjects: true }))
+
+  function getDayOfWeek (): string {
+    const date = new Date(day)
+
+    let result = '?'
+    if (date.toString() !== 'Invalid Date') {
+      const dayOfWeek = date.getDay()
+      const weekDays: string[] = i18n.t('calendar.dayNamesShort', { returnObjects: true })
+
+      if ((dayOfWeek >= 0) && (dayOfWeek <= 6)) {
+        if ((weekDays != null) && (weekDays.length === 7)) {
+          if ((weekDays[dayOfWeek] !== null) && (weekDays[dayOfWeek] !== undefined)) {
+            result = weekDays[dayOfWeek]
+          }
+        }
+      }
+    }
+    return result
+  }
+
   return (
     <>
       <PdsaCalendar
@@ -220,7 +241,7 @@ const PdsaPage: React.FC = () => {
               right={() => <TitleBar />}
               subtitle={day === getToday() ? `${i18n.t('calendar.today').toLowerCase()}` : ''}
               titleNumberOfLines={2}
-              title={day}
+              title={`${day} (${(getDayOfWeek())})`}
             />
             <TkCardContent>
               <TkText>{`${i18n.t('pdsa.q1')}`}</TkText>
@@ -478,7 +499,7 @@ const PdsaPage: React.FC = () => {
       </ScrollView>
 
       <TkSnackbar
-        duration={750}
+        duration={333}
         message={snackMessage} visible={visibleSnack}
         setVisible={setVisibleSnack}
       />

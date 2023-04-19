@@ -184,8 +184,8 @@ Current (and past) contributors:
 [![Stato traduzione](https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-grey.png)](https://hosted.weblate.org/engage/tkcompanionapp/)
 
 * [![Translation status](https://hosted.weblate.org/widgets/tkcompanionapp/de/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/de/)
-  [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/)
-  for the German translation.
+  [Amy Dora Lang (@amydoralang)](https://hosted.weblate.org/user/amydoralang/),
+  Ettore Atalan (atalanttore@googlemail.com) for the German translation.
 * [![Translation status](https://hosted.weblate.org/widgets/tkcompanionapp/en/svg-badge.svg)](https://hosted.weblate.org/engage/tkcompanionapp/en/)
   [Marco Bresciani (@marcoXbresciani)](https://codeberg.org/marco.bresciani)
   for the English version.

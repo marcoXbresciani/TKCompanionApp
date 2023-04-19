@@ -51,6 +51,7 @@ This file is offered as-is, without any warranty.
 ### Changed
 
 * Updated events list.
+* Updated German translation (thanks Ettore Atalan <atalanttore@googlemail.com>).
 
 ## [6.5.1](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.5.1) - 2023-04-14
 

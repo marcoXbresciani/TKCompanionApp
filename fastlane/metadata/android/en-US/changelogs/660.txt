@@ -1,0 +1,4 @@
+* Day of the week added in PDSA journal title.
+* Updated events list.
+* Updated German translation (thanks Ettore Atalan
+  <atalanttore@googlemail.com>).

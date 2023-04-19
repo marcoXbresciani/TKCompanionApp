@@ -22,7 +22,9 @@ in the `app` folder.
 The `assets` and `i18n` folders have additional resources needed for the
 project.
 
-Not much of an "architecture":
+Not much of an "architecture", here: inside the `app` folder there's
+everything related to code and pages of the app itself.
+Specifically:
 
 * `assets` folder contains static things like fonts.
 * `components` folder contains components that are generally used in all

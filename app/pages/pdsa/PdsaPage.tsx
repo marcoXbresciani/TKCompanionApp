@@ -197,8 +197,6 @@ const PdsaPage: React.FC = () => {
     }).finally(() => setDisabledSave(true))
   }, [day])
 
-  console.log(i18n.t('calendar.dayNamesShort', { returnObjects: true }))
-
   function getDayOfWeek (): string {
     const date = new Date(day)
 

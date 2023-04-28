@@ -74,7 +74,7 @@ const BadgesPage: React.FC = () => {
         </PageContainer>
       </ScrollView>
       <TkSnackbar
-        duration={1500}
+        duration={500}
         message={snackMessage} visible={visibleSnack}
         setVisible={setVisibleSnack}
       />

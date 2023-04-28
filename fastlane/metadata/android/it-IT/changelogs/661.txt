@@ -1,0 +1,2 @@
+* Aggiorna la lista di eventi.
+* Aggiorna la durata del messaggio su azioni di salva/cancella.

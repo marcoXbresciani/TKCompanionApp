@@ -1,4 +1,3 @@
 * Giorno della settimana aggiunto nel titolo del giornale PDSA.
 * Aggiorna la lista di eventi.
-* Traduzione tedesca aggiornata (grazie Ettore Atalan
-  <atalanttore@googlemail.com>).
+* Traduzione tedesca aggiornata (grazie Ettore Atalan, atalanttore@googlemail.com).

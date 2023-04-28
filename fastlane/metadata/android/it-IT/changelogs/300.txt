@@ -1,5 +1,4 @@
-Rifacimento della pagina principale, della carta delle 5 domande e
-documenti integrati coi download.
+Rifacimento della pagina principale, della carta delle 5 domande e documenti integrati coi download.
 Nuova pagina di schema del coaching.
 Chiude i problemi #10 and #13.
 Miglioramento del problema #11.

@@ -1,2 +1,1 @@
-Complete graphical refurbishing by introducing React Native Paper v5
-(Release Candidate).
+Complete graphical refurbishing by introducing React Native Paper v5 (Release Candidate).

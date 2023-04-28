@@ -1,0 +1,2 @@
+* Updated events list.
+* Updated snackbar message duration on save/delete actions.

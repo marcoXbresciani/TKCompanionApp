@@ -1,2 +1,1 @@
-Principalmente aggiornamenti della documentazione e continuazione del
-I18N.
+Principalmente aggiornamenti della documentazione e continuazione del I18N.

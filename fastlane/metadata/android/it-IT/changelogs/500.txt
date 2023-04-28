@@ -1,2 +1,1 @@
-Revisione grafica completa con l'introduzione di React Native Paper v5
-(Release Candidate).
+Revisione grafica completa con l'introduzione di React Native Paper v5 (Release Candidate).

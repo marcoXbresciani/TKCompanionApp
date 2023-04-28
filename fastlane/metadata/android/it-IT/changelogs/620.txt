@@ -1,2 +1,1 @@
-Rimossa l'impostazione del tema: l'applicazione partirà sempre col tema
-di sistema corrente.
+Rimossa l'impostazione del tema: l'applicazione partirà sempre col tema di sistema corrente.

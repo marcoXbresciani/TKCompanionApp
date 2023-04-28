@@ -1,2 +1,1 @@
-Aggiunto avviso sul click del calendario per indicare lo stato WIP della
-pagina PDSA.
+Aggiunto avviso sul click del calendario per indicare lo stato WIP della pagina PDSA.

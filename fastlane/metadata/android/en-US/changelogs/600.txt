@@ -1,5 +1,3 @@
-Overall update of technical dependencies, frameworks and software
-libraries.
-Removal of Encrypted Storage: please uninstall previous versions of the
-app if you see issues with this version.
+Overall update of technical dependencies, frameworks and software libraries.
+Removal of Encrypted Storage: please uninstall previous versions of the app if you see issues with this version.
 Reference repository is now Codeberg.

@@ -210,7 +210,7 @@ const PdsaPage: React.FC = () => {
       if ((dayOfWeek >= 0) && (dayOfWeek <= 6)) {
         if ((weekDays != null) && (weekDays.length === 7)) {
           if ((weekDays[dayOfWeek] !== null) && (weekDays[dayOfWeek] !== undefined)) {
-            result = weekDays[dayOfWeek]
+            result = weekDays[dayOfWeek] as string
           }
         }
       }
@@ -499,7 +499,7 @@ const PdsaPage: React.FC = () => {
       </ScrollView>
 
       <TkSnackbar
-        duration={333}
+        duration={500}
         message={snackMessage} visible={visibleSnack}
         setVisible={setVisibleSnack}
       />

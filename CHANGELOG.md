@@ -42,6 +42,13 @@ This file is offered as-is, without any warranty.
 
 ### Security
 
+## [6.6.1](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.6.1) - 2023-05-02
+
+### Changed
+
+* Updated events list.
+* Updated snackbar message duration on save/delete actions.
+
 ## [6.6.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.6.0) - 2023-04-18
 
 ### Added

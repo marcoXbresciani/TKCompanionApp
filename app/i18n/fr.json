@@ -25,12 +25,9 @@
         "url": {
             "description": "TkCompanionApp è software libero",
             "page": [
+                {},
                 {
-                    "icon": "android"
-                },
-                {
-                    "address": "https://codeberg.org/marco.bresciani/TKCompanionApp",
-                    "name": "Codeberg"
+                    "address": "https://codeberg.org/marco.bresciani/TKCompanionApp"
                 },
                 {
                     "icon": "gitlab"

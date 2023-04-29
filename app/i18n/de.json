@@ -19,19 +19,15 @@
         },
         "translation": {
             "author": [
-                "Amy Dora Lang (@amydoralang)",
-                "Ettore Atalan <atalanttore@googlemail.com>"
+                "Amy Dora Lang (@amydoralang)"
             ],
             "title": "Englische Übersetzung von:"
         },
         "url": {
             "page": [
+                {},
                 {
-                    "icon": "android"
-                },
-                {
-                    "address": "https://codeberg.org/marco.bresciani/TKCompanionApp",
-                    "name": "Codeberg"
+                    "address": "https://codeberg.org/marco.bresciani/TKCompanionApp"
                 },
                 {
                     "icon": "gitlab"

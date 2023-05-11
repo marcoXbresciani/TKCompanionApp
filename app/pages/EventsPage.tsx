@@ -33,18 +33,6 @@ import i18n from '../i18n/i18n'
 const BadgesPage: React.FC = () => {
   const events: Array<{ date: string, location: string, title: string, url: string }> = [
     {
-      date: '2023-05-10',
-      location: 'PE',
-      title: 'Lean Six Sigma Workshop by Mr. Dave Harry - Toyota Kata\nc/o 4th South American Conference on Industrial Engineering and Operations Management',
-      url: 'http://ieomsociety.org/peru2023/'
-    },
-    {
-      date: '2023-05-11',
-      location: 'WWW',
-      title: 'Improvement Kata 101 (virtual card sort)',
-      url: 'https://ame.org/event/improvement-kata-101-virtual-card-sort'
-    },
-    {
       date: '2023-05-25',
       location: 'WWW',
       title: 'Lean Book Discussion Group --The Toyota Kata Practice Guide',

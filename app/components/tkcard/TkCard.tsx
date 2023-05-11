@@ -34,7 +34,7 @@ const TkCard = (props: React.PropsWithChildren<any>): JSX.Element => {
     bg: `${useTheme().colors.primary}`
   }
 
-  return (<StyledTkCard theme={borderTheme}>{props.children}</StyledTkCard>)
+  return (<StyledTkCard mode='elevated' theme={borderTheme}>{props.children}</StyledTkCard>)
 }
 
 export default TkCard

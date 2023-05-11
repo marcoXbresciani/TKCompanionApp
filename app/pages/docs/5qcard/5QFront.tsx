@@ -28,9 +28,8 @@ import Separator from './Separator'
 import TkCardTitle from '../../../components/tkcard/TkCardTitle'
 import TkCard from '../../../components/tkcard/TkCard'
 import { TkCardContent } from '../../../components/tkcard/TkCardContent'
-import SmallerText from '../../../components/SmallerText'
-import TkText from '../../../components/TkText'
 import BoldText from '../../../components/BoldText'
+import { Text } from 'react-native-paper'
 
 interface Props {
   onPress: () => void
@@ -46,61 +45,27 @@ const Front5Q: React.FC<Props> = ({ onPress }: Props) => {
         subtitle={`${i18next.t('docs.5qcard.front.title')}`}
       />
       <TkCardContent>
-        <TkText>
-          <Trans
-            t={t}
-            i18nKey='docs.5qcard.front.q1'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-        </TkText>
-        <TkText>
-          <Trans
-            t={t}
-            i18nKey='docs.5qcard.front.q2'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-        </TkText>
+        <Text variant='titleLarge'>
+          <Trans t={t} i18nKey='docs.5qcard.front.q1' components={{ bold: <BoldText /> }} />
+        </Text>
+        <Text variant='titleLarge'>
+          <Trans t={t} i18nKey='docs.5qcard.front.q2' components={{ bold: <BoldText /> }} />
+        </Text>
         <Pressable onPress={() => onPress()}>
           <Separator>
             {`${i18next.t('docs.5qcard.front.separator')}`}
           </Separator>
         </Pressable>
-        <TkText>
-          <Trans
-            t={t}
-            i18nKey='docs.5qcard.front.q3.1'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-          {'\n'}
-          {`${i18next.t('docs.5qcard.front.q3.2')}`}
-        </TkText>
-        <TkText>
-          <Trans
-            t={t}
-            i18nKey='docs.5qcard.front.q4.1'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-          {'\n'}
-          {`${i18next.t('docs.5qcard.front.q4.2')}`}
-        </TkText>
-        <TkText>
-          <Trans
-            t={t}
-            i18nKey='docs.5qcard.front.q5'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-        </TkText>
-        <SmallerText>{`${i18next.t('docs.5qcard.front.caption')}`}</SmallerText>
+        <Text variant='titleLarge'>
+          <Trans t={t} i18nKey='docs.5qcard.front.q3.1' components={{ bold: <BoldText /> }} /> {'\n'}{`${i18next.t('docs.5qcard.front.q3.2')}`}
+        </Text>
+        <Text variant='titleLarge'>
+          <Trans t={t} i18nKey='docs.5qcard.front.q4.1' components={{ bold: <BoldText /> }} />{'\n'}{`${i18next.t('docs.5qcard.front.q4.2')}`}
+        </Text>
+        <Text variant='titleLarge'>
+          <Trans t={t} i18nKey='docs.5qcard.front.q5' components={{ bold: <BoldText /> }} />
+        </Text>
+        <Text>{`${i18next.t('docs.5qcard.front.caption')}`}</Text>
       </TkCardContent>
     </TkCard>
   )

@@ -23,8 +23,7 @@
 import { View } from 'react-native'
 import * as React from 'react'
 import styled from 'styled-components'
-import { Divider, useTheme } from 'react-native-paper'
-import SmallerText from '../../../components/SmallerText'
+import { Divider, Text, useTheme } from 'react-native-paper'
 
 const Container = styled(View)`
     border-bottom-color: ${props => props.theme.bg};
@@ -43,7 +42,7 @@ export const Separator = ({ children }: React.PropsWithChildren<any>): JSX.Eleme
   return (
     <Container theme={lineTheme}>
       <Divider />
-      <SmallerText>{children}</SmallerText>
+      <Text>{children}</Text>
       <Divider />
     </Container>
   )

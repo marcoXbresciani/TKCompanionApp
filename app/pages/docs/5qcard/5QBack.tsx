@@ -25,13 +25,10 @@ import { Pressable, View } from 'react-native'
 import * as React from 'react'
 import i18next from 'i18next'
 import { Trans, useTranslation } from 'react-i18next'
-import TkText from '../../../components/TkText'
-import { Card, Divider, useTheme } from 'react-native-paper'
-import BoldSmaller from '../../../components/BoldSmaller'
+import { Card, Divider, Text, useTheme } from 'react-native-paper'
 import TkCardTitle from '../../../components/tkcard/TkCardTitle'
 import TkCard from '../../../components/tkcard/TkCard'
 import { TkCardContent } from '../../../components/tkcard/TkCardContent'
-import SmallerText from '../../../components/SmallerText'
 import BoldText from '../../../components/BoldText'
 
 const Returner = styled(View)`
@@ -59,55 +56,26 @@ const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
         subtitleNumberOfLines={3}
       />
       <TkCardContent>
-        <SmallerText><Trans
-          t={t}
-          i18nKey='docs.5qcard.back.caption'
-          components={{
-            bold: <BoldSmaller />
-          }}
-                     />
-        </SmallerText>
+        <Text variant='titleLarge'>
+          <Trans t={t} i18nKey='docs.5qcard.back.caption' components={{ bold: <BoldText /> }} />
+        </Text>
         <Divider />
-        <TkText>
-          <Trans
-            t={t}
-            i18nKey='docs.5qcard.back.q1'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-        </TkText>
-        <TkText>
-          <Trans
-            t={t}
-            i18nKey='docs.5qcard.back.q2'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-        </TkText>
-        <TkText>
-          <Trans
-            t={t}
-            i18nKey='docs.5qcard.back.q3'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-        </TkText>
-        <TkText>
-          <Trans
-            t={t}
-            i18nKey='docs.5qcard.back.q4'
-            components={{
-              bold: <BoldText />
-            }}
-          />
-        </TkText>
+        <Text variant='titleLarge'>
+          <Trans t={t} i18nKey='docs.5qcard.back.q1' components={{ bold: <BoldText /> }} />
+        </Text>
+        <Text variant='titleLarge'>
+          <Trans t={t} i18nKey='docs.5qcard.back.q2' components={{ bold: <BoldText /> }} />
+        </Text>
+        <Text variant='titleLarge'>
+          <Trans t={t} i18nKey='docs.5qcard.back.q3' components={{ bold: <BoldText /> }} />
+        </Text>
+        <Text variant='titleLarge'>
+          <Trans t={t} i18nKey='docs.5qcard.back.q4' components={{ bold: <BoldText /> }} />
+        </Text>
       </TkCardContent>
       <Card.Actions>
         <Pressable onPress={() => onPress()}>
-          <Returner theme={lineTheme}><SmallerText>{`${i18next.t('docs.5qcard.back.return')}`}</SmallerText></Returner>
+          <Returner theme={lineTheme}><Text>{`${i18next.t('docs.5qcard.back.return')}`}</Text></Returner>
         </Pressable>
       </Card.Actions>
     </TkCard>

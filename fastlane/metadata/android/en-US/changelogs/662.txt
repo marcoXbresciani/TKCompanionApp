@@ -1,0 +1,2 @@
+* Update events list.
+* Update 5Q card text size.

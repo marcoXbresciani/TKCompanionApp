@@ -1,0 +1,2 @@
+* Aggiorna la lista di eventi.
+* Aggiorna la dimensione del testo della carta 5Q.

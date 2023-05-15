@@ -42,7 +42,7 @@ This file is offered as-is, without any warranty.
 
 ### Security
 
-## [6.6.2](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.6.1) - 2023-05-16
+## [6.6.2](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.6.2) - 2023-05-16
 
 ### Changed
 

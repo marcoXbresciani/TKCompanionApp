@@ -57,6 +57,12 @@ const BadgesPage: React.FC = () => {
       url: 'https://us02web.zoom.us/webinar/register/WN_-hb9opX0Q9O4D_ieblfo6g'
     },
     {
+      date: '2023-06-19',
+      location: 'US',
+      title: 'Kata School Cascadia\'s Kata Together June 19 -23 2023 at Kaas Tailored',
+      url: 'https://kscskatatogether2023.eventbrite.com/'
+    },
+    {
       date: '2023-07-22',
       location: 'CN',
       title: 'TOYOTA KATA',

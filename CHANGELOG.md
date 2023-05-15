@@ -42,6 +42,13 @@ This file is offered as-is, without any warranty.
 
 ### Security
 
+## [6.6.2](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.6.1) - 2023-05-16
+
+### Changed
+
+* Updated events list.
+* Updated 5Q card text size.
+
 ## [6.6.1](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.6.1) - 2023-05-02
 
 ### Changed

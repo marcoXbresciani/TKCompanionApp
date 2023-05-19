@@ -55,32 +55,32 @@ const DocsSelector: React.FC<Props> = ({ onPress }: Props) => {
   const documents = [
     {
       onPress: Pages.FiveQCard,
-      url: 'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
+      url: 'http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
       title: 'docs.5qcard.front.title'
     },
     {
       onPress: Pages.Pattern,
-      url: 'https://web.archive.org/web/20210828084438/http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
+      url: 'http://www-personal.umich.edu/~mrother/KATA_Files/5Q_Card.pdf',
       title: 'docs.pattern.title'
     },
     {
       onPress: Pages.FourSteps,
-      url: 'https://web.archive.org/web/20220326213548/http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf',
+      url: 'http://www-personal.umich.edu/~mrother/KATA_Files/IK_Poster.pdf',
       title: 'docs.4steps.title'
     },
     {
       onPress: Pages.TkcPage,
-      url: 'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
+      url: 'http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
       title: 'docs.tkc.title'
     },
     {
       onPress: Pages.PracticePage,
-      url: 'https://web.archive.org/web/20211208181337/http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
+      url: 'http://www-personal.umich.edu/~mrother/KATA_Files/Kata_Code.pdf',
       title: 'docs.practice.title'
     },
     {
       onPress: Pages.KtsPage,
-      url: 'https://web.archive.org/web/20220409213239/http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
+      url: 'http://www-personal.umich.edu/~mrother/KATA_Files/KTS.jpg',
       title: 'docs.kts.title'
     },
     {

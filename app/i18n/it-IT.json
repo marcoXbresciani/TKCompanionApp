@@ -29,14 +29,6 @@
         },
         "url": {
             "description": "TkCompanionApp è software libero",
-            "page": [
-                {
-                    "address": "https://codeberg.org/marco.bresciani/TKCompanionApp"
-                },
-                {
-                    "icon": "gitlab"
-                }
-            ],
             "title": "Guarda il codice"
         }
     },
@@ -126,25 +118,39 @@
         },
         "5qcard": {
             "back": {
+                "5Q": [
+                    "Che cosa avevi pianificato come <bold>ultimo step</bold>?",
+                    "Che cosa ti <bold>aspettavi</bold>?",
+                    "Che cosa è <bold>successo nei fatti</bold>?",
+                    "Che cosa hai <bold>appreso</bold>?"
+                ],
                 "caption": "Chi apprende deve descrivere l'<bold>ostacolo</bold> su cui sta lavorando",
-                "q1": "1. Che cosa avevi pianificato come <bold>ultimo step</bold>?",
-                "q2": "2. Che cosa ti <bold>aspettavi</bold>?",
-                "q3": "3. Che cosa è <bold>successo nei fatti</bold>?",
-                "q4": "4. Che cosa hai <bold>appreso</bold>?",
                 "quote": "Perché non sai, in realtà, quale sarà il risultato di uno step!",
                 "return": "Ritorna alla domanda 3",
                 "title": "Rifletti sull'ultimo step"
             },
             "front": {
+                "5Q": [
+                    {
+                        "text": "Qual è la <bold>condizione obiettivo</bold>?"
+                    },
+                    {
+                        "text": "Qual è la <bold>condizione attuale</bold> ora?"
+                    },
+                    {
+                        "description": "Quale (uno solo!) vuoi affrontare adesso?",
+                        "text": "Quali <bold>ostacoli</bold> credi ora ti impediscano di raggiungere la condizione obiettivo?"
+                    },
+                    {
+                        "description": "Che cosa ti aspetti di ottenere?",
+                        "text": "Qual è il tuo <bold>prossimo step</bold>? (Prossimo esperimento)"
+                    },
+                    {
+                        "text": "Quanto velocemente possiamo andare a vedere che cosa <bold>abbiamo appreso</bold> da questo passo?"
+                    }
+                ],
                 "caption": "*Lavorerai spesso sullo stesso ostacolo con diversi esperimenti",
                 "header": "Kata del coaching",
-                "q1": "1. Qual è la <bold>condizione obiettivo</bold>?",
-                "q2": "2. Qual è la <bold>condizione attuale</bold> ora?",
-                "q3.1": "3. Quali <bold>ostacoli</bold> credi ora ti impediscano di raggiungere la condizione obiettivo?",
-                "q3.2": "Quale (uno solo!) vuoi affrontare adesso?",
-                "q4.1": "4. Qual è il tuo <bold>prossimo step</bold>? (Prossimo esperimento)",
-                "q4.2": "Che cosa ti aspetti di ottenere?",
-                "q5": "5. Quanto velocemente possiamo andare a vedere che cosa <bold>abbiamo appreso</bold> da questo passo?",
                 "separator": "Gira la carta",
                 "title": "Le cinque domande"
             }

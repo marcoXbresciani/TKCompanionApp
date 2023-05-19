@@ -25,7 +25,7 @@ import { Pressable, View } from 'react-native'
 import * as React from 'react'
 import i18next from 'i18next'
 import { Trans, useTranslation } from 'react-i18next'
-import { Card, Divider, Text, useTheme } from 'react-native-paper'
+import { Card, Divider, IconButton, List, Text, useTheme } from 'react-native-paper'
 import TkCardTitle from '../../../components/tkcard/TkCardTitle'
 import TkCard from '../../../components/tkcard/TkCard'
 import { TkCardContent } from '../../../components/tkcard/TkCardContent'
@@ -44,6 +44,8 @@ interface Props {
 
 const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
   const { t } = useTranslation('')
+  const texts: string[] = t('docs.5qcard.back.5Q', { returnObjects: true })
+
   const lineTheme = {
     bg: `${useTheme().colors.primary}`
   }
@@ -56,22 +58,20 @@ const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
         subtitleNumberOfLines={3}
       />
       <TkCardContent>
-        <Text variant='titleLarge'>
-          <Trans t={t} i18nKey='docs.5qcard.back.caption' components={{ bold: <BoldText /> }} />
-        </Text>
+        <Text><Trans t={t} i18nKey='docs.5qcard.back.caption' components={{ bold: <BoldText /> }} /></Text>
         <Divider />
-        <Text variant='titleLarge'>
-          <Trans t={t} i18nKey='docs.5qcard.back.q1' components={{ bold: <BoldText /> }} />
-        </Text>
-        <Text variant='titleLarge'>
-          <Trans t={t} i18nKey='docs.5qcard.back.q2' components={{ bold: <BoldText /> }} />
-        </Text>
-        <Text variant='titleLarge'>
-          <Trans t={t} i18nKey='docs.5qcard.back.q3' components={{ bold: <BoldText /> }} />
-        </Text>
-        <Text variant='titleLarge'>
-          <Trans t={t} i18nKey='docs.5qcard.back.q4' components={{ bold: <BoldText /> }} />
-        </Text>
+        {
+          texts.flatMap((item, index) => {
+            return (
+              <List.Item
+                key={item}
+                left={() => <IconButton icon={`numeric-${index + 1}-circle-outline`} />}
+                title={() => <Text variant='titleMedium'><Trans t={t} i18nKey={item} components={{ bold: <BoldText /> }} /></Text>}
+                titleNumberOfLines={3}
+              />
+            )
+          })
+        }
       </TkCardContent>
       <Card.Actions>
         <Pressable onPress={() => onPress()}>

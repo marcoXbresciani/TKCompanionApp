@@ -96,18 +96,37 @@
         },
         "5qcard": {
             "back": {
-                "q1": "1. Qu'avez-vous prévu comme étant votre <bold>Dernière étape</bold>?",
-                "q2": "2. À quoi vous <bold>attendiez-vous</bold>?",
-                "q3": "3. Que s'est-il <bold>réellement passé</bold>?",
-                "q4": "4. Qu'avez-vous <bold>appris</bold>?",
+                "5Q": [
+                    "Qu'avez-vous prévu comme étant votre <bold>Dernière étape</bold>?",
+                    "À quoi vous <bold>attendiez-vous</bold>?",
+                    "Que s'est-il <bold>réellement passé</bold>?",
+                    "Qu'avez-vous <bold>appris</bold>?"
+                ],
                 "quote": "Parce que vous ne savez pas vraiment quel sera le résultat d'une étape!",
                 "return": "Retour à la question 3",
                 "title": "Réfléchir à la dernière étape"
             },
             "front": {
+                "5Q": [
+                    {
+                        "text": "Quelle est la <bold>condition cible</bold>?"
+                    },
+                    {
+                        "text": ""
+                    },
+                    {
+                        "description": "",
+                        "text": ""
+                    },
+                    {
+                        "description": "À quoi vous attendez-vous?",
+                        "text": ""
+                    },
+                    {
+                        "text": ""
+                    }
+                ],
                 "header": "Kata d'entraînement",
-                "q1": "1. Quelle est la <bold>condition cible</bold>?",
-                "q4.2": "À quoi vous attendez-vous?",
                 "separator": "Retourner la carte",
                 "title": "Les cinq questions"
             }

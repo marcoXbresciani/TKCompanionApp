@@ -118,25 +118,39 @@
         },
         "5qcard": {
             "back": {
+                "5Q": [
+                    "What did you plan as your <bold>Last Step</bold>?",
+                    "What did you <bold>Expect</bold>?",
+                    "What <bold>Actually Happened</bold>?",
+                    "What did you <bold>Learn</bold>?"
+                ],
                 "caption": "Have the learner state the <bold>obstacle</bold> being worked on",
-                "q1": "1. What did you plan as your <bold>Last Step</bold>?",
-                "q2": "2. What did you <bold>Expect</bold>?",
-                "q3": "3. What <bold>Actually Happened</bold>?",
-                "q4": "4. What did you <bold>Learn</bold>?",
                 "quote": "Because you don't actually know what the result of a step will be!",
                 "return": "Return to question 3",
                 "title": "Reflect on the Last Step"
             },
             "front": {
+                "5Q": [
+                    {
+                        "text": "What is the <bold>Target Condition</bold>?"
+                    },
+                    {
+                        "text": "What is the <bold>Actual Condition</bold> now?"
+                    },
+                    {
+                        "description": "Which *one* are you addressing now?",
+                        "text": "What <bold>Obstacles</bold> do you think are preventing you from reaching the target condition?"
+                    },
+                    {
+                        "description": "What do you expect?",
+                        "text": "What is your <bold>Next Step</bold>? (Next experiment)"
+                    },
+                    {
+                        "text": "How quickly can we go and see what we <bold>Have Learned</bold> from taking that step?"
+                    }
+                ],
                 "caption": "*You'll often work on the same obstacle with several experiments",
                 "header": "Coaching Kata",
-                "q1": "1. What is the <bold>Target Condition</bold>?",
-                "q2": "2. What is the <bold>Actual Condition</bold> now?",
-                "q3.1": "3. What <bold>Obstacles</bold> do you think are preventing you from reaching the target condition?",
-                "q3.2": "Which *one* are you addressing now?",
-                "q4.1": "4. What is your <bold>Next Step</bold>? (Next experiment)",
-                "q4.2": "What do you expect?",
-                "q5": "5. How quickly can we go and see what we <bold>Have Learned</bold> from taking that step?",
                 "separator": "Turn Card Over",
                 "title": "The Five Questions"
             }

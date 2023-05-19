@@ -22,6 +22,7 @@
  */
 import { Pressable } from 'react-native'
 import * as React from 'react'
+import { useState } from 'react'
 import i18next from 'i18next'
 import { Trans, useTranslation } from 'react-i18next'
 import Separator from './Separator'
@@ -29,7 +30,7 @@ import TkCardTitle from '../../../components/tkcard/TkCardTitle'
 import TkCard from '../../../components/tkcard/TkCard'
 import { TkCardContent } from '../../../components/tkcard/TkCardContent'
 import BoldText from '../../../components/BoldText'
-import { Text } from 'react-native-paper'
+import { List, Text, ToggleButton } from 'react-native-paper'
 
 interface Props {
   onPress: () => void
@@ -37,34 +38,41 @@ interface Props {
 
 const Front5Q: React.FC<Props> = ({ onPress }: Props) => {
   const { t } = useTranslation()
+  const texts: Array<{ text: string, description?: string }> = t('docs.5qcard.front.5Q', { returnObjects: true })
+
+  const [toggles, setToggles] = useState<{ [key: string]: 'checked' | 'unchecked' }>({ Q1: 'unchecked', Q2: 'unchecked', Q3: 'unchecked', Q4: 'unchecked', Q5: 'unchecked' })
+
+  const doToggles = (index: number): void => {
+    const result = toggles
+    result[`Q${index}`] = result[`Q${index}`] === 'checked' ? 'unchecked' : 'checked'
+    setToggles(result)
+  }
 
   return (
     <TkCard>
       <TkCardTitle
         title={`${i18next.t('docs.5qcard.front.header')}`}
+        // right={() => <IconButton icon='bookmark-remove-outline' onPress={() => setToggles({ Q1 : 'unchecked', Q2: 'unchecked', Q3: 'unchecked', Q4: 'unchecked', Q5: 'unchecked'})} />}
         subtitle={`${i18next.t('docs.5qcard.front.title')}`}
       />
       <TkCardContent>
-        <Text variant='titleLarge'>
-          <Trans t={t} i18nKey='docs.5qcard.front.q1' components={{ bold: <BoldText /> }} />
-        </Text>
-        <Text variant='titleLarge'>
-          <Trans t={t} i18nKey='docs.5qcard.front.q2' components={{ bold: <BoldText /> }} />
-        </Text>
-        <Pressable onPress={() => onPress()}>
-          <Separator>
-            {`${i18next.t('docs.5qcard.front.separator')}`}
-          </Separator>
-        </Pressable>
-        <Text variant='titleLarge'>
-          <Trans t={t} i18nKey='docs.5qcard.front.q3.1' components={{ bold: <BoldText /> }} /> {'\n'}{`${i18next.t('docs.5qcard.front.q3.2')}`}
-        </Text>
-        <Text variant='titleLarge'>
-          <Trans t={t} i18nKey='docs.5qcard.front.q4.1' components={{ bold: <BoldText /> }} />{'\n'}{`${i18next.t('docs.5qcard.front.q4.2')}`}
-        </Text>
-        <Text variant='titleLarge'>
-          <Trans t={t} i18nKey='docs.5qcard.front.q5' components={{ bold: <BoldText /> }} />
-        </Text>
+
+        {
+         texts.flatMap((item, index) => {
+           return (
+             <><List.Item
+               description={() => item.description !== undefined ? <Text variant='titleMedium'>{item.description}</Text> : <></>}
+               descriptionNumberOfLines={10}
+               key={item.text}
+               left={() => <ToggleButton icon={`numeric-${index + 1}-circle-outline`} size={42} value={`Q${index}`} status={toggles[`Q${index}`] as 'checked' | 'unchecked'} onPress={() => doToggles(index)} />}
+               title={() => <Text variant='titleMedium'><Trans t={t} i18nKey={item.text} components={{ bold: <BoldText /> }} /></Text>}
+               titleNumberOfLines={5}
+               />
+               {index === 1 && <Pressable onPress={() => onPress()}><Separator>{`${i18next.t('docs.5qcard.front.separator')}`}</Separator></Pressable>}
+             </>
+           )
+         })
+        }
         <Text>{`${i18next.t('docs.5qcard.front.caption')}`}</Text>
       </TkCardContent>
     </TkCard>

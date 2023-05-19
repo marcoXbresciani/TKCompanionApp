@@ -98,23 +98,37 @@
         },
         "5qcard": {
             "back": {
-                "q1": "1) Hva planla du som ditt <bold>siste steg</bold>?",
-                "q2": "2) Hva slags <bold>forventning</bold> hadde du?",
-                "q3": "3) Hva <bold>fant sted</bold>?",
-                "q4": "4) Hva <bold>lærte du</bold>?",
+                "5Q": [
+                    "Hva planla du som ditt <bold>siste steg</bold>?",
+                    "Hva slags <bold>forventning</bold> hadde du?",
+                    "Hva <bold>fant sted</bold>?",
+                    "Hva <bold>lærte du</bold>?"
+                ],
                 "quote": "Fordi du ikke faktisk vet hva resultatet av et steg vil være!",
                 "return": "Gå tilbake til spørsmål 3",
                 "title": "Overvei forrige steg"
             },
             "front": {
+                "5Q": [
+                    {
+                        "text": "Hva er <bold>måltilstanden</bold>?"
+                    },
+                    {
+                        "text": "Hva er <bold>faktisk tilstand</bold> nå?"
+                    },
+                    {
+                        "description": "Hvilket *enkeltstående* hinder jobber du med nå?",
+                        "text": "Hvilke <bold>hindre</bold> tror du forhindrer deg i å nå måltilstanden?"
+                    },
+                    {
+                        "description": "Hva forventer du?",
+                        "text": "Hva er ditt <bold>neste steg</bold>? (Neste eksperiment)"
+                    },
+                    {
+                        "text": "Hvor raskt kan finne ut hva man <bold>har lært</bold> av å utføre forrige steg?"
+                    }
+                ],
                 "header": "Bortlæring av Kata",
-                "q1": "① Hva er <bold>måltilstanden</bold>?",
-                "q2": "② Hva er <bold>faktisk tilstand</bold> nå?",
-                "q3.1": "③ Hvilke <bold>hindre</bold> tror du forhindrer deg i å nå måltilstanden?",
-                "q3.2": "Hvilket *enkeltstående* hinder jobber du med nå?",
-                "q4.1": "④ Hva er ditt <bold>neste steg</bold>? (Neste eksperiment)",
-                "q4.2": "Hva forventer du?",
-                "q5": "⑤ Hvor raskt kan finne ut hva man <bold>har lært</bold> av å utføre forrige steg?",
                 "separator": "Snu kortet",
                 "title": "De fem spørsmålene"
             }

@@ -1,0 +1,2 @@
+* Revamp 5Q card with new font size and number markers, in progress.
+* Update events list.

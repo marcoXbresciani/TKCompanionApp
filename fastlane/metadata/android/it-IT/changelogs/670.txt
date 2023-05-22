@@ -1,0 +1,3 @@
+* Rinnova la carta delle 5 domande con una nuova dimensione di font e
+  numeri marcatori, in corso.
+* Aggiorna la lista di eventi.

@@ -225,8 +225,9 @@ release.
 11. Verify clean code criteria through `npm run lint` command.
     Please note this command is also automatically launched before each
     commit.
-12. Update this file, if you need to update the release steps.
-13. If you're not updating Node*, tag with the corresponding
+12. Update [README.md](../README.md) file latest tag, where present.
+13. Update this file, if you need to update the release steps.
+14. If you're not updating Node*, tag with the corresponding
     [(semantic) version](https://semver.org/) number.
 
 #### Updating NodeJS and Related

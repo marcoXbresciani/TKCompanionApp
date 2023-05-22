@@ -219,8 +219,7 @@ release.
    Add relevant ADR documents in the `docs/architecture/decisions`
    folder if needed, tracking them in the [CHANGELOG.md](/CHANGELOG.md)
    file.
-10. Verify [REUSE](https://reuse.software/) compliance through
-    `pipx run reuse lint` command.
+10. Verify [REUSE](https://reuse.software/) compliance with `pipx run reuse lint` command.
     Please note this command is also automatically launched before each
     commit.
 11. Verify clean code criteria through `npm run lint` command.

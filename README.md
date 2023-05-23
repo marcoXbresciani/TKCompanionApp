@@ -217,6 +217,10 @@ Thanks to (in appearing order):
   mentioning TKCompanionApp in the
   [we ❤️ @Codeberg](https://welove.codeberg.page/) list of F-Droid apps
   hosted on Codeberg.
+* [Tilo Schwarz](https://www.tiloschwarz.com/) for showing the thumb
+  indexing idea on the 5Q card during
+  [KataCon EU 2023](https://katacon.eu/).
+  See version [6.8.0](CHANGELOG.md#680---2023-05-26)
 
 ## Contributing
 

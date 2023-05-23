@@ -27,15 +27,25 @@ import Back5Q from './5QBack'
 
 const FiveQ: React.FunctionComponent = () => {
   const [front, setFront] = useState<boolean>(true)
+  const [bookmarks, setBookmarks] = useState<Array<'checked' | 'unchecked'>>(['unchecked', 'unchecked', 'unchecked', 'unchecked', 'unchecked'])
+
+  const toggleBookmark = (index: number): void => {
+    const result: Array<'checked' | 'unchecked'> = [...bookmarks] as Array<'checked' | 'unchecked'>
+    result[index] = result[index] === 'checked' ? 'unchecked' : 'checked'
+    setBookmarks(result)
+  }
 
   return (
     <>
       {front
         ? (
           <Front5Q
+            bookmarks={bookmarks}
             onPress={() => {
               setFront(false)
             }}
+            setBookmarks={setBookmarks}
+            toggler={toggleBookmark}
           />
           )
         : (

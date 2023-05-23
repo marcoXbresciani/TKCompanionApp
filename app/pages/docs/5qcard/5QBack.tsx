@@ -25,11 +25,20 @@ import { Pressable, View } from 'react-native'
 import * as React from 'react'
 import i18next from 'i18next'
 import { Trans, useTranslation } from 'react-i18next'
-import { Card, Divider, IconButton, List, Text, useTheme } from 'react-native-paper'
+import {
+  Card,
+  Divider,
+  IconButton,
+  List,
+  Text,
+  ToggleButton,
+  useTheme
+} from 'react-native-paper'
 import TkCardTitle from '../../../components/tkcard/TkCardTitle'
 import TkCard from '../../../components/tkcard/TkCard'
 import { TkCardContent } from '../../../components/tkcard/TkCardContent'
 import BoldText from '../../../components/BoldText'
+import { useState } from 'react'
 
 const Returner = styled(View)`
   border-top-color: ${props => props.theme.bg};
@@ -45,6 +54,12 @@ interface Props {
 const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
   const { t } = useTranslation('')
   const texts: string[] = t('docs.5qcard.back.5Q', { returnObjects: true })
+  const [bookmarks, setBookmarks] = useState<Array<'checked' | 'unchecked'>>(['unchecked', 'unchecked', 'unchecked', 'unchecked', 'unchecked'])
+  const toggleBookmark = (index: number): void => {
+    const result: Array<'checked' | 'unchecked'> = [...bookmarks] as Array<'checked' | 'unchecked'>
+    result[index] = result[index] === 'checked' ? 'unchecked' : 'checked'
+    setBookmarks(result)
+  }
 
   const lineTheme = {
     bg: `${useTheme().colors.primary}`
@@ -66,6 +81,7 @@ const Back5QScreen: React.FC<Props> = ({ onPress }: Props) => {
               <List.Item
                 key={item}
                 left={() => <IconButton icon={`numeric-${index + 1}-circle-outline`} />}
+                right={() => <ToggleButton icon='bookmark-outline' value={`Q${index}`} status={bookmarks[index] as 'checked' | 'unchecked'} onPress={() => toggleBookmark(index)} />}
                 title={() => <Text variant='titleMedium'><Trans t={t} i18nKey={item} components={{ bold: <BoldText /> }} /></Text>}
                 titleNumberOfLines={3}
               />

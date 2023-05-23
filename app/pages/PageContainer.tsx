@@ -20,20 +20,19 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { ScrollView, StatusBar, View } from 'react-native'
+import { ScrollView, View } from 'react-native'
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const NicerAreaView = styled(ScrollView)`
-    margin: ${String(StatusBar.currentHeight) + 'px'} 2.5% 0;
+    margin: 2.5%;
     flex: 1;
 `
 
 const PageContainer = (props: React.PropsWithChildren<any>): JSX.Element => {
   return (
     <NicerAreaView>
-      <StatusBar />
       <View>{props.children}</View>
     </NicerAreaView>
   )

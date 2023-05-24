@@ -14,7 +14,7 @@ SPDX-License-Identifier: FSFAP
 
 [![Codeberg](https://img.shields.io/github/license/marcoxbresciani/tkcompanionapp?logo=gnu)](https://codeberg.org/marco.bresciani/TKCompanionApp/src/branch/master/COPYING)
 [![Codeberg](https://img.shields.io/badge/hosted%20on-codeberg-2185D0?logo=codeberg)](https://codeberg.org/marco.bresciani/TKCompanionApp/)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/marcoXbresciani/TKCompanionApp?color=black&logo=codeberg&sort=semver)](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.7.0)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/marcoXbresciani/TKCompanionApp?color=black&logo=codeberg&sort=semver)](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.8.0)
 ![GitHub all releases](https://img.shields.io/github/downloads/marcoXbresciani/TKCompanionApp/total?logo=github)
 [![F-Droid](https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp?logo=fdroid)](https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/)
 [![TS-Standard - TypeScript Standard Style Guide](https://badgen.net/badge/code%20style/ts-standard/blue?icon=typescript)](https://github.com/standard/ts-standard)

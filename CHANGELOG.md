@@ -48,6 +48,9 @@ This file is offered as-is, without any warranty.
 
 * Introduce bookmarks to 5Q card (thanks Tilo for the idea!).
 
+### Changed
+*
+* Update events list.
 
 ## [6.7.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.7.0) - 2023-05-22
 

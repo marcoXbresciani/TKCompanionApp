@@ -33,12 +33,6 @@ import i18n from '../i18n/i18n'
 const BadgesPage: React.FC = () => {
   const events: Array<{ date: string, location: string, title: string, url: string }> = [
     {
-      date: '2023-05-25',
-      location: 'WWW',
-      title: 'Lean Book Discussion Group --The Toyota Kata Practice Guide',
-      url: 'https://michiganlean.org/event-5253354'
-    },
-    {
       date: '2023-06-06',
       location: 'CA / WWW',
       title: '3e Rendez-Vous Kata',

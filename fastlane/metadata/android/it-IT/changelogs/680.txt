@@ -1,0 +1,3 @@
+* Aggiunge i segnaposto alla carda delle 5 comande (grazie Tilo per
+  l'idea!)  per ricordare l'ultima domanda fatta.
+* Aggiorna la lista di eventi.

@@ -1,0 +1,3 @@
+* Introduce bookmarks to 5Q card (thanks Tilo for the idea!) to remember
+  latest asked question.
+* Update events list.

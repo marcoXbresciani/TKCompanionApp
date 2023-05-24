@@ -222,13 +222,17 @@ release.
 10. Verify [REUSE](https://reuse.software/) compliance with `pipx run reuse lint` command.
     Please note this command is also automatically launched before each
     commit.
-11. Verify clean code criteria through `npm run lint` command.
+11. Verify [TS Standard](https://github.com/standard/ts-standard)
+    criteria through `npm run lint` command.
     Please note this command is also automatically launched before each
     commit.
 12. Update [README.md](../README.md) file latest tag, where present.
 13. Update this file, if you need to update the release steps.
 14. If you're not updating Node*, tag with the corresponding
     [(semantic) version](https://semver.org/) number.
+    Possibly wait for previous release to be published and available on
+    F-Droid, if any, to avoid the "override" possibility so that the
+    newer release won't make available the previous one.
 
 #### Updating NodeJS and Related
 

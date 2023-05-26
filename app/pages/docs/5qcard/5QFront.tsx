@@ -20,7 +20,7 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import { Pressable } from 'react-native'
+import { Pressable, View } from 'react-native'
 import * as React from 'react'
 import i18next from 'i18next'
 import { Trans, useTranslation } from 'react-i18next'
@@ -59,17 +59,16 @@ const Front5Q: React.FC<Props> = ({ bookmarks, onPress, setBookmarks, toggler }:
         {
          texts.flatMap((item, index) => {
            return (
-             <><List.Item
+             <View key={item.text}><List.Item
                description={() => item.description !== undefined ? <Text variant='titleMedium'>{item.description}</Text> : <></>}
                descriptionNumberOfLines={10}
-               key={item.text}
                left={() => <IconButton icon={`numeric-${index + 1}-circle-outline`} />}
                right={() => <ToggleButton icon='bookmark-outline' value={`Q${index}`} status={bookmarks[index] as 'checked' | 'unchecked'} onPress={() => toggler(index)} />}
                title={() => <Text variant='titleMedium'><Trans t={t} i18nKey={item.text} components={{ bold: <BoldText /> }} /></Text>}
                titleNumberOfLines={5}
-               />
+                                   />
                {index === 1 && <Pressable key='press' onPress={() => onPress()}><Separator>{`${i18next.t('docs.5qcard.front.separator')}`}</Separator></Pressable>}
-             </>
+             </View>
            )
          })
         }

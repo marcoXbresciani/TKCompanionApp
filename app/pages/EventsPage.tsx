@@ -54,7 +54,7 @@ const BadgesPage: React.FC = () => {
       date: '2023-06-20',
       location: 'WWW',
       title: 'Improvement Kata/Coaching Kata Remotely',
-      url: 'https://us02web.zoom.us/webinar/register/WN_-hb9opX0Q9O4D_ieblfo6g'
+      url: 'https://www.lean.org/events-training/events/improvement-kata-coaching-kata-remotely/'
     },
     {
       date: '2023-07-22',

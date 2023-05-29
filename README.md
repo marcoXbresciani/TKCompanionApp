@@ -144,6 +144,66 @@ Well, it's easy: install the app, open the app, click some buttons.
 There are no games, no quizzes, no actions to take (yet).
 Just sit, follow the menu, learn, practice and improve.
 
+The app is divided into four main areas:
+
+1. Home
+2. PDSA Journal
+3. Documents
+4. Events
+
+### Home
+
+The Home page currently shows the 5Q card and also gives the possibility
+to:
+
+* change language through the Settings menu (top left),
+* see the Legend panel with the explanations of all the buttons
+  functionalities, for each page
+* see the contact panel with a brief statement on the privacy side and
+  the contact channels
+* see the Copyright panel, with the GNU General Public License copyright
+  notice, the translator(s) names for the selected language and the
+  font coyright notice.
+* see the about panel with the current version number, the privacy
+  statements with some useful links and the source code repository
+  references.
+
+### PDSA Journal
+
+The PDSA Journal page allows you to daily write your answers to the 5Q
+card, with a reference calendar and navigation buttons.
+
+You are free to save and delete a full whole day or each single answer
+alone.
+You can also navigate directly to today (current, default day when
+opening the page) or browse the calendar.
+
+### Documents
+
+The Documents page shows some reference documents and note from the
+Toyota Kata community.
+Together with the 5Q card there is the Kata Code and a few other things
+that you can read directly from the app or see their original source by
+opening the associated reference link.
+
+### Events
+
+This is a manually-updated list of known (by me!) events, world-wide,
+related to Toyota Kata.
+
+Main source is currently
+[Mike Rother's Twitter account](https://twitter.com/RealMikeRother) but
+feel free to suggest more events.
+
+> Note: since the app has no Internet connection, I have to manually
+> update its content every time an event is expired or has to be added.
+> It might be not realtime, but I prefer to preserve privacy instead of
+> letting the app connect to the Internet, as far as I can.
+
+Events are listed in start dates order, with their official title as
+shown by the reference website, also added for navigation purposes (from
+your phone browser).
+
 ### Screenshots
 
 * Home Page

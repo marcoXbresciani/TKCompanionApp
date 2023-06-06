@@ -21,7 +21,7 @@ SPDX-License-Identifier: FSFAP
 
 ## Known Security Issues
 
-No currenlty known security issues.
+No currently known security issues.
 
 ## Supported Versions
 

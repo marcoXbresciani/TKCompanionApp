@@ -33,30 +33,6 @@ import i18n from '../i18n/i18n'
 const BadgesPage: React.FC = () => {
   const events: Array<{ date: string, location: string, title: string, url: string }> = [
     {
-      date: '2023-06-06',
-      location: 'CA / WWW',
-      title: '3e Rendez-Vous Kata',
-      url: 'https://polesante.hec.ca/#iLightbox[gallery925]/0'
-    },
-    {
-      date: '2023-06-07',
-      location: 'WWW',
-      title: 'ASK ME ANYTHING – TOYOTA KATA',
-      url: 'https://polarismep.org/event/ask-me-anything-toyota-kata/'
-    },
-    {
-      date: '2023-06-19',
-      location: 'US',
-      title: 'Kata School Cascadia\'s Kata Together June 19 -23 2023 at Kaas Tailored',
-      url: 'https://kscskatatogether2023.eventbrite.com/'
-    },
-    {
-      date: '2023-06-20',
-      location: 'WWW',
-      title: 'Improvement Kata/Coaching Kata Remotely',
-      url: 'https://www.lean.org/events-training/events/improvement-kata-coaching-kata-remotely/'
-    },
-    {
       date: '2023-07-22',
       location: 'CN',
       title: 'TOYOTA KATA',

@@ -42,6 +42,13 @@ This file is offered as-is, without any warranty.
 
 ### Security
 
+## [6.8.1](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.8.1) - 2023-06-06
+
+### Changed
+
+* Better app pages Usage and descriptions added in README file.
+* Update events list.
+
 ## [6.8.0](https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.8.0) - 2023-05-26
 
 ### Added

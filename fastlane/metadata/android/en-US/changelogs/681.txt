@@ -1,0 +1,2 @@
+* Better app pages Usage and descriptions added in README file.
+* Update events list.

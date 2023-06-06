@@ -1,0 +1,3 @@
+* Migliora la pagina di spiegazione Usage sull'uso dell'app e le
+  descrizioni nel file README.
+* Aggiorna la lista degli eventi.

@@ -21,7 +21,32 @@ SPDX-License-Identifier: FSFAP
 
 ## Known Security Issues
 
-No currently known security issues.
+* **fast-xml-parser vulnerable to Regex Injection via Doctype Entities**
+
+  * High
+  * **Impact**
+
+    "fast-xml-parser" allows special characters in entity names, which
+    are not escaped or sanitized.
+    Since the entity name is used for creating a regex for searching and
+    replacing entities in the XML body, an attacker can abuse it for DoS
+    attacks.
+    By crafting an entity name that results in an intentionally bad
+    performing regex and utilizing it in the entity replacement step of
+    the parser, this can cause the parser to stall for an indefinite
+    amount of time.
+
+  * **Patches**
+
+    The problem has been resolved in v4.2.4
+
+  * **Workarounds**
+
+    Avoid using DOCTYPE parsing by `processEntities: false` option.
+
+  * **References**
+
+    _Are there any links users can visit to find out more?_
 
 ## Supported Versions
 

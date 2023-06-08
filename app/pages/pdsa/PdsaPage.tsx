@@ -33,7 +33,7 @@ import PageContainer from '../PageContainer'
 import PdsaCalendar from './PdsaCalendar'
 import { getPreviousDay, getToday } from '../../utils/Functions'
 import { Journal } from '../../utils/storage/journal/Journal'
-import { ScrollView } from 'react-native'
+import { ScrollView, View } from 'react-native'
 import TkSnackbar from '../../components/TkSnackbar'
 import TkText from '../../components/TkText'
 import PdsaHeader from './PdsaHeader'
@@ -216,21 +216,146 @@ const PdsaPage: React.FC = () => {
     return result
   }
 
+  const texts = [`${i18n.t('pdsa.q1')}`, `${i18n.t('pdsa.q2')}`, `${i18n.t('pdsa.q3')}`, `${i18n.t('pdsa.q4')}`, `${i18n.t('pdsa.q5')}`]
+  const labels = [`${i18n.t('pdsa.labels.target')}`, `${i18n.t('pdsa.labels.actual')}`, `${i18n.t('pdsa.labels.obstacle')}`, `${i18n.t('pdsa.labels.step')}`, `${i18n.t('pdsa.labels.learnt')}`]
+  const values = [pdsaEntry.target, pdsaEntry.actual, pdsaEntry.obstacle, pdsaEntry.step, pdsaEntry.learnt]
+
+  const targetDuplicate = (): void => {
+    void (async () => {
+      const previousEntry = await getPreviousEntry('target')
+      if (previousEntry.day !== '') {
+        setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', { day: previousEntry.day, field: i18n.t('pdsa.labels.target') })}`)
+        setPdsaEntry({ ...pdsaEntry, target: previousEntry.entry.target })
+        setDisabledSave(false)
+        setVisibleSnack(true)
+      }
+    })()
+  }
+  const actualDuplicate = (): void => {
+    void (async () => {
+      const previousEntry = await getPreviousEntry('actual')
+      if (previousEntry.day !== '') {
+        setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', { day: previousEntry.day, field: i18n.t('pdsa.labels.actual') })}`)
+        setPdsaEntry({ ...pdsaEntry, actual: previousEntry.entry.actual })
+        setDisabledSave(false)
+        setVisibleSnack(true)
+      }
+    })()
+  }
+  const obstacleDuplicate = (): void => {
+    void (async () => {
+      const previousEntry = await getPreviousEntry('obstacle')
+      if (previousEntry.day !== '') {
+        setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
+          day: previousEntry.day,
+          field: i18n.t('pdsa.labels.obstacle')
+        })}`)
+        setPdsaEntry({
+          ...pdsaEntry,
+          obstacle: previousEntry.entry.obstacle
+        })
+        setDisabledSave(false)
+        setVisibleSnack(true)
+      }
+    })()
+  }
+  const stepDuplicate = (): void => {
+    void (async () => {
+      const previousEntry = await getPreviousEntry('step')
+      if (previousEntry.day !== '') {
+        setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
+          day: previousEntry.day,
+          field: i18n.t('pdsa.labels.step')
+        })}`)
+        setPdsaEntry({
+          ...pdsaEntry,
+          step: previousEntry.entry.step
+        })
+        setDisabledSave(false)
+        setVisibleSnack(true)
+      }
+    })()
+  }
+  const learntDuplicate = (): void => {
+    void (async () => {
+      const previousEntry = await getPreviousEntry('learnt')
+      if (previousEntry.day !== '') {
+        setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
+          day: previousEntry.day,
+          field: i18n.t('pdsa.labels.learnt')
+        })}`)
+        setPdsaEntry({
+          ...pdsaEntry,
+          learnt: previousEntry.entry.learnt
+        })
+        setDisabledSave(false)
+        setVisibleSnack(true)
+      }
+    })()
+  }
+
+  const duplicates = [targetDuplicate, actualDuplicate, obstacleDuplicate, stepDuplicate, learntDuplicate]
+
+  const targetChange = (txt: string): void => {
+    setPdsaEntry({ ...pdsaEntry, target: txt })
+    setDisabledSave(false)
+  }
+  const actualChange = (txt: string): void => {
+    setPdsaEntry({ ...pdsaEntry, actual: txt })
+    setDisabledSave(false)
+  }
+  const obstacleChange = (txt: string): void => {
+    setPdsaEntry({ ...pdsaEntry, obstacle: txt })
+    setDisabledSave(false)
+  }
+  const stepChange = (txt: string): void => {
+    setPdsaEntry({ ...pdsaEntry, step: txt })
+    setDisabledSave(false)
+  }
+  const learntChange = (txt: string): void => {
+    setPdsaEntry({ ...pdsaEntry, learnt: txt })
+    setDisabledSave(false)
+  }
+
+  const changes = [targetChange, actualChange, obstacleChange, stepChange, learntChange]
+
+  const targetDelete = (): void => {
+    setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.target') })}`)
+    setPdsaEntry({ ...pdsaEntry, target: '' })
+    setDisabledSave(false)
+    setVisibleSnack(true)
+  }
+  const actualDelete = (): void => {
+    setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.actual') })}`)
+    setPdsaEntry({ ...pdsaEntry, actual: '' })
+    setVisibleSnack(true)
+  }
+  const obstacleDelete = (): void => {
+    setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.obstacle') })}`)
+    setPdsaEntry({ ...pdsaEntry, obstacle: '' })
+    setDisabledSave(false)
+    setVisibleSnack(true)
+  }
+  const stepDelete = (): void => {
+    setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.step') })}`)
+    setPdsaEntry({ ...pdsaEntry, step: '' })
+    setDisabledSave(false)
+    setVisibleSnack(true)
+  }
+  const learntDelete = (): void => {
+    setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.learnt') })}`)
+    setPdsaEntry({ ...pdsaEntry, learnt: '' })
+    setDisabledSave(false)
+    setVisibleSnack(true)
+  }
+
+  const deletes = [targetDelete, actualDelete, obstacleDelete, stepDelete, learntDelete]
+
   return (
     <>
-      <PdsaCalendar
-        day={day}
-        setDay={setDay}
-        markedDates={markedDates}
-        visible={visibleDialog}
-        setVisible={setVisibleDialog}
-      />
+      <PdsaCalendar day={day} markedDates={markedDates} setDay={setDay} setVisible={setVisibleDialog} visible={visibleDialog} />
 
-      <PdsaHeader
-        day={day}
-        setDay={setDay}
-        setVisibleDialog={setVisibleDialog}
-      />
+      <PdsaHeader day={day} setDay={setDay} setVisibleDialog={setVisibleDialog} />
 
       <ScrollView>
         <PageContainer>
@@ -242,255 +367,23 @@ const PdsaPage: React.FC = () => {
               title={`${day} (${(getDayOfWeek())})`}
             />
             <TkCardContent>
-              <TkText>{`${i18n.t('pdsa.q1')}`}</TkText>
-              <TextInput
-                label={`${i18n.t('pdsa.labels.target')}`}
-                left={
-                  <TextInput.Icon
-                    icon='content-duplicate'
-                    onPress={() => {
-                      void (async () => {
-                        const previousEntry = await getPreviousEntry('target')
-                        if (previousEntry.day !== '') {
-                          setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
-                            day: previousEntry.day,
-                            field: i18n.t('pdsa.labels.target')
-                          })}`)
-                          setPdsaEntry({
-                            ...pdsaEntry,
-                            target: previousEntry.entry.target
-                          })
-                          setDisabledSave(false)
-                          setVisibleSnack(true)
-                        }
-                      })()
-                    }}
-                  />
-                }
-                mode='outlined'
-                multiline
-                onChangeText={(txt) => {
-                  setPdsaEntry({
-                    ...pdsaEntry,
-                    target: txt
-                  })
-                  setDisabledSave(false)
-                }}
-                right={
-                  <TextInput.Icon
-                    icon='trash-can'
-                    onPress={() => {
-                      setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.target') })}`)
-                      setPdsaEntry({
-                        ...pdsaEntry,
-                        target: ''
-                      })
-                      setDisabledSave(false)
-                      setVisibleSnack(true)
-                    }}
-                  />
-                }
-                value={pdsaEntry.target}
-              />
-              <TkText>{`${i18n.t('pdsa.q2')}`}</TkText>
-              <TextInput
-                label={`${i18n.t('pdsa.labels.actual')}`}
-                left={
-                  <TextInput.Icon
-                    icon='content-duplicate'
-                    onPress={() => {
-                      void (async () => {
-                        const previousEntry = await getPreviousEntry('actual')
-                        if (previousEntry.day !== '') {
-                          setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
-                            day: previousEntry.day,
-                            field: i18n.t('pdsa.labels.actual')
-                          })}`)
-                          setPdsaEntry({
-                            ...pdsaEntry,
-                            actual: previousEntry.entry.actual
-                          })
-                          setDisabledSave(false)
-                          setVisibleSnack(true)
-                        }
-                      })()
-                    }}
-                  />
-                }
-                mode='outlined'
-                multiline
-                onChangeText={(txt) => {
-                  setPdsaEntry({
-                    ...pdsaEntry,
-                    actual: txt
-                  })
-                  setDisabledSave(false)
-                }}
-                right={
-                  <TextInput.Icon
-                    icon='trash-can'
-                    onPress={() => {
-                      setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.actual') })}`)
-                      setPdsaEntry({
-                        ...pdsaEntry,
-                        actual: ''
-                      })
-                      setVisibleSnack(true)
-                    }}
-                  />
-                }
-                value={pdsaEntry.actual}
-              />
-              <TkText>{`${i18n.t('pdsa.q3')}`}</TkText>
-              <TextInput
-                label={`${i18n.t('pdsa.labels.obstacle')}`}
-                left={
-                  <TextInput.Icon
-                    icon='content-duplicate'
-                    onPress={() => {
-                      void (async () => {
-                        const previousEntry = await getPreviousEntry('obstacle')
-                        if (previousEntry.day !== '') {
-                          setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
-                            day: previousEntry.day,
-                            field: i18n.t('pdsa.labels.obstacle')
-                          })}`)
-                          setPdsaEntry({
-                            ...pdsaEntry,
-                            obstacle: previousEntry.entry.obstacle
-                          })
-                          setDisabledSave(false)
-                          setVisibleSnack(true)
-                        }
-                      })()
-                    }}
-                  />
-                }
-                mode='outlined'
-                multiline
-                onChangeText={(txt) => {
-                  setPdsaEntry({
-                    ...pdsaEntry,
-                    obstacle: txt
-                  })
-                  setDisabledSave(false)
-                }}
-                right={
-                  <TextInput.Icon
-                    icon='trash-can'
-                    onPress={() => {
-                      setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.obstacle') })}`)
-                      setPdsaEntry({
-                        ...pdsaEntry,
-                        obstacle: ''
-                      })
-                      setDisabledSave(false)
-                      setVisibleSnack(true)
-                    }}
-                  />
-                }
-                value={pdsaEntry.obstacle}
-              />
-              <TkText>{`${i18n.t('pdsa.q4')}`}</TkText>
-              <TextInput
-                label={`${i18n.t('pdsa.labels.step')}`}
-                left={
-                  <TextInput.Icon
-                    icon='content-duplicate'
-                    onPress={() => {
-                      void (async () => {
-                        const previousEntry = await getPreviousEntry('step')
-                        if (previousEntry.day !== '') {
-                          setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
-                            day: previousEntry.day,
-                            field: i18n.t('pdsa.labels.step')
-                          })}`)
-                          setPdsaEntry({
-                            ...pdsaEntry,
-                            step: previousEntry.entry.step
-                          })
-                          setDisabledSave(false)
-                          setVisibleSnack(true)
-                        }
-                      })()
-                    }}
-                  />
-                }
-                mode='outlined'
-                multiline
-                onChangeText={(txt) => {
-                  setPdsaEntry({
-                    ...pdsaEntry,
-                    step: txt
-                  })
-                  setDisabledSave(false)
-                }}
-                right={
-                  <TextInput.Icon
-                    icon='trash-can'
-                    onPress={() => {
-                      setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.step') })}`)
-                      setPdsaEntry({
-                        ...pdsaEntry,
-                        step: ''
-                      })
-                      setDisabledSave(false)
-                      setVisibleSnack(true)
-                    }}
-                  />
-                }
-                value={pdsaEntry.step}
-              />
-              <TkText>{`${i18n.t('pdsa.q5')}`}</TkText>
-              <TextInput
-                label={`${i18n.t('pdsa.labels.learnt')}`}
-                left={
-                  <TextInput.Icon
-                    icon='content-duplicate'
-                    onPress={() => {
-                      void (async () => {
-                        const previousEntry = await getPreviousEntry('learnt')
-                        if (previousEntry.day !== '') {
-                          setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
-                            day: previousEntry.day,
-                            field: i18n.t('pdsa.labels.learnt')
-                          })}`)
-                          setPdsaEntry({
-                            ...pdsaEntry,
-                            learnt: previousEntry.entry.learnt
-                          })
-                          setDisabledSave(false)
-                          setVisibleSnack(true)
-                        }
-                      })()
-                    }}
-                  />
-                }
-                mode='outlined'
-                multiline
-                onChangeText={(txt) => {
-                  setPdsaEntry({
-                    ...pdsaEntry,
-                    learnt: txt
-                  })
-                  setDisabledSave(false)
-                }}
-                right={
-                  <TextInput.Icon
-                    icon='trash-can'
-                    onPress={() => {
-                      setSnackMessage(`${i18n.t('pdsa.snack.field.deleted', { day, field: i18n.t('pdsa.labels.learnt') })}`)
-                      setPdsaEntry({
-                        ...pdsaEntry,
-                        learnt: ''
-                      })
-                      setDisabledSave(false)
-                      setVisibleSnack(true)
-                    }}
-                  />
-                }
-                value={pdsaEntry.learnt}
-              />
+              {
+                texts.flatMap((value, index) => {
+                  return (
+                    <View key={value}><TkText>{value}</TkText>
+                      <TextInput
+                        label={labels[index] as string}
+                        left={<TextInput.Icon icon='content-duplicate' onPress={duplicates[index] as () => {}} />}
+                        mode='outlined'
+                        multiline
+                        onChangeText={(txt) => (changes[index] as (txt: string) => {})(txt)}
+                        right={<TextInput.Icon icon='trash-can' onPress={deletes[index] as () => {}} />}
+                        value={values[index] as string}
+                      />
+                    </View>
+                  )
+                })
+              }
             </TkCardContent>
           </TkCard>
         </PageContainer>

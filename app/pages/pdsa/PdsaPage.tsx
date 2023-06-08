@@ -24,7 +24,6 @@ import * as React from 'react'
 import { useEffect } from 'react'
 import { IconButton, TextInput, useTheme } from 'react-native-paper'
 import PdsaEntry from '../../utils/storage/journal/PdsaEntry'
-import StorageFactory from '../../utils/storage/StorageFactory'
 import i18n from '../../i18n/i18n'
 import TkCardTitle from '../../components/tkcard/TkCardTitle'
 import TkCard from '../../components/tkcard/TkCard'
@@ -37,6 +36,17 @@ import { ScrollView, View } from 'react-native'
 import TkSnackbar from '../../components/TkSnackbar'
 import TkText from '../../components/TkText'
 import PdsaHeader from './PdsaHeader'
+import {
+  getAnswers,
+  getDayOfWeek,
+  getMarkers,
+  journalStorage,
+  labels,
+  PreviousJournal,
+  selected,
+  texts,
+  unSelected
+} from './PdsaFunctions'
 
 const PdsaPage: React.FC = () => {
   const selectionColour = useTheme().colors.onPrimary
@@ -45,16 +55,9 @@ const PdsaPage: React.FC = () => {
     color: dotColour,
     selectedDotColor: selectionColour
   }
-  const marked = { marked: true }
-  const unMarked = { marked: false }
-  const selected = { selected: true }
-  const unSelected = { selected: false }
 
-  const markedDay = { ...coloursDay, ...marked, ...unSelected }
-  const markedSelectedDay = { ...coloursDay, ...marked, ...selected }
-  const unmarkedSelectedDay = { ...coloursDay, ...unMarked, ...selected }
+  const { markedDay, markedSelectedDay, unmarkedSelectedDay } = getMarkers(coloursDay)
 
-  const journalStorage = StorageFactory.getInstance().getJournalStorage()
   const [day, setDay] = React.useState(getToday())
   const [disabledSave, setDisabledSave] = React.useState(true)
   const [pdsaEntry, setPdsaEntry] = React.useState(new PdsaEntry())
@@ -112,11 +115,6 @@ const PdsaPage: React.FC = () => {
         />
       </>
     )
-  }
-
-  interface PreviousJournal {
-    day: string
-    entry: PdsaEntry
   }
 
   const getPreviousEntry = async (field: string): Promise<PreviousJournal> => {
@@ -196,29 +194,6 @@ const PdsaPage: React.FC = () => {
       }
     }).finally(() => setDisabledSave(true))
   }, [day])
-
-  function getDayOfWeek (): string {
-    const date = new Date(day)
-
-    let result = '?'
-    if (date.toString() !== 'Invalid Date') {
-      const dayOfWeek = date.getDay()
-      const weekDays: string[] = i18n.t('calendar.dayNamesShort', { returnObjects: true })
-
-      if ((dayOfWeek >= 0) && (dayOfWeek <= 6)) {
-        if ((weekDays != null) && (weekDays.length === 7)) {
-          if ((weekDays[dayOfWeek] !== null) && (weekDays[dayOfWeek] !== undefined)) {
-            result = weekDays[dayOfWeek] as string
-          }
-        }
-      }
-    }
-    return result
-  }
-
-  const texts = [`${i18n.t('pdsa.q1')}`, `${i18n.t('pdsa.q2')}`, `${i18n.t('pdsa.q3')}`, `${i18n.t('pdsa.q4')}`, `${i18n.t('pdsa.q5')}`]
-  const labels = [`${i18n.t('pdsa.labels.target')}`, `${i18n.t('pdsa.labels.actual')}`, `${i18n.t('pdsa.labels.obstacle')}`, `${i18n.t('pdsa.labels.step')}`, `${i18n.t('pdsa.labels.learnt')}`]
-  const values = [pdsaEntry.target, pdsaEntry.actual, pdsaEntry.obstacle, pdsaEntry.step, pdsaEntry.learnt]
 
   const targetDuplicate = (): void => {
     void (async () => {
@@ -364,7 +339,7 @@ const PdsaPage: React.FC = () => {
               right={() => <TitleBar />}
               subtitle={day === getToday() ? `${i18n.t('calendar.today').toLowerCase()}` : ''}
               titleNumberOfLines={2}
-              title={`${day} (${(getDayOfWeek())})`}
+              title={`${day} (${getDayOfWeek(day)})`}
             />
             <TkCardContent>
               {
@@ -378,7 +353,7 @@ const PdsaPage: React.FC = () => {
                         multiline
                         onChangeText={(txt) => (changes[index] as (txt: string) => {})(txt)}
                         right={<TextInput.Icon icon='trash-can' onPress={deletes[index] as () => {}} />}
-                        value={values[index] as string}
+                        value={(getAnswers(pdsaEntry))[index] as string}
                       />
                     </View>
                   )

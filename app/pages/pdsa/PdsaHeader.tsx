@@ -23,11 +23,7 @@
 import { Appbar } from 'react-native-paper'
 import i18n from '../../i18n/i18n'
 import * as React from 'react'
-import {
-  getNextDay,
-  getPreviousDay,
-  getToday
-} from '../../utils/Functions'
+import { getNextDay, getPreviousDay, getToday } from './PdsaFunctions'
 
 interface HeaderProps {
   day: string

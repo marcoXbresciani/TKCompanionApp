@@ -23,7 +23,7 @@
 import * as React from 'react'
 import { Dialog, Portal } from 'react-native-paper'
 import { Calendar } from 'react-native-calendars/src'
-import { getToday } from '../../utils/Functions'
+import { getToday } from './PdsaFunctions'
 
 interface Props {
   day: string

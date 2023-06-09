@@ -30,7 +30,6 @@ import TkCard from '../../components/tkcard/TkCard'
 import { TkCardContent } from '../../components/tkcard/TkCardContent'
 import PageContainer from '../PageContainer'
 import PdsaCalendar from './PdsaCalendar'
-import { getPreviousDay, getToday } from '../../utils/Functions'
 import { Journal } from '../../utils/storage/journal/Journal'
 import { ScrollView, View } from 'react-native'
 import TkSnackbar from '../../components/TkSnackbar'
@@ -40,9 +39,9 @@ import {
   getAnswers,
   getDayOfWeek,
   getMarkers,
+  getPreviousEntry, getToday,
   journalStorage,
   labels,
-  PreviousJournal,
   selected,
   texts,
   unSelected
@@ -117,59 +116,6 @@ const PdsaPage: React.FC = () => {
     )
   }
 
-  const getPreviousEntry = async (field: string): Promise<PreviousJournal> => {
-    let result: PreviousJournal = { day: '', entry: new PdsaEntry() }
-    let found = 7
-    let journal: Journal = {}
-
-    for (let previousDay = getPreviousDay(day); found > 0; previousDay = getPreviousDay(previousDay), found--) {
-      await journalStorage.read('PDSA').then(value => {
-        if ((value !== null) && (value !== '') && (value !== '{}')) {
-          journal = JSON.parse(value)
-          if (journal[previousDay] != null) {
-            const previousEntry = journal[previousDay]
-
-            if (previousEntry != null) {
-              switch (field) {
-                case 'target':
-                  if ((previousEntry.target !== undefined) && (previousEntry.target.length > 0)) {
-                    result = { day: previousDay, entry: previousEntry }
-                    found = 0
-                  }
-                  break
-                case 'actual':
-                  if ((previousEntry.actual !== undefined) && (previousEntry.actual.length > 0)) {
-                    result = { day: previousDay, entry: previousEntry }
-                    found = 0
-                  }
-                  break
-                case 'obstacle':
-                  if ((previousEntry.obstacle !== undefined) && (previousEntry.obstacle.length > 0)) {
-                    result = { day: previousDay, entry: previousEntry }
-                    found = 0
-                  }
-                  break
-                case 'step':
-                  if ((previousEntry.step !== undefined) && (previousEntry.step.length > 0)) {
-                    result = { day: previousDay, entry: previousEntry }
-                    found = 0
-                  }
-                  break
-                case 'learnt':
-                  if ((previousEntry.learnt !== undefined) && (previousEntry.learnt.length > 0)) {
-                    result = { day: previousDay, entry: previousEntry }
-                    found = 0
-                  }
-                  break
-              }
-            }
-          }
-        }
-      })
-    }
-    return result
-  }
-
   useEffect(() => {
     journalStorage.read('PDSA').then(value => {
       let journal: Journal = {}
@@ -197,7 +143,7 @@ const PdsaPage: React.FC = () => {
 
   const targetDuplicate = (): void => {
     void (async () => {
-      const previousEntry = await getPreviousEntry('target')
+      const previousEntry = await getPreviousEntry('target', day)
       if (previousEntry.day !== '') {
         setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', { day: previousEntry.day, field: i18n.t('pdsa.labels.target') })}`)
         setPdsaEntry({ ...pdsaEntry, target: previousEntry.entry.target })
@@ -208,7 +154,7 @@ const PdsaPage: React.FC = () => {
   }
   const actualDuplicate = (): void => {
     void (async () => {
-      const previousEntry = await getPreviousEntry('actual')
+      const previousEntry = await getPreviousEntry('actual', day)
       if (previousEntry.day !== '') {
         setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', { day: previousEntry.day, field: i18n.t('pdsa.labels.actual') })}`)
         setPdsaEntry({ ...pdsaEntry, actual: previousEntry.entry.actual })
@@ -219,7 +165,7 @@ const PdsaPage: React.FC = () => {
   }
   const obstacleDuplicate = (): void => {
     void (async () => {
-      const previousEntry = await getPreviousEntry('obstacle')
+      const previousEntry = await getPreviousEntry('obstacle', day)
       if (previousEntry.day !== '') {
         setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
           day: previousEntry.day,
@@ -236,7 +182,7 @@ const PdsaPage: React.FC = () => {
   }
   const stepDuplicate = (): void => {
     void (async () => {
-      const previousEntry = await getPreviousEntry('step')
+      const previousEntry = await getPreviousEntry('step', day)
       if (previousEntry.day !== '') {
         setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
           day: previousEntry.day,
@@ -253,7 +199,7 @@ const PdsaPage: React.FC = () => {
   }
   const learntDuplicate = (): void => {
     void (async () => {
-      const previousEntry = await getPreviousEntry('learnt')
+      const previousEntry = await getPreviousEntry('learnt', day)
       if (previousEntry.day !== '') {
         setSnackMessage(`${i18n.t('pdsa.snack.field.duplicated', {
           day: previousEntry.day,

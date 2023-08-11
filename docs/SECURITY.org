@@ -1,0 +1,63 @@
+#+BEGIN_COMMENT
+© 2021-2023 Marco Bresciani
+
+Copying and distribution of this file, with or without modification, are
+permitted in any medium without royalty provided the copyright notice
+and this notice are preserved.
+This file is offered as-is, without any warranty.
+
+SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
+SPDX-License-Identifier: FSFAP
+#+END_COMMENT
+
+#+TITLE: TKCompanionApp - Security Policy
+#+AUTHOR: [[https://codeberg.org/marco.bresciani/][Marco Bresciani]]
+#+DATE: 2023-08-11
+#+OPTIONS: toc:nil
+
+#+BEGIN_QUOTE
+In evaluating the impact of the security issues described below (if
+any), remember that *TKCompanionApp* has /neither/ network /nor/ files
+access on your device.
+
+See also the latest app analysis done by Exodus Privacy at
+[[https://reports.exodus-privacy.eu.org/it/reports/344654/]].
+#+END_QUOTE
+
+* Known Security Issues
+
+No known security issues.
+
+* Supported Versions
+
+#+BEGIN_QUOTE
+Please note that TKCompanionApp is currently /neither/ on Google Play
+/nor/ Apple App Store and /won't be there in the near future/.
+#+END_QUOTE
+
+Generally the latest version is the only one supported with updates
+related to security, if any.
+
+Consider that this application does not save files, does not use the
+Internet or ask for any kind of permission when running on your device.
+
+Should be pretty safe.
+
+Nevertheless, it is suggested to always use the latest available version
+are read the possible security issues reported here.
+
+#+BEGIN_QUOTE
+If you have downloaded TKCompanionApp from Google Play or Apple App
+Store, please remove it and download it from F-Droid or grab the APK
+files directly from either
+[[https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/][F-Droid]]
+or
+[[https://codeberg.org/marco.bresciani/TKCompanionApp/releases][Codeberg]].
+#+END_QUOTE
+
+* Reporting a Vulnerability
+
+To report a vulnerability, please use the project
+[[https://codeberg.org/marco.bresciani/TKCompanionApp/issues][Issues]]
+page describing the problem, a possible way to reproduce it and the risk
+it poses.

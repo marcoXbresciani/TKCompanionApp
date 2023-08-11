@@ -1,0 +1,392 @@
+#+BEGIN_COMMENT
+© 2021-2023 Marco Bresciani
+
+Copying and distribution of this file, with or without modification, are
+permitted in any medium without royalty provided the copyright notice
+and this notice are preserved.
+This file is offered as-is, without any warranty.
+
+This is a freely licensed work, as explained in the Definition of Free
+Cultural Works.
+
+SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
+SPDX-License-Identifier: CC-BY-SA-4.0
+#+END_COMMENT
+
+#+TITLE: TKCompanionApp
+#+AUTHOR: [[https://codeberg.org/marco.bresciani/][Marco Bresciani]]
+#+DATE: 2023-08-10
+#+OPTIONS: toc:nil
+
+[[https://codeberg.org/marco.bresciani/TKCompanionApp/src/branch/master/COPYING][https://img.shields.io/github/license/marcoxbresciani/tkcompanionapp.svg?logo=gnu]]
+[[https://codeberg.org/marco.bresciani/TKCompanionApp/][https://img.shields.io/badge/hosted%20on-codeberg-2185D0.svg?logo=codeberg]]
+[[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.8.1][https://img.shields.io/github/v/tag/marcoXbresciani/TKCompanionApp.svg?color=black&logo=codeberg&sort=semver]]
+[[https://img.shields.io/github/downloads/marcoXbresciani/TKCompanionApp/total.svg?logo=github]]
+[[https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/][https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp.svg?logo=fdroid]]
+[[https://github.com/standard/ts-standard][https://badgen.net/badge/code%20style/ts-standard/blue.svg?icon=typescript]]
+
+# [[https://api.reuse.software/info/codeberg.org/marco.bresciani/TKCompanionApp][https://api.reuse.software/badge/codeberg.org/marco.bresciani/TKCompanionApp]]
+
+[[https://keepachangelog.com/][https://img.shields.io/badge/Keep%20a%20Changelog--555.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmMTVkMzAiIHZpZXdCb3g9IjAgMCAxODcgMTg1Ij48cGF0aCBkPSJNNjIgN2MtMTUgMy0yOCAxMC0zNyAyMmExMjIgMTIyIDAgMDAtMTggOTEgNzQgNzQgMCAwMDE2IDM4YzYgOSAxNCAxNSAyNCAxOGE4OSA4OSAwIDAwMjQgNCA0NSA0NSAwIDAwNiAwbDMtMSAxMy0xYTE1OCAxNTggMCAwMDU1LTE3IDYzIDYzIDAgMDAzNS01MiAzNCAzNCAwIDAwLTEtNWMtMy0xOC05LTMzLTE5LTQ3LTEyLTE3LTI0LTI4LTM4LTM3QTg1IDg1IDAgMDA2MiA3em0zMCA4YzIwIDQgMzggMTQgNTMgMzEgMTcgMTggMjYgMzcgMjkgNTh2MTJjLTMgMTctMTMgMzAtMjggMzhhMTU1IDE1NSAwIDAxLTUzIDE2bC0xMyAyaC0xYTUxIDUxIDAgMDEtMTItMWwtMTctMmMtMTMtNC0yMy0xMi0yOS0yNy01LTEyLTgtMjQtOC0zOWExMzMgMTMzIDAgMDE4LTUwYzUtMTMgMTEtMjYgMjYtMzMgMTQtNyAyOS05IDQ1LTV6TTQwIDQ1YTk0IDk0IDAgMDAtMTcgNTQgNzUgNzUgMCAwMDYgMzJjOCAxOSAyMiAzMSA0MiAzMiAyMSAyIDQxLTIgNjAtMTRhNjAgNjAgMCAwMDIxLTE5IDUzIDUzIDAgMDA5LTI5YzAtMTYtOC0zMy0yMy01MWE0NyA0NyAwIDAwLTUtNWMtMjMtMjAtNDUtMjYtNjctMTgtMTIgNC0yMCA5LTI2IDE4em0xMDggNzZhNTAgNTAgMCAwMS0yMSAyMmMtMTcgOS0zMiAxMy00OCAxMy0xMSAwLTIxLTMtMzAtOS01LTMtOS05LTEzLTE2YTgxIDgxIDAgMDEtNi0zMiA5NCA5NCAwIDAxOC0zNSA5MCA5MCAwIDAxNi0xMmwxLTJjNS05IDEzLTEzIDIzLTE2IDE2LTUgMzItMyA1MCA5IDEzIDggMjMgMjAgMzAgMzYgNyAxNSA3IDI5IDAgNDJ6bS00My03M2MtMTctOC0zMy02LTQ2IDUtMTAgOC0xNiAyMC0xOSAzN2E1NCA1NCAwIDAwNSAzNGM3IDE1IDIwIDIzIDM3IDIyIDIyLTEgMzgtOSA0OC0yNGE0MSA0MSAwIDAwOC0yNCA0MyA0MyAwIDAwLTEtMTJjLTYtMTgtMTYtMzEtMzItMzh6bS0yMyA5MWgtMWMtNyAwLTE0LTItMjEtN2EyNyAyNyAwIDAxLTEwLTEzIDU3IDU3IDAgMDEtNC0yMCA2MyA2MyAwIDAxNi0yNWM1LTEyIDEyLTE5IDI0LTIxIDktMyAxOC0yIDI3IDIgMTQgNiAyMyAxOCAyNyAzM3MtMiAzMS0xNiA0MGMtMTEgOC0yMSAxMS0zMiAxMXptMS0zNHYxNGgtOFY2OGg4djI4bDEwLTEwaDExbC0xNCAxNSAxNyAxOEg5NnoiLz48L3N2Zz4K]]
+[[https://github.com/RichardLitt/standard-readme][https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square]]
+[[https://bestpractices.coreinfrastructure.org/projects/6084][https://bestpractices.coreinfrastructure.org/projects/6084/badge.svg]]
+[[https://codeberg.org/marco.bresciani/TKCompanionApp/commits/branch/master][https://img.shields.io/maintenance/yes/2023.svg]]
+[[https://semver.org/][https://img.shields.io/badge/SemVer-2.0.0-informational.svg?logo=semver&style=plastic]]
+[[https://internal.repos.regiongold.com/bitbucket/projects/GDP/repos/customer-sdk/browse/.editorconfig][https://img.shields.io/static/v1.svg?label=use&logo=editorconfig&message=EditorConfig&style=plastic]]
+[[https://orgmode.org/][https://img.shields.io/badge/made%20with-OrgMode-blueviolet.svg?logo=gnuemacs]]
+[[https://hosted.weblate.org/engage/tkcompanionapp/][https://hosted.weblate.org/widgets/tkcompanionapp/-/svg-badge.svg]]
+[[https://blog.codinghorror.com/the-works-on-my-machine-certification-program/][file:https://img.shields.io/badge/works%20on-my%20machine-yellow.svg]]
+[[https://liberapay.com/marcoXbresciani/donate][https://liberapay.com/assets/widgets/donate.svg]]
+[[https://img.shields.io/liberapay/receives/marcoXbresciani.svg?logo=liberapay]]
+[[https://img.shields.io/liberapay/patrons/marcoXbresciani.svg?logo=liberapay]]
+[[https://fosstodon.org/@AAMfP][https://img.shields.io/mastodon/follow/000091124.svg?logo=mastodon]]
+
+A short and small helper for Toyota Kata practitioners
+
+Goal of this app is to be a practical vademecum/handbook for those
+interested in applying scientific thinking through Toyota Kata.
+It contains the Coaching Kata 5Q card, plus (possibly) more things
+and information.
+Content to be improved and updated from time to time.
+
+#+TOC: headlines 6
+
+* Security
+:PROPERTIES:
+:CUSTOM_ID: security
+:END:
+
+#+BEGIN_QUOTE
+*DO NOT* download TKCompanionApp from Google Play!!!
+#+END_QUOTE
+
+*Alert*:
+
+#+BEGIN_QUOTE
+Please note that TKCompanionApp is currently *not* on Google Play and
+won't be there in the near future.
+
+There already was a case of an unwanted, ads-filled clone/copycat of
+TKCompanionApp on Google Play.
+
+If you have downloaded TKCompanionApp from Google Play or Apple Play
+Store please, for your safety, remove it and install it only from
+F-Droid or from APK files available on the Codeberg repository.
+#+END_QUOTE
+
+See file [[/docs/SECURITY.org][SECURITY.org]] for notes and updates
+related to security issues.
+
+* Background
+:PROPERTIES:
+:CUSTOM_ID: background
+:END:
+
+From [[http://www-personal.umich.edu/~mrother/Homepage.html][the Toyota Kata website]]:
+
+#+BEGIN_QUOTE
+Toyota Kata is a way for managers and educators to initiate and coach
+practice of practical scientific-thinking skills in their teams, to
+develop and mobilize creative capability.
+Competitive conditions favor teams and organizations that know how to
+adapt.
+It's not as difficult as you might think, because you can begin by
+practicing a set of simple "Starter Kata."
+
+Toyota Kata is about starter practice routines for developing scientific
+thinking.
+From there each individual & team can develop their own way.
+
+Toyota Kata is a skill-building process that shifts you and your team
+from a natural tendency to jump to conclusions ... to thinking, working
+and reacting more scientifically.
+Best of all, you only need to practice 20 minutes a day, under the
+guidance of your coach.
+#+END_QUOTE
+
+* Install
+:PROPERTIES:
+:CUSTOM_ID: install
+:END:
+
+This app is currently built using React Native to make building the app
+for both Android and iOS from the same source code easier.
+
+Unfortunately, publishing the app on Google Play Store or on Apple App
+Store, requires money I don't want to spend: it's
+[[https://support.google.com/googleplay/android-developer/answer/6112435?hl=en&ref_topic=3450769#zippy=%2Cstep-pay-registration-fee][one-time $25]]
+for a Google Developer Account, and it's even
+[[https://developer.apple.com/support/enrollment/][$99/year]] (!) for
+the Apple Developer Program.
+
+#+BEGIN_QUOTE
+If you found it, *DO NOT* download TKCompanionApp from Google Play or
+Apple App Store: it's not the real one available from F-Droid or
+Codeberg!
+#+END_QUOTE
+
+So (for now) you can find this app /only/ through the
+[[https://f-droid.org/][F-Droid]] /installable catalogue of FOSS (Free
+and Open Source Software) applications for the Android platform/.
+
+[[https://f-droid.org/packages/name.bresciani.marco.tkcompanionapp][https://fdroid.gitlab.io/artwork/badge/get-it-on.png]]
+
+To install this app, you then need the F-Droid client app (pretty
+similar to Google Play Store or Apple App Store) from the
+[[https://www.f-droid.org/][main site]]: there's an easy QR Code to
+download and
+[[https://en.wikipedia.org/wiki/F-Droid#Client_application][install it]].
+
+Then, open the F-Droid repository app and search for
+[[https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/][TKCompanionApp]].
+Install it, and open it.
+
+Eventually, you can directly download the APK from the
+[[https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/][app page on F-Droid website]],
+to be installed manually on your device.
+There's no difference in functionalities, the only difference being the
+fact that without the F-Droid client app you won't receive automatic
+updates (just like Google Play did with other apps).
+
+Welcome to the world of FOSS.
+Please also take a look at all other wonderful FOSS apps you can find in
+F-Droid.
+
+* Usage
+:PROPERTIES:
+:CUSTOM_ID: usage
+:END:
+
+Well, it's easy: install the app, open the app, click some buttons.
+There are no games, no quizzes, no actions to take (yet).
+Just sit, follow the menu, learn, practice and improve.
+
+The app is divided into four main areas.
+
+#+TOC: headlines 1 local
+
+** Home
+:PROPERTIES:
+:CUSTOM_ID: home
+:END:
+
+#+ATTR_HTML: :width 300px
+[[file:fastlane/metadata/android/en-US/images/phoneScreenshots/home.png]]
+
+The Home page currently shows the 5Q card and also gives the possibility
+to:
+
+- change language through the /Settings/ menu (top left),
+- see the Legend panel with the explanations of all the buttons
+  functionalities, for each page
+- see the /Contact/ panel with a brief statement on the privacy side and
+  the contact channels
+- see the /Copyright/ panel, with the GNU General Public License
+  copyright notice, the translator(s) names for the selected language
+  and the font coyright notice.
+- see the /About/ panel with the current version number, the privacy
+  statements with some useful links and the source code repository
+  references.
+
+#+ATTR_HTML: :width 300px
+[[file:fastlane/metadata/android/en-US/images/phoneScreenshots/about.png]]
+
+** PDSA Journal
+:PROPERTIES:
+:CUSTOM_ID: pdsa-journal
+:END:
+
+The PDSA Journal page allows you to daily write your answers to the 5Q
+card, with a reference calendar and navigation buttons.
+
+#+ATTR_HTML: :width 300px
+[[file:fastlane/metadata/android/en-US/images/phoneScreenshots/pdsa.png]]
+
+You are free to save and delete a full whole day or each single answer
+alone.
+You can also navigate directly to today (current, default day when
+opening the page) or browse the calendar.
+
+** Documents
+:PROPERTIES:
+:CUSTOM_ID: documents
+:END:
+
+The Documents page shows some reference documents and note from the
+Toyota Kata community.
+
+#+ATTR_HTML: :width 300px
+[[file:fastlane/metadata/android/en-US/images/phoneScreenshots/docs.png]]
+
+Together with the 5Q card there is the Kata Code and a few other things
+that you can read directly from the app or see their original source by
+opening the associated reference link.
+
+#+ATTR_HTML: :width 300px
+[[file:fastlane/metadata/android/en-US/images/phoneScreenshots/5Q.png]]
+
+#+ATTR_HTML: :width 300px
+[[file:fastlane/metadata/android/en-US/images/phoneScreenshots/tkc.png]]
+
+** Events
+:PROPERTIES:
+:CUSTOM_ID: events
+:END:
+
+This is a manually-updated list of known (by me!) events, world-wide,
+related to Toyota Kata.
+
+Main source is currently
+[[https://twitter.com/RealMikeRother][Mike Rother's Twitter account]]
+but feel free to suggest more events.
+
+#+BEGIN_QUOTE
+Note: since the app has no Internet connection, I have to manually
+update its content every time an event is expired or has to be added.
+It might be not realtime, but I prefer to preserve privacy instead of
+letting the app connect to the Internet, as far as I can.
+#+END_QUOTE
+
+Events are listed in start dates order, with their official title as
+shown by the reference website, also added for navigation purposes (from
+your phone browser).
+
+* Maintainers
+:PROPERTIES:
+:CUSTOM_ID: maintainers
+:END:
+
+The app has been started by Marco Bresciani and is currently maintained
+by Marco Bresciani.
+Same for this document.
+
+You can keep in touch with the author through:
+
+- [[https://delta.chat/en/][Delta Chat]] with the email address
+  [[mailto:marco.530@outlook.it][marco.530@outlook.it]].
+- as [[https://fosstodon.org/@AAMfP][@AAMfP]] on [[https://fosstodon.org][Fosstodon]], a
+  [[https://joinmastodon.org/][Mastodon]] instance.
+
+** Translations
+:PROPERTIES:
+:CUSTOM_ID: translations
+:END:
+
+Current (and past) contributors:
+[[https://hosted.weblate.org/engage/tkcompanionapp/][https://hosted.weblate.org/widgets/tkcompanionapp/-/287x66-grey.png]]
+
+- [[https://hosted.weblate.org/engage/tkcompanionapp/de/][https://hosted.weblate.org/widgets/tkcompanionapp/de/svg-badge.svg]]
+  [[https://hosted.weblate.org/user/amydoralang/][Amy Dora Lang (@amydoralang]],
+  Ettore Atalan (atalanttore@googlemail.com) for the German translation.
+- [[https://hosted.weblate.org/engage/tkcompanionapp/en/][https://hosted.weblate.org/widgets/tkcompanionapp/en/svg-badge.svg]]
+  [[https://codeberg.org/marco.bresciani][Marco Bresciani (@marcoXbresciani)]]
+  for the English version.
+- [[https://hosted.weblate.org/engage/tkcompanionapp/fr/][https://hosted.weblate.org/widgets/tkcompanionapp/fr/svg-badge.svg]]
+  [[https://hosted.weblate.org/user/Edanas/][J. Lavoie (@Edanas)]]
+  for the French translation.
+- [[https://hosted.weblate.org/engage/tkcompanionapp/it/][https://hosted.weblate.org/widgets/tkcompanionapp/it/svg-badge.svg]]
+  [[https://codeberg.org/marco.bresciani][Marco Bresciani (@marcoXbresciani)]]
+  for the Italian version.
+
+- [[https://hosted.weblate.org/engage/tkcompanionapp/nb_NO/][https://hosted.weblate.org/widgets/tkcompanionapp/nb_NO/svg-badge.svg]]
+  [[https://github.com/comradekingu][Allan Nordhøy (@comradekingu)]]
+  for the Norwegian Bokmål translation.
+
+* Thanks
+:PROPERTIES:
+:CUSTOM_ID: thanks
+:END:
+
+Thanks to (in appearing order):
+
+- [[https://github.com/marcomontalbano][Marco Montalbano (@marcomontalbano)]]
+  because without his teachings, this app would never have happened.
+- [[https://github.com/licaon-kter][@licaon-kter]] for the support on
+  publishing the app to F-Droid.
+- [[http://www-personal.umich.edu/~mrother/Homepage.html][Mike Rother]]
+  for the app icon.
+- [[https://github.com/GantMan][Gant Laborde (@GantMan)]] for mentioning
+  TKCompanionApp in his
+  [[https://github.com/ReactNativeNews/React-Native-Apps][React Native Apps]]
+  Curated List of Open Source React Native Apps.
+- [[https://mastodon.green/@mondstern][@mondstern]] for mentioning
+  TKCompanionApp in the
+  [[https://welove.codeberg.page/][we ❤️ @Codeberg]] list of F-Droid
+  apps hosted on Codeberg.
+- [[https://www.tiloschwarz.com/][Tilo Schwarz]] for showing the thumb
+  indexing idea on the 5Q card during
+  [[https://katacon.eu/][KataCon EU 2023]].
+  See version [[file:CHANGELOG.org#680---2023-05-26][6.8.0]]
+
+* Contributing
+:PROPERTIES:
+:CUSTOM_ID: contributing
+:END:
+
+See [[/docs/CONTRIBUTING.org][CONTRIBUTING.org]].
+
+For contributing with translations in your own native language, you can
+see [[https://hosted.weblate.org/engage/tkcompanionapp/][Weblate]], that
+is the choosen platform for managing translations in multiple languages.
+
+#+BEGIN_QUOTE
+You can even contribute through Liberapay:
+#+END_QUOTE
+
+* License
+:PROPERTIES:
+:CUSTOM_ID: license
+:END:
+
+See =LICENSES= folder or =COPYING= files, for the whole licences text.
+
+Overall project license, in brief:
+[[https://www.gnu.org/licenses/gpl-3.0.html][[[https://www.gnu.org/graphics/gplv3-or-later.svg]]]]
+
+#+BEGIN_SRC text
+© 2021-2023 Marco Bresciani
+This file is part of TKCompanionApp.
+
+TKCompanionApp is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or (at your
+option) any later version.
+
+TKCompanionApp is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with TKCompanionApp. If not, see <https://www.gnu.org/licenses/>.
+#+END_SRC
+
+This document license, in brief:
+[[https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html][[[https://img.shields.io/badge/license-FSFAP-orange?logo=gnu&style=plastic]]]]
+
+#+BEGIN_SRC text
+© 2021-2023 Marco Bresciani
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+This file is offered as-is, without any warranty.
+#+END_SRC
+
+#+BEGIN_QUOTE
+[[https://freedomdefined.org/upload/9/99/GPL_black.png]] This is a
+freely licensed work, as explained in the
+[[https://freedomdefined.org/Definition][Definition of Free Cultural Works]].
+#+END_QUOTE
+
+[[https://www.gnu.org/software/freefont/index.html][Free Sans]] is the
+used font, and it's licensed
+[[https://www.gnu.org/software/freefont/license.html][under the terms of the GNU General Public License]].
+
+* Font Notes
+:PROPERTIES:
+:CUSTOM_ID: font-notes
+:END:
+
+- Font used is
+  [[https://www.gnu.org/software/freefont/index.html][Free Sans]].

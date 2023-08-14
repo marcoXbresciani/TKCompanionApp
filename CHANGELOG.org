@@ -12,7 +12,8 @@ SPDX-License-Identifier: FSFAP
 
 #+TITLE: TKCompanionApp - Changelog
 #+AUTHOR: [[https://codeberg.org/marco.bresciani/][Marco Bresciani]]
-#+DATE: 2023-08-11
+#+LANGUAGE:  en
+#+DATE: 2023-08-14
 #+OPTIONS: toc:nil
 
 All notable changes to this project will be documented in this file.

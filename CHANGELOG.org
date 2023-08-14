@@ -46,6 +46,15 @@ Changelog]], and this project adheres to
 
 - Documentation files moved to OrgMode instead of Markdown.
 
+** Deprecated
+
+- New [[file:docs/architecture/decisions/013-use-orgmode.org][ADR-13]]
+  introduced, to deprecate and cancel
+  [[file:docs/architecture/decisions/000-use-adr-conventions.org][ADR-0]].
+- New [[file:docs/architecture/decisions/014-use-org-readme.org][ADR-14]]
+  introduced, to deprecate and cancel
+  [[file:docs/architecture/decisions/003-use-standard-readme.org][ADR-3]].
+
 ** Security
 
 - Updated Node and dependencies.

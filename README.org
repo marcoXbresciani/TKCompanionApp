@@ -1,13 +1,13 @@
 # © 2021-2023 Marco Bresciani
-#
+# 
 # Copying and distribution of this file, with or without modification,
 # are permitted in any medium without royalty provided the copyright
 # notice and this notice are preserved.
 # This file is offered as-is, without any warranty.
-#
+# 
 # This is a freely licensed work, as explained in the Definition of Free
 # Cultural Works.
-#
+# 
 # SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
 # SPDX-License-Identifier: CC-BY-SA-4.0
 

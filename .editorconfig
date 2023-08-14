@@ -36,6 +36,11 @@ tab_width = 8
 trim_trailing_whitespace = true
 
 ########################################################################
+[*.org]
+# Remove all trailing whitespaces from files
+trim_trailing_whitespace = false
+
+########################################################################
 [*.md]
 # Four spaces are defined as the unit of indentation.
 indent_size = 4

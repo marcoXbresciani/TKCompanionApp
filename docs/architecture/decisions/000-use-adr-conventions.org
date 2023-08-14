@@ -1,0 +1,48 @@
+# © 2019-2023 Marco Bresciani
+# 
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.
+# This file is offered as-is, without any warranty.
+# 
+# SPDX-FileCopyrightText: 2019-2023 Marco Bresciani
+# SPDX-License-Identifier: FSFAP
+
+#+TITLE: TKCompanionApp - 0 Use ADR Conventions
+#+AUTHOR: [[https://codeberg.org/marco.bresciani/][Marco Bresciani]]
+#+LANGUAGE:  en
+#+DATE: 2023-08-14
+#+OPTIONS: toc:nil
+#+TODO: PROPOSED(p) | ACCEPTED(a) DEPRECATED(d)
+
+* DEPRECATED 0 Use ADR Conventions
+
+See [[file:013-use-org-mode.org][13 Use Org Mode]]
+
+** Context
+
+As developers, we want to record architectural decisions made in this
+project for future references.
+
+Which format and structure should these records follow?
+
+** Decision
+
+Let's use the original ADR format described in
+[[http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions][Michael Nygard's template]].
+
+** Status
+
++Accepted.+
+Deprecated on 2023-08-14.
+
+** Consequences
+
+- The project shall keep tract of all decision, as described in the
+   reference
+   [[http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions][Documenting Architecture Decisions]]
+   document.
+- The =CHANGELOG.md= file should keep track of the added ADRs for each
+  update/release.
+- Future developers can have a quite comfortable and useful guide on how
+  to navigate through the architectural structure of the application.

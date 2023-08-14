@@ -1,0 +1,73 @@
+# © 2021-2023 Marco Bresciani
+# 
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.
+# This file is offered as-is, without any warranty.
+# 
+# SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
+# SPDX-License-Identifier: FSFAP
+
+#+TITLE: TKCompanionApp - 1 Commit Message Rules
+#+AUTHOR: [[https://codeberg.org/marco.bresciani/][Marco Bresciani]]
+#+LANGUAGE:  en
+#+DATE: 2023-08-14
+#+OPTIONS: toc:nil
+#+TODO: PROPOSED(p) | ACCEPTED(a) DEPRECATED(d)
+
+* ACCEPTED 1 Commit Message Rules
+
+** Context
+
+Re-establishing the context of a piece of code is wasteful.
+We can't avoid it completely, so our efforts should go to
+[[https://www.osnews.com/story/19266/WTFs_m][reducing it]] [as much] as
+possible.
+Commit messages can do exactly that and as a result, a commit message
+shows whether a developer is a good collaborator.
+
+** Decision
+
+Fortunately, there are well-established conventions as to what makes an
+idiomatic commit message.
+Indeed, many of them are assumed in the way certain commands function.
+There's nothing you need to re-invent.
+Just follow the
+[[https://chris.beams.io/posts/git-commit/#seven-rules][seven rules]]
+below and you're on your way to committing like a pro.
+
+*** The Seven Rules of a Great Commit Message
+
+Keep in mind:
+[[http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html][This]]
+[[https://www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines][has]]
+[[https://github.com/torvalds/subsurface-for-dirk/blob/master/README.md#contributing][all]]
+[[http://who-t.blogspot.co.at/2009/12/on-commit-messages.html][been]]
+[[https://github.com/erlang/otp/wiki/writing-good-commit-messages][said]]
+[[https://github.com/spring-projects/spring-framework/blob/30bce7/CONTRIBUTING.md#format-commit-messages][before]].
+
+1. [[https://chris.beams.io/posts/git-commit/#separate][Separate subject from body with a blank line]]
+2. [[https://chris.beams.io/posts/git-commit/#limit-50][Limit the subject line to 50 characters]]
+3. [[https://chris.beams.io/posts/git-commit/#capitalize][Capitalize the subject line]]
+4. [[https://chris.beams.io/posts/git-commit/#end][Do not end the subject line with a period]]
+5. [[https://chris.beams.io/posts/git-commit/#imperative][Use the imperative mood in the subject line]]
+6. [[https://chris.beams.io/posts/git-commit/#wrap-72][Wrap the body at 72 characters]]
+7. [[https://chris.beams.io/posts/git-commit/#why-not-how][Use the body to explain what and why vs. how]]
+
+** Status
+
+Accepted.
+
+** Consequences
+
+A properly formed commit subject line should always be able to complete
+the following sentence:
+
+If applied, this commit will =your subject line here=.
+
+A project's long-term success rests (among other things) on its
+maintainability, and a maintainer has few tools more powerful than his
+project's log.
+It's worth taking the time to learn how to care for one properly.
+What may be a hassle at first soon becomes habit, and eventually a
+source of pride and productivity for all involved.

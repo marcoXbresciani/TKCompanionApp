@@ -387,5 +387,5 @@ used font, and it's licensed
 :CUSTOM_ID: font-notes
 :END:
 
-- Font used is
+Font used is
   [[https://www.gnu.org/software/freefont/index.html][Free Sans]].

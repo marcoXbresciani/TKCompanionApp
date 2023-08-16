@@ -12,24 +12,24 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
 #+TITLE: TKCompanionApp
-#+AUTHOR: [[https://codeberg.org/marco.bresciani/][Marco Bresciani]]
+#+AUTHOR: [[https://codeberg.org/marcoXbresciani/][Marco Bresciani]]
 #+LANGUAGE:  en
 #+DATE: 2023-08-14
 #+OPTIONS: toc:nil
 
-[[https://codeberg.org/marco.bresciani/TKCompanionApp/src/branch/master/COPYING][https://img.shields.io/github/license/marcoxbresciani/tkcompanionapp.svg?logo=gnu]]
-[[https://codeberg.org/marco.bresciani/TKCompanionApp/][https://img.shields.io/badge/hosted%20on-codeberg-2185D0.svg?logo=codeberg]]
-[[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.8.1][https://img.shields.io/github/v/tag/marcoXbresciani/TKCompanionApp.svg?color=black&logo=codeberg&sort=semver]]
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/branch/master/COPYING][https://img.shields.io/github/license/marcoxbresciani/tkcompanionapp.svg?logo=gnu]]
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/][https://img.shields.io/badge/hosted%20on-codeberg-2185D0.svg?logo=codeberg]]
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/7.0.0][https://img.shields.io/github/v/tag/marcoXbresciani/TKCompanionApp.svg?color=black&logo=codeberg&sort=semver]]
 [[https://img.shields.io/github/downloads/marcoXbresciani/TKCompanionApp/total.svg?logo=github]]
 [[https://f-droid.org/en/packages/name.bresciani.marco.tkcompanionapp/][https://img.shields.io/f-droid/v/name.bresciani.marco.tkcompanionapp.svg?logo=fdroid]]
 [[https://github.com/standard/ts-standard][https://badgen.net/badge/code%20style/ts-standard/blue.svg?icon=typescript]]
 
-# [[https://api.reuse.software/info/codeberg.org/marco.bresciani/TKCompanionApp][https://api.reuse.software/badge/codeberg.org/marco.bresciani/TKCompanionApp]]
+# [[https://api.reuse.software/info/codeberg.org/marcoXbresciani/TKCompanionApp][https://api.reuse.software/badge/codeberg.org/marcoXbresciani/TKCompanionApp]]
 
 [[https://keepachangelog.com/][https://img.shields.io/badge/Keep%20a%20Changelog--555.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmMTVkMzAiIHZpZXdCb3g9IjAgMCAxODcgMTg1Ij48cGF0aCBkPSJNNjIgN2MtMTUgMy0yOCAxMC0zNyAyMmExMjIgMTIyIDAgMDAtMTggOTEgNzQgNzQgMCAwMDE2IDM4YzYgOSAxNCAxNSAyNCAxOGE4OSA4OSAwIDAwMjQgNCA0NSA0NSAwIDAwNiAwbDMtMSAxMy0xYTE1OCAxNTggMCAwMDU1LTE3IDYzIDYzIDAgMDAzNS01MiAzNCAzNCAwIDAwLTEtNWMtMy0xOC05LTMzLTE5LTQ3LTEyLTE3LTI0LTI4LTM4LTM3QTg1IDg1IDAgMDA2MiA3em0zMCA4YzIwIDQgMzggMTQgNTMgMzEgMTcgMTggMjYgMzcgMjkgNTh2MTJjLTMgMTctMTMgMzAtMjggMzhhMTU1IDE1NSAwIDAxLTUzIDE2bC0xMyAyaC0xYTUxIDUxIDAgMDEtMTItMWwtMTctMmMtMTMtNC0yMy0xMi0yOS0yNy01LTEyLTgtMjQtOC0zOWExMzMgMTMzIDAgMDE4LTUwYzUtMTMgMTEtMjYgMjYtMzMgMTQtNyAyOS05IDQ1LTV6TTQwIDQ1YTk0IDk0IDAgMDAtMTcgNTQgNzUgNzUgMCAwMDYgMzJjOCAxOSAyMiAzMSA0MiAzMiAyMSAyIDQxLTIgNjAtMTRhNjAgNjAgMCAwMDIxLTE5IDUzIDUzIDAgMDA5LTI5YzAtMTYtOC0zMy0yMy01MWE0NyA0NyAwIDAwLTUtNWMtMjMtMjAtNDUtMjYtNjctMTgtMTIgNC0yMCA5LTI2IDE4em0xMDggNzZhNTAgNTAgMCAwMS0yMSAyMmMtMTcgOS0zMiAxMy00OCAxMy0xMSAwLTIxLTMtMzAtOS01LTMtOS05LTEzLTE2YTgxIDgxIDAgMDEtNi0zMiA5NCA5NCAwIDAxOC0zNSA5MCA5MCAwIDAxNi0xMmwxLTJjNS05IDEzLTEzIDIzLTE2IDE2LTUgMzItMyA1MCA5IDEzIDggMjMgMjAgMzAgMzYgNyAxNSA3IDI5IDAgNDJ6bS00My03M2MtMTctOC0zMy02LTQ2IDUtMTAgOC0xNiAyMC0xOSAzN2E1NCA1NCAwIDAwNSAzNGM3IDE1IDIwIDIzIDM3IDIyIDIyLTEgMzgtOSA0OC0yNGE0MSA0MSAwIDAwOC0yNCA0MyA0MyAwIDAwLTEtMTJjLTYtMTgtMTYtMzEtMzItMzh6bS0yMyA5MWgtMWMtNyAwLTE0LTItMjEtN2EyNyAyNyAwIDAxLTEwLTEzIDU3IDU3IDAgMDEtNC0yMCA2MyA2MyAwIDAxNi0yNWM1LTEyIDEyLTE5IDI0LTIxIDktMyAxOC0yIDI3IDIgMTQgNiAyMyAxOCAyNyAzM3MtMiAzMS0xNiA0MGMtMTEgOC0yMSAxMS0zMiAxMXptMS0zNHYxNGgtOFY2OGg4djI4bDEwLTEwaDExbC0xNCAxNSAxNyAxOEg5NnoiLz48L3N2Zz4K]]
 [[https://github.com/RichardLitt/standard-readme][https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square]]
 [[https://bestpractices.coreinfrastructure.org/projects/6084][https://bestpractices.coreinfrastructure.org/projects/6084/badge.svg]]
-[[https://codeberg.org/marco.bresciani/TKCompanionApp/commits/branch/master][https://img.shields.io/maintenance/yes/2023.svg]]
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/commits/branch/master][https://img.shields.io/maintenance/yes/2023.svg]]
 [[https://semver.org/][https://img.shields.io/badge/SemVer-2.0.0-informational.svg?logo=semver&style=plastic]]
 [[https://internal.repos.regiongold.com/bitbucket/projects/GDP/repos/customer-sdk/browse/.editorconfig][https://img.shields.io/static/v1.svg?label=use&logo=editorconfig&message=EditorConfig&style=plastic]]
 [[https://orgmode.org/][https://img.shields.io/badge/made%20with-OrgMode-blueviolet.svg?logo=gnuemacs]]
@@ -277,13 +277,13 @@ Current (and past) contributors:
   [[https://hosted.weblate.org/user/amydoralang/][Amy Dora Lang (@amydoralang]],
   Ettore Atalan (atalanttore@googlemail.com) for the German translation.
 - [[https://hosted.weblate.org/engage/tkcompanionapp/en/][https://hosted.weblate.org/widgets/tkcompanionapp/en/svg-badge.svg]]
-  [[https://codeberg.org/marco.bresciani][Marco Bresciani (@marcoXbresciani)]]
+  [[https://codeberg.org/marcoXbresciani][Marco Bresciani (@marcoXbresciani)]]
   for the English version.
 - [[https://hosted.weblate.org/engage/tkcompanionapp/fr/][https://hosted.weblate.org/widgets/tkcompanionapp/fr/svg-badge.svg]]
   [[https://hosted.weblate.org/user/Edanas/][J. Lavoie (@Edanas)]]
   for the French translation.
 - [[https://hosted.weblate.org/engage/tkcompanionapp/it/][https://hosted.weblate.org/widgets/tkcompanionapp/it/svg-badge.svg]]
-  [[https://codeberg.org/marco.bresciani][Marco Bresciani (@marcoXbresciani)]]
+  [[https://codeberg.org/marcoXbresciani][Marco Bresciani (@marcoXbresciani)]]
   for the Italian version.
 
 - [[https://hosted.weblate.org/engage/tkcompanionapp/nb_NO/][https://hosted.weblate.org/widgets/tkcompanionapp/nb_NO/svg-badge.svg]]

@@ -9,20 +9,20 @@
 # SPDX-License-Identifier: FSFAP
 
 #+TITLE: TKCompanionApp - Errors
-#+AUTHOR: [[https://codeberg.org/marco.bresciani/][Marco Bresciani]]
+#+AUTHOR: [[https://codeberg.org/marcoXbresciani/][Marco Bresciani]]
 #+LANGUAGE:  en
 #+DATE: 2023-08-14
 #+OPTIONS: toc:nil
 
 This is the list of known errors or
-[[https://codeberg.org/marco.bresciani/TKCompanionApp/issues][Issues]].
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues][Issues]].
 
 1. +Bump tmpl from 1.0.4 to 1.0.5+
 2. +Remove useless permission+
 3. +Remove offending libs for F-Droid full FOSS release+
 4. +appID confusion+
 5. +I18N not fully completed+
-6. [[https://codeberg.org/marco.bresciani/TKCompanionApp/issues/6][Switching
+6. [[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues/6][Switching
    language through settings does not switch bottom navigation bar]]
 
    When switching languages through the Info -> Language area, the
@@ -35,7 +35,7 @@ This is the list of known errors or
 8. +Download links error - forbidden+
 9. +Move translation info into the info field+
 10. +Add support for ts-standard+
-11. [[https://codeberg.org/marco.bresciani/TKCompanionApp/issues/11][Cope
+11. [[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues/11][Cope
     with OpenSSF Best Practices]]
 
     It would be nice to fulfill the requirements for the OpenSSF Best

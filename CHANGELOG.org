@@ -9,7 +9,7 @@
 # SPDX-License-Identifier: FSFAP
 
 #+TITLE: TKCompanionApp - Changelog
-#+AUTHOR: [[https://codeberg.org/marco.bresciani/][Marco Bresciani]]
+#+AUTHOR: [[https://codeberg.org/marcoXbresciani/][Marco Bresciani]]
 #+LANGUAGE:  en
 #+DATE: 2023-08-14
 #+OPTIONS: toc:nil
@@ -20,7 +20,7 @@ The format is based on [[https://keepachangelog.com/en/1.0.0/][Keep a
 Changelog]], and this project adheres to
 [[https://semver.org/spec/v2.0.0.html][Semantic Versioning]].
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/branch/master/][Unreleased]]
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/branch/master/][Unreleased]]
 
 ** Added
 
@@ -29,6 +29,18 @@ Changelog]], and this project adheres to
 - Daily reminder for remembering to add the PDSA.
 - Reworked navigation to avoid page caching.
 - App usage badges (Badges page).
+
+** Changed
+
+** Deprecated
+
+** Removed
+
+** Fixed
+
+** Security
+
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/7.0.0][7.0.0]] - 2023-08-16
 
 ** Changed
 
@@ -50,22 +62,19 @@ Changelog]], and this project adheres to
   introduced, to deprecate and cancel
   [[file:docs/architecture/decisions/004-keep-a-changelog.org][ADR-4]].
 
-** Removed
-
-** Fixed
-
 ** Security
 
 - Updated Node and dependencies.
+- Changed CodeBerg username from =marco.bresciani= to =marcoXbresciani=.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.8.1][6.8.1]] - 2023-06-06
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.8.1][6.8.1]] - 2023-06-06
 
 ** Changed
 
 - Better app pages Usage and descriptions added in README file.
 - Update events list.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.8.0][6.8.0]] - 2023-05-26
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.8.0][6.8.0]] - 2023-05-26
 
 ** Added
 
@@ -75,28 +84,28 @@ Changelog]], and this project adheres to
 
 - Update events list.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.7.0][6.7.0]] - 2023-05-22
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.7.0][6.7.0]] - 2023-05-22
 
 ** Changed
 
 - Revamp 5Q card with new font size and number markers, in progress.
 - Update events list.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.6.2][6.6.2]] - 2023-05-16
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.6.2][6.6.2]] - 2023-05-16
 
 ** Changed
 
 - Updated events list.
 - Updated 5Q card text size.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.6.1][6.6.1]] - 2023-05-02
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.6.1][6.6.1]] - 2023-05-02
 
 ** Changed
 
 - Updated events list.
 - Updated snackbar message duration on save/delete actions.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.6.0][6.6.0]] - 2023-04-18
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.6.0][6.6.0]] - 2023-04-18
 
 ** Added
 
@@ -108,14 +117,14 @@ Changelog]], and this project adheres to
 - Updated German translation (thanks Ettore Atalan
   [[mailto:atalanttore@googlemail.com][atalanttore@googlemail.com]]).
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.5.1][6.5.1]] - 2023-04-14
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.5.1][6.5.1]] - 2023-04-14
 
 ** Changed
 
 - Updated events list.
 - Update to Node LTS 18.16.0.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.5.0][6.5.0]] - 2023-04-05
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.5.0][6.5.0]] - 2023-04-05
 
 ** Added
 
@@ -141,22 +150,22 @@ Changelog]], and this project adheres to
 ** Fixed
 
 - Modifications in PDSA Journal Learnt field do not trigger save icon
-  [[https://codeberg.org/marco.bresciani/TKCompanionApp/issues/25][#25]]
+  [[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues/25][#25]]
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.2][6.4.2]] - 2023-03-29
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.4.2][6.4.2]] - 2023-03-29
 
 ** Changed
 
 - Updated Events.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.1][6.4.1]] - 2023-03-28
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.4.1][6.4.1]] - 2023-03-28
 
 ** Changed
 
 - Events list removed from I18N.
 - Updated Events.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.4.0][6.4.0]] - 2023-03-23
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.4.0][6.4.0]] - 2023-03-23
 
 ** Added
 
@@ -167,7 +176,7 @@ Changelog]], and this project adheres to
 - Update to Node LTS 18.15.0.
 - Simplified font management.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.3.0][6.3.0]] - 2023-03-20
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.3.0][6.3.0]] - 2023-03-20
 
 ** Added
 
@@ -178,14 +187,14 @@ Changelog]], and this project adheres to
 - Documentation and files in Italian. Removed to avoid misalignment with
   English.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.2.0][6.2.0]] - 2023-02-03
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.2.0][6.2.0]] - 2023-02-03
 
 ** Removed
 
 - Theme setting removed: the app will start automagically with current
   device theme.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.1.1][6.1.1]] - 2023-01-05
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.1.1][6.1.1]] - 2023-01-05
 
 ** Added
 
@@ -198,10 +207,10 @@ Changelog]], and this project adheres to
 
 ** Fixed
 
-- [[https://codeberg.org/marco.bresciani/TKCompanionApp/issues/23][#23
+- [[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues/23][#23
   Restore 5Q card in Home Page/Screen]]
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.1.0][6.1.0]]
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.1.0][6.1.0]]
 
 ** Added
 
@@ -212,7 +221,7 @@ Changelog]], and this project adheres to
 - Small layout and graphical reviews.
 - Rework for bug #6.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/6.0.0][6.0.0]] - 2022-12-12
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/6.0.0][6.0.0]] - 2022-12-12
 
 ** Added
 
@@ -224,13 +233,13 @@ Changelog]], and this project adheres to
 
 - Main repository is now [[https://codeberg.org/][Codeberg]] and the
   reference URL is
-  [[https://codeberg.org/marco.bresciani/TKCompanionApp][TKCompanionApp]].
+  [[https://codeberg.org/marcoXbresciani/TKCompanionApp][TKCompanionApp]].
 - Update dependencies (React Native, RN Calendars, ...).
 - Update README files badges. Goal is to remove dependency from external
   services, where possible.
 - Refactored translations and naming.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/5.0.0][5.0.0]] - 2022-11-04
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/5.0.0][5.0.0]] - 2022-11-04
 
 ** Added
 
@@ -247,14 +256,14 @@ Changelog]], and this project adheres to
 
 - Simplification lead to unused components that has been removed.
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/4.0.1][4.0.1]] - 2022-10-04
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/4.0.1][4.0.1]] - 2022-10-04
 
 ** Security
 
 - Version 4.0.0 crashes
-  [[https://codeberg.org/marco.bresciani/TKCompanionApp/issues/19][#19]]
+  [[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues/19][#19]]
 
-* [[https://codeberg.org/marco.bresciani/TKCompanionApp/src/tag/4.0.0][4.0.0]] - 2022-09-30
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/4.0.0][4.0.0]] - 2022-09-30
 
 ** Added
 
@@ -264,7 +273,7 @@ Changelog]], and this project adheres to
 - NPM version 8.19.2.
 - Android NDK r23c
 - OpenSSF Best Practices moved from 88% to 90% (see
-  [[https://codeberg.org/marco.bresciani/TKCompanionApp/issues/11][#11]]).
+  [[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues/11][#11]]).
 - Updated NodeJS to LTS v16.17.1.
 - Rework of =nb_NO.json= translation file to use proper standard with
   =nb-NO.json= name.
@@ -277,9 +286,9 @@ Changelog]], and this project adheres to
 
 - App crashes when opening calendar in a language different from Italian
   bug
-  [[https://codeberg.org/marco.bresciani/TKCompanionApp/issues/14][#14]]
+  [[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues/14][#14]]
 - Wrong dark/light mode and default language
-  [[https://codeberg.org/marco.bresciani/TKCompanionApp/issues/17][#17]]
+  [[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues/17][#17]]
 
 *** Security
 

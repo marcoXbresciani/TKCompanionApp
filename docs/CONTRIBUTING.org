@@ -12,7 +12,7 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
 #+TITLE: TKCompanionApp - Contributing
-#+AUTHOR: [[https://codeberg.org/marco.bresciani/][Marco Bresciani]]
+#+AUTHOR: [[https://codeberg.org/marcoXbresciani/][Marco Bresciani]]
 #+LANGUAGE:  en
 #+DATE: 2023-08-14
 #+OPTIONS: toc:nil
@@ -58,10 +58,10 @@ You don't need the code, but if you want help translating in your native
 language (or fix my English, since I'm not a native speaker), add more
 content, suggest graphical or layout improvement or whatever
 contribution you can give, please open a new
-[[https://codeberg.org/marco.bresciani/TKCompanionApp/issues][issue]]
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues][issue]]
 explaining the problem you've noticed and your proposed solution.
 Through the
-[[https://codeberg.org/marco.bresciani/TKCompanionApp/issues][issues]]
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues][issues]]
 page you can
 
 - notify problems (/bug/),
@@ -119,14 +119,14 @@ Find the latest current LTS NodeJS
 The correct version is specified in =package.json= file in main folder.
 
 Grab the source code by cloning
-[[https://codeberg.org/marco.bresciani/TKCompanionApp][the repository]].
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp][the repository]].
 
 Then go to this project main folder and run =npm install=.
 You should see all the needed dependencies downloaded and installed
 through NPM package manager.
 
-[[https://codeberg.org/marco.bresciani/TKCompanionApp/commits/branch/master][https://img.shields.io/maintenance/yes/2023.svg]]
-[[https://codeberg.org/marco.bresciani/TKCompanionApp/issues][https://img.shields.io/github/issues/marcoXbresciani/TKCompanionApp.svg?logo=codeberg]]
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/commits/branch/master][https://img.shields.io/maintenance/yes/2023.svg]]
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues][https://img.shields.io/github/issues/marcoXbresciani/TKCompanionApp.svg?logo=codeberg]]
 [[https://img.shields.io/github/repo-size/marcoXbresciani/TKCompanionApp.svg?logo=github]]
 [[https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp.svg?logo=github]]
 [[https://img.shields.io/github/commit-activity/m/marcoXbresciani/TKCompanionApp.svg?logo=github]]
@@ -219,13 +219,13 @@ repository.
 5. Verify that [[file:Errors.org][Errors.org]] contains the currently
    known issues by adding those relevant and removing those solved.
    If needed, also open specific issues on the project Codeberg
-   [[https://codeberg.org/marco.bresciani/TKCompanionApp/issues][Issues]]
+   [[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues][Issues]]
    page.
 6. Verify that [[file:SECURITY.org][SECURITY.org]] contains the
    currently known security issues by adding those relevant and removing
    those solved.
    If needed, also open specific issues on the project Codeberg
-   [[https://codeberg.org/marco.bresciani/TKCompanionApp/issues][Issues]]
+   [[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues][Issues]]
    page.
 7. Update the =versionCode= and =versionName= values inside the
    =android.defaultConfig= field of file
@@ -317,7 +317,7 @@ Same instructions stand for updating JDK, NPM or Android NDK versions.
 
 If there's a new translated language in the project Weblate page, after
 Weblate commit the new file JSON will be available in the
-[[https://codeberg.org/marco.bresciani/TKCompanionApp/src/branch/master/app/i18n][repository]].
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/branch/master/app/i18n][repository]].
 
 As soon as the new language file will be available, it's possible to
 import it in the [[../app/i18n/i18n.ts][i18n.ts]] file, as in

@@ -85,7 +85,7 @@ const About: React.FunctionComponent = () => {
       name: 'F-Droid'
     },
     {
-      address: 'https://codeberg.org/marco.bresciani/TKCompanionApp',
+      address: 'https://codeberg.org/marcoXbresciani/TKCompanionApp',
       icon: 'git',
       name: 'Codeberg'
     },

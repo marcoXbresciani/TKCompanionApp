@@ -9,7 +9,7 @@
 # SPDX-License-Identifier: FSFAP
 
 #+TITLE: TKCompanionApp - Security Policy
-#+AUTHOR: [[https://codeberg.org/marco.bresciani/][Marco Bresciani]]
+#+AUTHOR: [[https://codeberg.org/marcoXbresciani/][Marco Bresciani]]
 #+LANGUAGE:  en
 #+DATE: 2023-08-14
 #+OPTIONS: toc:nil
@@ -51,12 +51,12 @@ Store, please remove it and download it from F-Droid or grab the APK
 files directly from either
 [[https://f-droid.org/it/packages/name.bresciani.marco.tkcompanionapp/][F-Droid]]
 or
-[[https://codeberg.org/marco.bresciani/TKCompanionApp/releases][Codeberg]].
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/releases][Codeberg]].
 #+END_QUOTE
 
 * Reporting a Vulnerability
 
 To report a vulnerability, please use the project
-[[https://codeberg.org/marco.bresciani/TKCompanionApp/issues][Issues]]
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues][Issues]]
 page describing the problem, a possible way to reproduce it and the risk
 it poses.

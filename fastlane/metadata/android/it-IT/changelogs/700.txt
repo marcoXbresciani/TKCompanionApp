@@ -1,0 +1,16 @@
+- File di documentazione tradotti in OrgMode invece di Markdown.
+- Changelog applica la versione più recente di
+  [[https://keepachangelog.com/en/1.1.0/][Keep A Changelog 1.1.0]].
+- Nuovo [[file:docs/architecture/decisions/013-use-orgmode.org][ADR-13]]
+  per cancellare
+  [[file:docs/architecture/decisions/000-use-adr-conventions.org][ADR-0]].
+- Nuovo
+  [[file:docs/architecture/decisions/014-use-org-readme.org][ADR-14]]
+  per cancellare
+  [[file:docs/architecture/decisions/003-use-standard-readme.org][ADR-3]].
+- Nuovo
+  [[file:docs/architecture/decisions/015-use-org-changelog.org][ADR-15]]
+  per cancellare
+  [[file:docs/architecture/decisions/004-keep-a-changelog.org][ADR-4]].
+- Aggiornamento Node e dipendenze.
+- Modificato l'utente CodeBerg da =marco.bresciani= a =marcoXbresciani=.

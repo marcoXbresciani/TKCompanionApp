@@ -20,7 +20,9 @@ any), remember that *TKCompanionApp* has /neither/ network /nor/ files
 access on your device.
 
 See also the latest app analysis done by Exodus Privacy at
-[[https://reports.exodus-privacy.eu.org/it/reports/344654/]].
+[[https://reports.exodus-privacy.eu.org/it/reports/344654/]] or the
+whole list at
+[[https://reports.exodus-privacy.eu.org/en/reports/search/name.bresciani.marco.tkcompanionapp/]].
 #+END_QUOTE
 
 * Known Security Issues

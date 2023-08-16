@@ -1,0 +1,81 @@
+# © 2021-2023 Marco Bresciani
+# 
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.
+# This file is offered as-is, without any warranty.
+# 
+# SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
+# SPDX-License-Identifier: FSFAP
+
+#+TITLE: TKCompanionApp - 5 Apply Semantic Versioning
+#+AUTHOR: [[https://codeberg.org/marco.bresciani/][Marco Bresciani]]
+#+LANGUAGE:  en
+#+DATE: 2023-08-16
+#+OPTIONS: toc:nil
+#+TODO: PROPOSED(p) | ACCEPTED(a) DEPRECATED(d)
+
+* ACCEPTED 5 Apply Semantic Versioning
+
+** Context
+
+In the world of software management there exists a dreaded place called
+"dependency hell."
+The bigger your system grows, and the more packages you integrate into
+your software, the more likely you are to find yourself, one day, in
+this pit of despair.
+
+In systems with many dependencies, releasing new package versions can
+quickly become a nightmare.
+If the dependency specifications are too tight, you are in danger of
+version lock (the inability to upgrade a package without having to
+release new versions of every dependent package).
+If dependencies are specified too loosely, you will inevitably be bitten
+by version promiscuity (assuming compatibility with more future versions
+than is reasonable).
+Dependency hell is where you are when version lock and/or version
+promiscuity prevent you from easily and safely moving your project
+forward.
+
+** Decision
+
+As a solution to this problem, I propose a simple set of rules and
+requirements that dictate how version numbers are assigned and
+incremented.
+These rules are based on but not necessarily limited to pre-existing
+widespread common practices in use in both closed and open-source
+software.
+For this system to work, you first need to declare a public API.
+This may consist of documentation or be enforced by the code itself.
+Regardless, it is important that this API be clear and precise.
+Once you identify your public API, you communicate changes to it with
+specific increments to your version number.
+Consider a version format of X.Y.Z (Major.Minor.Patch).
+Bug fixes not affecting the API increment the patch version, backwards
+compatible API additions/changes increment the minor version, and
+backwards incompatible API changes increment the major version.
+
+I call this system "Semantic Versioning."
+Under this scheme, version numbers, and the way they change convey
+meaning about the underlying code and what has been modified from one
+version to the next.
+
+** Status
+
+Accepted.
+
+** Consequences
+
+As a responsible developer you will, of course, want to verify that any
+package upgrades function as advertised.
+The real world is a messy place; there's nothing we can do about that
+but be vigilant.
+What you can do is let Semantic Versioning provide you with a sane way
+to release and upgrade packages without having to roll new versions of
+dependent packages, saving you time and hassle.
+
+If all of this sounds desirable, all you need to do to start using
+Semantic Versioning is to declare that you are doing so and then follow
+the rules.
+Link to this website from your README so others know the rules and can
+benefit from them.

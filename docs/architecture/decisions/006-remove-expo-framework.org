@@ -1,0 +1,40 @@
+# © 2021-2023 Marco Bresciani
+# 
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.
+# This file is offered as-is, without any warranty.
+# 
+# SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
+# SPDX-License-Identifier: FSFAP
+
+#+TITLE: TKCompanionApp - 6 Remove Expo Framework
+#+AUTHOR: [[https://codeberg.org/marco.bresciani/][Marco Bresciani]]
+#+LANGUAGE:  en
+#+DATE: 2023-08-16
+#+OPTIONS: toc:nil
+#+TODO: PROPOSED(p) | ACCEPTED(a) DEPRECATED(d)
+
+* ACCEPTED 6 Remove Expo Framework
+
+** Context
+
+Expo Framework, for React Native, allows a seamless usage of Android and
+iOS platforms, with a common configuration and automagic things.
+Though, as all frameworks, poses some constraints.
+
+** Decision
+
+Considering the constraints and the impossibility to release the app
+through F-Droid, I have decided to not use Expo Framework and keep only
+the pure React Native part.
+
+** Status
+
+Accepted.
+
+** Consequences
+
+There will be some more struggle to cope with Android- and iOS-specific
+amenities, but still removing Expo Framework allows for fine-grained
+control.

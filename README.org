@@ -162,7 +162,7 @@ Just sit, follow the menu, learn, practice and improve.
 
 The app is divided into four main areas.
 
-#+TOC: headlines 1 local
+#+TOC: headlines local
 
 ** Home
 :PROPERTIES:

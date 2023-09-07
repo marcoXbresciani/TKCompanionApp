@@ -33,16 +33,28 @@ import i18n from '../i18n/i18n'
 const BadgesPage: React.FC = () => {
   const events: Array<{ date: string, location: string, title: string, url: string }> = [
     {
-      date: '2023-07-22',
-      location: 'CN',
-      title: 'TOYOTA KATA',
-      url: 'https://www.cameraitacina.com/en/events/toyota-kata'
+      date: '2023-10-19',
+      location: 'DE',
+      title: 'ALTERNATIVE LEADERSHIP FORUM 2023',
+      url: 'https://www.campus-for-leaders.de/alternative-leadership-forum-2023/'
     },
     {
-      date: '2023-08-16',
+      date: '2023-10-16',
       location: 'WWW',
-      title: 'A Vision of Process Excellence and Seven Habits for the Journey',
-      url: 'https://us02web.zoom.us/webinar/register/WN_LF16EVAuRAOtp-aEys_OPQ'
+      title: 'Improvement Kata/Coaching Kata Remotely',
+      url: 'https://www.lean.org/events-training/events/improvement-kata-coaching-kata-remotely/'
+    },
+    {
+      date: '2024-04-09',
+      location: 'US',
+      title: 'KataCon10 Toyota Kata Summit',
+      url: 'https://leanfrontiers.com/katacon10/'
+    },
+    {
+      date: '2024-04-16',
+      location: 'WWW',
+      title: 'Improvement Kata/Coaching Kata Remotely',
+      url: 'https://www.lean.org/events-training/events/improvement-kata-coaching-kata-remotely/'
     }
   ]
 
@@ -66,7 +78,7 @@ const BadgesPage: React.FC = () => {
                     return (
                       <List.Item
                         description={event.location}
-                        key={event.url}
+                        key={event.date + event.url}
                         left={() => (
                           <Chip>{event.date}</Chip>
                         )}

@@ -1,0 +1,2 @@
+Aggiorna la lista eventi.
+Aggiorna le dipendenze.

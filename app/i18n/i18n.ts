@@ -73,7 +73,7 @@ void i18n.init({
 })
 
 Object.keys(resources).forEach((key) => {
-  LocaleConfig.locales[key] = resources[`${key}`].translation.calendar
+  LocaleConfig.locales[key] = resources[`${key}`]?.translation.calendar
 })
 
 LocaleConfig.defaultLocale = i18n.resolvedLanguage

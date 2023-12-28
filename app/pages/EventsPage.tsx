@@ -33,30 +33,6 @@ import i18n from '../i18n/i18n'
 const BadgesPage: React.FC = () => {
   const events: Array<{ date: string, location: string, title: string, url: string }> = [
     {
-      date: '2023-10-16',
-      location: 'WWW',
-      title: 'Improvement Kata/Coaching Kata Remotely',
-      url: 'https://www.lean.org/events-training/events/improvement-kata-coaching-kata-remotely/'
-    },
-    {
-      date: '2023-10-17',
-      location: 'US',
-      title: '2-Day Toyota Kata Experiential Workshop',
-      url: 'https://www.eventbrite.com/e/2-day-toyota-kata-experiential-workshop-registration-641315109757?aff=oddtdtcreator'
-    },
-    {
-      date: '2023-10-18',
-      location: 'WWW',
-      title: 'Kata School Cascadia\'s 4th Anniversary Meet Up',
-      url: 'https://us02web.zoom.us/meeting/register/tZYodOuvrj8tGdOorXhjPRMH61H7FJtqJhsR#/registration'
-    },
-    {
-      date: '2023-10-19',
-      location: 'DE',
-      title: 'ALTERNATIVE LEADERSHIP FORUM 2023',
-      url: 'https://www.campus-for-leaders.de/alternative-leadership-forum-2023/'
-    },
-    {
       date: '2024-04-09',
       location: 'US',
       title: 'KataCon10 Toyota Kata Summit',

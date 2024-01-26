@@ -1,5 +1,5 @@
 /*
- * © 2021-2023 Marco Bresciani
+ * © 2021-2024 Marco Bresciani
  * This file is part of TKCompanionApp.
  *
  * TKCompanionApp is free software: you can redistribute it and/or

@@ -1,4 +1,4 @@
-# © 2021-2023 Marco Bresciani
+# © 2021-2024 Marco Bresciani
 # 
 # Copying and distribution of this file, with or without modification,
 # are permitted in any medium without royalty provided the copyright
@@ -8,7 +8,7 @@
 # This is a freely licensed work, as explained in the Definition of Free
 # Cultural Works.
 # 
-# SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
+# SPDX-FileCopyrightText: 2021-2024 Marco Bresciani
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
 #+AUTHOR: [[https://codeberg.org/marcoXbresciani/][Marco Bresciani]]
@@ -125,7 +125,7 @@ Then go to this project main folder and run =npm install=.
 You should see all the needed dependencies downloaded and installed
 through NPM package manager.
 
-[[https://codeberg.org/marcoXbresciani/TKCompanionApp/commits/branch/master][https://img.shields.io/maintenance/yes/2023.svg]]
+[[https://codeberg.org/marcoXbresciani/TKCompanionApp/commits/branch/master][https://img.shields.io/maintenance/yes/2024.svg]]
 [[https://codeberg.org/marcoXbresciani/TKCompanionApp/issues][https://img.shields.io/github/issues/marcoXbresciani/TKCompanionApp.svg?logo=codeberg]]
 [[https://img.shields.io/github/repo-size/marcoXbresciani/TKCompanionApp.svg?logo=github]]
 [[https://img.shields.io/github/languages/code-size/marcoXbresciani/TKCompanionApp.svg?logo=github]]

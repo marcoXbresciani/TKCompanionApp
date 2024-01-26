@@ -51,7 +51,7 @@ const Copyright: React.FunctionComponent = () => {
       <ScrollView>
         <Dialog.Content>
           <Notice key='licence'>
-            <TkText>© 2021-2023 Marco Bresciani</TkText>
+            <TkText>© 2021-2024 Marco Bresciani</TkText>
             <SmallerText>
               TKCompanionApp is free software: you can redistribute it
               and/or modify it under the terms of the GNU General Public

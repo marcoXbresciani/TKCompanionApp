@@ -1,5 +1,5 @@
 /*
- * © 2021-2023 Marco Bresciani
+ * © 2021-2024 Marco Bresciani
  * This file is part of TKCompanionApp.
  *
  * TKCompanionApp is free software: you can redistribute it and/or
@@ -16,7 +16,7 @@
  * along with TKCompanionApp.
  * If not, see <https://www.gnu.org/licenses/>.
  *
- * SPDX-FileCopyrightText: 2021-2023 Marco Bresciani
+ * SPDX-FileCopyrightText: 2021-2024 Marco Bresciani
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */

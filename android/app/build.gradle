@@ -78,13 +78,13 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 android {
     ndkVersion rootProject.ext.ndkVersion
 
-    buildToolsversion rootProject.ext.buildToolsversion
+    buildToolsVersion rootProject.ext.buildToolsversion
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     namespace "name.bresciani.marco.tkcompanionapp"
     defaultConfig {
         applicationId "name.bresciani.marco.tkcompanionapp"
-        buildToolsversion rootProject.ext.buildToolsversion
+        buildToolsVersion rootProject.ext.buildToolsversion
         compileSdkVersion rootProject.ext.compileSdkVersion
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion

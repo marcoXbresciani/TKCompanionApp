@@ -84,6 +84,7 @@ android {
     namespace "name.bresciani.marco.tkcompanionapp"
     defaultConfig {
         applicationId "name.bresciani.marco.tkcompanionapp"
+        compileSdkVersion rootProject.ext.compileSdkVersion
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 710

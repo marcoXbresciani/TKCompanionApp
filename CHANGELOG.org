@@ -40,7 +40,7 @@ Changelog]], and this project adheres to
 
 ** Security
 
-* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/7.1.0][7.1.0]] - 2024-01-08
+* [[https://codeberg.org/marcoXbresciani/TKCompanionApp/src/tag/7.1.0][7.1.0]] - 2024-03-15
 
 ** Changed
 
